@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;700&display=swap');
+
+:root {
+  --foreground-rgb: 51, 51, 51;
+  --background-rgb: 255, 255, 255;
+}
+
+.dark {
+  --foreground-rgb: 242, 242, 242;
+  --background-rgb: 18, 18, 18;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Noto Sans KR', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hanja-card {
+  @apply bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md transition-all hover:shadow-xl;
+}
+
+.stroke-animation path {
+  @apply fill-transparent stroke-primary stroke-2;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-secondary hover:bg-secondary-dark text-white font-bold py-2 px-4 rounded transition-colors;
+}
+
+.btn-outline {
+  @apply border border-primary text-primary hover:bg-primary hover:text-white font-bold py-2 px-4 rounded transition-colors;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden;
+}
+
+.card-title {
+  @apply text-xl font-bold text-gray-900 dark:text-white mb-2;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white;
+}
+
+.container-custom {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+} 
