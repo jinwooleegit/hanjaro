@@ -70,24 +70,43 @@ const Header: React.FC = () => {
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                   className="flex items-center space-x-2 focus:outline-none"
                 >
-                  <img
-                    src={session.user?.image || '/images/default-avatar.png'}
-                    alt="Profile"
-                    className="w-8 h-8 rounded-full"
-                  />
-                  <span className="hidden sm:inline text-sm font-medium">{session.user?.name}</span>
+                  {session.user?.image ? (
+                    <img
+                      src={session.user.image}
+                      alt={session.user?.name || '사용자'}
+                      className="w-8 h-8 rounded-full"
+                    />
+                  ) : (
+                    <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+                      {session.user?.name ? session.user.name.charAt(0).toUpperCase() : '?'}
+                    </div>
+                  )}
+                  <span className="hidden sm:inline text-sm font-medium">{session.user?.name || '사용자'}</span>
+                  <svg 
+                    className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${isMenuOpen ? 'transform rotate-180' : ''}`}
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24" 
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
                 </button>
                 {isMenuOpen && (
                   <div className="absolute right-0 mt-2 w-48 py-2 bg-white dark:bg-gray-800 rounded-md shadow-xl z-10">
-                    <Link href="/profile" className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <Link href="/profile" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
                       내 프로필
                     </Link>
-                    <Link href="/settings" className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <Link href="/learn" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
+                      학습 대시보드
+                    </Link>
+                    <Link href="/settings" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
                       설정
                     </Link>
+                    <div className="border-t border-gray-200 dark:border-gray-700 my-1"></div>
                     <button
-                      onClick={() => signOut()}
-                      className="block w-full text-left px-4 py-2 text-sm text-red-500 hover:bg-gray-100 dark:hover:bg-gray-700"
+                      onClick={() => signOut({ callbackUrl: '/' })}
+                      className="block w-full text-left px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-700"
                     >
                       로그아웃
                     </button>
@@ -95,9 +114,20 @@ const Header: React.FC = () => {
                 )}
               </div>
             ) : (
-              <button onClick={() => signIn()} className="btn-primary">
-                로그인
-              </button>
+              <div className="flex items-center space-x-2">
+                <button 
+                  onClick={() => signIn()} 
+                  className="text-sm font-medium text-primary hover:text-primary-dark transition-colors"
+                >
+                  로그인
+                </button>
+                <Link 
+                  href="/auth/register" 
+                  className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 px-4 py-2 rounded-md transition-colors"
+                >
+                  회원가입
+                </Link>
+              </div>
             )}
 
             {/* Mobile Menu Button */}

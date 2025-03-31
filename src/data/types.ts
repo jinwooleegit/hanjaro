@@ -17,6 +17,8 @@ export interface StrokePath {
   animationDelay?: string;
   strokeDasharray?: string;
   strokeDashoffset?: string;
+  strokeLinecap?: string;
+  strokeWidth?: string;
 }
 
 export interface RelatedHanja {

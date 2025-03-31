@@ -1,0 +1,224 @@
+{
+  "永": {
+    "meaning": "영원할 영",
+    "strokes": [
+      {
+        "path": "M 50 80 Q 48 50 50 20",
+        "desc": "왼쪽 세로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 50 50 C 60 47 75 47 90 50",
+        "desc": "중앙 가로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 70 90 Q 72 55 70 20",
+        "desc": "오른쪽 세로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 30 20 C 45 18 75 18 90 20",
+        "desc": "상단 가로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 50 80 C 65 78 80 78 90 80",
+        "desc": "하단 가로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 30 20 Q 35 25 40 35",
+        "desc": "왼쪽 상단 점",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 50 80 Q 45 85 40 95",
+        "desc": "왼쪽 하단 점",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 90 80 Q 94 85 100 95",
+        "desc": "오른쪽 하단 점",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      }
+    ],
+    "stroke_count": 8
+  },
+  "雨": {
+    "meaning": "비 우",
+    "strokes": [
+      {
+        "path": "M 30 20 C 50 18 70 18 90 20",
+        "desc": "상단 가로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 40 20 Q 39 30 40 40",
+        "desc": "왼쪽 상단 세로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 60 20 Q 59 30 60 40",
+        "desc": "중앙 상단 세로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 80 20 Q 79 30 80 40",
+        "desc": "오른쪽 상단 세로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 30 40 C 50 38 70 38 90 40",
+        "desc": "중앙 가로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 40 40 C 38 60 39 75 40 90",
+        "desc": "왼쪽 하단 세로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 60 40 C 58 60 59 75 60 90",
+        "desc": "중앙 하단 세로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 80 40 C 78 60 79 75 80 90",
+        "desc": "오른쪽 하단 세로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      }
+    ],
+    "stroke_count": 8
+  },
+  "火": {
+    "meaning": "불 화",
+    "strokes": [
+      {
+        "path": "M 40 50 C 50 40 70 40 80 50",
+        "desc": "윗 가로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 60 40 Q 59 60 60 80",
+        "desc": "중앙 세로획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 60 60 C 45 70 35 85 30 95",
+        "desc": "왼쪽 대각선",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 60 60 C 75 70 85 85 90 95",
+        "desc": "오른쪽 대각선",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      }
+    ],
+    "stroke_count": 4
+  },
+  "水": {
+    "meaning": "물 수",
+    "strokes": [
+      {
+        "path": "M 30 40 C 45 25 75 25 90 40",
+        "desc": "상단 곡선",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 30 40 C 35 50 45 60 55 65",
+        "desc": "왼쪽 중간 곡선",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 90 40 C 85 50 75 60 65 65",
+        "desc": "오른쪽 중간 곡선",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 45 70 C 50 75 56 80 60 85",
+        "desc": "왼쪽 하단 첫번째 곡선",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 75 70 C 70 75 64 80 60 85",
+        "desc": "오른쪽 하단 첫번째 곡선",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 40 80 C 45 85 50 90 55 95",
+        "desc": "왼쪽 하단 두번째 곡선",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 80 80 C 75 85 70 90 65 95",
+        "desc": "오른쪽 하단 두번째 곡선",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      }
+    ],
+    "stroke_count": 7
+  },
+  "山": {
+    "meaning": "산 산",
+    "strokes": [
+      {
+        "path": "M 30 55 C 45 35 75 35 90 55",
+        "desc": "산 윗부분",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 30 55 C 35 65 38 75 40 90",
+        "desc": "왼쪽 다리",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 90 55 C 85 65 82 75 80 90",
+        "desc": "오른쪽 다리",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 55 55 C 57 65 59 75 60 90",
+        "desc": "왼쪽 중앙 획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      },
+      {
+        "path": "M 65 55 C 63 65 61 75 60 90",
+        "desc": "오른쪽 중앙 획",
+        "strokeLinecap": "round",
+        "strokeWidth": "2.5"
+      }
+    ],
+    "stroke_count": 5
+  }
+} 
