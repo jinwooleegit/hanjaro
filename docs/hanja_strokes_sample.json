@@ -1,0 +1,188 @@
+{
+  "永": {
+    "meaning": "영원할 영",
+    "stroke_count": 5,
+    "strokes": [
+      {
+        "desc": "가로",
+        "path": "M 20 30 L 80 30",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "세로1",
+        "path": "M 50 20 L 50 90",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "좌측 물결",
+        "path": "M 20 50 Q 30 60 20 70",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "우측 물결",
+        "path": "M 80 50 Q 70 60 80 70",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "가로 마무리",
+        "path": "M 20 90 L 80 90",
+        "strokeWidth": 4
+      }
+    ]
+  },
+  "人": {
+    "meaning": "사람 인",
+    "stroke_count": 2,
+    "strokes": [
+      {
+        "desc": "왼쪽 획",
+        "path": "M 60 20 L 30 90",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "오른쪽 획",
+        "path": "M 40 20 L 70 90",
+        "strokeWidth": 4
+      }
+    ]
+  },
+  "水": {
+    "meaning": "물 수",
+    "stroke_count": 4,
+    "strokes": [
+      {
+        "desc": "첫번째 점",
+        "path": "M 35 20 L 35 25",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "두번째 점",
+        "path": "M 50 15 L 50 20",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "세번째 점",
+        "path": "M 65 20 L 65 25",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "물 흐르는 모양",
+        "path": "M 30 35 Q 50 55 30 75 M 50 35 Q 70 55 50 75 M 70 35 Q 90 55 70 75",
+        "strokeWidth": 4
+      }
+    ]
+  },
+  "火": {
+    "meaning": "불 화",
+    "stroke_count": 4,
+    "strokes": [
+      {
+        "desc": "사람 인",
+        "path": "M 50 10 L 30 50",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "오른쪽 획",
+        "path": "M 50 10 L 70 50",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "왼쪽 불꽃",
+        "path": "M 35 50 Q 30 70 20 85",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "오른쪽 불꽃",
+        "path": "M 65 50 Q 70 70 80 85",
+        "strokeWidth": 4
+      }
+    ]
+  },
+  "山": {
+    "meaning": "산 산",
+    "stroke_count": 3,
+    "strokes": [
+      {
+        "desc": "왼쪽 획",
+        "path": "M 20 70 L 40 20 L 60 70",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "오른쪽 획",
+        "path": "M 60 70 L 80 20 L 100 70",
+        "strokeWidth": 4
+      },
+      {
+        "desc": "아래 획",
+        "path": "M 20 70 L 100 70",
+        "strokeWidth": 4
+      }
+    ]
+  },
+  "道": {
+    "meaning": "길 도",
+    "stroke_count": 12,
+    "strokes": [
+      {
+        "desc": "왼쪽 상단 첫번째 점",
+        "path": "M 20 20 L 20 25",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "왼쪽 상단 두번째 점",
+        "path": "M 30 15 L 30 20",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "왼쪽 상단 세번째 점",
+        "path": "M 40 20 L 40 25",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "왼쪽 겹치는 물결",
+        "path": "M 15 30 Q 25 40 15 50 M 25 30 Q 35 40 25 50 M 35 30 Q 45 40 35 50",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "오른쪽 위 가로",
+        "path": "M 55 20 L 90 20",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "오른쪽 위 세로",
+        "path": "M 72 20 L 72 35",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "오른쪽 위 가로 선",
+        "path": "M 55 35 L 90 35",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "중앙 가로",
+        "path": "M 15 60 L 90 60",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "중앙 세로",
+        "path": "M 52 50 L 52 95",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "왼쪽 아래 삐침",
+        "path": "M 30 75 L 30 95",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "왼쪽 밑 가로",
+        "path": "M 15 95 L 90 95",
+        "strokeWidth": 3
+      },
+      {
+        "desc": "오른쪽 아래 삐침",
+        "path": "M 75 75 L 75 95",
+        "strokeWidth": 3
+      }
+    ]
+  }
+} 
