@@ -1314,6 +1314,14 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                       <Link
                         key={`related-${i}-${relatedChar.character}`}
                         href={url}
+                        prefetch={false}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          // 현재 화면 상태 유지
+                          setTimeout(() => {
+                            router.push(url);
+                          }, 10);
+                        }}
                         className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow flex flex-col items-center"
                       >
                         <div className="text-4xl mb-2">{relatedChar.character}</div>
