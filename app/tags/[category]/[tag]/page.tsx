@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import TAGS_DATA from '../../../../data/tags.json';
 import HANJA_DATABASE from '../../../../data/hanja_database_main.json';
 
@@ -288,6 +291,13 @@ const findHanjaForTag = (tagId: string, categoryId: string, examples: string[]):
 
 const TagPage = ({ params }: { params: { category: string; tag: string } }) => {
   const { category, tag } = params;
+  const router = useRouter();
+  
+  // 링크 클릭 핸들러 추가
+  const handleLinkClick = (href: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    router.push(href);
+  };
   
   // 해당 태그 정보 찾기
   const categoryData = TAGS_DATA.tag_categories.find((cat: TagCategory) => cat.id === category);
@@ -302,6 +312,8 @@ const TagPage = ({ params }: { params: { category: string; tag: string } }) => {
           <p className="text-lg text-slate-600 mb-8">요청하신 태그 정보를 찾을 수 없습니다.</p>
           <Link 
             href="/tags" 
+            prefetch={true}
+            onClick={(e) => handleLinkClick('/tags', e)}
             className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg transition"
           >
             모든 태그 보기
@@ -323,6 +335,8 @@ const TagPage = ({ params }: { params: { category: string; tag: string } }) => {
         <div className="mb-8">
           <Link 
             href="/tags" 
+            prefetch={true}
+            onClick={(e) => handleLinkClick('/tags', e)}
             className="text-blue-600 hover:text-blue-800 inline-flex items-center"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
@@ -359,7 +373,9 @@ const TagPage = ({ params }: { params: { category: string; tag: string } }) => {
               {relatedHanjaList.map((character, idx) => (
                 <Link
                   key={idx}
-                  href={`/learn/hanja/${character}`}
+                  href={`/learn/hanja/${encodeURIComponent(character)}`}
+                  prefetch={true}
+                  onClick={(e) => handleLinkClick(`/learn/hanja/${encodeURIComponent(character)}`, e)}
                   className="aspect-square flex flex-col items-center justify-center bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition"
                 >
                   <span className="text-4xl mb-2">{character}</span>
@@ -390,6 +406,8 @@ const TagPage = ({ params }: { params: { category: string; tag: string } }) => {
                   <Link
                     key={otherTag.id}
                     href={`/tags/${category}/${otherTag.id}`}
+                    prefetch={true}
+                    onClick={(e) => handleLinkClick(`/tags/${category}/${otherTag.id}`, e)}
                     className={`inline-block px-4 py-2 ${styles.bg} ${styles.text} border ${styles.border} rounded-full hover:shadow-md transition`}
                   >
                     {otherTag.name} <span className="text-xs">({otherTagHanjaCount})</span>

@@ -58,7 +58,7 @@ const HanjaCard: React.FC<HanjaCardProps> = ({
             )}
             
             <Link 
-              href={`/learn/hanja/${hanja.character}`}
+              href={`/learn/hanja/${encodeURIComponent(hanja.character)}`}
               className="mt-4 text-sm text-primary hover:underline self-end"
             >
               자세히 보기

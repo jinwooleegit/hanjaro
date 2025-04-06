@@ -1,6 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import TAGS_DATA from '../../data/tags.json';
 import HANJA_DATABASE from '../../data/hanja_database_main.json';
+import { useRouter } from 'next/navigation';
 
 // 메타데이터
 export const metadata = {
@@ -441,6 +444,14 @@ const findHanjaCountForTag = (tagId: string, categoryId: string, examples: strin
 };
 
 const TagsPage = () => {
+  const router = useRouter();
+
+  // 태그 클릭 핸들러 추가
+  const handleTagClick = (categoryId: string, tagId: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    router.push(`/tags/${categoryId}/${tagId}`);
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 py-12 px-4">
       <div className="max-w-6xl mx-auto">
@@ -483,6 +494,8 @@ const TagsPage = () => {
                     <Link 
                       key={tag.id} 
                       href={`/tags/${category.id}/${tag.id}`}
+                      prefetch={true}
+                      onClick={(e) => handleTagClick(category.id, tag.id, e)}
                       className={`inline-block px-4 py-2 rounded-full bg-white shadow-sm 
                                  hover:shadow-md transition transform hover:-translate-y-1
                                  ${getCategoryTextColor(category.id)} border ${getCategoryBorderColor(category.id)}
@@ -509,6 +522,7 @@ const TagsPage = () => {
         <div className="text-center mt-12">
           <Link 
             href="/learn" 
+            prefetch={true}
             className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg transition transform hover:scale-105"
           >
             한자 학습 시작하기
