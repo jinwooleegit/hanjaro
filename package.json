@@ -2,6 +2,7 @@
   "name": "hanjaro",
   "version": "0.1.0",
   "private": true,
+  "license": "CC-BY-NC-4.0",
   "scripts": {
     "clean": "rimraf .next-custom",
     "dev": "npm run clean && cross-env NODE_OPTIONS=\"--max_old_space_size=4096\" next dev",

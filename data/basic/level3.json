@@ -1,13 +1,15 @@
 {
   "name": "3단계 (초등 4학년 수준)",
   "description": "초등학교 4학년 과정에서 배우는 한자",
+  "category": "basic",
+  "level": 3,
   "characters": [
     {
       "character": "金",
-      "meaning": "쇠 금",
+      "meaning": "쇠 금, 황금 금",
       "pronunciation": "금",
       "stroke_count": 8,
-      "radical": "金",
+      "radical": "금",
       "examples": [
         {
           "word": "金曜日",
@@ -20,6 +22,13 @@
           "pronunciation": "금은"
         }
       ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "radical:metal",
+        "usage:common",
+        "education:elementary"
+      ],
       "level": 3,
       "order": 1
     },
@@ -28,7 +37,7 @@
       "meaning": "불 화",
       "pronunciation": "화",
       "stroke_count": 4,
-      "radical": "火",
+      "radical": "화",
       "examples": [
         {
           "word": "火曜日",
@@ -41,6 +50,12 @@
           "pronunciation": "화산"
         }
       ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary"
+      ],
       "level": 3,
       "order": 2
     },
@@ -49,7 +64,7 @@
       "meaning": "흙 토",
       "pronunciation": "토",
       "stroke_count": 3,
-      "radical": "土",
+      "radical": "토",
       "examples": [
         {
           "word": "土曜日",
@@ -62,6 +77,12 @@
           "pronunciation": "국토"
         }
       ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary"
+      ],
       "level": 3,
       "order": 3
     },
@@ -70,7 +91,7 @@
       "meaning": "마음 심",
       "pronunciation": "심",
       "stroke_count": 4,
-      "radical": "心",
+      "radical": "심",
       "examples": [
         {
           "word": "心臟",
@@ -83,6 +104,13 @@
           "pronunciation": "중심"
         }
       ],
+      "tags": [
+        "meaning:body",
+        "difficulty:beginner",
+        "radical:heart",
+        "usage:common",
+        "education:elementary"
+      ],
       "level": 3,
       "order": 4
     },
@@ -91,7 +119,7 @@
       "meaning": "손 수",
       "pronunciation": "수",
       "stroke_count": 4,
-      "radical": "手",
+      "radical": "수",
       "examples": [
         {
           "word": "手帳",
@@ -104,8 +132,1229 @@
           "pronunciation": "박수"
         }
       ],
+      "tags": [
+        "meaning:body",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary"
+      ],
       "level": 3,
       "order": 5
+    },
+    {
+      "character": "目",
+      "meaning": "눈 목",
+      "pronunciation": "목",
+      "stroke_count": 5,
+      "radical": "목",
+      "examples": [
+        {
+          "word": "目的",
+          "meaning": "목적",
+          "pronunciation": "목적"
+        },
+        {
+          "word": "注目",
+          "meaning": "주목",
+          "pronunciation": "주목"
+        }
+      ],
+      "tags": [
+        "meaning:body",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 6
+    },
+    {
+      "character": "力",
+      "meaning": "힘 력",
+      "pronunciation": "력",
+      "stroke_count": 2,
+      "radical": "력",
+      "examples": [
+        {
+          "word": "力量",
+          "meaning": "힘",
+          "pronunciation": "역량"
+        },
+        {
+          "word": "努力",
+          "meaning": "노력",
+          "pronunciation": "노력"
+        }
+      ],
+      "tags": [
+        "meaning:attribute",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 7
+    },
+    {
+      "character": "口",
+      "meaning": "입 구",
+      "pronunciation": "구",
+      "stroke_count": 3,
+      "radical": "구",
+      "examples": [
+        {
+          "word": "口語",
+          "meaning": "구어",
+          "pronunciation": "구어"
+        },
+        {
+          "word": "入口",
+          "meaning": "입구",
+          "pronunciation": "입구"
+        }
+      ],
+      "tags": [
+        "meaning:body",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 8
+    },
+    {
+      "character": "耳",
+      "meaning": "귀 이",
+      "pronunciation": "이",
+      "stroke_count": 6,
+      "radical": "이",
+      "examples": [
+        {
+          "word": "耳朶",
+          "meaning": "귀",
+          "pronunciation": "이엽"
+        },
+        {
+          "word": "耳鼻",
+          "meaning": "귀와 코",
+          "pronunciation": "이비"
+        }
+      ],
+      "tags": [
+        "meaning:body",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 9
+    },
+    {
+      "character": "足",
+      "meaning": "발 족",
+      "pronunciation": "족",
+      "stroke_count": 7,
+      "radical": "족",
+      "examples": [
+        {
+          "word": "足跡",
+          "meaning": "발자국",
+          "pronunciation": "족적"
+        },
+        {
+          "word": "滿足",
+          "meaning": "만족",
+          "pronunciation": "만족"
+        }
+      ],
+      "tags": [
+        "meaning:body",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 10
+    },
+    {
+      "character": "車",
+      "meaning": "수레 차",
+      "pronunciation": "차",
+      "stroke_count": 7,
+      "radical": "車",
+      "examples": [
+        {
+          "word": "自動車",
+          "meaning": "자동차",
+          "pronunciation": "자동차"
+        },
+        {
+          "word": "電車",
+          "meaning": "전차",
+          "pronunciation": "전차"
+        }
+      ],
+      "tags": [
+        "meaning:transport",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 11
+    },
+    {
+      "character": "羊",
+      "meaning": "양 양",
+      "pronunciation": "양",
+      "stroke_count": 6,
+      "radical": "羊",
+      "examples": [
+        {
+          "word": "羊肉",
+          "meaning": "양고기",
+          "pronunciation": "양육"
+        },
+        {
+          "word": "山羊",
+          "meaning": "산양",
+          "pronunciation": "산양"
+        }
+      ],
+      "tags": [
+        "meaning:animal",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 12
+    },
+    {
+      "character": "牛",
+      "meaning": "소 우",
+      "pronunciation": "우",
+      "stroke_count": 4,
+      "radical": "牛",
+      "examples": [
+        {
+          "word": "牛肉",
+          "meaning": "소고기",
+          "pronunciation": "우육"
+        },
+        {
+          "word": "牛乳",
+          "meaning": "우유",
+          "pronunciation": "우유"
+        }
+      ],
+      "tags": [
+        "meaning:animal",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 13
+    },
+    {
+      "character": "馬",
+      "meaning": "말 마",
+      "pronunciation": "마",
+      "stroke_count": 10,
+      "radical": "馬",
+      "examples": [
+        {
+          "word": "馬車",
+          "meaning": "마차",
+          "pronunciation": "마차"
+        },
+        {
+          "word": "競馬",
+          "meaning": "경마",
+          "pronunciation": "경마"
+        }
+      ],
+      "tags": [
+        "meaning:animal",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 14
+    },
+    {
+      "character": "鳥",
+      "meaning": "새 조",
+      "pronunciation": "조",
+      "stroke_count": 11,
+      "radical": "鳥",
+      "examples": [
+        {
+          "word": "鳥類",
+          "meaning": "조류",
+          "pronunciation": "조류"
+        },
+        {
+          "word": "小鳥",
+          "meaning": "작은 새",
+          "pronunciation": "소조"
+        }
+      ],
+      "tags": [
+        "meaning:animal",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 15
+    },
+    {
+      "character": "魚",
+      "meaning": "물고기 어",
+      "pronunciation": "어",
+      "stroke_count": 11,
+      "radical": "魚",
+      "examples": [
+        {
+          "word": "魚類",
+          "meaning": "어류",
+          "pronunciation": "어류"
+        },
+        {
+          "word": "金魚",
+          "meaning": "금붕어",
+          "pronunciation": "금어"
+        }
+      ],
+      "tags": [
+        "meaning:animal",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 16
+    },
+    {
+      "character": "時",
+      "meaning": "때 시",
+      "pronunciation": "시",
+      "stroke_count": 10,
+      "radical": "日",
+      "examples": [
+        {
+          "word": "時間",
+          "meaning": "시간",
+          "pronunciation": "시간"
+        },
+        {
+          "word": "時代",
+          "meaning": "시대",
+          "pronunciation": "시대"
+        }
+      ],
+      "tags": [
+        "meaning:time",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 17
+    },
+    {
+      "character": "間",
+      "meaning": "사이 간",
+      "pronunciation": "간",
+      "stroke_count": 12,
+      "radical": "門",
+      "examples": [
+        {
+          "word": "時間",
+          "meaning": "시간",
+          "pronunciation": "시간"
+        },
+        {
+          "word": "中間",
+          "meaning": "중간",
+          "pronunciation": "중간"
+        }
+      ],
+      "tags": [
+        "meaning:space",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 18
+    },
+    {
+      "character": "分",
+      "meaning": "나눌 분",
+      "pronunciation": "분",
+      "stroke_count": 4,
+      "radical": "刀",
+      "examples": [
+        {
+          "word": "分類",
+          "meaning": "분류",
+          "pronunciation": "분류"
+        },
+        {
+          "word": "十分",
+          "meaning": "십분",
+          "pronunciation": "십분"
+        }
+      ],
+      "tags": [
+        "meaning:time",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 19
+    },
+    {
+      "character": "週",
+      "meaning": "주일 주",
+      "pronunciation": "주",
+      "stroke_count": 13,
+      "radical": "辵",
+      "examples": [
+        {
+          "word": "週間",
+          "meaning": "주간",
+          "pronunciation": "주간"
+        },
+        {
+          "word": "一週",
+          "meaning": "일주",
+          "pronunciation": "일주"
+        }
+      ],
+      "tags": [
+        "meaning:time",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 20
+    },
+    {
+      "character": "歲",
+      "meaning": "해 세",
+      "pronunciation": "세",
+      "stroke_count": 13,
+      "radical": "止",
+      "examples": [
+        {
+          "word": "歲月",
+          "meaning": "세월",
+          "pronunciation": "세월"
+        },
+        {
+          "word": "萬歲",
+          "meaning": "만세",
+          "pronunciation": "만세"
+        }
+      ],
+      "tags": [
+        "meaning:time",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 21
+    },
+    {
+      "character": "海",
+      "meaning": "바다 해",
+      "pronunciation": "해",
+      "stroke_count": 10,
+      "radical": "水",
+      "examples": [
+        {
+          "word": "海岸",
+          "meaning": "해안",
+          "pronunciation": "해안"
+        },
+        {
+          "word": "海水",
+          "meaning": "해수",
+          "pronunciation": "해수"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 22
+    },
+    {
+      "character": "島",
+      "meaning": "섬 도",
+      "pronunciation": "도",
+      "stroke_count": 10,
+      "radical": "山",
+      "examples": [
+        {
+          "word": "島嶼",
+          "meaning": "도서",
+          "pronunciation": "도서"
+        },
+        {
+          "word": "半島",
+          "meaning": "반도",
+          "pronunciation": "반도"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 23
+    },
+    {
+      "character": "花",
+      "meaning": "꽃 화",
+      "pronunciation": "화",
+      "stroke_count": 7,
+      "radical": "艸",
+      "examples": [
+        {
+          "word": "花園",
+          "meaning": "화원",
+          "pronunciation": "화원"
+        },
+        {
+          "word": "開花",
+          "meaning": "개화",
+          "pronunciation": "개화"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 24
+    },
+    {
+      "character": "草",
+      "meaning": "풀 초",
+      "pronunciation": "초",
+      "stroke_count": 9,
+      "radical": "艸",
+      "examples": [
+        {
+          "word": "草地",
+          "meaning": "초지",
+          "pronunciation": "초지"
+        },
+        {
+          "word": "雜草",
+          "meaning": "잡초",
+          "pronunciation": "잡초"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 25
+    },
+    {
+      "character": "星",
+      "meaning": "별 성",
+      "pronunciation": "성",
+      "stroke_count": 9,
+      "radical": "日",
+      "examples": [
+        {
+          "word": "星座",
+          "meaning": "성좌",
+          "pronunciation": "성좌"
+        },
+        {
+          "word": "流星",
+          "meaning": "유성",
+          "pronunciation": "유성"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 26
+    },
+    {
+      "character": "空",
+      "meaning": "빌 공",
+      "pronunciation": "공",
+      "stroke_count": 8,
+      "radical": "穴",
+      "examples": [
+        {
+          "word": "空氣",
+          "meaning": "공기",
+          "pronunciation": "공기"
+        },
+        {
+          "word": "航空",
+          "meaning": "항공",
+          "pronunciation": "항공"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 27
+    },
+    {
+      "character": "天",
+      "meaning": "하늘 천",
+      "pronunciation": "천",
+      "stroke_count": 4,
+      "radical": "大",
+      "examples": [
+        {
+          "word": "天氣",
+          "meaning": "천기",
+          "pronunciation": "천기"
+        },
+        {
+          "word": "天國",
+          "meaning": "천국",
+          "pronunciation": "천국"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 28
+    },
+    {
+      "character": "地",
+      "meaning": "땅 지",
+      "pronunciation": "지",
+      "stroke_count": 6,
+      "radical": "土",
+      "examples": [
+        {
+          "word": "地圖",
+          "meaning": "지도",
+          "pronunciation": "지도"
+        },
+        {
+          "word": "地下",
+          "meaning": "지하",
+          "pronunciation": "지하"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 29
+    },
+    {
+      "character": "白",
+      "meaning": "흰 백",
+      "pronunciation": "백",
+      "stroke_count": 5,
+      "radical": "白",
+      "examples": [
+        {
+          "word": "白雪",
+          "meaning": "백설",
+          "pronunciation": "백설"
+        },
+        {
+          "word": "明白",
+          "meaning": "명백",
+          "pronunciation": "명백"
+        }
+      ],
+      "tags": [
+        "meaning:color",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 30
+    },
+    {
+      "character": "黑",
+      "meaning": "검을 흑",
+      "pronunciation": "흑",
+      "stroke_count": 12,
+      "radical": "黑",
+      "examples": [
+        {
+          "word": "黑色",
+          "meaning": "흑색",
+          "pronunciation": "흑색"
+        },
+        {
+          "word": "黑白",
+          "meaning": "흑백",
+          "pronunciation": "흑백"
+        }
+      ],
+      "tags": [
+        "meaning:color",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 31
+    },
+    {
+      "character": "赤",
+      "meaning": "붉을 적",
+      "pronunciation": "적",
+      "stroke_count": 7,
+      "radical": "赤",
+      "examples": [
+        {
+          "word": "赤色",
+          "meaning": "적색",
+          "pronunciation": "적색"
+        },
+        {
+          "word": "赤道",
+          "meaning": "적도",
+          "pronunciation": "적도"
+        }
+      ],
+      "tags": [
+        "meaning:color",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 32
+    },
+    {
+      "character": "黃",
+      "meaning": "누를 황",
+      "pronunciation": "황",
+      "stroke_count": 12,
+      "radical": "黃",
+      "examples": [
+        {
+          "word": "黃色",
+          "meaning": "황색",
+          "pronunciation": "황색"
+        },
+        {
+          "word": "黃金",
+          "meaning": "황금",
+          "pronunciation": "황금"
+        }
+      ],
+      "tags": [
+        "meaning:color",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 33
+    },
+    {
+      "character": "靑",
+      "meaning": "푸를 청",
+      "pronunciation": "청",
+      "stroke_count": 8,
+      "radical": "靑",
+      "examples": [
+        {
+          "word": "靑色",
+          "meaning": "청색",
+          "pronunciation": "청색"
+        },
+        {
+          "word": "靑年",
+          "meaning": "청년",
+          "pronunciation": "청년"
+        }
+      ],
+      "tags": [
+        "meaning:color",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 34
+    },
+    {
+      "character": "音",
+      "meaning": "소리 음",
+      "pronunciation": "음",
+      "stroke_count": 9,
+      "radical": "音",
+      "examples": [
+        {
+          "word": "音樂",
+          "meaning": "음악",
+          "pronunciation": "음악"
+        },
+        {
+          "word": "音聲",
+          "meaning": "음성",
+          "pronunciation": "음성"
+        }
+      ],
+      "tags": [
+        "meaning:sound",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 35
+    },
+    {
+      "character": "樂",
+      "meaning": "즐길 락, 풍류 악",
+      "pronunciation": "락, 악",
+      "stroke_count": 15,
+      "radical": "木",
+      "examples": [
+        {
+          "word": "音樂",
+          "meaning": "음악",
+          "pronunciation": "음악"
+        },
+        {
+          "word": "樂園",
+          "meaning": "낙원",
+          "pronunciation": "낙원"
+        }
+      ],
+      "tags": [
+        "meaning:emotion",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 36
+    },
+    {
+      "character": "歌",
+      "meaning": "노래 가",
+      "pronunciation": "가",
+      "stroke_count": 14,
+      "radical": "欠",
+      "examples": [
+        {
+          "word": "歌手",
+          "meaning": "가수",
+          "pronunciation": "가수"
+        },
+        {
+          "word": "歌曲",
+          "meaning": "가곡",
+          "pronunciation": "가곡"
+        }
+      ],
+      "tags": [
+        "meaning:art",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 37
+    },
+    {
+      "character": "舞",
+      "meaning": "춤출 무",
+      "pronunciation": "무",
+      "stroke_count": 15,
+      "radical": "舛",
+      "examples": [
+        {
+          "word": "舞臺",
+          "meaning": "무대",
+          "pronunciation": "무대"
+        },
+        {
+          "word": "舞蹈",
+          "meaning": "무용",
+          "pronunciation": "무도"
+        }
+      ],
+      "tags": [
+        "meaning:art",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 38
+    },
+    {
+      "character": "身",
+      "meaning": "몸 신",
+      "pronunciation": "신",
+      "stroke_count": 7,
+      "radical": "身",
+      "examples": [
+        {
+          "word": "身體",
+          "meaning": "신체",
+          "pronunciation": "신체"
+        },
+        {
+          "word": "全身",
+          "meaning": "전신",
+          "pronunciation": "전신"
+        }
+      ],
+      "tags": [
+        "meaning:body",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 39
+    },
+    {
+      "character": "體",
+      "meaning": "몸 체",
+      "pronunciation": "체",
+      "stroke_count": 23,
+      "radical": "骨",
+      "examples": [
+        {
+          "word": "身體",
+          "meaning": "신체",
+          "pronunciation": "신체"
+        },
+        {
+          "word": "體育",
+          "meaning": "체육",
+          "pronunciation": "체육"
+        }
+      ],
+      "tags": [
+        "meaning:body",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 40
+    },
+    {
+      "character": "義",
+      "meaning": "옳을 의",
+      "pronunciation": "의",
+      "stroke_count": 13,
+      "radical": "羊",
+      "examples": [
+        {
+          "word": "正義",
+          "meaning": "정의",
+          "pronunciation": "정의"
+        },
+        {
+          "word": "義務",
+          "meaning": "의무",
+          "pronunciation": "의무"
+        }
+      ],
+      "tags": [
+        "meaning:moral",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 41
+    },
+    {
+      "character": "明",
+      "meaning": "밝을 명",
+      "pronunciation": "명",
+      "stroke_count": 8,
+      "radical": "日",
+      "examples": [
+        {
+          "word": "明日",
+          "meaning": "명일",
+          "pronunciation": "명일"
+        },
+        {
+          "word": "分明",
+          "meaning": "분명",
+          "pronunciation": "분명"
+        }
+      ],
+      "tags": [
+        "meaning:attribute",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 42
+    },
+    {
+      "character": "暗",
+      "meaning": "어두울 암",
+      "pronunciation": "암",
+      "stroke_count": 13,
+      "radical": "日",
+      "examples": [
+        {
+          "word": "暗記",
+          "meaning": "암기",
+          "pronunciation": "암기"
+        },
+        {
+          "word": "暗號",
+          "meaning": "암호",
+          "pronunciation": "암호"
+        }
+      ],
+      "tags": [
+        "meaning:attribute",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 43
+    },
+    {
+      "character": "平",
+      "meaning": "평평할 평",
+      "pronunciation": "평",
+      "stroke_count": 5,
+      "radical": "干",
+      "examples": [
+        {
+          "word": "平和",
+          "meaning": "평화",
+          "pronunciation": "평화"
+        },
+        {
+          "word": "平日",
+          "meaning": "평일",
+          "pronunciation": "평일"
+        }
+      ],
+      "tags": [
+        "meaning:attribute",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 44
+    },
+    {
+      "character": "家",
+      "meaning": "집 가",
+      "pronunciation": "가",
+      "stroke_count": 10,
+      "radical": "宀",
+      "examples": [
+        {
+          "word": "家族",
+          "meaning": "가족",
+          "pronunciation": "가족"
+        },
+        {
+          "word": "作家",
+          "meaning": "작가",
+          "pronunciation": "작가"
+        }
+      ],
+      "tags": [
+        "meaning:place",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 45
+    },
+    {
+      "character": "族",
+      "meaning": "겨레 족",
+      "pronunciation": "족",
+      "stroke_count": 11,
+      "radical": "方",
+      "examples": [
+        {
+          "word": "家族",
+          "meaning": "가족",
+          "pronunciation": "가족"
+        },
+        {
+          "word": "民族",
+          "meaning": "민족",
+          "pronunciation": "민족"
+        }
+      ],
+      "tags": [
+        "meaning:people",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 46
+    },
+    {
+      "character": "語",
+      "meaning": "말씀 어",
+      "pronunciation": "어",
+      "stroke_count": 14,
+      "radical": "言",
+      "examples": [
+        {
+          "word": "言語",
+          "meaning": "언어",
+          "pronunciation": "언어"
+        },
+        {
+          "word": "韓國語",
+          "meaning": "한국어",
+          "pronunciation": "한국어"
+        }
+      ],
+      "tags": [
+        "meaning:communication",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 47
+    },
+    {
+      "character": "言",
+      "meaning": "말씀 언",
+      "pronunciation": "언",
+      "stroke_count": 7,
+      "radical": "言",
+      "examples": [
+        {
+          "word": "言語",
+          "meaning": "언어",
+          "pronunciation": "언어"
+        },
+        {
+          "word": "發言",
+          "meaning": "발언",
+          "pronunciation": "발언"
+        }
+      ],
+      "tags": [
+        "meaning:communication",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 48
+    },
+    {
+      "character": "文",
+      "meaning": "글월 문",
+      "pronunciation": "문",
+      "stroke_count": 4,
+      "radical": "文",
+      "examples": [
+        {
+          "word": "文化",
+          "meaning": "문화",
+          "pronunciation": "문화"
+        },
+        {
+          "word": "文字",
+          "meaning": "문자",
+          "pronunciation": "문자"
+        }
+      ],
+      "tags": [
+        "meaning:communication",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 49
+    },
+    {
+      "character": "化",
+      "meaning": "될 화",
+      "pronunciation": "화",
+      "stroke_count": 4,
+      "radical": "匕",
+      "examples": [
+        {
+          "word": "文化",
+          "meaning": "문화",
+          "pronunciation": "문화"
+        },
+        {
+          "word": "變化",
+          "meaning": "변화",
+          "pronunciation": "변화"
+        }
+      ],
+      "tags": [
+        "meaning:change",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 50
     }
   ]
 }
