@@ -20,6 +20,7 @@ export default function LearningPathSelector() {
       try {
         // 카테고리 로드
         const categoriesData = getCategories();
+        console.log('로드된 카테고리:', categoriesData); // 디버깅 로그 추가
         setCategories(categoriesData);
         
         if (categoriesData.length > 0) {

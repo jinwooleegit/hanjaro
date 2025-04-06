@@ -1,0 +1,143 @@
+{
+  "name": "대학교 1학년 한자",
+  "description": "대학교 1학년 과정에서 배우는 한자",
+  "category": "university",
+  "level": 1,
+  "characters": [
+    {
+      "character": "境",
+      "meaning": "경계 경",
+      "pronunciation": "경",
+      "stroke_count": 14,
+      "radical": "土",
+      "examples": [
+        {
+          "word": "環境",
+          "meaning": "환경",
+          "pronunciation": "환경"
+        },
+        {
+          "word": "境界",
+          "meaning": "경계",
+          "pronunciation": "경계"
+        }
+      ],
+      "tags": [
+        "meaning:place",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 1,
+      "order": 1
+    },
+    {
+      "character": "憂",
+      "meaning": "근심 우",
+      "pronunciation": "우",
+      "stroke_count": 15,
+      "radical": "心",
+      "examples": [
+        {
+          "word": "憂慮",
+          "meaning": "우려",
+          "pronunciation": "우려"
+        },
+        {
+          "word": "憂鬱",
+          "meaning": "우울",
+          "pronunciation": "우울"
+        }
+      ],
+      "tags": [
+        "meaning:emotion",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 1,
+      "order": 2
+    },
+    {
+      "character": "滅",
+      "meaning": "멸망할 멸",
+      "pronunciation": "멸",
+      "stroke_count": 13,
+      "radical": "水",
+      "examples": [
+        {
+          "word": "消滅",
+          "meaning": "소멸",
+          "pronunciation": "소멸"
+        },
+        {
+          "word": "滅亡",
+          "meaning": "멸망",
+          "pronunciation": "멸망"
+        }
+      ],
+      "tags": [
+        "meaning:action",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 1,
+      "order": 3
+    },
+    {
+      "character": "腫",
+      "meaning": "부을 종",
+      "pronunciation": "종",
+      "stroke_count": 13,
+      "radical": "月",
+      "examples": [
+        {
+          "word": "腫瘍",
+          "meaning": "종양",
+          "pronunciation": "종양"
+        },
+        {
+          "word": "浮腫",
+          "meaning": "부종",
+          "pronunciation": "부종"
+        }
+      ],
+      "tags": [
+        "meaning:body",
+        "difficulty:advanced",
+        "usage:medical",
+        "education:university"
+      ],
+      "level": 1,
+      "order": 4
+    },
+    {
+      "character": "儀",
+      "meaning": "거동 의",
+      "pronunciation": "의",
+      "stroke_count": 15,
+      "radical": "人",
+      "examples": [
+        {
+          "word": "儀式",
+          "meaning": "의식",
+          "pronunciation": "의식"
+        },
+        {
+          "word": "儀禮",
+          "meaning": "의례",
+          "pronunciation": "의례"
+        }
+      ],
+      "tags": [
+        "meaning:action",
+        "difficulty:advanced",
+        "usage:formal",
+        "education:university"
+      ],
+      "level": 1,
+      "order": 5
+    }
+  ]
+} 

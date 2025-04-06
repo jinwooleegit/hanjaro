@@ -38,6 +38,9 @@ const Header: React.FC = () => {
             <Link href="/dictionary" className="nav-link">
               한자사전
             </Link>
+            <Link href="/tags" className="nav-link">
+              태그검색
+            </Link>
           </nav>
 
           {/* User Actions */}
@@ -99,6 +102,9 @@ const Header: React.FC = () => {
                     </Link>
                     <Link href="/learn" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
                       학습 대시보드
+                    </Link>
+                    <Link href="/tags" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
+                      태그로 한자 찾기
                     </Link>
                     <Link href="/settings" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
                       설정
@@ -171,6 +177,9 @@ const Header: React.FC = () => {
             </Link>
             <Link href="/dictionary" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
               한자사전
+            </Link>
+            <Link href="/tags" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
+              태그로 한자 찾기
             </Link>
           </nav>
         )}

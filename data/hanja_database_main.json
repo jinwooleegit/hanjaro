@@ -383,13 +383,13 @@
             "level": 4,
             "order": 2
           },
-              {
-                "character": "學",
-                "meaning": "배울 학",
-                "pronunciation": "학",
-                "stroke_count": 16,
-                "radical": "子",
-                "examples": [
+          {
+            "character": "學",
+            "meaning": "배울 학",
+            "pronunciation": "학",
+            "stroke_count": 16,
+            "radical": "子",
+            "examples": [
               {
                 "word": "學校",
                 "meaning": "학교",
@@ -410,7 +410,7 @@
             "pronunciation": "생",
             "stroke_count": 5,
             "radical": "生",
-                "examples": [
+            "examples": [
               {
                 "word": "生日",
                 "meaning": "생일",
@@ -423,15 +423,15 @@
               }
             ],
             "level": 4,
-                "order": 4
-              },
-              {
+            "order": 4
+          },
+          {
             "character": "先",
             "meaning": "먼저 선",
             "pronunciation": "선",
             "stroke_count": 6,
             "radical": "儿",
-                "examples": [
+            "examples": [
               {
                 "word": "先生",
                 "meaning": "선생",
@@ -458,7 +458,7 @@
             "pronunciation": "공",
             "stroke_count": 5,
             "radical": "力",
-                "examples": [
+            "examples": [
               {
                 "word": "成功",
                 "meaning": "성공",
@@ -469,17 +469,17 @@
                 "meaning": "공적",
                 "pronunciation": "공적"
               }
-                ],
-                "level": 5,
+            ],
+            "level": 5,
             "order": 1
           },
           {
             "character": "績",
             "meaning": "길쌈할 적",
             "pronunciation": "적",
-                "stroke_count": 17,
+            "stroke_count": 17,
             "radical": "糸",
-                "examples": [
+            "examples": [
               {
                 "word": "功績",
                 "meaning": "공적",
@@ -490,17 +490,17 @@
                 "meaning": "성적",
                 "pronunciation": "성적"
               }
-                ],
-                "level": 5,
+            ],
+            "level": 5,
             "order": 2
           },
           {
             "character": "結",
             "meaning": "맺을 결",
             "pronunciation": "결",
-                "stroke_count": 12,
+            "stroke_count": 12,
             "radical": "糸",
-                "examples": [
+            "examples": [
               {
                 "word": "結果",
                 "meaning": "결과",
@@ -511,17 +511,17 @@
                 "meaning": "결론",
                 "pronunciation": "결론"
               }
-                ],
-                "level": 5,
+            ],
+            "level": 5,
             "order": 3
           },
           {
             "character": "果",
             "meaning": "열매 과",
             "pronunciation": "과",
-                "stroke_count": 8,
+            "stroke_count": 8,
             "radical": "木",
-                "examples": [
+            "examples": [
               {
                 "word": "結果",
                 "meaning": "결과",
@@ -532,17 +532,17 @@
                 "meaning": "과일",
                 "pronunciation": "과물"
               }
-                ],
-                "level": 5,
+            ],
+            "level": 5,
             "order": 4
           },
           {
             "character": "修",
             "meaning": "닦을 수",
             "pronunciation": "수",
-                "stroke_count": 10,
+            "stroke_count": 10,
             "radical": "彡",
-                "examples": [
+            "examples": [
               {
                 "word": "修理",
                 "meaning": "수리",
@@ -553,8 +553,8 @@
                 "meaning": "수정",
                 "pronunciation": "수정"
               }
-                ],
-                "level": 5,
+            ],
+            "level": 5,
             "order": 5
           }
         ]
@@ -567,9 +567,9 @@
             "character": "過",
             "meaning": "지날 과",
             "pronunciation": "과",
-                "stroke_count": 13,
+            "stroke_count": 13,
             "radical": "辵",
-                "examples": [
+            "examples": [
               {
                 "word": "通過",
                 "meaning": "통과",
@@ -590,7 +590,7 @@
             "pronunciation": "정",
             "stroke_count": 12,
             "radical": "禾",
-                "examples": [
+            "examples": [
               {
                 "word": "程度",
                 "meaning": "정도",
@@ -609,9 +609,9 @@
             "character": "度",
             "meaning": "법도 도",
             "pronunciation": "도",
-                "stroke_count": 9,
+            "stroke_count": 9,
             "radical": "广",
-                "examples": [
+            "examples": [
               {
                 "word": "程度",
                 "meaning": "정도",
@@ -630,9 +630,9 @@
             "character": "次",
             "meaning": "버금 차",
             "pronunciation": "차",
-                "stroke_count": 6,
+            "stroke_count": 6,
             "radical": "欠",
-                "examples": [
+            "examples": [
               {
                 "word": "次第",
                 "meaning": "차례",
@@ -666,6 +666,117 @@
               }
             ],
             "level": 6,
+            "order": 5
+          }
+        ]
+      },
+      "level7": {
+        "name": "7단계 (중학교 3학년 수준)",
+        "description": "중학교 3학년 과정에서 배우는 한자",
+        "characters": [
+          {
+            "character": "心",
+            "meaning": "마음 심",
+            "pronunciation": "심",
+            "stroke_count": 4,
+            "radical": "心",
+            "examples": [
+              {
+                "word": "心理",
+                "meaning": "심리",
+                "pronunciation": "심리"
+              },
+              {
+                "word": "中心",
+                "meaning": "중심",
+                "pronunciation": "중심"
+              }
+            ],
+            "level": 7,
+            "order": 1
+          },
+          {
+            "character": "手",
+            "meaning": "손 수",
+            "pronunciation": "수",
+            "stroke_count": 4,
+            "radical": "手",
+            "examples": [
+              {
+                "word": "手紙",
+                "meaning": "손편지",
+                "pronunciation": "수지"
+              },
+              {
+                "word": "手段",
+                "meaning": "수단",
+                "pronunciation": "수단"
+              }
+            ],
+            "level": 7,
+            "order": 2
+          },
+          {
+            "character": "口",
+            "meaning": "입 구",
+            "pronunciation": "구",
+            "stroke_count": 3,
+            "radical": "口",
+            "examples": [
+              {
+                "word": "口語",
+                "meaning": "구어",
+                "pronunciation": "구어"
+              },
+              {
+                "word": "入口",
+                "meaning": "입구",
+                "pronunciation": "입구"
+              }
+            ],
+            "level": 7,
+            "order": 3
+          },
+          {
+            "character": "目",
+            "meaning": "눈 목",
+            "pronunciation": "목",
+            "stroke_count": 5,
+            "radical": "目",
+            "examples": [
+              {
+                "word": "目的",
+                "meaning": "목적",
+                "pronunciation": "목적"
+              },
+              {
+                "word": "目標",
+                "meaning": "목표",
+                "pronunciation": "목표"
+              }
+            ],
+            "level": 7,
+            "order": 4
+          },
+          {
+            "character": "耳",
+            "meaning": "귀 이",
+            "pronunciation": "이",
+            "stroke_count": 6,
+            "radical": "耳",
+            "examples": [
+              {
+                "word": "耳鳴",
+                "meaning": "귀울림",
+                "pronunciation": "이명"
+              },
+              {
+                "word": "耳目",
+                "meaning": "귀와 눈",
+                "pronunciation": "이목"
+              }
+            ],
+            "level": 7,
             "order": 5
           }
         ]
@@ -895,6 +1006,457 @@
               }
             ],
             "level": 8,
+            "order": 5
+          }
+        ]
+      }
+    }
+  },
+  "university": {
+    "name": "대학생용 한자",
+    "description": "대학교 과정에서 배우는 전문 한자 모음",
+    "total_characters": 800,
+    "levels": {
+      "level1": {
+        "name": "대학 1단계 (인문학 기초)",
+        "description": "대학 인문학 과정에서 배우는 기초 한자",
+        "characters": [
+          {
+            "character": "論",
+            "meaning": "논할 론",
+            "pronunciation": "론",
+            "stroke_count": 15,
+            "radical": "言",
+            "examples": [
+              {
+                "word": "論文",
+                "meaning": "논문",
+                "pronunciation": "논문"
+              },
+              {
+                "word": "討論",
+                "meaning": "토론",
+                "pronunciation": "토론"
+              }
+            ],
+            "level": 1,
+            "order": 1
+          },
+          {
+            "character": "究",
+            "meaning": "연구할 구",
+            "pronunciation": "구",
+            "stroke_count": 7,
+            "radical": "穴",
+            "examples": [
+              {
+                "word": "研究",
+                "meaning": "연구",
+                "pronunciation": "연구"
+              },
+              {
+                "word": "究明",
+                "meaning": "구명",
+                "pronunciation": "구명"
+              }
+            ],
+            "level": 1,
+            "order": 2
+          },
+          {
+            "character": "博",
+            "meaning": "넓을 박",
+            "pronunciation": "박",
+            "stroke_count": 12,
+            "radical": "十",
+            "examples": [
+              {
+                "word": "博士",
+                "meaning": "박사",
+                "pronunciation": "박사"
+              },
+              {
+                "word": "博物館",
+                "meaning": "박물관",
+                "pronunciation": "박물관"
+              }
+            ],
+            "level": 1,
+            "order": 3
+          },
+          {
+            "character": "士",
+            "meaning": "선비 사",
+            "pronunciation": "사",
+            "stroke_count": 3,
+            "radical": "士",
+            "examples": [
+              {
+                "word": "博士",
+                "meaning": "박사",
+                "pronunciation": "박사"
+              },
+              {
+                "word": "士氣",
+                "meaning": "사기",
+                "pronunciation": "사기"
+              }
+            ],
+            "level": 1,
+            "order": 4
+          },
+          {
+            "character": "學",
+            "meaning": "배울 학",
+            "pronunciation": "학",
+            "stroke_count": 16,
+            "radical": "子",
+            "examples": [
+              {
+                "word": "大學",
+                "meaning": "대학",
+                "pronunciation": "대학"
+              },
+              {
+                "word": "學問",
+                "meaning": "학문",
+                "pronunciation": "학문"
+              }
+            ],
+            "level": 1,
+            "order": 5
+          }
+        ]
+      },
+      "level2": {
+        "name": "대학 2단계 (사회과학)",
+        "description": "대학 사회과학 과정에서 배우는 한자",
+        "characters": [
+          {
+            "character": "政",
+            "meaning": "정사 정",
+            "pronunciation": "정",
+            "stroke_count": 9,
+            "radical": "攴",
+            "examples": [
+              {
+                "word": "政治",
+                "meaning": "정치",
+                "pronunciation": "정치"
+              },
+              {
+                "word": "行政",
+                "meaning": "행정",
+                "pronunciation": "행정"
+              }
+            ],
+            "level": 2,
+            "order": 1
+          },
+          {
+            "character": "治",
+            "meaning": "다스릴 치",
+            "pronunciation": "치",
+            "stroke_count": 8,
+            "radical": "水",
+            "examples": [
+              {
+                "word": "政治",
+                "meaning": "정치",
+                "pronunciation": "정치"
+              },
+              {
+                "word": "治療",
+                "meaning": "치료",
+                "pronunciation": "치료"
+              }
+            ],
+            "level": 2,
+            "order": 2
+          },
+          {
+            "character": "經",
+            "meaning": "경륜 경",
+            "pronunciation": "경",
+            "stroke_count": 13,
+            "radical": "糸",
+            "examples": [
+              {
+                "word": "經濟",
+                "meaning": "경제",
+                "pronunciation": "경제"
+              },
+              {
+                "word": "經驗",
+                "meaning": "경험",
+                "pronunciation": "경험"
+              }
+            ],
+            "level": 2,
+            "order": 3
+          },
+          {
+            "character": "濟",
+            "meaning": "건널 제",
+            "pronunciation": "제",
+            "stroke_count": 17,
+            "radical": "水",
+            "examples": [
+              {
+                "word": "經濟",
+                "meaning": "경제",
+                "pronunciation": "경제"
+              },
+              {
+                "word": "救濟",
+                "meaning": "구제",
+                "pronunciation": "구제"
+              }
+            ],
+            "level": 2,
+            "order": 4
+          },
+          {
+            "character": "社",
+            "meaning": "모일 사",
+            "pronunciation": "사",
+            "stroke_count": 7,
+            "radical": "示",
+            "examples": [
+              {
+                "word": "社會",
+                "meaning": "사회",
+                "pronunciation": "사회"
+              },
+              {
+                "word": "會社",
+                "meaning": "회사",
+                "pronunciation": "회사"
+              }
+            ],
+            "level": 2,
+            "order": 5
+          }
+        ]
+      },
+      "level3": {
+        "name": "대학 3단계 (자연과학)",
+        "description": "대학 자연과학 과정에서 배우는 한자",
+        "characters": [
+          {
+            "character": "物",
+            "meaning": "물건 물",
+            "pronunciation": "물",
+            "stroke_count": 8,
+            "radical": "牛",
+            "examples": [
+              {
+                "word": "物理",
+                "meaning": "물리",
+                "pronunciation": "물리"
+              },
+              {
+                "word": "動物",
+                "meaning": "동물",
+                "pronunciation": "동물"
+              }
+            ],
+            "level": 3,
+            "order": 1
+          },
+          {
+            "character": "理",
+            "meaning": "다스릴 리",
+            "pronunciation": "리",
+            "stroke_count": 11,
+            "radical": "玉",
+            "examples": [
+              {
+                "word": "物理",
+                "meaning": "물리",
+                "pronunciation": "물리"
+              },
+              {
+                "word": "心理",
+                "meaning": "심리",
+                "pronunciation": "심리"
+              }
+            ],
+            "level": 3,
+            "order": 2
+          },
+          {
+            "character": "化",
+            "meaning": "될 화",
+            "pronunciation": "화",
+            "stroke_count": 4,
+            "radical": "匕",
+            "examples": [
+              {
+                "word": "化學",
+                "meaning": "화학",
+                "pronunciation": "화학"
+              },
+              {
+                "word": "變化",
+                "meaning": "변화",
+                "pronunciation": "변화"
+              }
+            ],
+            "level": 3,
+            "order": 3
+          },
+          {
+            "character": "工",
+            "meaning": "장인 공",
+            "pronunciation": "공",
+            "stroke_count": 3,
+            "radical": "工",
+            "examples": [
+              {
+                "word": "工學",
+                "meaning": "공학",
+                "pronunciation": "공학"
+              },
+              {
+                "word": "工夫",
+                "meaning": "공부",
+                "pronunciation": "공부"
+              }
+            ],
+            "level": 3,
+            "order": 4
+          },
+          {
+            "character": "生",
+            "meaning": "날 생",
+            "pronunciation": "생",
+            "stroke_count": 5,
+            "radical": "生",
+            "examples": [
+              {
+                "word": "生物",
+                "meaning": "생물",
+                "pronunciation": "생물"
+              },
+              {
+                "word": "生命",
+                "meaning": "생명",
+                "pronunciation": "생명"
+              }
+            ],
+            "level": 3,
+            "order": 5
+          }
+        ]
+      },
+      "level4": {
+        "name": "대학 4단계 (전문분야)",
+        "description": "대학 전문분야에서 배우는 한자",
+        "characters": [
+          {
+            "character": "醫",
+            "meaning": "의원 의",
+            "pronunciation": "의",
+            "stroke_count": 13,
+            "radical": "酉",
+            "examples": [
+              {
+                "word": "醫學",
+                "meaning": "의학",
+                "pronunciation": "의학"
+              },
+              {
+                "word": "醫師",
+                "meaning": "의사",
+                "pronunciation": "의사"
+              }
+            ],
+            "level": 4,
+            "order": 1
+          },
+          {
+            "character": "法",
+            "meaning": "법 법",
+            "pronunciation": "법",
+            "stroke_count": 8,
+            "radical": "水",
+            "examples": [
+              {
+                "word": "法律",
+                "meaning": "법률",
+                "pronunciation": "법률"
+              },
+              {
+                "word": "法學",
+                "meaning": "법학",
+                "pronunciation": "법학"
+              }
+            ],
+            "level": 4,
+            "order": 2
+          },
+          {
+            "character": "商",
+            "meaning": "상인 상",
+            "pronunciation": "상",
+            "stroke_count": 11,
+            "radical": "口",
+            "examples": [
+              {
+                "word": "商業",
+                "meaning": "상업",
+                "pronunciation": "상업"
+              },
+              {
+                "word": "商品",
+                "meaning": "상품",
+                "pronunciation": "상품"
+              }
+            ],
+            "level": 4,
+            "order": 3
+          },
+          {
+            "character": "農",
+            "meaning": "농사 농",
+            "pronunciation": "농",
+            "stroke_count": 13,
+            "radical": "辰",
+            "examples": [
+              {
+                "word": "農業",
+                "meaning": "농업",
+                "pronunciation": "농업"
+              },
+              {
+                "word": "農村",
+                "meaning": "농촌",
+                "pronunciation": "농촌"
+              }
+            ],
+            "level": 4,
+            "order": 4
+          },
+          {
+            "character": "藝",
+            "meaning": "재주 예",
+            "pronunciation": "예",
+            "stroke_count": 19,
+            "radical": "艸",
+            "examples": [
+              {
+                "word": "藝術",
+                "meaning": "예술",
+                "pronunciation": "예술"
+              },
+              {
+                "word": "文藝",
+                "meaning": "문예",
+                "pronunciation": "문예"
+              }
+            ],
+            "level": 4,
             "order": 5
           }
         ]

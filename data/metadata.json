@@ -53,6 +53,33 @@
           "total_characters": 5
         }
       }
+    },
+    "university": {
+      "name": "대학교 한자",
+      "description": "대학교 과정에서 배우는 심화 한자",
+      "total_characters": 800,
+      "levels": {
+        "level1": {
+          "name": "대학교 1학년 한자",
+          "description": "대학교 1학년 과정에서 배우는 한자",
+          "total_characters": 5
+        },
+        "level2": {
+          "name": "대학교 2학년 한자",
+          "description": "대학교 2학년 과정에서 배우는 한자",
+          "total_characters": 200
+        },
+        "level3": {
+          "name": "대학교 3학년 한자",
+          "description": "대학교 3학년 과정에서 배우는 한자",
+          "total_characters": 200
+        },
+        "level4": {
+          "name": "대학교 4학년 한자",
+          "description": "대학교 4학년 과정에서 배우는 한자",
+          "total_characters": 200
+        }
+      }
     }
   }
 }

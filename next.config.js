@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  distDir: '.next',
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -37,21 +38,33 @@ const nextConfig = {
       }
     });
     
-    // 대용량 JSON 파일 처리
+    // 문제 파일은 제외 처리
     config.module.rules.push({
-      test: /hanja_database_fixed_backup\.json$/,
-      loader: 'ignore-loader',
-      include: /data/,
+      test: /empty\.json$/,
+      type: 'javascript/auto',
+      use: ['ignore-loader']
     });
+    
+    // JSON 파일을 위한 경로 별칭 추가
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '/data': require('path').resolve('./data')
+    };
+    
+    // fs 및 path 모듈을 위한 폴리필 설정 추가
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+      path: false,
+    };
     
     return config;
   },
   output: 'standalone',
-  distDir: '.next-custom',
   experimental: {
     cpus: 1,
     workerThreads: false,
-    serverComponentsExternalPackages: ['mongoose'],
+    serverComponentsExternalPackages: ['mongoose', 'fs', 'path'],
     optimizeCss: true,
     optimizeServerReact: true,
   },

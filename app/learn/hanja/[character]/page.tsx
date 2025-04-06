@@ -1,13 +1,14 @@
 'use client';
 
 import { useEffect, useState, useCallback, useRef } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { getHanjaCharacter, loadHanjaCharacter } from '@/utils/hanjaUtils';
 import dynamic from 'next/dynamic';
 import Script from 'next/script';
 import { FaPlay, FaRedo, FaPencilAlt } from 'react-icons/fa';
 import HANJA_DATABASE from '../../../../data/hanja_database_main.json';
+import TAGS_DATA from '../../../../data/tags.json';
 
 // 기본 HanziWriterComponent를 사용 (더 안정적)
 const HanziWriterComponent = dynamic(
@@ -91,8 +92,28 @@ interface HanjaDatabase {
   advanced: HanjaCategory;
 }
 
+// 태그 관련 타입 정의
+interface Tag {
+  id: string;
+  name: string;
+  description: string;
+  examples: string[];
+}
+
+interface TagCategory {
+  id: string;
+  name: string;
+  description: string;
+  tags: Tag[];
+}
+
+interface TagsData {
+  tag_categories: TagCategory[];
+}
+
 // 데이터베이스 타입 지정
 const typedDatabase = HANJA_DATABASE as HanjaDatabase;
+const typedTagsData = TAGS_DATA as TagsData;
 
 type HanjaDetailProps = {
   params: {
@@ -123,6 +144,7 @@ async function getHanjaData(character: string): Promise<HanjaCharacter | null> {
 
 export default function HanjaDetailPage({ params }: HanjaDetailProps) {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const categoryId = searchParams?.get('category') || 'basic';
   const levelId = searchParams?.get('level') || 'level1';
   
@@ -131,35 +153,47 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
     try {
       // URL에서 한자 가져오기 - 디코딩 로직 개선
       const rawChar = params.character;
+      console.log('URL에서 추출한 원본 한자 파라미터:', rawChar);
       
       // 이미 디코딩된 경우 그대로 반환
       if (rawChar.length === 1) {
-        console.log('한자가 이미 디코딩됨:', rawChar);
+        console.log('한자가 이미 디코딩된 상태:', rawChar);
         return rawChar;
       }
       
       // 여러 번 인코딩된 경우를 처리
       let decodedChar = rawChar;
       try {
-        decodedChar = decodeURIComponent(rawChar);
-        // 여전히 긴 문자열이면 다시 디코딩 시도
-        if (decodedChar.length > 1 && decodedChar.includes('%')) {
+        // URI 디코딩 시도
+        while (decodedChar.includes('%')) {
+          const prevDecoded = decodedChar;
           decodedChar = decodeURIComponent(decodedChar);
+          console.log('디코딩 진행:', prevDecoded, '->', decodedChar);
+          
+          // 더 이상 변화가 없으면 중단
+          if (prevDecoded === decodedChar) break;
         }
       } catch (e) {
         console.error('URL 디코딩 오류:', e);
+        // 부분적으로 디코딩된 결과라도 사용
       }
       
       // 디코딩 후에도 길이가 1이 아니면 원본 반환
       if (decodedChar.length !== 1) {
-        console.warn('비정상 디코딩 결과:', decodedChar, '원본으로 대체');
-        return rawChar;
+        console.warn('비정상 디코딩 결과:', decodedChar, '(길이:', decodedChar.length, ') - 첫 글자만 사용');
+        // 한자는 한 글자이므로 첫 번째 글자만 사용
+        if (decodedChar.length > 1) {
+          decodedChar = decodedChar.charAt(0);
+        } else {
+          // 디코딩 실패 시 대체 문자 반환
+          return rawChar;
+        }
       }
       
-      console.log('한자 디코딩 성공:', decodedChar);
+      console.log('최종 한자 디코딩 결과:', decodedChar);
       return decodedChar;
     } catch (e) {
-      console.error('URL 디코딩 과정 오류:', e);
+      console.error('URL 디코딩 과정 중 치명적 오류:', e);
       return params.character; // 디코딩 실패 시 원본 사용
     }
   }, [params.character])();
@@ -173,10 +207,13 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
     async function fetchHanjaData() {
       setIsLoading(true);
       try {
+        console.log(`한자 데이터 로드 시작: "${character}"`);
+        
         // 비동기 로딩 방식 (새로운 방식)
-        const data = await loadHanjaCharacter(character);
+        let data = await loadHanjaCharacter(character);
         
         if (data) {
+          console.log(`한자 데이터 로드 성공: "${character}"`, data);
           // 데이터 확장
           const enhancedData: HanjaCharacter = {
             ...data,
@@ -191,10 +228,39 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
           setHanjaData(enhancedData);
         } else {
           // 기존 방식으로 폴백 (레거시 지원)
-          console.warn('비동기 로딩 실패, 동기 방식으로 시도:', character);
+          console.warn(`비동기 로딩 실패, 동기 방식으로 시도: "${character}"`);
+          
+          // 데이터베이스에서 직접 검색
+          for (const categoryKey of ['basic', 'advanced'] as const) {
+            const category = typedDatabase[categoryKey];
+            for (const levelKey in category.levels) {
+              const level = category.levels[levelKey];
+              const foundHanja = level.characters.find(h => h.character === character);
+              if (foundHanja) {
+                console.log(`한자 데이터베이스에서 직접 찾음: "${character}"`, foundHanja);
+                // 데이터 확장
+                const enhancedLegacyData: HanjaCharacter = {
+                  ...foundHanja,
+                  korean: foundHanja.meaning, // 한글 의미에 meaning 값 사용
+                  etymology: `'${foundHanja.character}' 한자는 ${foundHanja.radical} 부수에 속하며, 총 ${foundHanja.stroke_count}획으로 이루어져 있습니다.`, // 기본 어원 정보 생성
+                  examples: foundHanja.examples?.map(ex => ({
+                    ...ex,
+                    sentence: undefined // sentence 필드 추가 (기본값은 undefined)
+                  })) || []
+                };
+                
+                setHanjaData(enhancedLegacyData);
+                setIsLoading(false);
+                return;
+              }
+            }
+          }
+          
+          // 마지막으로 getHanjaCharacter 함수로 시도
           const legacyData = getHanjaCharacter(character);
           
           if (legacyData) {
+            console.log(`getHanjaCharacter로 데이터 찾음: "${character}"`, legacyData);
             // 데이터 확장
             const enhancedLegacyData: HanjaCharacter = {
               ...legacyData,
@@ -208,12 +274,12 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
             
             setHanjaData(enhancedLegacyData);
           } else {
-            console.error('한자 데이터 로드 실패:', character);
+            console.error(`모든 방법으로 한자 데이터 로드 실패: "${character}"`);
             setHanjaData(null);
           }
         }
       } catch (error) {
-        console.error('한자 데이터 로드 중 오류:', error);
+        console.error(`한자 데이터 로드 중 오류: "${character}"`, error);
         setHanjaData(null);
       } finally {
         setIsLoading(false);
@@ -613,6 +679,135 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
     }
   };
   
+  // 한자에 맞는 태그를 찾는 함수
+  const getMatchingTags = useCallback((character: string, tagCategories: TagCategory[]): Record<string, Tag[]> => {
+    const result: Record<string, Tag[]> = {};
+    
+    // 각 태그 카테고리를 순회하면서 한자가 해당하는 태그를 찾음
+    tagCategories.forEach(category => {
+      const matchedTags = category.tags.filter(tag => 
+        tag.examples.includes(character)
+      );
+      
+      // 매칭된 태그가 있으면 결과에 추가
+      if (matchedTags.length > 0) {
+        result[category.id] = matchedTags;
+      }
+    });
+    
+    // 메타데이터 기반으로 태그 매핑 (직접 매핑이 없을 경우)
+    // 부수 기반 태그 매핑
+    if (hanjaData && !result['radical'] && hanjaData.radical) {
+      const radicalCategory = tagCategories.find(cat => cat.id === 'radical');
+      if (radicalCategory) {
+        // 한자의 부수와 일치하는 태그 찾기
+        const radicalNameMatch = hanjaData.radical;
+        const matchingRadicalTags = radicalCategory.tags.filter(tag => 
+          tag.name.includes(radicalNameMatch) || radicalNameMatch.includes(tag.name)
+        );
+        
+        if (matchingRadicalTags.length > 0) {
+          result['radical'] = matchingRadicalTags;
+        }
+      }
+    }
+    
+    // 난이도 기반 태그 매핑
+    if (hanjaData && !result['difficulty'] && typeof hanjaData.stroke_count === 'number') {
+      const difficultyCategory = tagCategories.find(cat => cat.id === 'difficulty');
+      if (difficultyCategory) {
+        let difficultyTag: Tag | undefined;
+        
+        // 획수에 따른 난이도 분류
+        if (hanjaData.stroke_count <= 4) {
+          difficultyTag = difficultyCategory.tags.find(tag => tag.id === 'beginner');
+        } else if (hanjaData.stroke_count <= 9) {
+          difficultyTag = difficultyCategory.tags.find(tag => tag.id === 'intermediate');
+        } else {
+          difficultyTag = difficultyCategory.tags.find(tag => tag.id === 'advanced');
+        }
+        
+        if (difficultyTag) {
+          result['difficulty'] = [difficultyTag];
+        }
+      }
+    }
+    
+    // 의미 카테고리 매핑 - 한자의 의미 기반으로 추정
+    if (hanjaData && !result['meaning']) {
+      const meaningCategory = tagCategories.find(cat => cat.id === 'meaning');
+      if (meaningCategory && hanjaData.meaning) {
+        // 의미를 기반으로 카테고리 매핑 시도
+        const meaningKeywords: Record<string, string[]> = {
+          'nature': ['산', '물', '나무', '불', '흙', '돌', '강', '바다', '천', '지', '화', '목'],
+          'human': ['사람', '남자', '여자', '아이', '아버지', '어머니', '인', '남', '녀', '자', '부', '모'],
+          'body': ['눈', '귀', '입', '손', '발', '심장', '목', '이', '구', '수', '족', '심'],
+          'time': ['날', '달', '해', '시간', '분', '일', '월', '년', '시', '분', '초'],
+          'place': ['집', '방', '길', '문', '나라', '가', '실', '도', '문', '국'],
+          'number': ['하나', '둘', '셋', '넷', '다섯', '일', '이', '삼', '사', '오'],
+          'action': ['가다', '오다', '먹다', '보다', '듣다', '행', '래', '식', '견', '문'],
+          'attribute': ['크다', '작다', '길다', '짧다', '높다', '대', '소', '장', '단', '고'],
+          'color': ['빨강', '파랑', '노랑', '하양', '검정', '적', '청', '황', '백', '흑']
+        };
+        
+        // 한자의 의미와 일치하는 키워드가 있는 카테고리 찾기
+        const meaningText = hanjaData.meaning.toLowerCase();
+        const matchedMeaningTags: Tag[] = [];
+        
+        Object.entries(meaningKeywords).forEach(([categoryId, keywords]) => {
+          for (const keyword of keywords) {
+            if (meaningText.includes(keyword)) {
+              const tag = meaningCategory.tags.find(t => t.id === categoryId);
+              if (tag && !matchedMeaningTags.some(mt => mt.id === tag.id)) {
+                matchedMeaningTags.push(tag);
+                break;
+              }
+            }
+          }
+        });
+        
+        if (matchedMeaningTags.length > 0) {
+          result['meaning'] = matchedMeaningTags;
+        }
+      }
+    }
+    
+    // 교육 과정 매핑
+    if (!result['education'] && categoryId) {
+      const educationCategory = tagCategories.find(cat => cat.id === 'education');
+      if (educationCategory) {
+        let educationTag: Tag | undefined;
+        
+        if (categoryId === 'elementary' || categoryId === 'basic') {
+          educationTag = educationCategory.tags.find(tag => tag.id === 'elementary');
+        } else if (categoryId === 'middle') {
+          educationTag = educationCategory.tags.find(tag => tag.id === 'middle');
+        } else if (categoryId === 'high') {
+          educationTag = educationCategory.tags.find(tag => tag.id === 'high');
+        } else if (categoryId === 'advanced') {
+          educationTag = educationCategory.tags.find(tag => tag.id === 'university');
+        }
+        
+        if (educationTag) {
+          result['education'] = [educationTag];
+        }
+      }
+    }
+    
+    return result;
+  }, [categoryId, hanjaData]);
+  
+  // 한자에 맞는 태그 상태 관리
+  const [matchedTags, setMatchedTags] = useState<Record<string, Tag[]>>({});
+  
+  // 한자 데이터가 로드되면 태그 매칭 실행
+  useEffect(() => {
+    if (hanjaData && hanjaData.character) {
+      const tags = getMatchingTags(hanjaData.character, typedTagsData.tag_categories);
+      setMatchedTags(tags);
+    }
+  }, [hanjaData, getMatchingTags]);
+  
   // 한자 상세 페이지 반환 부분 - Script 태그 위치 조정
     return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
@@ -648,6 +843,43 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                 {hanjaData?.character} <span className="text-lg font-normal text-gray-600">({hanjaData?.meaning})</span>
               </h1>
               <p className="text-gray-600 mb-2">발음: {hanjaData?.pronunciation} | 획수: {hanjaData?.stroke_count}획 | 부수: {hanjaData?.radical}</p>
+              
+              {/* 분류 및 태그 정보 추가 */}
+              <div className="flex flex-wrap gap-2 mb-3">
+                {/* 학습 단계 표시 */}
+                <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                  {categoryId === 'elementary' ? '초등' : 
+                   categoryId === 'middle' ? '중등' : 
+                   categoryId === 'high' ? '고등' : 
+                   categoryId === 'basic' ? '기초' : 
+                   categoryId === 'advanced' ? '심화' : '일반'} 
+                  {levelId.replace('level', '')}단계
+                </div>
+                
+                {/* 한자 유형 태그 (획수 기반) */}
+                <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                  {hanjaData?.stroke_count <= 5 ? '기초 한자' : 
+                   hanjaData?.stroke_count <= 10 ? '일반 한자' : 
+                   hanjaData?.stroke_count <= 15 ? '중급 한자' : '고급 한자'}
+                </div>
+                
+                {/* 부수 태그 */}
+                <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                  {hanjaData?.radical}
+                </div>
+                
+                {/* 의미 태그 추가 */}
+                {matchedTags['meaning']?.map((tag, index) => (
+                  <div 
+                    key={`meaning-${index}`} 
+                    className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800"
+                    title={tag.description}
+                  >
+                    {tag.name}
+                  </div>
+                ))}
+              </div>
+              
               <div className="flex flex-wrap gap-2 mt-2">
                 <Link
                   href={`/learn?category=${categoryId}&level=${levelId}`}
@@ -655,14 +887,8 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                 >
                   ← 목록으로
                 </Link>
-                <Link
-                  href={`/practice/direct/${encodeURIComponent(character)}`}
-                  className="inline-flex items-center px-3 py-1.5 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm transition-colors"
-                >
-                  <FaPencilAlt className="mr-1" /> 필기 연습하기
-                </Link>
-          </div>
-        </div>
+              </div>
+            </div>
 
             <div className="mt-6 md:mt-0 flex flex-col items-center">
               <div className="text-9xl mb-2">{hanjaData?.character}</div>
@@ -740,8 +966,87 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                   <div className="bg-gray-50 rounded-lg p-4">
                     <p className="text-lg">{hanjaData?.meaning}</p>
                     <p className="text-gray-600 mt-2">한글 의미: {hanjaData?.korean}</p>
-              </div>
-            </div>
+                  </div>
+                </div>
+                
+                {/* 학습 분류 정보 추가 */}
+                <div>
+                  <h3 className="text-lg font-medium text-gray-800 mb-3">학습 분류</h3>
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <div className="flex flex-wrap gap-4">
+                      <div>
+                        <p className="text-sm text-gray-500 mb-1">학습 단계</p>
+                        <p className="font-medium">
+                          {categoryId === 'elementary' ? '초등학교' : 
+                           categoryId === 'middle' ? '중학교' : 
+                           categoryId === 'high' ? '고등학교' : 
+                           categoryId === 'basic' ? '기초 한자' : 
+                           categoryId === 'advanced' ? '심화 한자' : '일반'} {' '}
+                          {levelId.replace('level', '')}단계
+                        </p>
+                      </div>
+                      
+                      <div>
+                        <p className="text-sm text-gray-500 mb-1">난이도</p>
+                        <p className="font-medium">
+                          {hanjaData?.stroke_count <= 5 ? '쉬움' : 
+                           hanjaData?.stroke_count <= 10 ? '보통' : 
+                           hanjaData?.stroke_count <= 15 ? '어려움' : '매우 어려움'}
+                          <span className="text-sm text-gray-500 ml-1">
+                            (획수 {hanjaData?.stroke_count}획 기준)
+                          </span>
+                        </p>
+                      </div>
+                      
+                      <div>
+                        <p className="text-sm text-gray-500 mb-1">부수 계열</p>
+                        <p className="font-medium">{hanjaData?.radical}</p>
+                      </div>
+                    </div>
+                    
+                    {/* 의미 태그 섹션 추가 */}
+                    {Object.keys(matchedTags).length > 0 && (
+                      <div className="mt-4 pt-3 border-t border-blue-100">
+                        <p className="text-sm text-gray-500 mb-2">의미 분류</p>
+                        <div className="flex flex-wrap gap-2">
+                          {Object.entries(matchedTags).map(([categoryId, tags]) => (
+                            tags.map((tag, index) => (
+                              <div 
+                                key={`${categoryId}-${index}`}
+                                className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium 
+                                  ${categoryId === 'meaning' ? 'bg-purple-100 text-purple-800' : 
+                                   categoryId === 'radical' ? 'bg-yellow-100 text-yellow-800' : 
+                                   categoryId === 'difficulty' ? 'bg-green-100 text-green-800' : 
+                                   categoryId === 'education' ? 'bg-blue-100 text-blue-800' : 
+                                   categoryId === 'usage' ? 'bg-orange-100 text-orange-800' : 
+                                   'bg-gray-100 text-gray-800'}`}
+                                  title={tag.description}
+                              >
+                                {tag.name}
+                              </div>
+                            ))
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    
+                    <div className="mt-4 pt-3 border-t border-blue-100">
+                      <p className="text-sm text-blue-600">
+                        학습 경로: <Link href="/learn" className="underline hover:text-blue-800">학습 메인</Link> &gt; {' '}
+                        <Link href={`/learn?category=${categoryId}`} className="underline hover:text-blue-800">
+                          {categoryId === 'elementary' ? '초등학교' : 
+                           categoryId === 'middle' ? '중학교' : 
+                           categoryId === 'high' ? '고등학교' : 
+                           categoryId === 'basic' ? '기초 한자' : 
+                           categoryId === 'advanced' ? '심화 한자' : '일반'}
+                        </Link> &gt; {' '}
+                        <Link href={`/learn/level/${categoryId}-${levelId}`} className="underline hover:text-blue-800">
+                          {levelId.replace('level', '')}단계
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                </div>
             
                 <div>
                   <h3 className="text-lg font-medium text-gray-800 mb-3">관련 단어</h3>
@@ -762,15 +1067,48 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                     <p className="text-gray-700">
                       {hanjaData?.etymology || `'${hanjaData?.character}' 한자는 ${hanjaData?.radical} 부수에 속하며, 총 ${hanjaData?.stroke_count}획으로 이루어져 있습니다.`}
                     </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        )}
+            )}
 
             {/* 예문 탭 */}
             {activeTab === '예문' && (
               <div className="space-y-6">
                 <h3 className="text-lg font-medium text-gray-800 mb-3">예문</h3>
+                
+                {/* 학습 태그 정보 */}
+                <div className="bg-gray-50 rounded-lg p-3 mb-4">
+                  <div className="flex flex-wrap gap-2">
+                    <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                      {categoryId === 'elementary' ? '초등' : 
+                       categoryId === 'middle' ? '중등' : 
+                       categoryId === 'high' ? '고등' : 
+                       categoryId === 'basic' ? '기초' : 
+                       categoryId === 'advanced' ? '심화' : '일반'} {' '}
+                      {levelId.replace('level', '')}단계
+                    </div>
+                    <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                      {hanjaData?.stroke_count <= 5 ? '기초 한자' : 
+                       hanjaData?.stroke_count <= 10 ? '일반 한자' : 
+                       hanjaData?.stroke_count <= 15 ? '중급 한자' : '고급 한자'}
+                    </div>
+                    <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                      획수: {hanjaData?.stroke_count}획
+                    </div>
+                    
+                    {/* 의미 태그 표시 추가 */}
+                    {matchedTags['meaning']?.map((tag, index) => (
+                      <div 
+                        key={`meaning-example-${index}`} 
+                        className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800"
+                        title={tag.description}
+                      >
+                        {tag.name}
+                      </div>
+                    ))}
+                  </div>
+                </div>
                 
                 {hanjaData?.examples?.map((example, index) => (
                   <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 mb-4">
@@ -802,30 +1140,78 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
             <h3 className="text-lg font-medium text-gray-800 mb-4">함께 학습하면 좋은 한자</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[...Array(4)].map((_, i) => {
-                // 안전한 기본값 설정
-                const currentOrder = hanjaData?.order || 0;
-                const relatedIndex = currentOrder + i + 1; // 현재 한자보다 뒤의 한자를 추천
-                const relatedChar = getCategoryHanja(categoryId, levelId, relatedIndex);
-                
-                // relatedChar가 없거나 현재 한자와 같으면 렌더링하지 않음
-                if (!relatedChar || relatedChar.character === character) {
-                  return <div key={`empty-${i}`} className="bg-gray-50 rounded-lg border border-gray-200 p-4 flex flex-col items-center">
-                    <div className="text-gray-300 text-4xl mb-2">?</div>
-                    <div className="text-sm text-gray-400">추천 준비 중</div>
-                  </div>;
+                try {
+                  // 안전한 기본값 설정
+                  const currentOrder = typeof hanjaData?.order === 'number' ? hanjaData.order : 0;
+                  const relatedIndex = currentOrder + i + 1; // 현재 한자보다 뒤의 한자를 추천
+                  
+                  // 한자 데이터가 없거나 인덱스가 유효하지 않으면 대체 UI 표시
+                  if (!categoryId || !levelId) {
+                    return (
+                      <div key={`empty-${i}`} className="bg-gray-50 rounded-lg border border-gray-200 p-4 flex flex-col items-center">
+                        <div className="text-gray-300 text-4xl mb-2">?</div>
+                        <div className="text-sm text-gray-400">카테고리 정보 없음</div>
+                      </div>
+                    );
+                  }
+                  
+                  const relatedChar = getCategoryHanja(categoryId, levelId, relatedIndex);
+                  
+                  // relatedChar가 없거나 현재 한자와 같으면 대체 UI 표시
+                  if (!relatedChar || !relatedChar.character || relatedChar.character === character) {
+                    return (
+                      <div key={`empty-${i}`} className="bg-gray-50 rounded-lg border border-gray-200 p-4 flex flex-col items-center">
+                        <div className="text-gray-300 text-4xl mb-2">?</div>
+                        <div className="text-sm text-gray-400">추천 준비 중</div>
+                      </div>
+                    );
+                  }
+                  
+                  // 안전하게 URL 생성
+                  const safeChar = encodeURIComponent(relatedChar.character);
+                  const url = `/learn/hanja/${safeChar}?category=${categoryId}&level=${levelId}`;
+                  
+                  // 프로그래매틱 네비게이션 핸들러
+                  const handleNavigation = (e: React.MouseEvent) => {
+                    e.preventDefault();
+                    
+                    // 유효하지 않은 URL인 경우 이동 방지
+                    if (!safeChar || safeChar === 'undefined') {
+                      console.error('유효하지 않은 한자 URL 방지:', url);
+                      return;
+                    }
+                    
+                    try {
+                      // DOM에 의존하지 않는 프로그래매틱 라우팅 사용
+                      console.log(`한자 이동: ${relatedChar.character}`);
+                      // 소프트 네비게이션 대신 하드 네비게이션 사용
+                      window.location.href = url;
+                    } catch (err) {
+                      console.error('한자 이동 오류:', err);
+                    }
+                  };
+                  
+                  return (
+                    <button 
+                      key={`related-${i}-${relatedChar.character}`}
+                      onClick={handleNavigation}
+                      className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow flex flex-col items-center w-full"
+                    >
+                      <div className="text-4xl mb-2">{relatedChar.character}</div>
+                      <div className="text-sm text-gray-700">{relatedChar.meaning}</div>
+                      <div className="text-xs text-gray-500 mt-1">{relatedChar.pronunciation}</div>
+                    </button>
+                  );
+                } catch (error) {
+                  console.error(`관련 한자 렌더링 오류 (${i}):`, error);
+                  // 오류 발생 시 폴백 UI
+                  return (
+                    <div key={`error-${i}`} className="bg-gray-50 rounded-lg border border-gray-200 p-4 flex flex-col items-center">
+                      <div className="text-gray-300 text-4xl mb-2">!</div>
+                      <div className="text-sm text-gray-400">표시 오류</div>
+                    </div>
+                  );
                 }
-                
-                return (
-                  <Link
-                    key={`related-${i}-${relatedChar.character}`}
-                    href={`/learn/hanja/${encodeURIComponent(relatedChar.character)}?category=${categoryId}&level=${levelId}`}
-                    className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow flex flex-col items-center"
-                  >
-                    <div className="text-4xl mb-2">{relatedChar.character}</div>
-                    <div className="text-sm text-gray-700">{relatedChar.meaning}</div>
-                    <div className="text-xs text-gray-500 mt-1">{relatedChar.pronunciation}</div>
-                  </Link>
-                );
               })}
             </div>
           </div>

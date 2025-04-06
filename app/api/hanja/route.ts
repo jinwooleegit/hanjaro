@@ -281,14 +281,84 @@ const searchCharacters = (db: HanjaDatabase, term: string): HanjaCharacter[] => 
   return results;
 };
 
+// 개별 한자 가져오기
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
+  const character = searchParams.get('character');
   const levelParam = searchParams.get('level');
   const chunk = searchParams.get('chunk');
   const search = searchParams.get('search');
-
+  const page = Number(searchParams.get('page') || '1');
+  const itemsPerPage = Number(searchParams.get('limit') || '20');
+  
+  console.log(`한자 API 요청: character=${character}, level=${levelParam}, chunk=${chunk}, page=${page}, limit=${itemsPerPage}, search=${search}`);
+  
   try {
     const database = loadDatabase();
+    
+    // 특정 한자 요청 처리
+    if (character) {
+      console.log(`한자 검색: "${character}"`);
+      
+      // 모든 카테고리와 레벨에서 해당 한자 찾기
+      for (const categoryKey of ['basic', 'advanced'] as const) {
+        const category = database[categoryKey];
+        if (!category || !category.levels) continue;
+        
+        for (const levelKey in category.levels) {
+          const levelData = category.levels[levelKey];
+          
+          // 해당 레벨에 한자가 있는지 확인
+          if (levelData.characters && Array.isArray(levelData.characters)) {
+            const result = levelData.characters.find(char => char.character === character);
+            
+            if (result) {
+              console.log(`한자 찾음: "${character}" (카테고리: ${categoryKey}, 레벨: ${levelKey})`);
+              return NextResponse.json(result);
+            }
+          }
+        }
+      }
+      
+      // 기본 제공 한자 맵 - 데이터베이스에 없는 한자를 위한 폴백 (기존 코드 유지)
+      const basicHanjaMap: Record<string, HanjaCharacter> = {
+        '過': {
+          character: '過',
+          meaning: '지날 과, 지나다, 넘다',
+          pronunciation: '과',
+          stroke_count: 13,
+          radical: '辶',
+          examples: [
+            { word: '通過', meaning: '통과', pronunciation: '통과' },
+            { word: '經過', meaning: '경과', pronunciation: '경과' }
+          ],
+          level: 5,
+          order: 1
+        }
+        // 필요시 더 많은 기본 한자 추가
+      };
+      
+      // 기본 제공 한자 확인
+      const basicHanjaResult = basicHanjaMap[character];
+      if (basicHanjaResult) {
+        console.log(`기본 한자 맵에서 찾음: "${character}"`);
+        return NextResponse.json(basicHanjaResult);
+      }
+      
+      console.log(`한자를 찾을 수 없음: "${character}"`);
+      
+      // 한자를 찾지 못했을 때 기본 데이터 반환
+      return NextResponse.json({
+        character: character,
+        meaning: "의미를 찾을 수 없음",
+        pronunciation: "발음을 찾을 수 없음",
+        stroke_count: 0,
+        radical: "부수 정보 없음",
+        examples: [],
+        level: 0,
+        order: 0
+      }, { status: 404 });
+    }
     
     // 기본 요청 - 메타데이터만 반환
     if (!levelParam && !chunk && !search) {

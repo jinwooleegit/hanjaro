@@ -1,0 +1,183 @@
+{
+  "tag_categories": [
+    {
+      "id": "meaning",
+      "name": "의미 카테고리",
+      "description": "한자의 의미에 따른 분류",
+      "tags": [
+        {
+          "id": "nature",
+          "name": "자연",
+          "description": "자연 관련 한자(산, 물, 나무, 불, 흙 등)",
+          "examples": ["山", "水", "木", "火", "土", "石", "川"]
+        },
+        {
+          "id": "human",
+          "name": "인간",
+          "description": "사람과 관련된 한자(사람, 남자, 여자, 아이 등)",
+          "examples": ["人", "男", "女", "子", "父", "母"]
+        },
+        {
+          "id": "body",
+          "name": "신체",
+          "description": "신체 부위 관련 한자(눈, 귀, 입, 손, 발 등)",
+          "examples": ["目", "耳", "口", "手", "足", "心"]
+        },
+        {
+          "id": "time",
+          "name": "시간",
+          "description": "시간 관련 한자(날, 달, 해, 시간 등)",
+          "examples": ["日", "月", "年", "時", "分"]
+        },
+        {
+          "id": "place",
+          "name": "장소",
+          "description": "장소 관련 한자(집, 방, 길, 문 등)",
+          "examples": ["家", "室", "道", "門", "國"]
+        },
+        {
+          "id": "number",
+          "name": "숫자",
+          "description": "숫자 관련 한자(하나, 둘, 셋 등)",
+          "examples": ["一", "二", "三", "四", "五"]
+        },
+        {
+          "id": "action",
+          "name": "행동",
+          "description": "행동 관련 한자(가다, 오다, 먹다 등)",
+          "examples": ["行", "來", "食", "見", "聞"]
+        },
+        {
+          "id": "attribute",
+          "name": "속성",
+          "description": "속성 관련 한자(크다, 작다, 길다 등)",
+          "examples": ["大", "小", "長", "短", "高"]
+        },
+        {
+          "id": "color",
+          "name": "색상",
+          "description": "색상 관련 한자(빨강, 파랑, 노랑 등)",
+          "examples": ["赤", "靑", "黃", "白", "黑"]
+        }
+      ]
+    },
+    {
+      "id": "difficulty",
+      "name": "난이도",
+      "description": "한자의 학습 난이도에 따른 분류",
+      "tags": [
+        {
+          "id": "beginner",
+          "name": "초급",
+          "description": "획수가 적고 구조가 간단한 한자(1-4획)",
+          "examples": ["一", "二", "三", "人", "大"]
+        },
+        {
+          "id": "intermediate",
+          "name": "중급",
+          "description": "중간 정도의 복잡도를 가진 한자(5-9획)",
+          "examples": ["木", "水", "火", "金", "月"]
+        },
+        {
+          "id": "advanced",
+          "name": "고급",
+          "description": "획수가 많고 구조가 복잡한 한자(10획 이상)",
+          "examples": ["義", "聽", "鐵", "藥", "觀"]
+        }
+      ]
+    },
+    {
+      "id": "radical",
+      "name": "부수",
+      "description": "한자의 부수(radical)에 따른 분류",
+      "tags": [
+        {
+          "id": "person",
+          "name": "사람 인(人)",
+          "description": "사람 인(人) 부수 한자",
+          "examples": ["人", "休", "位", "仁", "他"]
+        },
+        {
+          "id": "heart",
+          "name": "마음 심(心)",
+          "description": "마음 심(心) 부수 한자",
+          "examples": ["心", "思", "忍", "愛", "恩"]
+        },
+        {
+          "id": "water",
+          "name": "물 수(水)",
+          "description": "물 수(水) 부수 한자",
+          "examples": ["水", "永", "泳", "海", "清"]
+        },
+        {
+          "id": "tree",
+          "name": "나무 목(木)",
+          "description": "나무 목(木) 부수 한자",
+          "examples": ["木", "林", "森", "果", "菜"]
+        },
+        {
+          "id": "speech",
+          "name": "말씀 언(言)",
+          "description": "말씀 언(言) 부수 한자",
+          "examples": ["言", "語", "説", "話", "記"]
+        }
+      ]
+    },
+    {
+      "id": "usage",
+      "name": "사용 빈도",
+      "description": "한자의 사용 빈도에 따른 분류",
+      "tags": [
+        {
+          "id": "common",
+          "name": "고빈도",
+          "description": "일상에서 매우 자주 사용되는 한자",
+          "examples": ["日", "月", "水", "人", "大"]
+        },
+        {
+          "id": "regular",
+          "name": "중빈도",
+          "description": "보통 수준으로 사용되는 한자",
+          "examples": ["家", "話", "學", "生", "見"]
+        },
+        {
+          "id": "rare",
+          "name": "저빈도",
+          "description": "전문 분야나 문학에서 주로 사용되는 한자",
+          "examples": ["鬱", "癸", "曰", "朦", "囑"]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "교육 과정",
+      "description": "한국 교육 과정에 따른 한자 분류",
+      "tags": [
+        {
+          "id": "elementary",
+          "name": "초등학교",
+          "description": "초등학교에서 배우는 기초 한자",
+          "examples": ["一", "二", "三", "山", "川"]
+        },
+        {
+          "id": "middle",
+          "name": "중학교",
+          "description": "중학교에서 배우는 한자",
+          "examples": ["學", "校", "先", "生", "門"]
+        },
+        {
+          "id": "high",
+          "name": "고등학교",
+          "description": "고등학교에서 배우는 심화 한자",
+          "examples": ["經", "濟", "政", "治", "文"]
+        },
+        {
+          "id": "university",
+          "name": "대학교",
+          "description": "대학 수준에서 배우는 전문 한자",
+          "examples": ["醫", "科", "工", "法", "商"]
+        }
+      ]
+    }
+  ]
+} 

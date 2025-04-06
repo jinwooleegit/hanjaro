@@ -1,5 +1,6 @@
 import basicCategory from '../../data/categories/basic.json';
 import advancedCategory from '../../data/categories/advanced.json';
+import universityCategory from '../../data/categories/university.json';
 import hanjaDatabase from '../../data/hanja_database.json';
 import metadata from '../../data/metadata.json';
 
@@ -14,6 +15,9 @@ import basicLevel6 from '../../data/basic/level6.json';
 // 고급 레벨 데이터를 사전에 로드
 import advancedLevel1 from '../../data/advanced/level1.json';
 import advancedLevel2 from '../../data/advanced/level2.json';
+
+// 대학교 레벨 데이터를 사전에 로드
+import universityLevel1 from '../../data/university/level1.json';
 
 // 점진적 로딩을 위한 배치 크기 설정
 const BATCH_SIZE = 20;
@@ -41,9 +45,13 @@ async function importJSON(path: string) {
     if (path === 'advanced/level1.json' || path === 'data/advanced/level1.json') return advancedLevel1;
     if (path === 'advanced/level2.json' || path === 'data/advanced/level2.json') return advancedLevel2;
     
+    // university 레벨 데이터
+    if (path === 'university/level1.json' || path === 'data/university/level1.json') return universityLevel1;
+    
     // 카테고리 데이터
     if (path === 'categories/basic.json' || path === 'data/categories/basic.json') return basicCategory;
     if (path === 'categories/advanced.json' || path === 'data/categories/advanced.json') return advancedCategory;
+    if (path === 'categories/university.json' || path === 'data/categories/university.json') return universityCategory;
     
     // 마지막 대안: 캐시된 데이터 확인
     const pathParts = path.split('/');
@@ -164,7 +172,8 @@ interface LevelDataMap {
 
 const categoryData: CategoryDataMap = {
   'basic': basicCategory,
-  'advanced': advancedCategory
+  'advanced': advancedCategory,
+  'university': universityCategory
 };
 
 // 샘플 데이터 맵 - 빠른 초기 로딩용
@@ -180,6 +189,9 @@ const sampleLevelData: LevelDataMap = {
   'advanced': {
     'level1': advancedLevel1,
     'level2': advancedLevel2
+  },
+  'university': {
+    'level1': universityLevel1
   }
 };
 
@@ -196,6 +208,9 @@ const fullDataPaths: {[key: string]: {[key: string]: string}} = {
   'advanced': {
     'level1': 'data/advanced/level1.json',
     'level2': 'data/advanced/level2.json'
+  },
+  'university': {
+    'level1': 'data/university/level1.json'
   }
 };
 
@@ -205,6 +220,8 @@ const getCategoryFromLevel = (level: string): string => {
     return 'basic';
   } else if (level.startsWith('advanced-')) {
     return 'advanced';
+  } else if (level.startsWith('university-')) {
+    return 'university';
   }
   return 'basic'; // 기본값
 };
@@ -322,7 +339,7 @@ export const loadFullLevelDataInBackground = async (category: string, levelId: s
     console.log(`캐시에서 데이터 로드: ${category}/${normalizedLevelId}`);
     return cache.levels[category][normalizedLevelId];
   }
-  
+
   try {
     // 카테고리와 레벨에 따라 정적 데이터 직접 할당
     let data: HanjaLevel | null = null;
@@ -338,6 +355,8 @@ export const loadFullLevelDataInBackground = async (category: string, levelId: s
     } else if (category === 'advanced') {
       if (normalizedLevelId === 'level1') data = advancedLevel1 as HanjaLevel;
       else if (normalizedLevelId === 'level2') data = advancedLevel2 as HanjaLevel;
+    } else if (category === 'university') {
+      if (normalizedLevelId === 'level1') data = universityLevel1 as HanjaLevel;
     }
     
     // 정적 할당으로 데이터를 찾지 못한 경우
@@ -378,7 +397,7 @@ export const loadFullLevelDataInBackground = async (category: string, levelId: s
     console.log(`전체 한자 데이터 로드 완료: ${category}/${normalizedLevelId} (${data.characters.length}개 한자)`);
     return data;
   } catch (error) {
-    console.error(`레벨 데이터 로드 실패 ${category}/${normalizedLevelId}:`, error);
+    console.error(`전체 레벨 데이터 로드 오류: ${category}/${normalizedLevelId}`, error);
     return null;
   }
 };
@@ -481,6 +500,12 @@ export const getTotalCharacterCount = (category: string, level: string): number 
       if (normalizedLevel === 'level1') return 50; // 고급 레벨 기본값
       if (normalizedLevel === 'level2') return 50; // 고급 레벨 기본값
       return 50; // 기타 고급 레벨
+    } else if (normalizedCategory === 'university') {
+      if (normalizedLevel === 'level1') return 200; // 대학교 레벨 기본값
+      if (normalizedLevel === 'level2') return 200; // 대학교 레벨 기본값
+      if (normalizedLevel === 'level3') return 200; // 대학교 레벨 기본값
+      if (normalizedLevel === 'level4') return 200; // 대학교 레벨 기본값
+      return 200; // 기타 대학교 레벨
     }
     
     // 메타데이터에 지정된 값이 있고 5보다 크면 해당 값 사용, 아니면 기본값 50 사용

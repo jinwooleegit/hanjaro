@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
-export default function Practice() {
+export default function WritingPractice() {
   const router = useRouter();
 
   useEffect(() => {
