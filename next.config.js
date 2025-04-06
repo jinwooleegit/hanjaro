@@ -18,10 +18,29 @@ const nextConfig = {
       config.cache = false;
     }
     
-    // Add a rule to exclude large JSON files from bundling
+    // JSON 파일 처리 규칙 업데이트
+    config.module.rules.push({
+      test: /\.json$/,
+      include: [
+        /data\/advanced/,
+        /data\/basic/,
+        /data\/categories/,
+        /data\/stroke_data/,
+        /data\/strokes/
+      ],
+      type: 'javascript/auto',
+      resolve: {
+        fallback: {
+          fs: false,
+          path: false
+        }
+      }
+    });
+    
+    // 대용량 JSON 파일 처리
     config.module.rules.push({
       test: /hanja_database_fixed_backup\.json$/,
-      loader: 'ignore-loader', // Change to ignore-loader
+      loader: 'ignore-loader',
       include: /data/,
     });
     
@@ -35,8 +54,6 @@ const nextConfig = {
     serverComponentsExternalPackages: ['mongoose'],
     optimizeCss: true,
     optimizeServerReact: true,
-    isrMemoryCacheSize: 0,
-    swcFileReading: false,
   },
   generateEtags: false,
   swcMinify: true,

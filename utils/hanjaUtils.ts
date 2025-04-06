@@ -259,4 +259,8 @@ export function searchCharacters(query: string): HanjaCharacter[] {
     console.error(`검색어 '${query}' 검색 오류:`, e);
     return [];
   }
-} 
+}
+
+// src/utils/hanjaUtils.ts로 리다이렉트하는 파일입니다.
+// 이 파일은 이전 버전 호환성을 위해 유지됩니다.
+export * from '../src/utils/hanjaUtils'; 

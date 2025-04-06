@@ -41,6 +41,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "ignore-loader": "^0.1.2"
   }
 }

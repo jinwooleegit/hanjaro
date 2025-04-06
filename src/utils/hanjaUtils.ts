@@ -1,10 +1,25 @@
+import basicCategory from '../../data/categories/basic.json';
+import advancedCategory from '../../data/categories/advanced.json';
 import hanjaDatabase from '../../data/hanja_database.json';
 import metadata from '../../data/metadata.json';
 
-// 다이나믹 임포트 함수
+// 기본 레벨 데이터를 사전에 로드
+import basicLevel1 from '../../data/basic/level1.json';
+import basicLevel2 from '../../data/basic/level2.json';
+import basicLevel3 from '../../data/basic/level3.json';
+import basicLevel4 from '../../data/basic/level4.json';
+import basicLevel5 from '../../data/basic/level5.json';
+import basicLevel6 from '../../data/basic/level6.json';
+
+// 고급 레벨 데이터를 사전에 로드
+import advancedLevel1 from '../../data/advanced/level1.json';
+import advancedLevel2 from '../../data/advanced/level2.json';
+
+// 다이나믹 임포트 함수 - 레거시 지원용 (사용하지 않음)
 async function importJSON(path: string) {
   try {
-    return await import(path);
+    console.warn('importJSON 함수는 더 이상 사용되지 않습니다. 정적 임포트를 사용하세요.');
+    return null;
   } catch (error) {
     console.error(`파일 로드 오류: ${path}`, error);
     return null;
@@ -81,6 +96,52 @@ export const getHanjaMetadata = (): HanjaMetadata => {
   return metadata as HanjaMetadata;
 };
 
+// 사전 로드된 데이터를 사용하는 맵 생성
+interface CategoryDataMap {
+  [key: string]: {
+    name: string;
+    description: string;
+    total_characters: number;
+    levels: {
+      [key: string]: {
+        name: string;
+        description: string;
+        total_characters: number;
+      }
+    }
+  }
+}
+
+interface LevelDataMap {
+  [key: string]: {
+    [key: string]: {
+      name: string;
+      description: string;
+      characters: HanjaCharacter[];
+    }
+  }
+}
+
+const categoryData: CategoryDataMap = {
+  'basic': basicCategory,
+  'advanced': advancedCategory
+};
+
+const levelData: LevelDataMap = {
+  'basic': {
+    'level1': basicLevel1,
+    'level2': basicLevel2,
+    'level3': basicLevel3,
+    'level4': basicLevel4,
+    'level5': basicLevel5,
+    'level6': basicLevel6
+  },
+  'advanced': {
+    'level1': advancedLevel1,
+    'level2': advancedLevel2
+  }
+};
+
 // 카테고리 로드 (캐싱 적용)
 export const loadHanjaCategory = async (category: string): Promise<HanjaCategory | null> => {
   // 캐시에 있으면 캐시에서 반환
@@ -89,11 +150,35 @@ export const loadHanjaCategory = async (category: string): Promise<HanjaCategory
   }
 
   try {
-    const categoryData = await import(`../../data/categories/${category}.json`);
+    if (!categoryData[category]) {
+      console.error(`지원되지 않는 카테고리: ${category}`);
+      return null;
+    }
+    
+    // 타입 변환: 메타데이터 형식을 HanjaCategory 타입으로 변환
+    const data = categoryData[category];
+    const convertedData: HanjaCategory = {
+      name: data.name,
+      description: data.description,
+      total_characters: data.total_characters || 0,
+      levels: {} // 빈 객체로 초기화
+    };
+    
+    // 레벨 데이터 변환
+    if (data.levels) {
+      Object.entries(data.levels).forEach(([levelKey, levelValue]: [string, any]) => {
+        // levelValue를 HanjaLevel 타입으로 변환
+        convertedData.levels[levelKey] = {
+          name: levelValue.name,
+          description: levelValue.description,
+          characters: [] // 기본값으로 빈 배열 설정
+        };
+      });
+    }
     
     // 캐시에 저장
-    cache.categories[category] = categoryData.default;
-    return categoryData.default;
+    cache.categories[category] = convertedData;
+    return convertedData;
   } catch (error) {
     console.error(`카테고리 로드 오류: ${category}`, error);
     return null;
@@ -108,7 +193,17 @@ export const loadHanjaLevel = async (category: string, level: string): Promise<H
   }
 
   try {
-    const levelData = await import(`../../data/${category}/${level}.json`);
+    if (!levelData[category] || !levelData[category][level]) {
+      console.error(`지원되지 않는 레벨: ${category}/${level}`);
+      return null;
+    }
+    
+    // 타입에 맞게 데이터 변환
+    const data = levelData[category][level];
+    const processedData = {
+      ...data,
+      characters: data.characters || []
+    };
     
     // 캐시 초기화
     if (!cache.levels[category]) {
@@ -116,8 +211,8 @@ export const loadHanjaLevel = async (category: string, level: string): Promise<H
     }
     
     // 캐시에 저장
-    cache.levels[category][level] = levelData.default;
-    return levelData.default;
+    cache.levels[category][level] = processedData;
+    return processedData;
   } catch (error) {
     console.error(`레벨 로드 오류: ${category}/${level}`, error);
     return null;

@@ -30,4 +30,11 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts 
+next-env.d.ts
+
+# 빌드 결과물
+.next
+.next-custom/
+
+# 백업 파일
+*.bak 
