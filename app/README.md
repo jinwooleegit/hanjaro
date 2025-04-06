@@ -1,5 +1,11 @@
 # 한자로 애플리케이션 - 기능 요약 및 개선 사항
 
+## 데모 및 배포
+
+실제 작동하는 웹 애플리케이션은 다음 링크에서 확인하실 수 있습니다:
+- **라이브 데모**: [https://hanjaro.vercel.app](https://hanjaro.vercel.app)
+- **GitHub 저장소**: [https://github.com/jinwooleegit/hanjaro](https://github.com/jinwooleegit/hanjaro)
+
 ## 최근 개선사항 (2024년 4월)
 
 ### 1. 한자 학습 기능 개선
