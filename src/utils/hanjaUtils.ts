@@ -28,40 +28,35 @@ async function importJSON(path: string) {
       path = path.substring(2); // './'를 제거
     }
     
-    // fs 모듈 사용을 제거하고 import 방식으로만 처리
-    // Vercel 환경에서는 fs 모듈 사용이 불가능합니다
+    // 정확한 경로 매칭을 통한 정적 데이터 반환
+    // basic 레벨 데이터
+    if (path === 'basic/level1.json' || path === 'data/basic/level1.json') return basicLevel1;
+    if (path === 'basic/level2.json' || path === 'data/basic/level2.json') return basicLevel2;
+    if (path === 'basic/level3.json' || path === 'data/basic/level3.json') return basicLevel3;
+    if (path === 'basic/level4.json' || path === 'data/basic/level4.json') return basicLevel4;
+    if (path === 'basic/level5.json' || path === 'data/basic/level5.json') return basicLevel5;
+    if (path === 'basic/level6.json' || path === 'data/basic/level6.json') return basicLevel6;
     
-    // 서버/클라이언트 모두 동작하는 방식: import 사용
-    try {
-      console.log(`import 시도: 'data/${path}'`);
-      const module = await import(`../../data/${path}`);
-      console.log(`성공적으로 로드됨 (import): ../../data/${path}`);
-      return module.default;
-    } catch (importError) {
-      console.error(`임포트 실패: ../../data/${path}`, importError);
-      
-      // 기본 카테고리 시도
-      if (!path.includes('/') && !path.startsWith('basic/')) {
-        try {
-          console.log(`basic 폴더 import 시도: ../../data/basic/${path}`);
-          const module = await import(`../../data/basic/${path}`);
-          console.log(`성공적으로 로드됨 (import basic): ../../data/basic/${path}`);
-          return module.default;
-        } catch (basicError) {
-          console.error(`basic 임포트 실패: ../../data/basic/${path}`, basicError);
-        }
-      }
-      
-      // 마지막 대안: 캐시된 데이터 확인
-      const category = path.split('/')[0];
-      const level = path.split('/')[1]?.replace('.json', '');
-      
-      if (category && level && sampleLevelData[category]?.[level]) {
-        console.log(`캐시된 샘플 데이터 사용: ${category}/${level}`);
-        return sampleLevelData[category][level];
-      }
+    // advanced 레벨 데이터
+    if (path === 'advanced/level1.json' || path === 'data/advanced/level1.json') return advancedLevel1;
+    if (path === 'advanced/level2.json' || path === 'data/advanced/level2.json') return advancedLevel2;
+    
+    // 카테고리 데이터
+    if (path === 'categories/basic.json' || path === 'data/categories/basic.json') return basicCategory;
+    if (path === 'categories/advanced.json' || path === 'data/categories/advanced.json') return advancedCategory;
+    
+    // 마지막 대안: 캐시된 데이터 확인
+    const pathParts = path.split('/');
+    const fileName = pathParts[pathParts.length - 1];
+    const category = pathParts[pathParts.length - 2] || pathParts[0];
+    const level = fileName.replace('.json', '');
+    
+    if (category && level && sampleLevelData[category]?.[level]) {
+      console.log(`캐시된 샘플 데이터 사용: ${category}/${level}`);
+      return sampleLevelData[category][level];
     }
     
+    console.error(`지원되지 않는 파일 경로: ${path}`);
     return null;
   } catch (error) {
     console.error(`최종 파일 로드 오류: ${path}`, error);
@@ -329,76 +324,40 @@ export const loadFullLevelDataInBackground = async (category: string, levelId: s
   }
   
   try {
-    // 데이터 경로 가져오기
-    const dataPath = fullDataPaths[category]?.[normalizedLevelId];
-    if (!dataPath) {
-      console.error(`유효하지 않은 레벨: ${category}/${normalizedLevelId}`);
-      return null;
+    // 카테고리와 레벨에 따라 정적 데이터 직접 할당
+    let data: HanjaLevel | null = null;
+    
+    // 정적으로 로드된 레벨 데이터 사용
+    if (category === 'basic') {
+      if (normalizedLevelId === 'level1') data = basicLevel1 as HanjaLevel;
+      else if (normalizedLevelId === 'level2') data = basicLevel2 as HanjaLevel;
+      else if (normalizedLevelId === 'level3') data = basicLevel3 as HanjaLevel;
+      else if (normalizedLevelId === 'level4') data = basicLevel4 as HanjaLevel;
+      else if (normalizedLevelId === 'level5') data = basicLevel5 as HanjaLevel;
+      else if (normalizedLevelId === 'level6') data = basicLevel6 as HanjaLevel;
+    } else if (category === 'advanced') {
+      if (normalizedLevelId === 'level1') data = advancedLevel1 as HanjaLevel;
+      else if (normalizedLevelId === 'level2') data = advancedLevel2 as HanjaLevel;
     }
     
-    // JSON 파일 비동기 로드
-    console.log(`JSON 로드 시도: ${dataPath}`);
-    let data = await importJSON(dataPath);
-    
+    // 정적 할당으로 데이터를 찾지 못한 경우
     if (!data) {
-      console.error(`${category}/${normalizedLevelId}의 전체 한자 데이터를 찾을 수 없습니다. 다른 경로에서 시도합니다.`);
+      console.log(`정적 데이터에서 ${category}/${normalizedLevelId}를 찾을 수 없습니다. 샘플 데이터 확인 중...`);
       
-      // 다른 경로 형식도 시도
-      const alternativePath = `basic/${normalizedLevelId}.json`;
-      console.log(`대체 경로 시도: ${alternativePath}`);
-      data = await importJSON(alternativePath);
-      
-      if (!data) {
-        console.error(`대체 경로에서도 ${category}/${normalizedLevelId} 데이터를 찾을 수 없습니다. 메인 데이터베이스에서 시도합니다.`);
-        
-        // 메인 데이터베이스에서 시도
-        const mainData = await getHanjaDatabase();
-        if (mainData && mainData[category]?.levels[normalizedLevelId]) {
-          console.log(`전체 한자 데이터 로드 완료(fallback): ${category}/${normalizedLevelId} (${mainData[category].levels[normalizedLevelId].characters.length}개 한자)`);
-          
-          // 캐시에 저장
-          if (!cache.levels[category]) {
-            cache.levels[category] = {};
-          }
-          cache.levels[category][normalizedLevelId] = mainData[category].levels[normalizedLevelId];
-          
-          // 부분 로딩 상태 업데이트
-          if (!cache.levelPartial[category]) {
-            cache.levelPartial[category] = {};
-          }
-          cache.levelPartial[category][normalizedLevelId] = { 
-            loaded: true, 
-            offset: mainData[category].levels[normalizedLevelId].characters.length 
-          };
-          
-          return mainData[category].levels[normalizedLevelId];
-        }
-        
-        // 샘플 데이터 시도
-        if (sampleLevelData[category] && sampleLevelData[category][normalizedLevelId]) {
-          console.log(`전체 한자 데이터 로드 완료(샘플): ${category}/${normalizedLevelId} (${sampleLevelData[category][normalizedLevelId].characters.length}개 한자)`);
-          
-          // 캐시에 저장
-          if (!cache.levels[category]) {
-            cache.levels[category] = {};
-          }
-          cache.levels[category][normalizedLevelId] = sampleLevelData[category][normalizedLevelId];
-          
-          // 부분 로딩 상태 업데이트
-          if (!cache.levelPartial[category]) {
-            cache.levelPartial[category] = {};
-          }
-          cache.levelPartial[category][normalizedLevelId] = { 
-            loaded: true, 
-            offset: sampleLevelData[category][normalizedLevelId].characters.length 
-          };
-          
-          return sampleLevelData[category][normalizedLevelId];
-        }
-        
-        console.error(`모든 소스에서 ${category}/${normalizedLevelId} 데이터를 찾을 수 없습니다.`);
+      // 샘플 데이터 확인
+      if (sampleLevelData[category] && sampleLevelData[category][normalizedLevelId]) {
+        console.log(`샘플 데이터에서 ${category}/${normalizedLevelId} 발견`);
+        data = sampleLevelData[category][normalizedLevelId] as HanjaLevel;
+      } else {
+        console.error(`${category}/${normalizedLevelId}를 위한 데이터를 찾을 수 없습니다.`);
         return null;
       }
+    }
+    
+    // 데이터 검증
+    if (!data || !data.characters || !Array.isArray(data.characters)) {
+      console.error(`데이터 구조 오류: ${category}/${normalizedLevelId}`);
+      return null;
     }
     
     // 캐시에 저장
