@@ -587,7 +587,13 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
   const getCategoryHanja = (categoryId: string, levelId: string, index: number): HanjaCharacter | undefined => {
     try {
       // categoryId를 basic 또는 advanced로 변환
-      const category = categoryId === 'basic' ? typedDatabase.basic : typedDatabase.advanced;
+      if (!typedDatabase) return undefined;
+      
+      const category = categoryId === 'basic' ? typedDatabase.basic : 
+                       categoryId === 'advanced' ? typedDatabase.advanced : undefined;
+      
+      // 카테고리가 없으면 undefined 반환
+      if (!category) return undefined;
       
       // 레벨 찾기
       const level = category.levels[levelId];
@@ -796,14 +802,22 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
             <h3 className="text-lg font-medium text-gray-800 mb-4">함께 학습하면 좋은 한자</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[...Array(4)].map((_, i) => {
-                const relatedIndex = (hanjaData?.order || 1) + i;
+                // 안전한 기본값 설정
+                const currentOrder = hanjaData?.order || 0;
+                const relatedIndex = currentOrder + i + 1; // 현재 한자보다 뒤의 한자를 추천
                 const relatedChar = getCategoryHanja(categoryId, levelId, relatedIndex);
                 
-                if (!relatedChar || relatedChar.character === character) return null;
+                // relatedChar가 없거나 현재 한자와 같으면 렌더링하지 않음
+                if (!relatedChar || relatedChar.character === character) {
+                  return <div key={`empty-${i}`} className="bg-gray-50 rounded-lg border border-gray-200 p-4 flex flex-col items-center">
+                    <div className="text-gray-300 text-4xl mb-2">?</div>
+                    <div className="text-sm text-gray-400">추천 준비 중</div>
+                  </div>;
+                }
                 
                 return (
                   <Link
-                    key={i}
+                    key={`related-${i}-${relatedChar.character}`}
                     href={`/learn/hanja/${encodeURIComponent(relatedChar.character)}?category=${categoryId}&level=${levelId}`}
                     className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow flex flex-col items-center"
                   >
