@@ -178,6 +178,47 @@ const levelData = [
         textColor: 'text-purple-800'
       }
     ]
+  },
+  {
+    grade: '대학교',
+    levels: [
+      {
+        level: '대학 1단계',
+        description: '심화 한자 5글자',
+        characters: ['境', '憂', '滅', '腫', '儀'],
+        levelPath: 'university-level1',
+        bgColor: 'bg-gradient-to-br from-pink-50 to-pink-100',
+        borderColor: 'border-pink-200',
+        textColor: 'text-pink-800'
+      },
+      {
+        level: '대학 2단계',
+        description: '심화 한자 5글자',
+        characters: ['鑑', '競', '徹', '醫', '薦'],
+        levelPath: 'university-level2',
+        bgColor: 'bg-gradient-to-br from-pink-50 to-pink-100',
+        borderColor: 'border-pink-200',
+        textColor: 'text-pink-800'
+      },
+      {
+        level: '대학 3단계',
+        description: '심화 한자 5글자',
+        characters: ['操', '燦', '穩', '購', '舊'],
+        levelPath: 'university-level3',
+        bgColor: 'bg-gradient-to-br from-pink-50 to-pink-100',
+        borderColor: 'border-pink-200',
+        textColor: 'text-pink-800'
+      },
+      {
+        level: '대학 4단계',
+        description: '심화 한자 5글자',
+        characters: ['黨', '權', '警', '護', '續'],
+        levelPath: 'university-level4',
+        bgColor: 'bg-gradient-to-br from-pink-50 to-pink-100',
+        borderColor: 'border-pink-200',
+        textColor: 'text-pink-800'
+      }
+    ]
   }
 ];
 
@@ -201,6 +242,19 @@ export default async function Home() {
   
   // 태그 구름용 데이터 가져오기
   const tagCloudData = getTagsForCloud();
+  
+  // 오늘의 랜덤 한자 선택
+  const allCharacters = levelData.flatMap(grade => 
+    grade.levels.flatMap(level => level.characters)
+  );
+  
+  // 랜덤으로 5개 선택
+  const getRandomChars = (arr: string[], count: number) => {
+    const shuffled = [...arr].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+  };
+  
+  const randomChars = getRandomChars(allCharacters, 5);
   
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
@@ -233,6 +287,46 @@ export default async function Home() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* 오늘의 추천 한자 섹션 */}
+      <div className="bg-white py-12 px-4 border-b border-gray-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-slate-800">오늘의 추천 한자</h2>
+            <p className="text-lg text-slate-600 mt-2">매일 다른 한자를 통해 새로운 단어를 배워보세요</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            {randomChars.map((char, idx) => {
+              // 한자가 속한 레벨 찾기
+              let foundLevel = '';
+              let foundCategory = '';
+              
+              levelDataLoop:
+              for (const grade of levelData) {
+                for (const level of grade.levels) {
+                  if (level.characters.includes(char)) {
+                    foundLevel = level.levelPath;
+                    foundCategory = grade.grade;
+                    break levelDataLoop;
+                  }
+                }
+              }
+              
+              return (
+                <Link 
+                  key={idx} 
+                  href={`/learn/hanja/${encodeURIComponent(char)}?category=${encodeURIComponent(foundCategory)}&level=${encodeURIComponent(foundLevel)}`}
+                  className="bg-slate-50 rounded-xl border border-slate-200 p-6 text-center transform transition hover:shadow-lg hover:-translate-y-1"
+                >
+                  <div className="text-5xl md:text-6xl mb-3 text-blue-800">{char}</div>
+                  <div className="text-sm text-slate-500">자세히 보기</div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -316,7 +410,7 @@ export default async function Home() {
             </p>
             
             <Link 
-                href="/learn"
+              href="/learn" 
                 className="block w-full mt-4 py-2 px-4 text-center rounded-lg bg-green-500 bg-opacity-10 hover:bg-opacity-20 text-green-800 font-medium transition"
               >
                 한자 학습하기
@@ -338,6 +432,86 @@ export default async function Home() {
               </p>
             </div>
           )}
+        </div>
+      </div>
+      
+      {/* 새로운 기능 소개 섹션 */}
+      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-3">새로운 기능</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-800">
+              더욱 강화된 한자 학습 경험
+            </h2>
+            <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+              사용자의 피드백을 반영한 새로운 기능으로 더 효과적인 한자 학습이 가능해졌습니다.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl shadow-md p-6 transform transition hover:shadow-lg hover:-translate-y-1">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4 text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-slate-800">
+                대학교 수준 한자 추가
+              </h3>
+              <p className="text-slate-600 mb-4">
+                대학 수준의 심화 한자를 4단계로 나누어 추가했습니다. 
+                고급 한자까지 체계적으로 학습하세요.
+              </p>
+              <Link 
+                href="/learn/level/university-level1" 
+                className="text-blue-600 font-medium hover:text-blue-800 transition"
+              >
+                대학 한자 학습하기 →
+            </Link>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-md p-6 transform transition hover:shadow-lg hover:-translate-y-1">
+              <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4 text-yellow-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-slate-800">
+                향상된 태그 시스템
+              </h3>
+              <p className="text-slate-600 mb-4">
+                한자를 다양한 카테고리와 태그로 분류하여 더 직관적으로 탐색할 수 있습니다.
+                관심 있는 주제별로 한자를 학습해보세요.
+              </p>
+            <Link 
+                href="/tags" 
+                className="text-yellow-600 font-medium hover:text-yellow-800 transition"
+              >
+                태그로 탐색하기 →
+              </Link>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-md p-6 transform transition hover:shadow-lg hover:-translate-y-1">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-slate-800">
+                PDF 연습장 추가
+              </h3>
+              <p className="text-slate-600 mb-4">
+                학습한 한자를 반복 연습할 수 있는 PDF 연습장 기능이 추가되었습니다.
+                인쇄하여 필기 연습을 해보세요.
+              </p>
+              <Link 
+                href="/pdf-practice" 
+                className="text-green-600 font-medium hover:text-green-800 transition"
+              >
+                연습장 만들기 →
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
       

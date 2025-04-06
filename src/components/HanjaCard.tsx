@@ -71,7 +71,7 @@ const HanjaCard: React.FC<HanjaCardProps> = ({ hanja, showDetails = true }) => {
       
       <div className="bg-gray-50 px-4 py-2 border-t border-gray-100">
         <Link 
-          href={`/hanja/${hanja.character}`}
+          href={`/learn/hanja/${hanja.character}`}
           className="text-blue-600 hover:text-blue-800 text-sm font-medium"
         >
           자세히 보기

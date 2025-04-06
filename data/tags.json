@@ -9,7 +9,7 @@
           "id": "nature",
           "name": "자연",
           "description": "자연 관련 한자(산, 물, 나무, 불, 흙 등)",
-          "examples": ["山", "水", "木", "火", "土", "石", "川"]
+          "examples": ["山", "水", "木", "火", "土", "石", "川", "雨"]
         },
         {
           "id": "human",
@@ -27,13 +27,13 @@
           "id": "time",
           "name": "시간",
           "description": "시간 관련 한자(날, 달, 해, 시간 등)",
-          "examples": ["日", "月", "年", "時", "分"]
+          "examples": ["日", "月", "年", "時", "分", "秒", "朝", "夜"]
         },
         {
           "id": "place",
           "name": "장소",
           "description": "장소 관련 한자(집, 방, 길, 문 등)",
-          "examples": ["家", "室", "道", "門", "國"]
+          "examples": ["家", "室", "道", "門", "國", "城"]
         },
         {
           "id": "number",
@@ -58,124 +58,595 @@
           "name": "색상",
           "description": "색상 관련 한자(빨강, 파랑, 노랑 등)",
           "examples": ["赤", "靑", "黃", "白", "黑"]
-        }
-      ]
-    },
-    {
-      "id": "difficulty",
-      "name": "난이도",
-      "description": "한자의 학습 난이도에 따른 분류",
-      "tags": [
-        {
-          "id": "beginner",
-          "name": "초급",
-          "description": "획수가 적고 구조가 간단한 한자(1-4획)",
-          "examples": ["一", "二", "三", "人", "大"]
         },
         {
-          "id": "intermediate",
-          "name": "중급",
-          "description": "중간 정도의 복잡도를 가진 한자(5-9획)",
-          "examples": ["木", "水", "火", "金", "月"]
+          "id": "education",
+          "name": "교육",
+          "description": "교육과 학습 관련 한자(배울 학, 가르칠 교 등)",
+          "examples": ["學", "敎", "書", "文", "讀", "習", "校"]
         },
         {
-          "id": "advanced",
-          "name": "고급",
-          "description": "획수가 많고 구조가 복잡한 한자(10획 이상)",
-          "examples": ["義", "聽", "鐵", "藥", "觀"]
+          "id": "emotion",
+          "name": "감정",
+          "description": "감정과 정서 관련 한자(기쁨, 슬픔, 노여움 등)",
+          "examples": ["喜", "哀", "怒", "樂", "憂", "愛", "憎"]
+        },
+        {
+          "id": "economy",
+          "name": "경제",
+          "description": "경제와 재물 관련 한자(돈, 물건, 사고팔다 등)",
+          "examples": ["錢", "貨", "買", "賣", "金", "富", "商"]
+        },
+        {
+          "id": "politics",
+          "name": "정치",
+          "description": "정치와 통치 관련 한자(나라, 법, 다스릴 등)",
+          "examples": ["政", "治", "法", "權", "國", "民", "王"]
+        },
+        {
+          "id": "society",
+          "name": "사회",
+          "description": "사회와 공동체 관련 한자(모일, 단체, 함께 등)",
+          "examples": ["社", "會", "共", "同", "公", "集", "團"]
         }
       ]
     },
     {
       "id": "radical",
       "name": "부수",
-      "description": "한자의 부수(radical)에 따른 분류",
+      "description": "한자의 부수(radical)에 따른 분류 - 강희자전 214부수",
       "tags": [
         {
-          "id": "person",
+          "id": "radical-1",
+          "name": "한 일(一)",
+          "description": "한 일(一) 부수 한자 [획수: 1]",
+          "examples": ["一", "三", "元", "天"]
+        },
+        {
+          "id": "radical-2",
+          "name": "막대기 곤(丨)",
+          "description": "막대기 곤(丨) 부수 한자 [획수: 1]",
+          "examples": ["丨", "中", "串"]
+        },
+        {
+          "id": "radical-3",
+          "name": "점 주(丶)",
+          "description": "점 주(丶) 부수 한자 [획수: 1]",
+          "examples": ["丶", "主", "丸"]
+        },
+        {
+          "id": "radical-4",
+          "name": "삐침 피(丿)",
+          "description": "삐침 피(丿) 부수 한자 [획수: 1]",
+          "examples": ["丿", "乃", "久"]
+        },
+        {
+          "id": "radical-5",
+          "name": "갈고리 을(乙)",
+          "description": "갈고리 을(乙) 부수 한자 [획수: 1]",
+          "examples": ["乙", "乞", "九"]
+        },
+        {
+          "id": "radical-6",
+          "name": "갈고리 겸(亅)",
+          "description": "갈고리 겸(亅) 부수 한자 [획수: 1]",
+          "examples": ["亅", "了", "事"]
+        },
+        {
+          "id": "radical-7",
+          "name": "두 이(二)",
+          "description": "두 이(二) 부수 한자 [획수: 2]",
+          "examples": ["二", "五", "亞"]
+        },
+        {
+          "id": "radical-8",
+          "name": "돼지해머리 병(亠)",
+          "description": "돼지해머리 병(亠) 부수 한자 [획수: 2]",
+          "examples": ["亠", "亢", "交"]
+        },
+        {
+          "id": "radical-9",
           "name": "사람 인(人)",
-          "description": "사람 인(人) 부수 한자",
+          "description": "사람 인(人) 부수 한자 [획수: 2]",
           "examples": ["人", "休", "位", "仁", "他"]
         },
         {
-          "id": "heart",
+          "id": "radical-10",
+          "name": "어진사람 인(儿)",
+          "description": "어진사람 인(儿) 부수 한자 [획수: 2]",
+          "examples": ["儿", "兄", "元"]
+        },
+        {
+          "id": "radical-11",
+          "name": "들 입(入)",
+          "description": "들 입(入) 부수 한자 [획수: 2]",
+          "examples": ["入", "內", "全"]
+        },
+        {
+          "id": "radical-12",
+          "name": "여덟 팔(八)",
+          "description": "여덟 팔(八) 부수 한자 [획수: 2]",
+          "examples": ["八", "公", "分"]
+        },
+        {
+          "id": "radical-13",
+          "name": "멀 경(冂)",
+          "description": "멀 경(冂) 부수 한자 [획수: 2]",
+          "examples": ["冂", "再", "冒"]
+        },
+        {
+          "id": "radical-14",
+          "name": "덮을 멱(冖)",
+          "description": "덮을 멱(冖) 부수 한자 [획수: 2]",
+          "examples": ["冖", "冠", "冤"]
+        },
+        {
+          "id": "radical-15",
+          "name": "얼음 빙(冫)",
+          "description": "얼음 빙(冫) 부수 한자 [획수: 2]",
+          "examples": ["冫", "冰", "冷"]
+        },
+        {
+          "id": "radical-16",
+          "name": "안석 궤(几)",
+          "description": "안석 궤(几) 부수 한자 [획수: 2]",
+          "examples": ["几", "凡", "凧"]
+        },
+        {
+          "id": "radical-17",
+          "name": "위로나있는 그릇 혜(凵)",
+          "description": "위로나있는 그릇 혜(凵) 부수 한자 [획수: 2]",
+          "examples": ["凵", "出", "函"]
+        },
+        {
+          "id": "radical-18",
+          "name": "칼 도(刀)",
+          "description": "칼 도(刀) 부수 한자 [획수: 2]",
+          "examples": ["刀", "刃", "切", "刻"]
+        },
+        {
+          "id": "radical-19",
+          "name": "힘 력(力)",
+          "description": "힘 력(力) 부수 한자 [획수: 2]",
+          "examples": ["力", "加", "勉", "動"]
+        },
+        {
+          "id": "radical-20",
+          "name": "감쌀 포(勹)",
+          "description": "감쌀 포(勹) 부수 한자 [획수: 2]",
+          "examples": ["勹", "包", "勿"]
+        },
+        {
+          "id": "radical-21",
+          "name": "비수 비(匕)",
+          "description": "비수 비(匕) 부수 한자 [획수: 2]",
+          "examples": ["匕", "化", "北"]
+        },
+        {
+          "id": "radical-22",
+          "name": "상자 방(匚)",
+          "description": "상자 방(匚) 부수 한자 [획수: 2]",
+          "examples": ["匚", "匠", "匡"]
+        },
+        {
+          "id": "radical-23",
+          "name": "덮을 혜(匸)",
+          "description": "덮을 혜(匸) 부수 한자 [획수: 2]",
+          "examples": ["匸", "匹", "區"]
+        },
+        {
+          "id": "radical-24",
+          "name": "열 십(十)",
+          "description": "열 십(十) 부수 한자 [획수: 2]",
+          "examples": ["十", "千", "午", "南"]
+        },
+        {
+          "id": "radical-25",
+          "name": "점칠 복(卜)",
+          "description": "점칠 복(卜) 부수 한자 [획수: 2]",
+          "examples": ["卜", "占", "卦"]
+        },
+        {
+          "id": "radical-26",
+          "name": "무릎 꿇을 절(卩)",
+          "description": "무릎 꿇을 절(卩) 부수 한자 [획수: 2]",
+          "examples": ["卩", "卯", "印", "危"]
+        },
+        {
+          "id": "radical-27",
+          "name": "기슭 한(厂)",
+          "description": "기슭 한(厂) 부수 한자 [획수: 2]",
+          "examples": ["厂", "厚", "原"]
+        },
+        {
+          "id": "radical-28",
+          "name": "사사로울 사(厶)",
+          "description": "사사로울 사(厶) 부수 한자 [획수: 2]",
+          "examples": ["厶", "去", "私"]
+        },
+        {
+          "id": "radical-29",
+          "name": "입 구(口)",
+          "description": "입 구(口) 부수 한자 [획수: 3]",
+          "examples": ["口", "古", "叫", "可", "吃"]
+        },
+        {
+          "id": "radical-30",
+          "name": "에워쌀 위(囗)",
+          "description": "에워쌀 위(囗) 부수 한자 [획수: 3]",
+          "examples": ["囗", "四", "回", "國"]
+        },
+        {
+          "id": "radical-31",
+          "name": "땅 토(土)",
+          "description": "흙 토(土) 부수 한자 [획수: 3]",
+          "examples": ["土", "地", "坐", "城", "場"]
+        },
+        {
+          "id": "radical-32",
+          "name": "따를 종(士)",
+          "description": "선비 사(士) 부수 한자 [획수: 3]",
+          "examples": ["士", "壯", "壽"]
+        },
+        {
+          "id": "radical-33",
+          "name": "여자 여(女)",
+          "description": "여자 녀(女) 부수 한자 [획수: 3]",
+          "examples": ["女", "好", "姓", "媽"]
+        },
+        {
+          "id": "radical-34",
+          "name": "아들 자(子)",
+          "description": "아들 자(子) 부수 한자 [획수: 3]",
+          "examples": ["子", "字", "存", "孫"]
+        },
+        {
+          "id": "radical-35",
+          "name": "지붕 면(宀)",
+          "description": "지붕 면(宀) 부수 한자 [획수: 3]",
+          "examples": ["宀", "守", "宅", "安"]
+        },
+        {
+          "id": "radical-36",
+          "name": "작을 소(小)",
+          "description": "작을 소(小) 부수 한자 [획수: 3]",
+          "examples": ["小", "少", "尖"]
+        },
+        {
+          "id": "radical-37",
+          "name": "뚜껑 갈(尢)",
+          "description": "절름발이 왕(尢) 부수 한자 [획수: 3]",
+          "examples": ["尢", "尤", "就"]
+        },
+        {
+          "id": "radical-38",
+          "name": "작을 묘(尸)",
+          "description": "주검 시(尸) 부수 한자 [획수: 3]",
+          "examples": ["尸", "尺", "居"]
+        },
+        {
+          "id": "radical-39",
+          "name": "팔굽이 굉(屮)",
+          "description": "싹날 철(屮) 부수 한자 [획수: 3]",
+          "examples": ["屮", "屯", "出"]
+        },
+        {
+          "id": "radical-40",
+          "name": "산 산(山)",
+          "description": "산 산(山) 부수 한자 [획수: 3]",
+          "examples": ["山", "岩", "崖", "嶺"]
+        },
+        {
+          "id": "radical-41",
+          "name": "활 궁(川)",
+          "description": "내 천(川) 부수 한자 [획수: 3]",
+          "examples": ["川", "州", "巡"]
+        },
+        {
+          "id": "radical-42",
+          "name": "공장 장(工)",
+          "description": "장인 공(工) 부수 한자 [획수: 3]",
+          "examples": ["工", "左", "巧"]
+        },
+        {
+          "id": "radical-43",
+          "name": "물거품 진(己)",
+          "description": "자기 기(己) 부수 한자 [획수: 3]",
+          "examples": ["己", "已", "巴"]
+        },
+        {
+          "id": "radical-44",
+          "name": "흐를 순(巾)",
+          "description": "수건 건(巾) 부수 한자 [획수: 3]",
+          "examples": ["巾", "市", "帶", "帽"]
+        },
+        {
+          "id": "radical-45",
+          "name": "활 궁(弓)",
+          "description": "활 궁(弓) 부수 한자 [획수: 3]",
+          "examples": ["弓", "引", "弟", "張"]
+        },
+        {
+          "id": "radical-46",
+          "name": "갓머리 심(彐)",
+          "description": "돼지 머리 계(彐) 부수 한자 [획수: 3]",
+          "examples": ["彐", "彎", "形"]
+        },
+        {
+          "id": "radical-47",
+          "name": "활 같을 열(彡)",
+          "description": "터럭 삼(彡) 부수 한자 [획수: 3]",
+          "examples": ["彡", "形", "彬"]
+        },
+        {
+          "id": "radical-48",
           "name": "마음 심(心)",
-          "description": "마음 심(心) 부수 한자",
-          "examples": ["心", "思", "忍", "愛", "恩"]
+          "description": "마음 심(心) 부수 한자 [획수: 4]",
+          "examples": ["心", "思", "忍", "愛"]
         },
         {
-          "id": "water",
-          "name": "물 수(水)",
-          "description": "물 수(水) 부수 한자",
-          "examples": ["水", "永", "泳", "海", "清"]
+          "id": "radical-49",
+          "name": "창 과(戈)",
+          "description": "창 과(戈) 부수 한자 [획수: 4]",
+          "examples": ["戈", "成", "戒"]
         },
         {
-          "id": "tree",
-          "name": "나무 목(木)",
-          "description": "나무 목(木) 부수 한자",
-          "examples": ["木", "林", "森", "果", "菜"]
+          "id": "radical-50",
+          "name": "문 호(戶)",
+          "description": "지게 호(戶) 부수 한자 [획수: 4]",
+          "examples": ["戶", "戾", "房"]
         },
         {
-          "id": "speech",
-          "name": "말씀 언(言)",
-          "description": "말씀 언(言) 부수 한자",
-          "examples": ["言", "語", "説", "話", "記"]
-        }
-      ]
-    },
-    {
-      "id": "usage",
-      "name": "사용 빈도",
-      "description": "한자의 사용 빈도에 따른 분류",
-      "tags": [
-        {
-          "id": "common",
-          "name": "고빈도",
-          "description": "일상에서 매우 자주 사용되는 한자",
-          "examples": ["日", "月", "水", "人", "大"]
+          "id": "radical-144",
+          "name": "행할 행(行)",
+          "description": "행할 행(行) 부수 한자 [획수: 6]",
+          "examples": ["行", "街", "術"]
         },
         {
-          "id": "regular",
-          "name": "중빈도",
-          "description": "보통 수준으로 사용되는 한자",
-          "examples": ["家", "話", "學", "生", "見"]
+          "id": "radical-145",
+          "name": "옷 의(衣)",
+          "description": "옷 의(衣) 부수 한자 [획수: 6]",
+          "examples": ["衣", "裁", "裝", "襪"]
         },
         {
-          "id": "rare",
-          "name": "저빈도",
-          "description": "전문 분야나 문학에서 주로 사용되는 한자",
-          "examples": ["鬱", "癸", "曰", "朦", "囑"]
-        }
-      ]
-    },
-    {
-      "id": "education",
-      "name": "교육 과정",
-      "description": "한국 교육 과정에 따른 한자 분류",
-      "tags": [
-        {
-          "id": "elementary",
-          "name": "초등학교",
-          "description": "초등학교에서 배우는 기초 한자",
-          "examples": ["一", "二", "三", "山", "川"]
+          "id": "radical-146",
+          "name": "볼 견(見)",
+          "description": "볼 견(見) 부수 한자 [획수: 7]",
+          "examples": ["見", "視", "觀", "覺"]
         },
         {
-          "id": "middle",
-          "name": "중학교",
-          "description": "중학교에서 배우는 한자",
-          "examples": ["學", "校", "先", "生", "門"]
+          "id": "radical-147",
+          "name": "말 언(言)",
+          "description": "말씀 언(言) 부수 한자 [획수: 7]",
+          "examples": ["言", "語", "説", "話"]
         },
         {
-          "id": "high",
-          "name": "고등학교",
-          "description": "고등학교에서 배우는 심화 한자",
-          "examples": ["經", "濟", "政", "治", "文"]
+          "id": "radical-149",
+          "name": "골짜기 곡(谷)",
+          "description": "골짜기 곡(谷) 부수 한자 [획수: 7]",
+          "examples": ["谷", "谿", "豁"]
         },
         {
-          "id": "university",
-          "name": "대학교",
-          "description": "대학 수준에서 배우는 전문 한자",
-          "examples": ["醫", "科", "工", "法", "商"]
+          "id": "radical-157",
+          "name": "발 족(足)",
+          "description": "발 족(足) 부수 한자 [획수: 7]",
+          "examples": ["足", "跑", "跳", "距"]
+        },
+        {
+          "id": "radical-159",
+          "name": "수레 거(車)",
+          "description": "수레 차(車) 부수 한자 [획수: 7]",
+          "examples": ["車", "軌", "軒", "輕"]
+        },
+        {
+          "id": "radical-162",
+          "name": "마을 촌(辛)",
+          "description": "매울 신(辛) 부수 한자 [획수: 7]",
+          "examples": ["辛", "辜", "辟"]
+        },
+        {
+          "id": "radical-167",
+          "name": "쇠 금(金)",
+          "description": "쇠 금(金) 부수 한자 [획수: 8]",
+          "examples": ["金", "銀", "鐵", "鈴"]
+        },
+        {
+          "id": "radical-169",
+          "name": "길 도(長)",
+          "description": "길 장(長) 부수 한자 [획수: 8]",
+          "examples": ["長", "帳", "張"]
+        },
+        {
+          "id": "radical-170",
+          "name": "문 문(門)",
+          "description": "문 문(門) 부수 한자 [획수: 8]",
+          "examples": ["門", "開", "閉", "閣"]
+        },
+        {
+          "id": "radical-173",
+          "name": "비 우(雨)",
+          "description": "비 우(雨) 부수 한자 [획수: 8]",
+          "examples": ["雨", "雲", "雷", "電"]
+        },
+        {
+          "id": "radical-174",
+          "name": "푸를 청(靑)",
+          "description": "푸를 청(靑) 부수 한자 [획수: 8]",
+          "examples": ["靑", "靜", "青"]
+        },
+        {
+          "id": "radical-181",
+          "name": "머리 수(頁)",
+          "description": "머리 혈(頁) 부수 한자 [획수: 9]",
+          "examples": ["頁", "頂", "須", "領"]
+        },
+        {
+          "id": "radical-184",
+          "name": "바람 풍(風)",
+          "description": "바람 풍(風) 부수 한자 [획수: 9]",
+          "examples": ["風", "颱", "颶", "颺"]
+        },
+        {
+          "id": "radical-185",
+          "name": "날 비(飛)",
+          "description": "날 비(飛) 부수 한자 [획수: 9]",
+          "examples": ["飛", "飜", "飢", "飯"]
+        },
+        {
+          "id": "radical-187",
+          "name": "머리 수(首)",
+          "description": "머리 수(首) 부수 한자 [획수: 9]",
+          "examples": ["首", "馗", "馘"]
+        },
+        {
+          "id": "radical-188",
+          "name": "향기 향(香)",
+          "description": "향기 향(香) 부수 한자 [획수: 9]",
+          "examples": ["香", "馨", "馥"]
+        },
+        {
+          "id": "radical-191",
+          "name": "높을 고(高)",
+          "description": "높을 고(高) 부수 한자 [획수: 10]",
+          "examples": ["高", "髙", "髦"]
+        },
+        {
+          "id": "radical-192",
+          "name": "머리털 발(髟)",
+          "description": "터럭 피(髟) 부수 한자 [획수: 10]",
+          "examples": ["髟", "鬃", "鬢"]
+        },
+        {
+          "id": "radical-193",
+          "name": "다툴 투(鬥)",
+          "description": "싸울 투(鬥) 부수 한자 [획수: 10]",
+          "examples": ["鬥", "鬧", "鬨"]
+        },
+        {
+          "id": "radical-194",
+          "name": "귀신 귀(鬼)",
+          "description": "귀신 귀(鬼) 부수 한자 [획수: 10]",
+          "examples": ["鬼", "魂", "魄", "魅"]
+        },
+        {
+          "id": "radical-195",
+          "name": "물고기 어(魚)",
+          "description": "물고기 어(魚) 부수 한자 [획수: 11]",
+          "examples": ["魚", "鮑", "鯉", "鮮"]
+        },
+        {
+          "id": "radical-196",
+          "name": "새 조(鳥)",
+          "description": "새 조(鳥) 부수 한자 [획수: 11]",
+          "examples": ["鳥", "鴨", "鴿", "鶴"]
+        },
+        {
+          "id": "radical-197",
+          "name": "소금 염(鹵)",
+          "description": "소금 로(鹵) 부수 한자 [획수: 11]",
+          "examples": ["鹵", "鹹", "鹿"]
+        },
+        {
+          "id": "radical-198",
+          "name": "사슴 록(鹿)",
+          "description": "사슴 록(鹿) 부수 한자 [획수: 11]",
+          "examples": ["鹿", "麋", "麒", "麟"]
+        },
+        {
+          "id": "radical-199",
+          "name": "보리 맥(麥)",
+          "description": "보리 맥(麥) 부수 한자 [획수: 11]",
+          "examples": ["麥", "麩", "麪", "麯"]
+        },
+        {
+          "id": "radical-200",
+          "name": "삼 마(麻)",
+          "description": "삼 마(麻) 부수 한자 [획수: 11]",
+          "examples": ["麻", "麼", "麾"]
+        },
+        {
+          "id": "radical-201",
+          "name": "누를 황(黃)",
+          "description": "누를 황(黃) 부수 한자 [획수: 12]",
+          "examples": ["黃", "黍", "黏", "黑"]
+        },
+        {
+          "id": "radical-202",
+          "name": "조 서(黍)",
+          "description": "기장 서(黍) 부수 한자 [획수: 12]",
+          "examples": ["黍", "黑", "墨"]
+        },
+        {
+          "id": "radical-203",
+          "name": "검을 흑(黑)",
+          "description": "검을 흑(黑) 부수 한자 [획수: 12]",
+          "examples": ["黑", "墨", "黔", "點"]
+        },
+        {
+          "id": "radical-204",
+          "name": "수놓을 채(黹)",
+          "description": "바느질 치(黹) 부수 한자 [획수: 12]",
+          "examples": ["黹", "黻", "黼"]
+        },
+        {
+          "id": "radical-205",
+          "name": "비단 단(貝)",
+          "description": "조개 패(貝) 부수 한자 [획수: 7]",
+          "examples": ["貝", "財", "貧", "賣"]
+        },
+        {
+          "id": "radical-206",
+          "name": "털 모(鼎)",
+          "description": "솥 정(鼎) 부수 한자 [획수: 13]",
+          "examples": ["鼎", "鼐", "鼓"]
+        },
+        {
+          "id": "radical-207",
+          "name": "쥐 서(鼠)",
+          "description": "쥐 서(鼠) 부수 한자 [획수: 13]",
+          "examples": ["鼠", "鼬", "鼻"]
+        },
+        {
+          "id": "radical-208",
+          "name": "코 비(鼻)",
+          "description": "코 비(鼻) 부수 한자 [획수: 14]",
+          "examples": ["鼻", "鼾", "齁"]
+        },
+        {
+          "id": "radical-209",
+          "name": "똑같을 제(齊)",
+          "description": "가지런할 제(齊) 부수 한자 [획수: 14]",
+          "examples": ["齊", "齋", "齒"]
+        },
+        {
+          "id": "radical-210",
+          "name": "이 치(齒)",
+          "description": "이 치(齒) 부수 한자 [획수: 15]",
+          "examples": ["齒", "齟", "齡", "齧"]
+        },
+        {
+          "id": "radical-211",
+          "name": "용 룡(龍)",
+          "description": "용 룡(龍) 부수 한자 [획수: 16]",
+          "examples": ["龍", "龕", "龜"]
+        },
+        {
+          "id": "radical-212",
+          "name": "거북 구(龜)",
+          "description": "거북 구(龜) 부수 한자 [획수: 16]",
+          "examples": ["龜", "龢", "龥"]
+        },
+        {
+          "id": "radical-213",
+          "name": "북 고(鼓)",
+          "description": "북 고(鼓) 부수 한자 [획수: 13]",
+          "examples": ["鼓", "鼙", "鼚"]
+        },
+        {
+          "id": "radical-214",
+          "name": "코끼리 상(龠)",
+          "description": "피리 약(龠) 부수 한자 [획수: 17]",
+          "examples": ["龠", "龢", "龥"]
         }
       ]
     }

@@ -1009,6 +1009,75 @@
             "order": 5
           }
         ]
+      },
+      "level6": {
+        "name": "6단계 (특수 한자)",
+        "description": "강희자전 부수 관련 특수 한자",
+        "characters": [
+          {
+            "character": "龠",
+            "meaning": "피리 약",
+            "pronunciation": "약",
+            "stroke_count": 17,
+            "radical": "龠",
+            "examples": [
+              {
+                "word": "龠樂",
+                "meaning": "약악, 피리 음악",
+                "pronunciation": "약악"
+              },
+              {
+                "word": "龠聲",
+                "meaning": "약성, 피리 소리",
+                "pronunciation": "약성"
+              }
+            ],
+            "level": 6,
+            "order": 96
+          },
+          {
+            "character": "龢",
+            "meaning": "조화로울 화",
+            "pronunciation": "화",
+            "stroke_count": 20,
+            "radical": "龠",
+            "examples": [
+              {
+                "word": "龢音",
+                "meaning": "화음, 조화로운 소리",
+                "pronunciation": "화음"
+              },
+              {
+                "word": "龢同",
+                "meaning": "화동, 조화롭게 같이함",
+                "pronunciation": "화동"
+              }
+            ],
+            "level": 6,
+            "order": 97
+          },
+          {
+            "character": "龥",
+            "meaning": "부를 효",
+            "pronunciation": "효",
+            "stroke_count": 22,
+            "radical": "龠",
+            "examples": [
+              {
+                "word": "龥唱",
+                "meaning": "효창, 부르고 외침",
+                "pronunciation": "효창"
+              },
+              {
+                "word": "龥名",
+                "meaning": "효명, 이름을 부름",
+                "pronunciation": "효명"
+              }
+            ],
+            "level": 6,
+            "order": 98
+          }
+        ]
       }
     }
   },

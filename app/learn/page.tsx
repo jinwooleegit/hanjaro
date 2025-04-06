@@ -84,6 +84,79 @@ const popularHanjaList = [
   }
 ];
 
+// 카테고리 정의
+const categories = [
+  {
+    id: 'radical',
+    name: '부수별 분류',
+    tags: [
+      { id: 'person', name: '사람 인(人)' },
+      { id: 'heart', name: '마음 심(心)' },
+      { id: 'water', name: '물 수(水)' },
+      { id: 'tree', name: '나무 목(木)' },
+      { id: 'speech', name: '말씀 언(言)' },
+      { id: 'fire', name: '불 화(火)' },
+      { id: 'earth', name: '흙 토(土)' },
+      { id: 'metal', name: '쇠 금(金)' },
+      { id: 'hand', name: '손 수(手)' },
+      { id: 'foot', name: '발 족(足)' },
+      { id: 'door', name: '문 문(門)' },
+      { id: 'grass', name: '풀 초(艹)' },
+      { id: 'stone', name: '돌 석(石)' },
+      { id: 'clothing', name: '옷 의(衣)' },
+      { id: 'eye', name: '눈 목(目)' }
+    ]
+  },
+  {
+    id: 'meaning',
+    name: '의미별 분류',
+    tags: [
+      { id: 'nature', name: '자연' },
+      { id: 'human', name: '인간' },
+      { id: 'body', name: '신체' },
+      { id: 'time', name: '시간' },
+      { id: 'place', name: '장소' },
+      { id: 'number', name: '숫자' },
+      { id: 'action', name: '행동' },
+      { id: 'attribute', name: '속성' },
+      { id: 'color', name: '색상' },
+      { id: 'education', name: '교육' },
+      { id: 'emotion', name: '감정' },
+      { id: 'economy', name: '경제' },
+      { id: 'politics', name: '정치' },
+      { id: 'society', name: '사회' }
+    ]
+  },
+  {
+    id: 'difficulty',
+    name: '난이도별 분류',
+    tags: [
+      { id: 'beginner', name: '초급 (1-4획)' },
+      { id: 'intermediate', name: '중급 (5-9획)' },
+      { id: 'advanced', name: '고급 (10획 이상)' }
+    ]
+  },
+  {
+    id: 'usage',
+    name: '사용 빈도별 분류',
+    tags: [
+      { id: 'common', name: '고빈도' },
+      { id: 'regular', name: '중빈도' },
+      { id: 'rare', name: '저빈도' }
+    ]
+  },
+  {
+    id: 'education',
+    name: '교육 과정별 분류',
+    tags: [
+      { id: 'elementary', name: '초등학교' },
+      { id: 'middle', name: '중학교' },
+      { id: 'high', name: '고등학교' },
+      { id: 'university', name: '대학 이상' }
+    ]
+  }
+];
+
 type LearnTab = '필순' | '의미' | '예문';
 
 export default function LearnPage() {
@@ -112,7 +185,7 @@ export default function LearnPage() {
           <LearningPathSelector />
         </div>
         
-        <div className="bg-white rounded-xl shadow-md p-6">
+        <div className="bg-white rounded-xl shadow-md p-6 mb-8">
           <h2 className="text-2xl font-semibold mb-4">학습 방법</h2>
           <div className="space-y-4">
             <p>
@@ -130,6 +203,43 @@ export default function LearnPage() {
               처음 학습하시는 분들은 초등학생용 기초 한자부터 시작하는 것을 권장합니다.
             </p>
           </div>
+        </div>
+
+        {/* 카테고리별 분류 섹션 */}
+        <div className="bg-white rounded-xl shadow-md p-6 mb-8">
+          <h2 className="text-2xl font-semibold mb-6">한자 분류 카테고리</h2>
+          <div className="space-y-8">
+            {categories.map((category) => (
+              <div key={category.id} className="border-b pb-6 last:border-b-0 last:pb-0">
+                <h3 className="text-xl font-medium mb-3">{category.name}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {category.tags.map((tag) => (
+                    <div 
+                      key={tag.id}
+                      className="px-3 py-1.5 bg-gray-100 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-200 cursor-pointer transition"
+                    >
+                      {tag.name}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 text-sm text-amber-600 p-2 bg-amber-50 rounded-lg">
+            <p>
+              현재 표시된 카테고리는 전체 한자의 다양한 분류 체계를 보여줍니다. 각 분류는 학습 과정에서 참고할 수 있지만
+              실제 데이터베이스의 한자와 직접 연결되어 있지 않을 수 있습니다.
+            </p>
+          </div>
+        </div>
+        
+        <div className="text-center mt-12">
+          <Link 
+            href="/tags" 
+            className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg transition transform hover:scale-105"
+          >
+            태그별 탐색하기
+          </Link>
         </div>
       </div>
     </div>
