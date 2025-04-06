@@ -28,44 +28,8 @@ async function importJSON(path: string) {
       path = path.substring(2); // './'를 제거
     }
     
-    // 서버 사이드에서만 fs 모듈 사용 (클라이언트에서는 사용 불가)
-    if (typeof window === 'undefined') {
-      try {
-        // 서버 사이드 코드
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-        const fs = require('fs');
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-        const pathModule = require('path');
-        
-        // 프로젝트 루트에서 절대 경로 구성
-        const fullPath = pathModule.join(process.cwd(), path);
-        console.log(`절대 경로 시도: ${fullPath}`);
-        
-        if (fs.existsSync(fullPath)) {
-          const content = fs.readFileSync(fullPath, 'utf8');
-          const data = JSON.parse(content);
-          console.log(`성공적으로 로드됨: ${fullPath} (${Object.keys(data).length} 필드)`);
-          return data;
-        } else {
-          console.error(`파일을 찾을 수 없음: ${fullPath}`);
-        }
-        
-        // data 디렉토리 내에서 시도
-        const dataPath = pathModule.join(process.cwd(), 'data', path);
-        console.log(`data 경로 시도: ${dataPath}`);
-        
-        if (fs.existsSync(dataPath)) {
-          const content = fs.readFileSync(dataPath, 'utf8');
-          const data = JSON.parse(content);
-          console.log(`성공적으로 로드됨(data): ${dataPath} (${Object.keys(data).length} 필드)`);
-          return data;
-        } else {
-          console.error(`파일을 찾을 수 없음(data): ${dataPath}`);
-        }
-      } catch (serverError) {
-        console.error(`서버 사이드 파일 로드 실패: ${path}`, serverError);
-      }
-    }
+    // fs 모듈 사용을 제거하고 import 방식으로만 처리
+    // Vercel 환경에서는 fs 모듈 사용이 불가능합니다
     
     // 서버/클라이언트 모두 동작하는 방식: import 사용
     try {
