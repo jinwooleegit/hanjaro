@@ -1,0 +1,58 @@
+{
+  "categories": {
+    "basic": {
+      "name": "초등학생용 기초 한자",
+      "description": "초등학생과 중학생을 위한 한자 모음",
+      "total_characters": 620,
+      "levels": {
+        "level1": {
+          "name": "1단계 (초등 1학년 수준)",
+          "description": "초등학교 1학년 과정에서 배우는 한자",
+          "total_characters": 5
+        },
+        "level2": {
+          "name": "2단계 (초등 2-3학년 수준)",
+          "description": "초등학교 2-3학년 과정에서 배우는 한자",
+          "total_characters": 5
+        },
+        "level3": {
+          "name": "3단계 (초등 4학년 수준)",
+          "description": "초등학교 4학년 과정에서 배우는 한자",
+          "total_characters": 5
+        },
+        "level4": {
+          "name": "4단계 (초등 5-6학년 수준)",
+          "description": "초등학교 5-6학년 과정에서 배우는 한자",
+          "total_characters": 5
+        },
+        "level5": {
+          "name": "5단계 (중학교 1학년 수준)",
+          "description": "중학교 1학년 과정에서 배우는 한자 100자",
+          "total_characters": 5
+        },
+        "level6": {
+          "name": "6단계 (중학교 2학년 수준)",
+          "description": "중학교 2학년 과정에서 배우는 한자",
+          "total_characters": 5
+        }
+      }
+    },
+    "advanced": {
+      "name": "전문분야 한자",
+      "description": "전문 분야별 자주 사용되는 한자",
+      "total_characters": 100,
+      "levels": {
+        "level1": {
+          "name": "전문분야 1 (의학 및 과학 분야 한자)",
+          "description": "의학 및 과학 분야에서 자주 사용되는 한자",
+          "total_characters": 5
+        },
+        "level2": {
+          "name": "전문분야 2 (법률 및 경제 분야 한자)",
+          "description": "법률 및 경제 분야에서 자주 사용되는 한자",
+          "total_characters": 5
+        }
+      }
+    }
+  }
+}

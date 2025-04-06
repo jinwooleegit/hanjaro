@@ -1,0 +1,111 @@
+{
+  "name": "4단계 (초등 5-6학년 수준)",
+  "description": "초등학교 5-6학년 과정에서 배우는 한자",
+  "characters": [
+    {
+      "character": "天",
+      "meaning": "하늘 천",
+      "pronunciation": "천",
+      "stroke_count": 4,
+      "radical": "大",
+      "examples": [
+        {
+          "word": "天國",
+          "meaning": "천국",
+          "pronunciation": "천국"
+        },
+        {
+          "word": "天氣",
+          "meaning": "천기",
+          "pronunciation": "천기"
+        }
+      ],
+      "level": 4,
+      "order": 1
+    },
+    {
+      "character": "地",
+      "meaning": "땅 지",
+      "pronunciation": "지",
+      "stroke_count": 6,
+      "radical": "土",
+      "examples": [
+        {
+          "word": "地球",
+          "meaning": "지구",
+          "pronunciation": "지구"
+        },
+        {
+          "word": "土地",
+          "meaning": "토지",
+          "pronunciation": "토지"
+        }
+      ],
+      "level": 4,
+      "order": 2
+    },
+    {
+      "character": "學",
+      "meaning": "배울 학",
+      "pronunciation": "학",
+      "stroke_count": 16,
+      "radical": "子",
+      "examples": [
+        {
+          "word": "學校",
+          "meaning": "학교",
+          "pronunciation": "학교"
+        },
+        {
+          "word": "大學",
+          "meaning": "대학",
+          "pronunciation": "대학"
+        }
+      ],
+      "level": 4,
+      "order": 3
+    },
+    {
+      "character": "生",
+      "meaning": "날 생",
+      "pronunciation": "생",
+      "stroke_count": 5,
+      "radical": "生",
+      "examples": [
+        {
+          "word": "生日",
+          "meaning": "생일",
+          "pronunciation": "생일"
+        },
+        {
+          "word": "學生",
+          "meaning": "학생",
+          "pronunciation": "학생"
+        }
+      ],
+      "level": 4,
+      "order": 4
+    },
+    {
+      "character": "先",
+      "meaning": "먼저 선",
+      "pronunciation": "선",
+      "stroke_count": 6,
+      "radical": "儿",
+      "examples": [
+        {
+          "word": "先生",
+          "meaning": "선생",
+          "pronunciation": "선생"
+        },
+        {
+          "word": "先輩",
+          "meaning": "선배",
+          "pronunciation": "선배"
+        }
+      ],
+      "level": 4,
+      "order": 5
+    }
+  ]
+}

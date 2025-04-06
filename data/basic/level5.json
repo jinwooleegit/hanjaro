@@ -1,0 +1,111 @@
+{
+  "name": "5단계 (중학교 1학년 수준)",
+  "description": "중학교 1학년 과정에서 배우는 한자 100자",
+  "characters": [
+    {
+      "character": "功",
+      "meaning": "공 공",
+      "pronunciation": "공",
+      "stroke_count": 5,
+      "radical": "力",
+      "examples": [
+        {
+          "word": "成功",
+          "meaning": "성공",
+          "pronunciation": "성공"
+        },
+        {
+          "word": "功績",
+          "meaning": "공적",
+          "pronunciation": "공적"
+        }
+      ],
+      "level": 5,
+      "order": 1
+    },
+    {
+      "character": "績",
+      "meaning": "길쌈할 적",
+      "pronunciation": "적",
+      "stroke_count": 17,
+      "radical": "糸",
+      "examples": [
+        {
+          "word": "功績",
+          "meaning": "공적",
+          "pronunciation": "공적"
+        },
+        {
+          "word": "成績",
+          "meaning": "성적",
+          "pronunciation": "성적"
+        }
+      ],
+      "level": 5,
+      "order": 2
+    },
+    {
+      "character": "結",
+      "meaning": "맺을 결",
+      "pronunciation": "결",
+      "stroke_count": 12,
+      "radical": "糸",
+      "examples": [
+        {
+          "word": "結果",
+          "meaning": "결과",
+          "pronunciation": "결과"
+        },
+        {
+          "word": "結論",
+          "meaning": "결론",
+          "pronunciation": "결론"
+        }
+      ],
+      "level": 5,
+      "order": 3
+    },
+    {
+      "character": "果",
+      "meaning": "열매 과",
+      "pronunciation": "과",
+      "stroke_count": 8,
+      "radical": "木",
+      "examples": [
+        {
+          "word": "結果",
+          "meaning": "결과",
+          "pronunciation": "결과"
+        },
+        {
+          "word": "果物",
+          "meaning": "과일",
+          "pronunciation": "과물"
+        }
+      ],
+      "level": 5,
+      "order": 4
+    },
+    {
+      "character": "修",
+      "meaning": "닦을 수",
+      "pronunciation": "수",
+      "stroke_count": 10,
+      "radical": "彡",
+      "examples": [
+        {
+          "word": "修理",
+          "meaning": "수리",
+          "pronunciation": "수리"
+        },
+        {
+          "word": "修正",
+          "meaning": "수정",
+          "pronunciation": "수정"
+        }
+      ],
+      "level": 5,
+      "order": 5
+    }
+  ]
+}

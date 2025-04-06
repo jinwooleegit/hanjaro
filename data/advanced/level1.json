@@ -1,0 +1,111 @@
+{
+  "name": "전문분야 1 (의학 및 과학 분야 한자)",
+  "description": "의학 및 과학 분야에서 자주 사용되는 한자",
+  "characters": [
+    {
+      "character": "醫",
+      "meaning": "의사 의",
+      "pronunciation": "의",
+      "stroke_count": 18,
+      "radical": "酉",
+      "examples": [
+        {
+          "word": "醫師",
+          "meaning": "의사",
+          "pronunciation": "의사"
+        },
+        {
+          "word": "醫學",
+          "meaning": "의학",
+          "pronunciation": "의학"
+        }
+      ],
+      "level": 7,
+      "order": 1
+    },
+    {
+      "character": "藥",
+      "meaning": "약 약",
+      "pronunciation": "약",
+      "stroke_count": 19,
+      "radical": "艸",
+      "examples": [
+        {
+          "word": "藥品",
+          "meaning": "약품",
+          "pronunciation": "약품"
+        },
+        {
+          "word": "漢藥",
+          "meaning": "한약",
+          "pronunciation": "한약"
+        }
+      ],
+      "level": 7,
+      "order": 2
+    },
+    {
+      "character": "病",
+      "meaning": "병 병",
+      "pronunciation": "병",
+      "stroke_count": 10,
+      "radical": "疒",
+      "examples": [
+        {
+          "word": "病院",
+          "meaning": "병원",
+          "pronunciation": "병원"
+        },
+        {
+          "word": "疾病",
+          "meaning": "질병",
+          "pronunciation": "질병"
+        }
+      ],
+      "level": 7,
+      "order": 3
+    },
+    {
+      "character": "科",
+      "meaning": "과목 과",
+      "pronunciation": "과",
+      "stroke_count": 9,
+      "radical": "禾",
+      "examples": [
+        {
+          "word": "科學",
+          "meaning": "과학",
+          "pronunciation": "과학"
+        },
+        {
+          "word": "內科",
+          "meaning": "내과",
+          "pronunciation": "내과"
+        }
+      ],
+      "level": 7,
+      "order": 4
+    },
+    {
+      "character": "化",
+      "meaning": "될 화",
+      "pronunciation": "화",
+      "stroke_count": 4,
+      "radical": "匕",
+      "examples": [
+        {
+          "word": "化學",
+          "meaning": "화학",
+          "pronunciation": "화학"
+        },
+        {
+          "word": "變化",
+          "meaning": "변화",
+          "pronunciation": "변화"
+        }
+      ],
+      "level": 7,
+      "order": 5
+    }
+  ]
+}

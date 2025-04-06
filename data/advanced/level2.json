@@ -1,0 +1,111 @@
+{
+  "name": "전문분야 2 (법률 및 경제 분야 한자)",
+  "description": "법률 및 경제 분야에서 자주 사용되는 한자",
+  "characters": [
+    {
+      "character": "法",
+      "meaning": "법 법",
+      "pronunciation": "법",
+      "stroke_count": 8,
+      "radical": "氵",
+      "examples": [
+        {
+          "word": "法律",
+          "meaning": "법률",
+          "pronunciation": "법률"
+        },
+        {
+          "word": "法規",
+          "meaning": "법규",
+          "pronunciation": "법규"
+        }
+      ],
+      "level": 8,
+      "order": 1
+    },
+    {
+      "character": "律",
+      "meaning": "법칙 률",
+      "pronunciation": "률",
+      "stroke_count": 9,
+      "radical": "彳",
+      "examples": [
+        {
+          "word": "法律",
+          "meaning": "법률",
+          "pronunciation": "법률"
+        },
+        {
+          "word": "規律",
+          "meaning": "규율",
+          "pronunciation": "규율"
+        }
+      ],
+      "level": 8,
+      "order": 2
+    },
+    {
+      "character": "稅",
+      "meaning": "세금 세",
+      "pronunciation": "세",
+      "stroke_count": 12,
+      "radical": "禾",
+      "examples": [
+        {
+          "word": "稅金",
+          "meaning": "세금",
+          "pronunciation": "세금"
+        },
+        {
+          "word": "所得稅",
+          "meaning": "소득세",
+          "pronunciation": "소득세"
+        }
+      ],
+      "level": 8,
+      "order": 3
+    },
+    {
+      "character": "經",
+      "meaning": "지날 경",
+      "pronunciation": "경",
+      "stroke_count": 13,
+      "radical": "糸",
+      "examples": [
+        {
+          "word": "經濟",
+          "meaning": "경제",
+          "pronunciation": "경제"
+        },
+        {
+          "word": "經營",
+          "meaning": "경영",
+          "pronunciation": "경영"
+        }
+      ],
+      "level": 8,
+      "order": 4
+    },
+    {
+      "character": "濟",
+      "meaning": "건널 제",
+      "pronunciation": "제",
+      "stroke_count": 17,
+      "radical": "氵",
+      "examples": [
+        {
+          "word": "經濟",
+          "meaning": "경제",
+          "pronunciation": "경제"
+        },
+        {
+          "word": "救濟",
+          "meaning": "구제",
+          "pronunciation": "구제"
+        }
+      ],
+      "level": 8,
+      "order": 5
+    }
+  ]
+}

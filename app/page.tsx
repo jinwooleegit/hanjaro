@@ -35,7 +35,7 @@ export default async function Home() {
             </Link>
             
             <Link 
-              href="/practice" 
+              href="/practice/enhanced" 
               className="bg-green-100 hover:bg-green-200 p-6 rounded-lg text-center transition-colors"
             >
               <div className="text-4xl mb-3">習</div>

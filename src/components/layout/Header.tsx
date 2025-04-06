@@ -29,7 +29,7 @@ const Header: React.FC = () => {
             <Link href="/learn" className="nav-link">
               학습하기
             </Link>
-            <Link href="/practice" className="nav-link">
+            <Link href="/practice/enhanced" className="nav-link">
               연습하기
             </Link>
             <Link href="/challenge" className="nav-link">
@@ -163,7 +163,7 @@ const Header: React.FC = () => {
             <Link href="/learn" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
               학습하기
             </Link>
-            <Link href="/practice" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link href="/practice/enhanced" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
               연습하기
             </Link>
             <Link href="/challenge" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">

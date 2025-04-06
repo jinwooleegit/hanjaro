@@ -1,0 +1,111 @@
+{
+  "name": "6단계 (중학교 2학년 수준)",
+  "description": "중학교 2학년 과정에서 배우는 한자",
+  "characters": [
+    {
+      "character": "過",
+      "meaning": "지날 과",
+      "pronunciation": "과",
+      "stroke_count": 13,
+      "radical": "辵",
+      "examples": [
+        {
+          "word": "通過",
+          "meaning": "통과",
+          "pronunciation": "통과"
+        },
+        {
+          "word": "過去",
+          "meaning": "과거",
+          "pronunciation": "과거"
+        }
+      ],
+      "level": 6,
+      "order": 1
+    },
+    {
+      "character": "程",
+      "meaning": "정도 정",
+      "pronunciation": "정",
+      "stroke_count": 12,
+      "radical": "禾",
+      "examples": [
+        {
+          "word": "程度",
+          "meaning": "정도",
+          "pronunciation": "정도"
+        },
+        {
+          "word": "課程",
+          "meaning": "과정",
+          "pronunciation": "과정"
+        }
+      ],
+      "level": 6,
+      "order": 2
+    },
+    {
+      "character": "度",
+      "meaning": "법도 도",
+      "pronunciation": "도",
+      "stroke_count": 9,
+      "radical": "广",
+      "examples": [
+        {
+          "word": "程度",
+          "meaning": "정도",
+          "pronunciation": "정도"
+        },
+        {
+          "word": "態度",
+          "meaning": "태도",
+          "pronunciation": "태도"
+        }
+      ],
+      "level": 6,
+      "order": 3
+    },
+    {
+      "character": "次",
+      "meaning": "버금 차",
+      "pronunciation": "차",
+      "stroke_count": 6,
+      "radical": "欠",
+      "examples": [
+        {
+          "word": "次第",
+          "meaning": "차례",
+          "pronunciation": "차제"
+        },
+        {
+          "word": "一次",
+          "meaning": "일차",
+          "pronunciation": "일차"
+        }
+      ],
+      "level": 6,
+      "order": 4
+    },
+    {
+      "character": "序",
+      "meaning": "차례 서",
+      "pronunciation": "서",
+      "stroke_count": 7,
+      "radical": "广",
+      "examples": [
+        {
+          "word": "序論",
+          "meaning": "서론",
+          "pronunciation": "서론"
+        },
+        {
+          "word": "秩序",
+          "meaning": "질서",
+          "pronunciation": "질서"
+        }
+      ],
+      "level": 6,
+      "order": 5
+    }
+  ]
+}

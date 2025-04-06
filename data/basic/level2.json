@@ -1,0 +1,111 @@
+{
+  "name": "2단계 (초등 2-3학년 수준)",
+  "description": "초등학교 2-3학년 과정에서 배우는 한자",
+  "characters": [
+    {
+      "character": "山",
+      "meaning": "뫼 산",
+      "pronunciation": "산",
+      "stroke_count": 3,
+      "radical": "山",
+      "examples": [
+        {
+          "word": "山水",
+          "meaning": "산과 물",
+          "pronunciation": "산수"
+        },
+        {
+          "word": "登山",
+          "meaning": "등산",
+          "pronunciation": "등산"
+        }
+      ],
+      "level": 2,
+      "order": 1
+    },
+    {
+      "character": "水",
+      "meaning": "물 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "水",
+      "examples": [
+        {
+          "word": "水曜日",
+          "meaning": "수요일",
+          "pronunciation": "수요일"
+        },
+        {
+          "word": "水泳",
+          "meaning": "수영",
+          "pronunciation": "수영"
+        }
+      ],
+      "level": 2,
+      "order": 2
+    },
+    {
+      "character": "木",
+      "meaning": "나무 목",
+      "pronunciation": "목",
+      "stroke_count": 4,
+      "radical": "木",
+      "examples": [
+        {
+          "word": "木曜日",
+          "meaning": "목요일",
+          "pronunciation": "목요일"
+        },
+        {
+          "word": "木材",
+          "meaning": "목재",
+          "pronunciation": "목재"
+        }
+      ],
+      "level": 2,
+      "order": 3
+    },
+    {
+      "character": "日",
+      "meaning": "날 일",
+      "pronunciation": "일",
+      "stroke_count": 4,
+      "radical": "日",
+      "examples": [
+        {
+          "word": "日曜日",
+          "meaning": "일요일",
+          "pronunciation": "일요일"
+        },
+        {
+          "word": "日本",
+          "meaning": "일본",
+          "pronunciation": "일본"
+        }
+      ],
+      "level": 2,
+      "order": 4
+    },
+    {
+      "character": "月",
+      "meaning": "달 월",
+      "pronunciation": "월",
+      "stroke_count": 4,
+      "radical": "月",
+      "examples": [
+        {
+          "word": "月曜日",
+          "meaning": "월요일",
+          "pronunciation": "월요일"
+        },
+        {
+          "word": "一月",
+          "meaning": "일월",
+          "pronunciation": "일월"
+        }
+      ],
+      "level": 2,
+      "order": 5
+    }
+  ]
+}

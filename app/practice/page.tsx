@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { getHanjaCharacter } from '@/utils/hanjaUtils';
 import dynamic from 'next/dynamic';
+import Script from 'next/script';
 
 // 클라이언트 사이드에서만 로드되도록 dynamic import 사용
 const HanziWriterComponent = dynamic(
@@ -25,9 +26,22 @@ export default function PracticePage() {
   const [attempts, setAttempts] = useState(0);
   const [success, setSuccess] = useState(false);
   const [feedback, setFeedback] = useState('');
+  const [scriptLoaded, setScriptLoaded] = useState(false);
+  
+  // HanziWriter 스크립트 로드 상태 관리
+  const handleScriptLoad = () => {
+    console.log('HanziWriter 스크립트 로드 완료');
+    setScriptLoaded(true);
+  };
   
   // 연습 모드 시작
   const startPractice = () => {
+    if (!window.HanziWriter) {
+      console.error('HanziWriter가 로드되지 않았습니다');
+      setFeedback('한자 작성 라이브러리가 로드되지 않았습니다. 페이지를 새로고침 해주세요.');
+      return;
+    }
+    
     setQuizMode(true);
     setSuccess(false);
     setFeedback('');
@@ -41,48 +55,113 @@ export default function PracticePage() {
   
   // HanziWriter 연습 모드 초기화
   const initPracticeMode = () => {
-    if (!canvasRef.current) return;
+    if (!canvasRef.current || !window.HanziWriter) {
+      console.error('Canvas 참조 또는 HanziWriter가 준비되지 않았습니다');
+      return;
+    }
     
     // 이전 인스턴스 제거
     if (writerRef.current) {
       writerRef.current = null;
     }
     
-    // 캔버스 요소는 두 번째 인자로 전달하지만 HanziWriter가 
-    // canvas 요소를 자체 생성하는 것이 기본 동작이므로 대상 요소만 지정
-    const writer = window.HanziWriter.create(canvasRef.current, character, {
-      width: 300,
-      height: 300,
-      padding: 5,
-      strokeAnimationSpeed: strokeSpeed,
-      delayBetweenStrokes: 300,
-      showOutline: true,
-      highlightColor: strokeHelp ? '#3498db' : 'transparent',
-      outlineColor: '#333',
-      drawingColor: '#333',
-      strokeColor: '#555',
-      showHintAfterMisses: 3,
-      quizStartStrokeNum: 0,
-    });
+    // 캔버스 초기화
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    if (ctx) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
     
-    writerRef.current = writer;
-    
-    // 잠시 후 연습 모드 시작
-    setTimeout(() => {
-      writer.quiz({
-        onMistake: (strokeData: any) => {
-          setAttempts(prev => prev + 1);
-          setFeedback('조금 더 정확하게 그려보세요.');
-        },
-        onCorrectStroke: (strokeData: any) => {
-          setFeedback('정확합니다! 계속 진행하세요.');
-        },
-        onComplete: () => {
-          setSuccess(true);
-          setFeedback('축하합니다! 성공적으로 한자를 완성했습니다.');
+    try {
+      console.log('연습 모드 초기화 시작:', character);
+      
+      // HanziWriter 인스턴스 생성
+      const writer = window.HanziWriter.create(canvasRef.current, character, {
+        width: 300,
+        height: 300,
+        padding: 5,
+        strokeAnimationSpeed: strokeSpeed,
+        delayBetweenStrokes: 300,
+        showOutline: true,
+        highlightColor: strokeHelp ? '#3498db' : 'transparent',
+        outlineColor: '#333',
+        drawingColor: '#333',
+        strokeColor: '#555',
+        showHintAfterMisses: 3,
+        charDataLoader: function(char: string, onComplete: (data: any) => void) {
+          console.log('한자 데이터 로딩 시작:', char);
+          
+          // 먼저 CDN에서 시도 (정확한 URL 경로 사용)
+          fetch(`https://cdn.jsdelivr.net/npm/hanzi-writer-data@latest/${encodeURIComponent(char)}.json`)
+            .then(res => {
+              if (!res.ok) {
+                console.warn(`CDN 데이터 로드 실패 (${res.status}): ${char}`);
+                throw new Error('CDN에서 데이터를 찾을 수 없음');
+              }
+              return res.json();
+            })
+            .then(data => {
+              console.log('CDN에서 성공적으로 데이터 로드:', char);
+              onComplete(data);
+            })
+            .catch(err => {
+              console.warn('CDN 데이터 로드 실패, 로컬 API 시도:', err.message);
+              
+              // CDN 실패 시 로컬 API에서 시도
+              fetch(`/api/hanja/strokes?character=${encodeURIComponent(char)}`)
+                .then(res => {
+                  if (!res.ok) {
+                    console.warn(`로컬 API 데이터 로드 실패 (${res.status}): ${char}`);
+                    throw new Error('로컬 API에서 데이터를 찾을 수 없음');
+                  }
+                  return res.json();
+                })
+                .then(data => {
+                  if (data.error) {
+                    console.error('로컬 API 에러:', data.error);
+                    throw new Error(data.error);
+                  }
+                  console.log('로컬 API에서 데이터 로드 성공:', char);
+                  onComplete(data);
+                })
+                .catch(localErr => {
+                  console.error('한자 데이터 로드 최종 실패:', localErr.message);
+                  setFeedback(`한자 데이터를 불러올 수 없습니다. (${char})`);
+                  onComplete(null);
+                });
+            });
         }
       });
-    }, 1000);
+      
+      console.log('HanziWriter 인스턴스 생성 완료');
+      writerRef.current = writer;
+      
+      // 잠시 후 연습 모드 시작
+      setTimeout(() => {
+        if (writerRef.current) {
+          console.log('퀴즈 모드 시작');
+          writerRef.current.quiz({
+            onMistake: (strokeData: any) => {
+              setAttempts(prev => prev + 1);
+              setFeedback('조금 더 정확하게 그려보세요.');
+            },
+            onCorrectStroke: (strokeData: any) => {
+              setFeedback('정확합니다! 계속 진행하세요.');
+            },
+            onComplete: () => {
+              setSuccess(true);
+              setFeedback('축하합니다! 성공적으로 한자를 완성했습니다.');
+            }
+          });
+        } else {
+          console.error('HanziWriter 인스턴스가 없습니다.');
+          setFeedback('한자 연습을 시작할 수 없습니다. 페이지를 새로고침 해주세요.');
+        }
+      }, 1000);
+    } catch (error) {
+      console.error('HanziWriter 초기화 오류:', error);
+      setFeedback('한자 연습을 초기화하는 데 문제가 발생했습니다. 페이지를 새로고침 해주세요.');
+    }
   };
   
   // 도움말 표시 설정 변경
@@ -94,6 +173,13 @@ export default function PracticePage() {
   const restartPractice = () => {
     startPractice();
   };
+  
+  // 컴포넌트 마운트 시 HanziWriter 스크립트 로드 확인
+  useEffect(() => {
+    if (window.HanziWriter) {
+      setScriptLoaded(true);
+    }
+  }, []);
   
   if (!hanjaData) {
     return (
@@ -113,6 +199,11 @@ export default function PracticePage() {
 
   return (
     <div className="container mx-auto p-4">
+      <Script 
+        src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"
+        onLoad={handleScriptLoad}
+        strategy="afterInteractive"
+      />
       <div className="max-w-5xl mx-auto">
         <div className="mb-4">
           <Link href={`/learn/hanja/${encodeURIComponent(character)}`} className="text-blue-500 hover:underline">
@@ -124,6 +215,21 @@ export default function PracticePage() {
         <p className="text-center text-gray-600 mb-6">
           한자: {hanjaData.character} | 의미: {hanjaData.meaning} | 음: {hanjaData.pronunciation}
         </p>
+        
+        {/* 연습 모드 선택 탭 추가 */}
+        <div className="mb-6 flex justify-center">
+          <div className="bg-white rounded-lg shadow-sm inline-flex">
+            <Link href={`/practice?char=${character}`} className="px-4 py-2 font-medium text-sm rounded-l-lg bg-blue-500 text-white">
+              기본 연습
+            </Link>
+            <Link href={`/practice/enhanced?char=${character}`} className="px-4 py-2 font-medium text-sm bg-gray-100 hover:bg-gray-200 transition">
+              일반 연습
+            </Link>
+            <Link href={`/practice/advanced?char=${character}`} className="px-4 py-2 font-medium text-sm rounded-r-lg bg-gray-100 hover:bg-gray-200 transition">
+              고급 연습
+            </Link>
+          </div>
+        </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* 왼쪽: 애니메이션 또는 연습 영역 */}
@@ -195,8 +301,9 @@ export default function PracticePage() {
                 <button
                   onClick={startPractice}
                   className="px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition"
+                  disabled={!scriptLoaded}
                 >
-                  필기 연습 시작하기
+                  {scriptLoaded ? '필기 연습 시작하기' : '스크립트 로딩 중...'}
                 </button>
               )}
             </div>
@@ -237,29 +344,7 @@ export default function PracticePage() {
                       onChange={toggleStrokeHelp}
                       className="mr-2"
                     />
-                    <label htmlFor="strokeHelp">획 위치 힌트 표시</label>
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm mb-1">획 속도 조절</label>
-                    <input 
-                      type="range" 
-                      min="0.5" 
-                      max="2" 
-                      step="0.5" 
-                      value={strokeSpeed}
-                      onChange={(e) => setStrokeSpeed(parseFloat(e.target.value))}
-                      className="w-full"
-                    />
-                  </div>
-                  
-                  <div className="text-center mt-4">
-                    <button
-                      onClick={restartPractice}
-                      className="w-full px-4 py-2 bg-indigo-500 text-white rounded-md hover:bg-indigo-600 transition"
-                    >
-                      설정 적용 및 다시 시작
-                    </button>
+                    <label htmlFor="strokeHelp">획 도움말 표시</label>
                   </div>
                 </div>
               </div>

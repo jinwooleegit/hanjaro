@@ -5,14 +5,14 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 export default function Navigation() {
-  const pathname = usePathname();
+  const pathname = usePathname() || '/';
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
     { name: '홈', href: '/' },
     { name: '한자 학습', href: '/learn' },
-    { name: '필기 연습', href: '/practice' },
     { name: '한자 퀴즈', href: '/quiz' },
+    { name: '한자의 이해', href: '/pages/hanja-principles' },
     { name: '대시보드', href: '/dashboard' },
   ];
 
@@ -28,17 +28,18 @@ export default function Navigation() {
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
-                    pathname === item.href
-                      ? 'border-primary text-gray-900 dark:text-white'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white'
-                  }`}
-                >
-                  {item.name}
-                </Link>
+                <div key={item.href} className="relative">
+                  <Link
+                    href={item.href}
+                    className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
+                      pathname === item.href
+                        ? 'border-primary text-gray-900 dark:text-white'
+                        : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -95,23 +96,27 @@ export default function Navigation() {
         <div className="sm:hidden">
           <div className="pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
-                  pathname === item.href
-                    ? 'border-primary text-primary bg-primary-50 dark:bg-gray-700'
-                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700'
-                }`}
-              >
-                {item.name}
-              </Link>
+              <div key={item.href}>
+                <Link
+                  href={item.href}
+                  className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+                    pathname === item.href
+                      ? 'border-primary text-primary bg-primary-50 dark:bg-gray-700'
+                      : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              </div>
             ))}
           </div>
           <div className="pt-4 pb-3 border-t border-gray-200 dark:border-gray-700">
-            <div className="flex items-center px-4">
-              <Link href="/api/auth/signin" className="w-full">
-                <button className="btn-outline w-full">로그인</button>
+            <div className="mt-3 space-y-1">
+              <Link
+                href="/api/auth/signin"
+                className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700"
+              >
+                로그인
               </Link>
             </div>
           </div>

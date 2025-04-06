@@ -1,0 +1,138 @@
+{
+  "userId": "default_user",
+  "characters": {
+    "人": {
+      "character": "人",
+      "status": "needs_review",
+      "masteryLevel": 70,
+      "correctCount": 8,
+      "incorrectCount": 2,
+      "lastStudied": "2025-03-28T12:00:00.000Z",
+      "nextReviewDue": "2025-04-01T12:00:00.000Z",
+      "studyHistory": [
+        {
+          "timestamp": "2025-03-25T10:00:00.000Z",
+          "type": "learned"
+        },
+        {
+          "timestamp": "2025-03-28T12:00:00.000Z",
+          "type": "quiz_correct",
+          "score": 80
+        }
+      ]
+    },
+    "水": {
+      "character": "水",
+      "status": "needs_review",
+      "masteryLevel": 60,
+      "correctCount": 6,
+      "incorrectCount": 3,
+      "lastStudied": "2025-03-28T14:30:00.000Z",
+      "nextReviewDue": "2025-04-02T14:30:00.000Z",
+      "studyHistory": [
+        {
+          "timestamp": "2025-03-25T11:00:00.000Z",
+          "type": "learned"
+        },
+        {
+          "timestamp": "2025-03-28T14:30:00.000Z",
+          "type": "quiz_correct",
+          "score": 70
+        }
+      ]
+    },
+    "火": {
+      "character": "火",
+      "status": "in_progress",
+      "masteryLevel": 40,
+      "correctCount": 4,
+      "incorrectCount": 4,
+      "lastStudied": "2025-03-30T09:15:00.000Z",
+      "nextReviewDue": "2025-04-05T09:15:00.000Z",
+      "studyHistory": [
+        {
+          "timestamp": "2025-03-30T09:15:00.000Z",
+          "type": "learned"
+        }
+      ]
+    },
+    "山": {
+      "character": "山",
+      "status": "completed",
+      "masteryLevel": 90,
+      "correctCount": 12,
+      "incorrectCount": 1,
+      "lastStudied": "2025-03-29T16:45:00.000Z",
+      "nextReviewDue": "2025-04-08T16:45:00.000Z",
+      "studyHistory": [
+        {
+          "timestamp": "2025-03-20T16:45:00.000Z",
+          "type": "learned"
+        },
+        {
+          "timestamp": "2025-03-22T16:45:00.000Z",
+          "type": "quiz_correct",
+          "score": 90
+        },
+        {
+          "timestamp": "2025-03-29T16:45:00.000Z",
+          "type": "practice"
+        }
+      ]
+    },
+    "木": {
+      "character": "木",
+      "status": "reviewing",
+      "masteryLevel": 55,
+      "correctCount": 5,
+      "incorrectCount": 3,
+      "lastStudied": "2025-03-31T08:00:00.000Z",
+      "nextReviewDue": "2025-04-02T08:00:00.000Z",
+      "studyHistory": [
+        {
+          "timestamp": "2025-03-26T08:00:00.000Z",
+          "type": "learned"
+        },
+        {
+          "timestamp": "2025-03-31T08:00:00.000Z",
+          "type": "reviewed"
+        }
+      ]
+    }
+  },
+  "levels": {
+    "level1": {
+      "levelId": "level1",
+      "totalCharacters": 5,
+      "studiedCharacters": 5,
+      "completedCharacters": 1,
+      "averageMastery": 63
+    }
+  },
+  "lastActive": "2025-04-01T15:00:00.000Z",
+  "streak": {
+    "current": 7,
+    "longest": 7,
+    "lastStudyDate": "2025-04-01"
+  },
+  "statistics": {
+    "totalStudyTime": 210,
+    "totalCharactersStudied": 5,
+    "totalQuizzesTaken": 12,
+    "averageQuizScore": 78,
+    "weeklyStudyTime": {
+      "monday": 30,
+      "tuesday": 25,
+      "wednesday": 35,
+      "thursday": 40,
+      "friday": 20,
+      "saturday": 30,
+      "sunday": 30
+    }
+  },
+  "settings": {
+    "reviewInterval": [1, 3, 7, 14, 30, 90],
+    "dailyGoal": 10,
+    "notifications": true
+  }
+} 

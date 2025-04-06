@@ -1,0 +1,111 @@
+{
+  "name": "3단계 (초등 4학년 수준)",
+  "description": "초등학교 4학년 과정에서 배우는 한자",
+  "characters": [
+    {
+      "character": "金",
+      "meaning": "쇠 금",
+      "pronunciation": "금",
+      "stroke_count": 8,
+      "radical": "金",
+      "examples": [
+        {
+          "word": "金曜日",
+          "meaning": "금요일",
+          "pronunciation": "금요일"
+        },
+        {
+          "word": "金銀",
+          "meaning": "금과 은",
+          "pronunciation": "금은"
+        }
+      ],
+      "level": 3,
+      "order": 1
+    },
+    {
+      "character": "火",
+      "meaning": "불 화",
+      "pronunciation": "화",
+      "stroke_count": 4,
+      "radical": "火",
+      "examples": [
+        {
+          "word": "火曜日",
+          "meaning": "화요일",
+          "pronunciation": "화요일"
+        },
+        {
+          "word": "火山",
+          "meaning": "화산",
+          "pronunciation": "화산"
+        }
+      ],
+      "level": 3,
+      "order": 2
+    },
+    {
+      "character": "土",
+      "meaning": "흙 토",
+      "pronunciation": "토",
+      "stroke_count": 3,
+      "radical": "土",
+      "examples": [
+        {
+          "word": "土曜日",
+          "meaning": "토요일",
+          "pronunciation": "토요일"
+        },
+        {
+          "word": "國土",
+          "meaning": "국토",
+          "pronunciation": "국토"
+        }
+      ],
+      "level": 3,
+      "order": 3
+    },
+    {
+      "character": "心",
+      "meaning": "마음 심",
+      "pronunciation": "심",
+      "stroke_count": 4,
+      "radical": "心",
+      "examples": [
+        {
+          "word": "心臟",
+          "meaning": "심장",
+          "pronunciation": "심장"
+        },
+        {
+          "word": "中心",
+          "meaning": "중심",
+          "pronunciation": "중심"
+        }
+      ],
+      "level": 3,
+      "order": 4
+    },
+    {
+      "character": "手",
+      "meaning": "손 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "手",
+      "examples": [
+        {
+          "word": "手帳",
+          "meaning": "수첩",
+          "pronunciation": "수첩"
+        },
+        {
+          "word": "拍手",
+          "meaning": "박수",
+          "pronunciation": "박수"
+        }
+      ],
+      "level": 3,
+      "order": 5
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "name": "1단계 (초등 1학년 수준)",
+  "description": "초등학교 1학년 과정에서 배우는 한자",
+  "characters": [
+    {
+      "character": "一",
+      "meaning": "한 일",
+      "pronunciation": "일",
+      "stroke_count": 1,
+      "radical": "一",
+      "examples": [
+        {
+          "word": "一日",
+          "meaning": "하루",
+          "pronunciation": "일일"
+        },
+        {
+          "word": "一年",
+          "meaning": "일 년",
+          "pronunciation": "일년"
+        }
+      ],
+      "level": 1,
+      "order": 1
+    },
+    {
+      "character": "二",
+      "meaning": "두 이",
+      "pronunciation": "이",
+      "stroke_count": 2,
+      "radical": "二",
+      "examples": [
+        {
+          "word": "二月",
+          "meaning": "이월",
+          "pronunciation": "이월"
+        },
+        {
+          "word": "二十",
+          "meaning": "스물",
+          "pronunciation": "이십"
+        }
+      ],
+      "level": 1,
+      "order": 2
+    },
+    {
+      "character": "三",
+      "meaning": "석 삼",
+      "pronunciation": "삼",
+      "stroke_count": 3,
+      "radical": "一",
+      "examples": [
+        {
+          "word": "三月",
+          "meaning": "삼월",
+          "pronunciation": "삼월"
+        },
+        {
+          "word": "三角",
+          "meaning": "삼각형",
+          "pronunciation": "삼각"
+        }
+      ],
+      "level": 1,
+      "order": 3
+    },
+    {
+      "character": "人",
+      "meaning": "사람 인",
+      "pronunciation": "인",
+      "stroke_count": 2,
+      "radical": "人",
+      "examples": [
+        {
+          "word": "人間",
+          "meaning": "인간",
+          "pronunciation": "인간"
+        },
+        {
+          "word": "人口",
+          "meaning": "인구",
+          "pronunciation": "인구"
+        }
+      ],
+      "level": 1,
+      "order": 4
+    },
+    {
+      "character": "大",
+      "meaning": "큰 대",
+      "pronunciation": "대",
+      "stroke_count": 3,
+      "radical": "大",
+      "examples": [
+        {
+          "word": "大學",
+          "meaning": "대학",
+          "pronunciation": "대학"
+        },
+        {
+          "word": "大韓",
+          "meaning": "대한",
+          "pronunciation": "대한"
+        }
+      ],
+      "level": 1,
+      "order": 5
+    }
+  ]
+}
