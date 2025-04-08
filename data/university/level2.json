@@ -1,0 +1,143 @@
+{
+  "name": "대학교 2학년 한자",
+  "description": "대학교 2학년 과정에서 배우는 한자",
+  "category": "university",
+  "level": 2,
+  "characters": [
+    {
+      "character": "鑑",
+      "meaning": "거울 감",
+      "pronunciation": "감",
+      "stroke_count": 23,
+      "radical": "金",
+      "examples": [
+        {
+          "word": "鑑賞",
+          "meaning": "감상",
+          "pronunciation": "감상"
+        },
+        {
+          "word": "鑑定",
+          "meaning": "감정",
+          "pronunciation": "감정"
+        }
+      ],
+      "tags": [
+        "meaning:object",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 2,
+      "order": 1
+    },
+    {
+      "character": "競",
+      "meaning": "다툴 경",
+      "pronunciation": "경",
+      "stroke_count": 20,
+      "radical": "立",
+      "examples": [
+        {
+          "word": "競爭",
+          "meaning": "경쟁",
+          "pronunciation": "경쟁"
+        },
+        {
+          "word": "競技",
+          "meaning": "경기",
+          "pronunciation": "경기"
+        }
+      ],
+      "tags": [
+        "meaning:action",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 2,
+      "order": 2
+    },
+    {
+      "character": "徹",
+      "meaning": "통할 철",
+      "pronunciation": "철",
+      "stroke_count": 15,
+      "radical": "彳",
+      "examples": [
+        {
+          "word": "徹底",
+          "meaning": "철저",
+          "pronunciation": "철저"
+        },
+        {
+          "word": "徹夜",
+          "meaning": "철야",
+          "pronunciation": "철야"
+        }
+      ],
+      "tags": [
+        "meaning:action",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 2,
+      "order": 3
+    },
+    {
+      "character": "醫",
+      "meaning": "의원 의",
+      "pronunciation": "의",
+      "stroke_count": 18,
+      "radical": "酉",
+      "examples": [
+        {
+          "word": "醫師",
+          "meaning": "의사",
+          "pronunciation": "의사"
+        },
+        {
+          "word": "醫學",
+          "meaning": "의학",
+          "pronunciation": "의학"
+        }
+      ],
+      "tags": [
+        "meaning:profession",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 2,
+      "order": 4
+    },
+    {
+      "character": "薦",
+      "meaning": "천거할 천",
+      "pronunciation": "천",
+      "stroke_count": 16,
+      "radical": "艹",
+      "examples": [
+        {
+          "word": "推薦",
+          "meaning": "추천",
+          "pronunciation": "추천"
+        },
+        {
+          "word": "薦擧",
+          "meaning": "천거",
+          "pronunciation": "천거"
+        }
+      ],
+      "tags": [
+        "meaning:action",
+        "difficulty:advanced",
+        "usage:formal",
+        "education:university"
+      ],
+      "level": 2,
+      "order": 5
+    }
+  ]
+} 

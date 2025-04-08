@@ -3,6 +3,111 @@
   "description": "의학 및 과학 분야에서 자주 사용되는 한자",
   "characters": [
     {
+      "character": "心",
+      "meaning": "마음 심",
+      "pronunciation": "심",
+      "stroke_count": 4,
+      "radical": "心",
+      "examples": [
+        {
+          "word": "心臟",
+          "meaning": "심장",
+          "pronunciation": "심장"
+        },
+        {
+          "word": "中心",
+          "meaning": "중심",
+          "pronunciation": "중심"
+        }
+      ],
+      "level": 6,
+      "order": 1
+    },
+    {
+      "character": "手",
+      "meaning": "손 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "手",
+      "examples": [
+        {
+          "word": "手帳",
+          "meaning": "수첩",
+          "pronunciation": "수첩"
+        },
+        {
+          "word": "拍手",
+          "meaning": "박수",
+          "pronunciation": "박수"
+        }
+      ],
+      "level": 6,
+      "order": 2
+    },
+    {
+      "character": "口",
+      "meaning": "입 구",
+      "pronunciation": "구",
+      "stroke_count": 3,
+      "radical": "口",
+      "examples": [
+        {
+          "word": "口語",
+          "meaning": "구어",
+          "pronunciation": "구어"
+        },
+        {
+          "word": "入口",
+          "meaning": "입구",
+          "pronunciation": "입구"
+        }
+      ],
+      "level": 6,
+      "order": 3
+    },
+    {
+      "character": "目",
+      "meaning": "눈 목",
+      "pronunciation": "목",
+      "stroke_count": 5,
+      "radical": "目",
+      "examples": [
+        {
+          "word": "目的",
+          "meaning": "목적",
+          "pronunciation": "목적"
+        },
+        {
+          "word": "注目",
+          "meaning": "주목",
+          "pronunciation": "주목"
+        }
+      ],
+      "level": 6,
+      "order": 4
+    },
+    {
+      "character": "耳",
+      "meaning": "귀 이",
+      "pronunciation": "이",
+      "stroke_count": 6,
+      "radical": "耳",
+      "examples": [
+        {
+          "word": "耳鳴",
+          "meaning": "이명",
+          "pronunciation": "이명"
+        },
+        {
+          "word": "耳目",
+          "meaning": "이목",
+          "pronunciation": "이목"
+        }
+      ],
+      "level": 6,
+      "order": 5
+    },
+    {
       "character": "醫",
       "meaning": "의사 의",
       "pronunciation": "의",
@@ -21,7 +126,7 @@
         }
       ],
       "level": 7,
-      "order": 1
+      "order": 6
     },
     {
       "character": "藥",
@@ -42,7 +147,7 @@
         }
       ],
       "level": 7,
-      "order": 2
+      "order": 7
     },
     {
       "character": "病",
@@ -63,7 +168,7 @@
         }
       ],
       "level": 7,
-      "order": 3
+      "order": 8
     },
     {
       "character": "科",
@@ -84,7 +189,7 @@
         }
       ],
       "level": 7,
-      "order": 4
+      "order": 9
     },
     {
       "character": "化",
@@ -105,7 +210,112 @@
         }
       ],
       "level": 7,
-      "order": 5
+      "order": 10
+    },
+    {
+      "character": "德",
+      "meaning": "덕 덕",
+      "pronunciation": "덕",
+      "stroke_count": 15,
+      "radical": "彳",
+      "examples": [
+        {
+          "word": "德行",
+          "meaning": "덕행",
+          "pronunciation": "덕행"
+        },
+        {
+          "word": "道德",
+          "meaning": "도덕",
+          "pronunciation": "도덕"
+        }
+      ],
+      "level": 8,
+      "order": 11
+    },
+    {
+      "character": "愛",
+      "meaning": "사랑 애",
+      "pronunciation": "애",
+      "stroke_count": 13,
+      "radical": "心",
+      "examples": [
+        {
+          "word": "愛情",
+          "meaning": "애정",
+          "pronunciation": "애정"
+        },
+        {
+          "word": "사랑",
+          "meaning": "사랑",
+          "pronunciation": "사랑"
+        }
+      ],
+      "level": 8,
+      "order": 12
+    },
+    {
+      "character": "美",
+      "meaning": "아름다울 미",
+      "pronunciation": "미",
+      "stroke_count": 9,
+      "radical": "羊",
+      "examples": [
+        {
+          "word": "美術",
+          "meaning": "미술",
+          "pronunciation": "미술"
+        },
+        {
+          "word": "美容",
+          "meaning": "미용",
+          "pronunciation": "미용"
+        }
+      ],
+      "level": 8,
+      "order": 13
+    },
+    {
+      "character": "善",
+      "meaning": "착할 선",
+      "pronunciation": "선",
+      "stroke_count": 12,
+      "radical": "口",
+      "examples": [
+        {
+          "word": "善良",
+          "meaning": "선량",
+          "pronunciation": "선량"
+        },
+        {
+          "word": "親善",
+          "meaning": "친선",
+          "pronunciation": "친선"
+        }
+      ],
+      "level": 8,
+      "order": 14
+    },
+    {
+      "character": "誠",
+      "meaning": "정성 성",
+      "pronunciation": "성",
+      "stroke_count": 13,
+      "radical": "言",
+      "examples": [
+        {
+          "word": "誠實",
+          "meaning": "성실",
+          "pronunciation": "성실"
+        },
+        {
+          "word": "忠誠",
+          "meaning": "충성",
+          "pronunciation": "충성"
+        }
+      ],
+      "level": 8,
+      "order": 15
     }
   ]
 }

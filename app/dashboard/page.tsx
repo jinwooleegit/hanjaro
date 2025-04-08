@@ -93,9 +93,9 @@ export default function Dashboard() {
                 학습하기
               </button>
             </Link>
-            <Link href="/practice">
+            <Link href="/pdf-practice">
               <button className="px-4 py-2 bg-green-500 text-white hover:bg-green-600 rounded-md transition">
-                필기 연습
+                복습지 다운로드
               </button>
             </Link>
             <Link href="/quiz">

@@ -1,0 +1,143 @@
+{
+  "name": "대학교 4학년 한자",
+  "description": "대학교 4학년 과정에서 배우는 한자",
+  "category": "university",
+  "level": 4,
+  "characters": [
+    {
+      "character": "黨",
+      "meaning": "무리 당",
+      "pronunciation": "당",
+      "stroke_count": 17,
+      "radical": "黑",
+      "examples": [
+        {
+          "word": "政黨",
+          "meaning": "정당",
+          "pronunciation": "정당"
+        },
+        {
+          "word": "黨員",
+          "meaning": "당원",
+          "pronunciation": "당원"
+        }
+      ],
+      "tags": [
+        "meaning:society",
+        "difficulty:advanced",
+        "usage:politics",
+        "education:university"
+      ],
+      "level": 4,
+      "order": 1
+    },
+    {
+      "character": "權",
+      "meaning": "권세 권",
+      "pronunciation": "권",
+      "stroke_count": 20,
+      "radical": "木",
+      "examples": [
+        {
+          "word": "權力",
+          "meaning": "권력",
+          "pronunciation": "권력"
+        },
+        {
+          "word": "權限",
+          "meaning": "권한",
+          "pronunciation": "권한"
+        }
+      ],
+      "tags": [
+        "meaning:authority",
+        "difficulty:advanced",
+        "usage:politics",
+        "education:university"
+      ],
+      "level": 4,
+      "order": 2
+    },
+    {
+      "character": "警",
+      "meaning": "경계할 경",
+      "pronunciation": "경",
+      "stroke_count": 19,
+      "radical": "言",
+      "examples": [
+        {
+          "word": "警察",
+          "meaning": "경찰",
+          "pronunciation": "경찰"
+        },
+        {
+          "word": "警告",
+          "meaning": "경고",
+          "pronunciation": "경고"
+        }
+      ],
+      "tags": [
+        "meaning:safety",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 4,
+      "order": 3
+    },
+    {
+      "character": "護",
+      "meaning": "보호할 호",
+      "pronunciation": "호",
+      "stroke_count": 20,
+      "radical": "言",
+      "examples": [
+        {
+          "word": "保護",
+          "meaning": "보호",
+          "pronunciation": "보호"
+        },
+        {
+          "word": "護衛",
+          "meaning": "호위",
+          "pronunciation": "호위"
+        }
+      ],
+      "tags": [
+        "meaning:safety",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 4,
+      "order": 4
+    },
+    {
+      "character": "續",
+      "meaning": "이을 속",
+      "pronunciation": "속",
+      "stroke_count": 19,
+      "radical": "糸",
+      "examples": [
+        {
+          "word": "繼續",
+          "meaning": "계속",
+          "pronunciation": "계속"
+        },
+        {
+          "word": "連續",
+          "meaning": "연속",
+          "pronunciation": "연속"
+        }
+      ],
+      "tags": [
+        "meaning:time",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 4,
+      "order": 5
+    }
+  ]
+} 

@@ -11,6 +11,7 @@ declare global {
     HanziWriterLoaders?: Record<string, (callback: any) => void>;
     HanziCache?: Record<string, any>;
     HanziWriterTimers?: Record<string, number>;
+    loadHanjaData?: (char: string, callback: (data: any) => void) => void;
   }
 }
 
@@ -362,6 +363,7 @@ interface HanziProps {
   strokeColor?: string;
   radicalColor?: string;
   drawingWidth?: number;
+  strokeWidth?: number;
   quizMode?: boolean;
   animateMode?: boolean;
   onLoad?: (character: string) => void;
@@ -382,6 +384,7 @@ export default function HanziWriterComponent({
   strokeColor = '#333',
   radicalColor = '#337ab7',
   drawingWidth = 4,
+  strokeWidth = 1,
   quizMode = false,
   animateMode = true,
   onLoad,
@@ -483,7 +486,7 @@ export default function HanziWriterComponent({
     }
     
     // 글로벌 로더 사용
-    if (window.loadHanjaData) {
+    if (typeof window !== 'undefined' && window.loadHanjaData) {
       console.log(`[HanziWriterComponent] 글로벌 로더 사용: ${char}`);
       try {
         window.loadHanjaData(char, (data: any) => {
@@ -491,16 +494,17 @@ export default function HanziWriterComponent({
             console.log(`[HanziWriterComponent] 글로벌 로더에서 데이터 수신: ${char}`);
             // 우선 기본 데이터로 표시
             onComplete(data);
-          } catch (error) {
-            console.error(`[HanziWriterComponent] 글로벌 로더 데이터 처리 중 오류: ${error}`);
-            const fallbackData = generateBasicHanjaPattern(char);
-            setError(`글로벌 로더 데이터 처리 중 오류가 발생했습니다. 기본 데이터를 사용합니다.`);
-            onComplete(fallbackData);
+          } catch (dataError) {
+            console.error(`[HanziWriterComponent] 글로벌 로더 데이터 처리 오류: ${char}`, dataError);
+            setIsLoading(false);
+            setError(`${char} 한자 데이터 처리 오류`);
           }
         });
         return;
-      } catch (error) {
-        console.error(`[HanziWriterComponent] 글로벌 로더 호출 중 오류: ${error}`);
+      } catch (callError) {
+        console.error(`[HanziWriterComponent] 글로벌 로더 호출 오류: ${char}`, callError);
+        setIsLoading(false);
+        setError(`${char} 한자 데이터 로드 오류`);
       }
     }
     
@@ -842,6 +846,7 @@ export default function HanziWriterComponent({
           radicalColor: radicalColor || '#337ab7',
           highlightColor: highlightColor || '#07F',
           drawingWidth: drawingWidth || 4,
+          strokeWidth: strokeWidth || 1,
           renderer: 'svg',
           onLoadCharDataSuccess: () => {
             console.log(`[HanziWriterComponent] 한자 ${character} 데이터 로드 성공`);
@@ -895,159 +900,113 @@ export default function HanziWriterComponent({
 
   // 한자 작성기 인스턴스 정리 함수
   const cleanupWriter = () => {
-    if (writerRef.current) {
-      try {
-        // 먼저 인스턴스 참조를 제거하여 HanziWriter가 DOM 조작을 중지하게 함
-        writerRef.current = null;
-        
-        // DOM 요소를 직접 제어하는 인스턴스이므로, 정리 작업 수행
-        if (containerRef.current) {
-          // React에서 제거할 요소를 직접 선택하는 대신
-          // 안전하게 자식 요소 비우기
-          const container = containerRef.current;
-          
-          // React의 setState 호출 전에 DOM 조작을 피하기 위해 setTimeout 사용
-          setTimeout(() => {
-            try {
-              // 컨테이너에 SVG 요소가 있는지 확인
-              if (container && container.children && container.children.length > 0) {
-                // 자식 노드가 존재하면 각각 안전하게 제거
-                while (container.firstChild) {
-                  try {
-                    const childToRemove = container.firstChild;
-                    if (childToRemove && childToRemove.parentNode === container) {
-                      container.removeChild(childToRemove);
-                    } else {
-                      // 부모-자식 관계가 이미 깨진 경우 루프 중단
-                      break;
-                    }
-                  } catch (e) {
-                    console.warn('[HanziWriterComponent] DOM 요소 제거 중 오류:', e);
-                    // 오류가 발생하면 innerHTML을 직접 비우는 대체 방법 시도
-                    try {
-                      container.innerHTML = '';
-                    } catch (innerError) {
-                      console.error('[HanziWriterComponent] 컨테이너 비우기 실패:', innerError);
-                    }
-                    break;
-                  }
-                }
-              }
-            } catch (e) {
-              console.warn('[HanziWriterComponent] 인스턴스 정리 중 오류:', e);
-            }
-          }, 0);
-        }
-      } catch (e) {
-        console.warn('[HanziWriterComponent] 인스턴스 정리 중 오류:', e);
+    console.log('HanziWriter 정리 시작');
+    
+    try {
+      // 적용 중인 애니메이션 취소
+      if (window.HanziWriterTimers) {
+        Object.keys(window.HanziWriterTimers).forEach(key => {
+          if (window.HanziWriterTimers && window.HanziWriterTimers[key]) {
+            clearTimeout(window.HanziWriterTimers[key]);
+            delete window.HanziWriterTimers[key];
+          }
+        });
       }
+      
+      // 전역 인스턴스 참조 제거
+      if (writerRef.current === window.HanziWriterInstance) {
+        window.HanziWriterInstance = null;
+      }
+      
+      // 인스턴스 참조 제거
+      writerRef.current = null;
+      
+      // 컨테이너 내용 안전하게 정리
+      if (containerRef.current) {
+        try {
+          // innerHTML을 사용한 안전한 방식으로 컨테이너 비우기
+          containerRef.current.innerHTML = '';
+        } catch (e) {
+          console.error('컨테이너 내용 정리 중 오류:', e);
+        }
+      }
+      
+      console.log('HanziWriter 정리 완료');
+    } catch (e) {
+      console.error('HanziWriter 정리 중 오류:', e);
     }
   };
 
   // 컴포넌트가 마운트 되었을 때 HanziWriter 초기화
   useEffect(() => {
-    // 서버 사이드에서는 실행하지 않음
-    if (typeof window === 'undefined') return;
+    console.log('HanziWriter 컴포넌트 마운트됨');
     
-    console.log('[HanziWriterComponent] useEffect 실행:', character);
-    
-    // 초기 로드 상태 설정
-    const isHanziWriterAvailable = !!window.HanziWriter;
-    setScriptLoaded(isHanziWriterAvailable);
-    
-    // 한자 작성기 인스턴스 정리 함수
-    const cleanupWriter = () => {
-      if (writerRef.current) {
-        try {
-          // DOM 요소를 직접 제어하는 인스턴스이므로, 정리 작업 수행
-          if (containerRef.current) {
-            // 컨테이너 내부 SVG 요소 모두 제거
-            while (containerRef.current.firstChild) {
-              containerRef.current.removeChild(containerRef.current.firstChild);
-            }
-          }
-          writerRef.current = null;
-        } catch (e) {
-          console.warn('[HanziWriterComponent] 인스턴스 정리 중 오류:', e);
-        }
+    // 스크립트 로드 확인
+    if (typeof window !== 'undefined') {
+      if (window.HanziWriter) {
+        console.log('이미 HanziWriter가 로드됨');
+        setScriptLoaded(true);
+        
+        // 조금 지연시켜 DOM이 준비되었는지 확인
+        setTimeout(() => {
+          initializeWriter();
+        }, 50);
+      } else {
+        loadScript();
       }
-    };
-    
-    // 스크립트가 이미 로드되었으면 바로 초기화
-    if (isHanziWriterAvailable) {
-      console.log('[HanziWriterComponent] HanziWriter 이미 로드됨, 초기화 시작');
-      if (containerRef.current) {
-        // 기존 인스턴스 정리 후 초기화
-        cleanupWriter();
-        setTimeout(() => initializeWriter(), 100);
-      }
-      return cleanupWriter;
     }
     
-    console.log('[HanziWriterComponent] HanziWriter 로드 필요');
-    
-    // 스크립트가 로드되지 않았으면 로드
-    const loadLibrary = () => {
-      if (!!window.HanziWriter) {
-        console.log('[HanziWriterComponent] HanziWriter 로드 확인됨');
-        setScriptLoaded(true);
-        if (containerRef.current) {
-          cleanupWriter();
-          setTimeout(() => initializeWriter(), 100);
-        }
-        return true;
-      }
-      return false;
-    };
-    
-    // 이벤트 리스너 등록
-    const handleLibraryLoaded = () => loadLibrary();
-    
-    window.addEventListener('HanziWriterLoaded', handleLibraryLoaded);
-    window.addEventListener('HanziWriterReady', handleLibraryLoaded);
-    
-    // 이미 로드되었을 수도 있으니 한번 확인
-    if (!loadLibrary()) {
-      // 로드가 안되었으면 스크립트 로드
-      loadScript();
+    // 언마운트 시 정리
+    return () => {
+      // 컴포넌트 언마운트 시 사용 중인 리소스 정리
+      console.log('HanziWriter 컴포넌트 언마운트 중');
       
-      // 일정 시간이 지나도 로드가 안되면 폴백 처리
-      const timeoutId = setTimeout(() => {
-        console.log('[HanziWriterComponent] 타임아웃, 폴백 로드 시도');
-        if (!window.HanziWriter) {
-          forceLoadScript();
+      try {
+        // 애니메이션 취소
+        if (writerRef.current) {
+          if (writerRef.current.isAnimating && writerRef.current.cancelAnimation) {
+            writerRef.current.cancelAnimation();
+          }
+          
+          // 퀴즈 취소
+          if (writerRef.current.quiz && writerRef.current.quiz.isActive && writerRef.current.quiz.cancel) {
+            writerRef.current.quiz.cancel();
+          }
         }
-      }, 3000);
-      
-      return () => {
-        clearTimeout(timeoutId);
-        window.removeEventListener('HanziWriterLoaded', handleLibraryLoaded);
-        window.removeEventListener('HanziWriterReady', handleLibraryLoaded);
-        cleanupWriter();
         
-        // 모든 타이머 정리
-        if (typeof window !== 'undefined' && window.HanziWriterTimers) {
-          Object.values(window.HanziWriterTimers).forEach(timerId => {
-            if (timerId) clearTimeout(timerId);
+        // 타이머 정리
+        if (window.HanziWriterTimers) {
+          Object.keys(window.HanziWriterTimers).forEach(key => {
+            if (window.HanziWriterTimers && window.HanziWriterTimers[key]) {
+              clearTimeout(window.HanziWriterTimers[key]);
+            }
           });
         }
-      };
-    }
-    
-    // 클린업 함수
-    return () => {
-      window.removeEventListener('HanziWriterLoaded', handleLibraryLoaded);
-      window.removeEventListener('HanziWriterReady', handleLibraryLoaded);
-      cleanupWriter();
-      
-      // 모든 타이머 정리
-      if (typeof window !== 'undefined' && window.HanziWriterTimers) {
-        Object.values(window.HanziWriterTimers).forEach(timerId => {
-          if (timerId) clearTimeout(timerId);
-        });
+        
+        // 전역 인스턴스 참조 제거
+        if (writerRef.current === window.HanziWriterInstance) {
+          window.HanziWriterInstance = null;
+        }
+        
+        // 인스턴스 참조 제거
+        writerRef.current = null;
+        
+        // 컨테이너에 남아있는 요소들 정리 (가장 안전한 방법)
+        if (containerRef.current) {
+          try {
+            // innerHTML을 사용한 한번에 제거 (안전한 방법)
+            containerRef.current.innerHTML = '';
+          } catch (e) {
+            console.error('컴포넌트 언마운트 시 정리 오류:', e);
+          }
+        }
+      } catch (cleanupError) {
+        console.error('정리 중 예외 발생:', cleanupError);
       }
+      
+      console.log('HanziWriter 컴포넌트 언마운트 완료');
     };
-  }, [character, width, height]);
+  }, [character]);
 
   // 모드 변경 감지 효과 추가
   useEffect(() => {
@@ -1094,27 +1053,6 @@ export default function HanziWriterComponent({
     }
   }, [quizMode, animateMode]);
   
-  // 컴포넌트 언마운트 시 모든 진행 중인 애니메이션 정리
-  useEffect(() => {
-    return () => {
-      if (writerRef.current) {
-        try {
-          // 애니메이션 취소
-          if (writerRef.current.isAnimating && writerRef.current.cancelAnimation) {
-            writerRef.current.cancelAnimation();
-          }
-          
-          // 퀴즈 취소
-          if (writerRef.current.quiz && writerRef.current.quiz.isActive && writerRef.current.quiz.cancel) {
-            writerRef.current.quiz.cancel();
-          }
-        } catch (e) {
-          console.warn('[HanziWriterComponent] 애니메이션 정리 중 오류:', e);
-        }
-      }
-    };
-  }, []);
-
   // 추가 안전 장치: 컴포넌트 언마운트 시 정리 함수 - 최소화하여 문제 방지
   useEffect(() => {
     return () => {
@@ -1130,59 +1068,47 @@ export default function HanziWriterComponent({
   }, [character]);
 
   return (
-    <div 
-      ref={containerRef}
-      className={`hanzi-writer-container relative ${isLoading ? 'animate-pulse' : ''}`}
-      style={{ 
-        width: width, 
-        height: height,
-        minHeight: height,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'white',
-        overflow: 'hidden',
-        border: '1px solid rgba(0,0,0,0.1)',
-        borderRadius: '4px'
-      }}
-    >
+    <div className="h-full w-full flex items-center justify-center">
+      {!scriptLoaded && (
+        <Script 
+          src="/static/hanzi-writer.min.js"
+          strategy="beforeInteractive" 
+          onLoad={handleScriptLoad}
+          onError={() => console.error('HanziWriter 스크립트 로드 오류')}
+        />
+      )}
+      
+      {/* 로딩 인디케이터 */}
       {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-80 z-10">
-          <div className="text-center">
-            <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500 mb-2"></div>
-            <p className="text-sm text-gray-600">한자 로딩 중...</p>
-          </div>
+        <div className="flex flex-col items-center justify-center">
+          <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+          <p className="mt-4 text-gray-500">한자 로딩 중...</p>
         </div>
       )}
       
-      {/* 스크립트 로드 중일 때 표시 */}
-      {!scriptLoaded && !error && (
-        <div className="hanzi-writer-loading text-center">
-          <div className="inline-block animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-blue-500 mb-2"></div>
-          <p className="text-gray-600 text-sm">HanziWriter 라이브러리 로드 중...</p>
-        </div>
-      )}
-      
-      {/* 오류 발생 시 표시 */}
+      {/* 에러 메시지 */}
       {error && (
-        <div className="hanzi-writer-error text-center p-4">
-          <div className="bg-red-50 border border-red-200 rounded-md p-3 mb-2">
-            <p className="text-red-600 mb-1">오류 발생</p>
-            <p className="text-sm text-red-500">{error}</p>
-          </div>
-          <div className="mt-2 text-5xl font-normal">{character}</div>
+        <div className="flex flex-col items-center justify-center">
+          <p className="text-red-500">한자 로드 오류</p>
+          <p className="text-sm text-gray-500 mt-2">{error}</p>
         </div>
       )}
       
-      {/* 기본 렌더링이 실패할 경우 폴백으로 한자 텍스트만 표시 */}
-      {!isLoading && !error && !scriptLoaded && (
-        <div className="hanzi-writer-fallback">
-          <div className="text-center">
-            <div className="text-7xl font-normal">{character}</div>
-            <p className="text-sm text-gray-500 mt-2">한자 표시 준비 중...</p>
-          </div>
-        </div>
-      )}
+      {/* 한자 작성 영역 컨테이너 - 크기 최적화 */}
+      <div 
+        ref={containerRef}
+        className="flex items-center justify-center"
+        style={{
+          width: '100%',
+          height: '100%',
+          minWidth: width,
+          minHeight: height,
+          maxWidth: '100%',
+          maxHeight: '100%',
+          display: isLoading || error ? 'none' : 'flex',
+          position: 'relative'
+        }}
+      />
     </div>
   );
 } 

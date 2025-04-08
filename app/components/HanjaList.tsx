@@ -76,35 +76,71 @@ export default function HanjaList({ characters, categoryId, levelId }: HanjaList
     }
   };
 
+  // 카테고리에 따른 색상 가져오기
+  const getCategoryColor = (catId: string) => {
+    switch (catId) {
+      case 'basic':
+        return {
+          bg: 'from-blue-50 to-blue-100',
+          border: 'border-blue-200',
+          text: 'text-blue-800',
+          button: 'bg-blue-600 hover:bg-blue-700'
+        };
+      case 'advanced':
+        return {
+          bg: 'from-purple-50 to-purple-100',
+          border: 'border-purple-200',
+          text: 'text-purple-800',
+          button: 'bg-purple-600 hover:bg-purple-700'
+        };
+      case 'university':
+        return {
+          bg: 'from-pink-50 to-pink-100',
+          border: 'border-pink-200',
+          text: 'text-pink-800',
+          button: 'bg-pink-600 hover:bg-pink-700'
+        };
+      default:
+        return {
+          bg: 'from-slate-50 to-slate-100',
+          border: 'border-slate-200',
+          text: 'text-slate-800',
+          button: 'bg-blue-600 hover:bg-blue-700'
+        };
+    }
+  };
+
+  const colors = getCategoryColor(categoryId);
+
   return (
-    <div className="bg-white rounded-xl shadow-md p-6">
-      <h2 className="text-2xl font-semibold mb-4">한자 목록</h2>
+    <div className={`rounded-xl shadow-lg p-6 bg-gradient-to-br ${colors.bg}`}>
+      <h2 className={`text-2xl font-bold mb-6 ${colors.text}`}>한자 목록</h2>
       
       {displayedCharacters.length === 0 ? (
-        <p className="text-gray-500 text-center py-8">
+        <p className="text-gray-500 text-center py-8 bg-white bg-opacity-60 rounded-lg">
           이 레벨에는 아직 한자가 없습니다.
         </p>
       ) : (
         <>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {displayedCharacters.map((character) => (
+            {displayedCharacters.map((character, index) => (
               <Link
-                key={`${character.character}_${character.order}`}
+                key={`${character.character}_${index}`}
                 href={`/learn/hanja/${character.character}?category=${categoryId}&level=${levelId}`}
-                className="bg-gray-50 hover:bg-gray-100 p-4 rounded-lg text-center transition border border-gray-200 hover:border-primary flex flex-col items-center"
+                className={`bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-xl text-center transition-all duration-300 border ${colors.border} transform hover:-translate-y-1 hover:shadow-lg flex flex-col items-center justify-center`}
               >
-                <div className="text-4xl font-bold mb-2">{character.character}</div>
-                <div className="text-sm text-gray-700">{character.meaning}</div>
+                <div className={`text-5xl font-bold mb-3 ${colors.text}`}>{character.character}</div>
+                <div className="text-sm font-medium text-gray-700">{character.meaning}</div>
                 <div className="text-xs text-gray-500 mt-1">{character.pronunciation}</div>
-                <div className="text-xs text-gray-400 mt-1">획수: {character.stroke_count}</div>
+                <div className="mt-2 px-2 py-0.5 rounded-full bg-gray-100 text-xs text-gray-500">획수: {character.stroke_count}</div>
               </Link>
             ))}
           </div>
           
           {/* 로딩 상태 및 페이지네이션 */}
-          <div className="mt-8 flex flex-col items-center">
+          <div className="mt-12 flex flex-col items-center">
             {isLoading ? (
-              <div className="flex items-center">
+              <div className="flex items-center p-3 bg-white bg-opacity-70 rounded-full shadow">
                 <div className="w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full animate-spin mr-2"></div>
                 <span className="text-gray-600">로딩 중...</span>
               </div>
@@ -112,7 +148,7 @@ export default function HanjaList({ characters, categoryId, levelId }: HanjaList
               hasMoreData && (
                 <button
                   onClick={loadMore}
-                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+                  className={`px-8 py-3 ${colors.button} text-white rounded-full shadow-lg hover:shadow-xl transition transform hover:scale-105 font-semibold`}
                 >
                   더 많은 한자 보기
                 </button>
@@ -120,7 +156,7 @@ export default function HanjaList({ characters, categoryId, levelId }: HanjaList
             )}
             
             {totalCount > 0 && (
-              <div className="text-gray-500 text-sm mt-2">
+              <div className="text-gray-600 text-sm mt-4 bg-white bg-opacity-60 px-4 py-2 rounded-full shadow-sm">
                 총 {totalCount}개 중 {displayedCharacters.length}개 로드됨
               </div>
             )}

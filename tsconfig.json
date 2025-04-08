@@ -21,25 +21,25 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*"
+        "./*"
       ],
       "@components/*": [
-        "./src/components/*"
-      ],
-      "@styles/*": [
-        "./src/styles/*"
+        "./app/components/*"
       ],
       "@utils/*": [
-        "./src/utils/*"
+        "./utils/*"
       ],
       "@hooks/*": [
-        "./src/hooks/*"
+        "./app/hooks/*"
       ],
       "@context/*": [
-        "./src/context/*"
+        "./app/context/*"
       ],
       "@data/*": [
-        "./src/data/*"
+        "./data/*"
+      ],
+      "@styles/*": [
+        "./app/styles/*"
       ]
     },
     "plugins": [

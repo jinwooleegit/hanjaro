@@ -1,0 +1,484 @@
+// @ts-ignore
+import hanjaDatabase from '@/data/hanja_database_main.json';
+// @ts-ignore
+import categoriesData from '@/data/categories.json';
+
+// 성능 최적화를 위한 캐싱 객체들
+const characterCache: Record<string, HanjaCharacter> = {};
+const levelCharactersCache: Record<string, HanjaCharacter[]> = {};
+const categoryCache: Record<string, HanjaCategory> = {};
+const levelCache: Record<string, HanjaLevel> = {};
+
+export type HanjaLevel = {
+  id: string;
+  name: string;
+  description: string;
+  characters: string[];
+};
+
+export type HanjaCategory = {
+  id: string;
+  name: string;
+  description: string;
+  levels: HanjaLevel[];
+};
+
+export type HanjaExample = {
+  word: string;
+  meaning: string;
+  pronunciation: string;
+};
+
+export type HanjaWord = {
+  hanja: string;
+  hangul: string;
+  meaning: string;
+};
+
+export type HanjaSentence = {
+  hanja: string;
+  hangul: string;
+  meaning: string;
+};
+
+export type HanjaCharacter = {
+  character: string;
+  pronunciation: string;
+  meaning: string;
+  radical: string;
+  stroke_count: number;
+  grade: number;
+  examples: HanjaExample[];
+  explanation?: string;
+  example_words?: HanjaWord[];
+  example_sentences?: HanjaSentence[];
+};
+
+// 데이터베이스 타입 정의
+interface HanjaDatabase {
+  categories: HanjaCategory[];
+  characters: HanjaCharacter[];
+}
+
+// 문자열이 인코딩된 문자인지 확인
+function isEncodedChar(str: string): boolean {
+  return /%[0-9A-F]{2}/.test(str);
+}
+
+// URL 인코딩된 문자 처리 (메모이제이션 적용)
+const normalizedChars: Record<string, string> = {};
+function normalizeHanjaChar(character: string): string {
+  // 캐시에 있으면 캐시된 값 반환
+  if (normalizedChars[character]) {
+    return normalizedChars[character];
+  }
+  
+  try {
+    // 인코딩된 문자인 경우 디코딩하고 캐시에 저장
+    if (isEncodedChar(character)) {
+      const decoded = decodeURIComponent(character);
+      normalizedChars[character] = decoded;
+      return decoded;
+    }
+    // 캐시에 저장하고 반환
+    normalizedChars[character] = character;
+    return character;
+  } catch (e) {
+    console.error('문자 정규화 오류:', e);
+    return character;
+  }
+}
+
+// 수정된 카테고리 데이터 가져오기 함수
+export function getCategories(): HanjaCategory[] {
+  return [
+    {
+      id: 'elementary',
+      name: '초등학교',
+      description: '초등학교 학생들을 위한 기초 한자 학습 단계',
+      levels: [
+        { id: 'level1', name: '1단계', description: '한자 학습 초보자를 위한 기초 한자', characters: [] },
+        { id: 'level2', name: '2단계', description: '기본적인 한자 구조와 의미를 배우는 단계', characters: [] },
+        { id: 'level3', name: '3단계', description: '자주 사용되는 중요 한자를 배우는 단계', characters: [] },
+        { id: 'level4', name: '4단계', description: '일상생활에서 자주 사용되는 한자', characters: [] },
+        { id: 'level5', name: '5단계', description: '초등 교과서에 나오는 응용 한자', characters: [] },
+        { id: 'level6', name: '6단계', description: '초등 고학년을 위한 심화 한자', characters: [] }
+      ]
+    },
+    {
+      id: 'middle',
+      name: '중학교',
+      description: '중학생들을 위한 중급 한자 학습 단계',
+      levels: [
+        { id: 'level1', name: '1단계', description: '중학교 교과서에 자주 등장하는 기본 한자', characters: [] },
+        { id: 'level2', name: '2단계', description: '중학교 교과 과정에 필요한 중급 한자', characters: [] },
+        { id: 'level3', name: '3단계', description: '중학교 졸업 수준의 심화 한자', characters: [] }
+      ]
+    },
+    {
+      id: 'high',
+      name: '고등학교',
+      description: '고등학생들을 위한 고급 한자 학습 단계',
+      levels: [
+        { id: 'level1', name: '1단계', description: '고등학교 수준의 기본 한자', characters: [] },
+        { id: 'level2', name: '2단계', description: '고등학교 교과서에 등장하는 중요 한자', characters: [] },
+        { id: 'level3', name: '3단계', description: '대학 입시를 위한 고급 한자', characters: [] }
+      ]
+    },
+    {
+      id: 'university',
+      name: '대학',
+      description: '대학생 및 성인을 위한 전문 한자 학습 단계',
+      levels: [
+        { id: 'level1', name: '1단계', description: '전공 분야에서 자주 사용되는 전문 한자', characters: [] },
+        { id: 'level2', name: '2단계', description: '학술 논문에 자주 등장하는 학술 한자', characters: [] },
+        { id: 'level3', name: '3단계', description: '전문 분야별 특수 한자', characters: [] },
+        { id: 'level4', name: '4단계', description: '고급 학술 및 문학 작품에 나오는 한자', characters: [] }
+      ]
+    },
+    {
+      id: 'expert',
+      name: '전문가',
+      description: '직업 및 특수 분야에서 필요한 전문 한자 학습 단계',
+      levels: [
+        { id: 'level1', name: '1단계', description: '법률 분야 전문 한자', characters: [] },
+        { id: 'level2', name: '2단계', description: '의학 분야 전문 한자', characters: [] },
+        { id: 'level3', name: '3단계', description: '경제/경영 분야 전문 한자', characters: [] },
+        { id: 'level4', name: '4단계', description: '과학/기술 분야 전문 한자', characters: [] },
+        { id: 'level5', name: '5단계', description: '철학/문학 분야 전문 한자', characters: [] }
+      ]
+    }
+  ];
+}
+
+// 수정된 getLevelsForCategory 함수: expert 카테고리를 위한 레벨 추가
+export function getLevelsForCategory(categoryId: string) {
+  // 카테고리별 레벨 데이터를 여기서 반환
+  if (categoryId === 'elementary') {
+    return [
+      { id: 'level1', name: '1단계', description: '한자 학습 초보자를 위한 기초 한자' },
+      { id: 'level2', name: '2단계', description: '기본적인 한자 구조와 의미를 배우는 단계' },
+      { id: 'level3', name: '3단계', description: '자주 사용되는 중요 한자를 배우는 단계' },
+      { id: 'level4', name: '4단계', description: '일상생활에서 자주 사용되는 한자' },
+      { id: 'level5', name: '5단계', description: '초등 교과서에 나오는 응용 한자' },
+      { id: 'level6', name: '6단계', description: '초등 고학년을 위한 심화 한자' }
+    ];
+  } else if (categoryId === 'middle') {
+    return [
+      { id: 'level1', name: '1단계', description: '중학교 교과서에 자주 등장하는 기본 한자' },
+      { id: 'level2', name: '2단계', description: '중학교 교과 과정에 필요한 중급 한자' },
+      { id: 'level3', name: '3단계', description: '중학교 졸업 수준의 심화 한자' }
+    ];
+  } else if (categoryId === 'high') {
+    return [
+      { id: 'level1', name: '1단계', description: '고등학교 수준의 기본 한자' },
+      { id: 'level2', name: '2단계', description: '고등학교 교과서에 등장하는 중요 한자' },
+      { id: 'level3', name: '3단계', description: '대학 입시를 위한 고급 한자' }
+    ];
+  } else if (categoryId === 'university') {
+    return [
+      { id: 'level1', name: '1단계', description: '전공 분야에서 자주 사용되는 전문 한자' },
+      { id: 'level2', name: '2단계', description: '학술 논문에 자주 등장하는 학술 한자' },
+      { id: 'level3', name: '3단계', description: '전문 분야별 특수 한자' },
+      { id: 'level4', name: '4단계', description: '고급 학술 및 문학 작품에 나오는 한자' }
+    ];
+  } else if (categoryId === 'expert') {
+    return [
+      { id: 'level1', name: '1단계', description: '법률 분야 전문 한자' },
+      { id: 'level2', name: '2단계', description: '의학 분야 전문 한자' },
+      { id: 'level3', name: '3단계', description: '경제/경영 분야 전문 한자' },
+      { id: 'level4', name: '4단계', description: '과학/기술 분야 전문 한자' },
+      { id: 'level5', name: '5단계', description: '철학/문학 분야 전문 한자' }
+    ];
+  }
+  
+  return [];
+}
+
+// 카테고리 ID로 카테고리 찾기 (캐시 사용)
+export function getCategoryById(categoryId: string): HanjaCategory | undefined {
+  try {
+    // 캐시에서 먼저 찾기
+    if (categoryCache[categoryId]) {
+      return categoryCache[categoryId];
+    }
+    
+    // 캐시에 없으면 모든 카테고리를 로드하고 캐시에 추가
+    const categories = getCategories();
+    const category = categories.find((cat) => cat.id === categoryId);
+    
+    if (category) {
+      categoryCache[categoryId] = category;
+    }
+    
+    return category;
+  } catch (e) {
+    console.error(`카테고리 ${categoryId} 로드 오류:`, e);
+    return undefined;
+  }
+}
+
+// 카테고리 ID와 레벨 ID로 레벨 찾기 (캐시 사용)
+export function getHanjaLevel(categoryId: string, levelId: string): HanjaLevel | undefined {
+  const cacheKey = `${categoryId}-${levelId}`;
+  
+  try {
+    // 캐시에서 먼저 찾기
+    if (levelCache[cacheKey]) {
+      return levelCache[cacheKey];
+    }
+    
+    // 캐시에 없으면 카테고리에서 찾기
+    const category = getCategoryById(categoryId);
+    if (!category) return undefined;
+    
+    const level = category.levels.find((lvl) => lvl.id === levelId);
+    
+    // 찾은 레벨을 캐시에 추가
+    if (level) {
+      levelCache[cacheKey] = level;
+    }
+    
+    return level;
+  } catch (e) {
+    console.error(`카테고리 ${categoryId}, 레벨 ${levelId} 로드 오류:`, e);
+    return undefined;
+  }
+}
+
+// 카테고리 ID와 레벨 ID로 해당 레벨의 모든 한자 데이터 가져오기 (캐시 사용)
+export function getCharactersForLevel(categoryId: string, levelId: string): HanjaCharacter[] {
+  const cacheKey = `${categoryId}-${levelId}`;
+  
+  try {
+    // 캐시에서 먼저 찾기
+    if (levelCharactersCache[cacheKey]) {
+      return levelCharactersCache[cacheKey];
+    }
+    
+    const level = getHanjaLevel(categoryId, levelId);
+    if (!level) return [];
+    
+    // 한자 데이터 로드 - Promise.all을 사용하지 않고 즉시 처리
+    const characters = level.characters.map((char: string) => {
+      return getHanjaCharacter(char) || createDefaultHanjaData(char);
+    });
+    
+    // 캐시에 추가
+    levelCharactersCache[cacheKey] = characters;
+    
+    return characters;
+  } catch (e) {
+    console.error(`레벨 ${categoryId}/${levelId}의 한자 로드 오류:`, e);
+    return [];
+  }
+}
+
+// 기본 한자 데이터 생성
+function createDefaultHanjaData(char: string): HanjaCharacter {
+  return {
+    character: char,
+    pronunciation: '정보 없음',
+    meaning: '정보 없음',
+    radical: '정보 없음',
+    stroke_count: 0,
+    grade: 0,
+    examples: [],
+    explanation: '이 한자에 대한 정보가 없습니다.'
+  };
+}
+
+// 한자 문자로 한자 데이터 가져오기 (캐시 사용)
+export function getHanjaCharacter(character: string): HanjaCharacter | undefined {
+  try {
+    // URL 인코딩 처리된 문자 정규화
+    const normalizedChar = normalizeHanjaChar(character);
+    
+    // 공백이나 빈 문자열인 경우 처리
+    if (!normalizedChar || normalizedChar.trim() === '') {
+      return undefined;
+    }
+    
+    // 실제 첫 번째 문자만 사용 (여러 문자가 입력된 경우)
+    const firstChar = normalizedChar.charAt(0);
+    
+    // 캐시에서 먼저 찾기
+    if (characterCache[firstChar]) {
+      return characterCache[firstChar];
+    }
+    
+    // 데이터베이스에서 일치하는 한자 찾기
+    const hanjaData = (hanjaDatabase as HanjaDatabase).characters.find(
+      (char: HanjaCharacter) => char.character === firstChar
+    );
+    
+    // 확장 데이터 변환 - 이전 버전과의 호환성 유지
+    if (hanjaData) {
+      // 깊은 복사로 원본 데이터 보존
+      const enhancedData = JSON.parse(JSON.stringify(hanjaData));
+      
+      // 캐시에 추가
+      characterCache[firstChar] = enhancedData;
+      
+      return enhancedData;
+    }
+    
+    return undefined;
+  } catch (e) {
+    console.error(`한자 ${character} 로드 오류:`, e);
+    return undefined;
+  }
+}
+
+// 모든 한자 데이터 가져오기 - 지연 로딩 적용
+let allCharactersLoaded = false;
+let allCharactersCache: HanjaCharacter[] = [];
+
+export function getAllHanjaCharacters(): HanjaCharacter[] {
+  if (allCharactersLoaded) {
+    return allCharactersCache;
+  }
+  
+  try {
+    allCharactersCache = (hanjaDatabase as HanjaDatabase).characters || [];
+    allCharactersLoaded = true;
+    return allCharactersCache;
+  } catch (e) {
+    console.error('한자 데이터베이스 로드 오류:', e);
+    return [];
+  }
+}
+
+// 한자 검색 (한자, 의미, 발음으로 검색)
+export function searchHanja(query: string): HanjaCharacter[] {
+  try {
+    if (!query || query.trim() === '') return [];
+    
+    const normalizedQuery = query.trim().toLowerCase();
+    
+    // 더 효율적인 검색을 위해 전체 로드 대신 메모리에 있는 데이터만 검색
+    const allChars = getAllHanjaCharacters();
+    
+    // 첫 글자가 쿼리와 일치하면 바로 반환 (빠른 경로)
+    if (normalizedQuery.length === 1) {
+      const exactMatch = getHanjaCharacter(normalizedQuery);
+      if (exactMatch) {
+        return [exactMatch];
+      }
+    }
+    
+    return allChars.filter((char: HanjaCharacter) => {
+      return (
+        char.character.includes(normalizedQuery) ||
+        char.meaning.toLowerCase().includes(normalizedQuery) ||
+        char.pronunciation.toLowerCase().includes(normalizedQuery)
+      );
+    });
+  } catch (e) {
+    console.error(`'${query}' 검색 오류:`, e);
+    return [];
+  }
+}
+
+// 정규화된 한자 문자열 가져오기 (한자와 발음 포함)
+export function getNormalizedCharacter(character: HanjaCharacter): string {
+  return `${character.character} [${character.pronunciation}]`;
+}
+
+// 한자 레벨 문자열 가져오기
+export function getLevelString(grade: number): string {
+  switch (grade) {
+    case 1: return '초등학교 1학년';
+    case 2: return '초등학교 2학년';
+    case 3: return '초등학교 3학년';
+    case 4: return '초등학교 4학년';
+    case 5: return '초등학교 5학년';
+    case 6: return '초등학교 6학년';
+    case 7: return '중학교';
+    case 8: return '고등학교';
+    case 9: return '대학교';
+    default: return '기타';
+  }
+}
+
+// 획수별 한자 그룹화
+export function groupHanjaByStrokeCount(hanjaList: HanjaCharacter[]): Record<number, HanjaCharacter[]> {
+  const groups: Record<number, HanjaCharacter[]> = {};
+  
+  hanjaList.forEach((char) => {
+    const strokeCount = char.stroke_count || 0;
+    if (!groups[strokeCount]) {
+      groups[strokeCount] = [];
+    }
+    groups[strokeCount].push(char);
+  });
+  
+  return groups;
+}
+
+// 난이도별 한자 그룹화
+export function groupHanjaByGrade(hanjaList: HanjaCharacter[]): Record<number, HanjaCharacter[]> {
+  const groups: Record<number, HanjaCharacter[]> = {};
+  
+  hanjaList.forEach((char) => {
+    const grade = char.grade || 0;
+    if (!groups[grade]) {
+      groups[grade] = [];
+    }
+    groups[grade].push(char);
+  });
+  
+  return groups;
+}
+
+// 한자 리스트 정렬 (획수 기준)
+export function sortHanjaByStrokeCount(hanjaList: HanjaCharacter[]): HanjaCharacter[] {
+  return [...hanjaList].sort((a, b) => (a.stroke_count || 0) - (b.stroke_count || 0));
+}
+
+// 한자 리스트 정렬 (난이도 기준)
+export function sortHanjaByGrade(hanjaList: HanjaCharacter[]): HanjaCharacter[] {
+  return [...hanjaList].sort((a, b) => (a.grade || 0) - (b.grade || 0));
+}
+
+// 특정 레벨의 한자 총 개수 가져오기
+export function getTotalCharacterCount(categoryId: string, levelId: string): number {
+  try {
+    const level = getHanjaLevel(categoryId, levelId);
+    return level?.characters.length || 0;
+  } catch (e) {
+    console.error(`카테고리 ${categoryId}, 레벨 ${levelId}의 총 한자 수 가져오기 오류:`, e);
+    return 0;
+  }
+}
+
+// 더 많은 한자 데이터 로드하기 (페이지네이션용)
+export async function loadMoreCharacters(
+  categoryId: string,
+  levelId: string,
+  limit: number = 20,
+  offset: number = 0
+): Promise<HanjaCharacter[]> {
+  const cacheKey = `${categoryId}-${levelId}`;
+  
+  try {
+    // 캐시된 모든 항목이 있으면 거기서 슬라이스
+    if (levelCharactersCache[cacheKey]) {
+      return levelCharactersCache[cacheKey].slice(offset, offset + limit);
+    }
+    
+    const level = getHanjaLevel(categoryId, levelId);
+    if (!level) return [];
+    
+    // 시작 인덱스부터 제한 개수만큼 한자 가져오기
+    const characterSlice = level.characters.slice(offset, offset + limit);
+    
+    // 각 한자의 상세 정보 가져오기
+    return characterSlice.map((char: string) => {
+      return getHanjaCharacter(char) || createDefaultHanjaData(char);
+    });
+  } catch (e) {
+    console.error(`카테고리 ${categoryId}, 레벨 ${levelId}의 추가 한자 로드 오류:`, e);
+    return [];
+  }
+} 

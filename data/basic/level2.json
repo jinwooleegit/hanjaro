@@ -5,6 +5,34 @@
   "level": 2,
   "characters": [
     {
+      "character": "人",
+      "meaning": "사람 인",
+      "pronunciation": "인",
+      "stroke_count": 2,
+      "radical": "人",
+      "examples": [
+        {
+          "word": "人間",
+          "meaning": "인간",
+          "pronunciation": "인간"
+        },
+        {
+          "word": "人口",
+          "meaning": "인구",
+          "pronunciation": "인구"
+        }
+      ],
+      "tags": [
+        "meaning:human",
+        "difficulty:beginner",
+        "radical:person",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 2,
+      "order": 1
+    },
+    {
       "character": "山",
       "meaning": "뫼 산",
       "pronunciation": "산",
@@ -29,7 +57,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 1
+      "order": 2
     },
     {
       "character": "水",
@@ -57,7 +85,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 2
+      "order": 3
     },
     {
       "character": "木",
@@ -85,7 +113,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 3
+      "order": 4
     },
     {
       "character": "日",
@@ -112,7 +140,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 4
+      "order": 5
     },
     {
       "character": "月",
@@ -139,7 +167,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 5
+      "order": 6
     },
     {
       "character": "火",
@@ -166,7 +194,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 6
+      "order": 7
     },
     {
       "character": "土",
@@ -193,7 +221,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 7
+      "order": 8
     },
     {
       "character": "金",
@@ -221,7 +249,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 8
+      "order": 9
     },
     {
       "character": "子",
@@ -248,7 +276,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 9
+      "order": 10
     },
     {
       "character": "心",
@@ -276,7 +304,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 10
+      "order": 11
     },
     {
       "character": "手",
@@ -303,7 +331,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 11
+      "order": 12
     },
     {
       "character": "口",
@@ -330,7 +358,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 12
+      "order": 13
     },
     {
       "character": "耳",
@@ -357,7 +385,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 13
+      "order": 14
     },
     {
       "character": "目",
@@ -384,7 +412,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 14
+      "order": 15
     },
     {
       "character": "足",
@@ -411,7 +439,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 15
+      "order": 16
     },
     {
       "character": "門",
@@ -438,7 +466,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 16
+      "order": 17
     },
     {
       "character": "田",
@@ -465,7 +493,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 17
+      "order": 18
     },
     {
       "character": "石",
@@ -492,7 +520,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 18
+      "order": 19
     },
     {
       "character": "川",
@@ -519,7 +547,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 19
+      "order": 20
     },
     {
       "character": "風",
@@ -546,7 +574,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 20
+      "order": 21
     },
     {
       "character": "雨",
@@ -573,7 +601,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 21
+      "order": 22
     },
     {
       "character": "雪",
@@ -600,7 +628,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 22
+      "order": 23
     },
     {
       "character": "四",
@@ -627,7 +655,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 23
+      "order": 24
     },
     {
       "character": "五",
@@ -654,7 +682,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 24
+      "order": 25
     },
     {
       "character": "六",
@@ -681,7 +709,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 25
+      "order": 26
     },
     {
       "character": "校",
@@ -708,7 +736,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 26
+      "order": 27
     },
     {
       "character": "長",
@@ -735,7 +763,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 27
+      "order": 28
     },
     {
       "character": "森",
@@ -762,7 +790,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 28
+      "order": 29
     },
     {
       "character": "林",
@@ -789,7 +817,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 29
+      "order": 30
     },
     {
       "character": "春",
@@ -816,7 +844,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 30
+      "order": 31
     },
     {
       "character": "夏",
@@ -843,7 +871,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 31
+      "order": 32
     },
     {
       "character": "秋",
@@ -870,7 +898,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 32
+      "order": 33
     },
     {
       "character": "冬",
@@ -897,7 +925,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 33
+      "order": 34
     },
     {
       "character": "高",
@@ -924,7 +952,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 34
+      "order": 35
     },
     {
       "character": "低",
@@ -951,7 +979,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 35
+      "order": 36
     },
     {
       "character": "大",
@@ -978,7 +1006,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 36
+      "order": 37
     },
     {
       "character": "正",
@@ -1005,7 +1033,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 37
+      "order": 38
     },
     {
       "character": "先",
@@ -1032,7 +1060,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 38
+      "order": 39
     },
     {
       "character": "後",
@@ -1059,7 +1087,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 39
+      "order": 40
     },
     {
       "character": "前",
@@ -1086,7 +1114,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 40
+      "order": 41
     },
     {
       "character": "東",
@@ -1113,7 +1141,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 41
+      "order": 42
     },
     {
       "character": "西",
@@ -1140,7 +1168,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 42
+      "order": 43
     },
     {
       "character": "南",
@@ -1167,7 +1195,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 43
+      "order": 44
     },
     {
       "character": "北",
@@ -1194,7 +1222,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 44
+      "order": 45
     },
     {
       "character": "書",
@@ -1221,7 +1249,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 45
+      "order": 46
     },
     {
       "character": "本",
@@ -1248,7 +1276,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 46
+      "order": 47
     },
     {
       "character": "頭",
@@ -1275,7 +1303,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 47
+      "order": 48
     },
     {
       "character": "肉",
@@ -1302,7 +1330,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 48
+      "order": 49
     },
     {
       "character": "竹",
@@ -1329,7 +1357,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 49
+      "order": 50
     },
     {
       "character": "米",
@@ -1356,7 +1384,7 @@
         "education:elementary"
       ],
       "level": 2,
-      "order": 50
+      "order": 51
     }
   ]
 }

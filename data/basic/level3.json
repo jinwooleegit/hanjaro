@@ -33,6 +33,115 @@
       "order": 1
     },
     {
+      "character": "月",
+      "meaning": "달 월",
+      "pronunciation": "월",
+      "stroke_count": 4,
+      "radical": "月",
+      "examples": [
+        {
+          "word": "月曜日",
+          "meaning": "월요일",
+          "pronunciation": "월요일"
+        },
+        {
+          "word": "一月",
+          "meaning": "일월",
+          "pronunciation": "일월"
+        }
+      ],
+      "tags": [
+        "meaning:time",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 2
+    },
+    {
+      "character": "石",
+      "meaning": "돌 석",
+      "pronunciation": "석",
+      "stroke_count": 5,
+      "radical": "石",
+      "examples": [
+        {
+          "word": "石油",
+          "meaning": "석유",
+          "pronunciation": "석유"
+        },
+        {
+          "word": "寶石",
+          "meaning": "보석",
+          "pronunciation": "보석"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 3
+    },
+    {
+      "character": "田",
+      "meaning": "밭 전",
+      "pronunciation": "전",
+      "stroke_count": 5,
+      "radical": "田",
+      "examples": [
+        {
+          "word": "田園",
+          "meaning": "전원",
+          "pronunciation": "전원"
+        },
+        {
+          "word": "油田",
+          "meaning": "유전",
+          "pronunciation": "유전"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "radical:field",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 4
+    },
+    {
+      "character": "白",
+      "meaning": "흰 백",
+      "pronunciation": "백",
+      "stroke_count": 5,
+      "radical": "白",
+      "examples": [
+        {
+          "word": "白色",
+          "meaning": "백색",
+          "pronunciation": "백색"
+        },
+        {
+          "word": "白紙",
+          "meaning": "백지",
+          "pronunciation": "백지"
+        }
+      ],
+      "tags": [
+        "meaning:color",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary"
+      ],
+      "level": 3,
+      "order": 5
+    },
+    {
       "character": "火",
       "meaning": "불 화",
       "pronunciation": "화",
@@ -57,7 +166,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 2
+      "order": 6
     },
     {
       "character": "土",
@@ -84,7 +193,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 3
+      "order": 7
     },
     {
       "character": "心",
@@ -112,7 +221,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 4
+      "order": 8
     },
     {
       "character": "手",
@@ -139,7 +248,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 5
+      "order": 9
     },
     {
       "character": "目",
@@ -166,7 +275,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 6
+      "order": 10
     },
     {
       "character": "力",
@@ -193,7 +302,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 7
+      "order": 11
     },
     {
       "character": "口",
@@ -220,7 +329,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 8
+      "order": 12
     },
     {
       "character": "耳",
@@ -247,7 +356,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 9
+      "order": 13
     },
     {
       "character": "足",
@@ -274,7 +383,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 10
+      "order": 14
     },
     {
       "character": "車",
@@ -301,7 +410,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 11
+      "order": 15
     },
     {
       "character": "羊",
@@ -328,7 +437,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 12
+      "order": 16
     },
     {
       "character": "牛",
@@ -355,7 +464,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 13
+      "order": 17
     },
     {
       "character": "馬",
@@ -382,7 +491,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 14
+      "order": 18
     },
     {
       "character": "鳥",
@@ -409,7 +518,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 15
+      "order": 19
     },
     {
       "character": "魚",
@@ -436,7 +545,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 16
+      "order": 20
     },
     {
       "character": "時",
@@ -463,7 +572,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 17
+      "order": 21
     },
     {
       "character": "間",
@@ -490,7 +599,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 18
+      "order": 22
     },
     {
       "character": "分",
@@ -517,7 +626,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 19
+      "order": 23
     },
     {
       "character": "週",
@@ -544,7 +653,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 20
+      "order": 24
     },
     {
       "character": "歲",
@@ -571,7 +680,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 21
+      "order": 25
     },
     {
       "character": "海",
@@ -598,7 +707,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 22
+      "order": 26
     },
     {
       "character": "島",
@@ -625,7 +734,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 23
+      "order": 27
     },
     {
       "character": "花",
@@ -652,7 +761,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 24
+      "order": 28
     },
     {
       "character": "草",
@@ -679,7 +788,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 25
+      "order": 29
     },
     {
       "character": "星",
@@ -706,7 +815,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 26
+      "order": 30
     },
     {
       "character": "空",
@@ -733,7 +842,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 27
+      "order": 31
     },
     {
       "character": "天",
@@ -760,7 +869,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 28
+      "order": 32
     },
     {
       "character": "地",
@@ -787,34 +896,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 29
-    },
-    {
-      "character": "白",
-      "meaning": "흰 백",
-      "pronunciation": "백",
-      "stroke_count": 5,
-      "radical": "白",
-      "examples": [
-        {
-          "word": "白雪",
-          "meaning": "백설",
-          "pronunciation": "백설"
-        },
-        {
-          "word": "明白",
-          "meaning": "명백",
-          "pronunciation": "명백"
-        }
-      ],
-      "tags": [
-        "meaning:color",
-        "difficulty:intermediate",
-        "usage:common",
-        "education:elementary"
-      ],
-      "level": 3,
-      "order": 30
+      "order": 33
     },
     {
       "character": "黑",
@@ -841,7 +923,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 31
+      "order": 34
     },
     {
       "character": "赤",
@@ -868,7 +950,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 32
+      "order": 35
     },
     {
       "character": "黃",
@@ -895,7 +977,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 33
+      "order": 36
     },
     {
       "character": "靑",
@@ -922,7 +1004,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 34
+      "order": 37
     },
     {
       "character": "音",
@@ -949,7 +1031,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 35
+      "order": 38
     },
     {
       "character": "樂",
@@ -976,7 +1058,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 36
+      "order": 39
     },
     {
       "character": "歌",
@@ -1003,7 +1085,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 37
+      "order": 40
     },
     {
       "character": "舞",
@@ -1030,7 +1112,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 38
+      "order": 41
     },
     {
       "character": "身",
@@ -1057,7 +1139,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 39
+      "order": 42
     },
     {
       "character": "體",
@@ -1084,7 +1166,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 40
+      "order": 43
     },
     {
       "character": "義",
@@ -1111,7 +1193,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 41
+      "order": 44
     },
     {
       "character": "明",
@@ -1138,7 +1220,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 42
+      "order": 45
     },
     {
       "character": "暗",
@@ -1165,7 +1247,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 43
+      "order": 46
     },
     {
       "character": "平",
@@ -1192,7 +1274,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 44
+      "order": 47
     },
     {
       "character": "家",
@@ -1219,7 +1301,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 45
+      "order": 48
     },
     {
       "character": "族",
@@ -1246,7 +1328,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 46
+      "order": 49
     },
     {
       "character": "語",
@@ -1273,7 +1355,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 47
+      "order": 50
     },
     {
       "character": "言",
@@ -1300,7 +1382,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 48
+      "order": 51
     },
     {
       "character": "文",
@@ -1327,7 +1409,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 49
+      "order": 52
     },
     {
       "character": "化",
@@ -1354,7 +1436,7 @@
         "education:elementary"
       ],
       "level": 3,
-      "order": 50
+      "order": 53
     }
   ]
 }

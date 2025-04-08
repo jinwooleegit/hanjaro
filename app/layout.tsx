@@ -3,7 +3,14 @@ import { Inter } from 'next/font/google'
 import Navigation from './components/Navigation'
 import { Metadata } from 'next'
 
-const inter = Inter({ subsets: ['latin'] })
+// 폰트 최적화 - preload 적용
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap', // 폰트 로딩 중에도 텍스트 표시
+  preload: true,
+  fallback: ['system-ui', 'Arial', 'sans-serif'], // 폰트 로딩 실패 시 폴백
+  adjustFontFallback: true, // 글꼴 대체 최적화
+})
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +19,7 @@ export const metadata: Metadata = {
   },
   description: '쉽고 재미있게 한자를 배울 수 있는 한자 학습 서비스입니다.',
   keywords: '한자, 한자학습, 한문, 필기연습, 한자연습, 학습, 교육',
+  metadataBase: new URL('http://localhost:3000'),
   icons: {
     icon: '/favicon.ico',
     apple: '/icon-192x192.png',
@@ -24,21 +32,14 @@ export const metadata: Metadata = {
     title: '한자로 - 한자 학습 서비스',
     description: '쉽고 재미있게 한자를 배울 수 있는 한자 학습 서비스입니다.',
     siteName: '한자로',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: '한자로 - 한자 학습 서비스',
-      },
-    ],
   },
 }
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
+  maximumScale: 5, // 사용자 확대 허용
+  minimumScale: 1,
   themeColor: '#3b82f6',
 }
 
@@ -48,14 +49,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ko">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-      </head>
-      <body className={inter.className}>
+    <html lang="ko" className={inter.className}>
+      <body>
         <div className="min-h-screen bg-gray-50">
+          {/* Navigation을 배치 */}
           <Navigation />
-          {children}
+          {/* 메인 콘텐츠 */}
+          <main className="pt-4">{children}</main>
         </div>
       </body>
     </html>

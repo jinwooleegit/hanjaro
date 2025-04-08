@@ -1,0 +1,143 @@
+{
+  "name": "대학교 3학년 한자",
+  "description": "대학교 3학년 과정에서 배우는 한자",
+  "category": "university",
+  "level": 3,
+  "characters": [
+    {
+      "character": "操",
+      "meaning": "잡을 조",
+      "pronunciation": "조",
+      "stroke_count": 16,
+      "radical": "扌",
+      "examples": [
+        {
+          "word": "操作",
+          "meaning": "조작",
+          "pronunciation": "조작"
+        },
+        {
+          "word": "操縱",
+          "meaning": "조종",
+          "pronunciation": "조종"
+        }
+      ],
+      "tags": [
+        "meaning:action",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 3,
+      "order": 1
+    },
+    {
+      "character": "燦",
+      "meaning": "빛날 찬",
+      "pronunciation": "찬",
+      "stroke_count": 17,
+      "radical": "火",
+      "examples": [
+        {
+          "word": "燦爛",
+          "meaning": "찬란",
+          "pronunciation": "찬란"
+        },
+        {
+          "word": "燦然",
+          "meaning": "찬연",
+          "pronunciation": "찬연"
+        }
+      ],
+      "tags": [
+        "meaning:light",
+        "difficulty:advanced",
+        "usage:literary",
+        "education:university"
+      ],
+      "level": 3,
+      "order": 2
+    },
+    {
+      "character": "穩",
+      "meaning": "안정할 온",
+      "pronunciation": "온",
+      "stroke_count": 18,
+      "radical": "禾",
+      "examples": [
+        {
+          "word": "穩當",
+          "meaning": "온당",
+          "pronunciation": "온당"
+        },
+        {
+          "word": "穩定",
+          "meaning": "안정",
+          "pronunciation": "안정"
+        }
+      ],
+      "tags": [
+        "meaning:condition",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 3,
+      "order": 3
+    },
+    {
+      "character": "購",
+      "meaning": "살 구",
+      "pronunciation": "구",
+      "stroke_count": 17,
+      "radical": "貝",
+      "examples": [
+        {
+          "word": "購入",
+          "meaning": "구입",
+          "pronunciation": "구입"
+        },
+        {
+          "word": "購買",
+          "meaning": "구매",
+          "pronunciation": "구매"
+        }
+      ],
+      "tags": [
+        "meaning:commerce",
+        "difficulty:advanced",
+        "usage:business",
+        "education:university"
+      ],
+      "level": 3,
+      "order": 4
+    },
+    {
+      "character": "舊",
+      "meaning": "옛 구",
+      "pronunciation": "구",
+      "stroke_count": 18,
+      "radical": "臼",
+      "examples": [
+        {
+          "word": "舊式",
+          "meaning": "구식",
+          "pronunciation": "구식"
+        },
+        {
+          "word": "舊友",
+          "meaning": "구우",
+          "pronunciation": "구우"
+        }
+      ],
+      "tags": [
+        "meaning:time",
+        "difficulty:advanced",
+        "usage:common",
+        "education:university"
+      ],
+      "level": 3,
+      "order": 5
+    }
+  ]
+} 

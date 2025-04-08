@@ -106,6 +106,216 @@
       ],
       "level": 8,
       "order": 5
+    },
+    {
+      "character": "義",
+      "meaning": "옳을 의",
+      "pronunciation": "의",
+      "stroke_count": 13,
+      "radical": "羊",
+      "examples": [
+        {
+          "word": "正義",
+          "meaning": "정의",
+          "pronunciation": "정의"
+        },
+        {
+          "word": "義務",
+          "meaning": "의무",
+          "pronunciation": "의무"
+        }
+      ],
+      "level": 9,
+      "order": 11
+    },
+    {
+      "character": "知",
+      "meaning": "알 지",
+      "pronunciation": "지",
+      "stroke_count": 8,
+      "radical": "矢",
+      "examples": [
+        {
+          "word": "知識",
+          "meaning": "지식",
+          "pronunciation": "지식"
+        },
+        {
+          "word": "智慧",
+          "meaning": "지혜",
+          "pronunciation": "지혜"
+        }
+      ],
+      "level": 9,
+      "order": 12
+    },
+    {
+      "character": "理",
+      "meaning": "다스릴 리",
+      "pronunciation": "리",
+      "stroke_count": 11,
+      "radical": "王",
+      "examples": [
+        {
+          "word": "理由",
+          "meaning": "이유",
+          "pronunciation": "이유"
+        },
+        {
+          "word": "理性",
+          "meaning": "이성",
+          "pronunciation": "이성"
+        }
+      ],
+      "level": 9,
+      "order": 13
+    },
+    {
+      "character": "信",
+      "meaning": "믿을 신",
+      "pronunciation": "신",
+      "stroke_count": 9,
+      "radical": "人",
+      "examples": [
+        {
+          "word": "信用",
+          "meaning": "신용",
+          "pronunciation": "신용"
+        },
+        {
+          "word": "信念",
+          "meaning": "신념",
+          "pronunciation": "신념"
+        }
+      ],
+      "level": 9,
+      "order": 14
+    },
+    {
+      "character": "勇",
+      "meaning": "날랠 용",
+      "pronunciation": "용",
+      "stroke_count": 9,
+      "radical": "力",
+      "examples": [
+        {
+          "word": "勇氣",
+          "meaning": "용기",
+          "pronunciation": "용기"
+        },
+        {
+          "word": "勇敢",
+          "meaning": "용감",
+          "pronunciation": "용감"
+        }
+      ],
+      "level": 9,
+      "order": 15
+    },
+    {
+      "character": "智",
+      "meaning": "지혜 지",
+      "pronunciation": "지",
+      "stroke_count": 12,
+      "radical": "日",
+      "examples": [
+        {
+          "word": "智慧",
+          "meaning": "지혜",
+          "pronunciation": "지혜"
+        },
+        {
+          "word": "知識",
+          "meaning": "지식",
+          "pronunciation": "지식"
+        }
+      ],
+      "level": 9,
+      "order": 6
+    },
+    {
+      "character": "勤",
+      "meaning": "부지런할 근",
+      "pronunciation": "근",
+      "stroke_count": 13,
+      "radical": "力",
+      "examples": [
+        {
+          "word": "勤務",
+          "meaning": "근무",
+          "pronunciation": "근무"
+        },
+        {
+          "word": "勤勉",
+          "meaning": "근면",
+          "pronunciation": "근면"
+        }
+      ],
+      "level": 9,
+      "order": 7
+    },
+    {
+      "character": "敬",
+      "meaning": "공경할 경",
+      "pronunciation": "경",
+      "stroke_count": 12,
+      "radical": "攵",
+      "examples": [
+        {
+          "word": "尊敬",
+          "meaning": "존경",
+          "pronunciation": "존경"
+        },
+        {
+          "word": "敬語",
+          "meaning": "경어",
+          "pronunciation": "경어"
+        }
+      ],
+      "level": 9,
+      "order": 8
+    },
+    {
+      "character": "謙",
+      "meaning": "겸손할 겸",
+      "pronunciation": "겸",
+      "stroke_count": 17,
+      "radical": "言",
+      "examples": [
+        {
+          "word": "謙遜",
+          "meaning": "겸손",
+          "pronunciation": "겸손"
+        },
+        {
+          "word": "謙讓",
+          "meaning": "겸양",
+          "pronunciation": "겸양"
+        }
+      ],
+      "level": 9,
+      "order": 9
+    },
+    {
+      "character": "和",
+      "meaning": "화할 화",
+      "pronunciation": "화",
+      "stroke_count": 8,
+      "radical": "口",
+      "examples": [
+        {
+          "word": "平和",
+          "meaning": "평화",
+          "pronunciation": "평화"
+        },
+        {
+          "word": "和解",
+          "meaning": "화해",
+          "pronunciation": "화해"
+        }
+      ],
+      "level": 9,
+      "order": 10
     }
   ]
 }

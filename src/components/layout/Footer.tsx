@@ -69,6 +69,11 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/user-guide" className="text-gray-600 dark:text-gray-400 hover:text-primary">
+                  사용자 가이드
+                </Link>
+              </li>
+              <li>
                 <Link href="/privacy" className="text-gray-600 dark:text-gray-400 hover:text-primary">
                   개인정보처리방침
                 </Link>

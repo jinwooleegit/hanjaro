@@ -1,7 +1,5 @@
-'use client';
-
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import TAGS_DATA from '../../../../data/tags.json';
 import HANJA_DATABASE from '../../../../data/hanja_database_main.json';
 
@@ -57,8 +55,29 @@ interface HanjaCategory {
   };
 }
 
+// 업데이트된 HanjaDatabase 인터페이스
 interface HanjaDatabase {
   [category: string]: HanjaCategory;
+}
+
+// 새로운 인터페이스 추가 (실제 데이터 구조에 맞게)
+interface SimpleHanjaCharacter {
+  character: string;
+  meaning: string;
+  pronunciation: string;
+  strokes: number;
+  examples: string[];
+  radical: string;
+  tags: string[];
+}
+
+interface SimpleHanjaDatabase {
+  characters: SimpleHanjaCharacter[];
+  meta: {
+    totalCount: number;
+    lastUpdated: string;
+    version: string;
+  };
 }
 
 // 동적 메타데이터
@@ -98,13 +117,49 @@ const getCategoryStyles = (categoryId: string) => {
 // 태그와 관련된 한자를 데이터베이스에서 찾는 함수
 const findHanjaForTag = (tagId: string, categoryId: string, examples: string[]): string[] => {
   const hanjaSet = new Set<string>(examples); // 중복 방지를 위한 Set
-  const database = HANJA_DATABASE as HanjaDatabase;
+  const database = HANJA_DATABASE as unknown as SimpleHanjaDatabase;
+  
+  // 데이터가 새로운 형식인 경우 처리
+  if (database.characters) {
+    database.characters.forEach(char => {
+      // 태그로 필터링
+      if (char.tags && char.tags.includes(tagId)) {
+        hanjaSet.add(char.character);
+      }
+      
+      // 카테고리별 추가 필터링 로직
+      switch(categoryId) {
+        case 'meaning':
+          if (char.meaning.includes(tagId)) {
+            hanjaSet.add(char.character);
+          }
+          break;
+        case 'radical':
+          if (char.radical === tagId) {
+            hanjaSet.add(char.character);
+          }
+          break;
+        case 'difficulty':
+          if ((tagId === 'beginner' && char.strokes <= 4) ||
+              (tagId === 'intermediate' && char.strokes > 4 && char.strokes <= 9) ||
+              (tagId === 'advanced' && char.strokes > 9)) {
+            hanjaSet.add(char.character);
+          }
+          break;
+      }
+    });
+    
+    return Array.from(hanjaSet);
+  }
+  
+  // 기존 형식의 데이터베이스 처리 로직 (타입 캐스팅)
+  const oldDatabase = HANJA_DATABASE as unknown as HanjaDatabase;
   
   // 태그 유형에 따라 검색 방법 변경
   switch (categoryId) {
     case 'meaning':
       // 의미 기반 태그는 한자의 의미에서 검색
-      Object.values(database).forEach(category => {
+      Object.values(oldDatabase).forEach(category => {
         Object.values(category.levels).forEach(level => {
           level.characters.forEach(char => {
             // 의미나 발음 정보를 확인
@@ -132,7 +187,7 @@ const findHanjaForTag = (tagId: string, categoryId: string, examples: string[]):
       break;
     
     case 'difficulty':
-      Object.values(database).forEach(category => {
+      Object.values(oldDatabase).forEach(category => {
         Object.values(category.levels).forEach(level => {
           level.characters.forEach(char => {
             // 난이도에 따라 한자 분류 (획수 기준)
@@ -168,7 +223,7 @@ const findHanjaForTag = (tagId: string, categoryId: string, examples: string[]):
       
       const targetRadicals = radicalMap[tagId] || [];
       
-      Object.values(database).forEach(category => {
+      Object.values(oldDatabase).forEach(category => {
         Object.values(category.levels).forEach(level => {
           level.characters.forEach(char => {
             // 부수나 의미를 기반으로 검색
@@ -198,7 +253,7 @@ const findHanjaForTag = (tagId: string, categoryId: string, examples: string[]):
     
     case 'education':
       // 교육 과정 태그는 레벨 정보와 카테고리 이름을 함께 고려
-      Object.entries(database).forEach(([categoryKey, category]) => {
+      Object.entries(oldDatabase).forEach(([categoryKey, category]) => {
         // 교육 단계별 매핑
         if (tagId === 'elementary' && categoryKey === 'basic') {
           // 초등학교 단계에 해당하는 한자
@@ -289,144 +344,70 @@ const findHanjaForTag = (tagId: string, categoryId: string, examples: string[]):
   return Array.from(hanjaSet);
 };
 
-const TagPage = ({ params }: { params: { category: string; tag: string } }) => {
+const TagPage = async ({ params }: { params: { category: string; tag: string } }) => {
   const { category, tag } = params;
-  const router = useRouter();
-  
-  // 링크 클릭 핸들러 추가
-  const handleLinkClick = (href: string, e: React.MouseEvent) => {
-    e.preventDefault();
-    router.push(href);
-  };
   
   // 해당 태그 정보 찾기
   const categoryData = TAGS_DATA.tag_categories.find((cat: TagCategory) => cat.id === category);
   const tagData = categoryData?.tags.find((t: Tag) => t.id === tag);
   
-  // 태그를 찾을 수 없는 경우
   if (!tagData) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50 px-4">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-slate-800 mb-4">태그를 찾을 수 없습니다</h1>
-          <p className="text-lg text-slate-600 mb-8">요청하신 태그 정보를 찾을 수 없습니다.</p>
-          <Link 
-            href="/tags" 
-            prefetch={true}
-            onClick={(e) => handleLinkClick('/tags', e)}
-            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg transition"
-          >
-            모든 태그 보기
-          </Link>
-        </div>
-      </div>
-    );
+    return notFound();
   }
   
-  // 해당 카테고리 스타일 가져오기
-  const styles = getCategoryStyles(category);
+  // 태그 스타일 가져오기
+  const { bg, border, text } = getCategoryStyles(category);
   
-  // 태그와 관련된 한자 찾기
-  const relatedHanjaList = findHanjaForTag(tag, category, tagData.examples);
+  // 태그 관련 한자 찾기
+  const hanjaList = findHanjaForTag(tag, category, tagData.examples);
   
   return (
-    <div className="min-h-screen bg-slate-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-8">
-          <Link 
-            href="/tags" 
-            prefetch={true}
-            onClick={(e) => handleLinkClick('/tags', e)}
-            className="text-blue-600 hover:text-blue-800 inline-flex items-center"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd" />
-            </svg>
-            모든 태그로 돌아가기
-          </Link>
-        </div>
+    <div className="container mx-auto px-4 py-8">
+      <div className="mb-8">
+        <Link 
+          href="/tags"
+          className="text-blue-600 hover:text-blue-800 font-medium mb-4 inline-block"
+        >
+          ← 모든 태그로 돌아가기
+        </Link>
         
-        <div className="mb-12">
-          <div className="flex items-center mb-2">
-            <span className={`inline-block px-3 py-1 ${styles.bg} ${styles.text} rounded-full text-sm font-medium mr-2`}>
-              {categoryData?.name}
-            </span>
-          </div>
-          <h1 className="text-4xl font-bold mb-4 text-slate-800">{tagData.name} 한자</h1>
-          <p className="text-lg text-slate-600 max-w-3xl">{tagData.description}</p>
-        </div>
+        <h1 className="text-3xl font-bold mb-2">{tagData.name} 한자</h1>
+        <p className="text-gray-600 mb-4">{tagData.description}</p>
         
-        {/* 한자 목록 섹션 */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-12">
-          <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-slate-200">
-            {tagData.name} 관련 한자 <span className="text-sm font-normal text-slate-500">({relatedHanjaList.length}자)</span>
-          </h2>
-          
-          <div className="mb-4 text-sm text-amber-600 p-2 bg-amber-50 rounded-lg">
-            <p>
-              현재 표시된 한자는 데이터베이스에서 실제로 찾은 한자만 표시합니다. 태그 페이지에 표시된 한자 수는 전체 1,800자 중 예상 비율이므로 차이가 있을 수 있습니다.
-            </p>
-          </div>
-          
-          {relatedHanjaList.length > 0 ? (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {relatedHanjaList.map((character, idx) => (
-                <Link
-                  key={idx}
-                  href={`/learn/hanja/${encodeURIComponent(character)}`}
-                  prefetch={true}
-                  onClick={(e) => handleLinkClick(`/learn/hanja/${encodeURIComponent(character)}`, e)}
-                  className="aspect-square flex flex-col items-center justify-center bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition"
-                >
-                  <span className="text-4xl mb-2">{character}</span>
-                  <span className="text-xs text-slate-500">자세히 보기</span>
-                </Link>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12 text-slate-500">
-              <p>아직 데이터베이스에 {tagData.name} 관련 한자가 충분하지 않습니다.</p>
-            </div>
-          )}
-        </div>
-        
-        {/* 다른 태그 탐색 섹션 */}
-        {categoryData && categoryData.tags.length > 1 && (
-          <div className="bg-white rounded-xl shadow-md p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-slate-200">
-              다른 {categoryData.name} 태그 탐색하기
-            </h2>
-            
-            <div className="flex flex-wrap gap-2 mt-4">
-              {categoryData.tags.filter(t => t.id !== tag).map((otherTag) => {
-                // 다른 태그의 한자 수 표시
-                const otherTagHanjaCount = findHanjaForTag(otherTag.id, category, otherTag.examples).length;
-                
-                return (
-                  <Link
-                    key={otherTag.id}
-                    href={`/tags/${category}/${otherTag.id}`}
-                    prefetch={true}
-                    onClick={(e) => handleLinkClick(`/tags/${category}/${otherTag.id}`, e)}
-                    className={`inline-block px-4 py-2 ${styles.bg} ${styles.text} border ${styles.border} rounded-full hover:shadow-md transition`}
-                  >
-                    {otherTag.name} <span className="text-xs">({otherTagHanjaCount})</span>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        )}
-        
-        <div className="text-center mt-12">
-          <Link 
-            href="/learn" 
-            className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg transition transform hover:scale-105"
-          >
-            한자 학습 시작하기
-          </Link>
+        <div className={`inline-block ${bg} ${border} ${text} rounded-full px-3 py-1 text-sm font-medium mr-2 mb-2`}>
+          {categoryData?.name || '기타'} 태그
         </div>
       </div>
+      
+      {hanjaList.length > 0 ? (
+        <div>
+          <h2 className="text-xl font-semibold mb-4">관련 한자 {hanjaList.length}자</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-4">
+            {hanjaList.map((hanja, index) => (
+              <Link
+                key={index}
+                href={`/hanja/${hanja}`}
+                className="block border border-gray-200 rounded-lg p-4 text-center hover:shadow-md transition-shadow"
+              >
+                <div className="text-4xl mb-2">{hanja}</div>
+                <div className="text-sm text-gray-600">상세보기</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="text-center py-12">
+          <p className="text-gray-600">
+            관련 한자를 찾을 수 없습니다. 다른 태그를 선택해보세요.
+          </p>
+          <Link 
+            href="/tags"
+            className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+          >
+            태그 목록으로 돌아가기
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

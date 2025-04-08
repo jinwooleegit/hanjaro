@@ -7,6 +7,10 @@
 :root {
   --foreground-rgb: 51, 51, 51;
   --background-rgb: 255, 255, 255;
+  --primary-color: 59, 130, 246;
+  --primary-light: 191, 219, 254;
+  --primary-dark: 29, 78, 216;
+  --accent-color: 6, 182, 212;
 }
 
 .dark {
@@ -19,30 +23,52 @@ body {
   background: rgb(var(--background-rgb));
   font-family: 'Noto Sans KR', sans-serif;
   transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+
+/* 네비게이션 관련 스타일 추가 */
+.nav-link {
+  @apply px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 tracking-wide;
+}
+
+.nav-link-active {
+  @apply text-white bg-gradient-to-r from-blue-600 to-blue-400 shadow-md;
+}
+
+.nav-link-inactive {
+  @apply text-gray-700 hover:text-blue-600 hover:bg-blue-50/70 dark:text-gray-200 dark:hover:text-white;
+}
+
+.mobile-nav-link {
+  @apply block px-4 py-3 my-1.5 rounded-lg text-base font-medium transition-all duration-200;
+}
+
+.mobile-nav-link-active {
+  @apply bg-gradient-to-r from-blue-600 to-blue-400 text-white shadow-md;
+}
+
+.mobile-nav-link-inactive {
+  @apply text-gray-600 hover:bg-blue-50 hover:text-blue-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white;
+}
+
+/* 카드와 컨테이너 스타일 강화 */
 .hanja-card {
-  @apply bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md transition-all hover:shadow-xl;
-}
-
-.stroke-animation path {
-  @apply fill-transparent stroke-primary stroke-2;
-}
-
-.btn-primary {
-  @apply bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded transition-colors;
-}
-
-.btn-secondary {
-  @apply bg-secondary hover:bg-secondary-dark text-white font-bold py-2 px-4 rounded transition-colors;
-}
-
-.btn-outline {
-  @apply border border-primary text-primary hover:bg-primary hover:text-white font-bold py-2 px-4 rounded transition-colors;
+  @apply bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md transition-all hover:shadow-lg border border-gray-100 dark:border-gray-700;
 }
 
 .card {
-  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden;
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300 hover:shadow-lg;
+}
+
+.card-highlight {
+  @apply bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-gray-700;
 }
 
 .card-title {
@@ -55,4 +81,40 @@ body {
 
 .container-custom {
   @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+/* 버튼 스타일 강화 */
+.btn {
+  @apply rounded-lg font-medium shadow-sm transition-all duration-200 transform focus:outline-none focus:ring-2 focus:ring-opacity-50;
+}
+
+.btn-primary {
+  @apply btn bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white focus:ring-blue-400 py-2.5 px-5;
+}
+
+.btn-secondary {
+  @apply btn bg-gradient-to-r from-gray-600 to-gray-500 hover:from-gray-700 hover:to-gray-600 text-white focus:ring-gray-400 py-2.5 px-5;
+}
+
+.btn-outline {
+  @apply btn border-2 border-blue-500 text-blue-600 hover:bg-blue-50 focus:ring-blue-200 py-2 px-4;
+}
+
+.btn-accent {
+  @apply btn bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white focus:ring-cyan-400 py-2.5 px-5;
+}
+
+/* 입력 필드 디자인 개선 */
+.input-field {
+  @apply w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-400 transition duration-200;
+}
+
+/* 스트로크 애니메이션 스타일 개선 */
+.stroke-animation path {
+  @apply fill-transparent stroke-blue-500 stroke-2;
+}
+
+/* 한자 디스플레이 스타일 */
+.hanja-display {
+  @apply font-medium bg-gray-50 p-4 rounded-lg shadow-inner flex items-center justify-center;
 } 

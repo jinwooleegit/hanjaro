@@ -5,6 +5,141 @@
   "level": 5,
   "characters": [
     {
+      "character": "力",
+      "meaning": "힘 력",
+      "pronunciation": "력",
+      "stroke_count": 2,
+      "radical": "力",
+      "examples": [
+        {
+          "word": "力量",
+          "meaning": "힘",
+          "pronunciation": "역량"
+        },
+        {
+          "word": "努力",
+          "meaning": "노력",
+          "pronunciation": "노력"
+        }
+      ],
+      "tags": [
+        "meaning:attribute",
+        "difficulty:beginner",
+        "usage:common",
+        "education:middle"
+      ],
+      "level": 5,
+      "order": 1
+    },
+    {
+      "character": "刀",
+      "meaning": "칼 도",
+      "pronunciation": "도",
+      "stroke_count": 2,
+      "radical": "刀",
+      "examples": [
+        {
+          "word": "刀劍",
+          "meaning": "도검",
+          "pronunciation": "도검"
+        },
+        {
+          "word": "小刀",
+          "meaning": "작은 칼",
+          "pronunciation": "소도"
+        }
+      ],
+      "tags": [
+        "meaning:tool",
+        "difficulty:beginner",
+        "usage:common",
+        "education:middle"
+      ],
+      "level": 5,
+      "order": 2
+    },
+    {
+      "character": "門",
+      "meaning": "문 문",
+      "pronunciation": "문",
+      "stroke_count": 8,
+      "radical": "門",
+      "examples": [
+        {
+          "word": "門戶",
+          "meaning": "문호",
+          "pronunciation": "문호"
+        },
+        {
+          "word": "入門",
+          "meaning": "입문",
+          "pronunciation": "입문"
+        }
+      ],
+      "tags": [
+        "meaning:structure",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:middle"
+      ],
+      "level": 5,
+      "order": 3
+    },
+    {
+      "character": "米",
+      "meaning": "쌀 미",
+      "pronunciation": "미",
+      "stroke_count": 6,
+      "radical": "米",
+      "examples": [
+        {
+          "word": "米飯",
+          "meaning": "밥",
+          "pronunciation": "미반"
+        },
+        {
+          "word": "白米",
+          "meaning": "백미",
+          "pronunciation": "백미"
+        }
+      ],
+      "tags": [
+        "meaning:food",
+        "difficulty:beginner",
+        "usage:common",
+        "education:middle"
+      ],
+      "level": 5,
+      "order": 4
+    },
+    {
+      "character": "竹",
+      "meaning": "대나무 죽",
+      "pronunciation": "죽",
+      "stroke_count": 6,
+      "radical": "竹",
+      "examples": [
+        {
+          "word": "竹林",
+          "meaning": "죽림",
+          "pronunciation": "죽림"
+        },
+        {
+          "word": "竹笛",
+          "meaning": "대금",
+          "pronunciation": "죽적"
+        }
+      ],
+      "tags": [
+        "meaning:nature",
+        "difficulty:intermediate",
+        "usage:common",
+        "education:middle"
+      ],
+      "level": 5,
+      "order": 5
+    },
+    {
       "character": "功",
       "meaning": "공 공",
       "pronunciation": "공",
@@ -29,7 +164,7 @@
         "education:middle"
       ],
       "level": 5,
-      "order": 1
+      "order": 6
     },
     {
       "character": "績",
@@ -56,145 +191,13 @@
         "education:middle"
       ],
       "level": 5,
-      "order": 2
+      "order": 7
     },
     {
       "character": "結",
       "meaning": "맺을 결",
       "pronunciation": "결",
       "stroke_count": 12,
-      "radical": "糸",
-      "examples": [
-        {
-          "word": "結果",
-          "meaning": "결과",
-          "pronunciation": "결과"
-        },
-        {
-          "word": "結論",
-          "meaning": "결론",
-          "pronunciation": "결론"
-        }
-      ],
-      "tags": [
-        "meaning:action",
-        "difficulty:advanced",
-        "usage:common",
-        "education:middle"
-      ],
-      "level": 5,
-      "order": 3
-    },
-    {
-      "character": "果",
-      "meaning": "열매 과",
-      "pronunciation": "과",
-      "stroke_count": 8,
-      "radical": "木",
-      "examples": [
-        {
-          "word": "結果",
-          "meaning": "결과",
-          "pronunciation": "결과"
-        },
-        {
-          "word": "果物",
-          "meaning": "과일",
-          "pronunciation": "과물"
-        }
-      ],
-      "tags": [
-        "meaning:nature",
-        "difficulty:intermediate",
-        "radical:tree",
-        "usage:common",
-        "education:middle"
-      ],
-      "level": 5,
-      "order": 4
-    },
-    {
-      "character": "修",
-      "meaning": "닦을 수",
-      "pronunciation": "수",
-      "stroke_count": 10,
-      "radical": "彡",
-      "examples": [
-        {
-          "word": "修理",
-          "meaning": "수리",
-          "pronunciation": "수리"
-        },
-        {
-          "word": "修正",
-          "meaning": "수정",
-          "pronunciation": "수정"
-        }
-      ],
-      "tags": [
-        "meaning:action",
-        "difficulty:intermediate",
-        "usage:common",
-        "education:middle"
-      ],
-      "level": 5,
-      "order": 5
-    },
-    {
-      "character": "理",
-      "meaning": "다스릴 리",
-      "pronunciation": "리",
-      "stroke_count": 11,
-      "radical": "王",
-      "examples": [
-        {
-          "word": "修理",
-          "meaning": "수리",
-          "pronunciation": "수리"
-        },
-        {
-          "word": "理由",
-          "meaning": "이유",
-          "pronunciation": "리유"
-        }
-      ],
-      "tags": [
-        "meaning:action",
-        "difficulty:advanced",
-        "usage:common",
-        "education:middle"
-      ],
-      "level": 5,
-      "order": 6
-    },
-    {
-      "character": "正",
-      "meaning": "바를 정",
-      "pronunciation": "정",
-      "stroke_count": 5,
-      "radical": "止",
-      "examples": [
-        {
-          "word": "修正",
-          "meaning": "수정",
-          "pronunciation": "수정"
-        },
-        {
-          "word": "正直",
-          "meaning": "정직",
-          "pronunciation": "정직"
-        }
-      ],
-      "tags": [
-        "meaning:attribute",
-        "difficulty:intermediate",
-        "usage:common",
-        "education:middle"
-      ],
-      "level": 5,
-      "order": 7
-    },
-    {
       "character": "成",
       "meaning": "이룰 성",
       "pronunciation": "성",

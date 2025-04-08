@@ -1,11 +1,8 @@
-'use client';
-
 import Link from 'next/link';
 import TAGS_DATA from '../../data/tags.json';
 import HANJA_DATABASE from '../../data/hanja_database_main.json';
-import { useRouter } from 'next/navigation';
 
-// 메타데이터
+// Add metadata export for server component
 export const metadata = {
   title: '한자 태그 목록 - 한자로',
   description: '다양한 분류로 한자를 탐색하고 학습해보세요.',
@@ -122,174 +119,239 @@ const getCategoryHoverColor = (category: string): string => {
 // 태그와 관련된 한자를 데이터베이스에서 찾는 함수
 const findHanjaCountForTag = (tagId: string, categoryId: string, examples: string[]): number => {
   const hanjaSet = new Set<string>(examples); // 중복 방지를 위한 Set
-  const database = HANJA_DATABASE as HanjaDatabase;
   
-  // 태그 유형에 따라 검색 방법 변경
-  switch (categoryId) {
-    case 'meaning':
-      // 의미 기반 태그는 한자의 의미에서 검색
-      Object.values(database).forEach(category => {
-        Object.values(category.levels).forEach(level => {
-          level.characters.forEach(char => {
-            // 의미나 발음 정보를 확인
-            if (char.meaning.includes(tagId) || 
-                (tagId === 'nature' && ['산', '물', '나무', '불', '흙', '돌', '강'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'human' && ['사람', '남자', '여자', '아이', '아버지', '어머니'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'body' && ['눈', '귀', '입', '손', '발', '마음'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'time' && ['날', '달', '해', '시간'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'place' && ['집', '방', '길', '문', '나라'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'number' && ['하나', '둘', '셋', '넷', '다섯'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'action' && ['가다', '오다', '먹다', '보다', '듣다'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'attribute' && ['크다', '작다', '길다', '짧다', '높다'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'color' && ['빨강', '파랑', '노랑', '하양', '검정', '빨간', '파란', '노란', '하얀', '검은'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'education' && ['배우다', '학교', '학생', '공부', '교실', '선생', '가르치다', '학'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'emotion' && ['기쁨', '슬픔', '분노', '사랑', '미움', '즐거움', '두려움', '마음'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'economy' && ['돈', '물건', '사다', '팔다', '부자', '가난', '재물', '경제', '장사'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'politics' && ['나라', '정치', '법', '다스리다', '왕', '권력', '민', '통치'].some(keyword => char.meaning.includes(keyword))) ||
-                (tagId === 'society' && ['사회', '함께', '모이다', '단체', '공', '집단', '공동'].some(keyword => char.meaning.includes(keyword)))
-              ) {
-              hanjaSet.add(char.character);
-            }
-          });
-        });
-      });
-      break;
-    
-    case 'difficulty':
-      Object.values(database).forEach(category => {
-        Object.values(category.levels).forEach(level => {
-          level.characters.forEach(char => {
-            // 난이도에 따라 한자 분류 (획수 기준)
-            if ((tagId === 'beginner' && char.stroke_count <= 4) ||
-                (tagId === 'intermediate' && char.stroke_count > 4 && char.stroke_count <= 9) ||
-                (tagId === 'advanced' && char.stroke_count > 9)) {
-              hanjaSet.add(char.character);
-            }
-          });
-        });
-      });
-      break;
-    
-    case 'radical':
-      // 부수 기반 태그는 부수 정보에서 검색
-      const radicalMap: Record<string, string[]> = {
-        'person': ['人'],
-        'heart': ['心'],
-        'water': ['水'],
-        'tree': ['木'],
-        'speech': ['言'],
-        'fire': ['火'],
-        'earth': ['土'],
-        'metal': ['金'],
-        'hand': ['手'],
-        'foot': ['足'],
-        'door': ['門'],
-        'grass': ['艹'],
-        'stone': ['石'],
-        'clothing': ['衣'],
-        'eye': ['目']
+  try {
+    // 새로운 인터페이스 정의 (실제 데이터 구조에 맞게)
+    interface SimpleHanjaCharacter {
+      character: string;
+      meaning: string;
+      pronunciation: string;
+      strokes: number;
+      examples: string[];
+      radical: string;
+      tags: string[];
+    }
+
+    interface SimpleHanjaDatabase {
+      characters: SimpleHanjaCharacter[];
+      meta: {
+        totalCount: number;
+        lastUpdated: string;
+        version: string;
       };
-      
-      const targetRadicals = radicalMap[tagId] || [];
-      
-      Object.values(database).forEach(category => {
-        Object.values(category.levels).forEach(level => {
-          level.characters.forEach(char => {
-            if (targetRadicals.includes(char.radical)) {
-              hanjaSet.add(char.character);
-            }
-          });
-        });
-      });
-      break;
+    }
     
-    case 'education':
-      // 교육 과정 태그는 레벨 정보와 카테고리 이름을 함께 고려
-      Object.entries(database).forEach(([categoryKey, category]) => {
-        // 교육 단계별 매핑
-        if (tagId === 'elementary' && categoryKey === 'basic') {
-          // 초등학교 단계에 해당하는 한자
-          Object.entries(category.levels).forEach(([levelKey, level]) => {
-            if (levelKey.startsWith('level') && parseInt(levelKey.replace('level', '')) <= 4) {
-              level.characters.forEach(char => {
-                hanjaSet.add(char.character);
-              });
-            }
-          });
-        } 
-        else if (tagId === 'middle' && (categoryKey === 'basic' || categoryKey === 'middle')) {
-          // 중학교 단계에 해당하는 한자
-          Object.entries(category.levels).forEach(([levelKey, level]) => {
-            if ((categoryKey === 'basic' && levelKey.startsWith('level') && parseInt(levelKey.replace('level', '')) >= 5 && parseInt(levelKey.replace('level', '')) <= 6) ||
-                (categoryKey === 'middle' && level.name.includes('중학'))) {
-              level.characters.forEach(char => {
-                hanjaSet.add(char.character);
-              });
-            }
-          });
-        }
-        else if (tagId === 'high' && (categoryKey === 'advanced')) {
-          // 고등학교 단계에 해당하는 한자
-          Object.entries(category.levels).forEach(([levelKey, level]) => {
-            if (level.name.includes('고등') || level.description.includes('고등')) {
-              level.characters.forEach(char => {
-                hanjaSet.add(char.character);
-              });
-            }
-          });
-        }
-        else if (tagId === 'university' && (categoryKey === 'university')) {
-          // 대학교 단계에 해당하는 한자
-          Object.values(category.levels).forEach(level => {
-            level.characters.forEach(char => {
-              hanjaSet.add(char.character);
-            });
-          });
+    // 데이터베이스 타입 체크 및 처리
+    const database = HANJA_DATABASE as any;
+    
+    // 새로운 형식의 데이터인 경우
+    if (database.characters) {
+      const simpleDatabase = database as SimpleHanjaDatabase;
+      
+      simpleDatabase.characters.forEach(char => {
+        // 태그 기반 필터링
+        if (char.tags && char.tags.includes(tagId)) {
+          hanjaSet.add(char.character);
         }
         
-        // 추가: 모든 한자를 검색할 때는 딱지 속성도 고려
-        if (tagId === 'elementary') {
-          Object.values(category.levels).forEach(level => {
-            level.characters.forEach(char => {
-              if (char.level <= 4) {
-                hanjaSet.add(char.character);
-              }
-            });
-          });
-        } 
-        else if (tagId === 'middle') {
-          Object.values(category.levels).forEach(level => {
-            level.characters.forEach(char => {
-              if (char.level >= 5 && char.level <= 6) {
-                hanjaSet.add(char.character);
-              }
-            });
-          });
-        }
-        else if (tagId === 'high') {
-          Object.values(category.levels).forEach(level => {
-            level.characters.forEach(char => {
-              if (char.level >= 7 && char.level <= 8) {
-                hanjaSet.add(char.character);
-              }
-            });
-          });
-        }
-        else if (tagId === 'university') {
-          Object.values(category.levels).forEach(level => {
-            level.characters.forEach(char => {
-              if (char.level >= 9) {
-                hanjaSet.add(char.character);
-              }
-            });
-          });
+        // 카테고리별 추가 필터링
+        switch(categoryId) {
+          case 'meaning':
+            if (char.meaning.includes(tagId)) {
+              hanjaSet.add(char.character);
+            }
+            break;
+          case 'radical':
+            if (char.radical === tagId) {
+              hanjaSet.add(char.character);
+            }
+            break;
+          case 'difficulty':
+            if ((tagId === 'beginner' && char.strokes <= 4) ||
+                (tagId === 'intermediate' && char.strokes > 4 && char.strokes <= 9) ||
+                (tagId === 'advanced' && char.strokes > 9)) {
+              hanjaSet.add(char.character);
+            }
+            break;
         }
       });
-      break;
       
-    default:
-      // 기본적으로 태그 예제 한자만 반환
-      break;
+      return hanjaSet.size;
+    }
+    
+    // 기존 형식 데이터베이스 처리
+    const oldDatabase = database as HanjaDatabase;
+    
+    // 태그 유형에 따라 검색 방법 변경
+    switch (categoryId) {
+      case 'meaning':
+        // 의미 기반 태그는 한자의 의미에서 검색
+        Object.values(oldDatabase).forEach(category => {
+          Object.values(category.levels).forEach(level => {
+            level.characters.forEach(char => {
+              // 의미나 발음 정보를 확인
+              if (char.meaning.includes(tagId) || 
+                  (tagId === 'nature' && ['산', '물', '나무', '불', '흙', '돌', '강'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'human' && ['사람', '남자', '여자', '아이', '아버지', '어머니'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'body' && ['눈', '귀', '입', '손', '발', '마음'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'time' && ['날', '달', '해', '시간'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'place' && ['집', '방', '길', '문', '나라'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'number' && ['하나', '둘', '셋', '넷', '다섯'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'action' && ['가다', '오다', '먹다', '보다', '듣다'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'attribute' && ['크다', '작다', '길다', '짧다', '높다'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'color' && ['빨강', '파랑', '노랑', '하양', '검정', '빨간', '파란', '노란', '하얀', '검은'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'education' && ['배우다', '학교', '학생', '공부', '교실', '선생', '가르치다', '학'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'emotion' && ['기쁨', '슬픔', '분노', '사랑', '미움', '즐거움', '두려움', '마음'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'economy' && ['돈', '물건', '사다', '팔다', '부자', '가난', '재물', '경제', '장사'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'politics' && ['나라', '정치', '법', '다스리다', '왕', '권력', '민', '통치'].some(keyword => char.meaning.includes(keyword))) ||
+                  (tagId === 'society' && ['사회', '함께', '모이다', '단체', '공', '집단', '공동'].some(keyword => char.meaning.includes(keyword)))
+                ) {
+                hanjaSet.add(char.character);
+              }
+            });
+          });
+        });
+        break;
+      
+      case 'difficulty':
+        Object.values(oldDatabase).forEach(category => {
+          Object.values(category.levels).forEach(level => {
+            level.characters.forEach(char => {
+              // 난이도에 따라 한자 분류 (획수 기준)
+              if ((tagId === 'beginner' && char.stroke_count <= 4) ||
+                  (tagId === 'intermediate' && char.stroke_count > 4 && char.stroke_count <= 9) ||
+                  (tagId === 'advanced' && char.stroke_count > 9)) {
+                hanjaSet.add(char.character);
+              }
+            });
+          });
+        });
+        break;
+      
+      case 'radical':
+        // 부수 기반 태그는 부수 정보에서 검색
+        const radicalMap: Record<string, string[]> = {
+          'person': ['人'],
+          'heart': ['心'],
+          'water': ['水'],
+          'tree': ['木'],
+          'speech': ['言'],
+          'fire': ['火'],
+          'earth': ['土'],
+          'metal': ['金'],
+          'hand': ['手'],
+          'foot': ['足'],
+          'door': ['門'],
+          'grass': ['艹'],
+          'stone': ['石'],
+          'clothing': ['衣'],
+          'eye': ['目']
+        };
+        
+        const targetRadicals = radicalMap[tagId] || [];
+        
+        Object.values(oldDatabase).forEach(category => {
+          Object.values(category.levels).forEach(level => {
+            level.characters.forEach(char => {
+              if (targetRadicals.includes(char.radical)) {
+                hanjaSet.add(char.character);
+              }
+            });
+          });
+        });
+        break;
+      
+      case 'education':
+        // 교육 과정 태그는 레벨 정보와 카테고리 이름을 함께 고려
+        Object.entries(oldDatabase).forEach(([categoryKey, category]) => {
+          // 교육 단계별 매핑
+          if (tagId === 'elementary' && categoryKey === 'basic') {
+            // 초등학교 단계에 해당하는 한자
+            Object.entries(category.levels).forEach(([levelKey, level]) => {
+              if (levelKey.startsWith('level') && parseInt(levelKey.replace('level', '')) <= 4) {
+                level.characters.forEach(char => {
+                  hanjaSet.add(char.character);
+                });
+              }
+            });
+          } 
+          else if (tagId === 'middle' && (categoryKey === 'basic' || categoryKey === 'middle')) {
+            // 중학교 단계에 해당하는 한자
+            Object.entries(category.levels).forEach(([levelKey, level]) => {
+              if ((categoryKey === 'basic' && levelKey.startsWith('level') && parseInt(levelKey.replace('level', '')) >= 5 && parseInt(levelKey.replace('level', '')) <= 6) ||
+                  (categoryKey === 'middle' && level.name.includes('중학'))) {
+                level.characters.forEach(char => {
+                  hanjaSet.add(char.character);
+                });
+              }
+            });
+          }
+          else if (tagId === 'high' && (categoryKey === 'advanced')) {
+            // 고등학교 단계에 해당하는 한자
+            Object.entries(category.levels).forEach(([levelKey, level]) => {
+              if (level.name.includes('고등') || level.description.includes('고등')) {
+                level.characters.forEach(char => {
+                  hanjaSet.add(char.character);
+                });
+              }
+            });
+          }
+          else if (tagId === 'university' && (categoryKey === 'university')) {
+            // 대학교 단계에 해당하는 한자
+            Object.values(category.levels).forEach(level => {
+              level.characters.forEach(char => {
+                hanjaSet.add(char.character);
+              });
+            });
+          }
+          
+          // 추가: 모든 한자를 검색할 때는 딱지 속성도 고려
+          if (tagId === 'elementary') {
+            Object.values(category.levels).forEach(level => {
+              level.characters.forEach(char => {
+                if (char.level <= 4) {
+                  hanjaSet.add(char.character);
+                }
+              });
+            });
+          } 
+          else if (tagId === 'middle') {
+            Object.values(category.levels).forEach(level => {
+              level.characters.forEach(char => {
+                if (char.level >= 5 && char.level <= 6) {
+                  hanjaSet.add(char.character);
+                }
+              });
+            });
+          }
+          else if (tagId === 'high') {
+            Object.values(category.levels).forEach(level => {
+              level.characters.forEach(char => {
+                if (char.level >= 7 && char.level <= 8) {
+                  hanjaSet.add(char.character);
+                }
+              });
+            });
+          }
+          else if (tagId === 'university') {
+            Object.values(category.levels).forEach(level => {
+              level.characters.forEach(char => {
+                if (char.level >= 9) {
+                  hanjaSet.add(char.character);
+                }
+              });
+            });
+          }
+        });
+        break;
+        
+      default:
+        // 기본적으로 태그 예제 한자만 반환
+        break;
+    }
+  } catch (error) {
+    console.error('Error finding Hanja count for tag:', error);
+    return examples.length; // 오류 발생 시 예시 항목 수를 반환
   }
   
   // 한자 없으면 예제 한자로 대체 (최소한 0으로 표시되지 않도록)
@@ -443,94 +505,71 @@ const findHanjaCountForTag = (tagId: string, categoryId: string, examples: strin
   return hanjaSet.size;
 };
 
-const TagsPage = () => {
-  const router = useRouter();
-
-  // 태그 클릭 핸들러 추가
-  const handleTagClick = (categoryId: string, tagId: string, e: React.MouseEvent) => {
-    e.preventDefault();
-    router.push(`/tags/${categoryId}/${tagId}`);
-  };
-
+// 메인 태그 페이지 컴포넌트
+export default function TagsPage() {
+  const tagsData = TAGS_DATA as unknown as TagData;
+  
   return (
-    <div className="min-h-screen bg-slate-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-4 text-slate-800">다양한 분류로 한자 탐색하기</h1>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            의미, 난이도, 부수별로 한자를 탐색하고 원하는 주제별로 학습해보세요.
-          </p>
-          <div className="mt-4 text-sm text-amber-600 max-w-3xl mx-auto p-2 bg-amber-50 rounded-lg">
-            <p>
-              각 태그에 표시된 한자 수는 전체 1,800자 중 예상 비율을 나타내며, 현재 데이터베이스에 포함된 실제 한자 수와 차이가 있을 수 있습니다.
-            </p>
+    <div className="container mx-auto px-4 py-8">
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold mb-2">한자 태그 모음</h1>
+        <p className="text-gray-600">
+          태그를 통해 관련 있는 한자들을 쉽게 찾아보세요. 의미, 부수, 난이도 등 다양한 분류로 한자를 탐색할 수 있습니다.
+        </p>
+      </div>
+      
+      {tagsData.tag_categories.map((category) => (
+        <div key={category.id} className="mb-12">
+          <div className="flex items-center mb-4">
+            <h2 className={`text-2xl font-semibold ${getCategoryTextColor(category.id)}`}>
+              {category.name}
+            </h2>
+            <span className={`ml-2 px-3 py-1 text-sm rounded-full ${getCategoryColor(category.id)} ${getCategoryTextColor(category.id)}`}>
+              {category.tags.length}개 태그
+            </span>
+          </div>
+          
+          <p className="text-gray-600 mb-6">{category.description}</p>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {category.tags.map((tag) => {
+              // 태그 관련 한자 수 계산
+              const hanjaCount = findHanjaCountForTag(tag.id, category.id, tag.examples);
+              
+              return (
+                <Link 
+                  key={tag.id}
+                  href={`/tags/${category.id}/${tag.id}`}
+                  className={`block p-4 border rounded-lg ${getCategoryBorderColor(category.id)} ${getCategoryHoverColor(category.id)} transition-colors`}
+                >
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-medium">{tag.name}</h3>
+                    <span className={`px-2 py-0.5 text-xs rounded-full ${getCategoryColor(category.id)} ${getCategoryTextColor(category.id)}`}>
+                      {hanjaCount}자
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-3">{tag.description}</p>
+                  <div className="flex flex-wrap gap-1">
+                    {tag.examples.slice(0, 5).map((example, idx) => (
+                      <span key={idx} className="text-lg">{example}</span>
+                    ))}
+                    {tag.examples.length > 5 && <span className="text-gray-400">...</span>}
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
-        
-        {TAGS_DATA.tag_categories
-          .filter((category: TagCategory) => category.id === 'meaning' || category.id === 'radical')
-          .map((category: TagCategory) => (
-          <div key={category.id} className="mb-16">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold text-slate-800">{category.name}</h2>
-              <span className="text-slate-500 text-sm">{category.tags.length}개 태그</span>
-            </div>
-            <p className="mb-6 text-slate-600">{category.description}</p>
-            
-            {/* 태그 클라우드 형태로 표시 */}
-            <div className={`${getCategoryColor(category.id)} rounded-3xl p-8 shadow-inner border ${getCategoryBorderColor(category.id)}`}>
-              <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-                {category.tags.map((tag: Tag) => {
-                  // 태그의 한자 수 계산
-                  const hanjaCount = findHanjaCountForTag(tag.id, category.id, tag.examples);
-                  
-                  // 태그의 크기와 중요도는 한자 수에 비례
-                  const importance = Math.min(Math.max(hanjaCount, 5) / 20, 1); // 0.25 ~ 1 범위로 정규화
-                  const fontSize = 0.8 + importance * 0.6; // 0.8rem ~ 1.4rem
-                  const fontWeight = importance > 0.7 ? 'font-semibold' : importance > 0.4 ? 'font-medium' : 'font-normal';
-                  const opacity = 0.7 + importance * 0.3; // 0.7 ~ 1.0
-                  
-                  return (
-                    <Link 
-                      key={tag.id} 
-                      href={`/tags/${category.id}/${tag.id}`}
-                      prefetch={true}
-                      onClick={(e) => handleTagClick(category.id, tag.id, e)}
-                      className={`inline-block px-4 py-2 rounded-full bg-white shadow-sm 
-                                 hover:shadow-md transition transform hover:-translate-y-1
-                                 ${getCategoryTextColor(category.id)} border ${getCategoryBorderColor(category.id)}
-                                 ${getCategoryHoverColor(category.id)}`}
-                      style={{ 
-                        fontSize: `${fontSize}rem`,
-                        opacity: opacity,
-                      }}
-                    >
-                      <div className="flex items-center">
-                        <span className={fontWeight}>{tag.name}</span>
-                        <span className="inline-flex items-center justify-center ml-2 px-1.5 py-0.5 bg-gray-100 rounded-full text-xs text-gray-600">
-                          {hanjaCount}
-                        </span>
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        ))}
-        
-        <div className="text-center mt-12">
-          <Link 
-            href="/learn" 
-            prefetch={true}
-            className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg transition transform hover:scale-105"
-          >
-            한자 학습 시작하기
-          </Link>
-        </div>
+      ))}
+      
+      <div className="mt-12 text-center">
+        <Link 
+          href="/learn"
+          className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          한자 학습 시작하기
+        </Link>
       </div>
     </div>
   );
-};
-
-export default TagsPage; 
+} 
