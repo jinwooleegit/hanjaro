@@ -14,7 +14,7 @@ export function middleware(request: NextRequest) {
   
   // 특정 URL 패턴은 리디렉션 처리를 하지 않음
   // 특히 /learn/hanja/ 경로는 한자 문자가 포함될 수 있으므로 바로 통과시킴
-  if (pathname.startsWith('/learn/hanja/') || pathname.startsWith('/api/')) {
+  if (pathname.startsWith('/learn/hanja/') || pathname.startsWith('/api/') || pathname.startsWith('/hanja/')) {
     return NextResponse.next();
   }
 

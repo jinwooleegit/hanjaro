@@ -73,8 +73,9 @@ export default function Navigation() {
   const navItems = useMemo(() => [
     { name: '홈', href: '/' },
     { name: '한자 학습', href: '/learn' },
+    { name: '레벨 테스트', href: '/level-test-static' },
+    { name: '한자 원리', href: '/hanja-principles' },
     { name: '한자 퀴즈', href: '/quiz' },
-    { name: '한자 원리', href: '/pages/hanja-principles' },
     { name: '대시보드', href: '/dashboard' },
   ], []);
 

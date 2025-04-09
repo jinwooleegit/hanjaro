@@ -1,0 +1,392 @@
+/* 한자 아이콘 스타일 */
+.hanja-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  position: relative;
+  border: 2px solid #ddd;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+/* 아이콘 호버 효과 */
+.hanja-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0.05;
+  transition: opacity 0.3s ease;
+}
+
+/* 한자 문자 표시 */
+.hanja-icon::after {
+  content: attr(data-char);
+  font-size: 1.8em;
+}
+
+/* 아이콘 호버 효과 */
+.hanja-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 개별 한자 아이콘 스타일 */
+.icon-person {
+  background-color: #fff0f6;
+  border-color: #ffadd2;
+}
+.icon-person::after {
+  content: "人";
+  color: #eb2f96;
+}
+
+.icon-mountain {
+  background-color: #e6fffb;
+  border-color: #87e8de;
+}
+.icon-mountain::after {
+  content: "山";
+  color: #13c2c2;
+}
+
+.icon-water {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+}
+.icon-water::after {
+  content: "水";
+  color: #1890ff;
+}
+
+.icon-fire {
+  background-color: #fff1f0;
+  border-color: #ffa39e;
+}
+.icon-fire::after {
+  content: "火";
+  color: #f5222d;
+}
+
+.icon-tree {
+  background-color: #f6ffed;
+  border-color: #b7eb8f;
+}
+.icon-tree::after {
+  content: "木";
+  color: #52c41a;
+}
+
+.icon-metal {
+  background-color: #fffbe6;
+  border-color: #ffe58f;
+}
+.icon-metal::after {
+  content: "金";
+  color: #faad14;
+}
+
+.icon-earth {
+  background-color: #fff7e6;
+  border-color: #ffd591;
+}
+.icon-earth::after {
+  content: "土";
+  color: #fa8c16;
+}
+
+.icon-sun {
+  background-color: #fffbe6;
+  border-color: #ffe58f;
+}
+.icon-sun::after {
+  content: "日";
+  color: #faad14;
+}
+
+/* 배지 아이콘 스타일 */
+.badge-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  position: relative;
+  border: 2px solid #ddd;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+/* 뱃지 호버 효과 */
+.badge-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0.05;
+  transition: opacity 0.3s ease;
+}
+
+/* 기본 뱃지 텍스트 */
+.badge-icon::after {
+  content: attr(data-level);
+  font-size: 1.5em;
+}
+
+/* 뱃지 호버 효과 */
+.badge-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 배지 레벨 색상 그룹 - 그라데이션으로 강화 */
+.badge-level1, .badge-level2, .badge-level3 {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+  color: #1890ff;
+}
+
+.badge-level4, .badge-level5, .badge-level6 {
+  background-color: #f6ffed;
+  border-color: #b7eb8f;
+  color: #52c41a;
+}
+
+.badge-level7, .badge-level8, .badge-level9 {
+  background-color: #fff7e6;
+  border-color: #ffd591;
+  color: #fa8c16;
+}
+
+.badge-level10, .badge-level11, .badge-level12 {
+  background-color: #fff1f0;
+  border-color: #ffa39e;
+  color: #f5222d;
+}
+
+.badge-level13, .badge-level14, .badge-level15 {
+  background-color: #f9f0ff;
+  border-color: #d3adf7;
+  color: #722ed1;
+}
+
+/* 배지 레벨 텍스트 */
+.badge-level1::after { content: "1"; }
+.badge-level2::after { content: "2"; }
+.badge-level3::after { content: "3"; }
+.badge-level4::after { content: "4"; }
+.badge-level5::after { content: "5"; }
+.badge-level6::after { content: "6"; }
+.badge-level7::after { content: "7"; }
+.badge-level8::after { content: "8"; }
+.badge-level9::after { content: "9"; }
+.badge-level10::after { content: "10"; }
+.badge-level11::after { content: "11"; }
+.badge-level12::after { content: "12"; }
+.badge-level13::after { content: "13"; }
+.badge-level14::after { content: "14"; }
+.badge-level15::after { content: "15"; }
+
+/* 배지 숫자 애니메이션 효과 */
+.badge-level1::after, .badge-level2::after, .badge-level3::after {
+  animation: pulse 2s infinite;
+}
+
+/* 애니메이션 정의 */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* 3D 효과 클래스 추가 */
+.icon-3d {
+  transform-style: preserve-3d;
+  transform: perspective(500px) rotateY(0deg);
+  transition: transform 0.5s ease;
+}
+
+.icon-3d:hover {
+  transform: perspective(500px) rotateY(15deg);
+}
+
+/* 이미지가 있을 때만 표시 */
+@supports (background-image: url('/icons/hanja/person.png')) {
+  .icon-person { background-image: url('/icons/hanja/person.png'); }
+  .icon-person::after { content: none; }
+  
+  .icon-mountain { background-image: url('/icons/hanja/mountain.png'); }
+  .icon-mountain::after { content: none; }
+  
+  .icon-water { background-image: url('/icons/hanja/water.png'); }
+  .icon-water::after { content: none; }
+  
+  .icon-fire { background-image: url('/icons/hanja/fire.png'); }
+  .icon-fire::after { content: none; }
+  
+  .icon-tree { background-image: url('/icons/hanja/tree.png'); }
+  .icon-tree::after { content: none; }
+  
+  .icon-metal { background-image: url('/icons/hanja/metal.png'); }
+  .icon-metal::after { content: none; }
+  
+  .icon-earth { background-image: url('/icons/hanja/earth.png'); }
+  .icon-earth::after { content: none; }
+  
+  .icon-sun { background-image: url('/icons/hanja/sun.png'); }
+  .icon-sun::after { content: none; }
+  
+  .badge-level1 { background-image: url('/icons/badges/level1.png'); }
+  .badge-level1::after { content: none; }
+  
+  .badge-level2 { background-image: url('/icons/badges/level2.png'); }
+  .badge-level2::after { content: none; }
+  
+  .badge-level3 { background-image: url('/icons/badges/level3.png'); }
+  .badge-level3::after { content: none; }
+  
+  .badge-level4 { background-image: url('/icons/badges/level4.png'); }
+  .badge-level4::after { content: none; }
+  
+  .badge-level5 { background-image: url('/icons/badges/level5.png'); }
+  .badge-level5::after { content: none; }
+  
+  .badge-level6 { background-image: url('/icons/badges/level6.png'); }
+  .badge-level6::after { content: none; }
+  
+  .badge-level7 { background-image: url('/icons/badges/level7.png'); }
+  .badge-level7::after { content: none; }
+  
+  .badge-level8 { background-image: url('/icons/badges/level8.png'); }
+  .badge-level8::after { content: none; }
+  
+  .badge-level9 { background-image: url('/icons/badges/level9.png'); }
+  .badge-level9::after { content: none; }
+  
+  .badge-level10 { background-image: url('/icons/badges/level10.png'); }
+  .badge-level10::after { content: none; }
+  
+  .badge-level11 { background-image: url('/icons/badges/level11.png'); }
+  .badge-level11::after { content: none; }
+  
+  .badge-level12 { background-image: url('/icons/badges/level12.png'); }
+  .badge-level12::after { content: none; }
+  
+  .badge-level13 { background-image: url('/icons/badges/level13.png'); }
+  .badge-level13::after { content: none; }
+  
+  .badge-level14 { background-image: url('/icons/badges/level14.png'); }
+  .badge-level14::after { content: none; }
+  
+  .badge-level15 { background-image: url('/icons/badges/level15.png'); }
+  .badge-level15::after { content: none; }
+}
+
+/* 스프라이트 방식으로 한자 아이콘 표시 */
+/* 이미지가 있을 때 스프라이트 방식 적용 */
+@supports (background-image: url('/icons/hanja-sprites.png')) {
+  /* 한자 아이콘 스프라이트 기본 스타일 */
+  .hanja-icon.use-sprite {
+    background-image: url('/icons/hanja-sprites.png');
+    background-repeat: no-repeat;
+    background-size: 400% 200%; /* 이미지는 4x2 그리드로 배치됨 */
+  }
+  
+  .hanja-icon.use-sprite::after {
+    content: none; /* 텍스트 대신 이미지 표시 */
+  }
+  
+  /* 각 아이콘의 위치 지정 */
+  .icon-person.use-sprite {
+    background-position: 0% 0%; /* 좌측 상단 */
+  }
+  
+  .icon-mountain.use-sprite {
+    background-position: 33.33% 0%; /* 우측 상단 */
+  }
+  
+  .icon-water.use-sprite {
+    background-position: 66.66% 0%; /* 좌측 중앙 */
+  }
+  
+  .icon-fire.use-sprite {
+    background-position: 100% 0%; /* 우측 중앙 */
+  }
+  
+  .icon-tree.use-sprite {
+    background-position: 0% 100%; /* 좌측 하단 */
+  }
+  
+  .icon-metal.use-sprite {
+    background-position: 33.33% 100%; /* 중앙 하단 */
+  }
+  
+  .icon-earth.use-sprite {
+    background-position: 66.66% 100%; /* 우측 하단 */
+  }
+  
+  .icon-sun.use-sprite {
+    background-position: 100% 100%; /* 우측 끝 하단 */
+  }
+}
+
+/* 스프라이트 시트 방식 (향후 구현) */
+/* 
+.hanja-sprite {
+  background-image: url('/images/sprites/hanja-sprites.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.badge-sprite {
+  background-image: url('/images/sprites/level-badges-sprites.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+*/ 

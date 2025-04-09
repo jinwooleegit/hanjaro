@@ -1,6 +1,4 @@
 import { HanjaCharacter } from "./types";
-import fs from 'fs';
-import path from 'path';
 
 // 태그 인터페이스 정의
 export interface Tag {
@@ -27,26 +25,19 @@ let tagsDataCache: TagsData | null = null;
 /**
  * JSON 파일을 불러오는 유틸리티 함수
  */
-export const importJSON = <T>(filePath: string): Promise<T> => {
-  return new Promise((resolve, reject) => {
-    try {
-      const absolutePath = path.resolve(process.cwd(), filePath);
-      if (fs.existsSync(absolutePath)) {
-        const data = JSON.parse(fs.readFileSync(absolutePath, 'utf8'));
-        resolve(data);
-      } else {
-        const fallbackPath = path.resolve(process.cwd(), 'public', filePath);
-        if (fs.existsSync(fallbackPath)) {
-          const data = JSON.parse(fs.readFileSync(fallbackPath, 'utf8'));
-          resolve(data);
-        } else {
-          reject(new Error(`파일을 찾을 수 없음: ${filePath}`));
-        }
-      }
-    } catch (error) {
-      reject(error);
+export const importJSON = async <T>(filePath: string): Promise<T> => {
+  try {
+    // 브라우저 환경에서는 fetch를 사용하여 JSON 파일을 불러옵니다
+    const response = await fetch(`/${filePath}`);
+    if (!response.ok) {
+      throw new Error(`JSON 파일을 불러오는데 실패했습니다: ${filePath}`);
     }
-  });
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(`JSON 파일을 불러오는 중 오류가 발생했습니다: ${filePath}`, error);
+    throw error;
+  }
 };
 
 /**

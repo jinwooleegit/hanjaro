@@ -1,6 +1,8 @@
-import '../src/styles/globals.css'
-import { Inter } from 'next/font/google'
+import '../styles/globals.css'
+import '../public/css/icon-sprites.css'
+import { Inter, Noto_Serif_KR } from 'next/font/google'
 import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 import { Metadata } from 'next'
 
 // 폰트 최적화 - preload 적용
@@ -10,6 +12,17 @@ const inter = Inter({
   preload: true,
   fallback: ['system-ui', 'Arial', 'sans-serif'], // 폰트 로딩 실패 시 폴백
   adjustFontFallback: true, // 글꼴 대체 최적화
+})
+
+// 한자 표시를 위한 명조체 폰트
+const notoSerifKR = Noto_Serif_KR({
+  weight: ['400', '700'],  // Regular와 Bold만 사용하여 로딩 시간 단축
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-noto-serif-kr',
+  fallback: ['Batang', 'serif'],
+  adjustFontFallback: true,
 })
 
 export const metadata: Metadata = {
@@ -49,13 +62,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ko" className={inter.className}>
+    <html lang="ko" className={`${inter.className} ${notoSerifKR.variable}`}>
       <body>
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-gray-50 flex flex-col">
           {/* Navigation을 배치 */}
           <Navigation />
           {/* 메인 콘텐츠 */}
-          <main className="pt-4">{children}</main>
+          <main className="pt-4 flex-grow">{children}</main>
+          {/* 푸터 추가 */}
+          <Footer />
         </div>
       </body>
     </html>

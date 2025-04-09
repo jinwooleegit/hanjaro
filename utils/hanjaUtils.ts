@@ -132,59 +132,46 @@ function normalizeHanjaChar(character: string): string {
 export function getCategories(): HanjaCategory[] {
   return [
     {
-      id: 'elementary',
-      name: '초등학교',
-      description: '초등학교 학생들을 위한 기초 한자 학습 단계',
+      id: 'beginner',
+      name: '초급',
+      description: '기초 한자와 간단한 구조의 한자를 학습합니다. 일상생활에서 자주 사용되는 기본 한자들이 포함됩니다.',
       levels: [
-        { id: 'level1', name: '1단계', description: '한자 학습 초보자를 위한 기초 한자', characters: [] },
-        { id: 'level2', name: '2단계', description: '기본적인 한자 구조와 의미를 배우는 단계', characters: [] },
-        { id: 'level3', name: '3단계', description: '자주 사용되는 중요 한자를 배우는 단계', characters: [] },
-        { id: 'level4', name: '4단계', description: '일상생활에서 자주 사용되는 한자', characters: [] },
-        { id: 'level5', name: '5단계', description: '초등 교과서에 나오는 응용 한자', characters: [] },
-        { id: 'level6', name: '6단계', description: '초등 고학년을 위한 심화 한자', characters: [] }
+        { id: 'level1', name: '15급', description: '한자 학습 입문 단계로 가장 기초적인 한자를 학습합니다.', characters: [] },
+        { id: 'level2', name: '14급', description: '기초 한자를 확장하여 일상에서 자주 쓰이는 쉬운 한자를 학습합니다.', characters: [] },
+        { id: 'level3', name: '13급', description: '초등 저학년 수준의 필수 한자를 학습합니다.', characters: [] },
+        { id: 'level4', name: '12급', description: '기초 한자 구조와 의미를 이해하는 단계입니다.', characters: [] },
+        { id: 'level5', name: '11급', description: '초급 마지막 단계로 초등학교 수준의 한자를 마스터합니다.', characters: [] }
       ]
     },
     {
-      id: 'middle',
-      name: '중학교',
-      description: '중학생들을 위한 중급 한자 학습 단계',
+      id: 'intermediate',
+      name: '중급',
+      description: '중간 수준의 한자와 조금 더 복잡한 구조의 한자를 학습합니다. 더 많은 부수와 결합된 한자들이 포함됩니다.',
       levels: [
-        { id: 'level1', name: '1단계', description: '중학교 교과서에 자주 등장하는 기본 한자', characters: [] },
-        { id: 'level2', name: '2단계', description: '중학교 교과 과정에 필요한 중급 한자', characters: [] },
-        { id: 'level3', name: '3단계', description: '중학교 졸업 수준의 심화 한자', characters: [] }
+        { id: 'level1', name: '10급', description: '중급 첫 단계로 더 복잡한 구조의 한자를 학습합니다.', characters: [] },
+        { id: 'level2', name: '9급', description: '일상 생활과 학업에 필요한 중요 한자를 학습합니다.', characters: [] },
+        { id: 'level3', name: '8급', description: '중급 수준의 한자어와 문화적 배경을 함께 학습합니다.', characters: [] },
+        { id: 'level4', name: '7급', description: '다양한 분야에서 사용되는 한자를 확장합니다.', characters: [] },
+        { id: 'level5', name: '6급', description: '중급 마지막 단계로 고등학교 수준의 기초 한자를 학습합니다.', characters: [] }
       ]
     },
     {
-      id: 'high',
-      name: '고등학교',
-      description: '고등학생들을 위한 고급 한자 학습 단계',
+      id: 'advanced',
+      name: '고급',
+      description: '복잡한 구조와 의미를 가진 한자를 학습합니다. 전문 분야에서 사용되는 한자들이 포함됩니다.',
       levels: [
-        { id: 'level1', name: '1단계', description: '고등학교 수준의 기본 한자', characters: [] },
-        { id: 'level2', name: '2단계', description: '고등학교 교과서에 등장하는 중요 한자', characters: [] },
-        { id: 'level3', name: '3단계', description: '대학 입시를 위한 고급 한자', characters: [] }
-      ]
-    },
-    {
-      id: 'university',
-      name: '대학',
-      description: '대학생 및 성인을 위한 전문 한자 학습 단계',
-      levels: [
-        { id: 'level1', name: '1단계', description: '전공 분야에서 자주 사용되는 전문 한자', characters: [] },
-        { id: 'level2', name: '2단계', description: '학술 논문에 자주 등장하는 학술 한자', characters: [] },
-        { id: 'level3', name: '3단계', description: '전문 분야별 특수 한자', characters: [] },
-        { id: 'level4', name: '4단계', description: '고급 학술 및 문학 작품에 나오는 한자', characters: [] }
+        { id: 'level1', name: '5급', description: '고급 첫 단계로 전문 분야에서 사용되는 한자를 학습합니다.', characters: [] },
+        { id: 'level2', name: '4급', description: '다양한 한자 조합과 심화된 활용법을 학습합니다.', characters: [] },
+        { id: 'level3', name: '3급', description: '고급 마지막 단계로 한자 지식을 심화합니다.', characters: [] }
       ]
     },
     {
       id: 'expert',
       name: '전문가',
-      description: '직업 및 특수 분야에서 필요한 전문 한자 학습 단계',
+      description: '가장 높은 수준의 한자와 희귀 한자를 학습합니다. 고전 문헌과 전문 서적에서 사용되는 한자들이 포함됩니다.',
       levels: [
-        { id: 'level1', name: '1단계', description: '법률 분야 전문 한자', characters: [] },
-        { id: 'level2', name: '2단계', description: '의학 분야 전문 한자', characters: [] },
-        { id: 'level3', name: '3단계', description: '경제/경영 분야 전문 한자', characters: [] },
-        { id: 'level4', name: '4단계', description: '과학/기술 분야 전문 한자', characters: [] },
-        { id: 'level5', name: '5단계', description: '철학/문학 분야 전문 한자', characters: [] }
+        { id: 'level1', name: '2급', description: '전문가 첫 단계로 희귀 한자와 전문 용어를 학습합니다.', characters: [] },
+        { id: 'level2', name: '1급', description: '최고 수준의 한자 지식과 고전 문헌에 사용되는 한자를 학습합니다.', characters: [] }
       ]
     }
   ];
@@ -257,8 +244,36 @@ export function getCharactersForLevel(categoryId: string, levelId: string): Hanj
     
     console.log(`특정 레벨의 한자 로드: 카테고리 ${categoryId}, 레벨 ${levelId}`);
     
-    // 초등학교 레벨 (elementary)
-    if (categoryId === 'elementary') {
+    // 초급 레벨 (beginner) - 15급~11급
+    if (categoryId === 'beginner') {
+      if (levelId === 'level1') levelData = basicLevel1;       // 15급 - 초등 1단계
+      else if (levelId === 'level2') levelData = basicLevel2;  // 14급 - 초등 2단계
+      else if (levelId === 'level3') levelData = basicLevel3;  // 13급 - 초등 3단계
+      else if (levelId === 'level4') levelData = basicLevel4;  // 12급 - 초등 4단계
+      else if (levelId === 'level5') levelData = basicLevel5;  // 11급 - 초등 5단계
+    }
+    // 중급 레벨 (intermediate) - 10급~6급
+    else if (categoryId === 'intermediate') {
+      if (levelId === 'level1') levelData = basicLevel6;       // 10급 - 초등 6단계
+      else if (levelId === 'level2') levelData = advancedLevel1; // 9급 - 중급 1단계
+      else if (levelId === 'level3') levelData = advancedLevel2; // 8급 - 중급 2단계 
+      else if (levelId === 'level4') levelData = basicLevel5;  // 7급 - 중급 3단계 (임시로 다른 데이터 사용)
+      else if (levelId === 'level5') levelData = basicLevel6;  // 6급 - 중급 4단계 (임시로 다른 데이터 사용)
+    }
+    // 고급 레벨 (advanced) - 5급~3급
+    else if (categoryId === 'advanced') {
+      if (levelId === 'level1') levelData = universityLevel1;  // 5급 - 고급 1단계
+      else if (levelId === 'level2') levelData = universityLevel3; // 4급 - 고급 2단계
+      else if (levelId === 'level3') levelData = universityLevel4; // 3급 - 고급 3단계
+    }
+    // 전문가 레벨 (expert) - 2급~1급
+    else if (categoryId === 'expert') {
+      if (levelId === 'level1') levelData = universityLevel3;  // 2급 - 전문가 1단계
+      else if (levelId === 'level2') levelData = universityLevel4; // 1급 - 전문가 2단계
+    }
+    // 구 카테고리 호환성 유지 (기존 URL 지원)
+    else if (categoryId === 'elementary') {
+      // 예전 카테고리인 elementary를 beginner로 매핑
       if (levelId === 'level1') levelData = basicLevel1;
       else if (levelId === 'level2') levelData = basicLevel2;
       else if (levelId === 'level3') levelData = basicLevel3;
@@ -266,36 +281,29 @@ export function getCharactersForLevel(categoryId: string, levelId: string): Hanj
       else if (levelId === 'level5') levelData = basicLevel5;
       else if (levelId === 'level6') levelData = basicLevel6;
     }
-    // 중학교 레벨 (middle)
     else if (categoryId === 'middle') {
-      if (levelId === 'level1') levelData = basicLevel5; // 예시로 같은 데이터 사용
-      else if (levelId === 'level2') levelData = basicLevel6;
-      else if (levelId === 'level3') levelData = advancedLevel1;
-    }
-    // 고등학교 레벨 (high)
-    else if (categoryId === 'high') {
-      if (levelId === 'level1') levelData = advancedLevel1;
+      // 예전 카테고리인 middle을 intermediate로 매핑
+      if (levelId === 'level1') levelData = advancedLevel1; 
       else if (levelId === 'level2') levelData = advancedLevel2;
-      else if (levelId === 'level3') levelData = universityLevel1;
+      else if (levelId === 'level3') levelData = basicLevel6;
     }
-    // 대학교 레벨 (university)
-    else if (categoryId === 'university') {
+    else if (categoryId === 'high') {
+      // 예전 카테고리인 high를 advanced로 매핑
       if (levelId === 'level1') levelData = universityLevel1;
-      else if (levelId === 'level2') levelData = universityLevel1; // 임시로 같은 데이터 사용
-      else if (levelId === 'level3') levelData = universityLevel3;
-      else if (levelId === 'level4') levelData = universityLevel4;
+      else if (levelId === 'level2') levelData = universityLevel3;
+      else if (levelId === 'level3') levelData = universityLevel4;
     }
-    // 전문가 레벨 (expert)
-    else if (categoryId === 'expert') {
-      if (levelId === 'level1') levelData = universityLevel3;
-      else if (levelId === 'level2') levelData = universityLevel4;
-      else levelData = universityLevel4; // 나머지 레벨도 같은 데이터 사용
+    else if (categoryId === 'university') {
+      // 예전 카테고리인 university를 expert로 매핑
+      if (levelId === 'level1') levelData = universityLevel1;
+      else if (levelId === 'level2') levelData = universityLevel3;
+      else if (levelId === 'level3') levelData = universityLevel4;
+      else if (levelId === 'level4') levelData = basicLevel6;
     }
     
     // 데이터가 없으면 빈 배열 반환
     if (!levelData) {
-      console.warn(`카테고리 ${categoryId}, 레벨 ${levelId}에 대한
-      레벨 데이터를 찾을 수 없습니다.`);
+      console.warn(`카테고리 ${categoryId}, 레벨 ${levelId}에 대한 레벨 데이터를 찾을 수 없습니다.`);
       return [];
     }
     

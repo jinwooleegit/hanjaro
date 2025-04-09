@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hanja } from '@/data/types';
+import { Hanja } from '../../../types/hanja';
 
 interface HanjaStrokeSequenceProps {
   hanja: Hanja;
@@ -12,13 +12,13 @@ const HanjaStrokeSequence: React.FC<HanjaStrokeSequenceProps> = ({
   size = 100,
   gridColumns = 5
 }) => {
-  const strokePaths = hanja.strokePaths || [];
-  const totalStrokes = strokePaths.length;
+  const strokes = hanja.strokes || [];
+  const totalStrokes = strokes.length;
 
   // 모든 단계를 표시하기 위한 배열 생성
   // 각 단계는 이전 단계의 획들을 모두 포함하고 현재 획을 추가합니다
   const strokeSequences = Array.from({ length: totalStrokes }, (_, index) => {
-    return strokePaths.slice(0, index + 1);
+    return strokes.slice(0, index + 1);
   });
 
   return (
@@ -43,7 +43,7 @@ const HanjaStrokeSequence: React.FC<HanjaStrokeSequenceProps> = ({
                 className="w-full h-full border border-gray-200 rounded-md bg-white"
                 viewBox="0 0 100 100"
               >
-                {sequence.map((stroke, strokeIndex) => (
+                {sequence.map((stroke: any, strokeIndex: number) => (
                   <path
                     key={strokeIndex}
                     d={stroke.path}

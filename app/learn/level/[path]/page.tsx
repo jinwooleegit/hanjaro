@@ -20,7 +20,8 @@ export default function LevelPage({ params }: LevelPageProps) {
   // 카테고리별 색상 정의
   const getCategoryColor = (catId: string) => {
     switch (catId) {
-      case 'elementary':
+      case 'beginner':
+      case 'elementary': // 이전 카테고리 호환성 유지
         return {
           gradient: 'from-blue-600 to-blue-800',
           lightGradient: 'from-blue-50 to-blue-100',
@@ -29,7 +30,8 @@ export default function LevelPage({ params }: LevelPageProps) {
           border: 'border-blue-200',
           button: 'bg-blue-600 hover:bg-blue-700'
         };
-      case 'middle':
+      case 'intermediate':
+      case 'middle': // 이전 카테고리 호환성 유지
         return {
           gradient: 'from-green-600 to-green-800',
           lightGradient: 'from-green-50 to-green-100',
@@ -38,7 +40,8 @@ export default function LevelPage({ params }: LevelPageProps) {
           border: 'border-green-200',
           button: 'bg-green-600 hover:bg-green-700'
         };
-      case 'high':
+      case 'advanced':
+      case 'high': // 이전 카테고리 호환성 유지
         return {
           gradient: 'from-yellow-600 to-yellow-800',
           lightGradient: 'from-yellow-50 to-yellow-100',
@@ -47,7 +50,8 @@ export default function LevelPage({ params }: LevelPageProps) {
           border: 'border-yellow-200',
           button: 'bg-yellow-600 hover:bg-yellow-700'
         };
-      case 'university':
+      case 'expert':
+      case 'university': // 이전 카테고리 호환성 유지
         return {
           gradient: 'from-pink-600 to-pink-800',
           lightGradient: 'from-pink-50 to-pink-100',
@@ -55,15 +59,6 @@ export default function LevelPage({ params }: LevelPageProps) {
           highlight: 'text-yellow-300',
           border: 'border-pink-200',
           button: 'bg-pink-600 hover:bg-pink-700'
-        };
-      case 'expert':
-        return {
-          gradient: 'from-purple-600 to-purple-800',
-          lightGradient: 'from-purple-50 to-purple-100',
-          text: 'text-purple-100',
-          highlight: 'text-yellow-300',
-          border: 'border-purple-200',
-          button: 'bg-purple-600 hover:bg-purple-700'
         };
       default:
         return {
@@ -82,13 +77,48 @@ export default function LevelPage({ params }: LevelPageProps) {
   // 카테고리 이름 매핑
   const getCategoryName = (catId: string) => {
     switch (catId) {
-      case 'elementary': return '초등학교';
-      case 'middle': return '중학교';
-      case 'high': return '고등학교';
-      case 'university': return '대학';
-      case 'expert': return '전문가';
-      default: return '';
+      case 'beginner':
+      case 'elementary': // 이전 카테고리 호환성 유지
+        return '초급';
+      case 'intermediate':
+      case 'middle': // 이전 카테고리 호환성 유지
+        return '중급';
+      case 'advanced':
+      case 'high': // 이전 카테고리 호환성 유지
+        return '고급';
+      case 'expert':
+      case 'university': // 이전 카테고리 호환성 유지
+        return '전문가';
+      default:
+        return '';
     }
+  };
+
+  // 레벨 이름 포맷팅
+  const formatLevelName = (catId: string, levelName: string) => {
+    // 이전 형식의 레벨 이름('1단계', '2단계' 등)을 새 한자 급수 체계에 맞게 변환
+    if (levelName.includes('단계')) {
+      if (catId === 'beginner' || catId === 'elementary') {
+        // 초급 레벨 매핑 (1단계 → 15급, 2단계 → 14급, ...)
+        const level = parseInt(levelName.replace('단계', ''));
+        return `${16 - level}급`;
+      } else if (catId === 'intermediate' || catId === 'middle') {
+        // 중급 레벨 매핑 (1단계 → 10급, 2단계 → 9급, 3단계 → 8급)
+        const level = parseInt(levelName.replace('단계', ''));
+        return `${11 - level}급`;
+      } else if (catId === 'advanced' || catId === 'high') {
+        // 고급 레벨 매핑 (1단계 → 5급, 2단계 → 4급, 3단계 → 3급)
+        const level = parseInt(levelName.replace('단계', ''));
+        return `${6 - level}급`;
+      } else if (catId === 'expert' || catId === 'university') {
+        // 전문가 레벨 매핑 (1단계 → 2급, 2단계 → 1급)
+        const level = parseInt(levelName.replace('단계', ''));
+        return `${3 - level}급`;
+      }
+    }
+    
+    // 이미 새 형식이거나 변환할 수 없는 경우 원래 이름 반환
+    return levelName;
   };
 
   if (!level) {
@@ -123,6 +153,9 @@ export default function LevelPage({ params }: LevelPageProps) {
     );
   }
 
+  // 레벨 이름 포맷팅 적용
+  const formattedLevelName = formatLevelName(categoryId, level.name);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       {/* 헤더 섹션 */}
@@ -138,7 +171,7 @@ export default function LevelPage({ params }: LevelPageProps) {
           </div>
           
           <h1 className="text-4xl font-bold mb-3">
-            <span className={colors.highlight}>{getCategoryName(categoryId)}</span> {level.name}
+            <span className={colors.highlight}>{getCategoryName(categoryId)}</span> {formattedLevelName}
           </h1>
           <p className={`text-xl ${colors.text} mb-2`}>{level.description}</p>
           
@@ -147,7 +180,7 @@ export default function LevelPage({ params }: LevelPageProps) {
               카테고리: {getCategoryName(categoryId)}
             </span>
             <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm">
-              레벨: {level.name}
+              레벨: {formattedLevelName}
             </span>
             <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm">
               한자 수: {characters.length}

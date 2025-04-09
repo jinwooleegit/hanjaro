@@ -3,6 +3,9 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import PageHeader from '../components/PageHeader';
+import PageContainer from '../components/PageContainer';
+import ContentCard from '../components/ContentCard';
 
 // 한자 데이터 (예시)
 const hanjaData = [
@@ -143,42 +146,47 @@ export default function QuizPage() {
   };
   
   return (
-    <div className="container mx-auto pt-12 px-4 pb-16">
-      <div className="flex flex-col gap-8 max-w-5xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center bg-gradient-to-r from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 p-6 rounded-xl shadow-sm mb-4">
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-white">한자 퀴즈</h1>
-          
-          <div className="flex gap-3 mt-4 md:mt-0">
-            <Link href="/learn">
-              <button className="btn-primary flex items-center gap-2">
+    <PageContainer maxWidth="max-w-5xl">
+      <PageHeader
+        title="한자 퀴즈"
+        description="한자의 의미, 필순, 발음을 테스트하는 다양한 퀴즈로 학습 내용을 확인해보세요."
+        navButtons={[
+          {
+            href: '/learn',
+            label: '학습하기',
+            colorClass: 'btn-primary',
+            icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                 </svg>
-                학습하기
-              </button>
-            </Link>
-            <Link href="/dashboard">
-              <button className="btn-secondary flex items-center gap-2">
+            )
+          },
+          {
+            href: '/dashboard',
+            label: '대시보드',
+            colorClass: 'btn-secondary',
+            icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z" />
                 </svg>
-                대시보드
-              </button>
-            </Link>
-          </div>
-        </div>
+            )
+          }
+        ]}
+      />
         
         {!quizStarted && !quizFinished && (
-          <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700">
-            <div className="p-8">
+        <ContentCard className="mb-8">
               <h2 className="text-2xl font-bold mb-3 text-gray-800 dark:text-white">퀴즈 유형 선택</h2>
               <p className="text-gray-600 dark:text-gray-300 mb-8">
                 풀고 싶은 퀴즈 유형을 선택하세요. 각 퀴즈는 5문제로 구성되어 있습니다.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div 
-                  className="card-highlight rounded-xl overflow-hidden border border-blue-100 dark:border-blue-900 hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-1"
+            <ContentCard
+              className="cursor-pointer transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              gradient
+              gradientColors="from-blue-50 to-blue-100"
+              noPadding
                   onClick={() => startQuiz('meaning')}
                 >
                   <div className="p-6">
@@ -191,49 +199,54 @@ export default function QuizPage() {
                   <div className="bg-blue-500 text-white py-2 px-4 text-center font-medium">
                     시작하기
                   </div>
-                </div>
-                
-                <div 
-                  className="card-highlight rounded-xl overflow-hidden border border-purple-100 dark:border-purple-900 hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-1"
+            </ContentCard>
+            
+            <ContentCard
+              className="cursor-pointer transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              gradient
+              gradientColors="from-purple-50 to-purple-100"
+              noPadding
                   onClick={() => startQuiz('character')}
                 >
                   <div className="p-6">
-                    <div className="text-5xl mb-4 font-serif text-center text-purple-800 dark:text-purple-300">? 水</div>
+                <div className="text-5xl mb-4 font-serif text-center text-purple-800 dark:text-purple-300">? 자</div>
                     <h3 className="text-lg font-bold mb-2 text-gray-800 dark:text-white">한자 맞추기</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      한자의 뜻을 보고 해당하는 한자를 맞추는 퀴즈입니다.
+                  한자의 뜻을 보고 해당되는 한자를 맞추는 퀴즈입니다.
                     </p>
                   </div>
                   <div className="bg-purple-500 text-white py-2 px-4 text-center font-medium">
                     시작하기
                   </div>
-                </div>
-                
-                <div 
-                  className="card-highlight rounded-xl overflow-hidden border border-green-100 dark:border-green-900 hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-1"
+            </ContentCard>
+            
+            <ContentCard
+              className="cursor-pointer transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              gradient
+              gradientColors="from-green-50 to-green-100"
+              noPadding
                   onClick={() => startQuiz('stroke')}
                 >
                   <div className="p-6">
-                    <div className="text-5xl mb-4 font-serif text-center text-green-800 dark:text-green-300">一 二 ?</div>
+                <div className="text-5xl mb-4 font-serif text-center text-green-800 dark:text-green-300">画 ?</div>
                     <h3 className="text-lg font-bold mb-2 text-gray-800 dark:text-white">획수 맞추기</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      한자를 보고 해당 한자의 총 획수를 맞추는 퀴즈입니다.
+                  한자를 보고 해당 한자의 획수를 맞추는 퀴즈입니다.
                     </p>
                   </div>
                   <div className="bg-green-500 text-white py-2 px-4 text-center font-medium">
                     시작하기
                   </div>
-                </div>
-              </div>
-            </div>
+            </ContentCard>
           </div>
+        </ContentCard>
         )}
         
         {quizStarted && !quizFinished && questions.length > 0 && (
-          <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700">
-            <div className="border-b border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/50 py-3 px-6">
+        <ContentCard className="overflow-hidden">
+          <div className="px-6 pt-6">
               <div className="flex justify-between items-center">
-                <span className="font-medium text-gray-600 dark:text-gray-300">
+              <span className="text-lg font-bold text-gray-800 dark:text-white">
                   문제 {currentQuestion + 1} / {questions.length}
                 </span>
                 <span className="font-medium text-gray-600 dark:text-gray-300">
@@ -252,7 +265,7 @@ export default function QuizPage() {
               {quizType === 'meaning' && (
                 <>
                   <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white text-center">이 한자의 의미는 무엇인가요?</h2>
-                  <div className="text-9xl text-center my-8 font-serif hanja-display mx-auto max-w-xs">
+                <div className="text-9xl text-center my-8 font-serif hanja-text mx-auto max-w-xs" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>
                     {questions[currentQuestion].correctAnswer}
                   </div>
                 </>
@@ -270,7 +283,7 @@ export default function QuizPage() {
               {quizType === 'stroke' && (
                 <>
                   <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white text-center">이 한자의 총 획수는 몇 획인가요?</h2>
-                  <div className="text-9xl text-center my-8 font-serif hanja-display mx-auto max-w-xs">
+                <div className="text-9xl text-center my-8 font-serif hanja-text mx-auto max-w-xs" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>
                     {questions[currentQuestion].correctAnswer}
                   </div>
                 </>
@@ -322,7 +335,7 @@ export default function QuizPage() {
                       onClick={() => !showResult && setSelectedAnswer(option.character)}
                       disabled={showResult}
                     >
-                      {quizType === 'meaning' ? option.meaning : option.character}
+                    {quizType === 'meaning' ? option.meaning : <span className="hanja-text" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>{option.character}</span>}
                     </button>
                   ))
                 )}
@@ -358,32 +371,23 @@ export default function QuizPage() {
                 </div>
               )}
             </div>
-          </div>
+        </ContentCard>
         )}
         
         {quizFinished && (
-          <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700">
-            <div className="bg-gradient-to-r from-blue-500 to-blue-400 text-white py-6 px-8">
-              <h2 className="text-2xl font-bold text-center">퀴즈 결과</h2>
+        <ContentCard
+          className="text-center py-8"
+          gradient
+          gradientColors="from-blue-50 to-blue-100"
+        >
+          <div className="flex flex-col items-center">
+            <div className="w-36 h-36 flex items-center justify-center rounded-full bg-white mb-6 shadow-md">
+              <div className="text-6xl font-bold text-blue-600">{score}/{questions.length}</div>
             </div>
             
-            <div className="px-8 py-10">
-              <div className="flex justify-center items-center mb-10">
-                <div className="relative">
-                  <div className="w-48 h-48 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 border-8 border-blue-500">
-                    <span className="text-5xl font-bold text-blue-600 dark:text-blue-300">
-                      {score}/{questions.length}
-                    </span>
-                  </div>
-                  {score === questions.length && (
-                    <div className="absolute -top-5 -right-5 bg-yellow-400 text-yellow-800 text-sm font-bold rounded-full w-12 h-12 flex items-center justify-center animate-bounce">
-                      100%
-                    </div>
-                  )}
-                </div>
-              </div>
-              
-              <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold mb-6">퀴즈 결과</h2>
+            
+            <div className="mb-8 max-w-md">
                 <p className="text-xl font-medium text-gray-700 dark:text-gray-200 mb-2">
                   {score === questions.length 
                     ? '완벽합니다! 모든 문제를 맞히셨습니다.' 
@@ -414,7 +418,7 @@ export default function QuizPage() {
                 </button>
                 
                 <a
-                  href="/api/generate-pdf?type=quiz-review"
+                href="/api/generate-pdf?type=review"
                   target="_blank"
                   className="btn-success flex items-center justify-center gap-2"
                   rel="noopener noreferrer"
@@ -443,9 +447,8 @@ export default function QuizPage() {
                 </Link>
               </div>
             </div>
-          </div>
+        </ContentCard>
         )}
-      </div>
-    </div>
+    </PageContainer>
   );
 } 

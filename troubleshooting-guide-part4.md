@@ -176,18 +176,15 @@ Next.js 버전이 14.1.0에서 14.2.26으로 변경된 후 호환성 문제가 �
 
 4. 이미지 최적화
    ```jsx
-   import Image from 'next/image';
+   import HanjaIcon from '@/components/HanjaIcon';
    
-   function HanjaImage({ hanja }) {
+   function HanjaDisplay({ hanja }) {
      return (
-       <div className="hanja-image-container">
-         <Image
-           src={`/images/hanja/${hanja}.svg`}
-           alt={hanja}
-           width={200}
-           height={200}
-           priority={false} // 뷰포트에 들어올 때만 로드
-           loading="lazy"
+       <div className="hanja-display-container">
+         <HanjaIcon
+           hanja={hanja}
+           size={200}
+           className="my-2"
          />
        </div>
      );

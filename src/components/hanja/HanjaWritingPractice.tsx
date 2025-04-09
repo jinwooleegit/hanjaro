@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Button } from "@/components/ui/button";
 
 interface HanjaWritingPracticeProps {
   character: string;
@@ -318,43 +317,40 @@ const HanjaWritingPractice: React.FC<HanjaWritingPracticeProps> = ({
       <div className="flex flex-wrap gap-2 justify-center mb-4">
         {isPracticeMode ? (
           <>
-            <Button 
-              variant="outline" 
-              onClick={clearCanvas}
+            <button 
               className="text-sm"
+              onClick={clearCanvas}
             >
               지우기
-            </Button>
-            <Button 
-              variant="outline" 
-              onClick={toggleGuide}
+            </button>
+            <button 
               className="text-sm"
+              onClick={toggleGuide}
             >
               {showGuide ? "가이드 끄기" : "가이드 켜기"}
-            </Button>
-            <Button 
-              onClick={finishPractice}
+            </button>
+            <button 
               className="text-sm bg-blue-600 hover:bg-blue-700"
+              onClick={finishPractice}
             >
               연습 완료
-            </Button>
+            </button>
           </>
         ) : (
           <>
-            <Button 
-              onClick={startPractice}
+            <button 
               className="text-sm bg-blue-600 hover:bg-blue-700"
+              onClick={startPractice}
             >
               필기 연습 시작하기
-            </Button>
+            </button>
             {onClose && (
-              <Button 
-                variant="outline" 
-                onClick={onClose}
+              <button 
                 className="text-sm"
+                onClick={onClose}
               >
                 닫기
-              </Button>
+              </button>
             )}
           </>
         )}

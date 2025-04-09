@@ -79,21 +79,33 @@ export default function HanjaList({ characters, categoryId, levelId }: HanjaList
   // 카테고리에 따른 색상 가져오기
   const getCategoryColor = (catId: string) => {
     switch (catId) {
-      case 'basic':
+      case 'beginner': 
+      case 'elementary': // 이전 카테고리 호환성
+      case 'basic': // 이전 카테고리 호환성
         return {
           bg: 'from-blue-50 to-blue-100',
           border: 'border-blue-200',
           text: 'text-blue-800',
           button: 'bg-blue-600 hover:bg-blue-700'
         };
-      case 'advanced':
+      case 'intermediate':
+      case 'middle': // 이전 카테고리 호환성
         return {
-          bg: 'from-purple-50 to-purple-100',
-          border: 'border-purple-200',
-          text: 'text-purple-800',
-          button: 'bg-purple-600 hover:bg-purple-700'
+          bg: 'from-green-50 to-green-100',
+          border: 'border-green-200',
+          text: 'text-green-800',
+          button: 'bg-green-600 hover:bg-green-700'
         };
-      case 'university':
+      case 'advanced':
+      case 'high': // 이전 카테고리 호환성
+        return {
+          bg: 'from-yellow-50 to-yellow-100',
+          border: 'border-yellow-200',
+          text: 'text-yellow-800',
+          button: 'bg-yellow-600 hover:bg-yellow-700'
+        };
+      case 'expert':
+      case 'university': // 이전 카테고리 호환성
         return {
           bg: 'from-pink-50 to-pink-100',
           border: 'border-pink-200',
@@ -129,7 +141,7 @@ export default function HanjaList({ characters, categoryId, levelId }: HanjaList
                 href={`/learn/hanja/${character.character}?category=${categoryId}&level=${levelId}`}
                 className={`bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-xl text-center transition-all duration-300 border ${colors.border} transform hover:-translate-y-1 hover:shadow-lg flex flex-col items-center justify-center`}
               >
-                <div className={`text-5xl font-bold mb-3 ${colors.text}`}>{character.character}</div>
+                <div className={`text-5xl font-bold mb-3 ${colors.text} hanja-text`} style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>{character.character}</div>
                 <div className="text-sm font-medium text-gray-700">{character.meaning}</div>
                 <div className="text-xs text-gray-500 mt-1">{character.pronunciation}</div>
                 <div className="mt-2 px-2 py-0.5 rounded-full bg-gray-100 text-xs text-gray-500">획수: {character.stroke_count}</div>

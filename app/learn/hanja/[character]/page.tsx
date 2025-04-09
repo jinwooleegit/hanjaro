@@ -144,7 +144,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
   const [isError, setIsError] = useState<boolean>(false);
 
   // 쓰기 연습 관련 상태
-  const [isWritingMode, setIsWritingMode] = useState(false);
+  const [isWritingMode, setIsWritingMode] = useState(true);
   const [strokeSpeed, setStrokeSpeed] = useState(1);
   const [showOutline, setShowOutline] = useState(true);
   const [isChangingMode, setIsChangingMode] = useState(false);
@@ -286,7 +286,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
   // 새로운 상태 변수 추가
   const [learningStep, setLearningStep] = useState<number>(1);
   const [completedSteps, setCompletedSteps] = useState<number[]>([]);
-  const [quizCompleted, setQuizCompleted] = useState<boolean>(false);
+  const [practiceCompleted, setPracticeCompleted] = useState<boolean>(false);
 
   // 학습 단계 관리 함수
   const goToNextStep = useCallback(() => {
@@ -302,10 +302,10 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
     }
   }, [learningStep]);
 
-  // 퀴즈 완료 처리
-  const handleQuizComplete = useCallback((success: boolean) => {
+  // 쓰기 연습 완료 처리
+  const handlePracticeComplete = useCallback((success: boolean) => {
     if (success) {
-      setQuizCompleted(true);
+      setPracticeCompleted(true);
       setCompletedSteps(prev => [...prev, 3]);
     }
   }, []);
@@ -327,7 +327,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
               한자 의미 이해하기
             </h3>
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="text-7xl font-bold p-4 bg-gray-50 rounded-lg shadow-inner">
+              <div className="text-7xl font-bold p-4 bg-gray-50 rounded-lg shadow-inner font-serif" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>
                 {character}
               </div>
               <div className="flex-1">
@@ -356,7 +356,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
               발음 연습하기
             </h3>
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="text-7xl font-bold p-4 bg-gray-50 rounded-lg shadow-inner">
+              <div className="text-7xl font-bold p-4 bg-gray-50 rounded-lg shadow-inner font-serif" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>
                 {character}
               </div>
               <div className="flex-1">
@@ -401,11 +401,11 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
           </div>
         );
         
-      case 3: // 쓰기 연습 및 퀴즈 (통합)
+      case 3: // 쓰기 연습 및 퀴즈 (통합) - Renamed section
         return (
           <div className="mb-8 px-4 py-6 bg-white rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-gray-800">
-              쓰기 연습 및 퀴즈
+              획순 보기 및 필기 연습
             </h3>
             <p className="text-gray-600 mb-4">
               한자의 쓰기 순서를 배우고 직접 따라 써보세요. 획순에 맞게 직접 쓰는 연습도 할 수 있습니다.
@@ -442,7 +442,8 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                         strokeColor="#3B82F6"
                         outlineColor="#E5E7EB"
                         highlightColor="#60A5FA"
-                        onQuizComplete={handleQuizComplete}
+                        onQuizComplete={handlePracticeComplete}
+                        hideLeftCharacter={true}
                       />
                     )}
                   </div>
@@ -457,7 +458,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                         : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                     } ${isChangingMode ? 'opacity-50 cursor-not-allowed' : ''}`}
                   >
-                    애니메이션
+                    획순 보기
                   </button>
                   <button
                     onClick={() => safeSetWritingMode(false)}
@@ -468,7 +469,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                         : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                     } ${isChangingMode ? 'opacity-50 cursor-not-allowed' : ''}`}
                   >
-                    퀴즈 모드
+                    쓰기 연습
                   </button>
                 </div>
               </div>
@@ -488,19 +489,19 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                     </>
                   ) : (
                     <>
-                      <p className="text-lg text-gray-700">퀴즈 가이드:</p>
+                      <p className="text-lg text-gray-700">필기 연습 가이드:</p>
                       <ul className="list-disc pl-5 mt-2">
                         <li className="mb-1">정확한 획순으로 선을 그려야 합니다.</li>
                         <li className="mb-1">획이 잘못되면 힌트가 표시됩니다.</li>
-                        <li className="mb-1">모든 획을 완성하면 퀴즈가 종료됩니다.</li>
+                        <li className="mb-1">모든 획을 완성하면 연습이 종료됩니다.</li>
                       </ul>
                     </>
                   )}
                 </div>
 
-                {quizCompleted && (
+                {practiceCompleted && (
                   <div className="p-4 bg-green-50 border border-green-200 rounded-lg mb-4">
-                    <p className="text-green-700 font-bold">축하합니다! 퀴즈를 완료했습니다.</p>
+                    <p className="text-green-700 font-bold">축하합니다! 연습을 완료했습니다.</p>
                     <p className="text-green-600">이 한자의 모든 학습 단계를 성공적으로 완료했습니다.</p>
                     
                     <div className="mt-4">
@@ -526,7 +527,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                   >
                     &larr; 이전
                   </button>
-                  {quizCompleted && prevNextHanja.next ? (
+                  {practiceCompleted && prevNextHanja.next ? (
                     <Link
                       href={`/learn/hanja/${encodeURIComponent(prevNextHanja.next.character)}?category=${categoryId}&level=${levelId}`}
                       className="px-4 py-2 bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
@@ -534,19 +535,19 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                       다음 한자 &rarr;
                     </Link>
                   ) : (
-                    !quizCompleted && (
+                    !practiceCompleted && (
                       <button 
                         onClick={() => {
                           if (isWritingMode) {
                             safeSetWritingMode(false);
                           } else {
-                            // 퀴즈 모드에 있을 때는 안내 메시지 표시
-                            alert('퀴즈를 완료해주세요!');
+                            // 쓰기 연습 모드에 있을 때는 안내 메시지 표시
+                            alert('필기 연습을 완료해주세요!');
                           }
                         }}
                         className="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
                       >
-                        {isWritingMode ? '퀴즈 시작하기' : '퀴즈 완료하기'}
+                        {isWritingMode ? '필기 연습 시작하기' : '필기 연습 완료하기'}
                       </button>
                     )
                   )}
@@ -642,7 +643,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
               </svg>
             ) : '3'}
           </div>
-          <span className="text-xs">쓰기/퀴즈</span>
+          <span className="text-xs">획순/필기</span>
         </button>
       </div>
     );
@@ -772,7 +773,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
             <div className="bg-white px-6 py-6 rounded-xl shadow-lg mb-8">
               <div className="flex flex-col md:flex-row md:items-center gap-6">
                 <div className="text-center">
-                  <div className="text-7xl md:text-8xl font-bold bg-gray-50 p-4 rounded-lg shadow-inner inline-block">
+                  <div className="text-7xl md:text-8xl font-bold bg-gray-50 p-4 rounded-lg shadow-inner inline-block font-serif" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>
                     {character}
                   </div>
                 </div>
@@ -781,7 +782,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                   <div className="grid grid-cols-2 gap-4 mb-4">
                     <div>
                       <p className="text-sm text-gray-500">발음</p>
-                      <p className="text-lg font-medium">{hanjaData.pronunciation}</p>
+                      <p className="text-lg font-medium font-serif" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>{hanjaData.pronunciation}</p>
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">획수</p>
@@ -817,7 +818,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                   <span>&larr;</span>
                   <div>
                     <p className="text-sm text-gray-500">이전 한자</p>
-                    <p className="text-lg font-medium">{prevNextHanja.prev.character}</p>
+                    <p className="text-lg font-medium font-serif" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>{prevNextHanja.prev.character}</p>
                   </div>
                 </Link>
               )}
@@ -831,7 +832,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                 >
                   <div className="text-right">
                     <p className="text-sm text-gray-500">다음 한자</p>
-                    <p className="text-lg font-medium">{prevNextHanja.next.character}</p>
+                    <p className="text-lg font-medium font-serif" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>{prevNextHanja.next.character}</p>
                   </div>
                   <span>&rarr;</span>
                 </Link>
@@ -845,7 +846,7 @@ export default function HanjaDetailPage({ params }: HanjaDetailProps) {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {hanjaData.examples.map((example, idx) => (
                     <div key={idx} className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
-                      <p className="text-xl font-bold mb-2">{example.word}</p>
+                      <p className="text-xl font-bold mb-2 font-serif" style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>{example.word}</p>
                       <p className="text-gray-500 mb-1 text-sm">발음: {example.pronunciation}</p>
                       <p className="text-gray-700">{example.meaning}</p>
                     </div>

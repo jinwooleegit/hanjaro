@@ -8,9 +8,18 @@ const Header: React.FC = () => {
   const { data: session } = useSession();
   const [mounted, setMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
+
+  const navItems = [
+    { name: '학습하기', href: '/learn' },
+    { name: '한자 원리', href: '/hanja-principles' },
+    { name: '레벨 테스트', href: '/level-test?action=start' },
+    { name: '성장 기록', href: '/dashboard' },
+    { name: '태그별 학습', href: '/tags' },
+  ];
 
   if (!mounted) return null;
 
@@ -25,23 +34,17 @@ const Header: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/learn" className="nav-link">
-              학습하기
-            </Link>
-            <Link href="/practice/enhanced" className="nav-link">
-              연습하기
-            </Link>
-            <Link href="/challenge" className="nav-link">
-              챌린지
-            </Link>
-            <Link href="/dictionary" className="nav-link">
-              한자사전
-            </Link>
-            <Link href="/tags" className="nav-link">
-              태그검색
-            </Link>
-          </nav>
+          <div className="hidden lg:flex lg:gap-x-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-sm font-semibold leading-6 text-gray-900 hover:text-primary-600 transition-colors"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
 
           {/* User Actions */}
           <div className="flex items-center space-x-4">
@@ -139,7 +142,7 @@ const Header: React.FC = () => {
             {/* Mobile Menu Button */}
             <button
               className="md:hidden p-2"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle Menu"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -164,25 +167,6 @@ const Header: React.FC = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="md:hidden mt-4 py-4 border-t border-gray-200 dark:border-gray-700">
-            <Link href="/learn" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
-              학습하기
-            </Link>
-            <Link href="/practice/enhanced" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
-              연습하기
-            </Link>
-            <Link href="/challenge" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
-              챌린지
-            </Link>
-            <Link href="/dictionary" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
-              한자사전
-            </Link>
-            <Link href="/tags" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800">
-              태그로 한자 찾기
-            </Link>
-          </nav>
-        )}
       </div>
     </header>
   );

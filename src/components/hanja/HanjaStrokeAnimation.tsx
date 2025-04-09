@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Hanja, StrokePath } from '@/data/types';
+import { Hanja, Stroke } from '../../../types/hanja';
 
 interface HanjaStrokeAnimationProps {
   hanja: Hanja;
@@ -21,7 +21,8 @@ const HanjaStrokeAnimation: React.FC<HanjaStrokeAnimationProps> = ({
   const [currentStrokeIndex, setCurrentStrokeIndex] = useState(-1);
   const [isCompleted, setIsCompleted] = useState(false);
 
-  const strokePaths = hanja.strokePaths || [];
+  // strokes 배열이 없는 경우 빈 배열로 초기화
+  const strokes = hanja.strokes || [];
 
   useEffect(() => {
     if (!isPlaying) return;
@@ -33,14 +34,15 @@ const HanjaStrokeAnimation: React.FC<HanjaStrokeAnimationProps> = ({
     setIsCompleted(false);
     
     // 각 획마다 순차적으로 보여주기
-    strokePaths.forEach((stroke, index) => {
-      const delay = parseFloat(stroke.animationDelay || '0') * 1000;
+    strokes.forEach((stroke: any, index: number) => {
+      // 애니메이션 지연 시간 (기본값: index * 500ms)
+      const delay = index * 500;
       
       const timeout = setTimeout(() => {
         setCurrentStrokeIndex(index);
         
         // 마지막 획이 완성되면 애니메이션 완료 상태로 설정
-        if (index === strokePaths.length - 1) {
+        if (index === strokes.length - 1) {
           setTimeout(() => {
             setIsCompleted(true);
             
@@ -63,7 +65,7 @@ const HanjaStrokeAnimation: React.FC<HanjaStrokeAnimationProps> = ({
       // 컴포넌트가 언마운트되거나 isPlaying이 변경될 때 타임아웃 정리
       timeouts.forEach(timeout => clearTimeout(timeout));
     };
-  }, [isPlaying, loop, strokePaths]);
+  }, [isPlaying, loop, strokes]);
 
   // 애니메이션 재생/일시정지 토글
   const togglePlay = () => {
@@ -96,7 +98,7 @@ const HanjaStrokeAnimation: React.FC<HanjaStrokeAnimationProps> = ({
         viewBox="0 0 100 100"
         style={{ backgroundColor: showBackground ? 'transparent' : 'white' }}
       >
-        {strokePaths.map((stroke, index) => (
+        {strokes.map((stroke: any, index: number) => (
           <motion.path
             key={index}
             d={stroke.path}

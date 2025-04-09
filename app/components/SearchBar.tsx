@@ -4,8 +4,21 @@ import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { HanjaCharacter, cachedSearchHanja } from '../../lib/hanja';
 
-export default function SearchBar() {
-  const [searchTerm, setSearchTerm] = useState<string>('');
+// SearchBar 컴포넌트의 props 타입 정의
+interface SearchBarProps {
+  defaultValue?: string;
+  placeholder?: string;
+  size?: string;
+  className?: string;
+}
+
+export default function SearchBar({
+  defaultValue = '',
+  placeholder = '한자, 음독, 훈독, 의미로 검색하기',
+  size,
+  className = ''
+}: SearchBarProps) {
+  const [searchTerm, setSearchTerm] = useState<string>(defaultValue);
   const [searchResults, setSearchResults] = useState<HanjaCharacter[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showResults, setShowResults] = useState<boolean>(false);
@@ -60,7 +73,7 @@ export default function SearchBar() {
       <div className="relative">
         <input
           type="text"
-          placeholder="한자, 음독, 훈독, 의미로 검색하기"
+          placeholder={placeholder}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           onClick={() => {
@@ -68,7 +81,7 @@ export default function SearchBar() {
               setShowResults(true);
             }
           }}
-          className="w-full px-4 py-3 rounded-lg bg-white/90 backdrop-blur-sm border border-blue-200 shadow-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className={`w-full px-4 py-3 rounded-lg bg-white/90 backdrop-blur-sm border border-blue-200 shadow-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 ${className}`}
         />
         {isLoading ? (
           <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-blue-500">

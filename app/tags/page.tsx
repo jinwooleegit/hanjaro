@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import TAGS_DATA from '../../data/tags.json';
 import HANJA_DATABASE from '../../data/hanja_database_main.json';
+import PageHeader from '../components/PageHeader';
+import PageContainer from '../components/PageContainer';
+import ContentCard from '../components/ContentCard';
 
 // Add metadata export for server component
 export const metadata = {
@@ -64,56 +67,88 @@ interface HanjaDatabase {
   [category: string]: HanjaCategory;
 }
 
-// 카테고리별 색상 설정
-const getCategoryColor = (category: string): string => {
-  const colors: Record<string, { bg: string, border: string, text: string }> = {
-    'meaning': { bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-800' },
-    'difficulty': { bg: 'bg-yellow-50', border: 'border-yellow-200', text: 'text-yellow-800' },
-    'radical': { bg: 'bg-green-50', border: 'border-green-200', text: 'text-green-800' },
-    'usage': { bg: 'bg-purple-50', border: 'border-purple-200', text: 'text-purple-800' },
-    'education': { bg: 'bg-red-50', border: 'border-red-200', text: 'text-red-800' },
-  };
-  
-  return colors[category] ? colors[category].bg : 'bg-gray-50';
+// 태그 카테고리별 색상 정의
+const getCategoryColor = (categoryId: string): string => {
+  switch (categoryId) {
+    case 'meaning':
+      return 'bg-blue-500/10';
+    case 'radical':
+      return 'bg-green-500/10';
+    case 'education':
+      return 'bg-purple-500/10';
+    case 'difficulty':
+      return 'bg-orange-500/10';
+    case 'frequency':
+      return 'bg-red-500/10';
+    default:
+      return 'bg-gray-500/10';
+  }
 };
 
-// 카테고리별 텍스트 색상 설정
-const getCategoryTextColor = (category: string): string => {
-  const colors: Record<string, string> = {
-    'meaning': 'text-blue-800',
-    'difficulty': 'text-yellow-800',
-    'radical': 'text-green-800',
-    'usage': 'text-purple-800',
-    'education': 'text-red-800',
-  };
-  
-  return colors[category] || 'text-gray-800';
+// 태그 카테고리별 색상 정의 (텍스트)
+const getCategoryTextColor = (categoryId: string): string => {
+  switch (categoryId) {
+    case 'meaning':
+      return 'text-blue-600';
+    case 'radical':
+      return 'text-green-600';
+    case 'education':
+      return 'text-purple-600';
+    case 'difficulty':
+      return 'text-orange-600';
+    case 'frequency':
+      return 'text-red-600';
+    default:
+      return 'text-gray-600';
+  }
 };
 
-// 카테고리별 테두리 색상 설정
-const getCategoryBorderColor = (category: string): string => {
-  const colors: Record<string, string> = {
-    'meaning': 'border-blue-200',
-    'difficulty': 'border-yellow-200',
-    'radical': 'border-green-200',
-    'usage': 'border-purple-200',
-    'education': 'border-red-200',
-  };
-  
-  return colors[category] || 'border-gray-200';
-};
-
-// 카테고리별 호버 색상 설정
-const getCategoryHoverColor = (category: string): string => {
-  const colors: Record<string, string> = {
-    'meaning': 'hover:bg-blue-100',
-    'difficulty': 'hover:bg-yellow-100',
-    'radical': 'hover:bg-green-100',
-    'usage': 'hover:bg-purple-100',
-    'education': 'hover:bg-red-100',
-  };
-  
-  return colors[category] || 'hover:bg-gray-100';
+// 카테고리별 색상 객체 반환 (gradient, border, text)
+const getCategoryColorObject = (categoryId: string) => {
+  switch (categoryId) {
+    case 'meaning':
+      return {
+        gradient: 'from-blue-50 to-blue-100',
+        border: 'border-blue-200',
+        text: 'text-blue-600',
+        button: 'btn-primary'
+      };
+    case 'radical':
+      return {
+        gradient: 'from-green-50 to-green-100',
+        border: 'border-green-200',
+        text: 'text-green-600',
+        button: 'btn-success'
+      };
+    case 'education':
+      return {
+        gradient: 'from-purple-50 to-purple-100',
+        border: 'border-purple-200',
+        text: 'text-purple-600',
+        button: 'btn-accent'
+      };
+    case 'difficulty':
+      return {
+        gradient: 'from-yellow-50 to-yellow-100',
+        border: 'border-yellow-200',
+        text: 'text-yellow-600',
+        button: 'btn-warning'
+      };
+    case 'frequency':
+      return {
+        gradient: 'from-red-50 to-red-100',
+        border: 'border-red-200',
+        text: 'text-red-600',
+        button: 'btn-danger'
+      };
+    default:
+      return {
+        gradient: 'from-gray-50 to-gray-100',
+        border: 'border-gray-200',
+        text: 'text-gray-600',
+        button: 'btn-light'
+      };
+  }
 };
 
 // 태그와 관련된 한자를 데이터베이스에서 찾는 함수
@@ -488,7 +523,7 @@ const findHanjaCountForTag = (tagId: string, categoryId: string, examples: strin
   }
   
   // 사용 빈도 태그의 경우 직접 한자 수 설정 (총 1800자 기준)
-  if (categoryId === 'usage') {
+  if (categoryId === 'frequency') {
     if (tagId === 'common') {
       // 고빈도 한자는 전체의 약 30% (약 540자)
       return Math.max(hanjaSet.size, 540);
@@ -510,26 +545,39 @@ export default function TagsPage() {
   const tagsData = TAGS_DATA as unknown as TagData;
   
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-2">한자 태그 모음</h1>
-        <p className="text-gray-600">
-          태그를 통해 관련 있는 한자들을 쉽게 찾아보세요. 의미, 부수, 난이도 등 다양한 분류로 한자를 탐색할 수 있습니다.
-        </p>
-      </div>
+    <PageContainer maxWidth="max-w-5xl">
+      <PageHeader 
+        title="한자 태그 모음"
+        description="태그를 통해 관련 있는 한자들을 쉽게 찾아보세요. 의미, 부수, 난이도 등 다양한 분류로 한자를 탐색할 수 있습니다."
+        navButtons={[
+          {
+            href: '/learn',
+            label: '학습 센터',
+            colorClass: 'btn-primary'
+          },
+          {
+            href: '/quiz',
+            label: '퀴즈 풀기',
+            colorClass: 'btn-accent'
+          },
+          {
+            href: '/dashboard',
+            label: '학습 현황',
+            colorClass: 'btn-secondary'
+          }
+        ]}
+      />
       
       {tagsData.tag_categories.map((category) => (
         <div key={category.id} className="mb-12">
-          <div className="flex items-center mb-4">
-            <h2 className={`text-2xl font-semibold ${getCategoryTextColor(category.id)}`}>
-              {category.name}
-            </h2>
-            <span className={`ml-2 px-3 py-1 text-sm rounded-full ${getCategoryColor(category.id)} ${getCategoryTextColor(category.id)}`}>
+          <h2 className={`text-2xl font-bold mb-6 text-center ${getCategoryColorObject(category.id).text}`}>
+            {category.name}
+            <span className={`ml-2 px-3 py-1 text-sm rounded-full inline-block align-middle bg-white ${getCategoryColorObject(category.id).text}`}>
               {category.tags.length}개 태그
             </span>
-          </div>
+          </h2>
           
-          <p className="text-gray-600 mb-6">{category.description}</p>
+          <p className="text-gray-600 mb-6 text-center max-w-3xl mx-auto">{category.description}</p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {category.tags.map((tag) => {
@@ -540,21 +588,27 @@ export default function TagsPage() {
                 <Link 
                   key={tag.id}
                   href={`/tags/${category.id}/${tag.id}`}
-                  className={`block p-4 border rounded-lg ${getCategoryBorderColor(category.id)} ${getCategoryHoverColor(category.id)} transition-colors`}
                 >
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-lg font-medium">{tag.name}</h3>
-                    <span className={`px-2 py-0.5 text-xs rounded-full ${getCategoryColor(category.id)} ${getCategoryTextColor(category.id)}`}>
-                      {hanjaCount}자
-                    </span>
-                  </div>
-                  <p className="text-sm text-gray-600 mb-3">{tag.description}</p>
-                  <div className="flex flex-wrap gap-1">
-                    {tag.examples.slice(0, 5).map((example, idx) => (
-                      <span key={idx} className="text-lg">{example}</span>
-                    ))}
-                    {tag.examples.length > 5 && <span className="text-gray-400">...</span>}
-                  </div>
+                  <ContentCard
+                    className={`h-full transition-transform hover:-translate-y-1 cursor-pointer ${getCategoryColorObject(category.id).border}`}
+                    gradient
+                    gradientColors={getCategoryColorObject(category.id).gradient}
+                    title={tag.name}
+                    titleSize="md"
+                    description={tag.description}
+                  >
+                    <div className="flex justify-between items-start mb-2">
+                      <span className={`px-2 py-0.5 text-xs rounded-full bg-white/80 ${getCategoryColorObject(category.id).text}`}>
+                        {hanjaCount}자
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-1 mt-3">
+                      {tag.examples.slice(0, 5).map((example, idx) => (
+                        <span key={idx} className="text-lg hanja-text">{example}</span>
+                      ))}
+                      {tag.examples.length > 5 && <span className="text-gray-400">...</span>}
+                    </div>
+                  </ContentCard>
                 </Link>
               );
             })}
@@ -563,13 +617,15 @@ export default function TagsPage() {
       ))}
       
       <div className="mt-12 text-center">
-        <Link 
-          href="/learn"
-          className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          한자 학습 시작하기
+        <Link href="/learn">
+          <button className="btn-primary px-6 py-3 text-lg font-medium flex items-center mx-auto">
+            <span>한자 학습 시작하기</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+            </svg>
+          </button>
         </Link>
       </div>
-    </div>
+    </PageContainer>
   );
 } 

@@ -110,6 +110,7 @@ export default function SimpleHanjaPracticePage() {
             showHint={showHint}
             quizMode={quizMode}
             onQuizComplete={handleQuizComplete}
+            hideLeftCharacter={quizMode}
           />
         </div>
         
@@ -123,12 +124,12 @@ export default function SimpleHanjaPracticePage() {
           <button 
             onClick={toggleQuizMode}
             className={`px-4 py-2 rounded ${
-              quizMode 
+              !quizMode 
                 ? 'bg-blue-100 text-blue-800' 
                 : 'bg-blue-500 text-white hover:bg-blue-600'
             }`}
           >
-            {quizMode ? '보기 모드' : '연습 모드'}
+            {!quizMode ? '획순 보기' : '쓰기 연습'}
           </button>
           
           <button 
