@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <style>
+    .stroke1 {
+      stroke: #000;
+      stroke-width: 12;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: draw 1s linear forwards;
+    }
+    .stroke2 {
+      stroke: #000;
+      stroke-width: 12;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: draw 1s linear 1s forwards;
+    }
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    .stroke-number {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      fill: #ff0000;
+    }
+  </style>
+  
+  <!-- 획순 1: 왼쪽 빗금 -->
+  <path class="stroke1" d="M130,70 L90,230" />
+  <text x="80" y="150" class="stroke-number">1</text>
+  
+  <!-- 획순 2: 오른쪽 빗금 -->
+  <path class="stroke2" d="M170,70 L210,230" />
+  <text x="200" y="150" class="stroke-number">2</text>
+</svg> 

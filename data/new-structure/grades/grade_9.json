@@ -1,0 +1,12 @@
+{
+  "grade": 9,
+  "name": "9급",
+  "description": "중급 9급 한자",
+  "category": "intermediate",
+  "character_count": 0,
+  "character_ids": [],
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-04-10T14:30:01.493Z"
+  }
+}

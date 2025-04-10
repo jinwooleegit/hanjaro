@@ -92,7 +92,7 @@ export default function HanjaSearchResults({ query }: HanjaSearchResultsProps) {
             transition={{ delay: index * 0.05 }}
             className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow flex flex-col items-center"
           >
-            <Link href={`/learn/hanja/${encodeURIComponent(hanja.character)}`} className="block w-full">
+            <Link href={`/hanja/${hanja.id || encodeURIComponent(hanja.character)}`} className="block w-full">
               <div className="text-center">
                 <div
                   className={`

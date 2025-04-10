@@ -1,0 +1,48 @@
+{
+  "id": "intermediate",
+  "name": "중급",
+  "description": "중급 수준의 한자 학습",
+  "grades": [
+    9,
+    8,
+    7,
+    6,
+    5
+  ],
+  "grade_details": [
+    {
+      "grade": 9,
+      "name": "9급",
+      "character_count": 0,
+      "description": "중급 9급 한자"
+    },
+    {
+      "grade": 8,
+      "name": "8급",
+      "character_count": 0,
+      "description": "중급 8급 한자"
+    },
+    {
+      "grade": 7,
+      "name": "7급",
+      "character_count": 0,
+      "description": "중급 7급 한자"
+    },
+    {
+      "grade": 6,
+      "name": "6급",
+      "character_count": 0,
+      "description": "중급 6급 한자"
+    },
+    {
+      "grade": 5,
+      "name": "5급",
+      "character_count": 0,
+      "description": "중급 5급 한자"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-04-10T14:30:01.569Z"
+  }
+}

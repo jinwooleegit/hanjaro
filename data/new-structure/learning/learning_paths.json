@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2024-04-10T10:00:00Z",
+    "description": "한자 학습 경로 데이터"
+  },
+  "learning_paths": [
+    {
+      "id": "LP001",
+      "name": "기초 한자 마스터",
+      "description": "한자를 처음 접하는 사용자를 위한 입문 과정입니다. 15급부터 시작하여 기초적인 한자를 학습합니다.",
+      "difficulty": "beginner",
+      "target_audience": "한자 입문자",
+      "estimated_duration": "4주",
+      "stages": [
+        {
+          "stage_id": "LP001-S01",
+          "name": "15급 한자 기초",
+          "description": "가장 기본적인 한자 20자를 학습합니다.",
+          "grade": 15,
+          "character_ids": [
+            "HJ-15-0001-4E00",
+            "HJ-15-0002-4E8C",
+            "HJ-15-0003-4E09",
+            "HJ-15-0004-56DB",
+            "HJ-15-0005-4E94"
+          ],
+          "activities": [
+            {
+              "activity_id": "LP001-S01-A01",
+              "type": "recognition",
+              "name": "한자 인식하기",
+              "description": "기본 한자의 모양을 익히고 인식합니다."
+            },
+            {
+              "activity_id": "LP001-S01-A02",
+              "type": "writing",
+              "name": "한자 쓰기 연습",
+              "description": "기본 한자의 획순을 익히고 쓰는 연습을 합니다."
+            },
+            {
+              "activity_id": "LP001-S01-A03",
+              "type": "meaning",
+              "name": "한자 의미 학습",
+              "description": "한자의 기본 의미를 학습합니다."
+            },
+            {
+              "activity_id": "LP001-S01-A04",
+              "type": "quiz",
+              "name": "기초 퀴즈",
+              "description": "학습한 한자에 대한 기초 퀴즈를 풉니다."
+            }
+          ]
+        },
+        {
+          "stage_id": "LP001-S02",
+          "name": "14급 한자 기초",
+          "description": "기초 한자를 확장하여 학습합니다.",
+          "grade": 14,
+          "character_ids": [
+            "HJ-14-0001-516D",
+            "HJ-14-0002-4E03",
+            "HJ-14-0003-516B",
+            "HJ-14-0004-4E5D",
+            "HJ-14-0005-5341"
+          ],
+          "activities": [
+            {
+              "activity_id": "LP001-S02-A01",
+              "type": "recognition",
+              "name": "한자 인식하기",
+              "description": "14급 한자의 모양을 익히고 인식합니다."
+            },
+            {
+              "activity_id": "LP001-S02-A02",
+              "type": "writing",
+              "name": "한자 쓰기 연습",
+              "description": "14급 한자의 획순을 익히고 쓰는 연습을 합니다."
+            },
+            {
+              "activity_id": "LP001-S02-A03",
+              "type": "meaning",
+              "name": "한자 의미 학습",
+              "description": "14급 한자의 기본 의미를 학습합니다."
+            },
+            {
+              "activity_id": "LP001-S02-A04",
+              "type": "compound",
+              "name": "복합어 학습",
+              "description": "한자를 조합한 복합어를 학습합니다."
+            },
+            {
+              "activity_id": "LP001-S02-A05",
+              "type": "quiz",
+              "name": "종합 퀴즈",
+              "description": "15급과 14급 한자를 종합한 퀴즈를 풉니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LP002",
+      "name": "한자 강화 과정",
+      "description": "기초 한자를 학습한 후 중급 수준으로 나아가는 과정입니다. 13급부터 11급까지의 한자를 학습합니다.",
+      "difficulty": "intermediate",
+      "target_audience": "기초 한자 학습자",
+      "estimated_duration": "6주",
+      "stages": [
+        {
+          "stage_id": "LP002-S01",
+          "name": "13급 한자 학습",
+          "description": "13급 한자를 중심으로 학습합니다.",
+          "grade": 13,
+          "character_ids": [
+            "HJ-13-0001-767E",
+            "HJ-13-0002-5343",
+            "HJ-13-0003-4E07",
+            "HJ-13-0004-6708",
+            "HJ-13-0005-65E5"
+          ],
+          "activities": [
+            {
+              "activity_id": "LP002-S01-A01",
+              "type": "recognition",
+              "name": "한자 인식하기",
+              "description": "13급 한자의 모양을 익히고 인식합니다."
+            },
+            {
+              "activity_id": "LP002-S01-A02",
+              "type": "writing",
+              "name": "한자 쓰기 연습",
+              "description": "13급 한자의 획순을 익히고 쓰는 연습을 합니다."
+            },
+            {
+              "activity_id": "LP002-S01-A03",
+              "type": "etymology",
+              "name": "한자 어원 학습",
+              "description": "한자의 어원과 발전 과정을 학습합니다."
+            },
+            {
+              "activity_id": "LP002-S01-A04",
+              "type": "compound",
+              "name": "복합어 학습",
+              "description": "한자를 조합한 복합어를 학습합니다."
+            },
+            {
+              "activity_id": "LP002-S01-A05",
+              "type": "quiz",
+              "name": "종합 퀴즈",
+              "description": "13급 한자를 중심으로 한 퀴즈를 풉니다."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendations": {
+    "by_age": {
+      "7-9": ["LP001"],
+      "10-12": ["LP001", "LP002"],
+      "13-15": ["LP002"]
+    },
+    "by_level": {
+      "beginner": ["LP001"],
+      "intermediate": ["LP002"]
+    }
+  },
+  "progress_tracking": {
+    "completion_criteria": {
+      "LP001": {
+        "min_correct_rate": 80,
+        "min_activities_completed": ["LP001-S01-A01", "LP001-S01-A02", "LP001-S01-A04"]
+      },
+      "LP002": {
+        "min_correct_rate": 75,
+        "prerequisites": ["LP001"]
+      }
+    }
+  }
+} 

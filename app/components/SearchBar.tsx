@@ -114,7 +114,7 @@ export default function SearchBar({
               {searchResults.slice(0, 10).map((result) => (
                 <Link
                   key={result.id}
-                  href={`/learn/hanja/${encodeURIComponent(result.character)}`}
+                  href={`/hanja/${result.id || encodeURIComponent(result.character)}`}
                   onClick={() => setShowResults(false)}
                   className="block p-3 hover:bg-gray-50 rounded-lg transition-colors"
                 >

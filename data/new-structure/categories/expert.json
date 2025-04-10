@@ -1,0 +1,20 @@
+{
+  "id": "expert",
+  "name": "전문가",
+  "description": "전문가 수준의 한자 학습",
+  "grades": [
+    1
+  ],
+  "grade_details": [
+    {
+      "grade": 1,
+      "name": "1급",
+      "character_count": 20,
+      "description": "전문가 1급 한자"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-04-10T14:30:01.572Z"
+  }
+}

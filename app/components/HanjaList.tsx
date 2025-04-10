@@ -138,7 +138,7 @@ export default function HanjaList({ characters, categoryId, levelId }: HanjaList
             {displayedCharacters.map((character, index) => (
               <Link
                 key={`${character.character}_${index}`}
-                href={`/learn/hanja/${character.character}?category=${categoryId}&level=${levelId}`}
+                href={`/hanja/${character.id || character.character}?category=${categoryId}&level=${levelId}`}
                 className={`bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-xl text-center transition-all duration-300 border ${colors.border} transform hover:-translate-y-1 hover:shadow-lg flex flex-col items-center justify-center`}
               >
                 <div className={`text-5xl font-bold mb-3 ${colors.text} hanja-text`} style={{ fontFamily: "var(--font-noto-serif-kr), 'Batang', serif" }}>{character.character}</div>

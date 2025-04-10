@@ -3,12 +3,14 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { LearningStatus } from '../../types/learning';
+import { getHanjaIdByCharacter } from '@/utils/hanjaPageUtils';
 
 interface ReviewNotificationProps {
   onClose?: () => void;
 }
 
 interface ReviewItem {
+  id?: string;
   character: string;
   meaning: string;
   dueDate: string;
@@ -23,6 +25,7 @@ export default function ReviewNotification({ onClose }: ReviewNotificationProps)
   const [error, setError] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const [itemIds, setItemIds] = useState<Record<string, string | null>>({});
 
   // 복습이 필요한 항목 가져오기
   useEffect(() => {
@@ -86,6 +89,35 @@ export default function ReviewNotification({ onClose }: ReviewNotificationProps)
     
     return () => clearInterval(intervalId);
   }, [dismissed]);
+
+  // 각 항목의 ID를 가져옵니다.
+  useEffect(() => {
+    async function fetchItemIds() {
+      const newItemIds: Record<string, string | null> = {};
+      
+      for (const item of reviewItems) {
+        if (item.id) {
+          // 이미 ID가 있으면 그대로 사용
+          newItemIds[item.character] = item.id;
+        } else {
+          // ID가 없으면 문자로 ID 가져오기 시도
+          try {
+            const id = await getHanjaIdByCharacter(item.character);
+            newItemIds[item.character] = id;
+          } catch (error) {
+            console.error(`Error getting ID for character ${item.character}:`, error);
+            newItemIds[item.character] = null;
+          }
+        }
+      }
+      
+      setItemIds(newItemIds);
+    }
+    
+    if (reviewItems.length > 0) {
+      fetchItemIds();
+    }
+  }, [reviewItems]);
 
   // 알림 닫기
   const handleClose = () => {
@@ -158,32 +190,37 @@ export default function ReviewNotification({ onClose }: ReviewNotificationProps)
             
             <div className="max-h-60 overflow-y-auto mb-3">
               <ul className="space-y-2">
-                {reviewItems.map((item, index) => (
-                  <li key={index} className="border rounded p-2 hover:bg-gray-50">
-                    <Link 
-                      href={`/learn/hanja/${item.character}`} 
-                      className="flex items-center"
-                    >
-                      <span className="text-2xl mr-3">{item.character}</span>
-                      <div className="flex-1">
-                        <div className="text-sm font-medium">{item.meaning}</div>
-                        <div className="text-xs text-gray-500">레벨 {item.level}</div>
-                      </div>
-                      <div className="w-12 text-right">
-                        <div 
-                          className="inline-block w-8 h-1 rounded-full" 
-                          style={{
-                            backgroundColor: 
-                              item.masteryLevel >= 80 ? '#10B981' : 
-                              item.masteryLevel >= 60 ? '#3B82F6' : 
-                              item.masteryLevel >= 40 ? '#F59E0B' : 
-                              '#EF4444'
-                          }}
-                        ></div>
-                      </div>
-                    </Link>
-                  </li>
-                ))}
+                {reviewItems.map((item, index) => {
+                  // 각 항목의 ID 가져오기 (없으면 문자 사용)
+                  const itemId = itemIds[item.character] || item.id || item.character;
+                  
+                  return (
+                    <li key={index} className="border rounded p-2 hover:bg-gray-50">
+                      <Link 
+                        href={`/hanja/${itemId}`} 
+                        className="flex items-center"
+                      >
+                        <span className="text-2xl mr-3">{item.character}</span>
+                        <div className="flex-1">
+                          <div className="text-sm font-medium">{item.meaning}</div>
+                          <div className="text-xs text-gray-500">레벨 {item.level}</div>
+                        </div>
+                        <div className="w-12 text-right">
+                          <div 
+                            className="inline-block w-8 h-1 rounded-full" 
+                            style={{
+                              backgroundColor: 
+                                item.masteryLevel >= 80 ? '#10B981' : 
+                                item.masteryLevel >= 60 ? '#3B82F6' : 
+                                item.masteryLevel >= 40 ? '#F59E0B' : 
+                                '#EF4444'
+                            }}
+                          ></div>
+                        </div>
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             

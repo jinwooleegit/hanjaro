@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { getHanjaCharacter } from '@/utils/hanjaUtils';
+import { getHanjaIdByCharacter } from '@/utils/hanjaPageUtils';
 import dynamic from 'next/dynamic';
 
 // 클라이언트 사이드에서만 로드되도록 dynamic import 사용
@@ -31,6 +32,7 @@ export default function AdvancedPracticePage() {
   const [strokeSpeed, setStrokeSpeed] = useState(1);
   const [selectedLevel, setSelectedLevel] = useState<string>('초급');
   const [levelIndex, setLevelIndex] = useState(0);
+  const [characterId, setCharacterId] = useState<string | null>(null);
 
   // URL에서 한자 정보 가져오기
   useEffect(() => {
@@ -43,6 +45,18 @@ export default function AdvancedPracticePage() {
         
         if (data) {
           setHanjaData(data);
+          
+          // 한자 ID 가져오기
+          const fetchHanjaId = async () => {
+            try {
+              const id = await getHanjaIdByCharacter(charFromQuery);
+              setCharacterId(id);
+            } catch (idError) {
+              console.error('한자 ID 가져오기 실패:', idError);
+            }
+          };
+          
+          fetchHanjaId();
           
           // 레벨 찾기
           for (const [level, chars] of Object.entries(hanjaByLevel)) {
@@ -64,7 +78,20 @@ export default function AdvancedPracticePage() {
     } else {
       // 한자가 지정되지 않은 경우 기본 한자 표시
       setCharacter('一');
-      setLoading(false);
+      
+      // 기본 한자 ID 가져오기
+      const fetchDefaultHanjaId = async () => {
+        try {
+          const id = await getHanjaIdByCharacter('一');
+          setCharacterId(id);
+        } catch (idError) {
+          console.error('기본 한자 ID 가져오기 실패:', idError);
+        } finally {
+          setLoading(false);
+        }
+      };
+      
+      fetchDefaultHanjaId();
     }
   }, [searchParams]);
 
@@ -163,7 +190,7 @@ export default function AdvancedPracticePage() {
             )}
           </div>
           <div className="text-right">
-            <Link href={`/learn/hanja/${character}`} className="text-blue-500 hover:underline">
+            <Link href={`/hanja/${characterId || character}`} className="text-blue-500 hover:underline">
               한자 상세 정보 보기
             </Link>
           </div>

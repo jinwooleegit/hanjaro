@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import SimpleHanziDisplay from '../../components/SimpleHanziDisplay';
 import Link from 'next/link';
+import { getHanjaIdByCharacter } from '@/utils/hanjaPageUtils';
 
 export default function DirectHanjaPracticePage() {
   const router = useRouter();
@@ -13,6 +14,7 @@ export default function DirectHanjaPracticePage() {
   const [showAnimation, setShowAnimation] = useState(true);
   const [hanjaData, setHanjaData] = useState<any>(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [currentHanjaId, setCurrentHanjaId] = useState<string | null>(null);
   
   // 기본 한자 리스트
   const commonHanjaList = [
@@ -54,6 +56,10 @@ export default function DirectHanjaPracticePage() {
             meaning: defaultData.meaning,
             strokeCount: defaultData.stroke
           });
+          
+          // 현재 문자의 ID 가져오기
+          const id = await getHanjaIdByCharacter(currentCharacter);
+          setCurrentHanjaId(id);
           return;
         }
         
@@ -63,6 +69,7 @@ export default function DirectHanjaPracticePage() {
           const data = await response.json();
           if (data && data.length > 0) {
             setHanjaData(data[0]);
+            setCurrentHanjaId(data[0].id || null);
           } else {
             // 데이터가 없으면 기본 정보 사용
             setHanjaData({ 
@@ -70,6 +77,10 @@ export default function DirectHanjaPracticePage() {
               meaning: '정보 없음',
               strokeCount: 0
             });
+            
+            // 현재 문자의 ID 가져오기
+            const id = await getHanjaIdByCharacter(currentCharacter);
+            setCurrentHanjaId(id);
           }
         }
       } catch (error) {
@@ -80,6 +91,15 @@ export default function DirectHanjaPracticePage() {
           meaning: '정보 없음',
           strokeCount: 0
         });
+        
+        // 현재 문자의 ID 가져오기 시도
+        try {
+          const id = await getHanjaIdByCharacter(currentCharacter);
+          setCurrentHanjaId(id);
+        } catch (idError) {
+          console.error("한자 ID 가져오기 실패:", idError);
+          setCurrentHanjaId(null);
+        }
       }
     };
     
@@ -187,7 +207,7 @@ export default function DirectHanjaPracticePage() {
           </button>
           
           <Link
-            href={`/learn/hanja/${currentCharacter}`}
+            href={`/hanja/${currentHanjaId || currentCharacter}`}
             className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 transition-colors"
           >
             상세 정보

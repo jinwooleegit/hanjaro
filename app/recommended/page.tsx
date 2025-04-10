@@ -1,8 +1,9 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { getHanjaIdByCharacter } from '@/utils/hanjaPageUtils';
 
 // 오늘의 추천 한자 목록 - 정적 데이터
 const recommendedHanja = [
@@ -57,6 +58,22 @@ const HanjaCard = ({
   strokes: number; 
   example: string;
 }) => {
+  const [characterId, setCharacterId] = useState<string | null>(null);
+  
+  // 한자 ID 가져오기
+  useEffect(() => {
+    async function fetchHanjaId() {
+      try {
+        const id = await getHanjaIdByCharacter(character);
+        setCharacterId(id);
+      } catch (error) {
+        console.error(`Error getting ID for character ${character}:`, error);
+      }
+    }
+    
+    fetchHanjaId();
+  }, [character]);
+  
   return (
     <motion.div 
       className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
@@ -76,7 +93,8 @@ const HanjaCard = ({
           </div>
           <p className="text-gray-600 text-sm">{example}</p>
           <div className="mt-4">
-            <Link href={`/learn/hanja/${encodeURIComponent(character)}`}
+            <Link 
+              href={`/hanja/${characterId || character}`}
               className="text-blue-600 hover:text-blue-800 font-medium text-sm inline-flex items-center"
             >
               상세 정보

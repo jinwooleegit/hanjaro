@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2023-10-25T12:34:56Z",
+    "relation_types": ["radical_relations", "similar_shape", "similar_pronunciation", "compound_words"]
+  },
+  "radical_relations": {
+    "HJ-15-0020-6C34": ["HJ-10-0087-6C35", "HJ-05-0124-6CE5", "HJ-04-0256-6D77"],
+    "person_001": ["similar_person_001", "similar_person_002", "similar_person_003"]
+  },
+  "similar_shape": {
+    "HJ-15-0017-4EBA": ["HJ-12-0004-5165", "HJ-12-0008-516B"],
+    "person_001": ["similar_person_001", "similar_person_002"]
+  },
+  "similar_pronunciation": {
+    "일": ["HJ-15-0001-4E00", "HJ-11-0022-65E5"],
+    "인": ["HJ-15-0017-4EBA", "HJ-09-0045-5370"],
+    "산": ["HJ-15-0019-5C71", "HJ-06-0089-7523"],
+    "person_001": ["sound_like_person_001", "sound_like_person_002"]
+  },
+  "compound_words": {
+    "HJ-15-0017-4EBA": {
+      "HJ-10-0034-9593": {
+        "word": "人間",
+        "meaning": "인간",
+        "pronunciation": "인간"
+      },
+      "HJ-09-0056-751F": {
+        "word": "人生",
+        "meaning": "인생",
+        "pronunciation": "인생"
+      }
+    },
+    "HJ-15-0019-5C71": {
+      "HJ-15-0020-6C34": {
+        "word": "山水",
+        "meaning": "산과 물",
+        "pronunciation": "산수"
+      }
+    },
+    "person_001": {
+      "compound_word_001": {
+        "word": "인간(人間)",
+        "meaning": "사람, 인류",
+        "pronunciation": "인간"
+      },
+      "compound_word_002": {
+        "word": "인류(人類)",
+        "meaning": "사람의 종족",
+        "pronunciation": "인류"
+      },
+      "compound_word_003": {
+        "word": "인생(人生)",
+        "meaning": "사람의 일생",
+        "pronunciation": "인생"
+      },
+      "compound_word_004": {
+        "word": "한국인(韓國人)",
+        "meaning": "한국 사람",
+        "pronunciation": "한구긴"
+      },
+      "compound_word_005": {
+        "word": "외국인(外國人)",
+        "meaning": "다른 나라 사람",
+        "pronunciation": "외구긴"
+      }
+    }
+  }
+} 

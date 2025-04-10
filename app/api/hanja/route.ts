@@ -281,201 +281,135 @@ const searchCharacters = (db: HanjaDatabase, term: string): HanjaCharacter[] => 
   return results;
 };
 
+// 한자 ID로 검색하는 함수
+const getHanjaById = (db: HanjaDatabase, id: string): HanjaCharacter | null => {
+  if (!id.trim()) return null;
+  
+  // 확장 데이터베이스 검색 시도
+  try {
+    const extendedFilePath = path.join(process.cwd(), 'data', 'new-structure', 'characters', 'hanja_extended.json');
+    if (fs.existsSync(extendedFilePath)) {
+      const extendedData = JSON.parse(fs.readFileSync(extendedFilePath, 'utf8'));
+      if (extendedData && extendedData.characters) {
+        const character = extendedData.characters.find((char: any) => char.id === id);
+    if (character) {
+          return {
+            ...character,
+            level: character.grade || 1,  // grade 필드를 level로 매핑
+            examples: character.extended_data?.common_words || []  // common_words를 examples로 매핑
+          };
+        }
+      }
+    }
+  } catch (error) {
+    console.error(`확장 데이터베이스 검색 오류:`, error);
+  }
+  
+  // 레벨별 한자 검색
+  for (const levelKey in db.basic.levels) {
+    const level = db.basic.levels[levelKey];
+    for (const character of level.characters) {
+      if (character.character === id) {
+        return character;
+      }
+    }
+  }
+  
+  if (db.advanced) {
+    for (const levelKey in db.advanced.levels) {
+      const level = db.advanced.levels[levelKey];
+      for (const character of level.characters) {
+        if (character.character === id) {
+          return character;
+        }
+      }
+    }
+  }
+  
+  return null;
+};
+
 // 개별 한자 가져오기
 export async function GET(request: NextRequest) {
-  const { searchParams } = new URL(request.url);
-  const character = searchParams.get('character');
-  const levelParam = searchParams.get('level');
-  const chunk = searchParams.get('chunk');
-  const search = searchParams.get('search');
-  const page = Number(searchParams.get('page') || '1');
-  const itemsPerPage = Number(searchParams.get('limit') || '20');
-  
-  console.log(`한자 API 요청: character=${character}, level=${levelParam}, chunk=${chunk}, page=${page}, limit=${itemsPerPage}, search=${search}`);
-  
   try {
-    const database = loadDatabase();
+    const db = loadDatabase();
+    const { searchParams } = new URL(request.url);
     
-    // 특정 한자 요청 처리
-    if (character) {
-      console.log(`한자 검색: "${character}"`);
-      
-      // 모든 카테고리와 레벨에서 해당 한자 찾기
-      for (const categoryKey of ['basic', 'advanced'] as const) {
-        const category = database[categoryKey];
-        if (!category || !category.levels) continue;
-        
-        for (const levelKey in category.levels) {
-          const levelData = category.levels[levelKey];
-          
-          // 해당 레벨에 한자가 있는지 확인
-          if (levelData.characters && Array.isArray(levelData.characters)) {
-            const result = levelData.characters.find(char => char.character === character);
-            
-            if (result) {
-              console.log(`한자 찾음: "${character}" (카테고리: ${categoryKey}, 레벨: ${levelKey})`);
-              return NextResponse.json(result);
-            }
-          }
-        }
+    // ID 파라미터 확인 (직접적인 한자 검색)
+    const id = searchParams.get('id');
+    if (id) {
+      const character = getHanjaById(db, id);
+      if (character) {
+        return NextResponse.json(character);
+      } else {
+        return NextResponse.json({ error: '요청한 한자를 찾을 수 없습니다.' }, { status: 404 });
       }
+    }
+
+    // 기존 검색 로직 (레벨, 검색어, 페이지네이션 등)
+    const level = searchParams.get('level');
+    const keyword = searchParams.get('search');
+    const page = parseInt(searchParams.get('page') || '1');
+    const itemsPerPage = parseInt(searchParams.get('limit') || '50');
+    const chunk = parseInt(searchParams.get('chunk') || '0');
+    
+    // 검색 조건에 따라 결과 분기
+    if (keyword) {
+      const results = searchCharacters(db, keyword);
+      const paginatedResults = applyPagination(results, page, itemsPerPage);
       
-      // 기본 제공 한자 맵 - 데이터베이스에 없는 한자를 위한 폴백 (기존 코드 유지)
-      const basicHanjaMap: Record<string, HanjaCharacter> = {
-        '過': {
-          character: '過',
-          meaning: '지날 과, 지나다, 넘다',
-          pronunciation: '과',
-          stroke_count: 13,
-          radical: '辶',
-          examples: [
-            { word: '通過', meaning: '통과', pronunciation: '통과' },
-            { word: '經過', meaning: '경과', pronunciation: '경과' }
-          ],
-          level: 5,
-          order: 1
-        }
-        // 필요시 더 많은 기본 한자 추가
-      };
-      
-      // 기본 제공 한자 확인
-      const basicHanjaResult = basicHanjaMap[character];
-      if (basicHanjaResult) {
-        console.log(`기본 한자 맵에서 찾음: "${character}"`);
-        return NextResponse.json(basicHanjaResult);
-      }
-      
-      console.log(`한자를 찾을 수 없음: "${character}"`);
-      
-      // 한자를 찾지 못했을 때 기본 데이터 반환
       return NextResponse.json({
-        character: character,
-        meaning: "의미를 찾을 수 없음",
-        pronunciation: "발음을 찾을 수 없음",
-        stroke_count: 0,
-        radical: "부수 정보 없음",
-        examples: [],
-        level: 0,
-        order: 0
-      }, { status: 404 });
-    }
-    
-    // 기본 요청 - 메타데이터만 반환
-    if (!levelParam && !chunk && !search) {
-      // 각 레벨의 한자 개수 정보 추가
-      const responseMeta = {
-        basic: {
-          ...database.basic,
-          levels: Object.entries(database.basic.levels).reduce((acc, [key, value]) => {
-            acc[key] = {
-              name: value.name,
-              description: value.description,
-              count: value.characters?.length || 0
-            };
-            return acc;
-          }, {} as Record<string, any>)
-        },
-        advanced: database.advanced ? {
-          ...database.advanced,
-          levels: Object.entries(database.advanced.levels || {}).reduce((acc, [key, value]) => {
-            acc[key] = {
-              name: value.name,
-              description: value.description,
-              count: value.characters?.length || 0
-            };
-            return acc;
-          }, {} as Record<string, any>)
-        } : undefined
-      };
-      
-      return NextResponse.json(responseMeta);
-    }
-
-    // 검색 기능 (추가 기능)
-    if (search) {
-      console.log(`검색 요청 처리: "${search}"`);
-      const results = searchCharacters(database, search);
-      return NextResponse.json(results);
-    }
-
-    // 레벨별 한자 요청
-    if (levelParam) {
-      const levelNumber = parseInt(levelParam);
-      console.log(`레벨 ${levelNumber} 한자 데이터 요청 처리중`);
-
-      // 레벨 범위 확인
-      if (isNaN(levelNumber) || levelNumber < 1) {
-        return NextResponse.json({ error: '유효하지 않은 레벨 번호입니다' }, { status: 400 });
-      }
-
-      let targetLevel: HanjaLevel | null = null;
-      let categoryType = '';
-
-      // 먼저 basic 카테고리에서 레벨 찾기
-      const basicLevelKey = `level${levelNumber}`;
-      if (database.basic?.levels?.[basicLevelKey]) {
-        targetLevel = database.basic.levels[basicLevelKey];
-        categoryType = 'basic';
-      } 
-      // 그 다음 advanced 카테고리에서 찾기
-      else if (database.advanced?.levels?.[basicLevelKey]) {
-        targetLevel = database.advanced.levels[basicLevelKey];
-        categoryType = 'advanced';
-      }
-
-      if (!targetLevel) {
-        console.log(`레벨 ${levelNumber}를 찾을 수 없습니다.`);
-        return NextResponse.json({ error: `레벨 ${levelNumber}을 찾을 수 없습니다` }, { status: 404 });
-      }
-
-      console.log(`레벨 ${levelNumber} (${categoryType}) 데이터 반환: ${targetLevel.characters?.length || 0}개 한자`);
-      
-      // 한자 목록 반환
-      return NextResponse.json(targetLevel.characters || []);
-    }
-
-    // 청크별 한자 요청 (추가 기능)
-    if (chunk) {
-      const chunkNumber = parseInt(chunk);
-      if (isNaN(chunkNumber) || chunkNumber < 1) {
-        return NextResponse.json({ error: '유효하지 않은 청크 번호입니다' }, { status: 400 });
-      }
-
-      // 모든 한자를 하나의 배열로 모으기
-      const allCharacters: HanjaCharacter[] = [];
-      
-      // basic 카테고리의 모든 한자 수집
-      Object.values(database.basic.levels).forEach(level => {
-        if (level.characters && level.characters.length > 0) {
-          allCharacters.push(...level.characters);
-        }
+        characters: paginatedResults,
+        total: results.length,
+        page,
+        totalPages: Math.ceil(results.length / itemsPerPage)
       });
+    } else if (level) {
+      const levelNum = parseInt(level);
+      const characters = getCharactersByLevel(db, levelNum);
+      const paginatedCharacters = applyPagination(characters, page, itemsPerPage);
       
-      // advanced 카테고리가 있다면 그 한자도 수집
-      if (database.advanced) {
-        Object.values(database.advanced.levels).forEach(level => {
-          if (level.characters && level.characters.length > 0) {
-            allCharacters.push(...level.characters);
-          }
-        });
+      return NextResponse.json({
+        characters: paginatedCharacters,
+        total: characters.length,
+        level: levelNum,
+        page,
+        totalPages: Math.ceil(characters.length / itemsPerPage)
+      });
+    } else if (chunk > 0) {
+      // 특정 청크만 반환
+      return NextResponse.json(getChunk(db, chunk));
+    } else {
+      // 모든 데이터 반환 (레벨별로 페이지네이션 적용)
+      const characters = [];
+      let totalChars = 0;
+      
+      // 기본 한자만 반환 (레벨별)
+      const levels: Record<string, any> = {};
+      
+      for (const levelKey in db.basic.levels) {
+        const levelData = db.basic.levels[levelKey];
+        const levelChars = levelData.characters || [];
+        totalChars += levelChars.length;
+        
+        // 레벨별 데이터 추가
+        levels[levelKey] = {
+          name: levelData.name,
+          description: levelData.description,
+          total: levelChars.length,
+          characters: applyPagination(levelChars, page, itemsPerPage)
+        };
       }
-
-      // 청크 사이즈 계산 (예: 100개씩)
-      const chunkSize = 100;
-      const startIdx = (chunkNumber - 1) * chunkSize;
-      const endIdx = startIdx + chunkSize;
       
-      // 범위 내의 한자만 반환
-      const chunkCharacters = allCharacters.slice(startIdx, endIdx);
-      
-      return NextResponse.json(chunkCharacters);
+      return NextResponse.json({
+        levels,
+        total: totalChars,
+        page,
+        totalPages: Math.ceil(totalChars / itemsPerPage)
+      });
     }
-
-    // 기본 응답
-    return NextResponse.json({ message: '한자 API: 레벨(level), 청크(chunk), 또는 검색(search) 매개변수를 지정하세요' });
-
   } catch (error) {
-    console.error('API 요청 처리 중 오류:', error);
-    return NextResponse.json({ error: '서버 오류가 발생했습니다' }, { status: 500 });
+    console.error('API 요청 처리 중 오류 발생:', error);
+    return NextResponse.json({ error: '서버 오류가 발생했습니다.' }, { status: 500 });
   }
 } 

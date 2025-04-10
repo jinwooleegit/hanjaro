@@ -1,0 +1,691 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-04-10T14:30:01.509Z",
+    "grade": 4,
+    "total_characters": 15
+  },
+  "characters": [
+    {
+      "id": "HJ-04-0001-5FC3",
+      "character": "心",
+      "unicode": "5FC3",
+      "meaning": "마음 심",
+      "pronunciation": "심",
+      "stroke_count": 4,
+      "radical": "心",
+      "grade": 4,
+      "order": 1,
+      "tags": [
+        "radical:心",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "마음 심",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "心臟",
+            "meaning": "심장",
+            "pronunciation": "심장"
+          },
+          {
+            "word": "中心",
+            "meaning": "중심",
+            "pronunciation": "중심"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 50 20 L 50 50",
+            "M 20 50 C 30 30 70 30 80 50",
+            "M 20 50 L 35 90",
+            "M 80 50 L 65 90"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0002-624B",
+      "character": "手",
+      "unicode": "624B",
+      "meaning": "손 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "手",
+      "grade": 4,
+      "order": 2,
+      "tags": [
+        "radical:手",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "손 수",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "手帳",
+            "meaning": "수첩",
+            "pronunciation": "수첩"
+          },
+          {
+            "word": "拍手",
+            "meaning": "박수",
+            "pronunciation": "박수"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 20 25 L 20 75",
+            "M 10 35 L 40 35",
+            "M 10 55 L 40 55",
+            "M 70 25 L 70 75",
+            "M 45 35 L 90 35",
+            "M 45 55 L 90 55",
+            "M 45 75 L 90 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0003-53E3",
+      "character": "口",
+      "unicode": "53E3",
+      "meaning": "입 구",
+      "pronunciation": "구",
+      "stroke_count": 3,
+      "radical": "口",
+      "grade": 4,
+      "order": 3,
+      "tags": [
+        "radical:口",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "입 구",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "口語",
+            "meaning": "구어",
+            "pronunciation": "구어"
+          },
+          {
+            "word": "入口",
+            "meaning": "입구",
+            "pronunciation": "입구"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 25 L 75 25",
+            "M 25 25 L 25 75",
+            "M 25 75 L 75 75",
+            "M 75 25 L 75 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0004-76EE",
+      "character": "目",
+      "unicode": "76EE",
+      "meaning": "눈 목",
+      "pronunciation": "목",
+      "stroke_count": 5,
+      "radical": "目",
+      "grade": 4,
+      "order": 4,
+      "tags": [
+        "radical:目",
+        "strokes:5"
+      ],
+      "extended_data": {
+        "detailed_meaning": "눈 목",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "目的",
+            "meaning": "목적",
+            "pronunciation": "목적"
+          },
+          {
+            "word": "注目",
+            "meaning": "주목",
+            "pronunciation": "주목"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0005-8033",
+      "character": "耳",
+      "unicode": "8033",
+      "meaning": "귀 이",
+      "pronunciation": "이",
+      "stroke_count": 6,
+      "radical": "耳",
+      "grade": 4,
+      "order": 5,
+      "tags": [
+        "radical:耳",
+        "strokes:6"
+      ],
+      "extended_data": {
+        "detailed_meaning": "귀 이",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "耳鳴",
+            "meaning": "이명",
+            "pronunciation": "이명"
+          },
+          {
+            "word": "耳目",
+            "meaning": "이목",
+            "pronunciation": "이목"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0006-91AB",
+      "character": "醫",
+      "unicode": "91AB",
+      "meaning": "의사 의",
+      "pronunciation": "의",
+      "stroke_count": 18,
+      "radical": "酉",
+      "grade": 4,
+      "order": 6,
+      "tags": [
+        "radical:酉",
+        "strokes:18"
+      ],
+      "extended_data": {
+        "detailed_meaning": "의사 의",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "醫師",
+            "meaning": "의사",
+            "pronunciation": "의사"
+          },
+          {
+            "word": "醫學",
+            "meaning": "의학",
+            "pronunciation": "의학"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 20 25 L 20 75",
+            "M 10 35 L 40 35",
+            "M 10 55 L 40 55",
+            "M 10 75 L 40 75",
+            "M 35 25 L 35 75",
+            "M 70 25 L 70 75",
+            "M 45 35 L 90 35",
+            "M 45 55 L 90 55",
+            "M 45 75 L 90 75",
+            "M 55 25 L 55 75",
+            "M 50 30 L 65 50",
+            "M 75 30 L 60 50"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0007-85E5",
+      "character": "藥",
+      "unicode": "85E5",
+      "meaning": "약 약",
+      "pronunciation": "약",
+      "stroke_count": 19,
+      "radical": "艸",
+      "grade": 4,
+      "order": 7,
+      "tags": [
+        "radical:艸",
+        "strokes:19"
+      ],
+      "extended_data": {
+        "detailed_meaning": "약 약",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "藥品",
+            "meaning": "약품",
+            "pronunciation": "약품"
+          },
+          {
+            "word": "漢藥",
+            "meaning": "한약",
+            "pronunciation": "한약"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 20 L 75 20",
+            "M 25 35 L 75 35",
+            "M 50 15 L 50 45",
+            "M 35 15 L 35 45",
+            "M 65 15 L 65 45",
+            "M 25 60 L 75 60",
+            "M 25 80 L 75 80",
+            "M 50 50 L 50 85",
+            "M 35 50 L 35 85",
+            "M 65 50 L 65 85",
+            "M 40 55 L 60 75",
+            "M 60 55 L 40 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0008-75C5",
+      "character": "病",
+      "unicode": "75C5",
+      "meaning": "병 병",
+      "pronunciation": "병",
+      "stroke_count": 10,
+      "radical": "疒",
+      "grade": 4,
+      "order": 8,
+      "tags": [
+        "radical:疒",
+        "strokes:10"
+      ],
+      "extended_data": {
+        "detailed_meaning": "병 병",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "病院",
+            "meaning": "병원",
+            "pronunciation": "병원"
+          },
+          {
+            "word": "疾病",
+            "meaning": "질병",
+            "pronunciation": "질병"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 20 L 75 20",
+            "M 25 35 L 75 35",
+            "M 50 15 L 50 45",
+            "M 35 15 L 35 45",
+            "M 65 15 L 65 45",
+            "M 25 60 L 75 60",
+            "M 25 80 L 75 80",
+            "M 50 50 L 50 85",
+            "M 35 50 L 35 85",
+            "M 65 50 L 65 85",
+            "M 40 55 L 60 75",
+            "M 60 55 L 40 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0009-79D1",
+      "character": "科",
+      "unicode": "79D1",
+      "meaning": "과목 과",
+      "pronunciation": "과",
+      "stroke_count": 9,
+      "radical": "禾",
+      "grade": 4,
+      "order": 9,
+      "tags": [
+        "radical:禾",
+        "strokes:9"
+      ],
+      "extended_data": {
+        "detailed_meaning": "과목 과",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "科學",
+            "meaning": "과학",
+            "pronunciation": "과학"
+          },
+          {
+            "word": "內科",
+            "meaning": "내과",
+            "pronunciation": "내과"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 20 25 L 20 75",
+            "M 10 35 L 40 35",
+            "M 10 55 L 40 55",
+            "M 10 75 L 40 75",
+            "M 35 25 L 35 75",
+            "M 70 25 L 70 75",
+            "M 45 35 L 90 35",
+            "M 45 55 L 90 55",
+            "M 45 75 L 90 75",
+            "M 55 25 L 55 75",
+            "M 50 30 L 65 50",
+            "M 75 30 L 60 50"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0010-5316",
+      "character": "化",
+      "unicode": "5316",
+      "meaning": "될 화",
+      "pronunciation": "화",
+      "stroke_count": 4,
+      "radical": "匕",
+      "grade": 4,
+      "order": 10,
+      "tags": [
+        "radical:匕",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "될 화",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "化學",
+            "meaning": "화학",
+            "pronunciation": "화학"
+          },
+          {
+            "word": "變化",
+            "meaning": "변화",
+            "pronunciation": "변화"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 20 L 75 20",
+            "M 25 35 L 75 35",
+            "M 50 15 L 50 45",
+            "M 35 15 L 35 45",
+            "M 65 15 L 65 45",
+            "M 25 60 L 75 60",
+            "M 25 80 L 75 80",
+            "M 50 50 L 50 85",
+            "M 35 50 L 35 85",
+            "M 65 50 L 65 85"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0011-5FB7",
+      "character": "德",
+      "unicode": "5FB7",
+      "meaning": "덕 덕",
+      "pronunciation": "덕",
+      "stroke_count": 15,
+      "radical": "彳",
+      "grade": 4,
+      "order": 11,
+      "tags": [
+        "radical:彳",
+        "strokes:15"
+      ],
+      "extended_data": {
+        "detailed_meaning": "덕 덕",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "德行",
+            "meaning": "덕행",
+            "pronunciation": "덕행"
+          },
+          {
+            "word": "道德",
+            "meaning": "도덕",
+            "pronunciation": "도덕"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0012-611B",
+      "character": "愛",
+      "unicode": "611B",
+      "meaning": "사랑 애",
+      "pronunciation": "애",
+      "stroke_count": 13,
+      "radical": "心",
+      "grade": 4,
+      "order": 12,
+      "tags": [
+        "radical:心",
+        "strokes:13"
+      ],
+      "extended_data": {
+        "detailed_meaning": "사랑 애",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "愛情",
+            "meaning": "애정",
+            "pronunciation": "애정"
+          },
+          {
+            "word": "사랑",
+            "meaning": "사랑",
+            "pronunciation": "사랑"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0013-7F8E",
+      "character": "美",
+      "unicode": "7F8E",
+      "meaning": "아름다울 미",
+      "pronunciation": "미",
+      "stroke_count": 9,
+      "radical": "羊",
+      "grade": 4,
+      "order": 13,
+      "tags": [
+        "radical:羊",
+        "strokes:9"
+      ],
+      "extended_data": {
+        "detailed_meaning": "아름다울 미",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "美術",
+            "meaning": "미술",
+            "pronunciation": "미술"
+          },
+          {
+            "word": "美容",
+            "meaning": "미용",
+            "pronunciation": "미용"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0014-5584",
+      "character": "善",
+      "unicode": "5584",
+      "meaning": "착할 선",
+      "pronunciation": "선",
+      "stroke_count": 12,
+      "radical": "口",
+      "grade": 4,
+      "order": 14,
+      "tags": [
+        "radical:口",
+        "strokes:12"
+      ],
+      "extended_data": {
+        "detailed_meaning": "착할 선",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "善良",
+            "meaning": "선량",
+            "pronunciation": "선량"
+          },
+          {
+            "word": "親善",
+            "meaning": "친선",
+            "pronunciation": "친선"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-04-0015-8AA0",
+      "character": "誠",
+      "unicode": "8AA0",
+      "meaning": "정성 성",
+      "pronunciation": "성",
+      "stroke_count": 13,
+      "radical": "言",
+      "grade": 4,
+      "order": 15,
+      "tags": [
+        "radical:言",
+        "strokes:13"
+      ],
+      "extended_data": {
+        "detailed_meaning": "정성 성",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "誠實",
+            "meaning": "성실",
+            "pronunciation": "성실"
+          },
+          {
+            "word": "忠誠",
+            "meaning": "충성",
+            "pronunciation": "충성"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    }
+  ]
+}

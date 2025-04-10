@@ -69,6 +69,7 @@ export type HanjaSentence = {
 };
 
 export type HanjaCharacter = {
+  id?: string;         // 한자 고유 ID (추가됨)
   character: string;
   pronunciation: string;
   meaning: string;

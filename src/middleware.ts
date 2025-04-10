@@ -12,9 +12,18 @@ export function middleware(request: NextRequest) {
   // 디버깅: 요청 URL과 쿠키 로깅
   console.log(`미들웨어 처리: ${pathname}`);
   
-  // 특정 URL 패턴은 리디렉션 처리를 하지 않음
-  // 특히 /learn/hanja/ 경로는 한자 문자가 포함될 수 있으므로 바로 통과시킴
-  if (pathname.startsWith('/learn/hanja/') || pathname.startsWith('/api/') || pathname.startsWith('/hanja/')) {
+  // 다음 경로들은 미들웨어 처리에서 완전히 제외
+  if (
+    pathname.startsWith('/learn/hanja/') || 
+    pathname.startsWith('/api/') || 
+    pathname.startsWith('/hanja/') ||
+    pathname.startsWith('/_next/') ||
+    pathname.startsWith('/static/') ||
+    pathname.startsWith('/data/') ||
+    pathname.startsWith('/favicon.ico') ||
+    pathname.startsWith('/hanja-detail/')  // 한자 상세 페이지 제외
+  ) {
+    console.log(`제외된 경로: ${pathname}`);
     return NextResponse.next();
   }
 
@@ -36,6 +45,7 @@ export function middleware(request: NextRequest) {
       const decodedPath = decodeURIComponent(pathname);
       
       // 디코딩된 경로가 다른 경우에만 리디렉션
+      // 이미 디코딩된 URL을 다시 디코딩하지 않도록 체크
       if (decodedPath !== pathname) {
         console.log(`URL 디코딩 처리: ${pathname} -> ${decodedPath}`);
         
@@ -44,8 +54,10 @@ export function middleware(request: NextRequest) {
         
         // 영구 리디렉션(308)으로 설정하고 리디렉션 쿠키 추가
         const response = NextResponse.redirect(url, 308);
+        
+        // 리디렉션 쿠키 설정 (이미 리디렉션된 경로 기록)
         response.cookies.set(REDIRECT_COOKIE, decodedPath, { 
-          maxAge: 60, // 60초 동안 유효 (더 길게 설정)
+          maxAge: 60, // 60초 동안 유효
           path: '/',
           httpOnly: true, 
           sameSite: 'strict'
@@ -59,7 +71,6 @@ export function middleware(request: NextRequest) {
   }
   
   // 한글 문자가 직접 URL에 포함된 경우 홈으로 리디렉션
-  // 단, /learn/hanja/ 경로는 이미 위에서 제외했으므로 여기서 다시 체크할 필요 없음
   if (/[\uAC00-\uD7A3]/.test(pathname) && !pathname.startsWith('/learn/')) {
     console.log(`한글 URL 감지, 홈으로 리디렉션: ${pathname}`);
     url.pathname = '/';

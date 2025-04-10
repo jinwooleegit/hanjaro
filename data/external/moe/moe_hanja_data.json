@@ -1,0 +1,82 @@
+{
+  "grades": {
+    "elementary": [
+      {
+        "character": "一",
+        "meaning": "한 일",
+        "pronunciation": "일",
+        "grade": 1
+      },
+      {
+        "character": "二",
+        "meaning": "두 이",
+        "pronunciation": "이",
+        "grade": 1
+      },
+      {
+        "character": "三",
+        "meaning": "석 삼",
+        "pronunciation": "삼",
+        "grade": 1
+      },
+      {
+        "character": "四",
+        "meaning": "넉 사",
+        "pronunciation": "사",
+        "grade": 1
+      },
+      {
+        "character": "五",
+        "meaning": "다섯 오",
+        "pronunciation": "오",
+        "grade": 1
+      }
+    ],
+    "middle": [
+      {
+        "character": "家",
+        "meaning": "집 가",
+        "pronunciation": "가",
+        "grade": 6
+      },
+      {
+        "character": "間",
+        "meaning": "사이 간",
+        "pronunciation": "간",
+        "grade": 6
+      },
+      {
+        "character": "江",
+        "meaning": "강 강",
+        "pronunciation": "강",
+        "grade": 6
+      },
+      {
+        "character": "去",
+        "meaning": "갈 거",
+        "pronunciation": "거",
+        "grade": 6
+      }
+    ],
+    "high": [
+      {
+        "character": "羅",
+        "meaning": "벌일 라",
+        "pronunciation": "라",
+        "grade": 3
+      },
+      {
+        "character": "樂",
+        "meaning": "즐길 락/노래 악",
+        "pronunciation": "락/악",
+        "grade": 3
+      },
+      {
+        "character": "來",
+        "meaning": "올 래",
+        "pronunciation": "래",
+        "grade": 3
+      }
+    ]
+  }
+}

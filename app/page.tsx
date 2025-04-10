@@ -109,6 +109,38 @@ export default function Home() {
           </button>
         </Link>
       </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <Link href="/dashboard" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h2 className="text-xl font-bold mb-2 text-blue-600">대시보드</h2>
+          <p className="text-gray-600">나의 학습 현황과 진행 상황을 확인하세요.</p>
+        </Link>
+        
+        <Link href="/new-hanja" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h2 className="text-xl font-bold mb-2 text-blue-600">한자 학습</h2>
+          <p className="text-gray-600">급수별, 주제별로 다양한 한자를 학습하세요.</p>
+        </Link>
+        
+        <Link href="/enhanced-hanja" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h2 className="text-xl font-bold mb-2 text-blue-600">확장된 한자 학습</h2>
+          <p className="text-gray-600">더 풍부한 컨텐츠와 상세한 설명으로 한자를 깊이 이해하세요.</p>
+        </Link>
+        
+        <Link href="/quiz" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h2 className="text-xl font-bold mb-2 text-blue-600">퀴즈</h2>
+          <p className="text-gray-600">학습한 한자를 퀴즈로 복습하고 실력을 확인하세요.</p>
+        </Link>
+        
+        <Link href="/writing-practice" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h2 className="text-xl font-bold mb-2 text-blue-600">쓰기 연습</h2>
+          <p className="text-gray-600">한자 쓰기를 연습하고 획순을 익히세요.</p>
+        </Link>
+        
+        <Link href="/tags" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h2 className="text-xl font-bold mb-2 text-blue-600">태그별 한자</h2>
+          <p className="text-gray-600">주제별로 분류된 한자를 찾아보세요.</p>
+        </Link>
+      </div>
     </PageContainer>
   );
 } 

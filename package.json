@@ -16,7 +16,10 @@
     "normalize-data": "node scripts/normalize-data.js",
     "validate-data": "npx ts-node scripts/validate-data.ts",
     "fix-data": "npm run normalize-data && npm run validate-data",
-    "generate-icons": "node scripts/generate-hanja-icons.js"
+    "generate-icons": "node scripts/generate-hanja-icons.js",
+    "build-db": "node scripts/build-hanja-database.js",
+    "collect-data": "node scripts/collect-external-data.js",
+    "build-hanja-data": "npm run build-db && npm run collect-data"
   },
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",

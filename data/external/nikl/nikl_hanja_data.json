@@ -1,0 +1,74 @@
+{
+  "一": {
+    "meaning": "한 일",
+    "pronunciation": "일",
+    "stroke_count": 1,
+    "radical": "一",
+    "grade": 15,
+    "examples": [
+      {
+        "word": "一日",
+        "meaning": "하루",
+        "pronunciation": "일일"
+      },
+      {
+        "word": "一年",
+        "meaning": "일 년",
+        "pronunciation": "일년"
+      },
+      {
+        "word": "一生",
+        "meaning": "평생",
+        "pronunciation": "일생"
+      }
+    ]
+  },
+  "二": {
+    "meaning": "두 이",
+    "pronunciation": "이",
+    "stroke_count": 2,
+    "radical": "二",
+    "grade": 15,
+    "examples": [
+      {
+        "word": "二月",
+        "meaning": "2월",
+        "pronunciation": "이월"
+      },
+      {
+        "word": "二度",
+        "meaning": "두 번",
+        "pronunciation": "이도"
+      },
+      {
+        "word": "二重",
+        "meaning": "이중",
+        "pronunciation": "이중"
+      }
+    ]
+  },
+  "三": {
+    "meaning": "석 삼",
+    "pronunciation": "삼",
+    "stroke_count": 3,
+    "radical": "一",
+    "grade": 15,
+    "examples": [
+      {
+        "word": "三國",
+        "meaning": "삼국",
+        "pronunciation": "삼국"
+      },
+      {
+        "word": "三日",
+        "meaning": "사흘",
+        "pronunciation": "삼일"
+      },
+      {
+        "word": "三角",
+        "meaning": "삼각형",
+        "pronunciation": "삼각"
+      }
+    ]
+  }
+}

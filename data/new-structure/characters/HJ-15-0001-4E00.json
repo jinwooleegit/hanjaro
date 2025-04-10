@@ -1,0 +1,73 @@
+{
+  "id": "HJ-15-0001-4E00",
+  "character": "一",
+  "unicode": "4E00",
+  "grade": 15,
+  "category": "beginner",
+  "order_in_grade": 1,
+  "meaning": "한 일",
+  "pronunciation": "일",
+  "stroke_count": 1,
+  "radical": "一",
+  "radical_meaning": "하나",
+  "radical_pronunciation": "일",
+  "mnemonics": "하나를 표현하는 가장 기본적인 가로획 하나입니다.",
+  "examples": [
+    {
+      "word": "一日",
+      "meaning": "하루",
+      "pronunciation": "일일",
+      "example_sentence": "一日 세 끼를 먹습니다.",
+      "hanja_level": 15
+    },
+    {
+      "word": "一年",
+      "meaning": "일 년",
+      "pronunciation": "일년",
+      "example_sentence": "一年에 열두 달이 있습니다.",
+      "hanja_level": 15
+    },
+    {
+      "word": "第一",
+      "meaning": "제일, 첫째",
+      "pronunciation": "제일",
+      "example_sentence": "그는 반에서 第一입니다.",
+      "hanja_level": 13
+    }
+  ],
+  "compounds": [
+    {
+      "id": "HJ-15-0002-4E8C",
+      "character": "二",
+      "relationship": "semantic"
+    },
+    {
+      "id": "HJ-15-0003-4E09",
+      "character": "三",
+      "relationship": "semantic"
+    },
+    {
+      "id": "HJ-14-0023-5929",
+      "character": "天",
+      "relationship": "component"
+    }
+  ],
+  "similar_characters": [
+    {
+      "id": "HJ-15-0002-4E8C",
+      "character": "二",
+      "similarity_type": "visual"
+    }
+  ],
+  "stroke_order": [
+    [{"x": 0, "y": 50}, {"x": 100, "y": 50}]
+  ],
+  "audio_url": "/audio/一.mp3",
+  "image_url": "/images/一.svg",
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2023-11-05T15:30:00Z",
+    "source": "Hanjaro Original",
+    "validated": true
+  }
+} 

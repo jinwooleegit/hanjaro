@@ -1,0 +1,79 @@
+{
+  "id": "HJ-15-0002-4E8C",
+  "character": "二",
+  "unicode": "4E8C",
+  "grade": 15,
+  "category": "beginner",
+  "order_in_grade": 2,
+  "meaning": "두 이",
+  "pronunciation": "이",
+  "stroke_count": 2,
+  "radical": "二",
+  "radical_meaning": "둘",
+  "radical_pronunciation": "이",
+  "mnemonics": "두 개의 가로획이 나란히 있어 '둘'을 의미합니다.",
+  "examples": [
+    {
+      "word": "二日",
+      "meaning": "이틀",
+      "pronunciation": "이일",
+      "example_sentence": "二日 동안 비가 내렸습니다.",
+      "hanja_level": 15
+    },
+    {
+      "word": "二月",
+      "meaning": "2월",
+      "pronunciation": "이월",
+      "example_sentence": "二月은 28일까지 있습니다.",
+      "hanja_level": 15
+    },
+    {
+      "word": "二十",
+      "meaning": "스물, 20",
+      "pronunciation": "이십",
+      "example_sentence": "그는 二十 살입니다.",
+      "hanja_level": 14
+    }
+  ],
+  "compounds": [
+    {
+      "id": "HJ-15-0001-4E00",
+      "character": "一",
+      "relationship": "semantic"
+    },
+    {
+      "id": "HJ-15-0003-4E09",
+      "character": "三",
+      "relationship": "semantic"
+    },
+    {
+      "id": "HJ-13-0034-7B2C",
+      "character": "第",
+      "relationship": "component"
+    }
+  ],
+  "similar_characters": [
+    {
+      "id": "HJ-15-0001-4E00",
+      "character": "一",
+      "similarity_type": "visual"
+    },
+    {
+      "id": "HJ-15-0003-4E09",
+      "character": "三",
+      "similarity_type": "visual"
+    }
+  ],
+  "stroke_order": [
+    [{"x": 0, "y": 30}, {"x": 100, "y": 30}],
+    [{"x": 0, "y": 70}, {"x": 100, "y": 70}]
+  ],
+  "audio_url": "/audio/二.mp3",
+  "image_url": "/images/二.svg",
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2023-11-05T15:35:00Z",
+    "source": "Hanjaro Original",
+    "validated": true
+  }
+} 

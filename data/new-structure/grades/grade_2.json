@@ -1,0 +1,12 @@
+{
+  "grade": 2,
+  "name": "2급",
+  "description": "고급 2급 한자",
+  "category": "advanced",
+  "character_count": 0,
+  "character_ids": [],
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-04-10T14:30:01.493Z"
+  }
+}

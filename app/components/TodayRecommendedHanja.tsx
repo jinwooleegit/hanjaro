@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getCharactersForLevel, HanjaCharacter } from '@/utils/hanjaUtils';
 import { motion } from 'framer-motion';
+import { getHanjaIdByCharacter } from '@/utils/hanjaPageUtils';
 
 /**
  * 오늘의 추천 한자 컴포넌트
@@ -184,6 +185,7 @@ export default function TodayRecommendedHanja() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [lastGenerated, setLastGenerated] = useState<number | null>(null);
+  const [hanjaIds, setHanjaIds] = useState<Record<string, string | null>>({});
 
   // 교육 수준별 랜덤 한자 가져오기
   const getRecommendedHanja = async () => {
@@ -398,6 +400,35 @@ export default function TodayRecommendedHanja() {
     }
   }, [loading, recommendedHanja.length, lastGenerated]);
 
+  // 한자 ID 가져오기
+  useEffect(() => {
+    async function fetchHanjaIds() {
+      const newHanjaIds: Record<string, string | null> = {};
+      
+      for (const hanja of recommendedHanja) {
+        if (hanja.id) {
+          // 이미 ID가 있으면 그대로 사용
+          newHanjaIds[hanja.character] = hanja.id;
+        } else {
+          // ID가 없으면 문자로 ID 가져오기 시도
+          try {
+            const id = await getHanjaIdByCharacter(hanja.character);
+            newHanjaIds[hanja.character] = id;
+          } catch (error) {
+            console.error(`Error getting ID for character ${hanja.character}:`, error);
+            newHanjaIds[hanja.character] = null;
+          }
+        }
+      }
+      
+      setHanjaIds(newHanjaIds);
+    }
+    
+    if (recommendedHanja.length > 0) {
+      fetchHanjaIds();
+    }
+  }, [recommendedHanja]);
+
   // 다음 갱신 시간 계산 함수
   const getNextRefreshTime = () => {
     if (!lastGenerated) return '다음 접속 시';
@@ -451,6 +482,9 @@ export default function TodayRecommendedHanja() {
           // 레벨 경로 구성 (경로 형식: 'categoryId-levelId')
           const levelPath = `${pathCategory}-${pathLevel}`;
           
+          // 한자 ID 가져오기 (없으면 캐릭터 사용)
+          const hanjaId = hanjaIds[hanja.character] || hanja.id || hanja.character;
+          
           return (
             <motion.div
               key={index}
@@ -500,7 +534,7 @@ export default function TodayRecommendedHanja() {
                 {/* 두 번째: 개별 한자 상세 페이지 링크 (클릭 후 한자 위에 올렸을 때 툴팁으로 표시) */}
                 <div className="mt-2">
                   <Link
-                    href={`/learn/hanja/${hanja.character}`}
+                    href={`/hanja/${hanjaId}`}
                     className="text-sm text-blue-600 hover:underline"
                     title={`${hanja.character} 상세 정보 보기`}
                   >

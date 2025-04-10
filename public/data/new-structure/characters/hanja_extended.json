@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2023-10-25T12:34:56Z",
+    "total_characters": 9,
+    "data_source": "국립국어원 한자 자료 확장"
+  },
+  "characters": [
+    {
+      "id": "HJ-15-0001-4E00",
+      "character": "一",
+      "unicode": "U+4E00",
+      "meaning": "한 일",
+      "pronunciation": "일",
+      "stroke_count": 1,
+      "radical": "一",
+      "grade": 15,
+      "order": 1,
+      "tags": ["basic", "number", "beginner"],
+      "extended_data": {
+        "detailed_meaning": "하나, 첫째, 같다, 하나로 통일하다 등의 의미가 있습니다.",
+        "etymology": "가로로 그은 하나의 선으로, 숫자 '1'을 표현합니다. 상형문자로 시작되어 지금의 모양으로 간소화되었습니다.",
+        "mnemonics": "하늘에서 땅까지 이어진 하나의 선을 상상해보세요. 이것이 '一(한 일)'입니다.",
+        "common_words": [
+          {
+            "word": "一日",
+            "meaning": "하루",
+            "pronunciation": "일일",
+            "example_sentence": "一日 세 끼를 먹습니다.",
+            "example_meaning": "하루에 세 끼를 먹습니다."
+          },
+          {
+            "word": "第一",
+            "meaning": "제일, 첫째",
+            "pronunciation": "제일",
+            "example_sentence": "그는 반에서 第一입니다.",
+            "example_meaning": "그는 반에서 첫째입니다."
+          },
+          {
+            "word": "統一",
+            "meaning": "통일",
+            "pronunciation": "통일",
+            "example_sentence": "우리는 統一을 희망합니다.",
+            "example_meaning": "우리는 통일을 희망합니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '일(一)'은 시작과 온전함을 상징합니다. 또한 도교에서는 '태극(太極)'을 의미하기도 합니다.",
+        "pronunciation_guide": "한국어에서는 '일'로 발음하며, 중국어에서는 'yī', 일본어에서는 'ichi'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽에서 오른쪽으로 수평선을 그립니다.",
+          "directions": ["수평선을 왼쪽에서 오른쪽으로"]
+        }
+      }
+    },
+    {
+      "id": "HJ-15-0002-4E8C",
+      "character": "二",
+      "unicode": "U+4E8C",
+      "meaning": "두 이",
+      "pronunciation": "이",
+      "stroke_count": 2,
+      "radical": "二",
+      "grade": 15,
+      "order": 2,
+      "tags": ["basic", "number", "beginner"],
+      "extended_data": {
+        "detailed_meaning": "둘, 두 번째 등의 의미가 있습니다.",
+        "etymology": "두 개의 수평선으로 숫자 '2'를 표현합니다. 상형문자에서 유래했습니다.",
+        "mnemonics": "하늘과 땅을 나타내는 두 개의 수평선이 '二(두 이)'입니다.",
+        "common_words": [
+          {
+            "word": "二月",
+            "meaning": "2월",
+            "pronunciation": "이월",
+            "example_sentence": "二月은 겨울의 마지막 달입니다.",
+            "example_meaning": "2월은 겨울의 마지막 달입니다."
+          },
+          {
+            "word": "第二",
+            "meaning": "제2, 두 번째",
+            "pronunciation": "제이",
+            "example_sentence": "그는 第二 외국어로 일본어를 선택했습니다.",
+            "example_meaning": "그는 두 번째 외국어로 일본어를 선택했습니다."
+          },
+          {
+            "word": "二重",
+            "meaning": "이중",
+            "pronunciation": "이중",
+            "example_sentence": "二重 창문은 소음을 차단합니다.",
+            "example_meaning": "이중 창문은 소음을 차단합니다."
+          }
+        ],
+        "cultural_notes": "음양 철학에서 '이(二)'는 음과 양의 구분, 즉 이원성을 나타냅니다.",
+        "pronunciation_guide": "한국어에서는 '이'로 발음하며, 중국어에서는 'èr', 일본어에서는 'ni'로 발음합니다.",
+        "stroke_order": {
+          "description": "두 개의 수평선을 위에서 아래로 그립니다.",
+          "directions": ["위쪽 수평선을 왼쪽에서 오른쪽으로", "아래쪽 수평선을 왼쪽에서 오른쪽으로"]
+        }
+      }
+    },
+    {
+      "id": "HJ-15-0017-4EBA",
+      "character": "人",
+      "unicode": "U+4EBA",
+      "meaning": "사람 인",
+      "pronunciation": "인",
+      "stroke_count": 2,
+      "radical": "人",
+      "grade": 15,
+      "order": 17,
+      "tags": ["basic", "human", "beginner"],
+      "extended_data": {
+        "detailed_meaning": "사람, 인류를 의미하는 가장 기본적인 한자로, 인간 자체를 나타냄. 다른 사람, 타인이라는 의미도 갖고 있으며, 사람의 품성이나 인품을 나타내기도 함.",
+        "etymology": "사람이 서 있는 모습을 본뜬 상형문자로, 두 획으로 사람의 다리가 벌어진 형태를 표현함. 갑골문(甲骨文)에서는 사람의 옆모습을 본뜬 형태였으나 점차 현재의 모습으로 간략화됨.",
+        "mnemonics": "두 개의 획이 사람의 두 다리를 나타내는 모습으로 기억하면 됨. 사람이 서 있거나 걷는 모습을 생각하면 쉽게 기억할 수 있음.",
+        "stroke_order": {
+          "description": "1. 왼쪽 빗금을 위에서 아래로 그림 2. 오른쪽 빗금을 위에서 아래로 그림",
+          "directions": [
+            "왼쪽 빗금을 위에서 아래로 비스듬히 내려그림",
+            "오른쪽 빗금을 위에서 아래로 비스듬히 내려그림"
+          ]
+        },
+        "common_words": [
+          {
+            "word": "인간(人間)",
+            "meaning": "사람, 인류",
+            "pronunciation": "인간",
+            "example_sentence": "인간은 사회적 동물이다.",
+            "example_meaning": "Humans are social animals."
+          },
+          {
+            "word": "외국인(外國人)",
+            "meaning": "다른 나라 사람",
+            "pronunciation": "외구긴",
+            "example_sentence": "그는 한국어를 잘하는 외국인이다.",
+            "example_meaning": "He is a foreigner who speaks Korean well."
+          },
+          {
+            "word": "인류(人類)",
+            "meaning": "사람의 종족",
+            "pronunciation": "인류",
+            "example_sentence": "인류의 역사는 수백만 년이다.",
+            "example_meaning": "Human history spans millions of years."
+          },
+          {
+            "word": "한국인(韓國人)",
+            "meaning": "한국 사람",
+            "pronunciation": "한구긴",
+            "example_sentence": "저는 한국인입니다.",
+            "example_meaning": "I am Korean."
+          },
+          {
+            "word": "개인(個人)",
+            "meaning": "개별적인 사람",
+            "pronunciation": "개인",
+            "example_sentence": "이것은 개인적인 문제입니다.",
+            "example_meaning": "This is a personal matter."
+          }
+        ],
+        "cultural_notes": "한자 '人'은 가장 기본적인 한자 중 하나로, 수많은 한자어의 구성 요소로 쓰이며 여러 한자의 부수로도 활용됨. 동아시아 문화권에서 사람을 중심으로 하는 인본주의적 가치관을 반영하는 중요한 문자이기도 함.",
+        "pronunciation_guide": "한국어에서는 '인'으로 발음하며, 일본어에서는 'じん(진)' 또는 'にん(닌)', 중국어에서는 'rén(런)'으로 발음함. 주로 한자어의 접미사로 쓰일 때는 '~인'으로 발음되어 '~하는 사람' 또는 '~의 사람'이라는 의미를 나타냄.",
+        "related_characters": ["仁", "件", "伸", "休", "位", "依"]
+      }
+    },
+    {
+      "id": "HJ-15-0018-5927",
+      "character": "大",
+      "unicode": "U+5927",
+      "meaning": "큰 대",
+      "pronunciation": "대",
+      "stroke_count": 3,
+      "radical": "大",
+      "grade": 15,
+      "order": 18,
+      "tags": ["basic", "size", "beginner"],
+      "extended_data": {
+        "detailed_meaning": "크다, 위대하다, 성인, 중요하다 등의 의미가 있습니다.",
+        "etymology": "팔을 벌리고 서 있는 사람의 모습을 나타낸 상형문자입니다.",
+        "mnemonics": "양팔을 활짝 벌린 큰 사람의 모습이 '大(큰 대)'입니다.",
+        "common_words": [
+          {
+            "word": "大學",
+            "meaning": "대학",
+            "pronunciation": "대학",
+            "example_sentence": "그는 大學에 다닙니다.",
+            "example_meaning": "그는 대학에 다닙니다."
+          },
+          {
+            "word": "大統領",
+            "meaning": "대통령",
+            "pronunciation": "대통령",
+            "example_sentence": "大統領이 연설했습니다.",
+            "example_meaning": "대통령이 연설했습니다."
+          },
+          {
+            "word": "偉大",
+            "meaning": "위대함",
+            "pronunciation": "위대",
+            "example_sentence": "그의 偉大함을 존경합니다.",
+            "example_meaning": "그의 위대함을 존경합니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '大(대)'는 우주와 자연의 거대함을 의미하기도 합니다. 유교의 경전 중 하나인 '대학(大學)'은 큰 배움이라는 의미를 담고 있습니다.",
+        "pronunciation_guide": "한국어에서는 '대'로 발음하며, 중국어에서는 'dà', 일본어에서는 'dai' 또는 'tai'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 다리, 오른쪽 다리, 그리고 중앙의 수직선 순으로 그립니다.",
+          "directions": ["왼쪽 다리를 위에서 아래로", "오른쪽 다리를 위에서 아래로", "중앙의 수직선을 위에서 아래로"]
+        },
+        "related_characters": ["太", "天", "夫"]
+      }
+    },
+    {
+      "id": "HJ-15-0019-5C71",
+      "character": "山",
+      "unicode": "U+5C71",
+      "meaning": "뫼 산",
+      "pronunciation": "산",
+      "stroke_count": 3,
+      "radical": "山",
+      "grade": 15,
+      "order": 19,
+      "tags": ["basic", "nature", "beginner"],
+      "extended_data": {
+        "detailed_meaning": "산, 산맥, 산지, 높이 솟은 것 등의 의미가 있습니다.",
+        "etymology": "세 개의 봉우리를 가진 산의 모습을 단순화한 상형문자입니다.",
+        "mnemonics": "세 개의 봉우리가 솟아있는 모습을 상상해보세요. 이것이 '山(뫼 산)'입니다.",
+        "common_words": [
+          {
+            "word": "山水",
+            "meaning": "산과 물, 자연 경관",
+            "pronunciation": "산수",
+            "example_sentence": "한국의 山水는 아름답습니다.",
+            "example_meaning": "한국의 산수는 아름답습니다."
+          },
+          {
+            "word": "山村",
+            "meaning": "산촌",
+            "pronunciation": "산촌",
+            "example_sentence": "그는 조용한 山村에서 살고 있습니다.",
+            "example_meaning": "그는 조용한 산촌에서 살고 있습니다."
+          },
+          {
+            "word": "火山",
+            "meaning": "화산",
+            "pronunciation": "화산",
+            "example_sentence": "火山이 폭발했습니다.",
+            "example_meaning": "화산이 폭발했습니다."
+          }
+        ],
+        "cultural_notes": "동양에서 산은 신성한 장소로 여겨졌으며, 도교와 불교의 수행처로 중요시되었습니다. 한국의 풍수지리에서도 산의 기운은 매우 중요합니다.",
+        "pronunciation_guide": "한국어에서는 '산'으로 발음하며, 중국어에서는 'shān', 일본어에서는 'san' 또는 'yama'로 발음합니다.",
+        "stroke_order": {
+          "description": "가운데 봉우리, 왼쪽 봉우리, 오른쪽 봉우리 순으로 그립니다.",
+          "directions": ["중앙의 봉우리를 위에서 아래로", "왼쪽 봉우리를 위에서 아래로", "오른쪽 봉우리를 위에서 아래로"]
+        },
+        "related_characters": ["岳", "峰", "岩", "崇"]
+      }
+    }
+  ]
+} 

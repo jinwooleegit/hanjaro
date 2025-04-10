@@ -14,6 +14,7 @@ interface HanjaCardProps {
   className?: string;
   onClick?: () => void;
   category?: string;
+  id?: string;
 }
 
 /**
@@ -28,7 +29,8 @@ const HanjaCard = memo(({
   size = 'md',
   className = '',
   onClick,
-  category = 'basic'
+  category = 'basic',
+  id,
 }: HanjaCardProps) => {
   // 사이즈별 스타일 설정
   const sizeConfig = {
@@ -103,8 +105,10 @@ const HanjaCard = memo(({
   
   // 링크가 필요하고 onClick이 없는 경우에만 Link로 감싸기
   if (!onClick) {
+    // ID가 있으면 ID 기반 경로 사용, 없으면 문자 자체를 ID로 사용
+    const hanjaId = id || character;
     return (
-      <Link href={`/learn/hanja/${character}?category=${category}&level=${level || 'level1'}`}>
+      <Link href={`/hanja/${hanjaId}?category=${category}&level=${level || 'level1'}`}>
         {cardContent}
       </Link>
     );

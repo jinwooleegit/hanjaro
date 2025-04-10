@@ -1,0 +1,34 @@
+{
+  "id": "advanced",
+  "name": "고급",
+  "description": "고급 수준의 한자 학습",
+  "grades": [
+    4,
+    3,
+    2
+  ],
+  "grade_details": [
+    {
+      "grade": 4,
+      "name": "4급",
+      "character_count": 15,
+      "description": "고급 4급 한자"
+    },
+    {
+      "grade": 3,
+      "name": "3급",
+      "character_count": 15,
+      "description": "고급 3급 한자"
+    },
+    {
+      "grade": 2,
+      "name": "2급",
+      "character_count": 0,
+      "description": "고급 2급 한자"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-04-10T14:30:01.571Z"
+  }
+}

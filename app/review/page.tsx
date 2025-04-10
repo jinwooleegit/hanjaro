@@ -3,8 +3,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { LearningStatus } from '../../types/learning';
+import { getHanjaIdByCharacter } from '@/utils/hanjaPageUtils';
 
 interface ReviewItem {
+  id?: string;
   character: string;
   meaning: string;
   dueDate: string;
@@ -18,6 +20,7 @@ export default function ReviewPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [filter, setFilter] = useState('all'); // 'all', 'today', 'upcoming'
+  const [itemIds, setItemIds] = useState<Record<string, string | null>>({});
 
   useEffect(() => {
     const fetchReviewItems = async () => {
@@ -49,6 +52,35 @@ export default function ReviewPage() {
     
     fetchReviewItems();
   }, []);
+  
+  // 각 항목의 ID를 가져옵니다.
+  useEffect(() => {
+    async function fetchItemIds() {
+      const newItemIds: Record<string, string | null> = {};
+      
+      for (const item of reviewItems) {
+        if (item.id) {
+          // 이미 ID가 있으면 그대로 사용
+          newItemIds[item.character] = item.id;
+        } else {
+          // ID가 없으면 문자로 ID 가져오기 시도
+          try {
+            const id = await getHanjaIdByCharacter(item.character);
+            newItemIds[item.character] = id;
+          } catch (error) {
+            console.error(`Error getting ID for character ${item.character}:`, error);
+            newItemIds[item.character] = null;
+          }
+        }
+      }
+      
+      setItemIds(newItemIds);
+    }
+    
+    if (reviewItems.length > 0) {
+      fetchItemIds();
+    }
+  }, [reviewItems]);
   
   // 필터링된 아이템 가져오기
   const getFilteredItems = () => {
@@ -189,33 +221,38 @@ export default function ReviewPage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {filteredItems.map((item, index) => (
-                <Link 
-                  href={`/learn/hanja/${item.character}`} 
-                  key={index}
-                  className="block bg-white p-4 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition"
-                >
-                  <div className="flex items-center">
-                    <div className="text-4xl mr-4">{item.character}</div>
-                    <div className="flex-1">
-                      <div className="font-medium">{item.meaning}</div>
-                      <div className="text-sm text-gray-500">
-                        레벨 {item.level}
-                      </div>
-                      <div className="mt-2 w-full bg-gray-200 rounded-full h-1.5">
-                        <div
-                          className={`h-1.5 rounded-full ${getMasteryColorClass(item.masteryLevel)}`}
-                          style={{ width: `${item.masteryLevel}%` }}
-                        ></div>
-                      </div>
-                      <div className="flex justify-between text-xs text-gray-500 mt-1">
-                        <span>{item.masteryLevel}% 숙련</span>
-                        <span>복습일: {formatDate(item.dueDate)}</span>
+              {filteredItems.map((item, index) => {
+                // 각 항목의 ID 가져오기 (없으면 문자 사용)
+                const itemId = itemIds[item.character] || item.id || item.character;
+                
+                return (
+                  <Link 
+                    href={`/hanja/${itemId}`} 
+                    key={index}
+                    className="block bg-white p-4 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition"
+                  >
+                    <div className="flex items-center">
+                      <div className="text-4xl mr-4">{item.character}</div>
+                      <div className="flex-1">
+                        <div className="font-medium">{item.meaning}</div>
+                        <div className="text-sm text-gray-500">
+                          레벨 {item.level}
+                        </div>
+                        <div className="mt-2 w-full bg-gray-200 rounded-full h-1.5">
+                          <div
+                            className={`h-1.5 rounded-full ${getMasteryColorClass(item.masteryLevel)}`}
+                            style={{ width: `${item.masteryLevel}%` }}
+                          ></div>
+                        </div>
+                        <div className="flex justify-between text-xs text-gray-500 mt-1">
+                          <span>{item.masteryLevel}% 숙련</span>
+                          <span>복습일: {formatDate(item.dueDate)}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
             
             <div className="mt-8 text-center">

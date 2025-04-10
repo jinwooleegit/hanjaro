@@ -1,0 +1,3356 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2023-10-25T12:34:56Z",
+    "total_characters": 65,
+    "data_source": "국립국어원 한자 자료 확장"
+  },
+  "characters": [
+    {
+      "id": "HJ-15-0001-4E00",
+      "character": "一",
+      "unicode": "U+4E00",
+      "meaning": "한 일",
+      "pronunciation": "일",
+      "stroke_count": 1,
+      "radical": "一",
+      "grade": 15,
+      "order": 1,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "하나, 첫째, 같다, 하나로 통일하다 등의 의미가 있습니다.",
+        "etymology": "가로로 그은 하나의 선으로, 숫자 '1'을 표현합니다. 상형문자로 시작되어 지금의 모양으로 간소화되었습니다.",
+        "mnemonics": "하늘에서 땅까지 이어진 하나의 선을 상상해보세요. 이것이 '一(한 일)'입니다.",
+        "common_words": [
+          {
+            "word": "一日",
+            "meaning": "하루",
+            "pronunciation": "일일",
+            "example_sentence": "一日 세 끼를 먹습니다.",
+            "example_meaning": "하루에 세 끼를 먹습니다."
+          },
+          {
+            "word": "第一",
+            "meaning": "제일, 첫째",
+            "pronunciation": "제일",
+            "example_sentence": "그는 반에서 第一입니다.",
+            "example_meaning": "그는 반에서 첫째입니다."
+          },
+          {
+            "word": "統一",
+            "meaning": "통일",
+            "pronunciation": "통일",
+            "example_sentence": "우리는 統一을 희망합니다.",
+            "example_meaning": "우리는 통일을 희망합니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '일(一)'은 시작과 온전함을 상징합니다. 또한 도교에서는 '태극(太極)'을 의미하기도 합니다.",
+        "pronunciation_guide": "한국어에서는 '일'로 발음하며, 중국어에서는 'yī', 일본어에서는 'ichi'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽에서 오른쪽으로 수평선을 그립니다.",
+          "directions": [
+            "수평선을 왼쪽에서 오른쪽으로"
+          ]
+        }
+      }
+    },
+    {
+      "id": "HJ-15-0002-4E8C",
+      "character": "二",
+      "unicode": "U+4E8C",
+      "meaning": "두 이",
+      "pronunciation": "이",
+      "stroke_count": 2,
+      "radical": "二",
+      "grade": 15,
+      "order": 2,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "둘, 두 번째 등의 의미가 있습니다.",
+        "etymology": "두 개의 수평선으로 숫자 '2'를 표현합니다. 상형문자에서 유래했습니다.",
+        "mnemonics": "하늘과 땅을 나타내는 두 개의 수평선이 '二(두 이)'입니다.",
+        "common_words": [
+          {
+            "word": "二月",
+            "meaning": "2월",
+            "pronunciation": "이월",
+            "example_sentence": "二月은 겨울의 마지막 달입니다.",
+            "example_meaning": "2월은 겨울의 마지막 달입니다."
+          },
+          {
+            "word": "第二",
+            "meaning": "제2, 두 번째",
+            "pronunciation": "제이",
+            "example_sentence": "그는 第二 외국어로 일본어를 선택했습니다.",
+            "example_meaning": "그는 두 번째 외국어로 일본어를 선택했습니다."
+          },
+          {
+            "word": "二重",
+            "meaning": "이중",
+            "pronunciation": "이중",
+            "example_sentence": "二重 창문은 소음을 차단합니다.",
+            "example_meaning": "이중 창문은 소음을 차단합니다."
+          }
+        ],
+        "cultural_notes": "음양 철학에서 '이(二)'는 음과 양의 구분, 즉 이원성을 나타냅니다.",
+        "pronunciation_guide": "한국어에서는 '이'로 발음하며, 중국어에서는 'èr', 일본어에서는 'ni'로 발음합니다.",
+        "stroke_order": {
+          "description": "두 개의 수평선을 위에서 아래로 그립니다.",
+          "directions": [
+            "위쪽 수평선을 왼쪽에서 오른쪽으로",
+            "아래쪽 수평선을 왼쪽에서 오른쪽으로"
+          ]
+        }
+      }
+    },
+    {
+      "id": "HJ-15-0017-4EBA",
+      "character": "人",
+      "unicode": "U+4EBA",
+      "meaning": "사람 인",
+      "pronunciation": "인",
+      "stroke_count": 2,
+      "radical": "人",
+      "grade": 15,
+      "order": 17,
+      "tags": [
+        "basic",
+        "human",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "사람, 인류, 타인, 인격 등의 의미가 있습니다.",
+        "etymology": "사람이 서 있는 모습을 단순화한 상형문자입니다. 두 다리가 벌어진 형태로 표현됩니다.",
+        "mnemonics": "서 있는 사람의 모습을 상상해보세요. 두 개의 선이 아래로 벌어져 있는 모양이 '人(사람 인)'입니다.",
+        "common_words": [
+          {
+            "word": "人間",
+            "meaning": "인간",
+            "pronunciation": "인간",
+            "example_sentence": "우리는 모두 人間입니다.",
+            "example_meaning": "우리는 모두 인간입니다."
+          },
+          {
+            "word": "外人",
+            "meaning": "외국인",
+            "pronunciation": "외인",
+            "example_sentence": "그 外人은 한국어를 잘합니다.",
+            "example_meaning": "그 외국인은 한국어를 잘합니다."
+          },
+          {
+            "word": "人生",
+            "meaning": "인생",
+            "pronunciation": "인생",
+            "example_sentence": "人生은 짧습니다.",
+            "example_meaning": "인생은 짧습니다."
+          },
+          {
+            "word": "人物",
+            "meaning": "인물",
+            "pronunciation": "인물",
+            "example_sentence": "그는 역사적 人物입니다.",
+            "example_meaning": "그는 역사적 인물입니다."
+          }
+        ],
+        "cultural_notes": "유교에서는 '人(인)'을 중심으로 한 '仁(인)'의 개념이 중요합니다. 사람됨의 도리와 인간 관계의 조화를 강조합니다.",
+        "pronunciation_guide": "한국어에서는 '인'으로 발음하며, 중국어에서는 'rén', 일본어에서는 'jin' 또는 'hito'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 획을 위에서 오른쪽 아래로, 오른쪽 획을 위에서 왼쪽 아래로 그립니다.",
+          "directions": [
+            "왼쪽 획을 위에서 오른쪽 아래로",
+            "오른쪽 획을 위에서 왼쪽 아래로"
+          ]
+        },
+        "related_characters": [
+          "仁",
+          "休",
+          "伯",
+          "佳"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0018-5927",
+      "character": "大",
+      "unicode": "U+5927",
+      "meaning": "큰 대",
+      "pronunciation": "대",
+      "stroke_count": 3,
+      "radical": "大",
+      "grade": 15,
+      "order": 18,
+      "tags": [
+        "basic",
+        "size",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "크다, 위대하다, 성인, 중요하다 등의 의미가 있습니다.",
+        "etymology": "팔을 벌리고 서 있는 사람의 모습을 나타낸 상형문자입니다.",
+        "mnemonics": "양팔을 활짝 벌린 큰 사람의 모습이 '大(큰 대)'입니다.",
+        "common_words": [
+          {
+            "word": "大學",
+            "meaning": "대학",
+            "pronunciation": "대학",
+            "example_sentence": "그는 大學에 다닙니다.",
+            "example_meaning": "그는 대학에 다닙니다."
+          },
+          {
+            "word": "大統領",
+            "meaning": "대통령",
+            "pronunciation": "대통령",
+            "example_sentence": "大統領이 연설했습니다.",
+            "example_meaning": "대통령이 연설했습니다."
+          },
+          {
+            "word": "偉大",
+            "meaning": "위대함",
+            "pronunciation": "위대",
+            "example_sentence": "그의 偉大함을 존경합니다.",
+            "example_meaning": "그의 위대함을 존경합니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '大(대)'는 우주와 자연의 거대함을 의미하기도 합니다. 유교의 경전 중 하나인 '대학(大學)'은 큰 배움이라는 의미를 담고 있습니다.",
+        "pronunciation_guide": "한국어에서는 '대'로 발음하며, 중국어에서는 'dà', 일본어에서는 'dai' 또는 'tai'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 다리, 오른쪽 다리, 그리고 중앙의 수직선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 다리를 위에서 아래로",
+            "오른쪽 다리를 위에서 아래로",
+            "중앙의 수직선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "太",
+          "天",
+          "夫"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0019-5C71",
+      "character": "山",
+      "unicode": "U+5C71",
+      "meaning": "뫼 산",
+      "pronunciation": "산",
+      "stroke_count": 3,
+      "radical": "山",
+      "grade": 15,
+      "order": 19,
+      "tags": [
+        "basic",
+        "nature",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "산, 산맥, 산지, 높이 솟은 것 등의 의미가 있습니다.",
+        "etymology": "세 개의 봉우리를 가진 산의 모습을 단순화한 상형문자입니다.",
+        "mnemonics": "세 개의 봉우리가 솟아있는 모습을 상상해보세요. 이것이 '山(뫼 산)'입니다.",
+        "common_words": [
+          {
+            "word": "山水",
+            "meaning": "산과 물, 자연 경관",
+            "pronunciation": "산수",
+            "example_sentence": "한국의 山水는 아름답습니다.",
+            "example_meaning": "한국의 산수는 아름답습니다."
+          },
+          {
+            "word": "山村",
+            "meaning": "산촌",
+            "pronunciation": "산촌",
+            "example_sentence": "그는 조용한 山村에서 살고 있습니다.",
+            "example_meaning": "그는 조용한 산촌에서 살고 있습니다."
+          },
+          {
+            "word": "火山",
+            "meaning": "화산",
+            "pronunciation": "화산",
+            "example_sentence": "火山이 폭발했습니다.",
+            "example_meaning": "화산이 폭발했습니다."
+          }
+        ],
+        "cultural_notes": "동양에서 산은 신성한 장소로 여겨졌으며, 도교와 불교의 수행처로 중요시되었습니다. 한국의 풍수지리에서도 산의 기운은 매우 중요합니다.",
+        "pronunciation_guide": "한국어에서는 '산'으로 발음하며, 중국어에서는 'shān', 일본어에서는 'san' 또는 'yama'로 발음합니다.",
+        "stroke_order": {
+          "description": "가운데 봉우리, 왼쪽 봉우리, 오른쪽 봉우리 순으로 그립니다.",
+          "directions": [
+            "중앙의 봉우리를 위에서 아래로",
+            "왼쪽 봉우리를 위에서 아래로",
+            "오른쪽 봉우리를 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "岳",
+          "峰",
+          "岩",
+          "崇"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0003-4E09",
+      "character": "三",
+      "unicode": "U+4E09",
+      "meaning": "석 삼",
+      "pronunciation": "삼",
+      "stroke_count": 3,
+      "radical": "一",
+      "grade": 15,
+      "order": 3,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "석 삼의 기본 의미입니다. 추가적인 의미와 용례를 설명합니다.",
+        "etymology": "三 한자의 어원은 으뜸 일 부수와 관련이 있습니다.",
+        "mnemonics": "三를 기억하기 쉬운 방법은 석 삼의 이미지를 떠올리는 것입니다.",
+        "common_words": [
+          {
+            "word": "三三",
+            "meaning": "석 삼 (예시 복합어)",
+            "pronunciation": "삼삼",
+            "example_sentence": "三三는 좋은 한자 학습 예문입니다.",
+            "example_meaning": "석 삼 (예시 복합어)는 좋은 한자 학습 예문입니다."
+          }
+        ],
+        "cultural_notes": "三 한자는 유치원 초급 수준에서 학습하는 문자로, 문화적으로 중요한 의미가 있습니다.",
+        "pronunciation_guide": "삼로 발음하며, 중국어에서는 (중국어 발음), 일본어에서는 (일본어 발음)으로 읽습니다.",
+        "stroke_order": {
+          "description": "3획으로 이루어진 한자입니다.",
+          "directions": [
+            "첫 번째 획: 시작 방향에서 끝 방향으로",
+            "두 번째 획: ..."
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-14-0002-4E03",
+      "character": "七",
+      "unicode": "U+4E03",
+      "meaning": "일곱 칠",
+      "pronunciation": "칠",
+      "stroke_count": 2,
+      "radical": "一",
+      "grade": 14,
+      "order": 2,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "일곱, 일곱 번째 등의 의미가 있습니다. 숫자를 나타내는 기본 한자입니다.",
+        "etymology": "원래는 '七'의 상부가 사선으로 그어진 형태로, 숫자 7을 표현하는 상형문자에서 유래했습니다.",
+        "mnemonics": "칼로 위에서 아래로 긁고(丿), 그 아래에 지평선(一)을 그은 모양을 상상해보세요. 이것이 '七(일곱 칠)'입니다.",
+        "common_words": [
+          {
+            "word": "七月",
+            "meaning": "7월",
+            "pronunciation": "칠월",
+            "example_sentence": "七月은 여름의 중심입니다.",
+            "example_meaning": "7월은 여름의 중심입니다."
+          },
+          {
+            "word": "七日",
+            "meaning": "7일, 일주일",
+            "pronunciation": "칠일",
+            "example_sentence": "그는 七日 동안 공부했습니다.",
+            "example_meaning": "그는 7일 동안 공부했습니다."
+          },
+          {
+            "word": "七十",
+            "meaning": "70, 칠십",
+            "pronunciation": "칠십",
+            "example_sentence": "그의 할아버지는 七十 세입니다.",
+            "example_meaning": "그의 할아버지는 70세입니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 7은 행운의 숫자로 여겨지는 경우가 많습니다. 한국에서는 7이 완전함과 충만함을 상징하기도 합니다.",
+        "pronunciation_guide": "한국어에서는 '칠'로 발음하며, 중국어에서는 'qī', 일본어에서는 'shichi' 또는 'nana'로 발음합니다.",
+        "stroke_order": {
+          "description": "먼저 위쪽의 사선을 오른쪽 위에서 왼쪽 아래로, 그다음 아래쪽의 수평선을 왼쪽에서 오른쪽으로 그립니다.",
+          "directions": [
+            "위쪽 사선을 오른쪽 위에서 왼쪽 아래로",
+            "아래쪽 수평선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "一",
+          "二",
+          "三",
+          "四",
+          "五",
+          "六",
+          "八",
+          "九",
+          "十"
+        ]
+      }
+    },
+    {
+      "id": "HJ-14-0003-516B",
+      "character": "八",
+      "unicode": "U+516B",
+      "meaning": "여덟 팔",
+      "pronunciation": "팔",
+      "stroke_count": 2,
+      "radical": "八",
+      "grade": 14,
+      "order": 3,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "여덟, 여덟 번째 등의 의미가 있습니다. 숫자를 나타내는 기본 한자입니다.",
+        "etymology": "'八'은 두 개의 선이 서로 교차하여 갈라지는 모양으로, 나뉨 또는 분리를 나타내는 상형문자에서 유래했습니다.",
+        "mnemonics": "두 갈래로 나뉘는 길을 상상해보세요. 이것이 '八(여덟 팔)'입니다.",
+        "common_words": [
+          {
+            "word": "八月",
+            "meaning": "8월",
+            "pronunciation": "팔월",
+            "example_sentence": "八月은 여름의 마지막 달입니다.",
+            "example_meaning": "8월은 여름의 마지막 달입니다."
+          },
+          {
+            "word": "八十",
+            "meaning": "80, 팔십",
+            "pronunciation": "팔십",
+            "example_sentence": "그의 할머니는 八十 세입니다.",
+            "example_meaning": "그의 할머니는 80세입니다."
+          },
+          {
+            "word": "八方",
+            "meaning": "팔방, 사방",
+            "pronunciation": "팔방",
+            "example_sentence": "그는 八方으로 소식을 전했습니다.",
+            "example_meaning": "그는 사방으로 소식을 전했습니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 8은 행운과 번영을 상징하는 숫자로 여겨집니다. 특히 중국에서는 발음이 '부자가 되다'와 비슷하여 매우 길한 숫자로 간주됩니다.",
+        "pronunciation_guide": "한국어에서는 '팔'로 발음하며, 중국어에서는 'bā', 일본어에서는 'hachi'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 획을 오른쪽 위에서 왼쪽 아래로, 오른쪽 획을 왼쪽 위에서 오른쪽 아래로 그립니다.",
+          "directions": [
+            "왼쪽 획을 오른쪽 위에서 왼쪽 아래로",
+            "오른쪽 획을 왼쪽 위에서 오른쪽 아래로"
+          ]
+        },
+        "related_characters": [
+          "一",
+          "二",
+          "三",
+          "四",
+          "五",
+          "六",
+          "七",
+          "九",
+          "十"
+        ]
+      }
+    },
+    {
+      "id": "HJ-14-0004-4E5D",
+      "character": "九",
+      "unicode": "U+4E5D",
+      "meaning": "아홉 구",
+      "pronunciation": "구",
+      "stroke_count": 2,
+      "radical": "乙",
+      "grade": 14,
+      "order": 4,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "아홉, 아홉 번째 등의 의미가 있습니다. 숫자를 나타내는 기본 한자입니다.",
+        "etymology": "원래는 '九'의 오른쪽 부분이 더 구부러진 형태였으며, 구부러진 모양을 상징하는 상형문자에서 유래했습니다.",
+        "mnemonics": "갈고리처럼 구부러진 모양을 상상해보세요. 이것이 '九(아홉 구)'입니다.",
+        "common_words": [
+          {
+            "word": "九月",
+            "meaning": "9월",
+            "pronunciation": "구월",
+            "example_sentence": "九月은 가을의 시작입니다.",
+            "example_meaning": "9월은 가을의 시작입니다."
+          },
+          {
+            "word": "九十",
+            "meaning": "90, 구십",
+            "pronunciation": "구십",
+            "example_sentence": "그는 九十 세까지 살았습니다.",
+            "example_meaning": "그는 90세까지 살았습니다."
+          },
+          {
+            "word": "九州",
+            "meaning": "구주, 일본의 큰 섬",
+            "pronunciation": "구주",
+            "example_sentence": "그는 九州 출신입니다.",
+            "example_meaning": "그는 구주 출신입니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 9는 오랫동안 황제와 관련된 신성한 숫자로 여겨졌습니다. 중국 문화에서 9는 '오래 지속됨'을 상징하며 길한 숫자로 간주됩니다.",
+        "pronunciation_guide": "한국어에서는 '구'로 발음하며, 중국어에서는 'jiǔ', 일본어에서는 'kyū' 또는 'ku'로 발음합니다.",
+        "stroke_order": {
+          "description": "먼저 위쪽의 점이나 짧은 선을 왼쪽에서 오른쪽으로, 그다음 아래쪽의 긴 곡선을 오른쪽에서 왼쪽으로 그립니다.",
+          "directions": [
+            "위쪽 점이나 짧은 선을 왼쪽에서 오른쪽으로",
+            "아래쪽 긴 곡선을 오른쪽에서 왼쪽으로 휘면서"
+          ]
+        },
+        "related_characters": [
+          "一",
+          "二",
+          "三",
+          "四",
+          "五",
+          "六",
+          "七",
+          "八",
+          "十"
+        ]
+      }
+    },
+    {
+      "id": "HJ-14-0005-5343",
+      "character": "千",
+      "unicode": "U+5343",
+      "meaning": "일천 천",
+      "pronunciation": "천",
+      "stroke_count": 3,
+      "radical": "十",
+      "grade": 14,
+      "order": 5,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "천, 일천, 많은 수량 등의 의미가 있습니다. 큰 수를 나타내는 기본 한자입니다.",
+        "etymology": "'千'은 '十(십)'과 '人(인)'의 변형이 결합된 형태로, '열 명의 사람'이 합쳐져 '천'을 의미하게 되었습니다.",
+        "mnemonics": "사람(十)이 막대기를 든(一) 모습을 상상해보세요. 이것이 '千(일천 천)'입니다.",
+        "common_words": [
+          {
+            "word": "千年",
+            "meaning": "천 년",
+            "pronunciation": "천년",
+            "example_sentence": "이 나무는 千年 동안 살았습니다.",
+            "example_meaning": "이 나무는 천 년 동안 살았습니다."
+          },
+          {
+            "word": "千萬",
+            "meaning": "천만",
+            "pronunciation": "천만",
+            "example_sentence": "千萬에 한 번 있는 기회입니다.",
+            "example_meaning": "천만에 한 번 있는 기회입니다."
+          },
+          {
+            "word": "數千",
+            "meaning": "수천",
+            "pronunciation": "수천",
+            "example_sentence": "數千 명의 사람들이 모였습니다.",
+            "example_meaning": "수천 명의 사람들이 모였습니다."
+          }
+        ],
+        "cultural_notes": "고대 중국에서 '천(千)'은 대규모 군대나 지역을 나타내는 단위로 사용되기도 했습니다. '천하(天下)'라는 표현에서도 볼 수 있듯이 넓은 세계를 상징하는 의미도 있습니다.",
+        "pronunciation_guide": "한국어에서는 '천'으로 발음하며, 중국어에서는 'qiān', 일본어에서는 'sen'으로 발음합니다.",
+        "stroke_order": {
+          "description": "수평선, 수직선, 그리고 비스듬한 선 순으로 그립니다.",
+          "directions": [
+            "위쪽 수평선을 왼쪽에서 오른쪽으로",
+            "중앙 수직선을 위에서 아래로",
+            "오른쪽 비스듬한 선을 위에서 아래로 왼쪽 방향으로"
+          ]
+        },
+        "related_characters": [
+          "百",
+          "萬",
+          "億",
+          "兆"
+        ]
+      }
+    },
+    {
+      "id": "HJ-14-0006-4E07",
+      "character": "万",
+      "unicode": "U+4E07",
+      "meaning": "일만 만",
+      "pronunciation": "만",
+      "stroke_count": 3,
+      "radical": "一",
+      "grade": 14,
+      "order": 6,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "만, 일만, 매우 많은 수량 등의 의미가 있습니다. 큰 수를 나타내는 기본 한자입니다.",
+        "etymology": "'万'은 '萬(만)'의 간체자로, 원래 '萬'은 전갈의 꼬리 모양에서 유래했으며 무수히 많은 것을 의미했습니다.",
+        "mnemonics": "길게 뻗은 선과 휘어진 두 개의 선을 상상해보세요. 마치 무한대로 뻗어나가는 모습처럼 보입니다. 이것이 '万(일만 만)'입니다.",
+        "common_words": [
+          {
+            "word": "万年",
+            "meaning": "만 년",
+            "pronunciation": "만년",
+            "example_sentence": "이 산은 万年 동안 여기 있었습니다.",
+            "example_meaning": "이 산은 만 년 동안 여기 있었습니다."
+          },
+          {
+            "word": "万一",
+            "meaning": "만일, 만약",
+            "pronunciation": "만일",
+            "example_sentence": "万一 비가 오면 우산을 가져가세요.",
+            "example_meaning": "만일 비가 오면 우산을 가져가세요."
+          },
+          {
+            "word": "万物",
+            "meaning": "만물, 모든 것",
+            "pronunciation": "만물",
+            "example_sentence": "봄이 오면 万物이 소생합니다.",
+            "example_meaning": "봄이 오면 만물이 소생합니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '만(万)'은 완전함과 풍요로움을 상징합니다. '만세(万歲)'라는 표현은 '영원히 살라'는 축복의 의미를 담고 있습니다.",
+        "pronunciation_guide": "한국어에서는 '만'으로 발음하며, 중국어에서는 'wàn', 일본어에서는 'man'으로 발음합니다.",
+        "stroke_order": {
+          "description": "먼저 수평선, 그 다음 왼쪽의 사선, 마지막으로 오른쪽의 사선을 그립니다.",
+          "directions": [
+            "위쪽 수평선을 왼쪽에서 오른쪽으로",
+            "왼쪽 사선을 위에서 아래로",
+            "오른쪽 사선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "百",
+          "千",
+          "億",
+          "兆"
+        ]
+      }
+    },
+    {
+      "id": "HJ-14-0007-6708",
+      "character": "月",
+      "unicode": "U+6708",
+      "meaning": "달 월",
+      "pronunciation": "월",
+      "stroke_count": 4,
+      "radical": "月",
+      "grade": 14,
+      "order": 7,
+      "tags": [
+        "basic",
+        "nature",
+        "time",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "달, 월, 한 달의 기간 등의 의미가 있습니다. 시간과 자연을 나타내는 기본 한자입니다.",
+        "etymology": "'月'은 초승달 모양을 단순화한 상형문자에서 유래했습니다. 원래는 더 둥근 형태였으나 점차 사각형에 가깝게 변화했습니다.",
+        "mnemonics": "사각형 안에 작은 선이 있는 모양을 상상해보세요. 달이 창문을 통해 비치는 모습과 같습니다. 이것이 '月(달 월)'입니다.",
+        "common_words": [
+          {
+            "word": "月光",
+            "meaning": "월광, 달빛",
+            "pronunciation": "월광",
+            "example_sentence": "月光이 바다를 비춥니다.",
+            "example_meaning": "달빛이 바다를 비춥니다."
+          },
+          {
+            "word": "正月",
+            "meaning": "정월, 음력 1월",
+            "pronunciation": "정월",
+            "example_sentence": "正月에는 설날을 맞이합니다.",
+            "example_meaning": "정월에는 설날을 맞이합니다."
+          },
+          {
+            "word": "月給",
+            "meaning": "월급",
+            "pronunciation": "월급",
+            "example_sentence": "그는 月給을 받았습니다.",
+            "example_meaning": "그는 월급을 받았습니다."
+          },
+          {
+            "word": "月曜日",
+            "meaning": "월요일",
+            "pronunciation": "월요일",
+            "example_sentence": "오늘은 月曜日입니다.",
+            "example_meaning": "오늘은 월요일입니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 달은 매우 중요한 상징으로, 여성성, 변화, 재생을 의미합니다. 중추절(추석)은 달을 기리는 중요한 명절로 여겨집니다. 또한 달의 주기는 농경 생활과 밀접한 관련이 있어 달력의 기초가 되었습니다.",
+        "pronunciation_guide": "한국어에서는 '월'로 발음하며, 중국어에서는 'yuè', 일본어에서는 'getsu' 또는 'tsuki'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 세로선, 위쪽 가로선, 오른쪽 세로선, 가운데 짧은 가로선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 세로선을 위에서 아래로",
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 세로선을 위에서 아래로",
+            "가운데 짧은 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "日",
+          "星",
+          "陰",
+          "陽"
+        ]
+      }
+    },
+    {
+      "id": "HJ-13-0001-6C34",
+      "character": "水",
+      "unicode": "U+6C34",
+      "meaning": "물 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "水",
+      "grade": 13,
+      "order": 1,
+      "tags": [
+        "basic",
+        "nature",
+        "element",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "물, 액체, 유동적인 것, 다섯 가지 기본 원소 중 하나 등의 의미가 있습니다.",
+        "etymology": "'水'는 물의 흐름을 나타내는 상형문자로, 중앙의 세로선과 양쪽으로 흐르는 선으로 표현됩니다.",
+        "mnemonics": "중앙에서 양쪽으로 퍼져나가는 물줄기의 모습을 상상해보세요. 이것이 '水(물 수)'입니다.",
+        "common_words": [
+          {
+            "word": "水泳",
+            "meaning": "수영",
+            "pronunciation": "수영",
+            "example_sentence": "그는 水泳을 잘합니다.",
+            "example_meaning": "그는 수영을 잘합니다."
+          },
+          {
+            "word": "水曜日",
+            "meaning": "수요일",
+            "pronunciation": "수요일",
+            "example_sentence": "오늘은 水曜日입니다.",
+            "example_meaning": "오늘은 수요일입니다."
+          },
+          {
+            "word": "水面",
+            "meaning": "수면, 물의 표면",
+            "pronunciation": "수면",
+            "example_sentence": "달이 水面에 비칩니다.",
+            "example_meaning": "달이 수면에 비칩니다."
+          },
+          {
+            "word": "飲水",
+            "meaning": "음수, 마실 물",
+            "pronunciation": "음수",
+            "example_sentence": "飲水는 건강에 중요합니다.",
+            "example_meaning": "음수는 건강에 중요합니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 물(水)은 다섯 가지 기본 원소(오행) 중 하나로 북쪽, 겨울, 검은색과 연관되어 있습니다. 물은 적응력과 유연함을 상징하며, 도교에서는 '최고의 선은 물과 같다'라는 가르침이 있습니다.",
+        "pronunciation_guide": "한국어에서는 '수'로 발음하며, 중국어에서는 'shuǐ', 일본어에서는 'sui' 또는 'mizu'로 발음합니다.",
+        "stroke_order": {
+          "description": "중앙 점, 왼쪽 사선, 오른쪽 사선, 중앙 세로선 순으로 그립니다.",
+          "directions": [
+            "중앙 상단의 점을 찍거나 짧은 선을 그림",
+            "왼쪽 사선을 위에서 아래로 왼쪽 방향으로",
+            "오른쪽 사선을 위에서 아래로 오른쪽 방향으로",
+            "중앙 세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "氵",
+          "海",
+          "江",
+          "湖",
+          "液"
+        ]
+      }
+    },
+    {
+      "id": "HJ-13-0002-706B",
+      "character": "火",
+      "unicode": "U+706B",
+      "meaning": "불 화",
+      "pronunciation": "화",
+      "stroke_count": 4,
+      "radical": "火",
+      "grade": 13,
+      "order": 2,
+      "tags": [
+        "basic",
+        "nature",
+        "element",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "불, 화재, 열정, 다섯 가지 기본 원소 중 하나 등의 의미가 있습니다.",
+        "etymology": "'火'는 타오르는 불꽃의 모습을 단순화한 상형문자입니다. 중앙의 '사람(人)' 형태와 그 위의 두 점(불꽃)으로 구성됩니다.",
+        "mnemonics": "사람의 형태 위로 두 개의 불꽃이 타오르는 모습을 상상해보세요. 이것이 '火(불 화)'입니다.",
+        "common_words": [
+          {
+            "word": "火山",
+            "meaning": "화산",
+            "pronunciation": "화산",
+            "example_sentence": "제주도에는 火山이 있습니다.",
+            "example_meaning": "제주도에는 화산이 있습니다."
+          },
+          {
+            "word": "火曜日",
+            "meaning": "화요일",
+            "pronunciation": "화요일",
+            "example_sentence": "내일은 火曜日입니다.",
+            "example_meaning": "내일은 화요일입니다."
+          },
+          {
+            "word": "火災",
+            "meaning": "화재",
+            "pronunciation": "화재",
+            "example_sentence": "火災가 발생했습니다.",
+            "example_meaning": "화재가 발생했습니다."
+          },
+          {
+            "word": "火力",
+            "meaning": "화력",
+            "pronunciation": "화력",
+            "example_sentence": "火力 발전소가 있습니다.",
+            "example_meaning": "화력 발전소가 있습니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 불(火)은 다섯 가지 기본 원소(오행) 중 하나로 남쪽, 여름, 빨간색과 연관되어 있습니다. 불은 정화와 변화를 상징하며, 많은 문화에서 영적인 의식과 연결되어 있습니다.",
+        "pronunciation_guide": "한국어에서는 '화'로 발음하며, 중국어에서는 'huǒ', 일본어에서는 'ka' 또는 'hi'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 점, 오른쪽 점, 왼쪽 사선, 오른쪽 사선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 상단의 점을 찍습니다",
+            "오른쪽 상단의 점을 찍습니다",
+            "왼쪽 사선을 위에서 아래로 왼쪽 방향으로",
+            "오른쪽 사선을 위에서 아래로 오른쪽 방향으로"
+          ]
+        },
+        "related_characters": [
+          "灬",
+          "炎",
+          "焰",
+          "燃",
+          "煙"
+        ]
+      }
+    },
+    {
+      "id": "HJ-13-0003-6728",
+      "character": "木",
+      "unicode": "U+6728",
+      "meaning": "나무 목",
+      "pronunciation": "목",
+      "stroke_count": 4,
+      "radical": "木",
+      "grade": 13,
+      "order": 3,
+      "tags": [
+        "basic",
+        "nature",
+        "element",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "나무, 목재, 목질, 다섯 가지 기본 원소 중 하나 등의 의미가 있습니다.",
+        "etymology": "'木'은 뿌리, 줄기, 가지를 가진 나무의 모습을 단순화한 상형문자입니다.",
+        "mnemonics": "뿌리(아래 가로선), 줄기(세로선), 가지(위 가로선과 두 사선)를 가진 나무를 상상해보세요. 이것이 '木(나무 목)'입니다.",
+        "common_words": [
+          {
+            "word": "木曜日",
+            "meaning": "목요일",
+            "pronunciation": "목요일",
+            "example_sentence": "오늘은 木曜日입니다.",
+            "example_meaning": "오늘은 목요일입니다."
+          },
+          {
+            "word": "木材",
+            "meaning": "목재",
+            "pronunciation": "목재",
+            "example_sentence": "이 가구는 좋은 木材로 만들어졌습니다.",
+            "example_meaning": "이 가구는 좋은 목재로 만들어졌습니다."
+          },
+          {
+            "word": "木工",
+            "meaning": "목공",
+            "pronunciation": "목공",
+            "example_sentence": "그는 木工 기술이 뛰어납니다.",
+            "example_meaning": "그는 목공 기술이 뛰어납니다."
+          },
+          {
+            "word": "樹木",
+            "meaning": "수목, 나무",
+            "pronunciation": "수목",
+            "example_sentence": "공원에는 다양한 樹木이 있습니다.",
+            "example_meaning": "공원에는 다양한 수목이 있습니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 나무(木)는 다섯 가지 기본 원소(오행) 중 하나로 동쪽, 봄, 청색과 연관되어 있습니다. 나무는 성장과 번영을 상징하며, 많은 동아시아 문화에서 나무는 생명력과 재생의 상징으로 여겨집니다.",
+        "pronunciation_guide": "한국어에서는 '목'으로 발음하며, 중국어에서는 'mù', 일본어에서는 'moku' 또는 'ki'로 발음합니다.",
+        "stroke_order": {
+          "description": "세로선, 왼쪽 가지, 오른쪽 가지, 가로선 순으로 그립니다.",
+          "directions": [
+            "중앙 세로선을 위에서 아래로",
+            "왼쪽 윗부분의 사선을 위에서 아래로 왼쪽 방향으로",
+            "오른쪽 윗부분의 사선을 위에서 아래로 오른쪽 방향으로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "林",
+          "森",
+          "樹",
+          "植",
+          "材"
+        ]
+      }
+    },
+    {
+      "id": "HJ-13-0004-91D1",
+      "character": "金",
+      "unicode": "U+91D1",
+      "meaning": "쇠 금",
+      "pronunciation": "금",
+      "stroke_count": 8,
+      "radical": "金",
+      "grade": 13,
+      "order": 4,
+      "tags": [
+        "basic",
+        "nature",
+        "element",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "금속, 금, 돈, 다섯 가지 기본 원소 중 하나 등의 의미가 있습니다.",
+        "etymology": "'金'은 지하에서 발굴된 광석의 모습을 나타내는 상형문자에서 유래했습니다. 위쪽의 지붕(宀) 아래에 덩어리(王)가 있는 형태입니다.",
+        "mnemonics": "광산의 갱도(위쪽 부분)에서 발견된 금속 덩어리(아래쪽 부분)를 상상해보세요. 이것이 '金(쇠 금)'입니다.",
+        "common_words": [
+          {
+            "word": "金曜日",
+            "meaning": "금요일",
+            "pronunciation": "금요일",
+            "example_sentence": "내일은 金曜日입니다.",
+            "example_meaning": "내일은 금요일입니다."
+          },
+          {
+            "word": "金額",
+            "meaning": "금액",
+            "pronunciation": "금액",
+            "example_sentence": "总 金額을 확인해 주세요.",
+            "example_meaning": "총 금액을 확인해 주세요."
+          },
+          {
+            "word": "黃金",
+            "meaning": "황금",
+            "pronunciation": "황금",
+            "example_sentence": "그는 黃金을 발견했습니다.",
+            "example_meaning": "그는 황금을 발견했습니다."
+          },
+          {
+            "word": "金屬",
+            "meaning": "금속",
+            "pronunciation": "금속",
+            "example_sentence": "이 조각상은 金屬로 만들어졌습니다.",
+            "example_meaning": "이 조각상은 금속으로 만들어졌습니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 금속(金)은 다섯 가지 기본 원소(오행) 중 하나로 서쪽, 가을, 흰색과 연관되어 있습니다. 금은 견고함과 결단력을 상징하며, 많은 문화에서 부와 권력의 상징으로 여겨집니다.",
+        "pronunciation_guide": "한국어에서는 '금'으로 발음하며, 중국어에서는 'jīn', 일본어에서는 'kin' 또는 'kane'로 발음합니다.",
+        "stroke_order": {
+          "description": "8획으로 이루어져 있으며, 왼쪽에서 오른쪽, 위에서 아래로 써내려갑니다.",
+          "directions": [
+            "맨 위의 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽의 세로선을 위에서 아래로",
+            "오른쪽의 세로선을 위에서 아래로",
+            "중앙의 세로선을 위에서 아래로",
+            "가운데 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 아래 짧은 가로선을 그립니다",
+            "오른쪽 아래 짧은 가로선을 그립니다",
+            "마지막으로 아래쪽 마름모 모양을 완성합니다"
+          ]
+        },
+        "related_characters": [
+          "銀",
+          "銅",
+          "錢",
+          "鐵",
+          "鑄"
+        ]
+      }
+    },
+    {
+      "id": "HJ-13-0005-571F",
+      "character": "土",
+      "unicode": "U+571F",
+      "meaning": "흙 토",
+      "pronunciation": "토",
+      "stroke_count": 3,
+      "radical": "土",
+      "grade": 13,
+      "order": 5,
+      "tags": [
+        "basic",
+        "nature",
+        "element",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "흙, 땅, 대지, 영토, 다섯 가지 기본 원소 중 하나 등의 의미가 있습니다.",
+        "etymology": "'土'는 땅 위로 솟아오른 흙더미를 나타내는 상형문자입니다. 수평선(땅) 위에 솟아오른 수직선(흙더미)의 형태입니다.",
+        "mnemonics": "땅(가로선) 위에 솟아오른 흙더미(세로선)를 상상해보세요. 이것이 '土(흙 토)'입니다.",
+        "common_words": [
+          {
+            "word": "土曜日",
+            "meaning": "토요일",
+            "pronunciation": "토요일",
+            "example_sentence": "내일은 土曜日입니다.",
+            "example_meaning": "내일은 토요일입니다."
+          },
+          {
+            "word": "國土",
+            "meaning": "국토",
+            "pronunciation": "국토",
+            "example_sentence": "우리의 國土를 지켜야 합니다.",
+            "example_meaning": "우리의 국토를 지켜야 합니다."
+          },
+          {
+            "word": "土地",
+            "meaning": "토지",
+            "pronunciation": "토지",
+            "example_sentence": "그는 土地를 구입했습니다.",
+            "example_meaning": "그는 토지를 구입했습니다."
+          },
+          {
+            "word": "風土",
+            "meaning": "풍토, 기후와 토양",
+            "pronunciation": "풍토",
+            "example_sentence": "각 지역의 風土가 다릅니다.",
+            "example_meaning": "각 지역의 풍토가 다릅니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 흙(土)은 다섯 가지 기본 원소(오행) 중 하나로 중앙, 늦여름, 황색과 연관되어 있습니다. 흙은 안정과 신뢰를 상징하며, 풍수지리에서는 땅의 기운이 매우 중요한 요소로 여겨집니다.",
+        "pronunciation_guide": "한국어에서는 '토'로 발음하며, 중국어에서는 'tǔ', 일본어에서는 'do' 또는 'tsuchi'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 가로선, 중앙 세로선, 아래쪽 가로선 순으로 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "중앙 세로선을 위에서 아래로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "地",
+          "坂",
+          "城",
+          "場",
+          "境"
+        ]
+      }
+    },
+    {
+      "id": "HJ-12-0001-65E5",
+      "character": "日",
+      "unicode": "U+65E5",
+      "meaning": "날 일",
+      "pronunciation": "일",
+      "stroke_count": 4,
+      "radical": "日",
+      "grade": 12,
+      "order": 1,
+      "tags": [
+        "basic",
+        "nature",
+        "time",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "날, 태양, 낮, 일자, 날짜 등의 의미가 있습니다. 시간과 자연을 나타내는 기본 한자입니다.",
+        "etymology": "'日'은 태양의 둥근 모양을 단순화한 상형문자입니다. 원래는 태양 중앙에 점이 있는 형태였으나 점차 사각형 형태로 변화했습니다.",
+        "mnemonics": "사각형 안에 긴 가로줄이 있는 모양을 상상해보세요. 창문을 통해 보이는 떠오르는 태양과 같습니다. 이것이 '日(날 일)'입니다.",
+        "common_words": [
+          {
+            "word": "日曜日",
+            "meaning": "일요일",
+            "pronunciation": "일요일",
+            "example_sentence": "오늘은 日曜日입니다.",
+            "example_meaning": "오늘은 일요일입니다."
+          },
+          {
+            "word": "日記",
+            "meaning": "일기",
+            "pronunciation": "일기",
+            "example_sentence": "매일 日記를 씁니다.",
+            "example_meaning": "매일 일기를 씁니다."
+          },
+          {
+            "word": "今日",
+            "meaning": "오늘",
+            "pronunciation": "금일",
+            "example_sentence": "今日 날씨가 좋습니다.",
+            "example_meaning": "오늘 날씨가 좋습니다."
+          },
+          {
+            "word": "日本",
+            "meaning": "일본",
+            "pronunciation": "일본",
+            "example_sentence": "그는 日本에서 왔습니다.",
+            "example_meaning": "그는 일본에서 왔습니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 태양(日)은 양(陽)의 원천으로 생명력과 밝음을 상징합니다. 일본(日本)이라는 국명도 '해가 뜨는 곳'이라는 의미에서 유래했습니다. 또한 달력과 시간 개념의 기초가 되어 매우 중요한 문화적 의미를 지닙니다.",
+        "pronunciation_guide": "한국어에서는 '일'로 발음하며, 중국어에서는 'rì', 일본어에서는 'nichi' 또는 'hi'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 세로선, 위쪽 가로선, 오른쪽 세로선, 중앙 가로선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 세로선을 위에서 아래로",
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 세로선을 위에서 아래로",
+            "중앙 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "月",
+          "星",
+          "陽",
+          "明",
+          "時"
+        ]
+      }
+    },
+    {
+      "id": "HJ-12-0002-5FC3",
+      "character": "心",
+      "unicode": "U+5FC3",
+      "meaning": "마음 심",
+      "pronunciation": "심",
+      "stroke_count": 4,
+      "radical": "心",
+      "grade": 12,
+      "order": 2,
+      "tags": [
+        "basic",
+        "human",
+        "emotion",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "마음, 가슴, 정신, 감정, 중심 등의 의미가 있습니다. 인간의 내면을 나타내는 기본 한자입니다.",
+        "etymology": "'心'은 심장의 모양을 단순화한 상형문자입니다. 위쪽의 점과 아래쪽의 곡선으로 구성되어 있습니다.",
+        "mnemonics": "중앙에 점이 있고 아래로 세 개의 선이 내려온 형태를 상상해보세요. 심장과 혈관을 연상시킵니다. 이것이 '心(마음 심)'입니다.",
+        "common_words": [
+          {
+            "word": "心臟",
+            "meaning": "심장",
+            "pronunciation": "심장",
+            "example_sentence": "心臟이 빠르게 뛰고 있습니다.",
+            "example_meaning": "심장이 빠르게 뛰고 있습니다."
+          },
+          {
+            "word": "中心",
+            "meaning": "중심",
+            "pronunciation": "중심",
+            "example_sentence": "이것이 도시의 中心입니다.",
+            "example_meaning": "이것이 도시의 중심입니다."
+          },
+          {
+            "word": "心配",
+            "meaning": "걱정",
+            "pronunciation": "심배",
+            "example_sentence": "그는 많은 心配를 합니다.",
+            "example_meaning": "그는 많은 걱정을 합니다."
+          },
+          {
+            "word": "安心",
+            "meaning": "안심",
+            "pronunciation": "안심",
+            "example_sentence": "이제 安心하세요.",
+            "example_meaning": "이제 안심하세요."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 마음(心)은 인간 본성과 감정의 근원으로 매우 중요한 개념입니다. 유교의 '수신(修身)'과 불교의 '심학(心學)'에서도 마음을 다스리는 것이 수행의 핵심으로 여겨집니다. 또한 서예에서 '심법(心法)'이라 하여 기술보다 마음가짐을 중요시합니다.",
+        "pronunciation_guide": "한국어에서는 '심'으로 발음하며, 중국어에서는 'xīn', 일본어에서는 'shin' 또는 'kokoro'로 발음합니다.",
+        "stroke_order": {
+          "description": "중앙 점, 왼쪽 사선, 오른쪽 사선, 아래쪽 곡선 순으로 그립니다.",
+          "directions": [
+            "중앙 상단의 점을 찍습니다",
+            "왼쪽 사선을 위에서 아래로 왼쪽 방향으로",
+            "오른쪽 사선을 위에서 아래로 오른쪽 방향으로",
+            "아래쪽 곡선을 왼쪽에서 오른쪽으로 휘면서 그립니다"
+          ]
+        },
+        "related_characters": [
+          "忠",
+          "思",
+          "情",
+          "性",
+          "意"
+        ]
+      }
+    },
+    {
+      "id": "HJ-12-0003-7530",
+      "character": "田",
+      "unicode": "U+7530",
+      "meaning": "밭 전",
+      "pronunciation": "전",
+      "stroke_count": 5,
+      "radical": "田",
+      "grade": 12,
+      "order": 3,
+      "tags": [
+        "basic",
+        "nature",
+        "agriculture",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "밭, 논, 경작지, 농지 등의 의미가 있습니다. 농경 사회의 기본 요소를 나타내는 한자입니다.",
+        "etymology": "'田'은 격자 무늬로 구획된 밭의 모습을 나타낸 상형문자입니다. 사각형 안에 십자 모양으로 구획을 나눈 형태입니다.",
+        "mnemonics": "네 개의 구획으로 나누어진 밭의 모습을 상상해보세요. 창문을 십자로 나눈 것과 같은 모양입니다. 이것이 '田(밭 전)'입니다.",
+        "common_words": [
+          {
+            "word": "田舍",
+            "meaning": "시골",
+            "pronunciation": "전사",
+            "example_sentence": "그는 田舍에서 자랐습니다.",
+            "example_meaning": "그는 시골에서 자랐습니다."
+          },
+          {
+            "word": "水田",
+            "meaning": "논",
+            "pronunciation": "수전",
+            "example_sentence": "水田에서 벼를 재배합니다.",
+            "example_meaning": "논에서 벼를 재배합니다."
+          },
+          {
+            "word": "田園",
+            "meaning": "전원, 시골 풍경",
+            "pronunciation": "전원",
+            "example_sentence": "그는 田園 생활을 좋아합니다.",
+            "example_meaning": "그는 전원 생활을 좋아합니다."
+          },
+          {
+            "word": "油田",
+            "meaning": "유전",
+            "pronunciation": "유전",
+            "example_sentence": "이 지역에는 油田이 많습니다.",
+            "example_meaning": "이 지역에는 유전이 많습니다."
+          }
+        ],
+        "cultural_notes": "농경 사회였던 동아시아에서 '밭(田)'은 생계와 직결된 매우 중요한 요소였습니다. 근면함과 수확의 상징으로, 많은 성씨(田中, 田村 등)와 지명의 근원이 되었습니다. 또한 풍수지리에서는 땅의 생산성과 복을 상징하는 중요한 요소로 여겨졌습니다.",
+        "pronunciation_guide": "한국어에서는 '전'으로 발음하며, 중국어에서는 'tián', 일본어에서는 'den' 또는 'ta'로 발음합니다.",
+        "stroke_order": {
+          "description": "바깥쪽 테두리를 그린 후 내부의 십자를 그립니다.",
+          "directions": [
+            "왼쪽 세로선을 위에서 아래로",
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 세로선을 위에서 아래로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로",
+            "중앙의 십자선을 그립니다"
+          ]
+        },
+        "related_characters": [
+          "畑",
+          "農",
+          "耕",
+          "園",
+          "野"
+        ]
+      }
+    },
+    {
+      "id": "HJ-12-0004-76EE",
+      "character": "目",
+      "unicode": "U+76EE",
+      "meaning": "눈 목",
+      "pronunciation": "목",
+      "stroke_count": 5,
+      "radical": "目",
+      "grade": 12,
+      "order": 4,
+      "tags": [
+        "basic",
+        "body",
+        "sense",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "눈, 시력, 목표, 항목 등의 의미가 있습니다. 인체와 관련된 기본 한자입니다.",
+        "etymology": "'目'은 눈의 형태를 단순화한 상형문자입니다. 사각형 안에 두 개의 점이 있는 모양이 점차 사각형 안에 가로선이 있는 모양으로 변화했습니다.",
+        "mnemonics": "직사각형 안에 두 개의 가로선이 있는 모양을 상상해보세요. 눈과 눈썹을 단순화한 것과 같습니다. 이것이 '目(눈 목)'입니다.",
+        "common_words": [
+          {
+            "word": "目的",
+            "meaning": "목적",
+            "pronunciation": "목적",
+            "example_sentence": "그의 目的은 무엇입니까?",
+            "example_meaning": "그의 목적은 무엇입니까?"
+          },
+          {
+            "word": "目標",
+            "meaning": "목표",
+            "pronunciation": "목표",
+            "example_sentence": "그의 目標는 의사가 되는 것입니다.",
+            "example_meaning": "그의 목표는 의사가 되는 것입니다."
+          },
+          {
+            "word": "注目",
+            "meaning": "주목",
+            "pronunciation": "주목",
+            "example_sentence": "그는 많은 注目을 받고 있습니다.",
+            "example_meaning": "그는 많은 주목을 받고 있습니다."
+          },
+          {
+            "word": "目次",
+            "meaning": "목차",
+            "pronunciation": "목차",
+            "example_sentence": "이 책의 目次를 보십시오.",
+            "example_meaning": "이 책의 목차를 보십시오."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 눈(目)은 영혼의 창으로 여겨졌으며, 진실과 지혜를 보는 중요한 감각 기관입니다. 불교에서는 '천안(天眼)'이라 하여 세상의 진리를 꿰뚫어 보는 눈을 중요시했습니다. 또한 침술에서도 눈 주변의 경혈은 중요한 치료점으로 여겨졌습니다.",
+        "pronunciation_guide": "한국어에서는 '목'으로 발음하며, 중국어에서는 'mù', 일본어에서는 'moku' 또는 'me'로 발음합니다.",
+        "stroke_order": {
+          "description": "테두리를 그린 후 내부의 가로선들을 그립니다.",
+          "directions": [
+            "왼쪽 세로선을 위에서 아래로",
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 세로선을 위에서 아래로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로",
+            "중앙 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "眼",
+          "睛",
+          "視",
+          "看",
+          "眉"
+        ]
+      }
+    },
+    {
+      "id": "HJ-12-0005-529B",
+      "character": "力",
+      "unicode": "U+529B",
+      "meaning": "힘 력",
+      "pronunciation": "력",
+      "stroke_count": 2,
+      "radical": "力",
+      "grade": 12,
+      "order": 5,
+      "tags": [
+        "basic",
+        "abstract",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "힘, 능력, 노력, 역량 등의 의미가 있습니다. 행동과 능력을 나타내는 기본 한자입니다.",
+        "etymology": "'力'은 팔의 근육을 나타내는 상형문자에서 유래했습니다. 팔꿈치가 구부러진 모양을 단순화한 형태입니다.",
+        "mnemonics": "구부러진 팔뚝의 모습을 상상해보세요. 위에서 아래로 힘을 주는 모양입니다. 이것이 '力(힘 력)'입니다.",
+        "common_words": [
+          {
+            "word": "力量",
+            "meaning": "힘, 역량",
+            "pronunciation": "역량",
+            "example_sentence": "그는 많은 力量을 가지고 있습니다.",
+            "example_meaning": "그는 많은 역량을 가지고 있습니다."
+          },
+          {
+            "word": "努力",
+            "meaning": "노력",
+            "pronunciation": "노력",
+            "example_sentence": "努力하면 성공할 수 있습니다.",
+            "example_meaning": "노력하면 성공할 수 있습니다."
+          },
+          {
+            "word": "能力",
+            "meaning": "능력",
+            "pronunciation": "능력",
+            "example_sentence": "그의 能力은 뛰어납니다.",
+            "example_meaning": "그의 능력은 뛰어납니다."
+          },
+          {
+            "word": "助力",
+            "meaning": "도움, 원조",
+            "pronunciation": "조력",
+            "example_sentence": "그의 助力에 감사합니다.",
+            "example_meaning": "그의 도움에 감사합니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '힘(力)'은 육체적 강함뿐만 아니라 내면의 정신적 힘과 의지력도 포함하는 개념입니다. 유교에서는 자기 수양과 학문의 힘을, 도교에서는 자연과 조화를 이루는 내적 힘을, 불교에서는 보리의 힘을 중요시했습니다. 또한 서예에서는 필력(筆力)이라 하여 붓의 힘과 기세를 중요시합니다.",
+        "pronunciation_guide": "한국어에서는 '력' 또는 '역'으로 발음하며, 중국어에서는 'lì', 일본어에서는 'ryoku' 또는 'chikara'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽의 짧은 사선, 아래쪽의 긴 곡선 순으로 그립니다.",
+          "directions": [
+            "위쪽 사선을 왼쪽에서 오른쪽으로 약간 아래 방향으로",
+            "아래쪽 곡선을 오른쪽에서 왼쪽으로 휘면서"
+          ]
+        },
+        "related_characters": [
+          "勉",
+          "勤",
+          "勇",
+          "労",
+          "功"
+        ]
+      }
+    },
+    {
+      "id": "HJ-12-0006-53E3",
+      "character": "口",
+      "unicode": "U+53E3",
+      "meaning": "입 구",
+      "pronunciation": "구",
+      "stroke_count": 3,
+      "radical": "口",
+      "grade": 12,
+      "order": 6,
+      "tags": [
+        "basic",
+        "body",
+        "speech",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "입, 구멍, 통로, 발언, 언어 등의 의미가 있습니다. 신체 부위와 의사소통을 나타내는 기본 한자입니다.",
+        "etymology": "'口'는 열린 입의 모양을 단순화한 상형문자입니다. 사각형 형태로 열린 공간을 나타냅니다.",
+        "mnemonics": "사각형으로 된 열린 입의 모양을 상상해보세요. 이것이 '口(입 구)'입니다.",
+        "common_words": [
+          {
+            "word": "口語",
+            "meaning": "구어, 말로 하는 언어",
+            "pronunciation": "구어",
+            "example_sentence": "口語로 대화합니다.",
+            "example_meaning": "구어로 대화합니다."
+          },
+          {
+            "word": "入口",
+            "meaning": "입구",
+            "pronunciation": "입구",
+            "example_sentence": "入口는 어디입니까?",
+            "example_meaning": "입구는 어디입니까?"
+          },
+          {
+            "word": "出口",
+            "meaning": "출구",
+            "pronunciation": "출구",
+            "example_sentence": "出口를 찾고 있습니다.",
+            "example_meaning": "출구를 찾고 있습니다."
+          },
+          {
+            "word": "人口",
+            "meaning": "인구",
+            "pronunciation": "인구",
+            "example_sentence": "이 도시의 人口는 얼마입니까?",
+            "example_meaning": "이 도시의 인구는 얼마입니까?"
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '입(口)'은 음식 섭취와 언어 표현의 도구로서 중요한 의미를 가집니다. 유교에서는 '말을 삼가라'는 가르침이 있어 입의 중요성을 강조했습니다. 또한 한자의 구성 요소로서 '구(口)'는 발음이나 의미를 나타내는 많은 한자의 부수로 쓰입니다. 예로 '명(鳴)'은 '새(鳥)'와 '입(口)'으로 구성되어 '새가 입으로 소리를 낸다'는 의미를 갖습니다.",
+        "pronunciation_guide": "한국어에서는 '구'로 발음하며, 중국어에서는 'kǒu', 일본어에서는 'kō' 또는 'kuchi'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 세로선, 위쪽 가로선, 오른쪽 세로선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 세로선을 위에서 아래로",
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "言",
+          "話",
+          "語",
+          "吃",
+          "吟"
+        ]
+      }
+    },
+    {
+      "id": "HJ-12-0007-624B",
+      "character": "手",
+      "unicode": "U+624B",
+      "meaning": "손 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "手",
+      "grade": 12,
+      "order": 7,
+      "tags": [
+        "basic",
+        "body",
+        "action",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "손, 기술, 솜씨, 행동, 노동 등의 의미가 있습니다. 인체와 행동을 나타내는 기본 한자입니다.",
+        "etymology": "'手'는 다섯 손가락이 있는 손의 모양을 단순화한 상형문자입니다. 위쪽의 가로선은 손목을, 아래로 뻗은 선들은 손가락을 나타냅니다.",
+        "mnemonics": "손목과 뻗은 손가락들의 모습을 상상해보세요. 마치 손을 펼치고 있는 것 같습니다. 이것이 '手(손 수)'입니다.",
+        "common_words": [
+          {
+            "word": "手紙",
+            "meaning": "편지",
+            "pronunciation": "수지",
+            "example_sentence": "그는 手紙를 보냈습니다.",
+            "example_meaning": "그는 편지를 보냈습니다."
+          },
+          {
+            "word": "拍手",
+            "meaning": "박수",
+            "pronunciation": "박수",
+            "example_sentence": "관객들이 拍手를 쳤습니다.",
+            "example_meaning": "관객들이 박수를 쳤습니다."
+          },
+          {
+            "word": "選手",
+            "meaning": "선수",
+            "pronunciation": "선수",
+            "example_sentence": "그는 유명한 選手입니다.",
+            "example_meaning": "그는 유명한 선수입니다."
+          },
+          {
+            "word": "手術",
+            "meaning": "수술",
+            "pronunciation": "수술",
+            "example_sentence": "그는 手術을 받았습니다.",
+            "example_meaning": "그는 수술을 받았습니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '손(手)'은 창조와 행동의 도구로서 특별한 의미를 가집니다. 불교에서는 수인(手印)이라 하여 손가락으로 특별한 모양을 만들어 의미를 전달하는 방식이 있습니다. 또한 한의학에서는 손에 많은 경혈이 있어 건강 진단과 치료에 중요한 부위로 여겨집니다. 서예와 같은 예술에서도 손의 움직임은 기교와 정신을 표현하는 중요한 수단입니다.",
+        "pronunciation_guide": "한국어에서는 '수'로 발음하며, 중국어에서는 'shǒu', 일본어에서는 'shu' 또는 'te'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 위에서 시작하여 손목, 손가락 순으로 그립니다.",
+          "directions": [
+            "왼쪽 위에서 오른쪽으로 약간 아래 방향으로 사선을 그립니다",
+            "오른쪽 위에서 아래로 세로선을 그립니다",
+            "중앙에서 왼쪽 아래로 사선을 그립니다",
+            "중앙에서 오른쪽 아래로 사선을 그립니다"
+          ]
+        },
+        "related_characters": [
+          "指",
+          "握",
+          "技",
+          "打",
+          "拍"
+        ]
+      }
+    },
+    {
+      "id": "HJ-12-0008-8033",
+      "character": "耳",
+      "unicode": "U+8033",
+      "meaning": "귀 이",
+      "pronunciation": "이",
+      "stroke_count": 6,
+      "radical": "耳",
+      "grade": 12,
+      "order": 8,
+      "tags": [
+        "basic",
+        "body",
+        "sense",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "귀, 청각, 들음, 소식 등의 의미가 있습니다. 인체와 감각을 나타내는 기본 한자입니다.",
+        "etymology": "'耳'는 사람의 귀 모양을 단순화한 상형문자입니다. 바깥쪽 곡선은 귓바퀴를, 안쪽 선들은 내부 구조를 나타냅니다.",
+        "mnemonics": "귓바퀴와 내부 구조가 그려진 모습을 상상해보세요. 이것이 '耳(귀 이)'입니다.",
+        "common_words": [
+          {
+            "word": "耳朶",
+            "meaning": "귓불",
+            "pronunciation": "이타",
+            "example_sentence": "그녀는 耳朶에 귀걸이를 했습니다.",
+            "example_meaning": "그녀는 귓불에 귀걸이를 했습니다."
+          },
+          {
+            "word": "耳鳴",
+            "meaning": "이명, 귀울림",
+            "pronunciation": "이명",
+            "example_sentence": "그는 耳鳴 증상이 있습니다.",
+            "example_meaning": "그는 이명 증상이 있습니다."
+          },
+          {
+            "word": "中耳",
+            "meaning": "중이",
+            "pronunciation": "중이",
+            "example_sentence": "中耳에 염증이 생겼습니다.",
+            "example_meaning": "중이에 염증이 생겼습니다."
+          },
+          {
+            "word": "耳語",
+            "meaning": "이어하다, 귓속말",
+            "pronunciation": "이어",
+            "example_sentence": "그들은 耳語를 나누었습니다.",
+            "example_meaning": "그들은 귓속말을 나누었습니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '귀(耳)'는 지혜와 정보를 받아들이는 통로로 여겨졌습니다. 불교에서는 '이근(耳根)'이라 하여 청각을 통한 깨달음의 가능성을 이야기합니다. 또한 한의학에서는 귀가 신장과 연결되어 있다고 보며, 귀의 형태와 색깔로 건강 상태를 진단하기도 합니다. '이문(耳聞)'이라는 표현은 직접 귀로 들어 알게 된 정보를 의미하며, 정보의 신뢰성을 강조합니다.",
+        "pronunciation_guide": "한국어에서는 '이'로 발음하며, 중국어에서는 'ěr', 일본어에서는 'ji' 또는 'mimi'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 곡선, 내부 구조, 아래쪽 선 순으로 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 세로선을 위에서 아래로",
+            "오른쪽 세로선을 위에서 아래로",
+            "중앙 세로선을 위에서 아래로",
+            "왼쪽 안쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 안쪽 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "聞",
+          "聽",
+          "聲",
+          "聰",
+          "音"
+        ]
+      }
+    },
+    {
+      "id": "HJ-12-0009-9580",
+      "character": "門",
+      "unicode": "U+9580",
+      "meaning": "문 문",
+      "pronunciation": "문",
+      "stroke_count": 8,
+      "radical": "門",
+      "grade": 12,
+      "order": 9,
+      "tags": [
+        "basic",
+        "structure",
+        "entry",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "문, 입구, 관문, 분야, 문파 등의 의미가 있습니다. 건축물과 입장을 나타내는 기본 한자입니다.",
+        "etymology": "'門'은 양쪽으로 열리는 문의 모양을 단순화한 상형문자입니다. 양쪽의 문짝과 문틀을 표현한 형태입니다.",
+        "mnemonics": "사각형의 문틀 안에 양쪽으로 열리는 문짝이 있는 모습을 상상해보세요. 이것이 '門(문 문)'입니다.",
+        "common_words": [
+          {
+            "word": "門口",
+            "meaning": "문구, 입구",
+            "pronunciation": "문구",
+            "example_sentence": "그는 門口에 서 있습니다.",
+            "example_meaning": "그는 입구에 서 있습니다."
+          },
+          {
+            "word": "校門",
+            "meaning": "교문",
+            "pronunciation": "교문",
+            "example_sentence": "학생들이 校門을 통해 들어갑니다.",
+            "example_meaning": "학생들이 교문을 통해 들어갑니다."
+          },
+          {
+            "word": "門下",
+            "meaning": "문하, ~의 제자",
+            "pronunciation": "문하",
+            "example_sentence": "그는 유명한 화가의 門下생입니다.",
+            "example_meaning": "그는 유명한 화가의 문하생입니다."
+          },
+          {
+            "word": "專門",
+            "meaning": "전문",
+            "pronunciation": "전문",
+            "example_sentence": "그는 이 분야의 專門가입니다.",
+            "example_meaning": "그는 이 분야의 전문가입니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '문(門)'은 경계와 통로를 상징하며 중요한 의미를 갖습니다. 전통 건축에서 문은 단순한 출입구를 넘어 신분과 권위, 가문의 상징으로 여겨졌습니다. 또한 학문이나 기술의 영역을 '문(門)'이라고 부르며, 스승에게 배우는 것을 '입문(入門)'이라고 표현합니다. 풍수지리에서는 문의 방향과 형태가 집안의 운세에 영향을 준다고 믿었습니다. '문파(門派)'는 같은 학문이나 기술을 배우는 집단을 의미하며, 무술에서도 중요한 개념으로 사용됩니다.",
+        "pronunciation_guide": "한국어에서는 '문'으로 발음하며, 중국어에서는 'mén', 일본어에서는 'mon' 또는 'kado'로 발음합니다.",
+        "stroke_order": {
+          "description": "문틀, 문짝, 장식선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 세로선을 위에서 아래로",
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 세로선을 위에서 아래로",
+            "왼쪽 문짝의 세로선을 위에서 아래로",
+            "오른쪽 문짝의 세로선을 위에서 아래로",
+            "왼쪽 문짝의 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 문짝의 가로선을 왼쪽에서 오른쪽으로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "開",
+          "閉",
+          "関",
+          "闖",
+          "闕"
+        ]
+      }
+    },
+    {
+      "id": "HJ-11-0001-5B50",
+      "character": "子",
+      "unicode": "U+5B50",
+      "meaning": "아들 자",
+      "pronunciation": "자",
+      "stroke_count": 3,
+      "radical": "子",
+      "grade": 11,
+      "order": 1,
+      "tags": [
+        "basic",
+        "family",
+        "person",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "아들, 자식, 씨, 학자, 현자, 선생님 등의 다양한 의미가 있습니다. 가족 관계와 존경을 나타내는 기본 한자입니다.",
+        "etymology": "'子'는 갓 태어난 아이의 모습을 단순화한 상형문자입니다. 큰 머리와 작은 몸통의 형태로 표현되었습니다.",
+        "mnemonics": "큰 머리와 작은 몸통을 가진 아이의 모습을 상상해보세요. 위쪽의 가로선은 아이의 머리를, 아래로 내려오는 선은 몸통을 나타냅니다. 이것이 '子(아들 자)'입니다.",
+        "common_words": [
+          {
+            "word": "子女",
+            "meaning": "자녀",
+            "pronunciation": "자녀",
+            "example_sentence": "그들은 세 명의 子女가 있습니다.",
+            "example_meaning": "그들은 세 명의 자녀가 있습니다."
+          },
+          {
+            "word": "親子",
+            "meaning": "부모와 자식",
+            "pronunciation": "친자",
+            "example_sentence": "親子 관계는 중요합니다.",
+            "example_meaning": "부모와 자식 관계는 중요합니다."
+          },
+          {
+            "word": "弟子",
+            "meaning": "제자",
+            "pronunciation": "제자",
+            "example_sentence": "그는 많은 弟子들을 가르쳤습니다.",
+            "example_meaning": "그는 많은 제자들을 가르쳤습니다."
+          },
+          {
+            "word": "孔子",
+            "meaning": "공자",
+            "pronunciation": "공자",
+            "example_sentence": "孔子는 위대한 사상가였습니다.",
+            "example_meaning": "공자는 위대한 사상가였습니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '자(子)'는 단순히 아들이라는 의미를 넘어 다양한 문화적 맥락을 가집니다. 유교에서는 공자(孔子), 맹자(孟子)와 같이 위대한 사상가의 이름 뒤에 '자(子)'를 붙여 존경을 표시했습니다. 또한 십이지신의 첫 번째인 쥐를 '자(子)'라고 하며, 밤 11시부터 새벽 1시까지의 시간을 의미하기도 합니다. 가문과 혈통을 중시하는 동아시아 문화에서 아들(子)은 가문의 계승자로서 중요한 의미를 가졌습니다.",
+        "pronunciation_guide": "한국어에서는 '자'로 발음하며, 중국어에서는 'zǐ', 일본어에서는 'shi' 또는 'ko'로 발음합니다.",
+        "stroke_order": {
+          "description": "가로선, 세로선, 마지막 가로선 순으로 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "세로선을 위에서 아래로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로 약간 위로 휘면서"
+          ]
+        },
+        "related_characters": [
+          "孫",
+          "孝",
+          "学",
+          "字",
+          "存"
+        ]
+      }
+    },
+    {
+      "id": "HJ-11-0002-5973",
+      "character": "女",
+      "unicode": "U+5973",
+      "meaning": "여자 녀",
+      "pronunciation": "녀",
+      "stroke_count": 3,
+      "radical": "女",
+      "grade": 11,
+      "order": 2,
+      "tags": [
+        "basic",
+        "person",
+        "gender",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "여자, 여성, 딸, 여성적인 등의 의미가 있습니다. 성별과 관련된 기본 한자입니다.",
+        "etymology": "'女'는 무릎을 꿇고 앉아있는 여성의 모습을 단순화한 상형문자입니다. 고대에는 여성이 무릎을 꿇고 앉는 자세가 일반적이었습니다.",
+        "mnemonics": "무릎을 꿇고 앉아있는 여성의 모습을 상상해보세요. 위쪽의 가로선과 아래로 내려오는 두 개의 사선이 마치 앉아있는 사람의 형태를 나타냅니다. 이것이 '女(여자 녀)'입니다.",
+        "common_words": [
+          {
+            "word": "女子",
+            "meaning": "여자",
+            "pronunciation": "여자",
+            "example_sentence": "그녀는 용감한 女子입니다.",
+            "example_meaning": "그녀는 용감한 여자입니다."
+          },
+          {
+            "word": "少女",
+            "meaning": "소녀",
+            "pronunciation": "소녀",
+            "example_sentence": "少女가 노래를 부릅니다.",
+            "example_meaning": "소녀가 노래를 부릅니다."
+          },
+          {
+            "word": "女性",
+            "meaning": "여성",
+            "pronunciation": "여성",
+            "example_sentence": "女性의 권리가 중요합니다.",
+            "example_meaning": "여성의 권리가 중요합니다."
+          },
+          {
+            "word": "女王",
+            "meaning": "여왕",
+            "pronunciation": "여왕",
+            "example_sentence": "女王이 연설했습니다.",
+            "example_meaning": "여왕이 연설했습니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 '여(女)'는 음(陰)의 원리와 연관되며, 부드러움, 포용력, 내면성을 상징합니다. 음양 철학에서는 여성성과 남성성의 조화를 중요시했지만, 역사적으로 유교 사회에서는 '삼종지도(三從之道)'라 하여 여성의 사회적 역할에 제한을 두었습니다. 현대에는 이러한 전통적 관념에서 벗어나 남녀평등의 가치가 중요시되고 있습니다. 한자 구성에서 '여(女)'는 많은 한자의 부수로 사용되어 여성 관련 의미를 나타냅니다.",
+        "pronunciation_guide": "한국어에서는 '녀' 또는 '여'로 발음하며, 중국어에서는 'nǚ', 일본어에서는 'jo' 또는 'onna'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 가로선, 왼쪽 사선, 오른쪽 사선 순으로 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 사선을 위에서 아래로 약간 오른쪽 방향으로",
+            "오른쪽 사선을 위에서 아래로 약간 왼쪽 방향으로"
+          ]
+        },
+        "related_characters": [
+          "婦",
+          "嫁",
+          "姓",
+          "妹",
+          "姉"
+        ]
+      }
+    },
+    {
+      "id": "HJ-11-0003-7236",
+      "character": "父",
+      "unicode": "U+7236",
+      "meaning": "아버지 부",
+      "pronunciation": "부",
+      "stroke_count": 4,
+      "radical": "父",
+      "grade": 11,
+      "order": 3,
+      "tags": [
+        "basic",
+        "family",
+        "person",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "아버지, 부친, 조상, 어른 등의 의미가 있습니다. 가족 관계와 존경을 나타내는 기본 한자입니다.",
+        "etymology": "'父'는 도끼를 들고 있는 남성의 모습을 단순화한 상형문자에서 유래했습니다. 고대에는 도끼가 남성과 가장의 권위를 상징했습니다.",
+        "mnemonics": "도끼(위쪽 부분)를 들고 있는 사람(아래쪽 부분)의 모습을 상상해보세요. 이것이 '父(아버지 부)'입니다.",
+        "common_words": [
+          {
+            "word": "父母",
+            "meaning": "부모",
+            "pronunciation": "부모",
+            "example_sentence": "父母님의 사랑에 감사합니다.",
+            "example_meaning": "부모님의 사랑에 감사합니다."
+          },
+          {
+            "word": "祖父",
+            "meaning": "조부, 할아버지",
+            "pronunciation": "조부",
+            "example_sentence": "祖父는 90세입니다.",
+            "example_meaning": "할아버지는 90세입니다."
+          },
+          {
+            "word": "父親",
+            "meaning": "부친, 아버지",
+            "pronunciation": "부친",
+            "example_sentence": "그의 父親은 선생님입니다.",
+            "example_meaning": "그의 부친은 선생님입니다."
+          },
+          {
+            "word": "養父",
+            "meaning": "양부, 양아버지",
+            "pronunciation": "양부",
+            "example_sentence": "그는 養父에게 감사했습니다.",
+            "example_meaning": "그는 양아버지에게 감사했습니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '부(父)'는 가족의 가장이자 권위의 상징으로 매우 중요한 의미를 갖습니다. 유교에서는 '효(孝)'를 중시하여 아버지에 대한 공경과 순종을 강조했으며, '부자유친(父子有親)'을 오륜(五倫)의 하나로 여겼습니다. 또한 국가나 조직의 지도자를 '국부(國父)'라고 부르는 등 사회적 지도자에게도 '부(父)'의 개념을 확장 적용했습니다. 현대에는 권위적인 아버지상에서 벗어나 자상하고 친근한 아버지의 모습이 강조되고 있습니다.",
+        "pronunciation_guide": "한국어에서는 '부'로 발음하며, 중국어에서는 'fù', 일본어에서는 'fu' 또는 'chichi'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 점, 오른쪽 점, 왼쪽 사선, 오른쪽 사선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 위 점을 찍거나 짧은 선을 그립니다",
+            "오른쪽 위 점을 찍거나 짧은 선을 그립니다",
+            "왼쪽 사선을 위에서 아래로 오른쪽 방향으로",
+            "오른쪽 사선을 위에서 아래로 왼쪽 방향으로"
+          ]
+        },
+        "related_characters": [
+          "母",
+          "爸",
+          "爺",
+          "爹",
+          "家"
+        ]
+      }
+    },
+    {
+      "id": "HJ-11-0004-6BCD",
+      "character": "母",
+      "unicode": "U+6BCD",
+      "meaning": "어머니 모",
+      "pronunciation": "모",
+      "stroke_count": 5,
+      "radical": "母",
+      "grade": 11,
+      "order": 4,
+      "tags": [
+        "basic",
+        "family",
+        "person",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "어머니, 모친, 여성 조상, 근원 등의 의미가 있습니다. 가족 관계와 생명의 근원을 나타내는 기본 한자입니다.",
+        "etymology": "'母'는 여성의 가슴을 강조하여 표현한 상형문자에서 유래했습니다. 출산과 양육을 상징하는 여성의 특징을 나타냅니다.",
+        "mnemonics": "두 개의 점(여성의 가슴을 나타냄)과 그 아래의 형태를 상상해보세요. 이것이 '母(어머니 모)'입니다.",
+        "common_words": [
+          {
+            "word": "父母",
+            "meaning": "부모",
+            "pronunciation": "부모",
+            "example_sentence": "父母님께 효도해야 합니다.",
+            "example_meaning": "부모님께 효도해야 합니다."
+          },
+          {
+            "word": "祖母",
+            "meaning": "조모, 할머니",
+            "pronunciation": "조모",
+            "example_sentence": "祖母는 요리를 잘합니다.",
+            "example_meaning": "할머니는 요리를 잘합니다."
+          },
+          {
+            "word": "母校",
+            "meaning": "모교, 졸업한 학교",
+            "pronunciation": "모교",
+            "example_sentence": "그는 母校를 방문했습니다.",
+            "example_meaning": "그는 모교를 방문했습니다."
+          },
+          {
+            "word": "母國",
+            "meaning": "모국, 고국",
+            "pronunciation": "모국",
+            "example_sentence": "그녀는 母國에 돌아갔습니다.",
+            "example_meaning": "그녀는 모국에 돌아갔습니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '모(母)'는 생명의 근원이자 사랑과 희생의 상징으로 여겨집니다. 유교에서는 '자모지은(慈母之恩)'이라 하여 어머니의 무조건적인 사랑과 은혜를 강조했습니다. '모(母)'는 또한 대지, 국가, 자연 등 생명과 보호를 상징하는 개념을 표현할 때도 사용됩니다. 예를 들어 '모국어(母國語)'는 자신이 처음 배운 언어를, '모교(母校)'는 자신이 다닌 학교를 의미합니다. 이는 '모(母)'가 가진 근원과 정체성의 의미를 확장한 것입니다.",
+        "pronunciation_guide": "한국어에서는 '모'로 발음하며, 중국어에서는 'mǔ', 일본어에서는 'bo' 또는 'haha'로 발음합니다.",
+        "stroke_order": {
+          "description": "두 개의 점, 가로선, 왼쪽 세로선, 오른쪽 세로선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 점을 찍습니다",
+            "오른쪽 점을 찍습니다",
+            "가로선을 왼쪽에서 오른쪽으로 그립니다",
+            "왼쪽 세로선을 위에서 아래로 그립니다",
+            "오른쪽 세로선을 위에서 아래로 그립니다"
+          ]
+        },
+        "related_characters": [
+          "父",
+          "女",
+          "媽",
+          "姆",
+          "妣"
+        ]
+      }
+    },
+    {
+      "id": "HJ-11-0005-5144",
+      "character": "兄",
+      "unicode": "U+5144",
+      "meaning": "형 형",
+      "pronunciation": "형",
+      "stroke_count": 5,
+      "radical": "儿",
+      "grade": 11,
+      "order": 5,
+      "tags": [
+        "basic",
+        "family",
+        "person",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "형, 남자 형제 중 나이가 많은 사람, 남성 선배 등의 의미가 있습니다. 가족 관계와 위계질서를 나타내는 기본 한자입니다.",
+        "etymology": "'兄'은 입을 벌리고 있는 사람의 모습과 무릎을 꿇은 사람의 모습을 조합한 형태에서 유래했습니다. 존경을 표하는 자세와 말하는 사람을 의미합니다.",
+        "mnemonics": "위쪽의 부분은 입을 벌리고 있는 사람의 모습을, 아래쪽의 부분은 무릎을 꿇은 사람의 다리를 상상해보세요. 이것이 '兄(형 형)'입니다.",
+        "common_words": [
+          {
+            "word": "兄弟",
+            "meaning": "형제",
+            "pronunciation": "형제",
+            "example_sentence": "그들은 仲良い兄弟입니다.",
+            "example_meaning": "그들은 사이좋은 형제입니다."
+          },
+          {
+            "word": "兄貴",
+            "meaning": "형님, 선배",
+            "pronunciation": "형귀",
+            "example_sentence": "兄貴를 존경합니다.",
+            "example_meaning": "형님을 존경합니다."
+          },
+          {
+            "word": "長兄",
+            "meaning": "맏형",
+            "pronunciation": "장형",
+            "example_sentence": "그는 家族の長兄입니다.",
+            "example_meaning": "그는 가족의 맏형입니다."
+          },
+          {
+            "word": "義兄",
+            "meaning": "의형, 매형, 처남",
+            "pronunciation": "의형",
+            "example_sentence": "그는 나의 義兄입니다.",
+            "example_meaning": "그는 나의 매형입니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '형(兄)'은 단순한 가족 관계를 넘어 사회적 위계질서와 책임을 나타냅니다. 유교 문화권에서는 '장유유서(長幼有序)'의 원칙에 따라 나이와 서열을 중시했으며, 형제 간에도 서열에 따른 예의와 도리를 강조했습니다. 한국에서는 '형님'이라는 호칭이 실제 형제 관계가 아닌 사람에게도 사용되어 존경과 친밀함을 표현합니다. 중국과 일본에서도 유사하게 실제 혈연관계가 없더라도 나이가 많거나 선배인 남성을 '형(兄)'으로 부르는 문화가 있습니다.",
+        "pronunciation_guide": "한국어에서는 '형'으로 발음하며, 중국어에서는 'xiōng', 일본어에서는 'kyō' 또는 'ani'로 발음합니다.",
+        "stroke_order": {
+          "description": "가로선, 세로선, 가로선, 왼쪽 대각선, 오른쪽 대각선 순으로 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로 그립니다",
+            "세로선을 위에서 아래로 그립니다",
+            "중간 가로선을 왼쪽에서 오른쪽으로 그립니다",
+            "왼쪽 대각선을 위에서 아래로 약간 오른쪽 방향으로 그립니다",
+            "오른쪽 대각선을 위에서 아래로 약간 왼쪽 방향으로 그립니다"
+          ]
+        },
+        "related_characters": [
+          "弟",
+          "姉",
+          "妹",
+          "兄弟",
+          "兼"
+        ]
+      }
+    },
+    {
+      "id": "HJ-11-0006-5F1F",
+      "character": "弟",
+      "unicode": "U+5F1F",
+      "meaning": "아우 제",
+      "pronunciation": "제",
+      "stroke_count": 7,
+      "radical": "⺕",
+      "grade": 11,
+      "order": 6,
+      "tags": [
+        "basic",
+        "family",
+        "person",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "아우, 남동생, 후배, 제자 등의 의미가 있습니다. 가족 관계와 위계질서를 나타내는 기본 한자입니다.",
+        "etymology": "'弟'는 순서를 표시하는 '제(第)'와 관련이 있으며, 손으로 실을 감는 모습을 나타내는 형상에서 유래했습니다. 순서대로 질서 있게 실을 감는 모습이 동생의 순서를 의미하게 되었습니다.",
+        "mnemonics": "왼쪽의 '제(第)' 부분은 순서를, 오른쪽의 활 모양은 굽히는 모습을 상상해보세요. 형에게 굽히고 예의를 지키는 동생의 모습을 떠올리면 '弟(아우 제)'를 기억하기 쉽습니다.",
+        "common_words": [
+          {
+            "word": "兄弟",
+            "meaning": "형제",
+            "pronunciation": "형제",
+            "example_sentence": "兄弟愛는 중요합니다.",
+            "example_meaning": "형제애는 중요합니다."
+          },
+          {
+            "word": "弟子",
+            "meaning": "제자",
+            "pronunciation": "제자",
+            "example_sentence": "그는 많은 弟子를 가르쳤습니다.",
+            "example_meaning": "그는 많은 제자를 가르쳤습니다."
+          },
+          {
+            "word": "令弟",
+            "meaning": "영제, 동생(존칭)",
+            "pronunciation": "영제",
+            "example_sentence": "令弟는 어디서 공부하나요?",
+            "example_meaning": "동생은 어디서 공부하나요?"
+          },
+          {
+            "word": "小弟",
+            "meaning": "소제, 나(겸손하게)",
+            "pronunciation": "소제",
+            "example_sentence": "小弟가 도와드리겠습니다.",
+            "example_meaning": "제가 도와드리겠습니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '제(弟)'는 '형(兄)'과 마찬가지로 위계질서를 나타내지만, 겸손과 공경의 의미도 담고 있습니다. 유교 사회에서는 '공경(恭敬)'과 '겸양(謙讓)'을 중시했으며, 동생은 형을 공경하고 형은 동생을 사랑해야 한다는 '형우제공(兄友弟恭)'의 덕목이 강조되었습니다. '제자(弟子)'라는 단어에서 볼 수 있듯이 '제(弟)'는 스승을 따르는 사람, 배움을 구하는 사람이라는 의미로도 확장되었습니다. 또한 자신을 낮추어 '소제(小弟)'라고 표현하는 겸양의 용법도 있습니다.",
+        "pronunciation_guide": "한국어에서는 '제'로 발음하며, 중국어에서는 'dì', 일본어에서는 'tei', 'dai', 또는 'otōto'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 부분을 먼저 쓰고, 오른쪽 부분을 씁니다.",
+          "directions": [
+            "왼쪽 상단의 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 부분의 세로선을 위에서 아래로",
+            "왼쪽 부분의 아래쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 부분의 위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 부분의 세로선을 위에서 아래로",
+            "오른쪽 부분의 아래 부분을 왼쪽에서 오른쪽으로",
+            "마지막으로 세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "兄",
+          "姉",
+          "妹",
+          "第",
+          "悌"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0004-56DB",
+      "character": "四",
+      "unicode": "U+56DB",
+      "meaning": "넉 사",
+      "pronunciation": "사",
+      "stroke_count": 5,
+      "radical": "囗",
+      "grade": 15,
+      "order": 4,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "넷, 네 번째 등의 의미가 있습니다.",
+        "etymology": "입 구(口)를 네 개 포함한 모양에서 시작된 한자로, 숫자 '4'를 표현합니다.",
+        "mnemonics": "네 개의 점이 있는 모양을 상상해보세요. 이것이 '四(넉 사)'입니다.",
+        "common_words": [
+          {
+            "word": "四月",
+            "meaning": "4월",
+            "pronunciation": "사월",
+            "example_sentence": "四月은 봄의 중간 달입니다.",
+            "example_meaning": "4월은 봄의 중간 달입니다."
+          },
+          {
+            "word": "四角",
+            "meaning": "사각, 네모",
+            "pronunciation": "사각",
+            "example_sentence": "이것은 四角형입니다.",
+            "example_meaning": "이것은 사각형입니다."
+          },
+          {
+            "word": "四季",
+            "meaning": "사계, 네 계절",
+            "pronunciation": "사계",
+            "example_sentence": "한국에는 뚜렷한 四季가 있습니다.",
+            "example_meaning": "한국에는 뚜렷한 사계절이 있습니다."
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '사(四)'는 죽음과 불행을 연상시키는 숫자로 여겨지기도 합니다. 이는 '사(四)'의 발음이 '죽을 사(死)'와 비슷하기 때문입니다. 특히 중국과 일본, 한국의 일부 지역에서는 건물의 4층이나 병실 번호, 전화번호 등에서 '4'를 피하는 경향이 있습니다.",
+        "pronunciation_guide": "한국어에서는 '사'로 발음하며, 중국어에서는 'sì', 일본어에서는 'shi' 또는 'yon'으로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 세로선, 오른쪽 세로선, 위쪽 가로선, 가운데 가로선, 아래쪽 가로선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 세로선을 위에서 아래로",
+            "오른쪽 세로선을 위에서 아래로",
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "가운데 가로선을 왼쪽에서 오른쪽으로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "一",
+          "二",
+          "三",
+          "五",
+          "十"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0005-4E94",
+      "character": "五",
+      "unicode": "U+4E94",
+      "meaning": "다섯 오",
+      "pronunciation": "오",
+      "stroke_count": 4,
+      "radical": "二",
+      "grade": 15,
+      "order": 5,
+      "tags": [
+        "basic",
+        "number",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "다섯, 다섯 번째 등의 의미가 있습니다.",
+        "etymology": "양손을 교차시켜 다섯 개의 손가락을 표현한 모양에서 유래했습니다.",
+        "mnemonics": "오른쪽으로 기운 가로줄과 왼쪽에 위아래로 그어진 두 개의 짧은 가로줄의 모양을 떠올려보세요. 이것이 '五(다섯 오)'입니다.",
+        "common_words": [
+          {
+            "word": "五月",
+            "meaning": "5월",
+            "pronunciation": "오월",
+            "example_sentence": "五月은 가정의 달입니다.",
+            "example_meaning": "5월은 가정의 달입니다."
+          },
+          {
+            "word": "五感",
+            "meaning": "오감, 다섯 가지 감각",
+            "pronunciation": "오감",
+            "example_sentence": "人間은 五感을 가지고 있습니다.",
+            "example_meaning": "인간은 오감을 가지고 있습니다."
+          },
+          {
+            "word": "五色",
+            "meaning": "오색, 다섯 가지 색깔",
+            "pronunciation": "오색",
+            "example_sentence": "무지개는 五色이 아름답습니다.",
+            "example_meaning": "무지개는 오색이 아름답습니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서는 '오행설(五行說)'이라 하여 목(木), 화(火), 토(土), 금(金), 수(水)의 다섯 가지 원소가 세상의 모든 것을 구성한다고 보았습니다. 또한 한국 전통 음악에서는 '오음(五音)'이라 하여 궁(宮), 상(商), 각(角), 치(徵), 우(羽)의 다섯 음계를 기본으로 사용했습니다.",
+        "pronunciation_guide": "한국어에서는 '오'로 발음하며, 중국어에서는 'wǔ', 일본어에서는 'go'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 가로선, 왼쪽 세로선, 중간 가로선, 오른쪽 부분을 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 세로선을 위에서 아래로",
+            "중간 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 부분을 위에서 아래로 약간 기울여서"
+          ]
+        },
+        "related_characters": [
+          "一",
+          "二",
+          "三",
+          "四",
+          "十"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0006-53E3",
+      "character": "口",
+      "unicode": "U+53E3",
+      "meaning": "입 구",
+      "pronunciation": "구",
+      "stroke_count": 3,
+      "radical": "口",
+      "grade": 15,
+      "order": 6,
+      "tags": [
+        "basic",
+        "body",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "입, 구멍, 출입구, 말하다 등의 의미가 있습니다.",
+        "etymology": "입의 모양을 단순화한 상형문자입니다. 네모난 형태는 열린 입을 나타냅니다.",
+        "mnemonics": "정사각형 모양을 상상해보세요. 이것이 '口(입 구)'입니다. 음식이 들어가는 입의 모양을 표현합니다.",
+        "common_words": [
+          {
+            "word": "入口",
+            "meaning": "입구",
+            "pronunciation": "입구",
+            "example_sentence": "入口는 왼쪽에 있습니다.",
+            "example_meaning": "입구는 왼쪽에 있습니다."
+          },
+          {
+            "word": "口實",
+            "meaning": "구실, 변명",
+            "pronunciation": "구실",
+            "example_sentence": "그것은 단지 口實에 불과합니다.",
+            "example_meaning": "그것은 단지 구실에 불과합니다."
+          },
+          {
+            "word": "出口",
+            "meaning": "출구",
+            "pronunciation": "출구",
+            "example_sentence": "出口로 나가주세요.",
+            "example_meaning": "출구로 나가주세요."
+          },
+          {
+            "word": "人口",
+            "meaning": "인구",
+            "pronunciation": "인구",
+            "example_sentence": "서울의 人口는 약 천만 명입니다.",
+            "example_meaning": "서울의 인구는 약 천만 명입니다."
+          }
+        ],
+        "cultural_notes": "'구(口)'는 많은 한자의 부수로 사용되며, 특히 말하거나 먹는 것과 관련된 한자에 자주 등장합니다. 동양 문화에서는 '구설(口舌)'이라 하여 말로 인한 시비나 분쟁을 경계했으며, '구복(口腹)'이라 하여 먹고 사는 문제를 중요시했습니다.",
+        "pronunciation_guide": "한국어에서는 '구'로 발음하며, 중국어에서는 'kǒu', 일본어에서는 'kō' 또는 'kuchi'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 세로선, 위쪽 가로선, 오른쪽 세로선 순으로 그립니다.",
+          "directions": [
+            "왼쪽 세로선을 위에서 아래로",
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "舌",
+          "言",
+          "話",
+          "食"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0007-76EE",
+      "character": "目",
+      "unicode": "U+76EE",
+      "meaning": "눈 목",
+      "pronunciation": "목",
+      "stroke_count": 5,
+      "radical": "目",
+      "grade": 15,
+      "order": 7,
+      "tags": [
+        "basic",
+        "body",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "눈, 시력, 보다, 항목 등의 의미가 있습니다.",
+        "etymology": "사람의 눈을 정면에서 본 모습을 단순화한 상형문자입니다. 가운데 점은 검은 동공을 나타냅니다.",
+        "mnemonics": "가로줄이 네 개 있는 사각형의 모양을 상상해보세요. 이것이 '目(눈 목)'입니다. 사람이 눈을 뜨고 똑바로 볼 때의 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "目的",
+            "meaning": "목적",
+            "pronunciation": "목적",
+            "example_sentence": "그의 目的은 무엇입니까?",
+            "example_meaning": "그의 목적은 무엇입니까?"
+          },
+          {
+            "word": "注目",
+            "meaning": "주목, 눈여겨봄",
+            "pronunciation": "주목",
+            "example_sentence": "그 영화는 많은 注目을 받았습니다.",
+            "example_meaning": "그 영화는 많은 주목을 받았습니다."
+          },
+          {
+            "word": "目標",
+            "meaning": "목표",
+            "pronunciation": "목표",
+            "example_sentence": "내 目標는 의사가 되는 것입니다.",
+            "example_meaning": "내 목표는 의사가 되는 것입니다."
+          },
+          {
+            "word": "項目",
+            "meaning": "항목",
+            "pronunciation": "항목",
+            "example_sentence": "이 項目을 작성해주세요.",
+            "example_meaning": "이 항목을 작성해주세요."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 눈은 마음의 창으로 여겨졌으며, '눈이 높다'는 표현은 안목이 뛰어나다는 의미로 사용됩니다. 또한 '눈에 띄다(目立つ)'는 표현은 두드러지거나 주목받는다는 의미로 사용됩니다. 전통 의학에서는 오장육부와 눈이 서로 연결되어 있다고 보아, 눈의 상태로 건강 상태를 진단하기도 했습니다.",
+        "pronunciation_guide": "한국어에서는 '목'으로 발음하며, 중국어에서는 'mù', 일본어에서는 'moku' 또는 'me'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 가로선, 왼쪽 세로선, 가운데 가로선, 오른쪽 세로선, 아래쪽 가로선 순으로 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 세로선을 위에서 아래로",
+            "가운데 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 세로선을 위에서 아래로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "見",
+          "視",
+          "眼",
+          "睛"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0008-8033",
+      "character": "耳",
+      "unicode": "U+8033",
+      "meaning": "귀 이",
+      "pronunciation": "이",
+      "stroke_count": 6,
+      "radical": "耳",
+      "grade": 15,
+      "order": 8,
+      "tags": [
+        "basic",
+        "body",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "귀, 청각, 듣다 등의 의미가 있습니다.",
+        "etymology": "사람의 귀 모양을 단순화한 상형문자입니다.",
+        "mnemonics": "위쪽에 두 개의 작은 획이 있고 아래쪽에 네모 모양이 있는 형태를 상상해보세요. 이것이 '耳(귀 이)'입니다. 사람의 귀 모양을 표현합니다.",
+        "common_words": [
+          {
+            "word": "耳鳴",
+            "meaning": "이명, 귀울림",
+            "pronunciation": "이명",
+            "example_sentence": "그는 耳鳴으로 고생하고 있습니다.",
+            "example_meaning": "그는 이명으로 고생하고 있습니다."
+          },
+          {
+            "word": "左耳",
+            "meaning": "좌이, 왼쪽 귀",
+            "pronunciation": "좌이",
+            "example_sentence": "左耳가 잘 들리지 않습니다.",
+            "example_meaning": "왼쪽 귀가 잘 들리지 않습니다."
+          },
+          {
+            "word": "耳目",
+            "meaning": "이목, 귀와 눈",
+            "pronunciation": "이목",
+            "example_sentence": "그는 모든 사람의 耳目을 집중시켰습니다.",
+            "example_meaning": "그는 모든 사람의 이목을 집중시켰습니다."
+          },
+          {
+            "word": "耳殼",
+            "meaning": "이각, 귓바퀴",
+            "pronunciation": "이각",
+            "example_sentence": "耳殼에 상처가 있습니다.",
+            "example_meaning": "귓바퀴에 상처가 있습니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 귀는 지혜와 관련이 있다고 여겨졌습니다. '귀가 얇다'는 표현은 남의 말을 쉽게 믿는다는 의미로, '귀가 두껍다'는 표현은 남의 말에 별로 신경 쓰지 않는다는 의미로 사용됩니다. 또한 전통 의학에서는 귀에 신체의 모든 장기와 연결된 경혈이 있다고 보아, 귀를 자극하여 다양한 질병을 치료하는 이침요법을 발전시켰습니다.",
+        "pronunciation_guide": "한국어에서는 '이'로 발음하며, 중국어에서는 'ěr', 일본어에서는 'ji' 또는 'mimi'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 부분을 먼저 그리고, 아래쪽 부분을 그립니다.",
+          "directions": [
+            "위쪽 왼쪽 점을 찍습니다",
+            "위쪽 오른쪽 점을 찍습니다",
+            "왼쪽 세로선을 위에서 아래로",
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 세로선을 위에서 아래로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "聞",
+          "聽",
+          "聲",
+          "音"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0009-624B",
+      "character": "手",
+      "unicode": "U+624B",
+      "meaning": "손 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "手",
+      "grade": 15,
+      "order": 9,
+      "tags": [
+        "basic",
+        "body",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "손, 기술, 재주, 인력 등의 의미가 있습니다.",
+        "etymology": "사람의 손과 다섯 손가락을 단순화한 상형문자입니다.",
+        "mnemonics": "세 개의 가지가 뻗은 나무처럼 생긴 모양을 상상해보세요. 이것이 '手(손 수)'입니다. 손과 손가락이 뻗은 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "手段",
+            "meaning": "수단, 방법",
+            "pronunciation": "수단",
+            "example_sentence": "그것은 최선의 手段이 아닙니다.",
+            "example_meaning": "그것은 최선의 수단이 아닙니다."
+          },
+          {
+            "word": "選手",
+            "meaning": "선수",
+            "pronunciation": "선수",
+            "example_sentence": "그는 훌륭한 選手입니다.",
+            "example_meaning": "그는 훌륭한 선수입니다."
+          },
+          {
+            "word": "手術",
+            "meaning": "수술",
+            "pronunciation": "수술",
+            "example_sentence": "그는 내일 手術을 받습니다.",
+            "example_meaning": "그는 내일 수술을 받습니다."
+          },
+          {
+            "word": "拍手",
+            "meaning": "박수",
+            "pronunciation": "박수",
+            "example_sentence": "관객들이 拍手를 쳤습니다.",
+            "example_meaning": "관객들이 박수를 쳤습니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 손은 기술과 재주의 상징으로 여겨졌습니다. '손재주가 좋다'는 표현은 기술이 뛰어나다는 의미로 사용됩니다. 또한 손은 정성과 노력의 상징이기도 해서, '손이 가다'라는 표현은 정성을 들이다라는 의미로 쓰입니다. 전통 의학에서는 손바닥의 선과 모양으로 건강 상태와 운명을 진단하는 수상학이 발달했습니다.",
+        "pronunciation_guide": "한국어에서는 '수'로 발음하며, 중국어에서는 'shǒu', 일본어에서는 'shu' 또는 'te'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 부분을 먼저 그리고, 오른쪽 부분을 그립니다.",
+          "directions": [
+            "왼쪽 위 부분을 왼쪽에서 오른쪽으로 살짝 내려가게",
+            "오른쪽 위 부분을 오른쪽으로 올라가게",
+            "왼쪽 아래 부분을 왼쪽에서 오른쪽으로 내려가게",
+            "세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "指",
+          "掌",
+          "拳",
+          "握"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0010-8DB3",
+      "character": "足",
+      "unicode": "U+8DB3",
+      "meaning": "발 족",
+      "pronunciation": "족",
+      "stroke_count": 7,
+      "radical": "足",
+      "grade": 15,
+      "order": 10,
+      "tags": [
+        "basic",
+        "body",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "발, 다리, 충분하다, 만족하다 등의 의미가 있습니다.",
+        "etymology": "사람의 발과 다리를 단순화한 상형문자입니다.",
+        "mnemonics": "위쪽에 '止'와 비슷한 모양과 아래쪽에 'ㄆ' 같은 모양이 있는 형태를 상상해보세요. 이것이 '足(발 족)'입니다. 발과 다리의 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "足跡",
+            "meaning": "족적, 발자국",
+            "pronunciation": "족적",
+            "example_sentence": "눈 위에 足跡이 남았습니다.",
+            "example_meaning": "눈 위에 발자국이 남았습니다."
+          },
+          {
+            "word": "滿足",
+            "meaning": "만족",
+            "pronunciation": "만족",
+            "example_sentence": "그는 결과에 滿足했습니다.",
+            "example_meaning": "그는 결과에 만족했습니다."
+          },
+          {
+            "word": "不足",
+            "meaning": "부족, 모자람",
+            "pronunciation": "부족",
+            "example_sentence": "시간이 不足합니다.",
+            "example_meaning": "시간이 부족합니다."
+          },
+          {
+            "word": "足元",
+            "meaning": "족원, 발밑",
+            "pronunciation": "족원",
+            "example_sentence": "足元을 조심하세요.",
+            "example_meaning": "발밑을 조심하세요."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 발은 신체의 가장 낮은 부분으로 여겨져, 발로 다른 사람이나 물건을 가리키는 것은 무례한 행동으로 간주됩니다. 반면, '족(足)'은 '충분하다'는 의미도 있어 '만족(滿足)'이라는 단어에서는 채워진 상태를 의미합니다. 전통 의학에서는 발바닥에 신체의 여러 장기와 연결된 반사구가 있다고 보아, 발을 자극하여 건강을 증진시키는 족부반사요법이 발달했습니다.",
+        "pronunciation_guide": "한국어에서는 '족'으로 발음하며, 중국어에서는 'zú', 일본어에서는 'soku' 또는 'ashi'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 부분을 먼저 그리고, 아래쪽 부분을 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 위 부분을 위에서 아래로",
+            "중간 부분을 왼쪽에서 오른쪽으로",
+            "왼쪽 세로선을 위에서 아래로",
+            "아래쪽 왼쪽 가로선을 왼쪽에서 오른쪽으로",
+            "아래쪽 오른쪽 가로선을 왼쪽에서 오른쪽으로",
+            "가운데 세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "步",
+          "走",
+          "路",
+          "跑"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0011-5FC3",
+      "character": "心",
+      "unicode": "U+5FC3",
+      "meaning": "마음 심",
+      "pronunciation": "심",
+      "stroke_count": 4,
+      "radical": "心",
+      "grade": 15,
+      "order": 11,
+      "tags": [
+        "basic",
+        "emotion",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "마음, 마음속, 심장, 중심, 생각 등의 의미가 있습니다.",
+        "etymology": "사람의 심장 모양을 단순화한 상형문자입니다.",
+        "mnemonics": "위쪽에 점이 있고 아래쪽에 세 개의 획이 있는 모양을 상상해보세요. 이것이 '心(마음 심)'입니다. 심장의 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "中心",
+            "meaning": "중심",
+            "pronunciation": "중심",
+            "example_sentence": "도시의 中心에 공원이 있습니다.",
+            "example_meaning": "도시의 중심에 공원이 있습니다."
+          },
+          {
+            "word": "安心",
+            "meaning": "안심, 마음이 편함",
+            "pronunciation": "안심",
+            "example_sentence": "이제 安心하셔도 됩니다.",
+            "example_meaning": "이제 안심하셔도 됩니다."
+          },
+          {
+            "word": "關心",
+            "meaning": "관심",
+            "pronunciation": "관심",
+            "example_sentence": "그는 환경 문제에 많은 關心을 가지고 있습니다.",
+            "example_meaning": "그는 환경 문제에 많은 관심을 가지고 있습니다."
+          },
+          {
+            "word": "用心",
+            "meaning": "용심, 마음을 씀",
+            "pronunciation": "용심",
+            "example_sentence": "用心해서 일을 하세요.",
+            "example_meaning": "마음을 써서 일을 하세요."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 '심(心)'은 인간의 본성과 감정, 의지가 모두 담긴 중심적인 존재로 여겨졌습니다. 유교에서는 '수신(修身)'이라 하여 자신의 마음을 닦고 수양하는 것을 중요시했으며, 불교에서는 '심즉시불(心卽是佛)'이라 하여 마음이 곧 부처라고 가르쳤습니다. 또한 '심'은 많은 감정 관련 한자의 부수로 사용되며, 마음의 상태를 표현하는 다양한 단어를 만들어냅니다.",
+        "pronunciation_guide": "한국어에서는 '심'으로 발음하며, 중국어에서는 'xīn', 일본어에서는 'shin' 또는 'kokoro'로 발음합니다.",
+        "stroke_order": {
+          "description": "점을 찍고, 왼쪽 대각선, 가운데 세로선, 오른쪽 대각선 순으로 그립니다.",
+          "directions": [
+            "위쪽 점을 찍습니다",
+            "왼쪽 대각선을 위에서 아래로",
+            "가운데 세로선을 위에서 아래로",
+            "오른쪽 대각선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "情",
+          "性",
+          "思",
+          "忘"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0012-529B",
+      "character": "力",
+      "unicode": "U+529B",
+      "meaning": "힘 력",
+      "pronunciation": "력",
+      "stroke_count": 2,
+      "radical": "力",
+      "grade": 15,
+      "order": 12,
+      "tags": [
+        "basic",
+        "action",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "힘, 노력, 능력, 역량 등의 의미가 있습니다.",
+        "etymology": "땅을 갈거나 물건을 드는 데 힘을 쓰는 사람의 팔 모양을 단순화한 상형문자입니다.",
+        "mnemonics": "왼쪽으로 약간 기울어진 세로선과 오른쪽 아래로 뻗은 대각선의 모양을 상상해보세요. 이것이 '力(힘 력)'입니다. 힘을 쓰는 사람의 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "努力",
+            "meaning": "노력",
+            "pronunciation": "노력",
+            "example_sentence": "成功하려면 努力해야 합니다.",
+            "example_meaning": "성공하려면 노력해야 합니다."
+          },
+          {
+            "word": "能力",
+            "meaning": "능력",
+            "pronunciation": "능력",
+            "example_sentence": "그는 뛰어난 能力을 가지고 있습니다.",
+            "example_meaning": "그는 뛰어난 능력을 가지고 있습니다."
+          },
+          {
+            "word": "力量",
+            "meaning": "역량, 힘",
+            "pronunciation": "역량",
+            "example_sentence": "우리의 力量을 합쳐야 합니다.",
+            "example_meaning": "우리의 힘을 합쳐야 합니다."
+          },
+          {
+            "word": "協力",
+            "meaning": "협력, 힘을 합침",
+            "pronunciation": "협력",
+            "example_sentence": "두 나라가 協力하기로 했습니다.",
+            "example_meaning": "두 나라가 협력하기로 했습니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 '력(力)'은 물리적인 힘뿐만 아니라 정신적인 역량도 포함하는 개념입니다. '역지사지(易地思之)'라는 사자성어는 입장을 바꿔 생각해보는 정신적 노력을 의미합니다. 또한 '전심전력(全心全力)'이라는 표현은 마음과 힘을 다한다는 의미로, 최선을 다하는 자세를 강조합니다. 무술에서는 힘의 효율적인 사용을 중시하여 '사역여무역(使力如無力)'이라 하여 힘을 쓰되 힘을 쓰지 않는 것처럼 자연스럽게 사용하는 것을 이상적으로 여겼습니다.",
+        "pronunciation_guide": "한국어에서는 '력' 또는 '역'으로 발음하며, 중국어에서는 'lì', 일본어에서는 'ryoku' 또는 'chikara'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 세로선을 먼저 그리고, 오른쪽 대각선을 그립니다.",
+          "directions": [
+            "왼쪽 세로선을 위에서 아래로 약간 왼쪽으로 기울여서",
+            "오른쪽 대각선을 오른쪽 위에서 왼쪽 아래로"
+          ]
+        },
+        "related_characters": [
+          "勉",
+          "動",
+          "勞",
+          "勇"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0013-9580",
+      "character": "門",
+      "unicode": "U+9580",
+      "meaning": "문 문",
+      "pronunciation": "문",
+      "stroke_count": 8,
+      "radical": "門",
+      "grade": 15,
+      "order": 13,
+      "tags": [
+        "basic",
+        "structure",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "문, 입구, 출입구, 분야, 집안 등의 의미가 있습니다.",
+        "etymology": "두 짝으로 된 문의 모습을 단순화한 상형문자입니다.",
+        "mnemonics": "네모난 문 모양에 위쪽에 가로선이 있고 가운데 세로선이 있는 모양을 상상해보세요. 이것이 '門(문 문)'입니다. 두 짝으로 된 문의 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "門口",
+            "meaning": "문구, 문 입구",
+            "pronunciation": "문구",
+            "example_sentence": "그는 門口에서 기다리고 있습니다.",
+            "example_meaning": "그는 문 입구에서 기다리고 있습니다."
+          },
+          {
+            "word": "校門",
+            "meaning": "교문, 학교 정문",
+            "pronunciation": "교문",
+            "example_sentence": "학생들이 校門으로 들어갑니다.",
+            "example_meaning": "학생들이 교문으로 들어갑니다."
+          },
+          {
+            "word": "開門",
+            "meaning": "개문, 문을 열다",
+            "pronunciation": "개문",
+            "example_sentence": "아침 8시에 開門합니다.",
+            "example_meaning": "아침 8시에 문을 엽니다."
+          },
+          {
+            "word": "專門",
+            "meaning": "전문, 특정 분야",
+            "pronunciation": "전문",
+            "example_sentence": "그는 이 분야의 專門家입니다.",
+            "example_meaning": "그는 이 분야의 전문가입니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 문은 경계와 진입의 상징으로 중요한 의미를 가집니다. '문호를 개방하다'는 표현은 외부에 대해 열린 자세를 취한다는 의미로 사용되며, '문전박대(門前薄待)'는 문 앞에서 냉대하는 것을 의미하는 표현입니다. 풍수지리에서는 집의 문 방향이 운세에 영향을 미친다고 여겨 문의 위치와 방향을 중요시했습니다. 또한 '문파(門派)'라는 개념은 학문이나 무술의 특정 유파나 계통을 의미하며, 제자들이 스승의 '문하생(門下生)'으로 불리며 학문적 전통을 이어갔습니다.",
+        "pronunciation_guide": "한국어에서는 '문'으로 발음하며, 중국어에서는 'mén', 일본어에서는 'mon' 또는 'kado'로 발음합니다.",
+        "stroke_order": {
+          "description": "왼쪽 부분을 먼저 그리고, 오른쪽 부분을 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 세로선을 위에서 아래로",
+            "오른쪽 세로선을 위에서 아래로",
+            "중앙 세로선을 위에서 아래로",
+            "왼쪽 아래 가로선을 왼쪽에서 오른쪽으로",
+            "오른쪽 아래 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 중간 점을 찍습니다",
+            "오른쪽 중간 점을 찍습니다"
+          ]
+        },
+        "related_characters": [
+          "開",
+          "閉",
+          "間",
+          "問"
+        ]
+      }
+    },
+    {
+      "id": "HJ-14-0011-6728",
+      "character": "木",
+      "unicode": "U+6728",
+      "meaning": "나무 목",
+      "pronunciation": "목",
+      "stroke_count": 4,
+      "radical": "木",
+      "grade": 14,
+      "order": 11,
+      "tags": [
+        "basic",
+        "nature",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "나무, 목재, 목질의, 나무로 만든 등의 의미가 있습니다.",
+        "etymology": "나무의 형태를 단순화한 상형문자입니다. 위쪽의 가로선은 나뭇가지를, 아래쪽의 세로선은 나무 줄기를 나타냅니다.",
+        "mnemonics": "위쪽에 가지가 있고 아래쪽에 줄기가 있는 나무 모양을 상상해보세요. 이것이 '木(나무 목)'입니다.",
+        "common_words": [
+          {
+            "word": "木材",
+            "meaning": "목재",
+            "pronunciation": "목재",
+            "example_sentence": "이 가구는 단단한 木材로 만들었습니다.",
+            "example_meaning": "이 가구는 단단한 목재로 만들어졌습니다."
+          },
+          {
+            "word": "木星",
+            "meaning": "목성",
+            "pronunciation": "목성",
+            "example_sentence": "木星은 태양계에서 가장 큰 행성입니다.",
+            "example_meaning": "목성은 태양계에서 가장 큰 행성입니다."
+          },
+          {
+            "word": "樹木",
+            "meaning": "수목, 나무",
+            "pronunciation": "수목",
+            "example_sentence": "공원에는 다양한 樹木이 있습니다.",
+            "example_meaning": "공원에는 다양한 나무가 있습니다."
+          },
+          {
+            "word": "木曜日",
+            "meaning": "목요일",
+            "pronunciation": "목요일",
+            "example_sentence": "회의는 木曜日에 열립니다.",
+            "example_meaning": "회의는 목요일에 열립니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 '목(木)'은 오행(五行) 중 하나로, 생명력과 성장, 봄을 상징합니다. 목성(木性)은 인자하고 자애로운 성질을 의미하며, 방위로는 동쪽, 계절로는 봄, 색깔로는 청색을 대표합니다. 전통 예술에서는 나무를 소재로 한 목각, 목공예가 발달했으며, 특히 소나무, 대나무, 매화나무(松竹梅)는 세한삼우(歲寒三友)라 하여 추운 겨울에도 굴하지 않는 강인한 정신의 상징으로 그림과 시에 자주 등장합니다.",
+        "pronunciation_guide": "한국어에서는 '목'으로 발음하며, 중국어에서는 'mù', 일본어에서는 'moku' 또는 'ki'로 발음합니다.",
+        "stroke_order": {
+          "description": "세로선, 왼쪽 대각선, 오른쪽 대각선, 가로선 순으로 그립니다.",
+          "directions": [
+            "세로선을 위에서 아래로",
+            "왼쪽 대각선을 위에서 아래로",
+            "오른쪽 대각선을 위에서 아래로",
+            "가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "林",
+          "森",
+          "樹",
+          "材"
+        ]
+      }
+    },
+    {
+      "id": "HJ-14-0012-706B",
+      "character": "火",
+      "unicode": "U+706B",
+      "meaning": "불 화",
+      "pronunciation": "화",
+      "stroke_count": 4,
+      "radical": "火",
+      "grade": 14,
+      "order": 12,
+      "tags": [
+        "basic",
+        "nature",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "불, 화재, 불꽃, 열정, 분노 등의 의미가 있습니다.",
+        "etymology": "불꽃이 타오르는 모습을 단순화한 상형문자입니다. 가운데 세로선은 불꽃의 중심이고, 좌우로 뻗은 획은 불꽃이 흔들리는 모습을 나타냅니다.",
+        "mnemonics": "중앙에서 위로 뻗은 세로선과 그 주변의 불꽃 모양을 상상해보세요. 이것이 '火(불 화)'입니다.",
+        "common_words": [
+          {
+            "word": "火災",
+            "meaning": "화재",
+            "pronunciation": "화재",
+            "example_sentence": "火災 예방이 중요합니다.",
+            "example_meaning": "화재 예방이 중요합니다."
+          },
+          {
+            "word": "火山",
+            "meaning": "화산",
+            "pronunciation": "화산",
+            "example_sentence": "火山이 폭발했습니다.",
+            "example_meaning": "화산이 폭발했습니다."
+          },
+          {
+            "word": "火曜日",
+            "meaning": "화요일",
+            "pronunciation": "화요일",
+            "example_sentence": "회의는 火曜日에 열립니다.",
+            "example_meaning": "회의는 화요일에 열립니다."
+          },
+          {
+            "word": "火力",
+            "meaning": "화력",
+            "pronunciation": "화력",
+            "example_sentence": "발전소의 火力이 강합니다.",
+            "example_meaning": "발전소의 화력이 강합니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 '화(火)'는 오행(五行) 중 하나로, 열정과 에너지, 여름을 상징합니다. 화성(火性)은 열정적이고 활발한 성질을 의미하며, 방위로는 남쪽, 계절로는 여름, 색깔로는 적색을 대표합니다. 불은 문명의 시작이자 정화의 상징으로 여겨져, 많은 제례와 의식에서 중요한 역할을 합니다. 한편으로는 불의 파괴적인 측면 때문에 '호랑이에게 날개를 달아준다(如虎添翼)'와 같은 관용구에서 위험을 더하는 요소로 표현되기도 합니다.",
+        "pronunciation_guide": "한국어에서는 '화'로 발음하며, 중국어에서는 'huǒ', 일본어에서는 'ka' 또는 'hi'로 발음합니다.",
+        "stroke_order": {
+          "description": "점, 왼쪽 대각선, 오른쪽 대각선, 세로선 순으로 그립니다.",
+          "directions": [
+            "중앙 위 점을 찍습니다",
+            "왼쪽 대각선을 위에서 아래로",
+            "오른쪽 대각선을 위에서 아래로",
+            "세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "炎",
+          "熱",
+          "燈",
+          "煙"
+        ]
+      }
+    },
+    {
+      "id": "HJ-14-0013-6C34",
+      "character": "水",
+      "unicode": "U+6C34",
+      "meaning": "물 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "水",
+      "grade": 14,
+      "order": 13,
+      "tags": [
+        "basic",
+        "nature",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "물, 액체, 수분, 유동적인 등의 의미가 있습니다.",
+        "etymology": "물이 흐르는 모습을 단순화한 상형문자입니다. 가운데 세로선은 물줄기를 나타내고, 좌우로 뻗은 획은 물이 흘러내리는 모습을 표현합니다.",
+        "mnemonics": "중앙에서 물이 흘러내리는 모양을 상상해보세요. 이것이 '水(물 수)'입니다.",
+        "common_words": [
+          {
+            "word": "水曜日",
+            "meaning": "수요일",
+            "pronunciation": "수요일",
+            "example_sentence": "회의는 水曜日에 열립니다.",
+            "example_meaning": "회의는 수요일에 열립니다."
+          },
+          {
+            "word": "水泳",
+            "meaning": "수영",
+            "pronunciation": "수영",
+            "example_sentence": "그는 水泳을 잘합니다.",
+            "example_meaning": "그는 수영을 잘합니다."
+          },
+          {
+            "word": "水準",
+            "meaning": "수준, 물의 높이",
+            "pronunciation": "수준",
+            "example_sentence": "그의 기술 水準은 높습니다.",
+            "example_meaning": "그의 기술 수준은 높습니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 '수(水)'는 오행(五行) 중 하나로, 적응력과 순응, 겨울을 상징합니다. 수성(水性)은 부드럽고 순응하는 성질을 의미하며, 방위로는 북쪽, 계절로는 겨울, 색깔로는 흑색을 대표합니다. 물은 '유수부쟁선(流水不爭先)'이라 하여 흐르는 물은 앞서려고 다투지 않는다는 말처럼 겸양과 낮은 자세의 상징으로 여겨졌습니다. 또한 물은 생명의 근원이자 정화의 상징으로, 많은 문화에서 정화의식에 사용되었습니다.",
+        "pronunciation_guide": "한국어에서는 '수'로 발음하며, 중국어에서는 'shuǐ', 일본어에서는 'sui' 또는 'mizu'로 발음합니다.",
+        "stroke_order": {
+          "description": "가운데 점, 왼쪽 대각선, 오른쪽 대각선, 세로선 순으로 그립니다.",
+          "directions": [
+            "중앙 위 점을 찍습니다",
+            "왼쪽 대각선을 위에서 아래로",
+            "오른쪽 대각선을 위에서 아래로",
+            "세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "河",
+          "湖",
+          "海",
+          "流"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0014-7530",
+      "character": "田",
+      "unicode": "U+7530",
+      "meaning": "밭 전",
+      "pronunciation": "전",
+      "stroke_count": 5,
+      "radical": "田",
+      "grade": 15,
+      "order": 14,
+      "tags": [
+        "basic",
+        "nature",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "밭, 논, 경작지, 전답 등의 의미가 있습니다.",
+        "etymology": "밭을 네모난 구획으로 나눈 모습을 단순화한 상형문자입니다.",
+        "mnemonics": "네모난 틀 안에 십자 모양이 있는 형태를 상상해보세요. 이것이 '田(밭 전)'입니다. 구획이 나누어진 논밭의 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "田園",
+            "meaning": "전원, 시골",
+            "pronunciation": "전원",
+            "example_sentence": "그는 田園에서 살고 싶어합니다.",
+            "example_meaning": "그는 시골에서 살고 싶어합니다."
+          },
+          {
+            "word": "水田",
+            "meaning": "수전, 논",
+            "pronunciation": "수전",
+            "example_sentence": "저기 水田에서 농부가 일하고 있습니다.",
+            "example_meaning": "저기 논에서 농부가 일하고 있습니다."
+          },
+          {
+            "word": "農田",
+            "meaning": "농전, 농사짓는 땅",
+            "pronunciation": "농전",
+            "example_sentence": "이 지역에는 農田이 많습니다.",
+            "example_meaning": "이 지역에는 농사짓는 땅이 많습니다."
+          },
+          {
+            "word": "田字",
+            "meaning": "전자, '田' 자 모양",
+            "pronunciation": "전자",
+            "example_sentence": "이것은 田字 모양입니다.",
+            "example_meaning": "이것은 '전' 자 모양입니다."
+          }
+        ],
+        "cultural_notes": "동양 농경 문화에서 '전(田)'은 생계와 부의 기본 원천으로 중요시되었습니다. '경전(耕田)'이라 하여 밭을 가는 일은 농부의 기본 생업이었으며, 전통 사회에서는 농사법과 관련된 다양한 지식과 의례가 발달했습니다. '전답(田畓)'이라는 말은 밭과 논을 아울러 이르는 말로, 농경지 전체를 의미합니다. 또한 중국 전통 사회에서는 '정전제(井田制)'라는 토지 분배 체계가 있었는데, 이는 '田' 자 모양으로 토지를 9등분하여 8가구가 변두리 땅을 경작하고 가운데 땅은 공동으로 경작하여 세금으로 내는 제도였습니다.",
+        "pronunciation_guide": "한국어에서는 '전'으로 발음하며, 중국어에서는 'tián', 일본어에서는 'den' 또는 'ta'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 가로선, 왼쪽 세로선, 오른쪽 세로선, 가운데 가로선, 가운데 세로선 순으로 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 세로선을 위에서 아래로",
+            "오른쪽 세로선을 위에서 아래로",
+            "가운데 가로선을 왼쪽에서 오른쪽으로",
+            "가운데 세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "農",
+          "耕",
+          "地",
+          "畓"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0015-8ECA",
+      "character": "車",
+      "unicode": "U+8ECA",
+      "meaning": "수레 차",
+      "pronunciation": "차",
+      "stroke_count": 7,
+      "radical": "車",
+      "grade": 15,
+      "order": 15,
+      "tags": [
+        "basic",
+        "transport",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "수레, 차, 자동차, 탈것 등의 의미가 있습니다.",
+        "etymology": "수레바퀴와 수레 몸체를 나타내는 상형문자입니다.",
+        "mnemonics": "네모난 틀 안에 십자 모양이 있고 아래에 가로선이 있는 형태를 상상해보세요. 이것이 '車(수레 차)'입니다. 바퀴가 달린 수레의 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "自動車",
+            "meaning": "자동차",
+            "pronunciation": "자동차",
+            "example_sentence": "그는 새 自動車를 샀습니다.",
+            "example_meaning": "그는 새 자동차를 샀습니다."
+          },
+          {
+            "word": "電車",
+            "meaning": "전차, 전철",
+            "pronunciation": "전차",
+            "example_sentence": "電車가 곧 도착합니다.",
+            "example_meaning": "전차가 곧 도착합니다."
+          },
+          {
+            "word": "車輪",
+            "meaning": "차륜, 바퀴",
+            "pronunciation": "차륜",
+            "example_sentence": "車輪이 회전합니다.",
+            "example_meaning": "바퀴가 회전합니다."
+          },
+          {
+            "word": "汽車",
+            "meaning": "기차",
+            "pronunciation": "기차",
+            "example_sentence": "汽車가 역에 들어옵니다.",
+            "example_meaning": "기차가 역에 들어옵니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '차(車)'는 운송 수단의 발전과 문명의 진보를 상징합니다. 초기의 수레는 전쟁과 교역에 중요한 역할을 했으며, '거마(車馬)'라는 말은 수레와 말을 아울러 이르는 말로, 교통수단 전체를 의미했습니다. 중국 고대 사회에서는 '오등거(五等車)'라는 신분에 따른 수레 제도가 있어서, 귀족과 평민의 신분 차이를 나타냈습니다. 또한 '차전(車戰)'이라 하여 수레를 이용한 전투 방식이 발달했습니다. 현대에 와서는 자동차가 편리함과 지위의 상징이 되었으며, '차문화(車文化)'라는 말이 생길 정도로 생활 방식에 큰 영향을 주고 있습니다.",
+        "pronunciation_guide": "한국어에서는 '차'로 발음하며, 중국어에서는 'chē', 일본어에서는 'sha' 또는 'kuruma'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 가로선, 왼쪽 세로선, 오른쪽 세로선, 가운데 가로선, 가운데 세로선, 아래쪽 가로선, 가운데 점 순으로 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 세로선을 위에서 아래로",
+            "오른쪽 세로선을 위에서 아래로",
+            "가운데 가로선을 왼쪽에서 오른쪽으로",
+            "가운데 세로선을 위에서 아래로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로",
+            "가운데 아래 점을 찍습니다"
+          ]
+        },
+        "related_characters": [
+          "輪",
+          "軒",
+          "轉",
+          "運"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0016-96E8",
+      "character": "雨",
+      "unicode": "U+96E8",
+      "meaning": "비 우",
+      "pronunciation": "우",
+      "stroke_count": 8,
+      "radical": "雨",
+      "grade": 15,
+      "order": 16,
+      "tags": [
+        "basic",
+        "nature",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "비, 강우, 비가 내리다 등의 의미가 있습니다.",
+        "etymology": "하늘에서 떨어지는 비를 나타내는 상형문자입니다. 위쪽의 가로선은 하늘을, 점들은 떨어지는 비를 표현합니다.",
+        "mnemonics": "위쪽에 지붕 모양과 그 아래에 여러 개의 점이 있는 형태를 상상해보세요. 이것이 '雨(비 우)'입니다. 하늘에서 빗방울이 떨어지는 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "雨水",
+            "meaning": "우수, 빗물",
+            "pronunciation": "우수",
+            "example_sentence": "雨水가 지붕에서 떨어집니다.",
+            "example_meaning": "빗물이 지붕에서 떨어집니다."
+          },
+          {
+            "word": "大雨",
+            "meaning": "대우, 큰비",
+            "pronunciation": "대우",
+            "example_sentence": "오늘은 大雨가 내립니다.",
+            "example_meaning": "오늘은 큰비가 내립니다."
+          },
+          {
+            "word": "雨季",
+            "meaning": "우기, 장마철",
+            "pronunciation": "우기",
+            "example_sentence": "雨季에는 비가 많이 내립니다.",
+            "example_meaning": "장마철에는 비가 많이 내립니다."
+          },
+          {
+            "word": "暴雨",
+            "meaning": "폭우, 호우",
+            "pronunciation": "폭우",
+            "example_sentence": "暴雨로 인해 도로가 침수되었습니다.",
+            "example_meaning": "폭우로 인해 도로가 침수되었습니다."
+          }
+        ],
+        "cultural_notes": "동양 문화에서 '우(雨)'는 자연의 순환과 농경 생활에 밀접한 관련이 있습니다. 비는 생명을 키우는 귀중한 물의 공급원으로 여겨졌습니다. '기우제(祈雨祭)'라는 의식은 가뭄이 들었을 때 비를 내려달라고 기원하는 제사였으며, '만년대풍(萬年大豊)'이라는 말은 해마다 풍년이 드는 것을 기원하는 말로, 적절한 비를 통한 농작물의 풍작을 의미했습니다. 한편으로는 '폭풍우(暴風雨)'와 같은 심한 비는 재해의 원인이기도 했습니다. 또한 동양 시와 그림에서 비는 자주 감정과 분위기를 표현하는 도구로 사용되어, 이별, 슬픔, 그리움 등의 감정을 나타내기도 했습니다.",
+        "pronunciation_guide": "한국어에서는 '우'로 발음하며, 중국어에서는 'yǔ', 일본어에서는 'u' 또는 'ame'로 발음합니다.",
+        "stroke_order": {
+          "description": "위쪽 가로선, 왼쪽 세로선, 오른쪽 세로선, 중간 가로선, 네 개의 점 순으로 그립니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 세로선을 위에서 아래로",
+            "오른쪽 세로선을 위에서 아래로",
+            "중간 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 위 점을 찍습니다",
+            "오른쪽 위 점을 찍습니다",
+            "왼쪽 아래 점을 찍습니다",
+            "오른쪽 아래 점을 찍습니다"
+          ]
+        },
+        "related_characters": [
+          "雲",
+          "雷",
+          "雪",
+          "霜"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0017-91D1",
+      "character": "金",
+      "unicode": "U+91D1",
+      "meaning": "쇠 금",
+      "pronunciation": "금",
+      "stroke_count": 8,
+      "radical": "金",
+      "grade": 15,
+      "order": 17,
+      "tags": [
+        "basic",
+        "material",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "금, 금속, 쇠, 돈, 광석 등의 의미가 있습니다.",
+        "etymology": "땅 속에서 캐낸 금속 광석을 나타내는 상형문자입니다.",
+        "mnemonics": "위쪽에 지붕 모양과 가운데 십자 모양, 그리고 왼쪽과 오른쪽에 세로선이 있는 형태를 상상해보세요. 이것이 '金(쇠 금)'입니다. 땅에서 캐낸 광석의 모습을 표현합니다.",
+        "common_words": [
+          {
+            "word": "金屬",
+            "meaning": "금속",
+            "pronunciation": "금속",
+            "example_sentence": "이 물건은 金屬으로 만들어졌습니다.",
+            "example_meaning": "이 물건은 금속으로 만들어졌습니다."
+          },
+          {
+            "word": "黃金",
+            "meaning": "황금",
+            "pronunciation": "황금",
+            "example_sentence": "그는 黃金을 발견했습니다.",
+            "example_meaning": "그는 황금을 발견했습니다."
+          },
+          {
+            "word": "金曜日",
+            "meaning": "금요일",
+            "pronunciation": "금요일",
+            "example_sentence": "금요일은 金曜日이라고 합니다.",
+            "example_meaning": "금요일은 금요일이라고 합니다."
+          },
+          {
+            "word": "現金",
+            "meaning": "현금",
+            "pronunciation": "현금",
+            "example_sentence": "現金으로 지불하시겠습니까?",
+            "example_meaning": "현금으로 지불하시겠습니까?"
+          }
+        ],
+        "cultural_notes": "동양 철학에서 '금(金)'은 오행(五行) 중 하나로, 견고함과 결단력, 가을을 상징합니다. 금성(金性)은 단단하고 강인한 성질을 의미하며, 방위로는 서쪽, 계절로는 가을, 색깔로는 백색을 대표합니다. 금은 귀중함과 부의 상징으로 여겨져 '금과옥조(金科玉條)'라는 말은 절대 어길 수 없는 법이나 규칙을 의미합니다. 또한 '점금석(點金石)'이라는 표현은 모든 것을 황금으로 바꾸는 마법의 돌을 의미하며, 어떤 일을 크게 발전시키는 중요한 계기를 비유하기도 합니다. 공예에서는 금속 공예가 발달하여 다양한 장신구와 예술품이 만들어졌습니다.",
+        "pronunciation_guide": "한국어에서는 '금'으로 발음하며, 중국어에서는 'jīn', 일본어에서는 'kin' 또는 'kane'로 발음합니다.",
+        "stroke_order": {
+          "description": "좌우 대칭으로 그리되, 왼쪽에서 오른쪽, 위에서 아래로 진행합니다.",
+          "directions": [
+            "위쪽 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 바깥 세로선을 위에서 아래로",
+            "오른쪽 바깥 세로선을 위에서 아래로",
+            "가운데 세로선을 위에서 아래로",
+            "가운데 가로선을 왼쪽에서 오른쪽으로",
+            "왼쪽 안쪽 세로선을 위에서 아래로",
+            "오른쪽 안쪽 세로선을 위에서 아래로",
+            "아래쪽 가로선을 왼쪽에서 오른쪽으로"
+          ]
+        },
+        "related_characters": [
+          "銀",
+          "鐵",
+          "銅",
+          "鑛"
+        ]
+      }
+    },
+    {
+      "id": "HJ-15-0018-6C34",
+      "character": "水",
+      "unicode": "U+6C34",
+      "meaning": "물 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "水",
+      "grade": 15,
+      "order": 18,
+      "tags": [
+        "basic",
+        "nature",
+        "beginner"
+      ],
+      "extended_data": {
+        "detailed_meaning": "물, 액체, 수분, 유동적인 등의 의미가 있습니다.",
+        "etymology": "물이 흐르는 모습을 단순화한 상형문자입니다. 가운데 세로선은 물줄기를 나타내고, 좌우로 뻗은 획은 물이 흘러내리는 모습을 표현합니다.",
+        "mnemonics": "중앙에서 물이 흘러내리는 모양을 상상해보세요. 이것이 '水(물 수)'입니다.",
+        "common_words": [
+          {
+            "word": "水曜日",
+            "meaning": "수요일",
+            "pronunciation": "수요일",
+            "example_sentence": "회의는 水曜日에 열립니다.",
+            "example_meaning": "회의는 수요일에 열립니다."
+          },
+          {
+            "word": "水泳",
+            "meaning": "수영",
+            "pronunciation": "수영",
+            "example_sentence": "그는 水泳을 잘합니다.",
+            "example_meaning": "그는 수영을 잘합니다."
+          },
+          {
+            "word": "水準",
+            "meaning": "수준, 물의 높이",
+            "pronunciation": "수준",
+            "example_sentence": "그의 기술 水準은 높습니다.",
+            "example_meaning": "그의 기술 수준은 높습니다."
+          },
+          {
+            "word": "海水",
+            "meaning": "해수, 바닷물",
+            "pronunciation": "해수",
+            "example_sentence": "海水는 짠맛이 납니다.",
+            "example_meaning": "바닷물은 짠맛이 납니다."
+          }
+        ],
+        "cultural_notes": "동양 철학에서 '수(水)'는 오행(五行) 중 하나로, 적응력과 순응, 겨울을 상징합니다. 수성(水性)은 부드럽고 순응하는 성질을 의미하며, 방위로는 북쪽, 계절로는 겨울, 색깔로는 흑색을 대표합니다. 물은 '유수부쟁선(流水不爭先)'이라 하여 흐르는 물은 앞서려고 다투지 않는다는 말처럼 겸양과 낮은 자세의 상징으로 여겨졌습니다. 또한 물은 생명의 근원이자 정화의 상징으로, 많은 문화에서 정화의식에 사용되었습니다.",
+        "pronunciation_guide": "한국어에서는 '수'로 발음하며, 중국어에서는 'shuǐ', 일본어에서는 'sui' 또는 'mizu'로 발음합니다.",
+        "stroke_order": {
+          "description": "가운데 점, 왼쪽 대각선, 오른쪽 대각선, 세로선 순으로 그립니다.",
+          "directions": [
+            "중앙 위 점을 찍습니다",
+            "왼쪽 대각선을 위에서 아래로",
+            "오른쪽 대각선을 위에서 아래로",
+            "세로선을 위에서 아래로"
+          ]
+        },
+        "related_characters": [
+          "河",
+          "湖",
+          "海",
+          "流"
+        ]
+      }
+    }
+  ]
+}

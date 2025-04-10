@@ -1,0 +1,55 @@
+{
+  "id": "beginner",
+  "name": "초급",
+  "description": "한자 학습 입문 단계",
+  "grades": [
+    15,
+    14,
+    13,
+    12,
+    11,
+    10
+  ],
+  "grade_details": [
+    {
+      "grade": 15,
+      "name": "15급",
+      "character_count": 55,
+      "description": "초급 15급 한자"
+    },
+    {
+      "grade": 14,
+      "name": "14급",
+      "character_count": 56,
+      "description": "초급 14급 한자"
+    },
+    {
+      "grade": 13,
+      "name": "13급",
+      "character_count": 58,
+      "description": "초급 13급 한자"
+    },
+    {
+      "grade": 12,
+      "name": "12급",
+      "character_count": 55,
+      "description": "초급 12급 한자"
+    },
+    {
+      "grade": 11,
+      "name": "11급",
+      "character_count": 105,
+      "description": "초급 11급 한자"
+    },
+    {
+      "grade": 10,
+      "name": "10급",
+      "character_count": 105,
+      "description": "초급 10급 한자"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-04-10T14:30:01.568Z"
+  }
+}

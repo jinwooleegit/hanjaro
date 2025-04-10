@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2023-10-25T12:34:56Z",
+    "total_radicals": 5
+  },
+  "radicals": [
+    {
+      "radical": "一",
+      "meaning": "한 일",
+      "stroke_count": 1,
+      "character_ids": ["HJ-15-0001-4E00", "HJ-15-0003-4E09"]
+    },
+    {
+      "radical": "人",
+      "meaning": "사람 인",
+      "stroke_count": 2,
+      "character_ids": ["HJ-15-0017-4EBA"]
+    },
+    {
+      "radical": "山",
+      "meaning": "뫼 산",
+      "stroke_count": 3,
+      "character_ids": ["HJ-15-0019-5C71"]
+    },
+    {
+      "radical": "水",
+      "meaning": "물 수",
+      "stroke_count": 4,
+      "character_ids": ["HJ-15-0020-6C34"]
+    },
+    {
+      "radical": "囗",
+      "meaning": "큰 입구 구",
+      "stroke_count": 3,
+      "character_ids": ["HJ-15-0004-56DB"]
+    }
+  ]
+} 

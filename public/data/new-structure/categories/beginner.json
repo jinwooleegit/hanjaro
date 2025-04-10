@@ -1,0 +1,14 @@
+{
+  "id": "beginner",
+  "name": "초급 한자",
+  "description": "초급 수준의 한자 학습자를 위한 기본 한자 모음",
+  "grades": [15],
+  "grade_details": [
+    {
+      "grade": 15,
+      "name": "초급",
+      "character_count": 8,
+      "description": "가장 기초적인 한자 모음"
+    }
+  ]
+} 

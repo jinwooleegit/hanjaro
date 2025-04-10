@@ -1,0 +1,2553 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-04-10T14:30:01.534Z",
+    "grade": 15,
+    "total_characters": 55
+  },
+  "characters": [
+    {
+      "id": "HJ-15-0001-4E00",
+      "character": "一",
+      "unicode": "4E00",
+      "meaning": "한 일",
+      "pronunciation": "일",
+      "stroke_count": 1,
+      "radical": "一",
+      "grade": 15,
+      "order": 1,
+      "tags": [
+        "radical:一",
+        "strokes:1"
+      ],
+      "extended_data": {
+        "detailed_meaning": "한 일",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "一日",
+            "meaning": "하루",
+            "pronunciation": "일일"
+          },
+          {
+            "word": "一年",
+            "meaning": "일 년",
+            "pronunciation": "일년"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 5 50 L 95 50"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0002-4E8C",
+      "character": "二",
+      "unicode": "4E8C",
+      "meaning": "두 이",
+      "pronunciation": "이",
+      "stroke_count": 2,
+      "radical": "二",
+      "grade": 15,
+      "order": 2,
+      "tags": [
+        "radical:二",
+        "strokes:2"
+      ],
+      "extended_data": {
+        "detailed_meaning": "두 이",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "二月",
+            "meaning": "이월",
+            "pronunciation": "이월"
+          },
+          {
+            "word": "二十",
+            "meaning": "스물",
+            "pronunciation": "이십"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 5 33 L 95 33",
+            "M 5 66 L 95 66"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0003-4E09",
+      "character": "三",
+      "unicode": "4E09",
+      "meaning": "석 삼",
+      "pronunciation": "삼",
+      "stroke_count": 3,
+      "radical": "一",
+      "grade": 15,
+      "order": 3,
+      "tags": [
+        "radical:一",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "석 삼",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "三月",
+            "meaning": "삼월",
+            "pronunciation": "삼월"
+          },
+          {
+            "word": "三角",
+            "meaning": "삼각형",
+            "pronunciation": "삼각"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 5 25 L 95 25",
+            "M 5 50 L 95 50",
+            "M 5 75 L 95 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0004-4EBA",
+      "character": "人",
+      "unicode": "4EBA",
+      "meaning": "사람 인",
+      "pronunciation": "인",
+      "stroke_count": 2,
+      "radical": "人",
+      "grade": 15,
+      "order": 4,
+      "tags": [
+        "radical:人",
+        "strokes:2"
+      ],
+      "extended_data": {
+        "detailed_meaning": "사람 인",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "人間",
+            "meaning": "인간",
+            "pronunciation": "인간"
+          },
+          {
+            "word": "人口",
+            "meaning": "인구",
+            "pronunciation": "인구"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 40 15 L 5 75",
+            "M 40 15 L 95 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0005-5927",
+      "character": "大",
+      "unicode": "5927",
+      "meaning": "큰 대",
+      "pronunciation": "대",
+      "stroke_count": 3,
+      "radical": "大",
+      "grade": 15,
+      "order": 5,
+      "tags": [
+        "radical:大",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "큰 대",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "大學",
+            "meaning": "대학",
+            "pronunciation": "대학"
+          },
+          {
+            "word": "大韓",
+            "meaning": "대한",
+            "pronunciation": "대한"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 50 15 L 10 80",
+            "M 50 15 L 90 80",
+            "M 15 40 L 85 40"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0001-4E00",
+      "character": "一",
+      "unicode": "4E00",
+      "meaning": "한 일",
+      "pronunciation": "일",
+      "stroke_count": 1,
+      "radical": "一",
+      "grade": 15,
+      "order": 1,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:一",
+        "strokes:1"
+      ],
+      "extended_data": {
+        "detailed_meaning": "한 일",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "一日",
+            "meaning": "하루",
+            "pronunciation": "일일"
+          },
+          {
+            "word": "一年",
+            "meaning": "일 년",
+            "pronunciation": "일년"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 5 50 L 95 50"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0002-4E8C",
+      "character": "二",
+      "unicode": "4E8C",
+      "meaning": "두 이",
+      "pronunciation": "이",
+      "stroke_count": 2,
+      "radical": "二",
+      "grade": 15,
+      "order": 2,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:二",
+        "strokes:2"
+      ],
+      "extended_data": {
+        "detailed_meaning": "두 이",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "二月",
+            "meaning": "이월",
+            "pronunciation": "이월"
+          },
+          {
+            "word": "二十",
+            "meaning": "스물",
+            "pronunciation": "이십"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 5 33 L 95 33",
+            "M 5 66 L 95 66"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0003-4E09",
+      "character": "三",
+      "unicode": "4E09",
+      "meaning": "석 삼",
+      "pronunciation": "삼",
+      "stroke_count": 3,
+      "radical": "一",
+      "grade": 15,
+      "order": 3,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:一",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "석 삼",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "三月",
+            "meaning": "삼월",
+            "pronunciation": "삼월"
+          },
+          {
+            "word": "三角",
+            "meaning": "삼각형",
+            "pronunciation": "삼각"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 5 25 L 95 25",
+            "M 5 50 L 95 50",
+            "M 5 75 L 95 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0004-4EBA",
+      "character": "人",
+      "unicode": "4EBA",
+      "meaning": "사람 인",
+      "pronunciation": "인",
+      "stroke_count": 2,
+      "radical": "人",
+      "grade": 15,
+      "order": 4,
+      "tags": [
+        "meaning:human",
+        "difficulty:beginner",
+        "radical:person",
+        "usage:common",
+        "education:elementary",
+        "radical:人",
+        "strokes:2"
+      ],
+      "extended_data": {
+        "detailed_meaning": "사람 인",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "人間",
+            "meaning": "인간",
+            "pronunciation": "인간"
+          },
+          {
+            "word": "人口",
+            "meaning": "인구",
+            "pronunciation": "인구"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 40 15 L 5 75",
+            "M 40 15 L 95 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0005-5927",
+      "character": "大",
+      "unicode": "5927",
+      "meaning": "큰 대",
+      "pronunciation": "대",
+      "stroke_count": 3,
+      "radical": "大",
+      "grade": 15,
+      "order": 5,
+      "tags": [
+        "meaning:attribute",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:大",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "큰 대",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "大學",
+            "meaning": "대학",
+            "pronunciation": "대학"
+          },
+          {
+            "word": "大韓",
+            "meaning": "대한",
+            "pronunciation": "대한"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 50 15 L 10 80",
+            "M 50 15 L 90 80",
+            "M 15 40 L 85 40"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0006-5C71",
+      "character": "山",
+      "unicode": "5C71",
+      "meaning": "뫼 산",
+      "pronunciation": "산",
+      "stroke_count": 3,
+      "radical": "山",
+      "grade": 15,
+      "order": 6,
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:山",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "뫼 산",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "山水",
+            "meaning": "산과 물",
+            "pronunciation": "산수"
+          },
+          {
+            "word": "登山",
+            "meaning": "등산",
+            "pronunciation": "등산"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 15 75 L 35 25",
+            "M 35 25 L 50 50",
+            "M 50 50 L 65 25",
+            "M 65 25 L 85 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0007-6C34",
+      "character": "水",
+      "unicode": "6C34",
+      "meaning": "물 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "水",
+      "grade": 15,
+      "order": 7,
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "radical:water",
+        "usage:common",
+        "education:elementary",
+        "radical:水",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "물 수",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "水泳",
+            "meaning": "수영",
+            "pronunciation": "수영"
+          },
+          {
+            "word": "水曜日",
+            "meaning": "수요일",
+            "pronunciation": "수요일"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 35 10 L 35 80",
+            "M 35 10 L 10 30",
+            "M 35 10 L 65 30",
+            "M 10 50 L 35 70",
+            "M 60 50 L 35 70"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0008-6728",
+      "character": "木",
+      "unicode": "6728",
+      "meaning": "나무 목",
+      "pronunciation": "목",
+      "stroke_count": 4,
+      "radical": "木",
+      "grade": 15,
+      "order": 8,
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "radical:tree",
+        "usage:common",
+        "education:elementary",
+        "radical:木",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "나무 목",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "木曜日",
+            "meaning": "목요일",
+            "pronunciation": "목요일"
+          },
+          {
+            "word": "木材",
+            "meaning": "목재",
+            "pronunciation": "목재"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 50 10 L 50 90",
+            "M 15 40 L 85 40",
+            "M 20 10 L 50 40",
+            "M 80 10 L 50 40"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0009-65E5",
+      "character": "日",
+      "unicode": "65E5",
+      "meaning": "날 일",
+      "pronunciation": "일",
+      "stroke_count": 4,
+      "radical": "日",
+      "grade": 15,
+      "order": 9,
+      "tags": [
+        "meaning:time",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:日",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "날 일",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "日本",
+            "meaning": "일본",
+            "pronunciation": "일본"
+          },
+          {
+            "word": "日曜日",
+            "meaning": "일요일",
+            "pronunciation": "일요일"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 15 L 75 15",
+            "M 25 15 L 25 85",
+            "M 25 85 L 75 85",
+            "M 75 15 L 75 85",
+            "M 25 50 L 75 50"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0010-6708",
+      "character": "月",
+      "unicode": "6708",
+      "meaning": "달 월",
+      "pronunciation": "월",
+      "stroke_count": 4,
+      "radical": "月",
+      "grade": 15,
+      "order": 10,
+      "tags": [
+        "meaning:time",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:月",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "달 월",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "月曜日",
+            "meaning": "월요일",
+            "pronunciation": "월요일"
+          },
+          {
+            "word": "一月",
+            "meaning": "1월",
+            "pronunciation": "일월"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 15 L 75 15",
+            "M 25 15 L 25 85",
+            "M 25 85 L 75 85",
+            "M 75 15 L 75 85",
+            "M 40 40 L 60 40",
+            "M 40 65 L 60 65"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0011-706B",
+      "character": "火",
+      "unicode": "706B",
+      "meaning": "불 화",
+      "pronunciation": "화",
+      "stroke_count": 4,
+      "radical": "火",
+      "grade": 15,
+      "order": 11,
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:火",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "불 화",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "火曜日",
+            "meaning": "화요일",
+            "pronunciation": "화요일"
+          },
+          {
+            "word": "火災",
+            "meaning": "화재",
+            "pronunciation": "화재"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 40 50 C 50 40 70 40 80 50",
+            "M 60 40 Q 59 60 60 80",
+            "M 60 60 C 45 70 35 85 30 95",
+            "M 60 60 C 75 70 85 85 90 95"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0012-571F",
+      "character": "土",
+      "unicode": "571F",
+      "meaning": "흙 토",
+      "pronunciation": "토",
+      "stroke_count": 3,
+      "radical": "土",
+      "grade": 15,
+      "order": 12,
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:土",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "흙 토",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "土曜日",
+            "meaning": "토요일",
+            "pronunciation": "토요일"
+          },
+          {
+            "word": "國土",
+            "meaning": "국토",
+            "pronunciation": "국토"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 20 40 L 80 40",
+            "M 50 20 L 50 80",
+            "M 20 80 L 80 80"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0013-91D1",
+      "character": "金",
+      "unicode": "91D1",
+      "meaning": "쇠 금",
+      "pronunciation": "금",
+      "stroke_count": 8,
+      "radical": "金",
+      "grade": 15,
+      "order": 13,
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:金",
+        "strokes:8"
+      ],
+      "extended_data": {
+        "detailed_meaning": "쇠 금",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "金曜日",
+            "meaning": "금요일",
+            "pronunciation": "금요일"
+          },
+          {
+            "word": "金額",
+            "meaning": "금액",
+            "pronunciation": "금액"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 30 15 L 70 15",
+            "M 50 15 L 50 85",
+            "M 30 40 L 70 40",
+            "M 20 60 L 50 40",
+            "M 80 60 L 50 40",
+            "M 20 60 L 20 85",
+            "M 80 60 L 80 85",
+            "M 20 85 L 80 85"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0014-5B50",
+      "character": "子",
+      "unicode": "5B50",
+      "meaning": "아들 자",
+      "pronunciation": "자",
+      "stroke_count": 3,
+      "radical": "子",
+      "grade": 15,
+      "order": 14,
+      "tags": [
+        "meaning:human",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:子",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "아들 자",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "子供",
+            "meaning": "아이",
+            "pronunciation": "자공"
+          },
+          {
+            "word": "椅子",
+            "meaning": "의자",
+            "pronunciation": "의자"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 30 30 L 70 30",
+            "M 50 30 L 50 70",
+            "M 30 70 L 50 50",
+            "M 50 50 L 70 70"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0015-5C0F",
+      "character": "小",
+      "unicode": "5C0F",
+      "meaning": "작을 소",
+      "pronunciation": "소",
+      "stroke_count": 3,
+      "radical": "小",
+      "grade": 15,
+      "order": 15,
+      "tags": [
+        "meaning:attribute",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:小",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "작을 소",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "小學校",
+            "meaning": "소학교",
+            "pronunciation": "소학교"
+          },
+          {
+            "word": "小雨",
+            "meaning": "소나기",
+            "pronunciation": "소우"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0016-4E2D",
+      "character": "中",
+      "unicode": "4E2D",
+      "meaning": "가운데 중",
+      "pronunciation": "중",
+      "stroke_count": 4,
+      "radical": "丨",
+      "grade": 15,
+      "order": 16,
+      "tags": [
+        "meaning:position",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:丨",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "가운데 중",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "中心",
+            "meaning": "중심",
+            "pronunciation": "중심"
+          },
+          {
+            "word": "中國",
+            "meaning": "중국",
+            "pronunciation": "중국"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 25 L 75 25",
+            "M 25 75 L 75 75",
+            "M 25 25 L 25 75",
+            "M 75 25 L 75 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0017-56DB",
+      "character": "四",
+      "unicode": "56DB",
+      "meaning": "넉 사",
+      "pronunciation": "사",
+      "stroke_count": 5,
+      "radical": "囗",
+      "grade": 15,
+      "order": 17,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:囗",
+        "strokes:5"
+      ],
+      "extended_data": {
+        "detailed_meaning": "넉 사",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "四角",
+            "meaning": "사각",
+            "pronunciation": "사각"
+          },
+          {
+            "word": "四月",
+            "meaning": "4월",
+            "pronunciation": "사월"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0018-4E94",
+      "character": "五",
+      "unicode": "4E94",
+      "meaning": "다섯 오",
+      "pronunciation": "오",
+      "stroke_count": 4,
+      "radical": "二",
+      "grade": 15,
+      "order": 18,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:二",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "다섯 오",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "五月",
+            "meaning": "5월",
+            "pronunciation": "오월"
+          },
+          {
+            "word": "五百",
+            "meaning": "오백",
+            "pronunciation": "오백"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0019-516D",
+      "character": "六",
+      "unicode": "516D",
+      "meaning": "여섯 육",
+      "pronunciation": "육",
+      "stroke_count": 4,
+      "radical": "八",
+      "grade": 15,
+      "order": 19,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:八",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "여섯 육",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "六月",
+            "meaning": "6월",
+            "pronunciation": "유월"
+          },
+          {
+            "word": "六日",
+            "meaning": "6일",
+            "pronunciation": "육일"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0020-4E03",
+      "character": "七",
+      "unicode": "4E03",
+      "meaning": "일곱 칠",
+      "pronunciation": "칠",
+      "stroke_count": 2,
+      "radical": "一",
+      "grade": 15,
+      "order": 20,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:一",
+        "strokes:2"
+      ],
+      "extended_data": {
+        "detailed_meaning": "일곱 칠",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "七月",
+            "meaning": "7월",
+            "pronunciation": "칠월"
+          },
+          {
+            "word": "七日",
+            "meaning": "7일",
+            "pronunciation": "칠일"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0021-516B",
+      "character": "八",
+      "unicode": "516B",
+      "meaning": "여덟 팔",
+      "pronunciation": "팔",
+      "stroke_count": 2,
+      "radical": "八",
+      "grade": 15,
+      "order": 21,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:八",
+        "strokes:2"
+      ],
+      "extended_data": {
+        "detailed_meaning": "여덟 팔",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "八月",
+            "meaning": "8월",
+            "pronunciation": "팔월"
+          },
+          {
+            "word": "八日",
+            "meaning": "8일",
+            "pronunciation": "팔일"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0022-4E5D",
+      "character": "九",
+      "unicode": "4E5D",
+      "meaning": "아홉 구",
+      "pronunciation": "구",
+      "stroke_count": 2,
+      "radical": "乙",
+      "grade": 15,
+      "order": 22,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:乙",
+        "strokes:2"
+      ],
+      "extended_data": {
+        "detailed_meaning": "아홉 구",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "九月",
+            "meaning": "9월",
+            "pronunciation": "구월"
+          },
+          {
+            "word": "九日",
+            "meaning": "9일",
+            "pronunciation": "구일"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0023-5341",
+      "character": "十",
+      "unicode": "5341",
+      "meaning": "열 십",
+      "pronunciation": "십",
+      "stroke_count": 2,
+      "radical": "十",
+      "grade": 15,
+      "order": 23,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:十",
+        "strokes:2"
+      ],
+      "extended_data": {
+        "detailed_meaning": "열 십",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "十月",
+            "meaning": "10월",
+            "pronunciation": "시월"
+          },
+          {
+            "word": "十日",
+            "meaning": "10일",
+            "pronunciation": "십일"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 20 L 75 20",
+            "M 25 35 L 75 35",
+            "M 50 15 L 50 45",
+            "M 35 15 L 35 45",
+            "M 65 15 L 65 45",
+            "M 25 60 L 75 60",
+            "M 25 80 L 75 80",
+            "M 50 50 L 50 85",
+            "M 35 50 L 35 85",
+            "M 65 50 L 65 85"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0024-767E",
+      "character": "百",
+      "unicode": "767E",
+      "meaning": "일백 백",
+      "pronunciation": "백",
+      "stroke_count": 6,
+      "radical": "白",
+      "grade": 15,
+      "order": 24,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:白",
+        "strokes:6"
+      ],
+      "extended_data": {
+        "detailed_meaning": "일백 백",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "百年",
+            "meaning": "100년",
+            "pronunciation": "백년"
+          },
+          {
+            "word": "百萬",
+            "meaning": "백만",
+            "pronunciation": "백만"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0025-5343",
+      "character": "千",
+      "unicode": "5343",
+      "meaning": "일천 천",
+      "pronunciation": "천",
+      "stroke_count": 3,
+      "radical": "十",
+      "grade": 15,
+      "order": 25,
+      "tags": [
+        "meaning:number",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:十",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "일천 천",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "千年",
+            "meaning": "천년",
+            "pronunciation": "천년"
+          },
+          {
+            "word": "千萬",
+            "meaning": "천만",
+            "pronunciation": "천만"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0026-5E74",
+      "character": "年",
+      "unicode": "5E74",
+      "meaning": "해 년",
+      "pronunciation": "년",
+      "stroke_count": 6,
+      "radical": "干",
+      "grade": 15,
+      "order": 26,
+      "tags": [
+        "meaning:time",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:干",
+        "strokes:6"
+      ],
+      "extended_data": {
+        "detailed_meaning": "해 년",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "年齡",
+            "meaning": "연령",
+            "pronunciation": "연령"
+          },
+          {
+            "word": "一年",
+            "meaning": "일년",
+            "pronunciation": "일년"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 20 25 L 20 75",
+            "M 10 35 L 40 35",
+            "M 10 55 L 40 55",
+            "M 10 75 L 40 75",
+            "M 35 25 L 35 75",
+            "M 70 25 L 70 75",
+            "M 45 35 L 90 35",
+            "M 45 55 L 90 55",
+            "M 45 75 L 90 75",
+            "M 55 25 L 55 75",
+            "M 50 30 L 65 50",
+            "M 75 30 L 60 50"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0027-4E0A",
+      "character": "上",
+      "unicode": "4E0A",
+      "meaning": "위 상",
+      "pronunciation": "상",
+      "stroke_count": 3,
+      "radical": "一",
+      "grade": 15,
+      "order": 27,
+      "tags": [
+        "meaning:position",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:一",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "위 상",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "上下",
+            "meaning": "상하",
+            "pronunciation": "상하"
+          },
+          {
+            "word": "上手",
+            "meaning": "능숙함",
+            "pronunciation": "상수"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0028-4E0B",
+      "character": "下",
+      "unicode": "4E0B",
+      "meaning": "아래 하",
+      "pronunciation": "하",
+      "stroke_count": 3,
+      "radical": "一",
+      "grade": 15,
+      "order": 28,
+      "tags": [
+        "meaning:position",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:一",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "아래 하",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "上下",
+            "meaning": "상하",
+            "pronunciation": "상하"
+          },
+          {
+            "word": "下車",
+            "meaning": "하차",
+            "pronunciation": "하차"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0029-5DE6",
+      "character": "左",
+      "unicode": "5DE6",
+      "meaning": "왼 좌",
+      "pronunciation": "좌",
+      "stroke_count": 5,
+      "radical": "工",
+      "grade": 15,
+      "order": 29,
+      "tags": [
+        "meaning:position",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:工",
+        "strokes:5"
+      ],
+      "extended_data": {
+        "detailed_meaning": "왼 좌",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "左右",
+            "meaning": "좌우",
+            "pronunciation": "좌우"
+          },
+          {
+            "word": "左側",
+            "meaning": "좌측",
+            "pronunciation": "좌측"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0030-53F3",
+      "character": "右",
+      "unicode": "53F3",
+      "meaning": "오른 우",
+      "pronunciation": "우",
+      "stroke_count": 5,
+      "radical": "口",
+      "grade": 15,
+      "order": 30,
+      "tags": [
+        "meaning:position",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:口",
+        "strokes:5"
+      ],
+      "extended_data": {
+        "detailed_meaning": "오른 우",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "左右",
+            "meaning": "좌우",
+            "pronunciation": "좌우"
+          },
+          {
+            "word": "右側",
+            "meaning": "우측",
+            "pronunciation": "우측"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0031-53E3",
+      "character": "口",
+      "unicode": "53E3",
+      "meaning": "입 구",
+      "pronunciation": "구",
+      "stroke_count": 3,
+      "radical": "口",
+      "grade": 15,
+      "order": 31,
+      "tags": [
+        "meaning:body",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:口",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "입 구",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "口語",
+            "meaning": "구어",
+            "pronunciation": "구어"
+          },
+          {
+            "word": "入口",
+            "meaning": "입구",
+            "pronunciation": "입구"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 25 L 75 25",
+            "M 25 25 L 25 75",
+            "M 25 75 L 75 75",
+            "M 75 25 L 75 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0032-76EE",
+      "character": "目",
+      "unicode": "76EE",
+      "meaning": "눈 목",
+      "pronunciation": "목",
+      "stroke_count": 5,
+      "radical": "目",
+      "grade": 15,
+      "order": 32,
+      "tags": [
+        "meaning:body",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:目",
+        "strokes:5"
+      ],
+      "extended_data": {
+        "detailed_meaning": "눈 목",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "目的",
+            "meaning": "목적",
+            "pronunciation": "목적"
+          },
+          {
+            "word": "目標",
+            "meaning": "목표",
+            "pronunciation": "목표"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0033-624B",
+      "character": "手",
+      "unicode": "624B",
+      "meaning": "손 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "手",
+      "grade": 15,
+      "order": 33,
+      "tags": [
+        "meaning:body",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:手",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "손 수",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "手紙",
+            "meaning": "편지",
+            "pronunciation": "수지"
+          },
+          {
+            "word": "上手",
+            "meaning": "능숙함",
+            "pronunciation": "상수"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 20 25 L 20 75",
+            "M 10 35 L 40 35",
+            "M 10 55 L 40 55",
+            "M 70 25 L 70 75",
+            "M 45 35 L 90 35",
+            "M 45 55 L 90 55",
+            "M 45 75 L 90 75"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0034-8DB3",
+      "character": "足",
+      "unicode": "8DB3",
+      "meaning": "발 족",
+      "pronunciation": "족",
+      "stroke_count": 7,
+      "radical": "足",
+      "grade": 15,
+      "order": 34,
+      "tags": [
+        "meaning:body",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:足",
+        "strokes:7"
+      ],
+      "extended_data": {
+        "detailed_meaning": "발 족",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "足跡",
+            "meaning": "발자국",
+            "pronunciation": "족적"
+          },
+          {
+            "word": "運足",
+            "meaning": "운동",
+            "pronunciation": "운족"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0035-8033",
+      "character": "耳",
+      "unicode": "8033",
+      "meaning": "귀 이",
+      "pronunciation": "이",
+      "stroke_count": 6,
+      "radical": "耳",
+      "grade": 15,
+      "order": 35,
+      "tags": [
+        "meaning:body",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:耳",
+        "strokes:6"
+      ],
+      "extended_data": {
+        "detailed_meaning": "귀 이",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "耳鼻",
+            "meaning": "이비",
+            "pronunciation": "이비"
+          },
+          {
+            "word": "耳朶",
+            "meaning": "귀",
+            "pronunciation": "이엽"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0036-5FC3",
+      "character": "心",
+      "unicode": "5FC3",
+      "meaning": "마음 심",
+      "pronunciation": "심",
+      "stroke_count": 4,
+      "radical": "心",
+      "grade": 15,
+      "order": 36,
+      "tags": [
+        "meaning:body",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:心",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "마음 심",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "心臟",
+            "meaning": "심장",
+            "pronunciation": "심장"
+          },
+          {
+            "word": "中心",
+            "meaning": "중심",
+            "pronunciation": "중심"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 50 20 L 50 50",
+            "M 20 50 C 30 30 70 30 80 50",
+            "M 20 50 L 35 90",
+            "M 80 50 L 65 90"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0037-529B",
+      "character": "力",
+      "unicode": "529B",
+      "meaning": "힘 력",
+      "pronunciation": "력",
+      "stroke_count": 2,
+      "radical": "力",
+      "grade": 15,
+      "order": 37,
+      "tags": [
+        "meaning:attribute",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:力",
+        "strokes:2"
+      ],
+      "extended_data": {
+        "detailed_meaning": "힘 력",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "力量",
+            "meaning": "힘",
+            "pronunciation": "역량"
+          },
+          {
+            "word": "努力",
+            "meaning": "노력",
+            "pronunciation": "노력"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": [
+            "M 25 20 L 75 20",
+            "M 25 35 L 75 35",
+            "M 50 15 L 50 45",
+            "M 25 60 L 75 60",
+            "M 25 80 L 75 80",
+            "M 50 50 L 50 85",
+            "M 35 50 L 35 85",
+            "M 65 50 L 65 85"
+          ]
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0038-7236",
+      "character": "父",
+      "unicode": "7236",
+      "meaning": "아버지 부",
+      "pronunciation": "부",
+      "stroke_count": 4,
+      "radical": "父",
+      "grade": 15,
+      "order": 38,
+      "tags": [
+        "meaning:human",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:父",
+        "strokes:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "아버지 부",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "父母",
+            "meaning": "부모",
+            "pronunciation": "부모"
+          },
+          {
+            "word": "祖父",
+            "meaning": "조부",
+            "pronunciation": "조부"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0039-6BCD",
+      "character": "母",
+      "unicode": "6BCD",
+      "meaning": "어머니 모",
+      "pronunciation": "모",
+      "stroke_count": 5,
+      "radical": "母",
+      "grade": 15,
+      "order": 39,
+      "tags": [
+        "meaning:human",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:母",
+        "strokes:5"
+      ],
+      "extended_data": {
+        "detailed_meaning": "어머니 모",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "父母",
+            "meaning": "부모",
+            "pronunciation": "부모"
+          },
+          {
+            "word": "祖母",
+            "meaning": "조모",
+            "pronunciation": "조모"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0040-8A9E",
+      "character": "語",
+      "unicode": "8A9E",
+      "meaning": "말씀 어",
+      "pronunciation": "어",
+      "stroke_count": 14,
+      "radical": "言",
+      "grade": 15,
+      "order": 40,
+      "tags": [
+        "meaning:action",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:言",
+        "strokes:14"
+      ],
+      "extended_data": {
+        "detailed_meaning": "말씀 어",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "言語",
+            "meaning": "언어",
+            "pronunciation": "언어"
+          },
+          {
+            "word": "語學",
+            "meaning": "어학",
+            "pronunciation": "어학"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0041-8A00",
+      "character": "言",
+      "unicode": "8A00",
+      "meaning": "말씀 언",
+      "pronunciation": "언",
+      "stroke_count": 7,
+      "radical": "言",
+      "grade": 15,
+      "order": 41,
+      "tags": [
+        "meaning:action",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:言",
+        "strokes:7"
+      ],
+      "extended_data": {
+        "detailed_meaning": "말씀 언",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "言語",
+            "meaning": "언어",
+            "pronunciation": "언어"
+          },
+          {
+            "word": "發言",
+            "meaning": "발언",
+            "pronunciation": "발언"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0042-898B",
+      "character": "見",
+      "unicode": "898B",
+      "meaning": "볼 견",
+      "pronunciation": "견",
+      "stroke_count": 7,
+      "radical": "見",
+      "grade": 15,
+      "order": 42,
+      "tags": [
+        "meaning:action",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:見",
+        "strokes:7"
+      ],
+      "extended_data": {
+        "detailed_meaning": "볼 견",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "見學",
+            "meaning": "견학",
+            "pronunciation": "견학"
+          },
+          {
+            "word": "發見",
+            "meaning": "발견",
+            "pronunciation": "발견"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0043-7530",
+      "character": "田",
+      "unicode": "7530",
+      "meaning": "밭 전",
+      "pronunciation": "전",
+      "stroke_count": 5,
+      "radical": "田",
+      "grade": 15,
+      "order": 43,
+      "tags": [
+        "meaning:nature",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:田",
+        "strokes:5"
+      ],
+      "extended_data": {
+        "detailed_meaning": "밭 전",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "田畓",
+            "meaning": "전답",
+            "pronunciation": "전답"
+          },
+          {
+            "word": "水田",
+            "meaning": "수전",
+            "pronunciation": "수전"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0044-5973",
+      "character": "女",
+      "unicode": "5973",
+      "meaning": "여자 여",
+      "pronunciation": "여",
+      "stroke_count": 3,
+      "radical": "女",
+      "grade": 15,
+      "order": 44,
+      "tags": [
+        "meaning:human",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:女",
+        "strokes:3"
+      ],
+      "extended_data": {
+        "detailed_meaning": "여자 여",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "女子",
+            "meaning": "여자",
+            "pronunciation": "여자"
+          },
+          {
+            "word": "少女",
+            "meaning": "소녀",
+            "pronunciation": "소녀"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0045-7537",
+      "character": "男",
+      "unicode": "7537",
+      "meaning": "남자 남",
+      "pronunciation": "남",
+      "stroke_count": 7,
+      "radical": "田",
+      "grade": 15,
+      "order": 45,
+      "tags": [
+        "meaning:human",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:田",
+        "strokes:7"
+      ],
+      "extended_data": {
+        "detailed_meaning": "남자 남",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "男子",
+            "meaning": "남자",
+            "pronunciation": "남자"
+          },
+          {
+            "word": "少男",
+            "meaning": "소남",
+            "pronunciation": "소남"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0046-767D",
+      "character": "白",
+      "unicode": "767D",
+      "meaning": "흰 백",
+      "pronunciation": "백",
+      "stroke_count": 5,
+      "radical": "白",
+      "grade": 15,
+      "order": 46,
+      "tags": [
+        "meaning:color",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:白",
+        "strokes:5"
+      ],
+      "extended_data": {
+        "detailed_meaning": "흰 백",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "白色",
+            "meaning": "백색",
+            "pronunciation": "백색"
+          },
+          {
+            "word": "白紙",
+            "meaning": "백지",
+            "pronunciation": "백지"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0047-8D64",
+      "character": "赤",
+      "unicode": "8D64",
+      "meaning": "붉을 적",
+      "pronunciation": "적",
+      "stroke_count": 7,
+      "radical": "赤",
+      "grade": 15,
+      "order": 47,
+      "tags": [
+        "meaning:color",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:赤",
+        "strokes:7"
+      ],
+      "extended_data": {
+        "detailed_meaning": "붉을 적",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "赤色",
+            "meaning": "적색",
+            "pronunciation": "적색"
+          },
+          {
+            "word": "赤字",
+            "meaning": "적자",
+            "pronunciation": "적자"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0048-9751",
+      "character": "靑",
+      "unicode": "9751",
+      "meaning": "푸를 청",
+      "pronunciation": "청",
+      "stroke_count": 8,
+      "radical": "靑",
+      "grade": 15,
+      "order": 48,
+      "tags": [
+        "meaning:color",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:靑",
+        "strokes:8"
+      ],
+      "extended_data": {
+        "detailed_meaning": "푸를 청",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "靑色",
+            "meaning": "청색",
+            "pronunciation": "청색"
+          },
+          {
+            "word": "靑年",
+            "meaning": "청년",
+            "pronunciation": "청년"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0049-7389",
+      "character": "玉",
+      "unicode": "7389",
+      "meaning": "구슬 옥",
+      "pronunciation": "옥",
+      "stroke_count": 5,
+      "radical": "玉",
+      "grade": 15,
+      "order": 49,
+      "tags": [
+        "meaning:object",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:玉",
+        "strokes:5"
+      ],
+      "extended_data": {
+        "detailed_meaning": "구슬 옥",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "玉石",
+            "meaning": "옥석",
+            "pronunciation": "옥석"
+          },
+          {
+            "word": "寶玉",
+            "meaning": "보옥",
+            "pronunciation": "보옥"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-15-0050-9580",
+      "character": "門",
+      "unicode": "9580",
+      "meaning": "문 문",
+      "pronunciation": "문",
+      "stroke_count": 8,
+      "radical": "門",
+      "grade": 15,
+      "order": 50,
+      "tags": [
+        "meaning:object",
+        "difficulty:beginner",
+        "usage:common",
+        "education:elementary",
+        "radical:門",
+        "strokes:8"
+      ],
+      "extended_data": {
+        "detailed_meaning": "문 문",
+        "etymology": "",
+        "mnemonics": "",
+        "common_words": [
+          {
+            "word": "門戶",
+            "meaning": "문호",
+            "pronunciation": "문호"
+          },
+          {
+            "word": "校門",
+            "meaning": "교문",
+            "pronunciation": "교문"
+          }
+        ],
+        "example_sentences": [],
+        "cultural_notes": "",
+        "pronunciation_guide": "",
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    }
+  ]
+}

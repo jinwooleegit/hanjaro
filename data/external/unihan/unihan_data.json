@@ -1,0 +1,48 @@
+{
+  "characters": {
+    "一": {
+      "unicode": "4E00",
+      "definitions": {
+        "zh": "数词，最小的正整数 (one, 1)",
+        "ko": "하나 일",
+        "ja": "ひとつ、いち"
+      },
+      "readings": {
+        "mandarin": "yī",
+        "korean": "일(il)",
+        "japanese_on": "イチ (ichi), イツ (itsu)",
+        "japanese_kun": "ひと (hito)"
+      },
+      "variants": [],
+      "stroke_count": 1,
+      "cjk_radicals": [
+        "一"
+      ]
+    },
+    "二": {
+      "unicode": "4E8C",
+      "definitions": {
+        "zh": "数词，1+1=2 (two, 2)",
+        "ko": "두 이",
+        "ja": "ふたつ、に"
+      },
+      "readings": {
+        "mandarin": "èr",
+        "korean": "이(i)",
+        "japanese_on": "ニ (ni), ジ (ji)",
+        "japanese_kun": "ふた (futa), ふたつ (futatsu)"
+      },
+      "variants": [],
+      "stroke_count": 2,
+      "cjk_radicals": [
+        "二"
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "source": "Unihan Database (Sample)",
+    "last_updated": "2025-04-10T14:31:35.036Z",
+    "total_characters": 2
+  }
+}
