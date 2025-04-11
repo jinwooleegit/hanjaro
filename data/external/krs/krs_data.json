@@ -1,0 +1,20 @@
+{
+  "characters": [
+    {
+      "character": "가",
+      "radical": "口",
+      "stroke_count": 5,
+      "meaning": "더할 가",
+      "pronunciation": "가",
+      "grade": 6
+    },
+    {
+      "character": "각",
+      "radical": "角",
+      "stroke_count": 7,
+      "meaning": "뿔 각",
+      "pronunciation": "각",
+      "grade": 5
+    }
+  ]
+}

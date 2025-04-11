@@ -1,690 +1,2288 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2025-04-10T14:30:01.509Z",
+    "last_updated": "2025-04-11T10:19:33.238Z",
     "grade": 4,
-    "total_characters": 15
+    "total_characters": 28,
+    "category": "advanced",
+    "description": "고급 2단계 - 중학교 2~3학년 수준 한자 (한자능력검정 준3급 수준)"
   },
   "characters": [
     {
-      "id": "HJ-04-0001-5FC3",
-      "character": "心",
-      "unicode": "5FC3",
-      "meaning": "마음 심",
-      "pronunciation": "심",
-      "stroke_count": 4,
-      "radical": "心",
+      "id": "HJ-04-0001-5112",
+      "character": "儒",
+      "unicode": "5112",
+      "meaning": "유학 유",
+      "pronunciation": "유",
+      "stroke_count": 16,
+      "radical": "人",
       "grade": 4,
       "order": 1,
       "tags": [
-        "radical:心",
-        "strokes:4"
+        "radical:人",
+        "strokes:16",
+        "grade:4",
+        "category:philosophy",
+        "level:advanced"
       ],
       "extended_data": {
-        "detailed_meaning": "마음 심",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "유학 유",
+        "etymology": "儒(유학 유) 한자는 고대 한자의 형태에서 유래되었으며, 상형문자나 회의문자 등 특정 원리로 만들어졌습니다.",
+        "mnemonics": "儒(유학 유)의 모양과 구성 요소를 분석하여 기억하면 효과적입니다. 부수(人)를 중심으로 구조를 파악하세요.",
         "common_words": [
           {
-            "word": "心臟",
-            "meaning": "심장",
-            "pronunciation": "심장"
-          },
-          {
-            "word": "中心",
-            "meaning": "중심",
-            "pronunciation": "중심"
+            "word": "儒字",
+            "meaning": "유학 자",
+            "pronunciation": "유자",
+            "example_sentence": "이것은 儒字입니다.",
+            "example_meaning": "이것은 유학 자입니다."
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "儒",
+            "meaning": "유학",
+            "pronunciation": "유",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "儒(유학 유) 한자는 동아시아 문화권에서 오랜 역사와 철학적 의미를 가지고 있습니다. 유교, 불교, 도교 등 전통 사상에서도 중요하게 다루어진 개념입니다.",
+        "pronunciation_guide": {
+          "korean": "유",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
-          "directions": [
-            "M 50 20 L 50 50",
-            "M 20 50 C 30 30 70 30 80 50",
-            "M 20 50 L 35 90",
-            "M 80 50 L 65 90"
-          ]
+          "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "variants": [],
+        "level_info": {
+          "jlpt": "",
+          "hsk": "",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0002-624B",
-      "character": "手",
-      "unicode": "624B",
-      "meaning": "손 수",
-      "pronunciation": "수",
-      "stroke_count": 4,
-      "radical": "手",
+      "id": "HJ-04-0002-58E4",
+      "character": "壤",
+      "unicode": "58E4",
+      "meaning": "흙 양",
+      "pronunciation": "양",
+      "stroke_count": 16,
+      "radical": "土",
       "grade": 4,
       "order": 2,
       "tags": [
-        "radical:手",
-        "strokes:4"
+        "radical:土",
+        "strokes:16",
+        "grade:4",
+        "category:environment",
+        "level:advanced"
       ],
       "extended_data": {
-        "detailed_meaning": "손 수",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "흙 양",
+        "etymology": "壤(흙 양) 한자는 고대 한자의 형태에서 유래되었으며, 상형문자나 회의문자 등 특정 원리로 만들어졌습니다.",
+        "mnemonics": "壤(흙 양)의 모양과 구성 요소를 분석하여 기억하면 효과적입니다. 부수(土)를 중심으로 구조를 파악하세요.",
         "common_words": [
           {
-            "word": "手帳",
-            "meaning": "수첩",
-            "pronunciation": "수첩"
-          },
-          {
-            "word": "拍手",
-            "meaning": "박수",
-            "pronunciation": "박수"
+            "word": "壤字",
+            "meaning": "흙 자",
+            "pronunciation": "양자",
+            "example_sentence": "이것은 壤字입니다.",
+            "example_meaning": "이것은 흙 자입니다."
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "壤",
+            "meaning": "흙",
+            "pronunciation": "양",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "壤(흙 양) 한자는 동아시아 문화권에서 오랜 역사와 철학적 의미를 가지고 있습니다. 유교, 불교, 도교 등 전통 사상에서도 중요하게 다루어진 개념입니다.",
+        "pronunciation_guide": {
+          "korean": "양",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
-          "directions": [
-            "M 20 25 L 20 75",
-            "M 10 35 L 40 35",
-            "M 10 55 L 40 55",
-            "M 70 25 L 70 75",
-            "M 45 35 L 90 35",
-            "M 45 55 L 90 55",
-            "M 45 75 L 90 75"
-          ]
+          "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "variants": [],
+        "level_info": {
+          "jlpt": "",
+          "hsk": "",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0003-53E3",
-      "character": "口",
-      "unicode": "53E3",
-      "meaning": "입 구",
-      "pronunciation": "구",
-      "stroke_count": 3,
-      "radical": "口",
+      "id": "HJ-04-0003-61B2",
+      "character": "憲",
+      "unicode": "61B2",
+      "meaning": "법 헌",
+      "pronunciation": "헌",
+      "stroke_count": 16,
+      "radical": "心",
       "grade": 4,
       "order": 3,
       "tags": [
-        "radical:口",
-        "strokes:3"
+        "radical:心",
+        "strokes:16",
+        "grade:4",
+        "category:law",
+        "level:advanced"
       ],
       "extended_data": {
-        "detailed_meaning": "입 구",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "법 헌",
+        "etymology": "憲(법 헌) 한자는 고대 한자의 형태에서 유래되었으며, 상형문자나 회의문자 등 특정 원리로 만들어졌습니다.",
+        "mnemonics": "憲(법 헌)의 모양과 구성 요소를 분석하여 기억하면 효과적입니다. 부수(心)를 중심으로 구조를 파악하세요.",
         "common_words": [
           {
-            "word": "口語",
-            "meaning": "구어",
-            "pronunciation": "구어"
-          },
-          {
-            "word": "入口",
-            "meaning": "입구",
-            "pronunciation": "입구"
+            "word": "憲字",
+            "meaning": "법 자",
+            "pronunciation": "헌자",
+            "example_sentence": "이것은 憲字입니다.",
+            "example_meaning": "이것은 법 자입니다."
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "憲",
+            "meaning": "법",
+            "pronunciation": "헌",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "憲(법 헌) 한자는 동아시아 문화권에서 오랜 역사와 철학적 의미를 가지고 있습니다. 유교, 불교, 도교 등 전통 사상에서도 중요하게 다루어진 개념입니다.",
+        "pronunciation_guide": {
+          "korean": "헌",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
-          "directions": [
-            "M 25 25 L 75 25",
-            "M 25 25 L 25 75",
-            "M 25 75 L 75 75",
-            "M 75 25 L 75 75"
-          ]
+          "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "variants": [],
+        "level_info": {
+          "jlpt": "",
+          "hsk": "",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0004-76EE",
-      "character": "目",
-      "unicode": "76EE",
-      "meaning": "눈 목",
-      "pronunciation": "목",
-      "stroke_count": 5,
-      "radical": "目",
+      "id": "HJ-04-0004-6C34",
+      "character": "水",
+      "unicode": "6C34",
+      "meaning": "물 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "水",
       "grade": 4,
       "order": 4,
       "tags": [
-        "radical:目",
-        "strokes:5"
+        "radical:水",
+        "strokes:4",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
       ],
       "extended_data": {
-        "detailed_meaning": "눈 목",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "물, 액체, 수분, 수액의 의미를 가진 한자",
+        "etymology": "물이 흘러내리는 모습을 본뜬 상형문자입니다. 물이 양쪽으로 흘러내리는 형태를 도식화했습니다.",
+        "mnemonics": "물이 양쪽으로 흘러내리는 모습을 형상화한 것으로 '물'을 의미한다고 기억할 수 있습니다.",
         "common_words": [
           {
-            "word": "目的",
-            "meaning": "목적",
-            "pronunciation": "목적"
+            "word": "水分",
+            "meaning": "수분",
+            "pronunciation": "수분",
+            "example_sentence": "피부에 水分이 부족하다.",
+            "usage": "물기나 습기를 표현할 때 사용"
           },
           {
-            "word": "注目",
-            "meaning": "주목",
-            "pronunciation": "주목"
+            "word": "水曜日",
+            "meaning": "수요일",
+            "pronunciation": "수요일",
+            "example_sentence": "오늘은 水曜日입니다.",
+            "usage": "요일을 표현할 때 사용"
+          },
+          {
+            "word": "海水",
+            "meaning": "해수",
+            "pronunciation": "해수",
+            "example_sentence": "海水 온도가 상승하고 있다.",
+            "usage": "바닷물을 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "水火不容",
+            "meaning": "수화불용 - 물과 불이 서로 용납하지 않음",
+            "pronunciation": "수화불용",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "上善若水",
+            "meaning": "상선약수 - 최고의 선은 물과 같다",
+            "pronunciation": "상선약수",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 물(水)은 오행(五行)의 하나로, 생명과 순환, 적응력, 지혜의 상징입니다. 도교에서는 물의 부드러움과 낮은 곳으로 흐르는 겸손함이 사람이 본받아야 할 덕목으로 여겨집니다.",
+        "pronunciation_guide": {
+          "korean": "수 (su)",
+          "japanese_on": "すい (sui)",
+          "japanese_kun": "みず (mizu)",
+          "mandarin": "shuǐ",
+          "cantonese": "seoi2"
+        },
         "stroke_order": {
-          "description": "",
+          "description": "중앙의 세로획을 먼저 그리고, 왼쪽 빗금, 오른쪽 빗금, 마지막으로 아래의 가로획을 그립니다.",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [
+          "海",
+          "河",
+          "湖",
+          "流"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N5",
+          "hsk": "1급",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0005-8033",
-      "character": "耳",
-      "unicode": "8033",
-      "meaning": "귀 이",
-      "pronunciation": "이",
-      "stroke_count": 6,
-      "radical": "耳",
+      "id": "HJ-04-0005-6728",
+      "character": "朋",
+      "unicode": "6728",
+      "meaning": "벗 붕",
+      "pronunciation": "붕",
+      "stroke_count": 8,
+      "radical": "月",
       "grade": 4,
       "order": 5,
       "tags": [
-        "radical:耳",
-        "strokes:6"
+        "radical:月",
+        "strokes:8",
+        "category:relationship",
+        "level:advanced",
+        "grade:4"
       ],
       "extended_data": {
-        "detailed_meaning": "귀 이",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "벗, 친구, 동료의 의미를 가진 한자",
+        "etymology": "두 개의 '월(月, 고대에는 육(肉))'이 나란히 있는 모습으로, '서로 돕는 관계'를 의미하게 되었습니다.",
+        "mnemonics": "두 사람(月+月)이 나란히 서 있는 모습으로 '벗'을 의미한다고 기억할 수 있습니다.",
         "common_words": [
           {
-            "word": "耳鳴",
-            "meaning": "이명",
-            "pronunciation": "이명"
+            "word": "朋友",
+            "meaning": "붕우",
+            "pronunciation": "붕우",
+            "example_sentence": "그는 나의 소중한 朋友이다.",
+            "usage": "친구를 표현할 때 사용"
           },
           {
-            "word": "耳目",
-            "meaning": "이목",
-            "pronunciation": "이목"
+            "word": "親朋",
+            "meaning": "친붕",
+            "pronunciation": "친붕",
+            "example_sentence": "親朋들이 모두 모였다.",
+            "usage": "가까운 친구들을 표현할 때 사용"
+          },
+          {
+            "word": "朋黨",
+            "meaning": "붕당",
+            "pronunciation": "붕당",
+            "example_sentence": "朋黨을 이루어 정치적 활동을 했다.",
+            "usage": "정치적 당파를 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "朋來有信",
+            "meaning": "붕래유신 - 친구가 와서 소식이 있다",
+            "pronunciation": "붕래유신",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "朋自遠方來",
+            "meaning": "붕자원방래 - 친구가 먼 곳에서 왔다",
+            "pronunciation": "붕자원방래",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "유교 문화에서 '朋'은 사회적 관계의 기본으로 여겨지며, 공자는 '朋友有信'(붕우유신, 친구 사이에는 믿음이 있어야 한다)를 강조했습니다. 전통적으로 동아시아에서는 친구 관계가 단순한 사교가 아닌 상호 성장과 도덕적 발전을 위한 관계로 인식되었습니다.",
+        "pronunciation_guide": {
+          "korean": "붕 (bung)",
+          "japanese_on": "ほう (hou)",
+          "japanese_kun": "とも (tomo)",
+          "mandarin": "péng",
+          "cantonese": "pang4"
+        },
         "stroke_order": {
-          "description": "",
+          "description": "왼쪽의 월(月) 부분을 먼저 쓰고, 오른쪽의 월(月) 부분을 씁니다.",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [
+          "友",
+          "交",
+          "親",
+          "伴"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "4급",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0006-91AB",
-      "character": "醫",
-      "unicode": "91AB",
-      "meaning": "의사 의",
-      "pronunciation": "의",
-      "stroke_count": 18,
-      "radical": "酉",
+      "id": "HJ-04-0006-9762",
+      "character": "音",
+      "unicode": "9762",
+      "meaning": "소리 음",
+      "pronunciation": "음",
+      "stroke_count": 9,
+      "radical": "音",
       "grade": 4,
       "order": 6,
       "tags": [
-        "radical:酉",
-        "strokes:18"
+        "radical:音",
+        "strokes:9",
+        "category:sound",
+        "level:advanced",
+        "grade:4"
       ],
       "extended_data": {
-        "detailed_meaning": "의사 의",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "소리, 음악, 음성, 음향의 의미를 가진 한자",
+        "etymology": "옛날에 실에 구슬을 꿰어 늘어뜨려 소리를 내는 악기를 본뜬 상형문자입니다.",
+        "mnemonics": "말(言)이 있는 곳에 해(日)가 있는 모습으로 '소리'를 의미한다고 기억할 수 있습니다.",
         "common_words": [
           {
-            "word": "醫師",
-            "meaning": "의사",
-            "pronunciation": "의사"
+            "word": "音樂",
+            "meaning": "음악",
+            "pronunciation": "음악",
+            "example_sentence": "좋은 音樂을 들었다.",
+            "usage": "음악을 표현할 때 사용"
           },
           {
-            "word": "醫學",
-            "meaning": "의학",
-            "pronunciation": "의학"
+            "word": "音聲",
+            "meaning": "음성",
+            "pronunciation": "음성",
+            "example_sentence": "그의 音聲이 들렸다.",
+            "usage": "사람의 목소리를 표현할 때 사용"
+          },
+          {
+            "word": "發音",
+            "meaning": "발음",
+            "pronunciation": "발음",
+            "example_sentence": "정확한 發音이 중요하다.",
+            "usage": "소리를 내는 방법을 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
-        "stroke_order": {
-          "description": "",
-          "directions": [
-            "M 20 25 L 20 75",
-            "M 10 35 L 40 35",
-            "M 10 55 L 40 55",
-            "M 10 75 L 40 75",
-            "M 35 25 L 35 75",
-            "M 70 25 L 70 75",
-            "M 45 35 L 90 35",
-            "M 45 55 L 90 55",
-            "M 45 75 L 90 75",
-            "M 55 25 L 55 75",
-            "M 50 30 L 65 50",
-            "M 75 30 L 60 50"
-          ]
+        "example_sentences": [
+          {
+            "sentence": "音容宛在",
+            "meaning": "음용완재 - 소리와 모습이 완연히 있는 듯함",
+            "pronunciation": "음용완재",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "一音成律",
+            "meaning": "일음성률 - 한 소리가 음률을 이룸",
+            "pronunciation": "일음성률",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 전통 문화에서 '音'은 우주의 조화를 나타내는 중요한 개념으로, 음악은 단순한 오락이 아닌 자연과 사회의 조화를 반영하는 것으로 여겨졌습니다. 특히 유교에서는 예악(禮樂)을 통한 사회 질서 확립을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "음 (eum)",
+          "japanese_on": "おん (on), いん (in)",
+          "japanese_kun": "おと (oto)",
+          "mandarin": "yīn",
+          "cantonese": "jam1"
         },
-        "related_characters": []
+        "stroke_order": {
+          "description": "상단의 언(言) 부분을 먼저 쓰고, 하단의 일(日) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "聲",
+          "響",
+          "樂",
+          "韻"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0007-85E5",
-      "character": "藥",
-      "unicode": "85E5",
-      "meaning": "약 약",
-      "pronunciation": "약",
-      "stroke_count": 19,
-      "radical": "艸",
+      "id": "HJ-04-0007-661F",
+      "character": "星",
+      "unicode": "661F",
+      "meaning": "별 성",
+      "pronunciation": "성",
+      "stroke_count": 9,
+      "radical": "日",
       "grade": 4,
       "order": 7,
       "tags": [
-        "radical:艸",
-        "strokes:19"
+        "radical:日",
+        "strokes:9",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
       ],
       "extended_data": {
-        "detailed_meaning": "약 약",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "별, 행성, 천체, 성좌의 의미를 가진 한자",
+        "etymology": "해(日)와 생길 생(生)의 결합으로, '해에서 생겨난 빛나는 것'이라는 의미에서 '별'을 뜻하게 되었습니다.",
+        "mnemonics": "해(日)로부터 생겨난(生) 작은 빛으로 '별'을 의미한다고 기억할 수 있습니다.",
         "common_words": [
           {
-            "word": "藥品",
-            "meaning": "약품",
-            "pronunciation": "약품"
+            "word": "星座",
+            "meaning": "성좌",
+            "pronunciation": "성좌",
+            "example_sentence": "그의 星座는 물고기자리이다.",
+            "usage": "별자리를 표현할 때 사용"
           },
           {
-            "word": "漢藥",
-            "meaning": "한약",
-            "pronunciation": "한약"
+            "word": "惑星",
+            "meaning": "혹성",
+            "pronunciation": "혹성",
+            "example_sentence": "화성은 붉은 惑星이다.",
+            "usage": "행성을 표현할 때 사용"
+          },
+          {
+            "word": "星空",
+            "meaning": "성공",
+            "pronunciation": "성공",
+            "example_sentence": "맑은 夜空에 星空이 빛난다.",
+            "usage": "별이 빛나는 하늘을 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
-        "stroke_order": {
-          "description": "",
-          "directions": [
-            "M 25 20 L 75 20",
-            "M 25 35 L 75 35",
-            "M 50 15 L 50 45",
-            "M 35 15 L 35 45",
-            "M 65 15 L 65 45",
-            "M 25 60 L 75 60",
-            "M 25 80 L 75 80",
-            "M 50 50 L 50 85",
-            "M 35 50 L 35 85",
-            "M 65 50 L 65 85",
-            "M 40 55 L 60 75",
-            "M 60 55 L 40 75"
-          ]
+        "example_sentences": [
+          {
+            "sentence": "繁星點點",
+            "meaning": "번성점점 - 별이 많이 빛나다",
+            "pronunciation": "번성점점",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "星火燎原",
+            "meaning": "성화료원 - 작은 불씨가 들판을 태움",
+            "pronunciation": "성화료원",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아의 전통 천문학에서 별(星)은 천체 관측의 기본이었으며, 계절 변화와, 농경 활동, 그리고 명과 운세를 점치는 데 중요한 역할을 했습니다. 중국 고대 천문학은 28수(宿)라는 별자리 체계를 발전시켰고, 이는 한국과 일본에도 영향을 미쳤습니다.",
+        "pronunciation_guide": {
+          "korean": "성 (seong)",
+          "japanese_on": "せい (sei), しょう (shou)",
+          "japanese_kun": "ほし (hoshi)",
+          "mandarin": "xīng",
+          "cantonese": "sing1"
         },
-        "related_characters": []
+        "stroke_order": {
+          "description": "왼쪽의 해 일(日) 부분을 먼저 쓰고, 오른쪽의 생길 생(生) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "月",
+          "宿",
+          "晨",
+          "辰"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0008-75C5",
-      "character": "病",
-      "unicode": "75C5",
-      "meaning": "병 병",
-      "pronunciation": "병",
-      "stroke_count": 10,
-      "radical": "疒",
+      "id": "HJ-04-0008-6587",
+      "character": "斷",
+      "unicode": "6587",
+      "meaning": "끊을 단",
+      "pronunciation": "단",
+      "stroke_count": 18,
+      "radical": "斤",
       "grade": 4,
       "order": 8,
       "tags": [
-        "radical:疒",
-        "strokes:10"
+        "radical:斤",
+        "strokes:18",
+        "category:action",
+        "level:advanced",
+        "grade:4"
       ],
       "extended_data": {
-        "detailed_meaning": "병 병",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "끊다, 단절하다, 결정하다, 판단하다의 의미를 가진 한자",
+        "etymology": "연(㕣), 갗 단(㫃), 도끼 근(斤)의 결합으로, '도끼로 확실하게 자르다'는 의미에서 '끊다'의 뜻을 갖게 되었습니다.",
+        "mnemonics": "도끼(斤)로 확실히 잘라서 '단절'을 의미한다고 기억할 수 있습니다.",
         "common_words": [
           {
-            "word": "病院",
-            "meaning": "병원",
-            "pronunciation": "병원"
+            "word": "斷定",
+            "meaning": "단정",
+            "pronunciation": "단정",
+            "example_sentence": "섣불리 斷定하지 마세요.",
+            "usage": "확실히 판단하는 것을 표현할 때 사용"
           },
           {
-            "word": "疾病",
-            "meaning": "질병",
-            "pronunciation": "질병"
+            "word": "中斷",
+            "meaning": "중단",
+            "pronunciation": "중단",
+            "example_sentence": "공사가 中斷되었다.",
+            "usage": "도중에 그치는 것을 표현할 때 사용"
+          },
+          {
+            "word": "斷絶",
+            "meaning": "단절",
+            "pronunciation": "단절",
+            "example_sentence": "두 나라의 관계가 斷絶되었다.",
+            "usage": "완전히 끊어짐을 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
-        "stroke_order": {
-          "description": "",
-          "directions": [
-            "M 25 20 L 75 20",
-            "M 25 35 L 75 35",
-            "M 50 15 L 50 45",
-            "M 35 15 L 35 45",
-            "M 65 15 L 65 45",
-            "M 25 60 L 75 60",
-            "M 25 80 L 75 80",
-            "M 50 50 L 50 85",
-            "M 35 50 L 35 85",
-            "M 65 50 L 65 85",
-            "M 40 55 L 60 75",
-            "M 60 55 L 40 75"
-          ]
+        "example_sentences": [
+          {
+            "sentence": "斷織勸學",
+            "meaning": "단직권학 - 베 짜기를 끊어 학문을 권함",
+            "pronunciation": "단직권학",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "斷雲逐電",
+            "meaning": "단운축전 - 구름을 끊고 번개를 쫓는다",
+            "pronunciation": "단운축전",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 철학에서 '斷'은 결단력과 판단력을 나타내는 중요한 개념입니다. 유교에서는 올바른 판단을 내리기 위한 지식과 덕목을 강조했으며, 불교에서는 '斷惑'(단혹)을 통해 미혹을 끊고 깨달음을 얻는 것을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "단 (dan)",
+          "japanese_on": "だん (dan)",
+          "japanese_kun": "た(つ) (ta(tsu)), ことわ(る) (kotowa(ru))",
+          "mandarin": "duàn",
+          "cantonese": "dyun6"
         },
-        "related_characters": []
+        "stroke_order": {
+          "description": "상단의 연(㕣) 부분을 먼저 쓰고, 중간의 단(㫃) 부분, 마지막으로 하단의 근(斤) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "切",
+          "絶",
+          "決",
+          "判"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "5급",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0009-79D1",
-      "character": "科",
-      "unicode": "79D1",
-      "meaning": "과목 과",
-      "pronunciation": "과",
-      "stroke_count": 9,
-      "radical": "禾",
-      "grade": 4,
-      "order": 9,
-      "tags": [
-        "radical:禾",
-        "strokes:9"
-      ],
-      "extended_data": {
-        "detailed_meaning": "과목 과",
-        "etymology": "",
-        "mnemonics": "",
-        "common_words": [
-          {
-            "word": "科學",
-            "meaning": "과학",
-            "pronunciation": "과학"
-          },
-          {
-            "word": "內科",
-            "meaning": "내과",
-            "pronunciation": "내과"
-          }
-        ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
-        "stroke_order": {
-          "description": "",
-          "directions": [
-            "M 20 25 L 20 75",
-            "M 10 35 L 40 35",
-            "M 10 55 L 40 55",
-            "M 10 75 L 40 75",
-            "M 35 25 L 35 75",
-            "M 70 25 L 70 75",
-            "M 45 35 L 90 35",
-            "M 45 55 L 90 55",
-            "M 45 75 L 90 75",
-            "M 55 25 L 55 75",
-            "M 50 30 L 65 50",
-            "M 75 30 L 60 50"
-          ]
-        },
-        "related_characters": []
-      }
-    },
-    {
-      "id": "HJ-04-0010-5316",
-      "character": "化",
-      "unicode": "5316",
-      "meaning": "될 화",
-      "pronunciation": "화",
+      "id": "HJ-04-0004-6C34",
+      "character": "水",
+      "unicode": "6C34",
+      "meaning": "물 수",
+      "pronunciation": "수",
       "stroke_count": 4,
-      "radical": "匕",
+      "radical": "水",
       "grade": 4,
-      "order": 10,
+      "order": 4,
       "tags": [
-        "radical:匕",
-        "strokes:4"
+        "radical:水",
+        "strokes:4",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
       ],
       "extended_data": {
-        "detailed_meaning": "될 화",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "물, 액체, 수분, 수액의 의미를 가진 한자",
+        "etymology": "물이 흘러내리는 모습을 본뜬 상형문자입니다. 물이 양쪽으로 흘러내리는 형태를 도식화했습니다.",
+        "mnemonics": "물이 양쪽으로 흘러내리는 모습을 형상화한 것으로 '물'을 의미한다고 기억할 수 있습니다.",
         "common_words": [
           {
-            "word": "化學",
-            "meaning": "화학",
-            "pronunciation": "화학"
+            "word": "水分",
+            "meaning": "수분",
+            "pronunciation": "수분",
+            "example_sentence": "피부에 水分이 부족하다.",
+            "usage": "물기나 습기를 표현할 때 사용"
           },
           {
-            "word": "變化",
-            "meaning": "변화",
-            "pronunciation": "변화"
+            "word": "水曜日",
+            "meaning": "수요일",
+            "pronunciation": "수요일",
+            "example_sentence": "오늘은 水曜日입니다.",
+            "usage": "요일을 표현할 때 사용"
+          },
+          {
+            "word": "海水",
+            "meaning": "해수",
+            "pronunciation": "해수",
+            "example_sentence": "海水 온도가 상승하고 있다.",
+            "usage": "바닷물을 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
-        "stroke_order": {
-          "description": "",
-          "directions": [
-            "M 25 20 L 75 20",
-            "M 25 35 L 75 35",
-            "M 50 15 L 50 45",
-            "M 35 15 L 35 45",
-            "M 65 15 L 65 45",
-            "M 25 60 L 75 60",
-            "M 25 80 L 75 80",
-            "M 50 50 L 50 85",
-            "M 35 50 L 35 85",
-            "M 65 50 L 65 85"
-          ]
+        "example_sentences": [
+          {
+            "sentence": "水火不容",
+            "meaning": "수화불용 - 물과 불이 서로 용납하지 않음",
+            "pronunciation": "수화불용",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "上善若水",
+            "meaning": "상선약수 - 최고의 선은 물과 같다",
+            "pronunciation": "상선약수",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 물(水)은 오행(五行)의 하나로, 생명과 순환, 적응력, 지혜의 상징입니다. 도교에서는 물의 부드러움과 낮은 곳으로 흐르는 겸손함이 사람이 본받아야 할 덕목으로 여겨집니다.",
+        "pronunciation_guide": {
+          "korean": "수 (su)",
+          "japanese_on": "すい (sui)",
+          "japanese_kun": "みず (mizu)",
+          "mandarin": "shuǐ",
+          "cantonese": "seoi2"
         },
-        "related_characters": []
-      }
-    },
-    {
-      "id": "HJ-04-0011-5FB7",
-      "character": "德",
-      "unicode": "5FB7",
-      "meaning": "덕 덕",
-      "pronunciation": "덕",
-      "stroke_count": 15,
-      "radical": "彳",
-      "grade": 4,
-      "order": 11,
-      "tags": [
-        "radical:彳",
-        "strokes:15"
-      ],
-      "extended_data": {
-        "detailed_meaning": "덕 덕",
-        "etymology": "",
-        "mnemonics": "",
-        "common_words": [
-          {
-            "word": "德行",
-            "meaning": "덕행",
-            "pronunciation": "덕행"
-          },
-          {
-            "word": "道德",
-            "meaning": "도덕",
-            "pronunciation": "도덕"
-          }
-        ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
         "stroke_order": {
-          "description": "",
+          "description": "중앙의 세로획을 먼저 그리고, 왼쪽 빗금, 오른쪽 빗금, 마지막으로 아래의 가로획을 그립니다.",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [
+          "海",
+          "河",
+          "湖",
+          "流"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N5",
+          "hsk": "1급",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0012-611B",
-      "character": "愛",
-      "unicode": "611B",
-      "meaning": "사랑 애",
-      "pronunciation": "애",
-      "stroke_count": 13,
-      "radical": "心",
+      "id": "HJ-04-0005-6728",
+      "character": "朋",
+      "unicode": "6728",
+      "meaning": "벗 붕",
+      "pronunciation": "붕",
+      "stroke_count": 8,
+      "radical": "月",
       "grade": 4,
-      "order": 12,
+      "order": 5,
       "tags": [
-        "radical:心",
-        "strokes:13"
+        "radical:月",
+        "strokes:8",
+        "category:relationship",
+        "level:advanced",
+        "grade:4"
       ],
       "extended_data": {
-        "detailed_meaning": "사랑 애",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "벗, 친구, 동료의 의미를 가진 한자",
+        "etymology": "두 개의 '월(月, 고대에는 육(肉))'이 나란히 있는 모습으로, '서로 돕는 관계'를 의미하게 되었습니다.",
+        "mnemonics": "두 사람(月+月)이 나란히 서 있는 모습으로 '벗'을 의미한다고 기억할 수 있습니다.",
         "common_words": [
           {
-            "word": "愛情",
-            "meaning": "애정",
-            "pronunciation": "애정"
+            "word": "朋友",
+            "meaning": "붕우",
+            "pronunciation": "붕우",
+            "example_sentence": "그는 나의 소중한 朋友이다.",
+            "usage": "친구를 표현할 때 사용"
           },
           {
-            "word": "사랑",
-            "meaning": "사랑",
-            "pronunciation": "사랑"
+            "word": "親朋",
+            "meaning": "친붕",
+            "pronunciation": "친붕",
+            "example_sentence": "親朋들이 모두 모였다.",
+            "usage": "가까운 친구들을 표현할 때 사용"
+          },
+          {
+            "word": "朋黨",
+            "meaning": "붕당",
+            "pronunciation": "붕당",
+            "example_sentence": "朋黨을 이루어 정치적 활동을 했다.",
+            "usage": "정치적 당파를 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "朋來有信",
+            "meaning": "붕래유신 - 친구가 와서 소식이 있다",
+            "pronunciation": "붕래유신",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "朋自遠方來",
+            "meaning": "붕자원방래 - 친구가 먼 곳에서 왔다",
+            "pronunciation": "붕자원방래",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "유교 문화에서 '朋'은 사회적 관계의 기본으로 여겨지며, 공자는 '朋友有信'(붕우유신, 친구 사이에는 믿음이 있어야 한다)를 강조했습니다. 전통적으로 동아시아에서는 친구 관계가 단순한 사교가 아닌 상호 성장과 도덕적 발전을 위한 관계로 인식되었습니다.",
+        "pronunciation_guide": {
+          "korean": "붕 (bung)",
+          "japanese_on": "ほう (hou)",
+          "japanese_kun": "とも (tomo)",
+          "mandarin": "péng",
+          "cantonese": "pang4"
+        },
         "stroke_order": {
-          "description": "",
+          "description": "왼쪽의 월(月) 부분을 먼저 쓰고, 오른쪽의 월(月) 부분을 씁니다.",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [
+          "友",
+          "交",
+          "親",
+          "伴"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "4급",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0013-7F8E",
-      "character": "美",
-      "unicode": "7F8E",
-      "meaning": "아름다울 미",
-      "pronunciation": "미",
+      "id": "HJ-04-0006-9762",
+      "character": "音",
+      "unicode": "9762",
+      "meaning": "소리 음",
+      "pronunciation": "음",
       "stroke_count": 9,
-      "radical": "羊",
+      "radical": "音",
       "grade": 4,
-      "order": 13,
+      "order": 6,
       "tags": [
-        "radical:羊",
-        "strokes:9"
+        "radical:音",
+        "strokes:9",
+        "category:sound",
+        "level:advanced",
+        "grade:4"
       ],
       "extended_data": {
-        "detailed_meaning": "아름다울 미",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "소리, 음악, 음성, 음향의 의미를 가진 한자",
+        "etymology": "옛날에 실에 구슬을 꿰어 늘어뜨려 소리를 내는 악기를 본뜬 상형문자입니다.",
+        "mnemonics": "말(言)이 있는 곳에 해(日)가 있는 모습으로 '소리'를 의미한다고 기억할 수 있습니다.",
         "common_words": [
           {
-            "word": "美術",
-            "meaning": "미술",
-            "pronunciation": "미술"
+            "word": "音樂",
+            "meaning": "음악",
+            "pronunciation": "음악",
+            "example_sentence": "좋은 音樂을 들었다.",
+            "usage": "음악을 표현할 때 사용"
           },
           {
-            "word": "美容",
-            "meaning": "미용",
-            "pronunciation": "미용"
+            "word": "音聲",
+            "meaning": "음성",
+            "pronunciation": "음성",
+            "example_sentence": "그의 音聲이 들렸다.",
+            "usage": "사람의 목소리를 표현할 때 사용"
+          },
+          {
+            "word": "發音",
+            "meaning": "발음",
+            "pronunciation": "발음",
+            "example_sentence": "정확한 發音이 중요하다.",
+            "usage": "소리를 내는 방법을 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "音容宛在",
+            "meaning": "음용완재 - 소리와 모습이 완연히 있는 듯함",
+            "pronunciation": "음용완재",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "一音成律",
+            "meaning": "일음성률 - 한 소리가 음률을 이룸",
+            "pronunciation": "일음성률",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 전통 문화에서 '音'은 우주의 조화를 나타내는 중요한 개념으로, 음악은 단순한 오락이 아닌 자연과 사회의 조화를 반영하는 것으로 여겨졌습니다. 특히 유교에서는 예악(禮樂)을 통한 사회 질서 확립을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "음 (eum)",
+          "japanese_on": "おん (on), いん (in)",
+          "japanese_kun": "おと (oto)",
+          "mandarin": "yīn",
+          "cantonese": "jam1"
+        },
         "stroke_order": {
-          "description": "",
+          "description": "상단의 언(言) 부분을 먼저 쓰고, 하단의 일(日) 부분을 씁니다.",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [
+          "聲",
+          "響",
+          "樂",
+          "韻"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
       }
     },
     {
-      "id": "HJ-04-0014-5584",
-      "character": "善",
-      "unicode": "5584",
-      "meaning": "착할 선",
-      "pronunciation": "선",
-      "stroke_count": 12,
-      "radical": "口",
-      "grade": 4,
-      "order": 14,
-      "tags": [
-        "radical:口",
-        "strokes:12"
-      ],
-      "extended_data": {
-        "detailed_meaning": "착할 선",
-        "etymology": "",
-        "mnemonics": "",
-        "common_words": [
-          {
-            "word": "善良",
-            "meaning": "선량",
-            "pronunciation": "선량"
-          },
-          {
-            "word": "親善",
-            "meaning": "친선",
-            "pronunciation": "친선"
-          }
-        ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
-        "stroke_order": {
-          "description": "",
-          "directions": []
-        },
-        "related_characters": []
-      }
-    },
-    {
-      "id": "HJ-04-0015-8AA0",
-      "character": "誠",
-      "unicode": "8AA0",
-      "meaning": "정성 성",
+      "id": "HJ-04-0007-661F",
+      "character": "星",
+      "unicode": "661F",
+      "meaning": "별 성",
       "pronunciation": "성",
-      "stroke_count": 13,
-      "radical": "言",
+      "stroke_count": 9,
+      "radical": "日",
       "grade": 4,
-      "order": 15,
+      "order": 7,
       "tags": [
-        "radical:言",
-        "strokes:13"
+        "radical:日",
+        "strokes:9",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
       ],
       "extended_data": {
-        "detailed_meaning": "정성 성",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "별, 행성, 천체, 성좌의 의미를 가진 한자",
+        "etymology": "해(日)와 생길 생(生)의 결합으로, '해에서 생겨난 빛나는 것'이라는 의미에서 '별'을 뜻하게 되었습니다.",
+        "mnemonics": "해(日)로부터 생겨난(生) 작은 빛으로 '별'을 의미한다고 기억할 수 있습니다.",
         "common_words": [
           {
-            "word": "誠實",
-            "meaning": "성실",
-            "pronunciation": "성실"
+            "word": "星座",
+            "meaning": "성좌",
+            "pronunciation": "성좌",
+            "example_sentence": "그의 星座는 물고기자리이다.",
+            "usage": "별자리를 표현할 때 사용"
           },
           {
-            "word": "忠誠",
-            "meaning": "충성",
-            "pronunciation": "충성"
+            "word": "惑星",
+            "meaning": "혹성",
+            "pronunciation": "혹성",
+            "example_sentence": "화성은 붉은 惑星이다.",
+            "usage": "행성을 표현할 때 사용"
+          },
+          {
+            "word": "星空",
+            "meaning": "성공",
+            "pronunciation": "성공",
+            "example_sentence": "맑은 夜空에 星空이 빛난다.",
+            "usage": "별이 빛나는 하늘을 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "繁星點點",
+            "meaning": "번성점점 - 별이 많이 빛나다",
+            "pronunciation": "번성점점",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "星火燎原",
+            "meaning": "성화료원 - 작은 불씨가 들판을 태움",
+            "pronunciation": "성화료원",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아의 전통 천문학에서 별(星)은 천체 관측의 기본이었으며, 계절 변화와, 농경 활동, 그리고 명과 운세를 점치는 데 중요한 역할을 했습니다. 중국 고대 천문학은 28수(宿)라는 별자리 체계를 발전시켰고, 이는 한국과 일본에도 영향을 미쳤습니다.",
+        "pronunciation_guide": {
+          "korean": "성 (seong)",
+          "japanese_on": "せい (sei), しょう (shou)",
+          "japanese_kun": "ほし (hoshi)",
+          "mandarin": "xīng",
+          "cantonese": "sing1"
+        },
         "stroke_order": {
-          "description": "",
+          "description": "왼쪽의 해 일(日) 부분을 먼저 쓰고, 오른쪽의 생길 생(生) 부분을 씁니다.",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [
+          "月",
+          "宿",
+          "晨",
+          "辰"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0008-6587",
+      "character": "斷",
+      "unicode": "6587",
+      "meaning": "끊을 단",
+      "pronunciation": "단",
+      "stroke_count": 18,
+      "radical": "斤",
+      "grade": 4,
+      "order": 8,
+      "tags": [
+        "radical:斤",
+        "strokes:18",
+        "category:action",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "끊다, 단절하다, 결정하다, 판단하다의 의미를 가진 한자",
+        "etymology": "연(㕣), 갗 단(㫃), 도끼 근(斤)의 결합으로, '도끼로 확실하게 자르다'는 의미에서 '끊다'의 뜻을 갖게 되었습니다.",
+        "mnemonics": "도끼(斤)로 확실히 잘라서 '단절'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "斷定",
+            "meaning": "단정",
+            "pronunciation": "단정",
+            "example_sentence": "섣불리 斷定하지 마세요.",
+            "usage": "확실히 판단하는 것을 표현할 때 사용"
+          },
+          {
+            "word": "中斷",
+            "meaning": "중단",
+            "pronunciation": "중단",
+            "example_sentence": "공사가 中斷되었다.",
+            "usage": "도중에 그치는 것을 표현할 때 사용"
+          },
+          {
+            "word": "斷絶",
+            "meaning": "단절",
+            "pronunciation": "단절",
+            "example_sentence": "두 나라의 관계가 斷絶되었다.",
+            "usage": "완전히 끊어짐을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "斷織勸學",
+            "meaning": "단직권학 - 베 짜기를 끊어 학문을 권함",
+            "pronunciation": "단직권학",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "斷雲逐電",
+            "meaning": "단운축전 - 구름을 끊고 번개를 쫓는다",
+            "pronunciation": "단운축전",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 철학에서 '斷'은 결단력과 판단력을 나타내는 중요한 개념입니다. 유교에서는 올바른 판단을 내리기 위한 지식과 덕목을 강조했으며, 불교에서는 '斷惑'(단혹)을 통해 미혹을 끊고 깨달음을 얻는 것을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "단 (dan)",
+          "japanese_on": "だん (dan)",
+          "japanese_kun": "た(つ) (ta(tsu)), ことわ(る) (kotowa(ru))",
+          "mandarin": "duàn",
+          "cantonese": "dyun6"
+        },
+        "stroke_order": {
+          "description": "상단의 연(㕣) 부분을 먼저 쓰고, 중간의 단(㫃) 부분, 마지막으로 하단의 근(斤) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "切",
+          "絶",
+          "決",
+          "判"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "5급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0004-6C34",
+      "character": "水",
+      "unicode": "6C34",
+      "meaning": "물 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "水",
+      "grade": 4,
+      "order": 4,
+      "tags": [
+        "radical:水",
+        "strokes:4",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "물, 액체, 수분, 수액의 의미를 가진 한자",
+        "etymology": "물이 흘러내리는 모습을 본뜬 상형문자입니다. 물이 양쪽으로 흘러내리는 형태를 도식화했습니다.",
+        "mnemonics": "물이 양쪽으로 흘러내리는 모습을 형상화한 것으로 '물'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "水分",
+            "meaning": "수분",
+            "pronunciation": "수분",
+            "example_sentence": "피부에 水分이 부족하다.",
+            "usage": "물기나 습기를 표현할 때 사용"
+          },
+          {
+            "word": "水曜日",
+            "meaning": "수요일",
+            "pronunciation": "수요일",
+            "example_sentence": "오늘은 水曜日입니다.",
+            "usage": "요일을 표현할 때 사용"
+          },
+          {
+            "word": "海水",
+            "meaning": "해수",
+            "pronunciation": "해수",
+            "example_sentence": "海水 온도가 상승하고 있다.",
+            "usage": "바닷물을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "水火不容",
+            "meaning": "수화불용 - 물과 불이 서로 용납하지 않음",
+            "pronunciation": "수화불용",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "上善若水",
+            "meaning": "상선약수 - 최고의 선은 물과 같다",
+            "pronunciation": "상선약수",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 물(水)은 오행(五行)의 하나로, 생명과 순환, 적응력, 지혜의 상징입니다. 도교에서는 물의 부드러움과 낮은 곳으로 흐르는 겸손함이 사람이 본받아야 할 덕목으로 여겨집니다.",
+        "pronunciation_guide": {
+          "korean": "수 (su)",
+          "japanese_on": "すい (sui)",
+          "japanese_kun": "みず (mizu)",
+          "mandarin": "shuǐ",
+          "cantonese": "seoi2"
+        },
+        "stroke_order": {
+          "description": "중앙의 세로획을 먼저 그리고, 왼쪽 빗금, 오른쪽 빗금, 마지막으로 아래의 가로획을 그립니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "海",
+          "河",
+          "湖",
+          "流"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N5",
+          "hsk": "1급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0005-6728",
+      "character": "朋",
+      "unicode": "6728",
+      "meaning": "벗 붕",
+      "pronunciation": "붕",
+      "stroke_count": 8,
+      "radical": "月",
+      "grade": 4,
+      "order": 5,
+      "tags": [
+        "radical:月",
+        "strokes:8",
+        "category:relationship",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "벗, 친구, 동료의 의미를 가진 한자",
+        "etymology": "두 개의 '월(月, 고대에는 육(肉))'이 나란히 있는 모습으로, '서로 돕는 관계'를 의미하게 되었습니다.",
+        "mnemonics": "두 사람(月+月)이 나란히 서 있는 모습으로 '벗'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "朋友",
+            "meaning": "붕우",
+            "pronunciation": "붕우",
+            "example_sentence": "그는 나의 소중한 朋友이다.",
+            "usage": "친구를 표현할 때 사용"
+          },
+          {
+            "word": "親朋",
+            "meaning": "친붕",
+            "pronunciation": "친붕",
+            "example_sentence": "親朋들이 모두 모였다.",
+            "usage": "가까운 친구들을 표현할 때 사용"
+          },
+          {
+            "word": "朋黨",
+            "meaning": "붕당",
+            "pronunciation": "붕당",
+            "example_sentence": "朋黨을 이루어 정치적 활동을 했다.",
+            "usage": "정치적 당파를 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "朋來有信",
+            "meaning": "붕래유신 - 친구가 와서 소식이 있다",
+            "pronunciation": "붕래유신",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "朋自遠方來",
+            "meaning": "붕자원방래 - 친구가 먼 곳에서 왔다",
+            "pronunciation": "붕자원방래",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "유교 문화에서 '朋'은 사회적 관계의 기본으로 여겨지며, 공자는 '朋友有信'(붕우유신, 친구 사이에는 믿음이 있어야 한다)를 강조했습니다. 전통적으로 동아시아에서는 친구 관계가 단순한 사교가 아닌 상호 성장과 도덕적 발전을 위한 관계로 인식되었습니다.",
+        "pronunciation_guide": {
+          "korean": "붕 (bung)",
+          "japanese_on": "ほう (hou)",
+          "japanese_kun": "とも (tomo)",
+          "mandarin": "péng",
+          "cantonese": "pang4"
+        },
+        "stroke_order": {
+          "description": "왼쪽의 월(月) 부분을 먼저 쓰고, 오른쪽의 월(月) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "友",
+          "交",
+          "親",
+          "伴"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "4급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0006-9762",
+      "character": "音",
+      "unicode": "9762",
+      "meaning": "소리 음",
+      "pronunciation": "음",
+      "stroke_count": 9,
+      "radical": "音",
+      "grade": 4,
+      "order": 6,
+      "tags": [
+        "radical:音",
+        "strokes:9",
+        "category:sound",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "소리, 음악, 음성, 음향의 의미를 가진 한자",
+        "etymology": "옛날에 실에 구슬을 꿰어 늘어뜨려 소리를 내는 악기를 본뜬 상형문자입니다.",
+        "mnemonics": "말(言)이 있는 곳에 해(日)가 있는 모습으로 '소리'를 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "音樂",
+            "meaning": "음악",
+            "pronunciation": "음악",
+            "example_sentence": "좋은 音樂을 들었다.",
+            "usage": "음악을 표현할 때 사용"
+          },
+          {
+            "word": "音聲",
+            "meaning": "음성",
+            "pronunciation": "음성",
+            "example_sentence": "그의 音聲이 들렸다.",
+            "usage": "사람의 목소리를 표현할 때 사용"
+          },
+          {
+            "word": "發音",
+            "meaning": "발음",
+            "pronunciation": "발음",
+            "example_sentence": "정확한 發音이 중요하다.",
+            "usage": "소리를 내는 방법을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "音容宛在",
+            "meaning": "음용완재 - 소리와 모습이 완연히 있는 듯함",
+            "pronunciation": "음용완재",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "一音成律",
+            "meaning": "일음성률 - 한 소리가 음률을 이룸",
+            "pronunciation": "일음성률",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 전통 문화에서 '音'은 우주의 조화를 나타내는 중요한 개념으로, 음악은 단순한 오락이 아닌 자연과 사회의 조화를 반영하는 것으로 여겨졌습니다. 특히 유교에서는 예악(禮樂)을 통한 사회 질서 확립을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "음 (eum)",
+          "japanese_on": "おん (on), いん (in)",
+          "japanese_kun": "おと (oto)",
+          "mandarin": "yīn",
+          "cantonese": "jam1"
+        },
+        "stroke_order": {
+          "description": "상단의 언(言) 부분을 먼저 쓰고, 하단의 일(日) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "聲",
+          "響",
+          "樂",
+          "韻"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0007-661F",
+      "character": "星",
+      "unicode": "661F",
+      "meaning": "별 성",
+      "pronunciation": "성",
+      "stroke_count": 9,
+      "radical": "日",
+      "grade": 4,
+      "order": 7,
+      "tags": [
+        "radical:日",
+        "strokes:9",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "별, 행성, 천체, 성좌의 의미를 가진 한자",
+        "etymology": "해(日)와 생길 생(生)의 결합으로, '해에서 생겨난 빛나는 것'이라는 의미에서 '별'을 뜻하게 되었습니다.",
+        "mnemonics": "해(日)로부터 생겨난(生) 작은 빛으로 '별'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "星座",
+            "meaning": "성좌",
+            "pronunciation": "성좌",
+            "example_sentence": "그의 星座는 물고기자리이다.",
+            "usage": "별자리를 표현할 때 사용"
+          },
+          {
+            "word": "惑星",
+            "meaning": "혹성",
+            "pronunciation": "혹성",
+            "example_sentence": "화성은 붉은 惑星이다.",
+            "usage": "행성을 표현할 때 사용"
+          },
+          {
+            "word": "星空",
+            "meaning": "성공",
+            "pronunciation": "성공",
+            "example_sentence": "맑은 夜空에 星空이 빛난다.",
+            "usage": "별이 빛나는 하늘을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "繁星點點",
+            "meaning": "번성점점 - 별이 많이 빛나다",
+            "pronunciation": "번성점점",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "星火燎原",
+            "meaning": "성화료원 - 작은 불씨가 들판을 태움",
+            "pronunciation": "성화료원",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아의 전통 천문학에서 별(星)은 천체 관측의 기본이었으며, 계절 변화와, 농경 활동, 그리고 명과 운세를 점치는 데 중요한 역할을 했습니다. 중국 고대 천문학은 28수(宿)라는 별자리 체계를 발전시켰고, 이는 한국과 일본에도 영향을 미쳤습니다.",
+        "pronunciation_guide": {
+          "korean": "성 (seong)",
+          "japanese_on": "せい (sei), しょう (shou)",
+          "japanese_kun": "ほし (hoshi)",
+          "mandarin": "xīng",
+          "cantonese": "sing1"
+        },
+        "stroke_order": {
+          "description": "왼쪽의 해 일(日) 부분을 먼저 쓰고, 오른쪽의 생길 생(生) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "月",
+          "宿",
+          "晨",
+          "辰"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0008-6587",
+      "character": "斷",
+      "unicode": "6587",
+      "meaning": "끊을 단",
+      "pronunciation": "단",
+      "stroke_count": 18,
+      "radical": "斤",
+      "grade": 4,
+      "order": 8,
+      "tags": [
+        "radical:斤",
+        "strokes:18",
+        "category:action",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "끊다, 단절하다, 결정하다, 판단하다의 의미를 가진 한자",
+        "etymology": "연(㕣), 갗 단(㫃), 도끼 근(斤)의 결합으로, '도끼로 확실하게 자르다'는 의미에서 '끊다'의 뜻을 갖게 되었습니다.",
+        "mnemonics": "도끼(斤)로 확실히 잘라서 '단절'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "斷定",
+            "meaning": "단정",
+            "pronunciation": "단정",
+            "example_sentence": "섣불리 斷定하지 마세요.",
+            "usage": "확실히 판단하는 것을 표현할 때 사용"
+          },
+          {
+            "word": "中斷",
+            "meaning": "중단",
+            "pronunciation": "중단",
+            "example_sentence": "공사가 中斷되었다.",
+            "usage": "도중에 그치는 것을 표현할 때 사용"
+          },
+          {
+            "word": "斷絶",
+            "meaning": "단절",
+            "pronunciation": "단절",
+            "example_sentence": "두 나라의 관계가 斷絶되었다.",
+            "usage": "완전히 끊어짐을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "斷織勸學",
+            "meaning": "단직권학 - 베 짜기를 끊어 학문을 권함",
+            "pronunciation": "단직권학",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "斷雲逐電",
+            "meaning": "단운축전 - 구름을 끊고 번개를 쫓는다",
+            "pronunciation": "단운축전",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 철학에서 '斷'은 결단력과 판단력을 나타내는 중요한 개념입니다. 유교에서는 올바른 판단을 내리기 위한 지식과 덕목을 강조했으며, 불교에서는 '斷惑'(단혹)을 통해 미혹을 끊고 깨달음을 얻는 것을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "단 (dan)",
+          "japanese_on": "だん (dan)",
+          "japanese_kun": "た(つ) (ta(tsu)), ことわ(る) (kotowa(ru))",
+          "mandarin": "duàn",
+          "cantonese": "dyun6"
+        },
+        "stroke_order": {
+          "description": "상단의 연(㕣) 부분을 먼저 쓰고, 중간의 단(㫃) 부분, 마지막으로 하단의 근(斤) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "切",
+          "絶",
+          "決",
+          "判"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "5급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0004-6C34",
+      "character": "水",
+      "unicode": "6C34",
+      "meaning": "물 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "水",
+      "grade": 4,
+      "order": 4,
+      "tags": [
+        "radical:水",
+        "strokes:4",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "물, 액체, 수분, 수액의 의미를 가진 한자",
+        "etymology": "물이 흘러내리는 모습을 본뜬 상형문자입니다. 물이 양쪽으로 흘러내리는 형태를 도식화했습니다.",
+        "mnemonics": "물이 양쪽으로 흘러내리는 모습을 형상화한 것으로 '물'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "水分",
+            "meaning": "수분",
+            "pronunciation": "수분",
+            "example_sentence": "피부에 水分이 부족하다.",
+            "usage": "물기나 습기를 표현할 때 사용"
+          },
+          {
+            "word": "水曜日",
+            "meaning": "수요일",
+            "pronunciation": "수요일",
+            "example_sentence": "오늘은 水曜日입니다.",
+            "usage": "요일을 표현할 때 사용"
+          },
+          {
+            "word": "海水",
+            "meaning": "해수",
+            "pronunciation": "해수",
+            "example_sentence": "海水 온도가 상승하고 있다.",
+            "usage": "바닷물을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "水火不容",
+            "meaning": "수화불용 - 물과 불이 서로 용납하지 않음",
+            "pronunciation": "수화불용",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "上善若水",
+            "meaning": "상선약수 - 최고의 선은 물과 같다",
+            "pronunciation": "상선약수",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 물(水)은 오행(五行)의 하나로, 생명과 순환, 적응력, 지혜의 상징입니다. 도교에서는 물의 부드러움과 낮은 곳으로 흐르는 겸손함이 사람이 본받아야 할 덕목으로 여겨집니다.",
+        "pronunciation_guide": {
+          "korean": "수 (su)",
+          "japanese_on": "すい (sui)",
+          "japanese_kun": "みず (mizu)",
+          "mandarin": "shuǐ",
+          "cantonese": "seoi2"
+        },
+        "stroke_order": {
+          "description": "중앙의 세로획을 먼저 그리고, 왼쪽 빗금, 오른쪽 빗금, 마지막으로 아래의 가로획을 그립니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "海",
+          "河",
+          "湖",
+          "流"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N5",
+          "hsk": "1급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0005-6728",
+      "character": "朋",
+      "unicode": "6728",
+      "meaning": "벗 붕",
+      "pronunciation": "붕",
+      "stroke_count": 8,
+      "radical": "月",
+      "grade": 4,
+      "order": 5,
+      "tags": [
+        "radical:月",
+        "strokes:8",
+        "category:relationship",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "벗, 친구, 동료의 의미를 가진 한자",
+        "etymology": "두 개의 '월(月, 고대에는 육(肉))'이 나란히 있는 모습으로, '서로 돕는 관계'를 의미하게 되었습니다.",
+        "mnemonics": "두 사람(月+月)이 나란히 서 있는 모습으로 '벗'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "朋友",
+            "meaning": "붕우",
+            "pronunciation": "붕우",
+            "example_sentence": "그는 나의 소중한 朋友이다.",
+            "usage": "친구를 표현할 때 사용"
+          },
+          {
+            "word": "親朋",
+            "meaning": "친붕",
+            "pronunciation": "친붕",
+            "example_sentence": "親朋들이 모두 모였다.",
+            "usage": "가까운 친구들을 표현할 때 사용"
+          },
+          {
+            "word": "朋黨",
+            "meaning": "붕당",
+            "pronunciation": "붕당",
+            "example_sentence": "朋黨을 이루어 정치적 활동을 했다.",
+            "usage": "정치적 당파를 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "朋來有信",
+            "meaning": "붕래유신 - 친구가 와서 소식이 있다",
+            "pronunciation": "붕래유신",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "朋自遠方來",
+            "meaning": "붕자원방래 - 친구가 먼 곳에서 왔다",
+            "pronunciation": "붕자원방래",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "유교 문화에서 '朋'은 사회적 관계의 기본으로 여겨지며, 공자는 '朋友有信'(붕우유신, 친구 사이에는 믿음이 있어야 한다)를 강조했습니다. 전통적으로 동아시아에서는 친구 관계가 단순한 사교가 아닌 상호 성장과 도덕적 발전을 위한 관계로 인식되었습니다.",
+        "pronunciation_guide": {
+          "korean": "붕 (bung)",
+          "japanese_on": "ほう (hou)",
+          "japanese_kun": "とも (tomo)",
+          "mandarin": "péng",
+          "cantonese": "pang4"
+        },
+        "stroke_order": {
+          "description": "왼쪽의 월(月) 부분을 먼저 쓰고, 오른쪽의 월(月) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "友",
+          "交",
+          "親",
+          "伴"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "4급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0006-9762",
+      "character": "音",
+      "unicode": "9762",
+      "meaning": "소리 음",
+      "pronunciation": "음",
+      "stroke_count": 9,
+      "radical": "音",
+      "grade": 4,
+      "order": 6,
+      "tags": [
+        "radical:音",
+        "strokes:9",
+        "category:sound",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "소리, 음악, 음성, 음향의 의미를 가진 한자",
+        "etymology": "옛날에 실에 구슬을 꿰어 늘어뜨려 소리를 내는 악기를 본뜬 상형문자입니다.",
+        "mnemonics": "말(言)이 있는 곳에 해(日)가 있는 모습으로 '소리'를 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "音樂",
+            "meaning": "음악",
+            "pronunciation": "음악",
+            "example_sentence": "좋은 音樂을 들었다.",
+            "usage": "음악을 표현할 때 사용"
+          },
+          {
+            "word": "音聲",
+            "meaning": "음성",
+            "pronunciation": "음성",
+            "example_sentence": "그의 音聲이 들렸다.",
+            "usage": "사람의 목소리를 표현할 때 사용"
+          },
+          {
+            "word": "發音",
+            "meaning": "발음",
+            "pronunciation": "발음",
+            "example_sentence": "정확한 發音이 중요하다.",
+            "usage": "소리를 내는 방법을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "音容宛在",
+            "meaning": "음용완재 - 소리와 모습이 완연히 있는 듯함",
+            "pronunciation": "음용완재",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "一音成律",
+            "meaning": "일음성률 - 한 소리가 음률을 이룸",
+            "pronunciation": "일음성률",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 전통 문화에서 '音'은 우주의 조화를 나타내는 중요한 개념으로, 음악은 단순한 오락이 아닌 자연과 사회의 조화를 반영하는 것으로 여겨졌습니다. 특히 유교에서는 예악(禮樂)을 통한 사회 질서 확립을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "음 (eum)",
+          "japanese_on": "おん (on), いん (in)",
+          "japanese_kun": "おと (oto)",
+          "mandarin": "yīn",
+          "cantonese": "jam1"
+        },
+        "stroke_order": {
+          "description": "상단의 언(言) 부분을 먼저 쓰고, 하단의 일(日) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "聲",
+          "響",
+          "樂",
+          "韻"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0007-661F",
+      "character": "星",
+      "unicode": "661F",
+      "meaning": "별 성",
+      "pronunciation": "성",
+      "stroke_count": 9,
+      "radical": "日",
+      "grade": 4,
+      "order": 7,
+      "tags": [
+        "radical:日",
+        "strokes:9",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "별, 행성, 천체, 성좌의 의미를 가진 한자",
+        "etymology": "해(日)와 생길 생(生)의 결합으로, '해에서 생겨난 빛나는 것'이라는 의미에서 '별'을 뜻하게 되었습니다.",
+        "mnemonics": "해(日)로부터 생겨난(生) 작은 빛으로 '별'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "星座",
+            "meaning": "성좌",
+            "pronunciation": "성좌",
+            "example_sentence": "그의 星座는 물고기자리이다.",
+            "usage": "별자리를 표현할 때 사용"
+          },
+          {
+            "word": "惑星",
+            "meaning": "혹성",
+            "pronunciation": "혹성",
+            "example_sentence": "화성은 붉은 惑星이다.",
+            "usage": "행성을 표현할 때 사용"
+          },
+          {
+            "word": "星空",
+            "meaning": "성공",
+            "pronunciation": "성공",
+            "example_sentence": "맑은 夜空에 星空이 빛난다.",
+            "usage": "별이 빛나는 하늘을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "繁星點點",
+            "meaning": "번성점점 - 별이 많이 빛나다",
+            "pronunciation": "번성점점",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "星火燎原",
+            "meaning": "성화료원 - 작은 불씨가 들판을 태움",
+            "pronunciation": "성화료원",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아의 전통 천문학에서 별(星)은 천체 관측의 기본이었으며, 계절 변화와, 농경 활동, 그리고 명과 운세를 점치는 데 중요한 역할을 했습니다. 중국 고대 천문학은 28수(宿)라는 별자리 체계를 발전시켰고, 이는 한국과 일본에도 영향을 미쳤습니다.",
+        "pronunciation_guide": {
+          "korean": "성 (seong)",
+          "japanese_on": "せい (sei), しょう (shou)",
+          "japanese_kun": "ほし (hoshi)",
+          "mandarin": "xīng",
+          "cantonese": "sing1"
+        },
+        "stroke_order": {
+          "description": "왼쪽의 해 일(日) 부분을 먼저 쓰고, 오른쪽의 생길 생(生) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "月",
+          "宿",
+          "晨",
+          "辰"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0008-6587",
+      "character": "斷",
+      "unicode": "6587",
+      "meaning": "끊을 단",
+      "pronunciation": "단",
+      "stroke_count": 18,
+      "radical": "斤",
+      "grade": 4,
+      "order": 8,
+      "tags": [
+        "radical:斤",
+        "strokes:18",
+        "category:action",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "끊다, 단절하다, 결정하다, 판단하다의 의미를 가진 한자",
+        "etymology": "연(㕣), 갗 단(㫃), 도끼 근(斤)의 결합으로, '도끼로 확실하게 자르다'는 의미에서 '끊다'의 뜻을 갖게 되었습니다.",
+        "mnemonics": "도끼(斤)로 확실히 잘라서 '단절'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "斷定",
+            "meaning": "단정",
+            "pronunciation": "단정",
+            "example_sentence": "섣불리 斷定하지 마세요.",
+            "usage": "확실히 판단하는 것을 표현할 때 사용"
+          },
+          {
+            "word": "中斷",
+            "meaning": "중단",
+            "pronunciation": "중단",
+            "example_sentence": "공사가 中斷되었다.",
+            "usage": "도중에 그치는 것을 표현할 때 사용"
+          },
+          {
+            "word": "斷絶",
+            "meaning": "단절",
+            "pronunciation": "단절",
+            "example_sentence": "두 나라의 관계가 斷絶되었다.",
+            "usage": "완전히 끊어짐을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "斷織勸學",
+            "meaning": "단직권학 - 베 짜기를 끊어 학문을 권함",
+            "pronunciation": "단직권학",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "斷雲逐電",
+            "meaning": "단운축전 - 구름을 끊고 번개를 쫓는다",
+            "pronunciation": "단운축전",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 철학에서 '斷'은 결단력과 판단력을 나타내는 중요한 개념입니다. 유교에서는 올바른 판단을 내리기 위한 지식과 덕목을 강조했으며, 불교에서는 '斷惑'(단혹)을 통해 미혹을 끊고 깨달음을 얻는 것을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "단 (dan)",
+          "japanese_on": "だん (dan)",
+          "japanese_kun": "た(つ) (ta(tsu)), ことわ(る) (kotowa(ru))",
+          "mandarin": "duàn",
+          "cantonese": "dyun6"
+        },
+        "stroke_order": {
+          "description": "상단의 연(㕣) 부분을 먼저 쓰고, 중간의 단(㫃) 부분, 마지막으로 하단의 근(斤) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "切",
+          "絶",
+          "決",
+          "判"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "5급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0004-6C34",
+      "character": "水",
+      "unicode": "6C34",
+      "meaning": "물 수",
+      "pronunciation": "수",
+      "stroke_count": 4,
+      "radical": "水",
+      "grade": 4,
+      "order": 4,
+      "tags": [
+        "radical:水",
+        "strokes:4",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "물, 액체, 수분, 수액의 의미를 가진 한자",
+        "etymology": "물이 흘러내리는 모습을 본뜬 상형문자입니다. 물이 양쪽으로 흘러내리는 형태를 도식화했습니다.",
+        "mnemonics": "물이 양쪽으로 흘러내리는 모습을 형상화한 것으로 '물'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "水分",
+            "meaning": "수분",
+            "pronunciation": "수분",
+            "example_sentence": "피부에 水分이 부족하다.",
+            "usage": "물기나 습기를 표현할 때 사용"
+          },
+          {
+            "word": "水曜日",
+            "meaning": "수요일",
+            "pronunciation": "수요일",
+            "example_sentence": "오늘은 水曜日입니다.",
+            "usage": "요일을 표현할 때 사용"
+          },
+          {
+            "word": "海水",
+            "meaning": "해수",
+            "pronunciation": "해수",
+            "example_sentence": "海水 온도가 상승하고 있다.",
+            "usage": "바닷물을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "水火不容",
+            "meaning": "수화불용 - 물과 불이 서로 용납하지 않음",
+            "pronunciation": "수화불용",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "上善若水",
+            "meaning": "상선약수 - 최고의 선은 물과 같다",
+            "pronunciation": "상선약수",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 물(水)은 오행(五行)의 하나로, 생명과 순환, 적응력, 지혜의 상징입니다. 도교에서는 물의 부드러움과 낮은 곳으로 흐르는 겸손함이 사람이 본받아야 할 덕목으로 여겨집니다.",
+        "pronunciation_guide": {
+          "korean": "수 (su)",
+          "japanese_on": "すい (sui)",
+          "japanese_kun": "みず (mizu)",
+          "mandarin": "shuǐ",
+          "cantonese": "seoi2"
+        },
+        "stroke_order": {
+          "description": "중앙의 세로획을 먼저 그리고, 왼쪽 빗금, 오른쪽 빗금, 마지막으로 아래의 가로획을 그립니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "海",
+          "河",
+          "湖",
+          "流"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N5",
+          "hsk": "1급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0005-6728",
+      "character": "朋",
+      "unicode": "6728",
+      "meaning": "벗 붕",
+      "pronunciation": "붕",
+      "stroke_count": 8,
+      "radical": "月",
+      "grade": 4,
+      "order": 5,
+      "tags": [
+        "radical:月",
+        "strokes:8",
+        "category:relationship",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "벗, 친구, 동료의 의미를 가진 한자",
+        "etymology": "두 개의 '월(月, 고대에는 육(肉))'이 나란히 있는 모습으로, '서로 돕는 관계'를 의미하게 되었습니다.",
+        "mnemonics": "두 사람(月+月)이 나란히 서 있는 모습으로 '벗'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "朋友",
+            "meaning": "붕우",
+            "pronunciation": "붕우",
+            "example_sentence": "그는 나의 소중한 朋友이다.",
+            "usage": "친구를 표현할 때 사용"
+          },
+          {
+            "word": "親朋",
+            "meaning": "친붕",
+            "pronunciation": "친붕",
+            "example_sentence": "親朋들이 모두 모였다.",
+            "usage": "가까운 친구들을 표현할 때 사용"
+          },
+          {
+            "word": "朋黨",
+            "meaning": "붕당",
+            "pronunciation": "붕당",
+            "example_sentence": "朋黨을 이루어 정치적 활동을 했다.",
+            "usage": "정치적 당파를 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "朋來有信",
+            "meaning": "붕래유신 - 친구가 와서 소식이 있다",
+            "pronunciation": "붕래유신",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "朋自遠方來",
+            "meaning": "붕자원방래 - 친구가 먼 곳에서 왔다",
+            "pronunciation": "붕자원방래",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "유교 문화에서 '朋'은 사회적 관계의 기본으로 여겨지며, 공자는 '朋友有信'(붕우유신, 친구 사이에는 믿음이 있어야 한다)를 강조했습니다. 전통적으로 동아시아에서는 친구 관계가 단순한 사교가 아닌 상호 성장과 도덕적 발전을 위한 관계로 인식되었습니다.",
+        "pronunciation_guide": {
+          "korean": "붕 (bung)",
+          "japanese_on": "ほう (hou)",
+          "japanese_kun": "とも (tomo)",
+          "mandarin": "péng",
+          "cantonese": "pang4"
+        },
+        "stroke_order": {
+          "description": "왼쪽의 월(月) 부분을 먼저 쓰고, 오른쪽의 월(月) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "友",
+          "交",
+          "親",
+          "伴"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "4급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0006-9762",
+      "character": "音",
+      "unicode": "9762",
+      "meaning": "소리 음",
+      "pronunciation": "음",
+      "stroke_count": 9,
+      "radical": "音",
+      "grade": 4,
+      "order": 6,
+      "tags": [
+        "radical:音",
+        "strokes:9",
+        "category:sound",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "소리, 음악, 음성, 음향의 의미를 가진 한자",
+        "etymology": "옛날에 실에 구슬을 꿰어 늘어뜨려 소리를 내는 악기를 본뜬 상형문자입니다.",
+        "mnemonics": "말(言)이 있는 곳에 해(日)가 있는 모습으로 '소리'를 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "音樂",
+            "meaning": "음악",
+            "pronunciation": "음악",
+            "example_sentence": "좋은 音樂을 들었다.",
+            "usage": "음악을 표현할 때 사용"
+          },
+          {
+            "word": "音聲",
+            "meaning": "음성",
+            "pronunciation": "음성",
+            "example_sentence": "그의 音聲이 들렸다.",
+            "usage": "사람의 목소리를 표현할 때 사용"
+          },
+          {
+            "word": "發音",
+            "meaning": "발음",
+            "pronunciation": "발음",
+            "example_sentence": "정확한 發音이 중요하다.",
+            "usage": "소리를 내는 방법을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "音容宛在",
+            "meaning": "음용완재 - 소리와 모습이 완연히 있는 듯함",
+            "pronunciation": "음용완재",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "一音成律",
+            "meaning": "일음성률 - 한 소리가 음률을 이룸",
+            "pronunciation": "일음성률",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 전통 문화에서 '音'은 우주의 조화를 나타내는 중요한 개념으로, 음악은 단순한 오락이 아닌 자연과 사회의 조화를 반영하는 것으로 여겨졌습니다. 특히 유교에서는 예악(禮樂)을 통한 사회 질서 확립을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "음 (eum)",
+          "japanese_on": "おん (on), いん (in)",
+          "japanese_kun": "おと (oto)",
+          "mandarin": "yīn",
+          "cantonese": "jam1"
+        },
+        "stroke_order": {
+          "description": "상단의 언(言) 부분을 먼저 쓰고, 하단의 일(日) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "聲",
+          "響",
+          "樂",
+          "韻"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0007-661F",
+      "character": "星",
+      "unicode": "661F",
+      "meaning": "별 성",
+      "pronunciation": "성",
+      "stroke_count": 9,
+      "radical": "日",
+      "grade": 4,
+      "order": 7,
+      "tags": [
+        "radical:日",
+        "strokes:9",
+        "category:nature",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "별, 행성, 천체, 성좌의 의미를 가진 한자",
+        "etymology": "해(日)와 생길 생(生)의 결합으로, '해에서 생겨난 빛나는 것'이라는 의미에서 '별'을 뜻하게 되었습니다.",
+        "mnemonics": "해(日)로부터 생겨난(生) 작은 빛으로 '별'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "星座",
+            "meaning": "성좌",
+            "pronunciation": "성좌",
+            "example_sentence": "그의 星座는 물고기자리이다.",
+            "usage": "별자리를 표현할 때 사용"
+          },
+          {
+            "word": "惑星",
+            "meaning": "혹성",
+            "pronunciation": "혹성",
+            "example_sentence": "화성은 붉은 惑星이다.",
+            "usage": "행성을 표현할 때 사용"
+          },
+          {
+            "word": "星空",
+            "meaning": "성공",
+            "pronunciation": "성공",
+            "example_sentence": "맑은 夜空에 星空이 빛난다.",
+            "usage": "별이 빛나는 하늘을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "繁星點點",
+            "meaning": "번성점점 - 별이 많이 빛나다",
+            "pronunciation": "번성점점",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "星火燎原",
+            "meaning": "성화료원 - 작은 불씨가 들판을 태움",
+            "pronunciation": "성화료원",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아의 전통 천문학에서 별(星)은 천체 관측의 기본이었으며, 계절 변화와, 농경 활동, 그리고 명과 운세를 점치는 데 중요한 역할을 했습니다. 중국 고대 천문학은 28수(宿)라는 별자리 체계를 발전시켰고, 이는 한국과 일본에도 영향을 미쳤습니다.",
+        "pronunciation_guide": {
+          "korean": "성 (seong)",
+          "japanese_on": "せい (sei), しょう (shou)",
+          "japanese_kun": "ほし (hoshi)",
+          "mandarin": "xīng",
+          "cantonese": "sing1"
+        },
+        "stroke_order": {
+          "description": "왼쪽의 해 일(日) 부분을 먼저 쓰고, 오른쪽의 생길 생(生) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "月",
+          "宿",
+          "晨",
+          "辰"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "고급"
+        }
+      }
+    },
+    {
+      "id": "HJ-04-0008-6587",
+      "character": "斷",
+      "unicode": "6587",
+      "meaning": "끊을 단",
+      "pronunciation": "단",
+      "stroke_count": 18,
+      "radical": "斤",
+      "grade": 4,
+      "order": 8,
+      "tags": [
+        "radical:斤",
+        "strokes:18",
+        "category:action",
+        "level:advanced",
+        "grade:4"
+      ],
+      "extended_data": {
+        "detailed_meaning": "끊다, 단절하다, 결정하다, 판단하다의 의미를 가진 한자",
+        "etymology": "연(㕣), 갗 단(㫃), 도끼 근(斤)의 결합으로, '도끼로 확실하게 자르다'는 의미에서 '끊다'의 뜻을 갖게 되었습니다.",
+        "mnemonics": "도끼(斤)로 확실히 잘라서 '단절'을 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "斷定",
+            "meaning": "단정",
+            "pronunciation": "단정",
+            "example_sentence": "섣불리 斷定하지 마세요.",
+            "usage": "확실히 판단하는 것을 표현할 때 사용"
+          },
+          {
+            "word": "中斷",
+            "meaning": "중단",
+            "pronunciation": "중단",
+            "example_sentence": "공사가 中斷되었다.",
+            "usage": "도중에 그치는 것을 표현할 때 사용"
+          },
+          {
+            "word": "斷絶",
+            "meaning": "단절",
+            "pronunciation": "단절",
+            "example_sentence": "두 나라의 관계가 斷絶되었다.",
+            "usage": "완전히 끊어짐을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "斷織勸學",
+            "meaning": "단직권학 - 베 짜기를 끊어 학문을 권함",
+            "pronunciation": "단직권학",
+            "difficulty": "advanced"
+          },
+          {
+            "sentence": "斷雲逐電",
+            "meaning": "단운축전 - 구름을 끊고 번개를 쫓는다",
+            "pronunciation": "단운축전",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 철학에서 '斷'은 결단력과 판단력을 나타내는 중요한 개념입니다. 유교에서는 올바른 판단을 내리기 위한 지식과 덕목을 강조했으며, 불교에서는 '斷惑'(단혹)을 통해 미혹을 끊고 깨달음을 얻는 것을 중시했습니다.",
+        "pronunciation_guide": {
+          "korean": "단 (dan)",
+          "japanese_on": "だん (dan)",
+          "japanese_kun": "た(つ) (ta(tsu)), ことわ(る) (kotowa(ru))",
+          "mandarin": "duàn",
+          "cantonese": "dyun6"
+        },
+        "stroke_order": {
+          "description": "상단의 연(㕣) 부분을 먼저 쓰고, 중간의 단(㫃) 부분, 마지막으로 하단의 근(斤) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "切",
+          "絶",
+          "決",
+          "判"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "5급",
+          "korean_standard": "고급"
+        }
       }
     }
   ]

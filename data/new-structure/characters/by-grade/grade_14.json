@@ -1,9 +1,11 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2025-04-10T14:30:01.530Z",
+    "last_updated": "2025-04-11T10:19:33.036Z",
     "grade": 14,
-    "total_characters": 56
+    "total_characters": 56,
+    "description": "초급 2단계 - 숫자 및 기초 개념",
+    "category": "beginner"
   },
   "characters": [
     {
@@ -18,29 +20,87 @@
       "order": 1,
       "tags": [
         "radical:山",
-        "strokes:3"
+        "strokes:3",
+        "nature:landscape",
+        "frequency:high"
       ],
       "extended_data": {
-        "detailed_meaning": "뫼 산",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "산, 산맥, 산지와 같은 높이 솟은 지형을 나타내는 한자",
+        "etymology": "갑골문에서는 세 개의 봉우리가 있는 산의 모습을 형상화했습니다. 상형문자로, 산의 모양을 직접 본떠 만들어졌습니다.",
+        "mnemonics": "세 개의 봉우리가 있는 모양이 실제 산과 비슷합니다. 가운데 봉우리가 높고 양쪽이 낮은 것은 정상과 능선을 표현한 것입니다.",
         "common_words": [
           {
             "word": "山水",
-            "meaning": "산과 물",
-            "pronunciation": "산수"
+            "meaning": "산과 물, 자연 경치",
+            "pronunciation": "산수",
+            "example_sentence": "山水畵 - 산수화, 자연 풍경을 그린 그림",
+            "usage": "자연 풍경을 표현할 때 사용"
           },
           {
             "word": "登山",
-            "meaning": "등산",
-            "pronunciation": "등산"
+            "meaning": "등산, 산에 오름",
+            "pronunciation": "등산",
+            "example_sentence": "週末に登山する - 주말에 등산하다",
+            "usage": "산과 관련된 활동을 표현할 때 사용"
+          },
+          {
+            "word": "火山",
+            "meaning": "화산",
+            "pronunciation": "화산",
+            "example_sentence": "火山が噴火した - 화산이 분화했다",
+            "usage": "산의 종류를 표현할 때 사용"
+          },
+          {
+            "word": "山脈",
+            "meaning": "산맥",
+            "pronunciation": "산맥",
+            "example_sentence": "ヒマラヤ山脈 - 히말라야 산맥",
+            "usage": "산의 연속된 형태를 표현할 때 사용"
+          },
+          {
+            "word": "山岳",
+            "meaning": "산악, 높은 산",
+            "pronunciation": "산악",
+            "example_sentence": "山岳地帯 - 산악 지대",
+            "usage": "험준한 산지를 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "山高水長",
+            "meaning": "산고수장 - 산은 높고 물은 길다(영원함의 비유)",
+            "pronunciation": "산고수장",
+            "difficulty": "beginner"
+          },
+          {
+            "sentence": "山紫水明",
+            "meaning": "산자수명 - 산은 자줏빛이고 물은 맑다(아름다운 경치)",
+            "pronunciation": "산자수명",
+            "difficulty": "beginner"
+          },
+          {
+            "sentence": "泰山北斗",
+            "meaning": "태산북두 - 북두성과 같이 높고 중요한 사람",
+            "pronunciation": "태산북두",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "愚公移山",
+            "meaning": "우공이산 - 우공이 산을 옮긴다(끈기와 인내로 불가능해 보이는 일을 해내는 것)",
+            "pronunciation": "우공이산",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '山'은 단순한 지형 이상의 의미를 가집니다. 도교에서는 산을 신성한 장소로 여기며, 신선이 사는 곳으로 간주했습니다. 한국의 산신(山神) 신앙, 중국의 오악(五嶽) 숭배, 일본의 후지산 신성시 등 산과 관련된 문화적 전통이 풍부합니다. 또한 풍수지리에서 산은 양(陽)의 기운을 상징하며, 많은 문학과 예술 작품의 주제가 되어왔습니다.",
+        "pronunciation_guide": {
+          "korean": "산 (san)",
+          "japanese_on": "さん (san), せん (sen)",
+          "japanese_kun": "やま (yama)",
+          "mandarin": "shān",
+          "cantonese": "saan1"
+        },
         "stroke_order": {
-          "description": "",
+          "description": "먼저 왼쪽 사선을 위에서 아래로, 그 다음 오른쪽 사선을 위에서 아래로, 마지막으로 가운데 세로획을 위에서 아래로 그립니다.",
           "directions": [
             "M 15 75 L 35 25",
             "M 35 25 L 50 50",
@@ -48,7 +108,33 @@
             "M 65 25 L 85 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [
+          "川",
+          "石",
+          "岳",
+          "崖",
+          "岩",
+          "峰"
+        ],
+        "variants": [
+          "嶺",
+          "峠"
+        ],
+        "level_info": {
+          "jlpt": "N5",
+          "hsk": "1급",
+          "korean_standard": "초급"
+        },
+        "fun_activities": [
+          "山를 손가락으로 공중에 써보세요.",
+          "山를 찾는 보물찾기 놀이를 해보세요.",
+          "山를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "山는 3획이에요. 손가락으로 세어보세요.",
+          "山 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -63,29 +149,87 @@
       "order": 2,
       "tags": [
         "radical:水",
-        "strokes:4"
+        "strokes:4",
+        "nature:element",
+        "frequency:high"
       ],
       "extended_data": {
-        "detailed_meaning": "물 수",
-        "etymology": "",
-        "mnemonics": "",
+        "detailed_meaning": "물, 액체, 수분과 같은 유동적인 액체를 나타내는 한자",
+        "etymology": "갑골문에서는 흐르는 물의 모습을 형상화했습니다. 물이 중앙에서 양쪽으로 흘러내리는 모양을 표현했으며, 시간이 지나면서 현재의 형태로 정형화되었습니다.",
+        "mnemonics": "중심선에서 세 갈래로 물이 흘러내리는 모양입니다. 중앙에서 물방울이 뚝뚝 떨어지는 모습을 연상해 보세요.",
         "common_words": [
           {
             "word": "水曜日",
             "meaning": "수요일",
-            "pronunciation": "수요일"
+            "pronunciation": "수요일",
+            "example_sentence": "今日は水曜日です - 오늘은 수요일입니다",
+            "usage": "요일을 표현할 때 사용"
           },
           {
             "word": "水泳",
             "meaning": "수영",
-            "pronunciation": "수영"
+            "pronunciation": "수영",
+            "example_sentence": "水泳を習う - 수영을 배우다",
+            "usage": "물과 관련된 활동을 표현할 때 사용"
+          },
+          {
+            "word": "水準",
+            "meaning": "수준, 기준, 레벨",
+            "pronunciation": "수준",
+            "example_sentence": "高水準の技術 - Il고수준의 기술",
+            "usage": "정도나 단계를 표현할 때 사용"
+          },
+          {
+            "word": "水害",
+            "meaning": "수해, 물로 인한 재난",
+            "pronunciation": "수해",
+            "example_sentence": "水害対策 - 수해 대책",
+            "usage": "물로 인한 피해를 표현할 때 사용"
+          },
+          {
+            "word": "水道",
+            "meaning": "수도, 수도관",
+            "pronunciation": "수도",
+            "example_sentence": "水道水 - 수돗물",
+            "usage": "물 공급 시설을 표현할 때 사용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "山水",
+            "meaning": "산수 - 산과 물, 자연 경치",
+            "pronunciation": "산수",
+            "difficulty": "beginner"
+          },
+          {
+            "sentence": "水火不容",
+            "meaning": "수화불용 - 물과 불은 함께할 수 없다(서로 융합할 수 없는 관계)",
+            "pronunciation": "수화불용",
+            "difficulty": "beginner"
+          },
+          {
+            "sentence": "如魚得水",
+            "meaning": "여어득수 - 물을 얻은 물고기처럼(자신의 능력을 맘껏 발휘할 수 있는 상황)",
+            "pronunciation": "여어득수",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "上善若水",
+            "meaning": "상선약수 - 최고의 선은 물과 같다(노자 도덕경의 구절)",
+            "pronunciation": "상선약수",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '水'는 다섯 가지 원소(오행, 五行: 금, 목, 수, 화, 토) 중 하나로, 북쪽과 겨울, 검은색과 연관됩니다. 도교에서는 물의 성질인 '낮은 곳으로 흐르며 모든 것을 받아들이는 겸손'을 중요한 덕목으로 여깁니다. 물은 순환하고, 형태를 바꾸며, 적응력이 강한 특성으로 인해 유연함과 지혜의 상징으로 여겨졌습니다. 풍수지리에서는 물(水)이 음(陰)의 기운을 나타내며, 재물과 부(富)의 상징이기도 합니다.",
+        "pronunciation_guide": {
+          "korean": "수 (su)",
+          "japanese_on": "すい (sui)",
+          "japanese_kun": "みず (mizu)",
+          "mandarin": "shuǐ",
+          "cantonese": "seoi2"
+        },
         "stroke_order": {
-          "description": "",
+          "description": "먼저 중앙의 세로획을 위에서 아래로, 왼쪽 사선을, 오른쪽 사선을, 마지막으로 중앙 아래쪽 사선을 그립니다.",
           "directions": [
             "M 35 10 L 35 80",
             "M 35 10 L 10 30",
@@ -94,7 +238,35 @@
             "M 60 50 L 35 70"
           ]
         },
-        "related_characters": []
+        "related_characters": [
+          "川",
+          "江",
+          "河",
+          "海",
+          "湖",
+          "液",
+          "泉",
+          "波"
+        ],
+        "variants": [
+          "氵",
+          "氺"
+        ],
+        "level_info": {
+          "jlpt": "N5",
+          "hsk": "1급",
+          "korean_standard": "초급"
+        },
+        "fun_activities": [
+          "水를 손가락으로 공중에 써보세요.",
+          "水를 찾는 보물찾기 놀이를 해보세요.",
+          "水를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "水는 4획이에요. 손가락으로 세어보세요.",
+          "水 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -113,8 +285,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "나무 목",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "木는 옛날에 '나무 목'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "木(나무 목)는 4획으로 그려요. 이 한자는 마치 나무 목같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "木曜日",
@@ -127,9 +299,16 @@
             "pronunciation": "목재"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "木",
+            "meaning": "나무 목",
+            "pronunciation": "목",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "木(나무 목)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '목'로 발음해요. 입을 크게 벌리고 '목'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -139,7 +318,17 @@
             "M 80 10 L 50 40"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "木를 손가락으로 공중에 써보세요.",
+          "木를 찾는 보물찾기 놀이를 해보세요.",
+          "木를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "木는 4획이에요. 손가락으로 세어보세요.",
+          "木 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -158,8 +347,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "날 일",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "日는 옛날에 '날 일'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "日(날 일)는 4획으로 그려요. 이 한자는 마치 날 일같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "日曜日",
@@ -172,9 +361,16 @@
             "pronunciation": "일본"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "日",
+            "meaning": "날 일",
+            "pronunciation": "일",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "日(날 일)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '일'로 발음해요. 입을 크게 벌리고 '일'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -185,7 +381,17 @@
             "M 25 50 L 75 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "日를 손가락으로 공중에 써보세요.",
+          "日를 찾는 보물찾기 놀이를 해보세요.",
+          "日를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "日는 4획이에요. 손가락으로 세어보세요.",
+          "日 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -204,8 +410,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "달 월",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "月는 옛날에 '달 월'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "月(달 월)는 4획으로 그려요. 이 한자는 마치 달 월같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "月曜日",
@@ -218,9 +424,16 @@
             "pronunciation": "일월"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "月",
+            "meaning": "달 월",
+            "pronunciation": "월",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "月(달 월)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '월'로 발음해요. 입을 크게 벌리고 '월'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -232,7 +445,17 @@
             "M 40 65 L 60 65"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "月를 손가락으로 공중에 써보세요.",
+          "月를 찾는 보물찾기 놀이를 해보세요.",
+          "月를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "月는 4획이에요. 손가락으로 세어보세요.",
+          "月 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -256,8 +479,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "사람 인",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "人는 옛날에 '사람 인'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "人(사람 인)는 2획으로 그려요. 이 한자는 마치 사람 인같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "人間",
@@ -270,9 +493,16 @@
             "pronunciation": "인구"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "人",
+            "meaning": "사람 인",
+            "pronunciation": "인",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "人(사람 인)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '인'로 발음해요. 입을 크게 벌리고 '인'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -280,7 +510,17 @@
             "M 40 15 L 95 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "人를 손가락으로 공중에 써보세요.",
+          "人를 찾는 보물찾기 놀이를 해보세요.",
+          "人를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "人는 2획이에요. 손가락으로 세어보세요.",
+          "人 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -303,8 +543,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "뫼 산",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "山는 옛날에 '뫼 산'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "山(뫼 산)는 3획으로 그려요. 이 한자는 마치 뫼 산같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "山水",
@@ -317,9 +557,16 @@
             "pronunciation": "등산"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "山",
+            "meaning": "뫼 산",
+            "pronunciation": "산",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "山(뫼 산)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '산'로 발음해요. 입을 크게 벌리고 '산'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -329,7 +576,17 @@
             "M 65 25 L 85 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "山를 손가락으로 공중에 써보세요.",
+          "山를 찾는 보물찾기 놀이를 해보세요.",
+          "山를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "山는 3획이에요. 손가락으로 세어보세요.",
+          "山 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -353,8 +610,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "물 수",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "水는 옛날에 '물 수'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "水(물 수)는 4획으로 그려요. 이 한자는 마치 물 수같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "水分",
@@ -367,9 +624,16 @@
             "pronunciation": "수요일"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "水",
+            "meaning": "물 수",
+            "pronunciation": "수",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "水(물 수)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '수'로 발음해요. 입을 크게 벌리고 '수'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -380,7 +644,17 @@
             "M 60 50 L 35 70"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "水를 손가락으로 공중에 써보세요.",
+          "水를 찾는 보물찾기 놀이를 해보세요.",
+          "水를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "水는 4획이에요. 손가락으로 세어보세요.",
+          "水 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -404,8 +678,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "나무 목",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "木는 옛날에 '나무 목'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "木(나무 목)는 4획으로 그려요. 이 한자는 마치 나무 목같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "木曜日",
@@ -418,9 +692,16 @@
             "pronunciation": "목재"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "木",
+            "meaning": "나무 목",
+            "pronunciation": "목",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "木(나무 목)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '목'로 발음해요. 입을 크게 벌리고 '목'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -430,7 +711,17 @@
             "M 80 10 L 50 40"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "木를 손가락으로 공중에 써보세요.",
+          "木를 찾는 보물찾기 놀이를 해보세요.",
+          "木를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "木는 4획이에요. 손가락으로 세어보세요.",
+          "木 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -453,8 +744,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "날 일",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "日는 옛날에 '날 일'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "日(날 일)는 4획으로 그려요. 이 한자는 마치 날 일같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "日曜日",
@@ -467,9 +758,16 @@
             "pronunciation": "일본"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "日",
+            "meaning": "날 일",
+            "pronunciation": "일",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "日(날 일)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '일'로 발음해요. 입을 크게 벌리고 '일'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -480,7 +778,17 @@
             "M 25 50 L 75 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "日를 손가락으로 공중에 써보세요.",
+          "日를 찾는 보물찾기 놀이를 해보세요.",
+          "日를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "日는 4획이에요. 손가락으로 세어보세요.",
+          "日 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -503,8 +811,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "달 월",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "月는 옛날에 '달 월'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "月(달 월)는 4획으로 그려요. 이 한자는 마치 달 월같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "月曜日",
@@ -517,9 +825,16 @@
             "pronunciation": "일월"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "月",
+            "meaning": "달 월",
+            "pronunciation": "월",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "月(달 월)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '월'로 발음해요. 입을 크게 벌리고 '월'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -531,7 +846,17 @@
             "M 40 65 L 60 65"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "月를 손가락으로 공중에 써보세요.",
+          "月를 찾는 보물찾기 놀이를 해보세요.",
+          "月를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "月는 4획이에요. 손가락으로 세어보세요.",
+          "月 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -554,8 +879,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "불 화",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "火는 옛날에 '불 화'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "火(불 화)는 4획으로 그려요. 이 한자는 마치 불 화같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "火曜日",
@@ -568,9 +893,16 @@
             "pronunciation": "화산"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "火",
+            "meaning": "불 화",
+            "pronunciation": "화",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "火(불 화)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '화'로 발음해요. 입을 크게 벌리고 '화'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -580,7 +912,17 @@
             "M 60 60 C 75 70 85 85 90 95"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "火를 손가락으로 공중에 써보세요.",
+          "火를 찾는 보물찾기 놀이를 해보세요.",
+          "火를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "火는 4획이에요. 손가락으로 세어보세요.",
+          "火 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -603,8 +945,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "흙 토",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "土는 옛날에 '흙 토'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "土(흙 토)는 3획으로 그려요. 이 한자는 마치 흙 토같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "土曜日",
@@ -617,9 +959,16 @@
             "pronunciation": "국토"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "土",
+            "meaning": "흙 토",
+            "pronunciation": "토",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "土(흙 토)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '토'로 발음해요. 입을 크게 벌리고 '토'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -628,7 +977,17 @@
             "M 20 80 L 80 80"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "土를 손가락으로 공중에 써보세요.",
+          "土를 찾는 보물찾기 놀이를 해보세요.",
+          "土를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "土는 3획이에요. 손가락으로 세어보세요.",
+          "土 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -652,8 +1011,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "쇠 금",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "金는 옛날에 '쇠 금'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "金(쇠 금)는 8획으로 그려요. 이 한자는 마치 쇠 금같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "金曜日",
@@ -666,9 +1025,16 @@
             "pronunciation": "금액"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "金",
+            "meaning": "쇠 금",
+            "pronunciation": "금",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "金(쇠 금)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '금'로 발음해요. 입을 크게 벌리고 '금'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -682,7 +1048,17 @@
             "M 20 85 L 80 85"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "金를 손가락으로 공중에 써보세요.",
+          "金를 찾는 보물찾기 놀이를 해보세요.",
+          "金를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "金는 8획이에요. 손가락으로 세어보세요.",
+          "金 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -705,8 +1081,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "아들 자",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "子는 옛날에 '아들 자'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "子(아들 자)는 3획으로 그려요. 이 한자는 마치 아들 자같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "子息",
@@ -719,9 +1095,16 @@
             "pronunciation": "친자"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "子",
+            "meaning": "아들 자",
+            "pronunciation": "자",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "子(아들 자)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '자'로 발음해요. 입을 크게 벌리고 '자'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -731,7 +1114,17 @@
             "M 50 50 L 70 70"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "子를 손가락으로 공중에 써보세요.",
+          "子를 찾는 보물찾기 놀이를 해보세요.",
+          "子를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "子는 3획이에요. 손가락으로 세어보세요.",
+          "子 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -755,8 +1148,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "마음 심",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "心는 옛날에 '마음 심'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "心(마음 심)는 4획으로 그려요. 이 한자는 마치 마음 심같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "心臟",
@@ -769,9 +1162,16 @@
             "pronunciation": "중심"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "心",
+            "meaning": "마음 심",
+            "pronunciation": "심",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "心(마음 심)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '심'로 발음해요. 입을 크게 벌리고 '심'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -781,7 +1181,17 @@
             "M 80 50 L 65 90"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "心를 손가락으로 공중에 써보세요.",
+          "心를 찾는 보물찾기 놀이를 해보세요.",
+          "心를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "心는 4획이에요. 손가락으로 세어보세요.",
+          "心 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -804,8 +1214,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "손 수",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "手는 옛날에 '손 수'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "手(손 수)는 4획으로 그려요. 이 한자는 마치 손 수같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "手帳",
@@ -818,9 +1228,16 @@
             "pronunciation": "박수"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "手",
+            "meaning": "손 수",
+            "pronunciation": "수",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "手(손 수)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '수'로 발음해요. 입을 크게 벌리고 '수'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -833,7 +1250,17 @@
             "M 45 75 L 90 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "手를 손가락으로 공중에 써보세요.",
+          "手를 찾는 보물찾기 놀이를 해보세요.",
+          "手를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "手는 4획이에요. 손가락으로 세어보세요.",
+          "手 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -856,8 +1283,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "입 구",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "口는 옛날에 '입 구'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "口(입 구)는 3획으로 그려요. 이 한자는 마치 입 구같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "口語",
@@ -870,9 +1297,16 @@
             "pronunciation": "출구"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "口",
+            "meaning": "입 구",
+            "pronunciation": "구",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "口(입 구)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '구'로 발음해요. 입을 크게 벌리고 '구'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -882,7 +1316,17 @@
             "M 75 25 L 75 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "口를 손가락으로 공중에 써보세요.",
+          "口를 찾는 보물찾기 놀이를 해보세요.",
+          "口를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "口는 3획이에요. 손가락으로 세어보세요.",
+          "口 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -905,8 +1349,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "귀 이",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "耳는 옛날에 '귀 이'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "耳(귀 이)는 6획으로 그려요. 이 한자는 마치 귀 이같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "耳鼻科",
@@ -919,14 +1363,31 @@
             "pronunciation": "이목"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "耳",
+            "meaning": "귀 이",
+            "pronunciation": "이",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "耳(귀 이)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '이'로 발음해요. 입을 크게 벌리고 '이'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "耳를 손가락으로 공중에 써보세요.",
+          "耳를 찾는 보물찾기 놀이를 해보세요.",
+          "耳를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "耳는 6획이에요. 손가락으로 세어보세요.",
+          "耳 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -949,8 +1410,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "눈 목",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "目는 옛날에 '눈 목'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "目(눈 목)는 5획으로 그려요. 이 한자는 마치 눈 목같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "目的",
@@ -963,14 +1424,31 @@
             "pronunciation": "주목"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "目",
+            "meaning": "눈 목",
+            "pronunciation": "목",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "目(눈 목)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '목'로 발음해요. 입을 크게 벌리고 '목'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "目를 손가락으로 공중에 써보세요.",
+          "目를 찾는 보물찾기 놀이를 해보세요.",
+          "目를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "目는 5획이에요. 손가락으로 세어보세요.",
+          "目 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -993,8 +1471,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "발 족",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "足는 옛날에 '발 족'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "足(발 족)는 7획으로 그려요. 이 한자는 마치 발 족같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "足跡",
@@ -1007,14 +1485,31 @@
             "pronunciation": "수족"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "足",
+            "meaning": "발 족",
+            "pronunciation": "족",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "足(발 족)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '족'로 발음해요. 입을 크게 벌리고 '족'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "足를 손가락으로 공중에 써보세요.",
+          "足를 찾는 보물찾기 놀이를 해보세요.",
+          "足를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "足는 7획이에요. 손가락으로 세어보세요.",
+          "足 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1037,8 +1532,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "문 문",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "門는 옛날에 '문 문'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "門(문 문)는 8획으로 그려요. 이 한자는 마치 문 문같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "門口",
@@ -1051,14 +1546,31 @@
             "pronunciation": "입문"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "門",
+            "meaning": "문 문",
+            "pronunciation": "문",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "門(문 문)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '문'로 발음해요. 입을 크게 벌리고 '문'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "門를 손가락으로 공중에 써보세요.",
+          "門를 찾는 보물찾기 놀이를 해보세요.",
+          "門를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "門는 8획이에요. 손가락으로 세어보세요.",
+          "門 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1081,8 +1593,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "밭 전",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "田는 옛날에 '밭 전'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "田(밭 전)는 5획으로 그려요. 이 한자는 마치 밭 전같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "田園",
@@ -1095,14 +1607,31 @@
             "pronunciation": "수전"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "田",
+            "meaning": "밭 전",
+            "pronunciation": "전",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "田(밭 전)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '전'로 발음해요. 입을 크게 벌리고 '전'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "田를 손가락으로 공중에 써보세요.",
+          "田를 찾는 보물찾기 놀이를 해보세요.",
+          "田를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "田는 5획이에요. 손가락으로 세어보세요.",
+          "田 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1125,8 +1654,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "돌 석",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "石는 옛날에 '돌 석'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "石(돌 석)는 5획으로 그려요. 이 한자는 마치 돌 석같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "石油",
@@ -1139,14 +1668,31 @@
             "pronunciation": "석기"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "石",
+            "meaning": "돌 석",
+            "pronunciation": "석",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "石(돌 석)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '석'로 발음해요. 입을 크게 벌리고 '석'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "石를 손가락으로 공중에 써보세요.",
+          "石를 찾는 보물찾기 놀이를 해보세요.",
+          "石를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "石는 5획이에요. 손가락으로 세어보세요.",
+          "石 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1169,8 +1715,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "내 천",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "川는 옛날에 '내 천'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "川(내 천)는 3획으로 그려요. 이 한자는 마치 내 천같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "河川",
@@ -1183,14 +1729,31 @@
             "pronunciation": "천안"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "川",
+            "meaning": "내 천",
+            "pronunciation": "천",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "川(내 천)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '천'로 발음해요. 입을 크게 벌리고 '천'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "川를 손가락으로 공중에 써보세요.",
+          "川를 찾는 보물찾기 놀이를 해보세요.",
+          "川를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "川는 3획이에요. 손가락으로 세어보세요.",
+          "川 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1213,8 +1776,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "바람 풍",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "風는 옛날에 '바람 풍'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "風(바람 풍)는 9획으로 그려요. 이 한자는 마치 바람 풍같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "風景",
@@ -1227,14 +1790,31 @@
             "pronunciation": "풍미"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "風",
+            "meaning": "바람 풍",
+            "pronunciation": "풍",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "風(바람 풍)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '풍'로 발음해요. 입을 크게 벌리고 '풍'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "風를 손가락으로 공중에 써보세요.",
+          "風를 찾는 보물찾기 놀이를 해보세요.",
+          "風를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "風는 9획이에요. 손가락으로 세어보세요.",
+          "風 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1257,8 +1837,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "비 우",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "雨는 옛날에 '비 우'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "雨(비 우)는 8획으로 그려요. 이 한자는 마치 비 우같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "雨具",
@@ -1271,14 +1851,31 @@
             "pronunciation": "우천"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "雨",
+            "meaning": "비 우",
+            "pronunciation": "우",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "雨(비 우)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '우'로 발음해요. 입을 크게 벌리고 '우'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "雨를 손가락으로 공중에 써보세요.",
+          "雨를 찾는 보물찾기 놀이를 해보세요.",
+          "雨를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "雨는 8획이에요. 손가락으로 세어보세요.",
+          "雨 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1301,8 +1898,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "눈 설",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "雪는 옛날에 '눈 설'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "雪(눈 설)는 11획으로 그려요. 이 한자는 마치 눈 설같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "雪道",
@@ -1315,14 +1912,31 @@
             "pronunciation": "설화"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "雪",
+            "meaning": "눈 설",
+            "pronunciation": "설",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "雪(눈 설)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '설'로 발음해요. 입을 크게 벌리고 '설'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "雪를 손가락으로 공중에 써보세요.",
+          "雪를 찾는 보물찾기 놀이를 해보세요.",
+          "雪를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "雪는 11획이에요. 손가락으로 세어보세요.",
+          "雨 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1345,8 +1959,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "넉 사",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "四는 옛날에 '넉 사'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "四(넉 사)는 5획으로 그려요. 이 한자는 마치 넉 사같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "四月",
@@ -1359,14 +1973,31 @@
             "pronunciation": "사각"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "四",
+            "meaning": "넉 사",
+            "pronunciation": "사",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "四(넉 사)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '사'로 발음해요. 입을 크게 벌리고 '사'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "四를 손가락으로 공중에 써보세요.",
+          "四를 찾는 보물찾기 놀이를 해보세요.",
+          "四를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "四는 5획이에요. 손가락으로 세어보세요.",
+          "囗 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1389,8 +2020,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "다섯 오",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "五는 옛날에 '다섯 오'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "五(다섯 오)는 4획으로 그려요. 이 한자는 마치 다섯 오같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "五月",
@@ -1403,14 +2034,31 @@
             "pronunciation": "오감"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "五",
+            "meaning": "다섯 오",
+            "pronunciation": "오",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "五(다섯 오)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '오'로 발음해요. 입을 크게 벌리고 '오'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "五를 손가락으로 공중에 써보세요.",
+          "五를 찾는 보물찾기 놀이를 해보세요.",
+          "五를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "五는 4획이에요. 손가락으로 세어보세요.",
+          "二 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1433,8 +2081,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "여섯 육",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "六는 옛날에 '여섯 육'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "六(여섯 육)는 4획으로 그려요. 이 한자는 마치 여섯 육같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "六月",
@@ -1447,14 +2095,31 @@
             "pronunciation": "육일"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "六",
+            "meaning": "여섯 육",
+            "pronunciation": "육",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "六(여섯 육)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '육'로 발음해요. 입을 크게 벌리고 '육'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "六를 손가락으로 공중에 써보세요.",
+          "六를 찾는 보물찾기 놀이를 해보세요.",
+          "六를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "六는 4획이에요. 손가락으로 세어보세요.",
+          "八 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1477,8 +2142,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "학교 교",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "校는 옛날에 '학교 교'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "校(학교 교)는 10획으로 그려요. 이 한자는 마치 학교 교같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "學校",
@@ -1491,9 +2156,16 @@
             "pronunciation": "교장"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "校",
+            "meaning": "학교 교",
+            "pronunciation": "교",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "校(학교 교)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '교'로 발음해요. 입을 크게 벌리고 '교'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1511,7 +2183,17 @@
             "M 75 30 L 60 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "校를 손가락으로 공중에 써보세요.",
+          "校를 찾는 보물찾기 놀이를 해보세요.",
+          "校를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "校는 10획이에요. 손가락으로 세어보세요.",
+          "木 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1534,8 +2216,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "길 장",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "長는 옛날에 '길 장'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "長(길 장)는 8획으로 그려요. 이 한자는 마치 길 장같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "校長",
@@ -1548,14 +2230,31 @@
             "pronunciation": "성장"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "長",
+            "meaning": "길 장",
+            "pronunciation": "장",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "長(길 장)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '장'로 발음해요. 입을 크게 벌리고 '장'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "長를 손가락으로 공중에 써보세요.",
+          "長를 찾는 보물찾기 놀이를 해보세요.",
+          "長를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "長는 8획이에요. 손가락으로 세어보세요.",
+          "長 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1578,8 +2277,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "수풀 삼",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "森는 옛날에 '수풀 삼'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "森(수풀 삼)는 12획으로 그려요. 이 한자는 마치 수풀 삼같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "森林",
@@ -1592,14 +2291,31 @@
             "pronunciation": "밀삼"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "森",
+            "meaning": "수풀 삼",
+            "pronunciation": "삼",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "森(수풀 삼)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '삼'로 발음해요. 입을 크게 벌리고 '삼'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "森를 손가락으로 공중에 써보세요.",
+          "森를 찾는 보물찾기 놀이를 해보세요.",
+          "森를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "森는 12획이에요. 손가락으로 세어보세요.",
+          "木 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1622,8 +2338,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "수풀 림",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "林는 옛날에 '수풀 림'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "林(수풀 림)는 8획으로 그려요. 이 한자는 마치 수풀 림같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "森林",
@@ -1636,14 +2352,31 @@
             "pronunciation": "임업"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "林",
+            "meaning": "수풀 림",
+            "pronunciation": "림",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "林(수풀 림)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '림'로 발음해요. 입을 크게 벌리고 '림'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "林를 손가락으로 공중에 써보세요.",
+          "林를 찾는 보물찾기 놀이를 해보세요.",
+          "林를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "林는 8획이에요. 손가락으로 세어보세요.",
+          "木 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1666,8 +2399,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "봄 춘",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "春는 옛날에 '봄 춘'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "春(봄 춘)는 9획으로 그려요. 이 한자는 마치 봄 춘같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "春夏",
@@ -1680,14 +2413,31 @@
             "pronunciation": "춘천"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "春",
+            "meaning": "봄 춘",
+            "pronunciation": "춘",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "春(봄 춘)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '춘'로 발음해요. 입을 크게 벌리고 '춘'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "春를 손가락으로 공중에 써보세요.",
+          "春를 찾는 보물찾기 놀이를 해보세요.",
+          "春를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "春는 9획이에요. 손가락으로 세어보세요.",
+          "日 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1710,8 +2460,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "여름 하",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "夏는 옛날에 '여름 하'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "夏(여름 하)는 10획으로 그려요. 이 한자는 마치 여름 하같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "春夏",
@@ -1724,14 +2474,31 @@
             "pronunciation": "하천"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "夏",
+            "meaning": "여름 하",
+            "pronunciation": "하",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "夏(여름 하)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '하'로 발음해요. 입을 크게 벌리고 '하'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "夏를 손가락으로 공중에 써보세요.",
+          "夏를 찾는 보물찾기 놀이를 해보세요.",
+          "夏를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "夏는 10획이에요. 손가락으로 세어보세요.",
+          "夊 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1754,8 +2521,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "가을 추",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "秋는 옛날에 '가을 추'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "秋(가을 추)는 9획으로 그려요. 이 한자는 마치 가을 추같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "秋冬",
@@ -1768,14 +2535,31 @@
             "pronunciation": "추천"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "秋",
+            "meaning": "가을 추",
+            "pronunciation": "추",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "秋(가을 추)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '추'로 발음해요. 입을 크게 벌리고 '추'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "秋를 손가락으로 공중에 써보세요.",
+          "秋를 찾는 보물찾기 놀이를 해보세요.",
+          "秋를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "秋는 9획이에요. 손가락으로 세어보세요.",
+          "禾 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1798,8 +2582,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "겨울 동",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "冬는 옛날에 '겨울 동'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "冬(겨울 동)는 5획으로 그려요. 이 한자는 마치 겨울 동같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "秋冬",
@@ -1812,14 +2596,31 @@
             "pronunciation": "동천"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "冬",
+            "meaning": "겨울 동",
+            "pronunciation": "동",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "冬(겨울 동)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '동'로 발음해요. 입을 크게 벌리고 '동'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "冬를 손가락으로 공중에 써보세요.",
+          "冬를 찾는 보물찾기 놀이를 해보세요.",
+          "冬를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "冬는 5획이에요. 손가락으로 세어보세요.",
+          "夂 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1842,8 +2643,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "높을 고",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "高는 옛날에 '높을 고'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "高(높을 고)는 10획으로 그려요. 이 한자는 마치 높을 고같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "高等",
@@ -1856,14 +2657,31 @@
             "pronunciation": "최고"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "高",
+            "meaning": "높을 고",
+            "pronunciation": "고",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "高(높을 고)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '고'로 발음해요. 입을 크게 벌리고 '고'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "高를 손가락으로 공중에 써보세요.",
+          "高를 찾는 보물찾기 놀이를 해보세요.",
+          "高를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "高는 10획이에요. 손가락으로 세어보세요.",
+          "高 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1886,8 +2704,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "낮을 저",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "低는 옛날에 '낮을 저'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "低(낮을 저)는 7획으로 그려요. 이 한자는 마치 낮을 저같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "低下",
@@ -1900,14 +2718,31 @@
             "pronunciation": "최저"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "低",
+            "meaning": "낮을 저",
+            "pronunciation": "저",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "低(낮을 저)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '저'로 발음해요. 입을 크게 벌리고 '저'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "低를 손가락으로 공중에 써보세요.",
+          "低를 찾는 보물찾기 놀이를 해보세요.",
+          "低를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "低는 7획이에요. 손가락으로 세어보세요.",
+          "人 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1930,8 +2765,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "큰 대",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "大는 옛날에 '큰 대'을(를) 그림으로 그린 것에서 시작되었어요. 그림이 점점 바뀌어서 지금의 모양이 되었답니다.",
+        "mnemonics": "大(큰 대)는 3획으로 그려요. 이 한자는 마치 큰 대같이 생겼다고 생각하면 재미있게 기억할 수 있어요!",
         "common_words": [
           {
             "word": "大學",
@@ -1944,9 +2779,16 @@
             "pronunciation": "대소"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "大",
+            "meaning": "큰 대",
+            "pronunciation": "대",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "大(큰 대)는 아주 오래전부터 사용된 한자예요. 한국, 중국, 일본 등 여러 나라에서 사용하는 중요한 글자예요. 아주 어린 아이들도 배우는 기초 한자랍니다.",
+        "pronunciation_guide": "우리말로는 '대'로 발음해요. 입을 크게 벌리고 '대'라고 말해보세요!",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1955,7 +2797,17 @@
             "M 15 40 L 85 40"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "fun_activities": [
+          "大를 손가락으로 공중에 써보세요.",
+          "大를 찾는 보물찾기 놀이를 해보세요.",
+          "大를 모래나 쌀 위에 손가락으로 써보세요."
+        ],
+        "learning_tips": [
+          "大는 3획이에요. 손가락으로 세어보세요.",
+          "大 부수를 먼저 익히면 더 쉽게 배울 수 있어요.",
+          "매일 3번씩 따라 쓰면 빨리 외울 수 있어요."
+        ]
       }
     },
     {
@@ -1979,7 +2831,7 @@
       "extended_data": {
         "detailed_meaning": "바를 정",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "正(바를 정)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "正答",
@@ -1992,7 +2844,14 @@
             "pronunciation": "정직"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "正",
+            "meaning": "바를 정",
+            "pronunciation": "정",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2036,7 +2895,7 @@
       "extended_data": {
         "detailed_meaning": "먼저 선",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "先(먼저 선)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "先生",
@@ -2049,7 +2908,14 @@
             "pronunciation": "선조"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "先",
+            "meaning": "먼저 선",
+            "pronunciation": "선",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2087,7 +2953,7 @@
       "extended_data": {
         "detailed_meaning": "뒤 후",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "後(뒤 후)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "前後",
@@ -2100,7 +2966,14 @@
             "pronunciation": "후자"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "後",
+            "meaning": "뒤 후",
+            "pronunciation": "후",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2131,7 +3004,7 @@
       "extended_data": {
         "detailed_meaning": "앞 전",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "前(앞 전)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "前後",
@@ -2144,7 +3017,14 @@
             "pronunciation": "전자"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "前",
+            "meaning": "앞 전",
+            "pronunciation": "전",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2175,7 +3055,7 @@
       "extended_data": {
         "detailed_meaning": "동녘 동",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "東(동녘 동)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "東西",
@@ -2188,7 +3068,14 @@
             "pronunciation": "동양"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "東",
+            "meaning": "동녘 동",
+            "pronunciation": "동",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2219,7 +3106,7 @@
       "extended_data": {
         "detailed_meaning": "서녘 서",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "西(서녘 서)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "東西",
@@ -2232,7 +3119,14 @@
             "pronunciation": "서양"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "西",
+            "meaning": "서녘 서",
+            "pronunciation": "서",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2263,7 +3157,7 @@
       "extended_data": {
         "detailed_meaning": "남녘 남",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "南(남녘 남)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "南北",
@@ -2276,7 +3170,14 @@
             "pronunciation": "남방"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "南",
+            "meaning": "남녘 남",
+            "pronunciation": "남",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2307,7 +3208,7 @@
       "extended_data": {
         "detailed_meaning": "북녘 북",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "北(북녘 북)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "南北",
@@ -2320,7 +3221,14 @@
             "pronunciation": "북방"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "北",
+            "meaning": "북녘 북",
+            "pronunciation": "북",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2351,7 +3259,7 @@
       "extended_data": {
         "detailed_meaning": "글 서",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "書(글 서)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "書籍",
@@ -2364,7 +3272,14 @@
             "pronunciation": "도서"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "書",
+            "meaning": "글 서",
+            "pronunciation": "서",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2395,7 +3310,7 @@
       "extended_data": {
         "detailed_meaning": "근본 본",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "本(근본 본)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "日本",
@@ -2408,7 +3323,14 @@
             "pronunciation": "본래"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "本",
+            "meaning": "근본 본",
+            "pronunciation": "본",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2449,7 +3371,7 @@
       "extended_data": {
         "detailed_meaning": "머리 두",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "頭(머리 두)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "頭痛",
@@ -2462,7 +3384,14 @@
             "pronunciation": "수두"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "頭",
+            "meaning": "머리 두",
+            "pronunciation": "두",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2493,7 +3422,7 @@
       "extended_data": {
         "detailed_meaning": "고기 육",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "肉(고기 육)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "肉體",
@@ -2506,7 +3435,14 @@
             "pronunciation": "우육"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "肉",
+            "meaning": "고기 육",
+            "pronunciation": "육",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2537,7 +3473,7 @@
       "extended_data": {
         "detailed_meaning": "대 죽",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "竹(대 죽)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "竹林",
@@ -2550,7 +3486,14 @@
             "pronunciation": "죽자"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "竹",
+            "meaning": "대 죽",
+            "pronunciation": "죽",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2581,7 +3524,7 @@
       "extended_data": {
         "detailed_meaning": "쌀 미",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "米(쌀 미)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "米飯",
@@ -2594,7 +3537,14 @@
             "pronunciation": "백미"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "米",
+            "meaning": "쌀 미",
+            "pronunciation": "미",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {

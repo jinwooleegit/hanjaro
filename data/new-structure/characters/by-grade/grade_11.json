@@ -1,9 +1,11 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2025-04-10T14:30:01.523Z",
+    "last_updated": "2025-04-11T10:19:33.049Z",
     "grade": 11,
-    "total_characters": 105
+    "total_characters": 105,
+    "description": "초급 5단계 - 기초 완성을 위한 한자",
+    "category": "beginner"
   },
   "characters": [
     {
@@ -22,8 +24,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "공 공",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 功(공 공)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "功는 공 공(으)로, 5획으로 구성되어 있으며 力 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "成功",
@@ -36,9 +38,16 @@
             "pronunciation": "공적"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "功",
+            "meaning": "공 공",
+            "pronunciation": "공",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "功(공 공)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '공'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -71,8 +80,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "길쌈할 적",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 績(길쌈할 적)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "績는 길쌈할 적(으)로, 17획으로 구성되어 있으며 糸 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "功績",
@@ -85,9 +94,16 @@
             "pronunciation": "성적"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "績",
+            "meaning": "길쌈할 적",
+            "pronunciation": "적",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "績(길쌈할 적)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '적'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -124,8 +140,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "맺을 결",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 結(맺을 결)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "結는 맺을 결(으)로, 12획으로 구성되어 있으며 糸 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "結果",
@@ -138,9 +154,16 @@
             "pronunciation": "결론"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "結",
+            "meaning": "맺을 결",
+            "pronunciation": "결",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "結(맺을 결)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '결'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -177,8 +200,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "열매 과",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 果(열매 과)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "果는 열매 과(으)로, 8획으로 구성되어 있으며 木 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "結果",
@@ -191,9 +214,16 @@
             "pronunciation": "과물"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "果",
+            "meaning": "열매 과",
+            "pronunciation": "과",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "果(열매 과)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '과'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -228,8 +258,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "닦을 수",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 修(닦을 수)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "修는 닦을 수(으)로, 10획으로 구성되어 있으며 彡 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "修理",
@@ -242,9 +272,16 @@
             "pronunciation": "수정"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "修",
+            "meaning": "닦을 수",
+            "pronunciation": "수",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "修(닦을 수)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '수'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -277,8 +314,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "힘 력",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 力(힘 력)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "力는 힘 력(으)로, 2획으로 구성되어 있으며 力 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "力量",
@@ -291,9 +328,16 @@
             "pronunciation": "노력"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "力",
+            "meaning": "힘 력",
+            "pronunciation": "력",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "力(힘 력)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '력'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -330,8 +374,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "칼 도",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 刀(칼 도)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "刀는 칼 도(으)로, 2획으로 구성되어 있으며 刀 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "刀劍",
@@ -344,9 +388,16 @@
             "pronunciation": "소도"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "刀",
+            "meaning": "칼 도",
+            "pronunciation": "도",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "刀(칼 도)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '도'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -374,8 +425,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "문 문",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 門(문 문)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "門는 문 문(으)로, 8획으로 구성되어 있으며 門 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "門戶",
@@ -388,9 +439,16 @@
             "pronunciation": "입문"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "門",
+            "meaning": "문 문",
+            "pronunciation": "문",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "門(문 문)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '문'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -418,8 +476,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "쌀 미",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 米(쌀 미)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "米는 쌀 미(으)로, 6획으로 구성되어 있으며 米 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "米飯",
@@ -432,9 +490,16 @@
             "pronunciation": "백미"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "米",
+            "meaning": "쌀 미",
+            "pronunciation": "미",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "米(쌀 미)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '미'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -462,8 +527,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "대나무 죽",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 竹(대나무 죽)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "竹는 대나무 죽(으)로, 6획으로 구성되어 있으며 竹 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "竹林",
@@ -476,9 +541,16 @@
             "pronunciation": "죽적"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "竹",
+            "meaning": "대나무 죽",
+            "pronunciation": "죽",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "竹(대나무 죽)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '죽'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -506,8 +578,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "공 공",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 功(공 공)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "功는 공 공(으)로, 5획으로 구성되어 있으며 力 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "成功",
@@ -520,9 +592,16 @@
             "pronunciation": "공적"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "功",
+            "meaning": "공 공",
+            "pronunciation": "공",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "功(공 공)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '공'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -559,8 +638,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "길쌈할 적",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 績(길쌈할 적)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "績는 길쌈할 적(으)로, 17획으로 구성되어 있으며 糸 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "功績",
@@ -573,9 +652,16 @@
             "pronunciation": "성적"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "績",
+            "meaning": "길쌈할 적",
+            "pronunciation": "적",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "績(길쌈할 적)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '적'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -616,8 +702,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "이룰 성",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 成(이룰 성)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "成는 이룰 성(으)로, 6획으로 구성되어 있으며 戈 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "成功",
@@ -630,9 +716,16 @@
             "pronunciation": "성장"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "成",
+            "meaning": "이룰 성",
+            "pronunciation": "성",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "成(이룰 성)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '성'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -668,8 +761,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "길 장",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 長(길 장)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "長는 길 장(으)로, 8획으로 구성되어 있으며 長 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "成長",
@@ -682,9 +775,16 @@
             "pronunciation": "교장"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "長",
+            "meaning": "길 장",
+            "pronunciation": "장",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "長(길 장)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '장'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -713,8 +813,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "논할 론",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 論(논할 론)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "論는 논할 론(으)로, 15획으로 구성되어 있으며 言 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "結論",
@@ -727,9 +827,16 @@
             "pronunciation": "토론"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "論",
+            "meaning": "논할 론",
+            "pronunciation": "론",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "論(논할 론)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '론'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -770,8 +877,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "배울 학",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 學(배울 학)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "學는 배울 학(으)로, 16획으로 구성되어 있으며 子 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "學問",
@@ -784,9 +891,16 @@
             "pronunciation": "과학"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "學",
+            "meaning": "배울 학",
+            "pronunciation": "학",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "學(배울 학)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '학'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -831,8 +945,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "물을 문",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 問(물을 문)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "問는 물을 문(으)로, 11획으로 구성되어 있으며 口 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "學問",
@@ -845,9 +959,16 @@
             "pronunciation": "문제"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "問",
+            "meaning": "물을 문",
+            "pronunciation": "문",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "問(물을 문)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '문'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -875,8 +996,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "제목 제",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 題(제목 제)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "題는 제목 제(으)로, 18획으로 구성되어 있으며 頁 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "問題",
@@ -889,9 +1010,16 @@
             "pronunciation": "과제"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "題",
+            "meaning": "제목 제",
+            "pronunciation": "제",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "題(제목 제)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '제'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -919,8 +1047,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "글월 문",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 文(글월 문)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "文는 글월 문(으)로, 4획으로 구성되어 있으며 文 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "文章",
@@ -933,9 +1061,16 @@
             "pronunciation": "문학"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "文",
+            "meaning": "글월 문",
+            "pronunciation": "문",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "文(글월 문)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '문'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -963,8 +1098,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "될 화",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 化(될 화)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "化는 될 화(으)로, 4획으로 구성되어 있으며 匕 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "文化",
@@ -977,9 +1112,16 @@
             "pronunciation": "변화"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "化",
+            "meaning": "될 화",
+            "pronunciation": "화",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "化(될 화)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '화'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1018,8 +1160,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "절제할 제",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 制(절제할 제)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "制는 절제할 제(으)로, 8획으로 구성되어 있으며 刂 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "制度",
@@ -1032,9 +1174,16 @@
             "pronunciation": "제한"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "制",
+            "meaning": "절제할 제",
+            "pronunciation": "제",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "制(절제할 제)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '제'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1062,8 +1211,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "법도 도",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 度(법도 도)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "度는 법도 도(으)로, 9획으로 구성되어 있으며 广 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "制度",
@@ -1076,9 +1225,16 @@
             "pronunciation": "온도"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "度",
+            "meaning": "법도 도",
+            "pronunciation": "도",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "度(법도 도)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '도'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1119,8 +1275,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "한할 한",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 限(한할 한)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "限는 한할 한(으)로, 9획으로 구성되어 있으며 阝 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "制限",
@@ -1133,9 +1289,16 @@
             "pronunciation": "한계"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "限",
+            "meaning": "한할 한",
+            "pronunciation": "한",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "限(한할 한)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '한'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1163,8 +1326,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "지경 계",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 界(지경 계)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "界는 지경 계(으)로, 9획으로 구성되어 있으며 田 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "限界",
@@ -1177,9 +1340,16 @@
             "pronunciation": "세계"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "界",
+            "meaning": "지경 계",
+            "pronunciation": "계",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "界(지경 계)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '계'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1207,8 +1377,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "정할 정",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 精(정할 정)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "精는 정할 정(으)로, 14획으로 구성되어 있으며 米 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "精神",
@@ -1221,9 +1391,16 @@
             "pronunciation": "정밀"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "精",
+            "meaning": "정할 정",
+            "pronunciation": "정",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "精(정할 정)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '정'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1251,8 +1428,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "신 신",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 神(신 신)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "神는 신 신(으)로, 9획으로 구성되어 있으며 示 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "精神",
@@ -1265,9 +1442,16 @@
             "pronunciation": "신성"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "神",
+            "meaning": "신 신",
+            "pronunciation": "신",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "神(신 신)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '신'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1295,8 +1479,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "빽빽할 밀",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 密(빽빽할 밀)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "密는 빽빽할 밀(으)로, 11획으로 구성되어 있으며 宀 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "精密",
@@ -1309,9 +1493,16 @@
             "pronunciation": "비밀"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "密",
+            "meaning": "빽빽할 밀",
+            "pronunciation": "밀",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "密(빽빽할 밀)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '밀'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1339,8 +1530,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "숨길 비",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 秘(숨길 비)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "秘는 숨길 비(으)로, 10획으로 구성되어 있으며 禾 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "秘密",
@@ -1353,9 +1544,16 @@
             "pronunciation": "비서"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "秘",
+            "meaning": "숨길 비",
+            "pronunciation": "비",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "秘(숨길 비)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '비'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1383,8 +1581,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "굳셀 강",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 強(굳셀 강)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "強는 굳셀 강(으)로, 11획으로 구성되어 있으며 弓 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "強化",
@@ -1397,9 +1595,16 @@
             "pronunciation": "강조"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "強",
+            "meaning": "굳셀 강",
+            "pronunciation": "강",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "強(굳셀 강)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '강'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1427,8 +1632,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "고를 조",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 調(고를 조)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "調는 고를 조(으)로, 15획으로 구성되어 있으며 言 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "强調",
@@ -1441,9 +1646,16 @@
             "pronunciation": "조사"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "調",
+            "meaning": "고를 조",
+            "pronunciation": "조",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "調(고를 조)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '조'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1471,8 +1683,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "조사할 사",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 査(조사할 사)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "査는 조사할 사(으)로, 9획으로 구성되어 있으며 木 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "調査",
@@ -1485,9 +1697,16 @@
             "pronunciation": "심사"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "査",
+            "meaning": "조사할 사",
+            "pronunciation": "사",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "査(조사할 사)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '사'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1515,8 +1734,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "살필 심",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 審(살필 심)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "審는 살필 심(으)로, 15획으로 구성되어 있으며 宀 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "審査",
@@ -1529,9 +1748,16 @@
             "pronunciation": "심의"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "審",
+            "meaning": "살필 심",
+            "pronunciation": "심",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "審(살필 심)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '심'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1559,8 +1785,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "의논할 의",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 議(의논할 의)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "議는 의논할 의(으)로, 20획으로 구성되어 있으며 言 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "審議",
@@ -1573,9 +1799,16 @@
             "pronunciation": "회의"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "議",
+            "meaning": "의논할 의",
+            "pronunciation": "의",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "議(의논할 의)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '의'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1603,8 +1836,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "모일 회",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 會(모일 회)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "會는 모일 회(으)로, 13획으로 구성되어 있으며 曰 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "會議",
@@ -1617,9 +1850,16 @@
             "pronunciation": "사회"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "會",
+            "meaning": "모일 회",
+            "pronunciation": "회",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "會(모일 회)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '회'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1647,8 +1887,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "모일 사",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 社(모일 사)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "社는 모일 사(으)로, 7획으로 구성되어 있으며 示 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "社會",
@@ -1661,9 +1901,16 @@
             "pronunciation": "회사"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "社",
+            "meaning": "모일 사",
+            "pronunciation": "사",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "社(모일 사)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '사'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1691,8 +1938,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "지날 경",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 經(지날 경)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "經는 지날 경(으)로, 13획으로 구성되어 있으며 糸 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "經驗",
@@ -1705,9 +1952,16 @@
             "pronunciation": "경제"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "經",
+            "meaning": "지날 경",
+            "pronunciation": "경",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "經(지날 경)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '경'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1748,8 +2002,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "시험할 험",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 驗(시험할 험)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "驗는 시험할 험(으)로, 23획으로 구성되어 있으며 馬 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "經驗",
@@ -1762,9 +2016,16 @@
             "pronunciation": "실험"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "驗",
+            "meaning": "시험할 험",
+            "pronunciation": "험",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "驗(시험할 험)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '험'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1792,8 +2053,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "건널 제",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 濟(건널 제)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "濟는 건널 제(으)로, 17획으로 구성되어 있으며 水 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "經濟",
@@ -1806,9 +2067,16 @@
             "pronunciation": "구제"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "濟",
+            "meaning": "건널 제",
+            "pronunciation": "제",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "濟(건널 제)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '제'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1850,8 +2118,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "열매 실",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 實(열매 실)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "實는 열매 실(으)로, 14획으로 구성되어 있으며 宀 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "實驗",
@@ -1864,9 +2132,16 @@
             "pronunciation": "실제"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "實",
+            "meaning": "열매 실",
+            "pronunciation": "실",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "實(열매 실)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '실'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1894,8 +2169,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "즈음 제",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 際(즈음 제)의 어원은 실제 사물이나 상황을 그림으로 표현한 상형문자에서 비롯되었습니다.",
+        "mnemonics": "際는 즈음 제(으)로, 14획으로 구성되어 있으며 阝 부수를 포함하고 있어 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "實際",
@@ -1908,9 +2183,16 @@
             "pronunciation": "국제"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "際",
+            "meaning": "즈음 제",
+            "pronunciation": "제",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "際(즈음 제)은(는) 한국, 중국, 일본 등 동아시아 문화권에서 오랫동안 사용되어 왔으며, 다양한 문화적 맥락에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": "한국어에서는 '제'로 발음하며, 중국어에서는 유사한 발음으로 읽습니다.",
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1939,7 +2221,7 @@
       "extended_data": {
         "detailed_meaning": "과목 과",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "科(과목 과)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "科目",
@@ -1952,7 +2234,14 @@
             "pronunciation": "과학"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "科",
+            "meaning": "과목 과",
+            "pronunciation": "과",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -1996,7 +2285,7 @@
       "extended_data": {
         "detailed_meaning": "나라 국",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "國(나라 국)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "國家",
@@ -2009,7 +2298,14 @@
             "pronunciation": "국제"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "國",
+            "meaning": "나라 국",
+            "pronunciation": "국",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2053,7 +2349,7 @@
       "extended_data": {
         "detailed_meaning": "집 가",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "家(집 가)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "國家",
@@ -2066,7 +2362,14 @@
             "pronunciation": "가족"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "家",
+            "meaning": "집 가",
+            "pronunciation": "가",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2097,7 +2400,7 @@
       "extended_data": {
         "detailed_meaning": "대신할 대",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "代(대신할 대)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "代表",
@@ -2110,7 +2413,14 @@
             "pronunciation": "시대"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "代",
+            "meaning": "대신할 대",
+            "pronunciation": "대",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2141,7 +2451,7 @@
       "extended_data": {
         "detailed_meaning": "겉 표",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "表(겉 표)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "代表",
@@ -2154,7 +2464,14 @@
             "pronunciation": "표면"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "表",
+            "meaning": "겉 표",
+            "pronunciation": "표",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2185,7 +2502,7 @@
       "extended_data": {
         "detailed_meaning": "낮 면",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "面(낮 면)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "表面",
@@ -2198,7 +2515,14 @@
             "pronunciation": "면접"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "面",
+            "meaning": "낮 면",
+            "pronunciation": "면",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2229,7 +2553,7 @@
       "extended_data": {
         "detailed_meaning": "이을 접",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "接(이을 접)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "面接",
@@ -2242,7 +2566,14 @@
             "pronunciation": "접촉"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "接",
+            "meaning": "이을 접",
+            "pronunciation": "접",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2273,7 +2604,7 @@
       "extended_data": {
         "detailed_meaning": "닿을 촉",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "觸(닿을 촉)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "接觸",
@@ -2286,7 +2617,14 @@
             "pronunciation": "감촉"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "觸",
+            "meaning": "닿을 촉",
+            "pronunciation": "촉",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2317,7 +2655,7 @@
       "extended_data": {
         "detailed_meaning": "느낄 감",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "感(느낄 감)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "感觸",
@@ -2330,7 +2668,14 @@
             "pronunciation": "감정"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "感",
+            "meaning": "느낄 감",
+            "pronunciation": "감",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2361,7 +2706,7 @@
       "extended_data": {
         "detailed_meaning": "뜻 정",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "情(뜻 정)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "感情",
@@ -2374,7 +2719,14 @@
             "pronunciation": "정보"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "情",
+            "meaning": "뜻 정",
+            "pronunciation": "정",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2405,7 +2757,7 @@
       "extended_data": {
         "detailed_meaning": "갚을 보",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "報(갚을 보)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "情報",
@@ -2418,7 +2770,14 @@
             "pronunciation": "보고"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "報",
+            "meaning": "갚을 보",
+            "pronunciation": "보",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2449,7 +2808,7 @@
       "extended_data": {
         "detailed_meaning": "고할 고",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "告(고할 고)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "報告",
@@ -2462,7 +2821,14 @@
             "pronunciation": "고백"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "告",
+            "meaning": "고할 고",
+            "pronunciation": "고",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2493,7 +2859,7 @@
       "extended_data": {
         "detailed_meaning": "흰 백",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "白(흰 백)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "告白",
@@ -2506,7 +2872,14 @@
             "pronunciation": "백색"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "白",
+            "meaning": "흰 백",
+            "pronunciation": "백",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2537,7 +2910,7 @@
       "extended_data": {
         "detailed_meaning": "빛 색",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "色(빛 색)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "白色",
@@ -2550,7 +2923,14 @@
             "pronunciation": "색채"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "色",
+            "meaning": "빛 색",
+            "pronunciation": "색",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2581,7 +2961,7 @@
       "extended_data": {
         "detailed_meaning": "채색할 채",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "彩(채색할 채)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "色彩",
@@ -2594,7 +2974,14 @@
             "pronunciation": "채색"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "彩",
+            "meaning": "채색할 채",
+            "pronunciation": "채",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2625,7 +3012,7 @@
       "extended_data": {
         "detailed_meaning": "공부 과",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "課(공부 과)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "課題",
@@ -2638,7 +3025,14 @@
             "pronunciation": "과정"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "課",
+            "meaning": "공부 과",
+            "pronunciation": "과",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2682,7 +3076,7 @@
       "extended_data": {
         "detailed_meaning": "정할 정",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "程(정할 정)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "課程",
@@ -2695,7 +3089,14 @@
             "pronunciation": "정도"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "程",
+            "meaning": "정할 정",
+            "pronunciation": "정",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2740,7 +3141,7 @@
       "extended_data": {
         "detailed_meaning": "부를 호",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "呼(부를 호)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "呼吸",
@@ -2753,7 +3154,14 @@
             "pronunciation": "호출"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "呼",
+            "meaning": "부를 호",
+            "pronunciation": "호",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2784,7 +3192,7 @@
       "extended_data": {
         "detailed_meaning": "마실 흡",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "吸(마실 흡)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "呼吸",
@@ -2797,7 +3205,14 @@
             "pronunciation": "흡수"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "吸",
+            "meaning": "마실 흡",
+            "pronunciation": "흡",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2828,7 +3243,7 @@
       "extended_data": {
         "detailed_meaning": "부를 교",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "叫(부를 교)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "呼叫",
@@ -2841,7 +3256,14 @@
             "pronunciation": "교성"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "叫",
+            "meaning": "부를 교",
+            "pronunciation": "교",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2872,7 +3294,7 @@
       "extended_data": {
         "detailed_meaning": "거둘 수",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "收(거둘 수)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "吸收",
@@ -2885,7 +3307,14 @@
             "pronunciation": "수입"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "收",
+            "meaning": "거둘 수",
+            "pronunciation": "수",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2916,7 +3345,7 @@
       "extended_data": {
         "detailed_meaning": "소리 성",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "聲(소리 성)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "叫聲",
@@ -2929,7 +3358,14 @@
             "pronunciation": "음성"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "聲",
+            "meaning": "소리 성",
+            "pronunciation": "성",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2960,7 +3396,7 @@
       "extended_data": {
         "detailed_meaning": "들 입",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "入(들 입)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "收入",
@@ -2973,7 +3409,14 @@
             "pronunciation": "입학"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "入",
+            "meaning": "들 입",
+            "pronunciation": "입",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3004,7 +3447,7 @@
       "extended_data": {
         "detailed_meaning": "날 출",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "出(날 출)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "出口",
@@ -3017,7 +3460,14 @@
             "pronunciation": "출발"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "出",
+            "meaning": "날 출",
+            "pronunciation": "출",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3048,7 +3498,7 @@
       "extended_data": {
         "detailed_meaning": "필 발",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "發(필 발)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "出發",
@@ -3061,7 +3511,14 @@
             "pronunciation": "발전"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "發",
+            "meaning": "필 발",
+            "pronunciation": "발",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3092,7 +3549,7 @@
       "extended_data": {
         "detailed_meaning": "펼 전",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "展(펼 전)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "發展",
@@ -3105,7 +3562,14 @@
             "pronunciation": "전개"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "展",
+            "meaning": "펼 전",
+            "pronunciation": "전",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3136,7 +3600,7 @@
       "extended_data": {
         "detailed_meaning": "열 개",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "開(열 개)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "展開",
@@ -3149,7 +3613,14 @@
             "pronunciation": "개시"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "開",
+            "meaning": "열 개",
+            "pronunciation": "개",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3180,7 +3651,7 @@
       "extended_data": {
         "detailed_meaning": "비롯할 시",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "始(비롯할 시)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "開始",
@@ -3193,7 +3664,14 @@
             "pronunciation": "시작"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "始",
+            "meaning": "비롯할 시",
+            "pronunciation": "시",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3224,7 +3702,7 @@
       "extended_data": {
         "detailed_meaning": "지을 작",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "作(지을 작)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "始作",
@@ -3237,7 +3715,14 @@
             "pronunciation": "작품"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "作",
+            "meaning": "지을 작",
+            "pronunciation": "작",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3268,7 +3753,7 @@
       "extended_data": {
         "detailed_meaning": "물건 품",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "品(물건 품)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "作品",
@@ -3281,7 +3766,14 @@
             "pronunciation": "품질"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "品",
+            "meaning": "물건 품",
+            "pronunciation": "품",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3322,7 +3814,7 @@
       "extended_data": {
         "detailed_meaning": "바탕 질",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "質(바탕 질)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "品質",
@@ -3335,7 +3827,14 @@
             "pronunciation": "질문"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "質",
+            "meaning": "바탕 질",
+            "pronunciation": "질",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3366,7 +3865,7 @@
       "extended_data": {
         "detailed_meaning": "낳을 산",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "産(낳을 산)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "生産",
@@ -3379,7 +3878,14 @@
             "pronunciation": "산업"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "産",
+            "meaning": "낳을 산",
+            "pronunciation": "산",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3410,7 +3916,7 @@
       "extended_data": {
         "detailed_meaning": "일 업",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "業(일 업)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "産業",
@@ -3423,7 +3929,14 @@
             "pronunciation": "공업"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "業",
+            "meaning": "일 업",
+            "pronunciation": "업",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3454,7 +3967,7 @@
       "extended_data": {
         "detailed_meaning": "장인 공",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "工(장인 공)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "工業",
@@ -3467,7 +3980,14 @@
             "pronunciation": "공사"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "工",
+            "meaning": "장인 공",
+            "pronunciation": "공",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3498,7 +4018,7 @@
       "extended_data": {
         "detailed_meaning": "일 사",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "事(일 사)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "工事",
@@ -3511,7 +4031,14 @@
             "pronunciation": "사건"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "事",
+            "meaning": "일 사",
+            "pronunciation": "사",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3542,7 +4069,7 @@
       "extended_data": {
         "detailed_meaning": "물건 건",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "件(물건 건)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "事件",
@@ -3555,7 +4082,14 @@
             "pronunciation": "조건"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "件",
+            "meaning": "물건 건",
+            "pronunciation": "건",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3586,7 +4120,7 @@
       "extended_data": {
         "detailed_meaning": "가지 조",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "條(가지 조)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "條件",
@@ -3599,7 +4133,14 @@
             "pronunciation": "조약"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "條",
+            "meaning": "가지 조",
+            "pronunciation": "조",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3630,7 +4171,7 @@
       "extended_data": {
         "detailed_meaning": "약속할 약",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "約(약속할 약)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "條約",
@@ -3643,7 +4184,14 @@
             "pronunciation": "약속"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "約",
+            "meaning": "약속할 약",
+            "pronunciation": "약",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3674,7 +4222,7 @@
       "extended_data": {
         "detailed_meaning": "묶을 속",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "束(묶을 속)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "約束",
@@ -3687,7 +4235,14 @@
             "pronunciation": "속박"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "束",
+            "meaning": "묶을 속",
+            "pronunciation": "속",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3718,7 +4273,7 @@
       "extended_data": {
         "detailed_meaning": "묶을 박",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "縛(묶을 박)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "束縛",
@@ -3731,7 +4286,14 @@
             "pronunciation": "구박"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "縛",
+            "meaning": "묶을 박",
+            "pronunciation": "박",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3762,7 +4324,7 @@
       "extended_data": {
         "detailed_meaning": "붙들 구",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "拘(붙들 구)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "拘縛",
@@ -3775,7 +4337,14 @@
             "pronunciation": "구속"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "拘",
+            "meaning": "붙들 구",
+            "pronunciation": "구",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3806,7 +4375,7 @@
       "extended_data": {
         "detailed_meaning": "일할 로",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "勞(일할 로)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "勞動",
@@ -3819,7 +4388,14 @@
             "pronunciation": "노력"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "勞",
+            "meaning": "일할 로",
+            "pronunciation": "로",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3850,7 +4426,7 @@
       "extended_data": {
         "detailed_meaning": "움직일 동",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "動(움직일 동)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "勞動",
@@ -3863,7 +4439,14 @@
             "pronunciation": "활동"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "動",
+            "meaning": "움직일 동",
+            "pronunciation": "동",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3894,7 +4477,7 @@
       "extended_data": {
         "detailed_meaning": "살 활",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "活(살 활)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "活動",
@@ -3907,7 +4490,14 @@
             "pronunciation": "생활"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "活",
+            "meaning": "살 활",
+            "pronunciation": "활",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3938,7 +4528,7 @@
       "extended_data": {
         "detailed_meaning": "날 생",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "生(날 생)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "生活",
@@ -3951,7 +4541,14 @@
             "pronunciation": "생산"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "生",
+            "meaning": "날 생",
+            "pronunciation": "생",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -3995,7 +4592,7 @@
       "extended_data": {
         "detailed_meaning": "길 도",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "道(길 도)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "道路",
@@ -4008,7 +4605,14 @@
             "pronunciation": "도덕"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "道",
+            "meaning": "길 도",
+            "pronunciation": "도",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4039,7 +4643,7 @@
       "extended_data": {
         "detailed_meaning": "길 로",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "路(길 로)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "道路",
@@ -4052,7 +4656,14 @@
             "pronunciation": "노선"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "路",
+            "meaning": "길 로",
+            "pronunciation": "로",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4083,7 +4694,7 @@
       "extended_data": {
         "detailed_meaning": "덕 덕",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "德(덕 덕)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "道德",
@@ -4096,7 +4707,14 @@
             "pronunciation": "덕성"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "德",
+            "meaning": "덕 덕",
+            "pronunciation": "덕",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4127,7 +4745,7 @@
       "extended_data": {
         "detailed_meaning": "성품 성",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "性(성품 성)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "德性",
@@ -4140,7 +4758,14 @@
             "pronunciation": "성격"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "性",
+            "meaning": "성품 성",
+            "pronunciation": "성",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4171,7 +4796,7 @@
       "extended_data": {
         "detailed_meaning": "격식 격",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "格(격식 격)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "性格",
@@ -4184,7 +4809,14 @@
             "pronunciation": "규격"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "格",
+            "meaning": "격식 격",
+            "pronunciation": "격",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4215,7 +4847,7 @@
       "extended_data": {
         "detailed_meaning": "법 규",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "規(법 규)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "規格",
@@ -4228,7 +4860,14 @@
             "pronunciation": "규칙"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "規",
+            "meaning": "법 규",
+            "pronunciation": "규",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4272,7 +4911,7 @@
       "extended_data": {
         "detailed_meaning": "법칙 칙",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "則(법칙 칙)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "規則",
@@ -4285,7 +4924,14 @@
             "pronunciation": "법칙"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "則",
+            "meaning": "법칙 칙",
+            "pronunciation": "칙",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4316,7 +4962,7 @@
       "extended_data": {
         "detailed_meaning": "법 법",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "法(법 법)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "法則",
@@ -4329,7 +4975,14 @@
             "pronunciation": "방법"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "法",
+            "meaning": "법 법",
+            "pronunciation": "법",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4374,7 +5027,7 @@
       "extended_data": {
         "detailed_meaning": "방향 방",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "方(방향 방)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "方法",
@@ -4387,7 +5040,14 @@
             "pronunciation": "방향"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "方",
+            "meaning": "방향 방",
+            "pronunciation": "방",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4418,7 +5078,7 @@
       "extended_data": {
         "detailed_meaning": "향할 향",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "向(향할 향)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "方向",
@@ -4431,7 +5091,14 @@
             "pronunciation": "향상"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "向",
+            "meaning": "향할 향",
+            "pronunciation": "향",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4462,7 +5129,7 @@
       "extended_data": {
         "detailed_meaning": "위 상",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "上(위 상)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "向上",
@@ -4475,7 +5142,14 @@
             "pronunciation": "상하"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "上",
+            "meaning": "위 상",
+            "pronunciation": "상",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4506,7 +5180,7 @@
       "extended_data": {
         "detailed_meaning": "아래 하",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "下(아래 하)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "上下",
@@ -4519,7 +5193,14 @@
             "pronunciation": "하락"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "下",
+            "meaning": "아래 하",
+            "pronunciation": "하",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4550,7 +5231,7 @@
       "extended_data": {
         "detailed_meaning": "떨어질 락",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "落(떨어질 락)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "下落",
@@ -4563,7 +5244,14 @@
             "pronunciation": "낙하"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "落",
+            "meaning": "떨어질 락",
+            "pronunciation": "락",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4594,7 +5282,7 @@
       "extended_data": {
         "detailed_meaning": "보일 시",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "示(보일 시)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "表示",
@@ -4607,7 +5295,14 @@
             "pronunciation": "시범"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "示",
+            "meaning": "보일 시",
+            "pronunciation": "시",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4638,7 +5333,7 @@
       "extended_data": {
         "detailed_meaning": "법 범",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "範(법 범)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "示範",
@@ -4651,7 +5346,14 @@
             "pronunciation": "범위"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "範",
+            "meaning": "법 범",
+            "pronunciation": "범",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4682,7 +5384,7 @@
       "extended_data": {
         "detailed_meaning": "둘레 위",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "圍(둘레 위)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "範圍",
@@ -4695,7 +5397,14 @@
             "pronunciation": "위요"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "圍",
+            "meaning": "둘레 위",
+            "pronunciation": "위",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4726,7 +5435,7 @@
       "extended_data": {
         "detailed_meaning": "감을 요",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "繞(감을 요)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "圍繞",
@@ -4739,7 +5448,14 @@
             "pronunciation": "우요"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "繞",
+            "meaning": "감을 요",
+            "pronunciation": "요",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4770,7 +5486,7 @@
       "extended_data": {
         "detailed_meaning": "알 식",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "識(알 식)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "知識",
@@ -4783,7 +5499,14 @@
             "pronunciation": "상식"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "識",
+            "meaning": "알 식",
+            "pronunciation": "식",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4814,7 +5537,7 @@
       "extended_data": {
         "detailed_meaning": "늘 상",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "常(늘 상)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "常識",
@@ -4827,7 +5550,14 @@
             "pronunciation": "일상"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "常",
+            "meaning": "늘 상",
+            "pronunciation": "상",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -4858,7 +5588,7 @@
       "extended_data": {
         "detailed_meaning": "날 일",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "日(날 일)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "日常",
@@ -4871,7 +5601,14 @@
             "pronunciation": "일기"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "日",
+            "meaning": "날 일",
+            "pronunciation": "일",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {

@@ -1,9 +1,1491 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2025-04-10T14:30:01.520Z",
+    "last_updated": "2025-04-11T10:19:33.143Z",
     "grade": 9,
-    "total_characters": 0
+    "total_characters": 19,
+    "category": "intermediate",
+    "description": "중급 2단계 - 일반 독서에 필요한 한자"
   },
-  "characters": []
+  "characters": [
+    {
+      "id": "HJ-09-0001-5175",
+      "character": "兵",
+      "unicode": "5175",
+      "meaning": "병사 병",
+      "pronunciation": "병",
+      "stroke_count": 7,
+      "radical": "八",
+      "grade": 9,
+      "order": 1,
+      "tags": [
+        "radical:八",
+        "strokes:7",
+        "grade:9",
+        "category:general",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "병사 병",
+        "etymology": "兵(병사 병) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "兵(병사 병)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
+        "common_words": [
+          {
+            "word": "兵字",
+            "meaning": "병사 자",
+            "pronunciation": "병자",
+            "example_sentence": "이것은 兵字입니다.",
+            "example_meaning": "이것은 병사 자입니다."
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "兵",
+            "meaning": "병사",
+            "pronunciation": "병",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "兵(병사 병)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "병",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-09-0002-5B78",
+      "character": "學",
+      "unicode": "5B78",
+      "meaning": "배울 학",
+      "pronunciation": "학",
+      "stroke_count": 16,
+      "radical": "子",
+      "grade": 9,
+      "order": 2,
+      "tags": [
+        "radical:子",
+        "strokes:16",
+        "grade:9",
+        "category:general",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "배울 학",
+        "etymology": "學(배울 학) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "學(배울 학)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
+        "common_words": [
+          {
+            "word": "學字",
+            "meaning": "배울 자",
+            "pronunciation": "학자",
+            "example_sentence": "이것은 學字입니다.",
+            "example_meaning": "이것은 배울 자입니다."
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "學",
+            "meaning": "배울",
+            "pronunciation": "학",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "學(배울 학)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "학",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-09-0003-6821",
+      "character": "校",
+      "unicode": "6821",
+      "meaning": "학교 교",
+      "pronunciation": "교",
+      "stroke_count": 10,
+      "radical": "木",
+      "grade": 9,
+      "order": 3,
+      "tags": [
+        "radical:木",
+        "strokes:10",
+        "grade:9",
+        "category:general",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "학교 교",
+        "etymology": "校(학교 교) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "校(학교 교)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
+        "common_words": [
+          {
+            "word": "校字",
+            "meaning": "학교 자",
+            "pronunciation": "교자",
+            "example_sentence": "이것은 校字입니다.",
+            "example_meaning": "이것은 학교 자입니다."
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "校",
+            "meaning": "학교",
+            "pronunciation": "교",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "校(학교 교)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "교",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
+        "stroke_order": {
+          "description": "",
+          "directions": []
+        },
+        "related_characters": []
+      }
+    },
+    {
+      "id": "HJ-09-0004-6539",
+      "character": "改",
+      "unicode": "6539",
+      "meaning": "고칠 개",
+      "pronunciation": "개",
+      "stroke_count": 7,
+      "radical": "攵",
+      "grade": 9,
+      "order": 4,
+      "tags": [
+        "radical:攵",
+        "strokes:7",
+        "category:action",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "고치다, 바꾸다, 개정하다의 의미를 가진 한자",
+        "etymology": "뜻을 나타내는 己(기)와 행동을 나타내는 攵(복)의 결합으로, '자신을 바꾸다'라는 의미에서 유래했습니다.",
+        "mnemonics": "자기 자신(己)을 변화시키는 행동(攵)으로 '고치다'라는 의미로 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "改正",
+            "meaning": "개정",
+            "pronunciation": "개정",
+            "example_sentence": "법률을 改正하다.",
+            "usage": "법이나 규칙을 바꿀 때 사용"
+          },
+          {
+            "word": "改革",
+            "meaning": "개혁",
+            "pronunciation": "개혁",
+            "example_sentence": "社會 改革을 추진하다.",
+            "usage": "제도나 관습을 근본적으로 바꿀 때 사용"
+          },
+          {
+            "word": "改善",
+            "meaning": "개선",
+            "pronunciation": "개선",
+            "example_sentence": "환경을 改善하기 위해 노력하다.",
+            "usage": "상태를 더 좋게 만들 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "改過遷善",
+            "meaning": "개과천선 - 잘못을 고치고 착한 행실로 옮김",
+            "pronunciation": "개과천선",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "日新又日新",
+            "meaning": "일신우일신 - 날마다 새롭고 또 날마다 새롭게 함",
+            "pronunciation": "일신우일신",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '改'는 자기 개선과 사회 발전의 핵심 개념입니다. 특히 유교에서는 자신의 잘못을 인정하고 고치는 것을 중요한 덕목으로 여깁니다.",
+        "pronunciation_guide": {
+          "korean": "개 (gae)",
+          "japanese_on": "かい (kai)",
+          "japanese_kun": "あらた(める) (arata(meru))",
+          "mandarin": "gǎi",
+          "cantonese": "goi2"
+        },
+        "stroke_order": {
+          "description": "왼쪽 己 부분을 먼저 쓰고, 오른쪽 攵 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "變",
+          "修",
+          "更",
+          "革"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0005-6557",
+      "character": "敗",
+      "unicode": "6557",
+      "meaning": "패할 패",
+      "pronunciation": "패",
+      "stroke_count": 11,
+      "radical": "攴",
+      "grade": 9,
+      "order": 5,
+      "tags": [
+        "radical:攴",
+        "strokes:11",
+        "category:result",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "패하다, 실패하다, 망하다의 의미를 가진 한자",
+        "etymology": "貝(패)와 攵(복)의 결합으로, '재물을 잃는다'는 의미에서 '패배'의 뜻을 갖게 되었습니다.",
+        "mnemonics": "조개껍질(貝)이 부서지는 행위(攵)로 '패배'를 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "失敗",
+            "meaning": "실패",
+            "pronunciation": "실패",
+            "example_sentence": "失敗는 성공의 어머니다.",
+            "usage": "시도가 성공하지 못할 때 사용"
+          },
+          {
+            "word": "勝敗",
+            "meaning": "승패",
+            "pronunciation": "승패",
+            "example_sentence": "勝敗를 결정짓는 순간이었다.",
+            "usage": "이기고 짐을 함께 나타낼 때 사용"
+          },
+          {
+            "word": "敗北",
+            "meaning": "패북",
+            "pronunciation": "패북",
+            "example_sentence": "전쟁에서 敗北하다.",
+            "usage": "전쟁이나 싸움에서 질 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "敗事有餘",
+            "meaning": "패사유여 - 일을 망치는 데는 여유가 있다",
+            "pronunciation": "패사유여",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "千慮一失",
+            "meaning": "천려일실 - 천 번 생각해도 한 번의 실수는 있을 수 있다",
+            "pronunciation": "천려일실",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '敗'는 단순한 실패를 넘어 경험과 교훈의 원천으로 여겨집니다. 특히 '敗而不餒'(패이불내)는 패배해도 굴하지 않는 정신을 강조합니다.",
+        "pronunciation_guide": {
+          "korean": "패 (pae)",
+          "japanese_on": "はい (hai)",
+          "japanese_kun": "やぶ(れる) (yabu(reru))",
+          "mandarin": "bài",
+          "cantonese": "baai6"
+        },
+        "stroke_order": {
+          "description": "왼쪽 貝 부분을 먼저 쓰고, 오른쪽 攵 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "勝",
+          "負",
+          "輸",
+          "潰"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N3",
+          "hsk": "4급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0006-6C60",
+      "character": "池",
+      "unicode": "6C60",
+      "meaning": "못 지",
+      "pronunciation": "지",
+      "stroke_count": 6,
+      "radical": "氵",
+      "grade": 9,
+      "order": 6,
+      "tags": [
+        "radical:氵",
+        "strokes:6",
+        "category:nature",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "연못, 물웅덩이, 인공적으로 만든 물 공간을 의미하는 한자",
+        "etymology": "물(氵)이 모인 땅(也)의 형태에서 유래하여 '연못'을 의미하게 되었습니다.",
+        "mnemonics": "물(氵)이 담긴 그릇(也) 모양으로 '연못'을 뜻한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "池塘",
+            "meaning": "지당",
+            "pronunciation": "지당",
+            "example_sentence": "池塘에 연꽃이 피었다.",
+            "usage": "연못을 표현할 때 사용"
+          },
+          {
+            "word": "水池",
+            "meaning": "수지",
+            "pronunciation": "수지",
+            "example_sentence": "庭園에 水池를 만들었다.",
+            "usage": "정원이나 건물의 연못을 지칭할 때 사용"
+          },
+          {
+            "word": "貯水池",
+            "meaning": "저수지",
+            "pronunciation": "저수지",
+            "example_sentence": "貯水池의 수위가 낮아졌다.",
+            "usage": "물을 저장하는 인공 연못을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "一池春水",
+            "meaning": "일지춘수 - 봄철 연못의 맑은 물",
+            "pronunciation": "일지춘수",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "池魚堂燕",
+            "meaning": "지어당연 - 연못의 물고기와 집의 제비처럼 위험에 처한 상태",
+            "pronunciation": "지어당연",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '池'는 단순한 연못을 넘어 정원 문화의 중요한 요소입니다. 특히 중국과 일본의 전통 정원에서는 연못이 자연의 축소판으로서 중요한 위치를 차지합니다.",
+        "pronunciation_guide": {
+          "korean": "지 (ji)",
+          "japanese_on": "ち (chi)",
+          "japanese_kun": "いけ (ike)",
+          "mandarin": "chí",
+          "cantonese": "ci4"
+        },
+        "stroke_order": {
+          "description": "왼쪽 물 수(氵) 부분을 먼저 쓰고, 오른쪽 또한(也) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "湖",
+          "沼",
+          "潭",
+          "淵"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N3",
+          "hsk": "4급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0007-68B0",
+      "character": "械",
+      "unicode": "68B0",
+      "meaning": "기계 계",
+      "pronunciation": "계",
+      "stroke_count": 11,
+      "radical": "木",
+      "grade": 9,
+      "order": 7,
+      "tags": [
+        "radical:木",
+        "strokes:11",
+        "category:technology",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "기계, 도구, 형틀, 수갑의 의미를 가진 한자",
+        "etymology": "나무(木)로 만든 도구(戒)의 형태에서 유래하여 '기계'나 '도구'를 의미하게 되었습니다.",
+        "mnemonics": "나무(木)로 만든 경계(戒)하는 도구로 '기계'나 '형구'를 뜻한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "機械",
+            "meaning": "기계",
+            "pronunciation": "기계",
+            "example_sentence": "이 機械는 자동으로 작동한다.",
+            "usage": "기계장치를 표현할 때 사용"
+          },
+          {
+            "word": "械具",
+            "meaning": "계구",
+            "pronunciation": "계구",
+            "example_sentence": "죄수에게 械具를 채웠다.",
+            "usage": "수갑이나 족쇄 등의 형구를 표현할 때 사용"
+          },
+          {
+            "word": "武械",
+            "meaning": "무계",
+            "pronunciation": "무계",
+            "example_sentence": "武械를 갖추다.",
+            "usage": "무기나 군사 장비를 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "以械制械",
+            "meaning": "이계제계 - 기계로 기계를 제어하다",
+            "pronunciation": "이계제계",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "고대 중국에서 '械'는 주로 형벌 도구를 지칭했으나, 현대에는 주로 기계와 관련된 용어로 사용됩니다. 기술의 발전과 함께 이 글자의 의미도 확장되었습니다.",
+        "pronunciation_guide": {
+          "korean": "계 (gye)",
+          "japanese_on": "かい (kai)",
+          "japanese_kun": "はで (hade)",
+          "mandarin": "xiè",
+          "cantonese": "haai6"
+        },
+        "stroke_order": {
+          "description": "왼쪽 나무 목(木) 부분을 먼저 쓰고, 오른쪽 계(戒) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "器",
+          "具",
+          "機",
+          "工"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "5급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0004-6539",
+      "character": "改",
+      "unicode": "6539",
+      "meaning": "고칠 개",
+      "pronunciation": "개",
+      "stroke_count": 7,
+      "radical": "攵",
+      "grade": 9,
+      "order": 4,
+      "tags": [
+        "radical:攵",
+        "strokes:7",
+        "category:action",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "고치다, 바꾸다, 개정하다의 의미를 가진 한자",
+        "etymology": "뜻을 나타내는 己(기)와 행동을 나타내는 攵(복)의 결합으로, '자신을 바꾸다'라는 의미에서 유래했습니다.",
+        "mnemonics": "자기 자신(己)을 변화시키는 행동(攵)으로 '고치다'라는 의미로 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "改正",
+            "meaning": "개정",
+            "pronunciation": "개정",
+            "example_sentence": "법률을 改正하다.",
+            "usage": "법이나 규칙을 바꿀 때 사용"
+          },
+          {
+            "word": "改革",
+            "meaning": "개혁",
+            "pronunciation": "개혁",
+            "example_sentence": "社會 改革을 추진하다.",
+            "usage": "제도나 관습을 근본적으로 바꿀 때 사용"
+          },
+          {
+            "word": "改善",
+            "meaning": "개선",
+            "pronunciation": "개선",
+            "example_sentence": "환경을 改善하기 위해 노력하다.",
+            "usage": "상태를 더 좋게 만들 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "改過遷善",
+            "meaning": "개과천선 - 잘못을 고치고 착한 행실로 옮김",
+            "pronunciation": "개과천선",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "日新又日新",
+            "meaning": "일신우일신 - 날마다 새롭고 또 날마다 새롭게 함",
+            "pronunciation": "일신우일신",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '改'는 자기 개선과 사회 발전의 핵심 개념입니다. 특히 유교에서는 자신의 잘못을 인정하고 고치는 것을 중요한 덕목으로 여깁니다.",
+        "pronunciation_guide": {
+          "korean": "개 (gae)",
+          "japanese_on": "かい (kai)",
+          "japanese_kun": "あらた(める) (arata(meru))",
+          "mandarin": "gǎi",
+          "cantonese": "goi2"
+        },
+        "stroke_order": {
+          "description": "왼쪽 己 부분을 먼저 쓰고, 오른쪽 攵 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "變",
+          "修",
+          "更",
+          "革"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0005-6557",
+      "character": "敗",
+      "unicode": "6557",
+      "meaning": "패할 패",
+      "pronunciation": "패",
+      "stroke_count": 11,
+      "radical": "攴",
+      "grade": 9,
+      "order": 5,
+      "tags": [
+        "radical:攴",
+        "strokes:11",
+        "category:result",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "패하다, 실패하다, 망하다의 의미를 가진 한자",
+        "etymology": "貝(패)와 攵(복)의 결합으로, '재물을 잃는다'는 의미에서 '패배'의 뜻을 갖게 되었습니다.",
+        "mnemonics": "조개껍질(貝)이 부서지는 행위(攵)로 '패배'를 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "失敗",
+            "meaning": "실패",
+            "pronunciation": "실패",
+            "example_sentence": "失敗는 성공의 어머니다.",
+            "usage": "시도가 성공하지 못할 때 사용"
+          },
+          {
+            "word": "勝敗",
+            "meaning": "승패",
+            "pronunciation": "승패",
+            "example_sentence": "勝敗를 결정짓는 순간이었다.",
+            "usage": "이기고 짐을 함께 나타낼 때 사용"
+          },
+          {
+            "word": "敗北",
+            "meaning": "패북",
+            "pronunciation": "패북",
+            "example_sentence": "전쟁에서 敗北하다.",
+            "usage": "전쟁이나 싸움에서 질 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "敗事有餘",
+            "meaning": "패사유여 - 일을 망치는 데는 여유가 있다",
+            "pronunciation": "패사유여",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "千慮一失",
+            "meaning": "천려일실 - 천 번 생각해도 한 번의 실수는 있을 수 있다",
+            "pronunciation": "천려일실",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '敗'는 단순한 실패를 넘어 경험과 교훈의 원천으로 여겨집니다. 특히 '敗而不餒'(패이불내)는 패배해도 굴하지 않는 정신을 강조합니다.",
+        "pronunciation_guide": {
+          "korean": "패 (pae)",
+          "japanese_on": "はい (hai)",
+          "japanese_kun": "やぶ(れる) (yabu(reru))",
+          "mandarin": "bài",
+          "cantonese": "baai6"
+        },
+        "stroke_order": {
+          "description": "왼쪽 貝 부분을 먼저 쓰고, 오른쪽 攵 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "勝",
+          "負",
+          "輸",
+          "潰"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N3",
+          "hsk": "4급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0006-6C60",
+      "character": "池",
+      "unicode": "6C60",
+      "meaning": "못 지",
+      "pronunciation": "지",
+      "stroke_count": 6,
+      "radical": "氵",
+      "grade": 9,
+      "order": 6,
+      "tags": [
+        "radical:氵",
+        "strokes:6",
+        "category:nature",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "연못, 물웅덩이, 인공적으로 만든 물 공간을 의미하는 한자",
+        "etymology": "물(氵)이 모인 땅(也)의 형태에서 유래하여 '연못'을 의미하게 되었습니다.",
+        "mnemonics": "물(氵)이 담긴 그릇(也) 모양으로 '연못'을 뜻한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "池塘",
+            "meaning": "지당",
+            "pronunciation": "지당",
+            "example_sentence": "池塘에 연꽃이 피었다.",
+            "usage": "연못을 표현할 때 사용"
+          },
+          {
+            "word": "水池",
+            "meaning": "수지",
+            "pronunciation": "수지",
+            "example_sentence": "庭園에 水池를 만들었다.",
+            "usage": "정원이나 건물의 연못을 지칭할 때 사용"
+          },
+          {
+            "word": "貯水池",
+            "meaning": "저수지",
+            "pronunciation": "저수지",
+            "example_sentence": "貯水池의 수위가 낮아졌다.",
+            "usage": "물을 저장하는 인공 연못을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "一池春水",
+            "meaning": "일지춘수 - 봄철 연못의 맑은 물",
+            "pronunciation": "일지춘수",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "池魚堂燕",
+            "meaning": "지어당연 - 연못의 물고기와 집의 제비처럼 위험에 처한 상태",
+            "pronunciation": "지어당연",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '池'는 단순한 연못을 넘어 정원 문화의 중요한 요소입니다. 특히 중국과 일본의 전통 정원에서는 연못이 자연의 축소판으로서 중요한 위치를 차지합니다.",
+        "pronunciation_guide": {
+          "korean": "지 (ji)",
+          "japanese_on": "ち (chi)",
+          "japanese_kun": "いけ (ike)",
+          "mandarin": "chí",
+          "cantonese": "ci4"
+        },
+        "stroke_order": {
+          "description": "왼쪽 물 수(氵) 부분을 먼저 쓰고, 오른쪽 또한(也) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "湖",
+          "沼",
+          "潭",
+          "淵"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N3",
+          "hsk": "4급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0007-68B0",
+      "character": "械",
+      "unicode": "68B0",
+      "meaning": "기계 계",
+      "pronunciation": "계",
+      "stroke_count": 11,
+      "radical": "木",
+      "grade": 9,
+      "order": 7,
+      "tags": [
+        "radical:木",
+        "strokes:11",
+        "category:technology",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "기계, 도구, 형틀, 수갑의 의미를 가진 한자",
+        "etymology": "나무(木)로 만든 도구(戒)의 형태에서 유래하여 '기계'나 '도구'를 의미하게 되었습니다.",
+        "mnemonics": "나무(木)로 만든 경계(戒)하는 도구로 '기계'나 '형구'를 뜻한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "機械",
+            "meaning": "기계",
+            "pronunciation": "기계",
+            "example_sentence": "이 機械는 자동으로 작동한다.",
+            "usage": "기계장치를 표현할 때 사용"
+          },
+          {
+            "word": "械具",
+            "meaning": "계구",
+            "pronunciation": "계구",
+            "example_sentence": "죄수에게 械具를 채웠다.",
+            "usage": "수갑이나 족쇄 등의 형구를 표현할 때 사용"
+          },
+          {
+            "word": "武械",
+            "meaning": "무계",
+            "pronunciation": "무계",
+            "example_sentence": "武械를 갖추다.",
+            "usage": "무기나 군사 장비를 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "以械制械",
+            "meaning": "이계제계 - 기계로 기계를 제어하다",
+            "pronunciation": "이계제계",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "고대 중국에서 '械'는 주로 형벌 도구를 지칭했으나, 현대에는 주로 기계와 관련된 용어로 사용됩니다. 기술의 발전과 함께 이 글자의 의미도 확장되었습니다.",
+        "pronunciation_guide": {
+          "korean": "계 (gye)",
+          "japanese_on": "かい (kai)",
+          "japanese_kun": "はで (hade)",
+          "mandarin": "xiè",
+          "cantonese": "haai6"
+        },
+        "stroke_order": {
+          "description": "왼쪽 나무 목(木) 부분을 먼저 쓰고, 오른쪽 계(戒) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "器",
+          "具",
+          "機",
+          "工"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "5급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0004-6539",
+      "character": "改",
+      "unicode": "6539",
+      "meaning": "고칠 개",
+      "pronunciation": "개",
+      "stroke_count": 7,
+      "radical": "攵",
+      "grade": 9,
+      "order": 4,
+      "tags": [
+        "radical:攵",
+        "strokes:7",
+        "category:action",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "고치다, 바꾸다, 개정하다의 의미를 가진 한자",
+        "etymology": "뜻을 나타내는 己(기)와 행동을 나타내는 攵(복)의 결합으로, '자신을 바꾸다'라는 의미에서 유래했습니다.",
+        "mnemonics": "자기 자신(己)을 변화시키는 행동(攵)으로 '고치다'라는 의미로 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "改正",
+            "meaning": "개정",
+            "pronunciation": "개정",
+            "example_sentence": "법률을 改正하다.",
+            "usage": "법이나 규칙을 바꿀 때 사용"
+          },
+          {
+            "word": "改革",
+            "meaning": "개혁",
+            "pronunciation": "개혁",
+            "example_sentence": "社會 改革을 추진하다.",
+            "usage": "제도나 관습을 근본적으로 바꿀 때 사용"
+          },
+          {
+            "word": "改善",
+            "meaning": "개선",
+            "pronunciation": "개선",
+            "example_sentence": "환경을 改善하기 위해 노력하다.",
+            "usage": "상태를 더 좋게 만들 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "改過遷善",
+            "meaning": "개과천선 - 잘못을 고치고 착한 행실로 옮김",
+            "pronunciation": "개과천선",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "日新又日新",
+            "meaning": "일신우일신 - 날마다 새롭고 또 날마다 새롭게 함",
+            "pronunciation": "일신우일신",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '改'는 자기 개선과 사회 발전의 핵심 개념입니다. 특히 유교에서는 자신의 잘못을 인정하고 고치는 것을 중요한 덕목으로 여깁니다.",
+        "pronunciation_guide": {
+          "korean": "개 (gae)",
+          "japanese_on": "かい (kai)",
+          "japanese_kun": "あらた(める) (arata(meru))",
+          "mandarin": "gǎi",
+          "cantonese": "goi2"
+        },
+        "stroke_order": {
+          "description": "왼쪽 己 부분을 먼저 쓰고, 오른쪽 攵 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "變",
+          "修",
+          "更",
+          "革"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0005-6557",
+      "character": "敗",
+      "unicode": "6557",
+      "meaning": "패할 패",
+      "pronunciation": "패",
+      "stroke_count": 11,
+      "radical": "攴",
+      "grade": 9,
+      "order": 5,
+      "tags": [
+        "radical:攴",
+        "strokes:11",
+        "category:result",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "패하다, 실패하다, 망하다의 의미를 가진 한자",
+        "etymology": "貝(패)와 攵(복)의 결합으로, '재물을 잃는다'는 의미에서 '패배'의 뜻을 갖게 되었습니다.",
+        "mnemonics": "조개껍질(貝)이 부서지는 행위(攵)로 '패배'를 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "失敗",
+            "meaning": "실패",
+            "pronunciation": "실패",
+            "example_sentence": "失敗는 성공의 어머니다.",
+            "usage": "시도가 성공하지 못할 때 사용"
+          },
+          {
+            "word": "勝敗",
+            "meaning": "승패",
+            "pronunciation": "승패",
+            "example_sentence": "勝敗를 결정짓는 순간이었다.",
+            "usage": "이기고 짐을 함께 나타낼 때 사용"
+          },
+          {
+            "word": "敗北",
+            "meaning": "패북",
+            "pronunciation": "패북",
+            "example_sentence": "전쟁에서 敗北하다.",
+            "usage": "전쟁이나 싸움에서 질 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "敗事有餘",
+            "meaning": "패사유여 - 일을 망치는 데는 여유가 있다",
+            "pronunciation": "패사유여",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "千慮一失",
+            "meaning": "천려일실 - 천 번 생각해도 한 번의 실수는 있을 수 있다",
+            "pronunciation": "천려일실",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '敗'는 단순한 실패를 넘어 경험과 교훈의 원천으로 여겨집니다. 특히 '敗而不餒'(패이불내)는 패배해도 굴하지 않는 정신을 강조합니다.",
+        "pronunciation_guide": {
+          "korean": "패 (pae)",
+          "japanese_on": "はい (hai)",
+          "japanese_kun": "やぶ(れる) (yabu(reru))",
+          "mandarin": "bài",
+          "cantonese": "baai6"
+        },
+        "stroke_order": {
+          "description": "왼쪽 貝 부분을 먼저 쓰고, 오른쪽 攵 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "勝",
+          "負",
+          "輸",
+          "潰"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N3",
+          "hsk": "4급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0006-6C60",
+      "character": "池",
+      "unicode": "6C60",
+      "meaning": "못 지",
+      "pronunciation": "지",
+      "stroke_count": 6,
+      "radical": "氵",
+      "grade": 9,
+      "order": 6,
+      "tags": [
+        "radical:氵",
+        "strokes:6",
+        "category:nature",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "연못, 물웅덩이, 인공적으로 만든 물 공간을 의미하는 한자",
+        "etymology": "물(氵)이 모인 땅(也)의 형태에서 유래하여 '연못'을 의미하게 되었습니다.",
+        "mnemonics": "물(氵)이 담긴 그릇(也) 모양으로 '연못'을 뜻한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "池塘",
+            "meaning": "지당",
+            "pronunciation": "지당",
+            "example_sentence": "池塘에 연꽃이 피었다.",
+            "usage": "연못을 표현할 때 사용"
+          },
+          {
+            "word": "水池",
+            "meaning": "수지",
+            "pronunciation": "수지",
+            "example_sentence": "庭園에 水池를 만들었다.",
+            "usage": "정원이나 건물의 연못을 지칭할 때 사용"
+          },
+          {
+            "word": "貯水池",
+            "meaning": "저수지",
+            "pronunciation": "저수지",
+            "example_sentence": "貯水池의 수위가 낮아졌다.",
+            "usage": "물을 저장하는 인공 연못을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "一池春水",
+            "meaning": "일지춘수 - 봄철 연못의 맑은 물",
+            "pronunciation": "일지춘수",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "池魚堂燕",
+            "meaning": "지어당연 - 연못의 물고기와 집의 제비처럼 위험에 처한 상태",
+            "pronunciation": "지어당연",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '池'는 단순한 연못을 넘어 정원 문화의 중요한 요소입니다. 특히 중국과 일본의 전통 정원에서는 연못이 자연의 축소판으로서 중요한 위치를 차지합니다.",
+        "pronunciation_guide": {
+          "korean": "지 (ji)",
+          "japanese_on": "ち (chi)",
+          "japanese_kun": "いけ (ike)",
+          "mandarin": "chí",
+          "cantonese": "ci4"
+        },
+        "stroke_order": {
+          "description": "왼쪽 물 수(氵) 부분을 먼저 쓰고, 오른쪽 또한(也) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "湖",
+          "沼",
+          "潭",
+          "淵"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N3",
+          "hsk": "4급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0007-68B0",
+      "character": "械",
+      "unicode": "68B0",
+      "meaning": "기계 계",
+      "pronunciation": "계",
+      "stroke_count": 11,
+      "radical": "木",
+      "grade": 9,
+      "order": 7,
+      "tags": [
+        "radical:木",
+        "strokes:11",
+        "category:technology",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "기계, 도구, 형틀, 수갑의 의미를 가진 한자",
+        "etymology": "나무(木)로 만든 도구(戒)의 형태에서 유래하여 '기계'나 '도구'를 의미하게 되었습니다.",
+        "mnemonics": "나무(木)로 만든 경계(戒)하는 도구로 '기계'나 '형구'를 뜻한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "機械",
+            "meaning": "기계",
+            "pronunciation": "기계",
+            "example_sentence": "이 機械는 자동으로 작동한다.",
+            "usage": "기계장치를 표현할 때 사용"
+          },
+          {
+            "word": "械具",
+            "meaning": "계구",
+            "pronunciation": "계구",
+            "example_sentence": "죄수에게 械具를 채웠다.",
+            "usage": "수갑이나 족쇄 등의 형구를 표현할 때 사용"
+          },
+          {
+            "word": "武械",
+            "meaning": "무계",
+            "pronunciation": "무계",
+            "example_sentence": "武械를 갖추다.",
+            "usage": "무기나 군사 장비를 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "以械制械",
+            "meaning": "이계제계 - 기계로 기계를 제어하다",
+            "pronunciation": "이계제계",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "고대 중국에서 '械'는 주로 형벌 도구를 지칭했으나, 현대에는 주로 기계와 관련된 용어로 사용됩니다. 기술의 발전과 함께 이 글자의 의미도 확장되었습니다.",
+        "pronunciation_guide": {
+          "korean": "계 (gye)",
+          "japanese_on": "かい (kai)",
+          "japanese_kun": "はで (hade)",
+          "mandarin": "xiè",
+          "cantonese": "haai6"
+        },
+        "stroke_order": {
+          "description": "왼쪽 나무 목(木) 부분을 먼저 쓰고, 오른쪽 계(戒) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "器",
+          "具",
+          "機",
+          "工"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "5급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0004-6539",
+      "character": "改",
+      "unicode": "6539",
+      "meaning": "고칠 개",
+      "pronunciation": "개",
+      "stroke_count": 7,
+      "radical": "攵",
+      "grade": 9,
+      "order": 4,
+      "tags": [
+        "radical:攵",
+        "strokes:7",
+        "category:action",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "고치다, 바꾸다, 개정하다의 의미를 가진 한자",
+        "etymology": "뜻을 나타내는 己(기)와 행동을 나타내는 攵(복)의 결합으로, '자신을 바꾸다'라는 의미에서 유래했습니다.",
+        "mnemonics": "자기 자신(己)을 변화시키는 행동(攵)으로 '고치다'라는 의미로 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "改正",
+            "meaning": "개정",
+            "pronunciation": "개정",
+            "example_sentence": "법률을 改正하다.",
+            "usage": "법이나 규칙을 바꿀 때 사용"
+          },
+          {
+            "word": "改革",
+            "meaning": "개혁",
+            "pronunciation": "개혁",
+            "example_sentence": "社會 改革을 추진하다.",
+            "usage": "제도나 관습을 근본적으로 바꿀 때 사용"
+          },
+          {
+            "word": "改善",
+            "meaning": "개선",
+            "pronunciation": "개선",
+            "example_sentence": "환경을 改善하기 위해 노력하다.",
+            "usage": "상태를 더 좋게 만들 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "改過遷善",
+            "meaning": "개과천선 - 잘못을 고치고 착한 행실로 옮김",
+            "pronunciation": "개과천선",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "日新又日新",
+            "meaning": "일신우일신 - 날마다 새롭고 또 날마다 새롭게 함",
+            "pronunciation": "일신우일신",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '改'는 자기 개선과 사회 발전의 핵심 개념입니다. 특히 유교에서는 자신의 잘못을 인정하고 고치는 것을 중요한 덕목으로 여깁니다.",
+        "pronunciation_guide": {
+          "korean": "개 (gae)",
+          "japanese_on": "かい (kai)",
+          "japanese_kun": "あらた(める) (arata(meru))",
+          "mandarin": "gǎi",
+          "cantonese": "goi2"
+        },
+        "stroke_order": {
+          "description": "왼쪽 己 부분을 먼저 쓰고, 오른쪽 攵 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "變",
+          "修",
+          "更",
+          "革"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N4",
+          "hsk": "3급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0005-6557",
+      "character": "敗",
+      "unicode": "6557",
+      "meaning": "패할 패",
+      "pronunciation": "패",
+      "stroke_count": 11,
+      "radical": "攴",
+      "grade": 9,
+      "order": 5,
+      "tags": [
+        "radical:攴",
+        "strokes:11",
+        "category:result",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "패하다, 실패하다, 망하다의 의미를 가진 한자",
+        "etymology": "貝(패)와 攵(복)의 결합으로, '재물을 잃는다'는 의미에서 '패배'의 뜻을 갖게 되었습니다.",
+        "mnemonics": "조개껍질(貝)이 부서지는 행위(攵)로 '패배'를 의미한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "失敗",
+            "meaning": "실패",
+            "pronunciation": "실패",
+            "example_sentence": "失敗는 성공의 어머니다.",
+            "usage": "시도가 성공하지 못할 때 사용"
+          },
+          {
+            "word": "勝敗",
+            "meaning": "승패",
+            "pronunciation": "승패",
+            "example_sentence": "勝敗를 결정짓는 순간이었다.",
+            "usage": "이기고 짐을 함께 나타낼 때 사용"
+          },
+          {
+            "word": "敗北",
+            "meaning": "패북",
+            "pronunciation": "패북",
+            "example_sentence": "전쟁에서 敗北하다.",
+            "usage": "전쟁이나 싸움에서 질 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "敗事有餘",
+            "meaning": "패사유여 - 일을 망치는 데는 여유가 있다",
+            "pronunciation": "패사유여",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "千慮一失",
+            "meaning": "천려일실 - 천 번 생각해도 한 번의 실수는 있을 수 있다",
+            "pronunciation": "천려일실",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '敗'는 단순한 실패를 넘어 경험과 교훈의 원천으로 여겨집니다. 특히 '敗而不餒'(패이불내)는 패배해도 굴하지 않는 정신을 강조합니다.",
+        "pronunciation_guide": {
+          "korean": "패 (pae)",
+          "japanese_on": "はい (hai)",
+          "japanese_kun": "やぶ(れる) (yabu(reru))",
+          "mandarin": "bài",
+          "cantonese": "baai6"
+        },
+        "stroke_order": {
+          "description": "왼쪽 貝 부분을 먼저 쓰고, 오른쪽 攵 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "勝",
+          "負",
+          "輸",
+          "潰"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N3",
+          "hsk": "4급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0006-6C60",
+      "character": "池",
+      "unicode": "6C60",
+      "meaning": "못 지",
+      "pronunciation": "지",
+      "stroke_count": 6,
+      "radical": "氵",
+      "grade": 9,
+      "order": 6,
+      "tags": [
+        "radical:氵",
+        "strokes:6",
+        "category:nature",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "연못, 물웅덩이, 인공적으로 만든 물 공간을 의미하는 한자",
+        "etymology": "물(氵)이 모인 땅(也)의 형태에서 유래하여 '연못'을 의미하게 되었습니다.",
+        "mnemonics": "물(氵)이 담긴 그릇(也) 모양으로 '연못'을 뜻한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "池塘",
+            "meaning": "지당",
+            "pronunciation": "지당",
+            "example_sentence": "池塘에 연꽃이 피었다.",
+            "usage": "연못을 표현할 때 사용"
+          },
+          {
+            "word": "水池",
+            "meaning": "수지",
+            "pronunciation": "수지",
+            "example_sentence": "庭園에 水池를 만들었다.",
+            "usage": "정원이나 건물의 연못을 지칭할 때 사용"
+          },
+          {
+            "word": "貯水池",
+            "meaning": "저수지",
+            "pronunciation": "저수지",
+            "example_sentence": "貯水池의 수위가 낮아졌다.",
+            "usage": "물을 저장하는 인공 연못을 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "一池春水",
+            "meaning": "일지춘수 - 봄철 연못의 맑은 물",
+            "pronunciation": "일지춘수",
+            "difficulty": "intermediate"
+          },
+          {
+            "sentence": "池魚堂燕",
+            "meaning": "지어당연 - 연못의 물고기와 집의 제비처럼 위험에 처한 상태",
+            "pronunciation": "지어당연",
+            "difficulty": "advanced"
+          }
+        ],
+        "cultural_notes": "동아시아 문화에서 '池'는 단순한 연못을 넘어 정원 문화의 중요한 요소입니다. 특히 중국과 일본의 전통 정원에서는 연못이 자연의 축소판으로서 중요한 위치를 차지합니다.",
+        "pronunciation_guide": {
+          "korean": "지 (ji)",
+          "japanese_on": "ち (chi)",
+          "japanese_kun": "いけ (ike)",
+          "mandarin": "chí",
+          "cantonese": "ci4"
+        },
+        "stroke_order": {
+          "description": "왼쪽 물 수(氵) 부분을 먼저 쓰고, 오른쪽 또한(也) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "湖",
+          "沼",
+          "潭",
+          "淵"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N3",
+          "hsk": "4급",
+          "korean_standard": "중급"
+        }
+      }
+    },
+    {
+      "id": "HJ-09-0007-68B0",
+      "character": "械",
+      "unicode": "68B0",
+      "meaning": "기계 계",
+      "pronunciation": "계",
+      "stroke_count": 11,
+      "radical": "木",
+      "grade": 9,
+      "order": 7,
+      "tags": [
+        "radical:木",
+        "strokes:11",
+        "category:technology",
+        "grade:9",
+        "level:intermediate"
+      ],
+      "extended_data": {
+        "detailed_meaning": "기계, 도구, 형틀, 수갑의 의미를 가진 한자",
+        "etymology": "나무(木)로 만든 도구(戒)의 형태에서 유래하여 '기계'나 '도구'를 의미하게 되었습니다.",
+        "mnemonics": "나무(木)로 만든 경계(戒)하는 도구로 '기계'나 '형구'를 뜻한다고 기억할 수 있습니다.",
+        "common_words": [
+          {
+            "word": "機械",
+            "meaning": "기계",
+            "pronunciation": "기계",
+            "example_sentence": "이 機械는 자동으로 작동한다.",
+            "usage": "기계장치를 표현할 때 사용"
+          },
+          {
+            "word": "械具",
+            "meaning": "계구",
+            "pronunciation": "계구",
+            "example_sentence": "죄수에게 械具를 채웠다.",
+            "usage": "수갑이나 족쇄 등의 형구를 표현할 때 사용"
+          },
+          {
+            "word": "武械",
+            "meaning": "무계",
+            "pronunciation": "무계",
+            "example_sentence": "武械를 갖추다.",
+            "usage": "무기나 군사 장비를 표현할 때 사용"
+          }
+        ],
+        "example_sentences": [
+          {
+            "sentence": "以械制械",
+            "meaning": "이계제계 - 기계로 기계를 제어하다",
+            "pronunciation": "이계제계",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "고대 중국에서 '械'는 주로 형벌 도구를 지칭했으나, 현대에는 주로 기계와 관련된 용어로 사용됩니다. 기술의 발전과 함께 이 글자의 의미도 확장되었습니다.",
+        "pronunciation_guide": {
+          "korean": "계 (gye)",
+          "japanese_on": "かい (kai)",
+          "japanese_kun": "はで (hade)",
+          "mandarin": "xiè",
+          "cantonese": "haai6"
+        },
+        "stroke_order": {
+          "description": "왼쪽 나무 목(木) 부분을 먼저 쓰고, 오른쪽 계(戒) 부분을 씁니다.",
+          "directions": []
+        },
+        "related_characters": [
+          "器",
+          "具",
+          "機",
+          "工"
+        ],
+        "variants": [],
+        "level_info": {
+          "jlpt": "N2",
+          "hsk": "5급",
+          "korean_standard": "중급"
+        }
+      }
+    }
+  ]
 }

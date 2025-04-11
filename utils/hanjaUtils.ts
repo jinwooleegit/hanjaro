@@ -135,11 +135,11 @@ export function getCategories(): HanjaCategory[] {
     {
       id: 'beginner',
       name: '초급',
-      description: '기초 한자와 간단한 구조의 한자를 학습합니다. 일상생활에서 자주 사용되는 기본 한자들이 포함됩니다.',
+      description: '한자 학습을 처음 시작하는 단계입니다. 기본적인 한자의 형태와 의미를 배웁니다.',
       levels: [
-        { id: 'level1', name: '15급', description: '한자 학습 입문 단계로 가장 기초적인 한자를 학습합니다.', characters: [] },
-        { id: 'level2', name: '14급', description: '기초 한자를 확장하여 일상에서 자주 쓰이는 쉬운 한자를 학습합니다.', characters: [] },
-        { id: 'level3', name: '13급', description: '초등 저학년 수준의 필수 한자를 학습합니다.', characters: [] },
+        { id: 'level1', name: '15급', description: '가장 기초적인 한자를 배우는 첫 번째 단계입니다.', characters: [] },
+        { id: 'level2', name: '14급', description: '기초 한자 구조와 의미를 이해하는 두 번째 단계입니다.', characters: [] },
+        { id: 'level3', name: '13급', description: '일상에서 자주 사용되는 기초 한자를 배우는 단계입니다.', characters: [] },
         { id: 'level4', name: '12급', description: '기초 한자 구조와 의미를 이해하는 단계입니다.', characters: [] },
         { id: 'level5', name: '11급', description: '초급 마지막 단계로 초등학교 수준의 한자를 마스터합니다.', characters: [] }
       ]
@@ -147,13 +147,13 @@ export function getCategories(): HanjaCategory[] {
     {
       id: 'intermediate',
       name: '중급',
-      description: '중간 수준의 한자와 조금 더 복잡한 구조의 한자를 학습합니다. 더 많은 부수와 결합된 한자들이 포함됩니다.',
+      description: '더 복잡한 한자 구조와 의미를 배우는 단계입니다. 한자 조합과 활용을 학습합니다.',
       levels: [
-        { id: 'level1', name: '10급', description: '중급 첫 단계로 더 복잡한 구조의 한자를 학습합니다.', characters: [] },
-        { id: 'level2', name: '9급', description: '일상 생활과 학업에 필요한 중요 한자를 학습합니다.', characters: [] },
-        { id: 'level3', name: '8급', description: '중급 수준의 한자어와 문화적 배경을 함께 학습합니다.', characters: [] },
-        { id: 'level4', name: '7급', description: '다양한 분야에서 사용되는 한자를 확장합니다.', characters: [] },
-        { id: 'level5', name: '6급', description: '중급 마지막 단계로 고등학교 수준의 기초 한자를 학습합니다.', characters: [] }
+        { id: 'level1', name: '10급', description: '중급 첫 단계로 복합적인 한자 구조를 학습합니다.', characters: [] },
+        { id: 'level2', name: '9급', description: '일상 회화에서 자주 사용되는 중급 한자를 배웁니다.', characters: [] },
+        { id: 'level3', name: '8급', description: '다양한 한자 조합과 활용법을 배우는 단계입니다.', characters: [] },
+        { id: 'level4', name: '7급', description: '일상생활과 학습에 필요한 한자를 마스터합니다.', characters: [] },
+        { id: 'level5', name: '6급', description: '중급 마지막 단계로 중학교 수준의 한자를 학습합니다.', characters: [] }
       ]
     },
     {
@@ -164,15 +164,6 @@ export function getCategories(): HanjaCategory[] {
         { id: 'level1', name: '5급', description: '고급 첫 단계로 전문 분야에서 사용되는 한자를 학습합니다.', characters: [] },
         { id: 'level2', name: '4급', description: '다양한 한자 조합과 심화된 활용법을 학습합니다.', characters: [] },
         { id: 'level3', name: '3급', description: '고급 마지막 단계로 한자 지식을 심화합니다.', characters: [] }
-      ]
-    },
-    {
-      id: 'expert',
-      name: '전문가',
-      description: '가장 높은 수준의 한자와 희귀 한자를 학습합니다. 고전 문헌과 전문 서적에서 사용되는 한자들이 포함됩니다.',
-      levels: [
-        { id: 'level1', name: '2급', description: '전문가 첫 단계로 희귀 한자와 전문 용어를 학습합니다.', characters: [] },
-        { id: 'level2', name: '1급', description: '최고 수준의 한자 지식과 고전 문헌에 사용되는 한자를 학습합니다.', characters: [] }
       ]
     }
   ];
@@ -267,11 +258,6 @@ export function getCharactersForLevel(categoryId: string, levelId: string): Hanj
       else if (levelId === 'level2') levelData = universityLevel3; // 4급 - 고급 2단계
       else if (levelId === 'level3') levelData = universityLevel4; // 3급 - 고급 3단계
     }
-    // 전문가 레벨 (expert) - 2급~1급
-    else if (categoryId === 'expert') {
-      if (levelId === 'level1') levelData = universityLevel3;  // 2급 - 전문가 1단계
-      else if (levelId === 'level2') levelData = universityLevel4; // 1급 - 전문가 2단계
-    }
     // 구 카테고리 호환성 유지 (기존 URL 지원)
     else if (categoryId === 'elementary') {
       // 예전 카테고리인 elementary를 beginner로 매핑
@@ -295,7 +281,7 @@ export function getCharactersForLevel(categoryId: string, levelId: string): Hanj
       else if (levelId === 'level3') levelData = universityLevel4;
     }
     else if (categoryId === 'university') {
-      // 예전 카테고리인 university를 expert로 매핑
+      // 예전 카테고리인 university를 advanced로 매핑 (expert 대신 advanced로 변경)
       if (levelId === 'level1') levelData = universityLevel1;
       else if (levelId === 'level2') levelData = universityLevel3;
       else if (levelId === 'level3') levelData = universityLevel4;

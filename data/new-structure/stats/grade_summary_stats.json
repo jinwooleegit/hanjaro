@@ -1,0 +1,78 @@
+{
+  "total_grades": 13,
+  "completed_grades": 13,
+  "characters_by_category": {
+    "beginner": 329,
+    "intermediate": 190,
+    "advanced": 89
+  },
+  "total_characters": 608,
+  "grade_status": {
+    "3": {
+      "exists": true,
+      "characters": 28,
+      "completeness": 100
+    },
+    "4": {
+      "exists": true,
+      "characters": 28,
+      "completeness": 100
+    },
+    "5": {
+      "exists": true,
+      "characters": 33,
+      "completeness": 100
+    },
+    "6": {
+      "exists": true,
+      "characters": 19,
+      "completeness": 100
+    },
+    "7": {
+      "exists": true,
+      "characters": 28,
+      "completeness": 100
+    },
+    "8": {
+      "exists": true,
+      "characters": 19,
+      "completeness": 100
+    },
+    "9": {
+      "exists": true,
+      "characters": 19,
+      "completeness": 100
+    },
+    "10": {
+      "exists": true,
+      "characters": 105,
+      "completeness": 100
+    },
+    "11": {
+      "exists": true,
+      "characters": 105,
+      "completeness": 77
+    },
+    "12": {
+      "exists": true,
+      "characters": 55,
+      "completeness": 88
+    },
+    "13": {
+      "exists": true,
+      "characters": 58,
+      "completeness": 88
+    },
+    "14": {
+      "exists": true,
+      "characters": 56,
+      "completeness": 91
+    },
+    "15": {
+      "exists": true,
+      "characters": 55,
+      "completeness": 93
+    }
+  },
+  "last_updated": "2025-04-11T10:19:33.444Z"
+}

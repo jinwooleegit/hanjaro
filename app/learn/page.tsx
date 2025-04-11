@@ -10,21 +10,26 @@ import ContentCard from '@/app/components/ContentCard';
 
 // 급수 정보
 const GRADES = [
+  // 초급 (쉬움) - 15급에서 시작
+  { grade: 15, name: '15급', description: '기초 일상 관련 한자' },
+  { grade: 14, name: '14급', description: '기초 숫자 및 방향 관련 한자' },
+  { grade: 9, name: '기초 한자', description: '기초적인 한자 학습' },
+  
+  // 중급 
   { grade: 8, name: '8급', description: '초등학교 3학년 수준' },
   { grade: 7, name: '7급', description: '초등학교 4학년 수준' },
   { grade: 6, name: '6급', description: '초등학교 5~6학년 수준' },
+  
+  // 고급
   { grade: 5, name: '5급', description: '중학교 1학년 수준' },
+  { grade: 10, name: '준3급', description: '진학예정 학생 등이 배우는 한자' },
   { grade: 4, name: '4급', description: '중학교 2~3학년 수준' },
   { grade: 3, name: '3급', description: '고등학교 1학년 수준' },
-  { grade: 2, name: '2급', description: '고등학교 2~3학년 수준' },
-  { grade: 1, name: '1급', description: '대학 수준' },
-  { grade: 9, name: '기초 한자', description: '기초적인 한자 학습' },
-  { grade: 10, name: '준3급', description: '진학예정 학생 등이 배우는 한자' },
+  
+  // 기타 중급 및 고급 한자
   { grade: 11, name: '준2급', description: '중급 이상의 한자' },
   { grade: 12, name: '준1급', description: '고급 한자' },
-  { grade: 13, name: '특급', description: '전문적 한자' },
-  { grade: 14, name: '14급', description: '기초 숫자 및 방향 관련 한자' },
-  { grade: 15, name: '15급', description: '기초 일상 관련 한자' },
+  { grade: 13, name: '특급', description: '전문적인 한자' },
 ];
 
 export default function LearnPage() {

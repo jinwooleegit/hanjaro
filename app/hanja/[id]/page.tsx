@@ -52,6 +52,8 @@ const HanjaInfoSection = ({ hanjaData }: { hanjaData: HanjaExtendedCharacter }) 
 
 // 획순 정보 섹션 컴포넌트
 const StrokeOrderSection = ({ hanjaData }: { hanjaData: HanjaExtendedCharacter }) => {
+  const [imageError, setImageError] = useState(false);
+  
   // 획순 안내 이미지 URL
   const getStrokeOrderImageUrl = (char: string) => {
     return `/images/stroke-order/${char}.svg`;
@@ -76,22 +78,22 @@ const StrokeOrderSection = ({ hanjaData }: { hanjaData: HanjaExtendedCharacter }
         
         <div className="flex items-center justify-center">
           <div className="relative h-56 w-56 border border-gray-200 flex items-center justify-center bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-            <Image 
-              src={getStrokeOrderImageUrl(hanjaData.character)}
-              alt={`${hanjaData.character} 획순`}
-              fill
-              className="object-contain p-2"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                const fallbackElement = document.createElement('div');
-                fallbackElement.className = 'text-8xl font-serif animate-pulse';
-                fallbackElement.innerText = hanjaData.character;
-                target.parentNode?.appendChild(fallbackElement);
-              }}
-            />
+            {!imageError ? (
+              <Image 
+                src={getStrokeOrderImageUrl(hanjaData.character)}
+                alt={`${hanjaData.character} 획순`}
+                fill
+                className="object-contain p-2"
+                onError={() => setImageError(true)}
+              />
+            ) : (
+              <div className="text-8xl font-serif animate-pulse">
+                {hanjaData.character}
+                <div className="text-sm text-gray-500 mt-4">획순 이미지 없음</div>
+              </div>
+            )}
             <div className="absolute bottom-2 right-2 text-sm text-gray-500">
-              획순 애니메이션
+              {!imageError ? '획순 애니메이션' : ''}
             </div>
           </div>
         </div>
@@ -233,36 +235,46 @@ export default function HanjaDetailPage() {
           }
         }
         
-        // ID로 한자 정보 가져오기
-        const hanja = await getHanjaById(identifier);
-        
-        if (!hanja) {
-          setError(`ID가 "${identifier}"인 한자를 찾을 수 없습니다.`);
-          setIsLoading(false);
-          return;
+        try {
+          // ID로 한자 정보 가져오기
+          const hanja = await getHanjaById(identifier);
+          
+          if (!hanja) {
+            setError(`ID가 "${identifier}"인 한자를 찾을 수 없습니다.`);
+            setIsLoading(false);
+            return;
+          }
+          
+          setHanjaData(hanja);
+          
+          // 관련 한자 로드
+          try {
+            const related = await getRelatedCharacters(hanja.id);
+            setRelatedCharacters(related);
+          } catch (relatedError) {
+            console.error('관련 한자 로드 중 오류:', relatedError);
+            setRelatedCharacters([]);
+          }
+          
+          // 복합어 설정
+          if (hanja.extended_data?.common_words) {
+            setCompoundWords(hanja.extended_data.common_words);
+          } else {
+            setCompoundWords([]);
+          }
+        } catch (dataError) {
+          console.error('한자 데이터 로드 중 오류:', dataError);
+          setError(`한자 데이터를 로드하는 중 오류가 발생했습니다: ${dataError instanceof Error ? dataError.message : '알 수 없는 오류'}`);
         }
-        
-        setHanjaData(hanja);
-        
-        // 관련 한자 로드
-        const related = await getRelatedCharacters(hanja.id);
-        setRelatedCharacters(related);
-        
-        // 복합어 로드 (향후 구현)
-        setCompoundWords(hanja.extended_data?.common_words || []);
-        
-        setError(null);
-      } catch (err) {
-        console.error('Error loading hanja data:', err);
-        setError('한자 데이터를 로드하는 중 오류가 발생했습니다.');
+      } catch (error) {
+        console.error('페이지 로드 중 오류:', error);
+        setError(`페이지 로드 중 오류가 발생했습니다: ${error instanceof Error ? error.message : '알 수 없는 오류'}`);
       } finally {
         setIsLoading(false);
       }
     }
     
-    if (identifier) {
-      loadData();
-    }
+    loadData();
   }, [identifier, router]);
 
   // 관련 한자로 이동하는 함수

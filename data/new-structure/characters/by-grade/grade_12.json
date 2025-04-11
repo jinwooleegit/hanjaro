@@ -1,9 +1,11 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2025-04-10T14:30:01.526Z",
+    "last_updated": "2025-04-11T10:19:33.045Z",
     "grade": 12,
-    "total_characters": 55
+    "total_characters": 55,
+    "description": "초급 4단계 - 기초 동작 및 상태 관련 한자",
+    "category": "beginner"
   },
   "characters": [
     {
@@ -22,8 +24,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "하늘 천",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "天는 원래 '하늘 천'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "天는 4획으로 구성되어 있으며, 하늘 천의 모양을 생각하면 쉽게 기억할 수 있습니다. 大 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "天國",
@@ -36,9 +38,16 @@
             "pronunciation": "천기"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "天",
+            "meaning": "하늘 천",
+            "pronunciation": "천",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "天(하늘 천)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '천'로 발음합니다. 입을 크게 벌리고 천천히 '천'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -56,7 +65,8 @@
             "M 75 30 L 60 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 4획 (쉬움)"
       }
     },
     {
@@ -75,8 +85,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "땅 지",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "地는 원래 '땅 지'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "地는 6획으로 구성되어 있으며, 땅 지의 모양을 생각하면 쉽게 기억할 수 있습니다. 土 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "地球",
@@ -89,9 +99,16 @@
             "pronunciation": "토지"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "地",
+            "meaning": "땅 지",
+            "pronunciation": "지",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "地(땅 지)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '지'로 발음합니다. 입을 크게 벌리고 천천히 '지'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -109,7 +126,8 @@
             "M 75 30 L 60 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 6획 (보통)"
       }
     },
     {
@@ -128,8 +146,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "배울 학",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "學는 원래 '배울 학'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "學는 16획으로 구성되어 있으며, 배울 학의 모양을 생각하면 쉽게 기억할 수 있습니다. 子 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "學校",
@@ -142,9 +160,16 @@
             "pronunciation": "대학"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "學",
+            "meaning": "배울 학",
+            "pronunciation": "학",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "學(배울 학)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '학'로 발음합니다. 입을 크게 벌리고 천천히 '학'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -166,7 +191,8 @@
             "M 25 85 L 75 85"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 16획 (어려움)"
       }
     },
     {
@@ -185,8 +211,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "날 생",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "生는 원래 '날 생'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "生는 5획으로 구성되어 있으며, 날 생의 모양을 생각하면 쉽게 기억할 수 있습니다. 生 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "生日",
@@ -199,9 +225,16 @@
             "pronunciation": "학생"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "生",
+            "meaning": "날 생",
+            "pronunciation": "생",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "生(날 생)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '생'로 발음합니다. 입을 크게 벌리고 천천히 '생'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -219,7 +252,8 @@
             "M 60 55 L 40 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 5획 (보통)"
       }
     },
     {
@@ -238,8 +272,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "먼저 선",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "先는 원래 '먼저 선'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "先는 6획으로 구성되어 있으며, 먼저 선의 모양을 생각하면 쉽게 기억할 수 있습니다. 儿 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "先生",
@@ -252,9 +286,16 @@
             "pronunciation": "선배"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "先",
+            "meaning": "먼저 선",
+            "pronunciation": "선",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "先(먼저 선)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '선'로 발음합니다. 입을 크게 벌리고 천천히 '선'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -266,7 +307,8 @@
             "M 45 55 L 90 55"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 6획 (보통)"
       }
     },
     {
@@ -289,8 +331,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "하늘 천",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "天는 원래 '하늘 천'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "天는 4획으로 구성되어 있으며, 하늘 천의 모양을 생각하면 쉽게 기억할 수 있습니다. 大 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "天國",
@@ -303,9 +345,16 @@
             "pronunciation": "천기"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "天",
+            "meaning": "하늘 천",
+            "pronunciation": "천",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "天(하늘 천)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '천'로 발음합니다. 입을 크게 벌리고 천천히 '천'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -323,7 +372,8 @@
             "M 75 30 L 60 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 4획 (쉬움)"
       }
     },
     {
@@ -346,8 +396,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "땅 지",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "地는 원래 '땅 지'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "地는 6획으로 구성되어 있으며, 땅 지의 모양을 생각하면 쉽게 기억할 수 있습니다. 土 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "地球",
@@ -360,9 +410,16 @@
             "pronunciation": "토지"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "地",
+            "meaning": "땅 지",
+            "pronunciation": "지",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "地(땅 지)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '지'로 발음합니다. 입을 크게 벌리고 천천히 '지'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -380,7 +437,8 @@
             "M 75 30 L 60 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 6획 (보통)"
       }
     },
     {
@@ -403,8 +461,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "배울 학",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "學는 원래 '배울 학'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "學는 16획으로 구성되어 있으며, 배울 학의 모양을 생각하면 쉽게 기억할 수 있습니다. 子 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "學校",
@@ -417,9 +475,16 @@
             "pronunciation": "대학"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "學",
+            "meaning": "배울 학",
+            "pronunciation": "학",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "學(배울 학)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '학'로 발음합니다. 입을 크게 벌리고 천천히 '학'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -441,7 +506,8 @@
             "M 25 85 L 75 85"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 16획 (어려움)"
       }
     },
     {
@@ -464,8 +530,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "날 생",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "生는 원래 '날 생'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "生는 5획으로 구성되어 있으며, 날 생의 모양을 생각하면 쉽게 기억할 수 있습니다. 生 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "生日",
@@ -478,9 +544,16 @@
             "pronunciation": "학생"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "生",
+            "meaning": "날 생",
+            "pronunciation": "생",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "生(날 생)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '생'로 발음합니다. 입을 크게 벌리고 천천히 '생'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -498,7 +571,8 @@
             "M 60 55 L 40 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 5획 (보통)"
       }
     },
     {
@@ -521,8 +595,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "먼저 선",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "先는 원래 '먼저 선'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "先는 6획으로 구성되어 있으며, 먼저 선의 모양을 생각하면 쉽게 기억할 수 있습니다. 儿 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "先生",
@@ -535,9 +609,16 @@
             "pronunciation": "선배"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "先",
+            "meaning": "먼저 선",
+            "pronunciation": "선",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "先(먼저 선)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '선'로 발음합니다. 입을 크게 벌리고 천천히 '선'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -549,7 +630,8 @@
             "M 45 55 L 90 55"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 6획 (보통)"
       }
     },
     {
@@ -573,8 +655,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "학교 교",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "校는 원래 '학교 교'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "校는 10획으로 구성되어 있으며, 학교 교의 모양을 생각하면 쉽게 기억할 수 있습니다. 木 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "學校",
@@ -587,9 +669,16 @@
             "pronunciation": "교장"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "校",
+            "meaning": "학교 교",
+            "pronunciation": "교",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "校(학교 교)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '교'로 발음합니다. 입을 크게 벌리고 천천히 '교'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -607,7 +696,8 @@
             "M 75 30 L 60 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 10획 (어려움)"
       }
     },
     {
@@ -630,8 +720,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "때 시",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "時는 원래 '때 시'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "時는 10획으로 구성되어 있으며, 때 시의 모양을 생각하면 쉽게 기억할 수 있습니다. 日 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "時間",
@@ -644,14 +734,22 @@
             "pronunciation": "시계"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "時",
+            "meaning": "때 시",
+            "pronunciation": "시",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "時(때 시)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '시'로 발음합니다. 입을 크게 벌리고 천천히 '시'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 10획 (어려움)"
       }
     },
     {
@@ -674,8 +772,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "사이 간",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "間는 원래 '사이 간'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "間는 12획으로 구성되어 있으며, 사이 간의 모양을 생각하면 쉽게 기억할 수 있습니다. 門 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "時間",
@@ -688,9 +786,16 @@
             "pronunciation": "공간"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "間",
+            "meaning": "사이 간",
+            "pronunciation": "간",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "間(사이 간)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '간'로 발음합니다. 입을 크게 벌리고 천천히 '간'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -708,7 +813,8 @@
             "M 60 55 L 40 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 12획 (어려움)"
       }
     },
     {
@@ -731,8 +837,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "해 년",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "年는 원래 '해 년'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "年는 6획으로 구성되어 있으며, 해 년의 모양을 생각하면 쉽게 기억할 수 있습니다. 干 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "年度",
@@ -745,9 +851,16 @@
             "pronunciation": "소년"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "年",
+            "meaning": "해 년",
+            "pronunciation": "년",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "年(해 년)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '년'로 발음합니다. 입을 크게 벌리고 천천히 '년'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -765,7 +878,8 @@
             "M 75 30 L 60 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 6획 (보통)"
       }
     },
     {
@@ -788,8 +902,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "집 가",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "家는 원래 '집 가'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "家는 10획으로 구성되어 있으며, 집 가의 모양을 생각하면 쉽게 기억할 수 있습니다. 宀 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "家族",
@@ -802,14 +916,22 @@
             "pronunciation": "가정"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "家",
+            "meaning": "집 가",
+            "pronunciation": "가",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "家(집 가)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '가'로 발음합니다. 입을 크게 벌리고 천천히 '가'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 10획 (어려움)"
       }
     },
     {
@@ -833,8 +955,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "말할 화",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "話는 원래 '말할 화'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "話는 13획으로 구성되어 있으며, 말할 화의 모양을 생각하면 쉽게 기억할 수 있습니다. 言 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "電話",
@@ -847,14 +969,22 @@
             "pronunciation": "대화"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "話",
+            "meaning": "말할 화",
+            "pronunciation": "화",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "話(말할 화)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '화'로 발음합니다. 입을 크게 벌리고 천천히 '화'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 13획 (어려움)"
       }
     },
     {
@@ -877,8 +1007,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "번개 전",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "電는 원래 '번개 전'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "電는 13획으로 구성되어 있으며, 번개 전의 모양을 생각하면 쉽게 기억할 수 있습니다. 雨 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "電話",
@@ -891,14 +1021,22 @@
             "pronunciation": "전기"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "電",
+            "meaning": "번개 전",
+            "pronunciation": "전",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "電(번개 전)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '전'로 발음합니다. 입을 크게 벌리고 천천히 '전'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 13획 (어려움)"
       }
     },
     {
@@ -921,8 +1059,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "나라 국",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "國는 원래 '나라 국'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "國는 11획으로 구성되어 있으며, 나라 국의 모양을 생각하면 쉽게 기억할 수 있습니다. 囗 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "國家",
@@ -935,9 +1073,16 @@
             "pronunciation": "중국"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "國",
+            "meaning": "나라 국",
+            "pronunciation": "국",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "國(나라 국)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '국'로 발음합니다. 입을 크게 벌리고 천천히 '국'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -955,7 +1100,8 @@
             "M 75 30 L 60 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 11획 (어려움)"
       }
     },
     {
@@ -978,8 +1124,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "글월 문",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "文는 원래 '글월 문'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "文는 4획으로 구성되어 있으며, 글월 문의 모양을 생각하면 쉽게 기억할 수 있습니다. 文 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "文化",
@@ -992,14 +1138,22 @@
             "pronunciation": "문자"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "文",
+            "meaning": "글월 문",
+            "pronunciation": "문",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "文(글월 문)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '문'로 발음합니다. 입을 크게 벌리고 천천히 '문'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 4획 (쉬움)"
       }
     },
     {
@@ -1022,8 +1176,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "글자 자",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "字는 원래 '글자 자'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "字는 6획으로 구성되어 있으며, 글자 자의 모양을 생각하면 쉽게 기억할 수 있습니다. 子 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "文字",
@@ -1036,14 +1190,22 @@
             "pronunciation": "명자"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "字",
+            "meaning": "글자 자",
+            "pronunciation": "자",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "字(글자 자)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '자'로 발음합니다. 입을 크게 벌리고 천천히 '자'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 6획 (보통)"
       }
     },
     {
@@ -1066,8 +1228,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "사람 인",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "人는 원래 '사람 인'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "人는 2획으로 구성되어 있으며, 사람 인의 모양을 생각하면 쉽게 기억할 수 있습니다. 人 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "人間",
@@ -1080,9 +1242,16 @@
             "pronunciation": "인류"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "人",
+            "meaning": "사람 인",
+            "pronunciation": "인",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "人(사람 인)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '인'로 발음합니다. 입을 크게 벌리고 천천히 '인'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1090,7 +1259,8 @@
             "M 40 15 L 95 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 2획 (쉬움)"
       }
     },
     {
@@ -1113,8 +1283,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "백성 민",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "民는 원래 '백성 민'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "民는 5획으로 구성되어 있으며, 백성 민의 모양을 생각하면 쉽게 기억할 수 있습니다. 氏 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "國民",
@@ -1127,14 +1297,22 @@
             "pronunciation": "민족"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "民",
+            "meaning": "백성 민",
+            "pronunciation": "민",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "民(백성 민)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '민'로 발음합니다. 입을 크게 벌리고 천천히 '민'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 5획 (보통)"
       }
     },
     {
@@ -1157,8 +1335,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "다닐 행",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "行는 원래 '다닐 행'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "行는 6획으로 구성되어 있으며, 다닐 행의 모양을 생각하면 쉽게 기억할 수 있습니다. 行 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "旅行",
@@ -1171,14 +1349,22 @@
             "pronunciation": "행동"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "行",
+            "meaning": "다닐 행",
+            "pronunciation": "행",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "行(다닐 행)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '행'로 발음합니다. 입을 크게 벌리고 천천히 '행'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 6획 (보통)"
       }
     },
     {
@@ -1201,8 +1387,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "움직일 동",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "動는 원래 '움직일 동'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "動는 11획으로 구성되어 있으며, 움직일 동의 모양을 생각하면 쉽게 기억할 수 있습니다. 力 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "運動",
@@ -1215,14 +1401,22 @@
             "pronunciation": "동물"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "動",
+            "meaning": "움직일 동",
+            "pronunciation": "동",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "動(움직일 동)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '동'로 발음합니다. 입을 크게 벌리고 천천히 '동'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 11획 (어려움)"
       }
     },
     {
@@ -1245,8 +1439,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "물건 물",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "物는 원래 '물건 물'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "物는 8획으로 구성되어 있으며, 물건 물의 모양을 생각하면 쉽게 기억할 수 있습니다. 牛 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "動物",
@@ -1259,9 +1453,16 @@
             "pronunciation": "물건"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "物",
+            "meaning": "물건 물",
+            "pronunciation": "물",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "物(물건 물)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '물'로 발음합니다. 입을 크게 벌리고 천천히 '물'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1279,7 +1480,8 @@
             "M 75 30 L 60 50"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 8획 (보통)"
       }
     },
     {
@@ -1302,8 +1504,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "다스릴 리",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "理는 원래 '다스릴 리'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "理는 11획으로 구성되어 있으며, 다스릴 리의 모양을 생각하면 쉽게 기억할 수 있습니다. 王 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "論理",
@@ -1316,9 +1518,16 @@
             "pronunciation": "이유"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "理",
+            "meaning": "다스릴 리",
+            "pronunciation": "리",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "理(다스릴 리)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '리'로 발음합니다. 입을 크게 벌리고 천천히 '리'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1336,7 +1545,8 @@
             "M 60 55 L 40 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 11획 (어려움)"
       }
     },
     {
@@ -1359,8 +1569,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "기운 기",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "氣는 원래 '기운 기'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "氣는 10획으로 구성되어 있으며, 기운 기의 모양을 생각하면 쉽게 기억할 수 있습니다. 气 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "天氣",
@@ -1373,9 +1583,16 @@
             "pronunciation": "전기"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "氣",
+            "meaning": "기운 기",
+            "pronunciation": "기",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "氣(기운 기)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '기'로 발음합니다. 입을 크게 벌리고 천천히 '기'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1394,7 +1611,8 @@
             "M 75 25 L 75 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 10획 (어려움)"
       }
     },
     {
@@ -1417,8 +1635,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "물 수",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "水는 원래 '물 수'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "水는 4획으로 구성되어 있으며, 물 수의 모양을 생각하면 쉽게 기억할 수 있습니다. 水 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "水泳",
@@ -1431,9 +1649,16 @@
             "pronunciation": "해수"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "水",
+            "meaning": "물 수",
+            "pronunciation": "수",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "水(물 수)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '수'로 발음합니다. 입을 크게 벌리고 천천히 '수'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1444,7 +1669,8 @@
             "M 60 50 L 35 70"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 4획 (쉬움)"
       }
     },
     {
@@ -1467,8 +1693,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "큰 대",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "大는 원래 '큰 대'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "大는 3획으로 구성되어 있으며, 큰 대의 모양을 생각하면 쉽게 기억할 수 있습니다. 大 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "大學",
@@ -1481,9 +1707,16 @@
             "pronunciation": "위대"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "大",
+            "meaning": "큰 대",
+            "pronunciation": "대",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "大(큰 대)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '대'로 발음합니다. 입을 크게 벌리고 천천히 '대'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1492,7 +1725,8 @@
             "M 15 40 L 85 40"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 3획 (쉬움)"
       }
     },
     {
@@ -1515,8 +1749,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "작을 소",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "小는 원래 '작을 소'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "小는 3획으로 구성되어 있으며, 작을 소의 모양을 생각하면 쉽게 기억할 수 있습니다. 小 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "小學",
@@ -1529,14 +1763,22 @@
             "pronunciation": "소설"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "小",
+            "meaning": "작을 소",
+            "pronunciation": "소",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "小(작을 소)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '소'로 발음합니다. 입을 크게 벌리고 천천히 '소'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 3획 (쉬움)"
       }
     },
     {
@@ -1559,8 +1801,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "가운데 중",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "中는 원래 '가운데 중'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "中는 4획으로 구성되어 있으며, 가운데 중의 모양을 생각하면 쉽게 기억할 수 있습니다. 丨 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "中心",
@@ -1573,9 +1815,16 @@
             "pronunciation": "중국"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "中",
+            "meaning": "가운데 중",
+            "pronunciation": "중",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "中(가운데 중)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '중'로 발음합니다. 입을 크게 벌리고 천천히 '중'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1585,7 +1834,8 @@
             "M 75 25 L 75 75"
           ]
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 4획 (쉬움)"
       }
     },
     {
@@ -1608,8 +1858,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "길 장",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "長는 원래 '길 장'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "長는 8획으로 구성되어 있으며, 길 장의 모양을 생각하면 쉽게 기억할 수 있습니다. 長 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "校長",
@@ -1622,14 +1872,22 @@
             "pronunciation": "장시간"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "長",
+            "meaning": "길 장",
+            "pronunciation": "장",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "長(길 장)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '장'로 발음합니다. 입을 크게 벌리고 천천히 '장'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 8획 (보통)"
       }
     },
     {
@@ -1652,8 +1910,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "짧을 단",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "短는 원래 '짧을 단'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "短는 12획으로 구성되어 있으며, 짧을 단의 모양을 생각하면 쉽게 기억할 수 있습니다. 矢 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "短期",
@@ -1666,14 +1924,22 @@
             "pronunciation": "단축"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "短",
+            "meaning": "짧을 단",
+            "pronunciation": "단",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "短(짧을 단)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '단'로 발음합니다. 입을 크게 벌리고 천천히 '단'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 12획 (어려움)"
       }
     },
     {
@@ -1696,8 +1962,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "높을 고",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "高는 원래 '높을 고'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "高는 10획으로 구성되어 있으며, 높을 고의 모양을 생각하면 쉽게 기억할 수 있습니다. 高 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "高校",
@@ -1710,14 +1976,22 @@
             "pronunciation": "고속"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "高",
+            "meaning": "높을 고",
+            "pronunciation": "고",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "高(높을 고)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '고'로 발음합니다. 입을 크게 벌리고 천천히 '고'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 10획 (어려움)"
       }
     },
     {
@@ -1740,8 +2014,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "낮을 저",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "低는 원래 '낮을 저'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "低는 7획으로 구성되어 있으며, 낮을 저의 모양을 생각하면 쉽게 기억할 수 있습니다. 人 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "低下",
@@ -1754,14 +2028,22 @@
             "pronunciation": "저음"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "低",
+            "meaning": "낮을 저",
+            "pronunciation": "저",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "低(낮을 저)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '저'로 발음합니다. 입을 크게 벌리고 천천히 '저'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 7획 (보통)"
       }
     },
     {
@@ -1784,8 +2066,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "열 개",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "開는 원래 '열 개'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "開는 12획으로 구성되어 있으며, 열 개의 모양을 생각하면 쉽게 기억할 수 있습니다. 門 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "開門",
@@ -1798,14 +2080,22 @@
             "pronunciation": "개발"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "開",
+            "meaning": "열 개",
+            "pronunciation": "개",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "開(열 개)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '개'로 발음합니다. 입을 크게 벌리고 천천히 '개'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 12획 (어려움)"
       }
     },
     {
@@ -1828,8 +2118,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "닫을 폐",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "閉는 원래 '닫을 폐'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "閉는 11획으로 구성되어 있으며, 닫을 폐의 모양을 생각하면 쉽게 기억할 수 있습니다. 門 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "閉門",
@@ -1842,14 +2132,22 @@
             "pronunciation": "개폐"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "閉",
+            "meaning": "닫을 폐",
+            "pronunciation": "폐",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "閉(닫을 폐)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '폐'로 발음합니다. 입을 크게 벌리고 천천히 '폐'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 11획 (어려움)"
       }
     },
     {
@@ -1872,8 +2170,8 @@
       ],
       "extended_data": {
         "detailed_meaning": "올 래",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "來는 원래 '올 래'의 모양을 본떠서 만들어진 글자입니다. 간단한 그림에서 시작해 현재의 모양으로 발전했습니다.",
+        "mnemonics": "來는 8획으로 구성되어 있으며, 올 래의 모양을 생각하면 쉽게 기억할 수 있습니다. 木 부수를 포함하고 있습니다.",
         "common_words": [
           {
             "word": "未來",
@@ -1886,14 +2184,22 @@
             "pronunciation": "래일"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "來",
+            "meaning": "올 래",
+            "pronunciation": "래",
+            "difficulty": "beginner"
+          }
+        ],
+        "cultural_notes": "來(올 래)는 동아시아에서 오랫동안 사용되어 온 글자입니다. 어린이들이 한자를 배울 때 가장 먼저 배우는 글자 중 하나입니다.",
+        "pronunciation_guide": "한국어에서는 '래'로 발음합니다. 입을 크게 벌리고 천천히 '래'라고 말해보세요.",
         "stroke_order": {
           "description": "",
           "directions": []
         },
-        "related_characters": []
+        "related_characters": [],
+        "learning_difficulty": "획수: 8획 (보통)"
       }
     },
     {
@@ -1917,7 +2223,7 @@
       "extended_data": {
         "detailed_meaning": "갈 거",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "去(갈 거)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "去年",
@@ -1930,7 +2236,14 @@
             "pronunciation": "거래"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "去",
+            "meaning": "갈 거",
+            "pronunciation": "거",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -1972,7 +2285,7 @@
       "extended_data": {
         "detailed_meaning": "들 입",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "入(들 입)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "入口",
@@ -1985,7 +2298,14 @@
             "pronunciation": "진입"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "入",
+            "meaning": "들 입",
+            "pronunciation": "입",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2016,7 +2336,7 @@
       "extended_data": {
         "detailed_meaning": "날 출",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "出(날 출)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "出口",
@@ -2029,7 +2349,14 @@
             "pronunciation": "출발"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "出",
+            "meaning": "날 출",
+            "pronunciation": "출",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2060,7 +2387,7 @@
       "extended_data": {
         "detailed_meaning": "위 상",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "上(위 상)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "上下",
@@ -2073,7 +2400,14 @@
             "pronunciation": "상수"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "上",
+            "meaning": "위 상",
+            "pronunciation": "상",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2104,7 +2438,7 @@
       "extended_data": {
         "detailed_meaning": "아래 하",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "下(아래 하)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "上下",
@@ -2117,7 +2451,14 @@
             "pronunciation": "하수"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "下",
+            "meaning": "아래 하",
+            "pronunciation": "하",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2148,7 +2489,7 @@
       "extended_data": {
         "detailed_meaning": "왼 좌",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "左(왼 좌)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "左右",
@@ -2161,7 +2502,14 @@
             "pronunciation": "좌측"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "左",
+            "meaning": "왼 좌",
+            "pronunciation": "좌",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2192,7 +2540,7 @@
       "extended_data": {
         "detailed_meaning": "오른 우",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "右(오른 우)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "左右",
@@ -2205,7 +2553,14 @@
             "pronunciation": "우측"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "右",
+            "meaning": "오른 우",
+            "pronunciation": "우",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2236,7 +2591,7 @@
       "extended_data": {
         "detailed_meaning": "앞 전",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "前(앞 전)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "前後",
@@ -2249,7 +2604,14 @@
             "pronunciation": "이전"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "前",
+            "meaning": "앞 전",
+            "pronunciation": "전",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2280,7 +2642,7 @@
       "extended_data": {
         "detailed_meaning": "뒤 후",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "後(뒤 후)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "前後",
@@ -2293,7 +2655,14 @@
             "pronunciation": "최후"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "後",
+            "meaning": "뒤 후",
+            "pronunciation": "후",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2324,7 +2693,7 @@
       "extended_data": {
         "detailed_meaning": "벗 우",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "友(벗 우)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "友情",
@@ -2337,7 +2706,14 @@
             "pronunciation": "우인"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "友",
+            "meaning": "벗 우",
+            "pronunciation": "우",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2368,7 +2744,7 @@
       "extended_data": {
         "detailed_meaning": "사랑 애",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "愛(사랑 애)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "愛情",
@@ -2381,7 +2757,14 @@
             "pronunciation": "연애"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "愛",
+            "meaning": "사랑 애",
+            "pronunciation": "애",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2412,7 +2795,7 @@
       "extended_data": {
         "detailed_meaning": "생각 사",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "思(생각 사)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "思想",
@@ -2425,7 +2808,14 @@
             "pronunciation": "사고"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "思",
+            "meaning": "생각 사",
+            "pronunciation": "사",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2456,7 +2846,7 @@
       "extended_data": {
         "detailed_meaning": "생각 상",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "想(생각 상)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "思想",
@@ -2469,7 +2859,14 @@
             "pronunciation": "상상"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "想",
+            "meaning": "생각 상",
+            "pronunciation": "상",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2500,7 +2897,7 @@
       "extended_data": {
         "detailed_meaning": "알 지",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "知(알 지)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "知識",
@@ -2513,7 +2910,14 @@
             "pronunciation": "지인"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "知",
+            "meaning": "알 지",
+            "pronunciation": "지",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2544,7 +2948,7 @@
       "extended_data": {
         "detailed_meaning": "물을 문",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "問(물을 문)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "問題",
@@ -2557,7 +2961,14 @@
             "pronunciation": "질문"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "問",
+            "meaning": "물을 문",
+            "pronunciation": "문",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2588,7 +2999,7 @@
       "extended_data": {
         "detailed_meaning": "답할 답",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "答(답할 답)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "答案",
@@ -2601,7 +3012,14 @@
             "pronunciation": "회답"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "答",
+            "meaning": "답할 답",
+            "pronunciation": "답",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {
@@ -2632,7 +3050,7 @@
       "extended_data": {
         "detailed_meaning": "말씀 어",
         "etymology": "",
-        "mnemonics": "",
+        "mnemonics": "語(말씀 어)의 모양을 통해 의미를 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "言語",
@@ -2645,7 +3063,14 @@
             "pronunciation": "용어"
           }
         ],
-        "example_sentences": [],
+        "example_sentences": [
+          {
+            "sentence": "語",
+            "meaning": "말씀 어",
+            "pronunciation": "어",
+            "difficulty": "beginner"
+          }
+        ],
         "cultural_notes": "",
         "pronunciation_guide": "",
         "stroke_order": {

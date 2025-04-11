@@ -193,27 +193,43 @@ export async function getHanjaByIdentifier(identifier: string): Promise<HanjaExt
  * @returns 관련 한자 정보 배열
  */
 export async function getRelatedCharacters(hanjaId: string): Promise<HanjaExtendedCharacter[]> {
-  const hanja = await getHanjaById(hanjaId);
-  
-  if (!hanja || !hanja.extended_data?.related_characters || hanja.extended_data.related_characters.length === 0) {
-    return [];
+  try {
+    if (!hanjaId) {
+      console.warn('관련 한자를 가져오기 위한 ID가 없습니다.');
+      return [];
+    }
+    
+    const hanja = await getHanjaById(hanjaId);
+    
+    if (!hanja || !hanja.extended_data?.related_characters || !Array.isArray(hanja.extended_data.related_characters) || hanja.extended_data.related_characters.length === 0) {
+      return [];
+    }
+    
+    const relatedIds = hanja.extended_data.related_characters;
+    const relatedCharacters: HanjaExtendedCharacter[] = [];
+    
+    // 병렬로 관련 한자 정보 가져오기 (Promise.all 사용)
+    await Promise.all(
+      relatedIds.map(async (id: string) => {
+        try {
+          if (!id) return; // 잘못된 ID 건너뛰기
+          
+          const char = await getHanjaById(id);
+          if (char) {
+            relatedCharacters.push(char);
+          }
+        } catch (error) {
+          console.error(`관련 한자 [${id}] 로드 중 오류:`, error);
+          // 개별 오류는 무시하고 계속 진행
+        }
+      })
+    );
+    
+    return relatedCharacters;
+  } catch (error) {
+    console.error('관련 한자 로드 중 오류:', error);
+    return []; // 오류 발생 시 빈 배열 반환
   }
-  
-  // ID 목록으로 해당 한자들을 가져오기
-  const relatedIds = await Promise.all(
-    hanja.extended_data.related_characters.map(async char => {
-      // 이미 ID면 그대로 사용, 문자면 ID로 변환
-      return isValidHanjaId(char) ? char : await normalizeToId(char);
-    })
-  );
-  
-  // null 값 제거하고 ID로 한자 정보 가져오기
-  const validIds = relatedIds.filter(id => id !== null) as string[];
-  const promises = validIds.map(id => getHanjaById(id));
-  const results = await Promise.all(promises);
-  
-  // null 값 제거하고 반환
-  return results.filter(Boolean) as HanjaExtendedCharacter[];
 }
 
 /**

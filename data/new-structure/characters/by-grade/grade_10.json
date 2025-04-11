@@ -1,9 +1,11 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2025-04-10T14:30:01.521Z",
+    "last_updated": "2025-04-11T10:19:33.136Z",
     "grade": 10,
-    "total_characters": 105
+    "total_characters": 105,
+    "description": "중급 1단계 - 일상 생활에서 자주 사용되는 한자",
+    "category": "intermediate"
   },
   "characters": [
     {
@@ -18,12 +20,15 @@
       "order": 1,
       "tags": [
         "radical:辵",
-        "strokes:13"
+        "strokes:13",
+        "grade:10",
+        "category:earth",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "지날 과",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 過(지날 과)의 어원에 대한 설명입니다.",
+        "mnemonics": "過는 지날 과(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "通過",
@@ -36,9 +41,22 @@
             "pronunciation": "과거"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "過",
+            "meaning": "지날",
+            "pronunciation": "과",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "過(지날 과)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "과",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -72,12 +90,15 @@
       "order": 2,
       "tags": [
         "radical:禾",
-        "strokes:12"
+        "strokes:12",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "정도 정",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 程(정도 정)의 어원에 대한 설명입니다.",
+        "mnemonics": "程는 정도 정(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "程度",
@@ -90,9 +111,22 @@
             "pronunciation": "과정"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "程",
+            "meaning": "정도",
+            "pronunciation": "정",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "程(정도 정)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "정",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -126,12 +160,15 @@
       "order": 3,
       "tags": [
         "radical:广",
-        "strokes:9"
+        "strokes:9",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "법도 도",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 度(법도 도)의 어원에 대한 설명입니다.",
+        "mnemonics": "度는 법도 도(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "程度",
@@ -144,9 +181,22 @@
             "pronunciation": "태도"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "度",
+            "meaning": "법도",
+            "pronunciation": "도",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "度(법도 도)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "도",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -179,12 +229,15 @@
       "order": 4,
       "tags": [
         "radical:欠",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:metal",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "버금 차",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 次(버금 차)의 어원에 대한 설명입니다.",
+        "mnemonics": "次는 버금 차(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "次第",
@@ -197,9 +250,22 @@
             "pronunciation": "일차"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "次",
+            "meaning": "버금",
+            "pronunciation": "차",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "次(버금 차)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "차",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -232,12 +298,15 @@
       "order": 5,
       "tags": [
         "radical:广",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "차례 서",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 序(차례 서)의 어원에 대한 설명입니다.",
+        "mnemonics": "序는 차례 서(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "序論",
@@ -250,9 +319,22 @@
             "pronunciation": "질서"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "序",
+            "meaning": "차례",
+            "pronunciation": "서",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "序(차례 서)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "서",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -290,12 +372,15 @@
         "usage:common",
         "education:middle",
         "radical:貝",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "조개 패",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 貝(조개 패)의 어원에 대한 설명입니다.",
+        "mnemonics": "貝는 조개 패(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "貝殼",
@@ -308,9 +393,22 @@
             "pronunciation": "보패"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "貝",
+            "meaning": "조개",
+            "pronunciation": "패",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "貝(조개 패)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "패",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -335,12 +433,15 @@
         "usage:common",
         "education:middle",
         "radical:車",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:water",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "수레 차",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 車(수레 차)의 어원에 대한 설명입니다.",
+        "mnemonics": "車는 수레 차(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "車輛",
@@ -353,9 +454,22 @@
             "pronunciation": "자동차"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "車",
+            "meaning": "수레",
+            "pronunciation": "차",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "車(수레 차)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "차",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -380,12 +494,15 @@
         "usage:common",
         "education:middle",
         "radical:雨",
-        "strokes:8"
+        "strokes:8",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "비 우",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 雨(비 우)의 어원에 대한 설명입니다.",
+        "mnemonics": "雨는 비 우(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "雨水",
@@ -398,9 +515,22 @@
             "pronunciation": "대우"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "雨",
+            "meaning": "비",
+            "pronunciation": "우",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "雨(비 우)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "우",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -424,12 +554,15 @@
         "usage:common",
         "education:middle",
         "radical:欠",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:metal",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "버금 차",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 次(버금 차)의 어원에 대한 설명입니다.",
+        "mnemonics": "次는 버금 차(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "次第",
@@ -442,9 +575,22 @@
             "pronunciation": "일차"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "次",
+            "meaning": "버금",
+            "pronunciation": "차",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "次(버금 차)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "차",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -481,12 +627,15 @@
         "usage:common",
         "education:middle",
         "radical:广",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "차례 서",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 序(차례 서)의 어원에 대한 설명입니다.",
+        "mnemonics": "序는 차례 서(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "序論",
@@ -499,9 +648,22 @@
             "pronunciation": "질서"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "序",
+            "meaning": "차례",
+            "pronunciation": "서",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "序(차례 서)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "서",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -538,12 +700,15 @@
         "usage:common",
         "education:middle",
         "radical:禾",
-        "strokes:10"
+        "strokes:10",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "차례 질",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 秩(차례 질)의 어원에 대한 설명입니다.",
+        "mnemonics": "秩는 차례 질(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "秩序",
@@ -556,9 +721,22 @@
             "pronunciation": "정질"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "秩",
+            "meaning": "차례",
+            "pronunciation": "질",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "秩(차례 질)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "질",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -595,12 +773,15 @@
         "usage:common",
         "education:middle",
         "radical:辵",
-        "strokes:10"
+        "strokes:10",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "통할 통",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 通(통할 통)의 어원에 대한 설명입니다.",
+        "mnemonics": "通는 통할 통(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "通過",
@@ -613,9 +794,22 @@
             "pronunciation": "교통"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "通",
+            "meaning": "통할",
+            "pronunciation": "통",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "通(통할 통)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "통",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -652,12 +846,15 @@
         "usage:common",
         "education:middle",
         "radical:亠",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "사귈 교",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 交(사귈 교)의 어원에 대한 설명입니다.",
+        "mnemonics": "交는 사귈 교(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "交通",
@@ -670,9 +867,22 @@
             "pronunciation": "교환"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "交",
+            "meaning": "사귈",
+            "pronunciation": "교",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "交(사귈 교)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "교",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -696,12 +906,15 @@
         "usage:common",
         "education:middle",
         "radical:厶",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "갈 거",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 去(갈 거)의 어원에 대한 설명입니다.",
+        "mnemonics": "去는 갈 거(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "過去",
@@ -714,9 +927,22 @@
             "pronunciation": "거래"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "去",
+            "meaning": "갈",
+            "pronunciation": "거",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "去(갈 거)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "거",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -751,12 +977,15 @@
         "usage:common",
         "education:middle",
         "radical:木",
-        "strokes:8"
+        "strokes:8",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "올 래",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 來(올 래)의 어원에 대한 설명입니다.",
+        "mnemonics": "來는 올 래(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "去來",
@@ -769,9 +998,22 @@
             "pronunciation": "미래"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "來",
+            "meaning": "올",
+            "pronunciation": "래",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "來(올 래)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "래",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -795,12 +1037,15 @@
         "usage:common",
         "education:middle",
         "radical:木",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "아닐 미",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 未(아닐 미)의 어원에 대한 설명입니다.",
+        "mnemonics": "未는 아닐 미(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "未來",
@@ -813,9 +1058,22 @@
             "pronunciation": "미정"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "未",
+            "meaning": "아닐",
+            "pronunciation": "미",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "未(아닐 미)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "미",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -839,12 +1097,15 @@
         "usage:common",
         "education:middle",
         "radical:宀",
-        "strokes:8"
+        "strokes:8",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "정할 정",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 定(정할 정)의 어원에 대한 설명입니다.",
+        "mnemonics": "定는 정할 정(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "決定",
@@ -857,9 +1118,22 @@
             "pronunciation": "정기"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "定",
+            "meaning": "정할",
+            "pronunciation": "정",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "定(정할 정)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "정",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -883,12 +1157,15 @@
         "usage:common",
         "education:middle",
         "radical:氵",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "결단할 결",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 決(결단할 결)의 어원에 대한 설명입니다.",
+        "mnemonics": "決는 결단할 결(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "決定",
@@ -901,9 +1178,22 @@
             "pronunciation": "결심"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "決",
+            "meaning": "결단할",
+            "pronunciation": "결",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "決(결단할 결)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "결",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -927,12 +1217,15 @@
         "usage:common",
         "education:middle",
         "radical:月",
-        "strokes:12"
+        "strokes:12",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "기약할 기",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 期(기약할 기)의 어원에 대한 설명입니다.",
+        "mnemonics": "期는 기약할 기(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "定期",
@@ -945,9 +1238,22 @@
             "pronunciation": "기간"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "期",
+            "meaning": "기약할",
+            "pronunciation": "기",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "期(기약할 기)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "기",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -972,12 +1278,15 @@
         "usage:common",
         "education:middle",
         "radical:言",
-        "strokes:15"
+        "strokes:15",
+        "grade:10",
+        "category:wood",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "과목 과",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 課(과목 과)의 어원에 대한 설명입니다.",
+        "mnemonics": "課는 과목 과(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "課程",
@@ -990,9 +1299,22 @@
             "pronunciation": "과제"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "課",
+            "meaning": "과목",
+            "pronunciation": "과",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "課(과목 과)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "과",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1029,12 +1351,15 @@
         "usage:common",
         "education:middle",
         "radical:頁",
-        "strokes:18"
+        "strokes:18",
+        "grade:10",
+        "category:wood",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "제목 제",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 題(제목 제)의 어원에 대한 설명입니다.",
+        "mnemonics": "題는 제목 제(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "課題",
@@ -1047,9 +1372,22 @@
             "pronunciation": "제목"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "題",
+            "meaning": "제목",
+            "pronunciation": "제",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "題(제목 제)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "제",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1073,12 +1411,15 @@
         "usage:common",
         "education:middle",
         "radical:目",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:wood",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "눈 목",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 目(눈 목)의 어원에 대한 설명입니다.",
+        "mnemonics": "目는 눈 목(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "題目",
@@ -1091,9 +1432,22 @@
             "pronunciation": "목적"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "目",
+            "meaning": "눈",
+            "pronunciation": "목",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "目(눈 목)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "목",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1117,12 +1471,15 @@
         "usage:common",
         "education:middle",
         "radical:白",
-        "strokes:8"
+        "strokes:8",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "과녁 적",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 的(과녁 적)의 어원에 대한 설명입니다.",
+        "mnemonics": "的는 과녁 적(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "目的",
@@ -1135,9 +1492,22 @@
             "pronunciation": "적확"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "的",
+            "meaning": "과녁",
+            "pronunciation": "적",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "的(과녁 적)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "적",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1161,12 +1531,15 @@
         "usage:common",
         "education:middle",
         "radical:石",
-        "strokes:16"
+        "strokes:16",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "굳을 확",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 確(굳을 확)의 어원에 대한 설명입니다.",
+        "mnemonics": "確는 굳을 확(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "的確",
@@ -1179,9 +1552,22 @@
             "pronunciation": "확실"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "確",
+            "meaning": "굳을",
+            "pronunciation": "확",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "確(굳을 확)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "확",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1205,12 +1591,15 @@
         "usage:common",
         "education:middle",
         "radical:宀",
-        "strokes:14"
+        "strokes:14",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "열매 실",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 實(열매 실)의 어원에 대한 설명입니다.",
+        "mnemonics": "實는 열매 실(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "確實",
@@ -1223,9 +1612,22 @@
             "pronunciation": "실제"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "實",
+            "meaning": "열매",
+            "pronunciation": "실",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "實(열매 실)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "실",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1249,12 +1651,15 @@
         "usage:common",
         "education:middle",
         "radical:阝",
-        "strokes:14"
+        "strokes:14",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "끝 제",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 際(끝 제)의 어원에 대한 설명입니다.",
+        "mnemonics": "際는 끝 제(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "實際",
@@ -1267,9 +1672,22 @@
             "pronunciation": "국제"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "際",
+            "meaning": "끝",
+            "pronunciation": "제",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "際(끝 제)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "제",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1293,12 +1711,15 @@
         "usage:common",
         "education:middle",
         "radical:囗",
-        "strokes:11"
+        "strokes:11",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "나라 국",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 國(나라 국)의 어원에 대한 설명입니다.",
+        "mnemonics": "國는 나라 국(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "國際",
@@ -1311,9 +1732,22 @@
             "pronunciation": "한국"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "國",
+            "meaning": "나라",
+            "pronunciation": "국",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "國(나라 국)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "국",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1350,12 +1784,15 @@
         "usage:common",
         "education:middle",
         "radical:韋",
-        "strokes:18"
+        "strokes:18",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "한국 한",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 韓(한국 한)의 어원에 대한 설명입니다.",
+        "mnemonics": "韓는 한국 한(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "韓國",
@@ -1368,9 +1805,22 @@
             "pronunciation": "한민족"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "韓",
+            "meaning": "한국",
+            "pronunciation": "한",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "韓(한국 한)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "한",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1407,12 +1857,15 @@
         "usage:common",
         "education:middle",
         "radical:民",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "백성 민",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 民(백성 민)의 어원에 대한 설명입니다.",
+        "mnemonics": "民는 백성 민(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "韓民族",
@@ -1425,9 +1878,22 @@
             "pronunciation": "민주"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "民",
+            "meaning": "백성",
+            "pronunciation": "민",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "民(백성 민)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "민",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1451,12 +1917,15 @@
         "usage:common",
         "education:middle",
         "radical:丶",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:person",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "주인 주",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "한자 主(주인 주)의 어원에 대한 설명입니다.",
+        "mnemonics": "主는 주인 주(으)로, 획순과 부수를 통해 쉽게 기억할 수 있습니다.",
         "common_words": [
           {
             "word": "民主",
@@ -1469,9 +1938,22 @@
             "pronunciation": "주장"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "主",
+            "meaning": "주인",
+            "pronunciation": "주",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "主(주인 주)은(는) 동아시아 문화권에서 다양한 의미로 사용됩니다.",
+        "pronunciation_guide": {
+          "korean": "주",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1495,12 +1977,15 @@
         "usage:common",
         "education:middle",
         "radical:弓",
-        "strokes:11"
+        "strokes:11",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "베풀 장",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "張(베풀 장) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "張(베풀 장)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "主張",
@@ -1513,9 +1998,22 @@
             "pronunciation": "장력"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "張",
+            "meaning": "베풀",
+            "pronunciation": "장",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "張(베풀 장)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "장",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1539,12 +2037,15 @@
         "usage:common",
         "education:middle",
         "radical:牛",
-        "strokes:10"
+        "strokes:10",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "특별할 특",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "特(특별할 특) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "特(특별할 특)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "特別",
@@ -1557,9 +2058,22 @@
             "pronunciation": "특징"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "特",
+            "meaning": "특별할",
+            "pronunciation": "특",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "特(특별할 특)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "특",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1583,12 +2097,15 @@
         "usage:common",
         "education:middle",
         "radical:刂",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "나눌 별",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "別(나눌 별) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "別(나눌 별)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "特別",
@@ -1601,9 +2118,22 @@
             "pronunciation": "구별"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "別",
+            "meaning": "나눌",
+            "pronunciation": "별",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "別(나눌 별)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "별",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1627,12 +2157,15 @@
         "usage:common",
         "education:middle",
         "radical:彳",
-        "strokes:15"
+        "strokes:15",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "징할 징",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "徵(징할 징) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "徵(징할 징)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "特徵",
@@ -1645,9 +2178,22 @@
             "pronunciation": "징조"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "徵",
+            "meaning": "징할",
+            "pronunciation": "징",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "徵(징할 징)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "징",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1671,12 +2217,15 @@
         "usage:common",
         "education:middle",
         "radical:儿",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "조짐 조",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "兆(조짐 조) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "兆(조짐 조)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "徵兆",
@@ -1689,9 +2238,22 @@
             "pronunciation": "전조"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "兆",
+            "meaning": "조짐",
+            "pronunciation": "조",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "兆(조짐 조)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "조",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1715,12 +2277,15 @@
         "usage:common",
         "education:middle",
         "radical:刂",
-        "strokes:9"
+        "strokes:9",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "앞 전",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "前(앞 전) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "前(앞 전)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "前兆",
@@ -1733,9 +2298,22 @@
             "pronunciation": "이전"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "前",
+            "meaning": "앞",
+            "pronunciation": "전",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "前(앞 전)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "전",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1759,12 +2337,15 @@
         "usage:common",
         "education:middle",
         "radical:人",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "써 이",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "以(써 이) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "以(써 이)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "以前",
@@ -1777,9 +2358,22 @@
             "pronunciation": "이후"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "以",
+            "meaning": "써",
+            "pronunciation": "이",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "以(써 이)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "이",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1803,12 +2397,15 @@
         "usage:common",
         "education:middle",
         "radical:彳",
-        "strokes:9"
+        "strokes:9",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "뒤 후",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "後(뒤 후) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "後(뒤 후)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "以後",
@@ -1821,9 +2418,22 @@
             "pronunciation": "후대"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "後",
+            "meaning": "뒤",
+            "pronunciation": "후",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "後(뒤 후)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "후",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1847,12 +2457,15 @@
         "usage:common",
         "education:middle",
         "radical:人",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:body",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "대신할 대",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "代(대신할 대) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "代(대신할 대)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "後代",
@@ -1865,9 +2478,22 @@
             "pronunciation": "시대"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "代",
+            "meaning": "대신할",
+            "pronunciation": "대",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "代(대신할 대)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "대",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1891,12 +2517,15 @@
         "usage:common",
         "education:middle",
         "radical:日",
-        "strokes:10"
+        "strokes:10",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "때 시",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "時(때 시) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "時(때 시)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "時代",
@@ -1909,9 +2538,22 @@
             "pronunciation": "시간"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "時",
+            "meaning": "때",
+            "pronunciation": "시",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "時(때 시)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "시",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -1935,12 +2577,15 @@
         "usage:common",
         "education:middle",
         "radical:門",
-        "strokes:12"
+        "strokes:12",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "사이 간",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "間(사이 간) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "間(사이 간)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "時間",
@@ -1953,9 +2598,22 @@
             "pronunciation": "기간"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "間",
+            "meaning": "사이",
+            "pronunciation": "간",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "間(사이 간)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "간",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -1992,12 +2650,15 @@
         "usage:common",
         "education:middle",
         "radical:匸",
-        "strokes:11"
+        "strokes:11",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "구분할 구",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "區(구분할 구) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "區(구분할 구)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "區別",
@@ -2010,9 +2671,22 @@
             "pronunciation": "지구"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "區",
+            "meaning": "구분할",
+            "pronunciation": "구",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "區(구분할 구)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "구",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2036,12 +2710,15 @@
         "usage:common",
         "education:middle",
         "radical:土",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:earth",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "땅 지",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "地(땅 지) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "地(땅 지)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "地區",
@@ -2054,9 +2731,22 @@
             "pronunciation": "지구"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "地",
+            "meaning": "땅",
+            "pronunciation": "지",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "地(땅 지)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "지",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -2093,12 +2783,15 @@
         "usage:common",
         "education:middle",
         "radical:玉",
-        "strokes:11"
+        "strokes:11",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "공 구",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "球(공 구) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "球(공 구)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "地球",
@@ -2111,9 +2804,22 @@
             "pronunciation": "구체"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "球",
+            "meaning": "공",
+            "pronunciation": "구",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "球(공 구)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "구",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -2150,12 +2856,15 @@
         "usage:common",
         "education:middle",
         "radical:骨",
-        "strokes:23"
+        "strokes:23",
+        "grade:10",
+        "category:body",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "몸 체",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "體(몸 체) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "體(몸 체)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "球體",
@@ -2168,9 +2877,22 @@
             "pronunciation": "신체"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "體",
+            "meaning": "몸",
+            "pronunciation": "체",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "體(몸 체)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "체",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2194,12 +2916,15 @@
         "usage:common",
         "education:middle",
         "radical:身",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:body",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "몸 신",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "身(몸 신) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "身(몸 신)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "身體",
@@ -2212,9 +2937,22 @@
             "pronunciation": "전신"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "身",
+            "meaning": "몸",
+            "pronunciation": "신",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "身(몸 신)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "신",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2238,12 +2976,15 @@
         "usage:common",
         "education:middle",
         "radical:入",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "온전할 전",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "全(온전할 전) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "全(온전할 전)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "全身",
@@ -2256,9 +2997,22 @@
             "pronunciation": "완전"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "全",
+            "meaning": "온전할",
+            "pronunciation": "전",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "全(온전할 전)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "전",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2282,12 +3036,15 @@
         "usage:common",
         "education:middle",
         "radical:宀",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "온전할 완",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "完(온전할 완) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "完(온전할 완)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "完全",
@@ -2300,9 +3057,22 @@
             "pronunciation": "완성"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "完",
+            "meaning": "온전할",
+            "pronunciation": "완",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "完(온전할 완)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "완",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2326,12 +3096,15 @@
         "usage:common",
         "education:middle",
         "radical:戈",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "이룰 성",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "成(이룰 성) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "成(이룰 성)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "完成",
@@ -2344,9 +3117,22 @@
             "pronunciation": "성공"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "成",
+            "meaning": "이룰",
+            "pronunciation": "성",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "成(이룰 성)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "성",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -2378,12 +3164,15 @@
         "usage:common",
         "education:middle",
         "radical:力",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "공 공",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "功(공 공) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "功(공 공)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "成功",
@@ -2396,9 +3185,22 @@
             "pronunciation": "공로"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "功",
+            "meaning": "공",
+            "pronunciation": "공",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "功(공 공)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "공",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -2431,12 +3233,15 @@
         "usage:common",
         "education:middle",
         "radical:力",
-        "strokes:12"
+        "strokes:12",
+        "grade:10",
+        "category:time",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "일할 로",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "勞(일할 로) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "勞(일할 로)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "功勞",
@@ -2449,9 +3254,22 @@
             "pronunciation": "노력"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "勞",
+            "meaning": "일할",
+            "pronunciation": "로",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "勞(일할 로)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "로",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2475,12 +3293,15 @@
         "usage:common",
         "education:middle",
         "radical:力",
-        "strokes:2"
+        "strokes:2",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "힘 력",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "力(힘 력) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "力(힘 력)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "勞力",
@@ -2493,9 +3314,22 @@
             "pronunciation": "역량"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "力",
+            "meaning": "힘",
+            "pronunciation": "력",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "力(힘 력)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "력",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -2528,12 +3362,15 @@
         "usage:common",
         "education:middle",
         "radical:里",
-        "strokes:12"
+        "strokes:12",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "양 량",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "量(양 량) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "量(양 량)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "力量",
@@ -2546,9 +3383,22 @@
             "pronunciation": "분량"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "量",
+            "meaning": "양",
+            "pronunciation": "량",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "量(양 량)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "량",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2572,12 +3422,15 @@
         "usage:common",
         "education:middle",
         "radical:刀",
-        "strokes:4"
+        "strokes:4",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "나눌 분",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "分(나눌 분) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "分(나눌 분)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "分量",
@@ -2590,9 +3443,22 @@
             "pronunciation": "분류"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "分",
+            "meaning": "나눌",
+            "pronunciation": "분",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "分(나눌 분)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "분",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2616,12 +3482,15 @@
         "usage:common",
         "education:middle",
         "radical:頁",
-        "strokes:18"
+        "strokes:18",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "무리 류",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "類(무리 류) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "類(무리 류)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "分類",
@@ -2634,9 +3503,22 @@
             "pronunciation": "종류"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "類",
+            "meaning": "무리",
+            "pronunciation": "류",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "類(무리 류)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "류",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2660,12 +3542,15 @@
         "usage:common",
         "education:middle",
         "radical:禾",
-        "strokes:14"
+        "strokes:14",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "씨 종",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "種(씨 종) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "種(씨 종)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "種類",
@@ -2678,9 +3563,22 @@
             "pronunciation": "종자"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "種",
+            "meaning": "씨",
+            "pronunciation": "종",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "種(씨 종)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "종",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2704,12 +3602,15 @@
         "usage:common",
         "education:middle",
         "radical:子",
-        "strokes:3"
+        "strokes:3",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "아들 자",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "子(아들 자) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "子(아들 자)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "種子",
@@ -2722,9 +3623,22 @@
             "pronunciation": "자녀"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "子",
+            "meaning": "아들",
+            "pronunciation": "자",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "子(아들 자)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "자",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -2753,12 +3667,15 @@
         "usage:common",
         "education:middle",
         "radical:女",
-        "strokes:3"
+        "strokes:3",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "여자 녀",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "女(여자 녀) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "女(여자 녀)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "子女",
@@ -2771,9 +3688,22 @@
             "pronunciation": "여자"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "女",
+            "meaning": "여자",
+            "pronunciation": "녀",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "女(여자 녀)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "녀",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2797,12 +3727,15 @@
         "usage:common",
         "education:middle",
         "radical:气",
-        "strokes:10"
+        "strokes:10",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "기운 기",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "氣(기운 기) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "氣(기운 기)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "氣分",
@@ -2815,9 +3748,22 @@
             "pronunciation": "기상"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "氣",
+            "meaning": "기운",
+            "pronunciation": "기",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "氣(기운 기)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "기",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -2855,12 +3801,15 @@
         "usage:common",
         "education:middle",
         "radical:豕",
-        "strokes:12"
+        "strokes:12",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "코끼리 상",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "象(코끼리 상) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "象(코끼리 상)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "氣象",
@@ -2873,9 +3822,22 @@
             "pronunciation": "상징"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "象",
+            "meaning": "코끼리",
+            "pronunciation": "상",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "象(코끼리 상)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "상",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2899,12 +3861,15 @@
         "usage:common",
         "education:middle",
         "radical:彳",
-        "strokes:15"
+        "strokes:15",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "징할 징",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "徵(징할 징) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "徵(징할 징)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "象徵",
@@ -2917,9 +3882,22 @@
             "pronunciation": "징집"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "徵",
+            "meaning": "징할",
+            "pronunciation": "징",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "徵(징할 징)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "징",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2943,12 +3921,15 @@
         "usage:common",
         "education:middle",
         "radical:隹",
-        "strokes:12"
+        "strokes:12",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "모을 집",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "集(모을 집) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "集(모을 집)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "徵集",
@@ -2961,9 +3942,22 @@
             "pronunciation": "집합"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "集",
+            "meaning": "모을",
+            "pronunciation": "집",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "集(모을 집)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "집",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -2987,12 +3981,15 @@
         "usage:common",
         "education:middle",
         "radical:口",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "합할 합",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "合(합할 합) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "合(합할 합)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "集合",
@@ -3005,9 +4002,22 @@
             "pronunciation": "합성"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "合",
+            "meaning": "합할",
+            "pronunciation": "합",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "合(합할 합)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "합",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3031,12 +4041,15 @@
         "usage:common",
         "education:middle",
         "radical:米",
-        "strokes:14"
+        "strokes:14",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "정할 정",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "精(정할 정) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "精(정할 정)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "精神",
@@ -3049,9 +4062,22 @@
             "pronunciation": "정밀"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "精",
+            "meaning": "정할",
+            "pronunciation": "정",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "精(정할 정)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "정",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3075,12 +4101,15 @@
         "usage:common",
         "education:middle",
         "radical:示",
-        "strokes:9"
+        "strokes:9",
+        "grade:10",
+        "category:body",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "신 신",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "神(신 신) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "神(신 신)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "精神",
@@ -3093,9 +4122,22 @@
             "pronunciation": "신화"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "神",
+            "meaning": "신",
+            "pronunciation": "신",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "神(신 신)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "신",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3119,12 +4161,15 @@
         "usage:common",
         "education:middle",
         "radical:宀",
-        "strokes:11"
+        "strokes:11",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "빽빽할 밀",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "密(빽빽할 밀) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "密(빽빽할 밀)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "精密",
@@ -3137,9 +4182,22 @@
             "pronunciation": "비밀"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "密",
+            "meaning": "빽빽할",
+            "pronunciation": "밀",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "密(빽빽할 밀)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "밀",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3163,12 +4221,15 @@
         "usage:common",
         "education:middle",
         "radical:禾",
-        "strokes:10"
+        "strokes:10",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "숨길 비",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "秘(숨길 비) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "秘(숨길 비)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "秘密",
@@ -3181,9 +4242,22 @@
             "pronunciation": "비결"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "秘",
+            "meaning": "숨길",
+            "pronunciation": "비",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "秘(숨길 비)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "비",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3207,12 +4281,15 @@
         "usage:common",
         "education:middle",
         "radical:言",
-        "strokes:11"
+        "strokes:11",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "결할 결",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "訣(결할 결) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "訣(결할 결)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "秘訣",
@@ -3225,9 +4302,22 @@
             "pronunciation": "결별"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "訣",
+            "meaning": "결할",
+            "pronunciation": "결",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "訣(결할 결)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "결",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3251,12 +4341,15 @@
         "usage:common",
         "education:middle",
         "radical:言",
-        "strokes:13"
+        "strokes:13",
+        "grade:10",
+        "category:fire",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "말씀 화",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "話(말씀 화) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "話(말씀 화)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "神話",
@@ -3269,9 +4362,22 @@
             "pronunciation": "대화"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "話",
+            "meaning": "말씀",
+            "pronunciation": "화",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "話(말씀 화)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "화",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3295,12 +4401,15 @@
         "usage:common",
         "education:middle",
         "radical:寸",
-        "strokes:14"
+        "strokes:14",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "대할 대",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "對(대할 대) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "對(대할 대)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "對話",
@@ -3313,9 +4422,22 @@
             "pronunciation": "대립"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "對",
+            "meaning": "대할",
+            "pronunciation": "대",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "對(대할 대)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "대",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3339,12 +4461,15 @@
         "usage:common",
         "education:middle",
         "radical:立",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "설 립",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "立(설 립) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "立(설 립)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "對立",
@@ -3357,9 +4482,22 @@
             "pronunciation": "입장"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "立",
+            "meaning": "설",
+            "pronunciation": "립",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "立(설 립)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "립",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3383,12 +4521,15 @@
         "usage:common",
         "education:middle",
         "radical:土",
-        "strokes:12"
+        "strokes:12",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "마당 장",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "場(마당 장) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "場(마당 장)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "立場",
@@ -3401,9 +4542,22 @@
             "pronunciation": "장소"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "場",
+            "meaning": "마당",
+            "pronunciation": "장",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "場(마당 장)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "장",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3427,12 +4581,15 @@
         "usage:common",
         "education:middle",
         "radical:戶",
-        "strokes:8"
+        "strokes:8",
+        "grade:10",
+        "category:place",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "바 소",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "所(바 소) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "所(바 소)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "場所",
@@ -3445,9 +4602,22 @@
             "pronunciation": "소유"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "所",
+            "meaning": "바",
+            "pronunciation": "소",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "所(바 소)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "소",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -3477,12 +4647,15 @@
         "usage:common",
         "education:middle",
         "radical:月",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "있을 유",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "有(있을 유) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "有(있을 유)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "所有",
@@ -3495,9 +4668,22 @@
             "pronunciation": "유익"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "有",
+            "meaning": "있을",
+            "pronunciation": "유",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "有(있을 유)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "유",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3521,12 +4707,15 @@
         "usage:common",
         "education:middle",
         "radical:皿",
-        "strokes:10"
+        "strokes:10",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "더할 익",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "益(더할 익) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "益(더할 익)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "有益",
@@ -3539,9 +4728,22 @@
             "pronunciation": "이익"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "益",
+            "meaning": "더할",
+            "pronunciation": "익",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "益(더할 익)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "익",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3565,12 +4767,15 @@
         "usage:common",
         "education:middle",
         "radical:刂",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "이로울 리",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "利(이로울 리) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "利(이로울 리)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "利益",
@@ -3583,9 +4788,22 @@
             "pronunciation": "이용"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "利",
+            "meaning": "이로울",
+            "pronunciation": "리",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "利(이로울 리)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "리",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3609,12 +4827,15 @@
         "usage:common",
         "education:middle",
         "radical:用",
-        "strokes:5"
+        "strokes:5",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "쓸 용",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "用(쓸 용) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "用(쓸 용)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "利用",
@@ -3627,9 +4848,22 @@
             "pronunciation": "용어"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "用",
+            "meaning": "쓸",
+            "pronunciation": "용",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "用(쓸 용)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "용",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3653,12 +4887,15 @@
         "usage:common",
         "education:middle",
         "radical:言",
-        "strokes:14"
+        "strokes:14",
+        "grade:10",
+        "category:speech",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "말씀 어",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "語(말씀 어) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "語(말씀 어)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "用語",
@@ -3671,9 +4908,22 @@
             "pronunciation": "어학"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "語",
+            "meaning": "말씀",
+            "pronunciation": "어",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "語(말씀 어)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "어",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3697,12 +4947,15 @@
         "usage:common",
         "education:middle",
         "radical:子",
-        "strokes:16"
+        "strokes:16",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "배울 학",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "學(배울 학) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "學(배울 학)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "語學",
@@ -3715,9 +4968,22 @@
             "pronunciation": "학교"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "學",
+            "meaning": "배울",
+            "pronunciation": "학",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "學(배울 학)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "학",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -3758,12 +5024,15 @@
         "usage:common",
         "education:middle",
         "radical:木",
-        "strokes:10"
+        "strokes:10",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "학교 교",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "校(학교 교) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "校(학교 교)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "學校",
@@ -3776,9 +5045,22 @@
             "pronunciation": "교장"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "校",
+            "meaning": "학교",
+            "pronunciation": "교",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "校(학교 교)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "교",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -3815,12 +5097,15 @@
         "usage:common",
         "education:middle",
         "radical:長",
-        "strokes:8"
+        "strokes:8",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "길 장",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "長(길 장) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "長(길 장)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "校長",
@@ -3833,9 +5118,22 @@
             "pronunciation": "장방형"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "長",
+            "meaning": "길",
+            "pronunciation": "장",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "長(길 장)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "장",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3859,12 +5157,15 @@
         "usage:common",
         "education:middle",
         "radical:方",
-        "strokes:4"
+        "strokes:4",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "방향 방",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "方(방향 방) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "方(방향 방)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "長方形",
@@ -3877,9 +5178,22 @@
             "pronunciation": "방법"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "方",
+            "meaning": "방향",
+            "pronunciation": "방",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "方(방향 방)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "방",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3903,12 +5217,15 @@
         "usage:common",
         "education:middle",
         "radical:彡",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "모양 형",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "形(모양 형) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "形(모양 형)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "長方形",
@@ -3921,9 +5238,22 @@
             "pronunciation": "형태"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "形",
+            "meaning": "모양",
+            "pronunciation": "형",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "形(모양 형)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "형",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -3947,12 +5277,15 @@
         "usage:common",
         "education:middle",
         "radical:心",
-        "strokes:15"
+        "strokes:15",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "모양 태",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "態(모양 태) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "態(모양 태)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "形態",
@@ -3965,9 +5298,22 @@
             "pronunciation": "태도"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "態",
+            "meaning": "모양",
+            "pronunciation": "태",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "態(모양 태)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "태",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -3997,12 +5343,15 @@
         "usage:common",
         "education:middle",
         "radical:广",
-        "strokes:9"
+        "strokes:9",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "법도 도",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "度(법도 도) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "度(법도 도)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "態度",
@@ -4015,9 +5364,22 @@
             "pronunciation": "온도"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "度",
+            "meaning": "법도",
+            "pronunciation": "도",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "度(법도 도)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "도",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -4054,12 +5416,15 @@
         "usage:common",
         "education:middle",
         "radical:氵",
-        "strokes:13"
+        "strokes:13",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "따뜻할 온",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "溫(따뜻할 온) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "溫(따뜻할 온)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "溫度",
@@ -4072,9 +5437,22 @@
             "pronunciation": "온난"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "溫",
+            "meaning": "따뜻할",
+            "pronunciation": "온",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "溫(따뜻할 온)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "온",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4098,12 +5476,15 @@
         "usage:common",
         "education:middle",
         "radical:日",
-        "strokes:13"
+        "strokes:13",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "따뜻할 난",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "暖(따뜻할 난) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "暖(따뜻할 난)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "溫暖",
@@ -4116,9 +5497,22 @@
             "pronunciation": "난방"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "暖",
+            "meaning": "따뜻할",
+            "pronunciation": "난",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "暖(따뜻할 난)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "난",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4142,12 +5536,15 @@
         "usage:common",
         "education:middle",
         "radical:戶",
-        "strokes:8"
+        "strokes:8",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "방 방",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "房(방 방) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "房(방 방)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "暖房",
@@ -4160,9 +5557,22 @@
             "pronunciation": "냉방"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "房",
+            "meaning": "방",
+            "pronunciation": "방",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "房(방 방)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "방",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4186,12 +5596,15 @@
         "usage:common",
         "education:middle",
         "radical:冫",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "찰 냉",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "冷(찰 냉) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "冷(찰 냉)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "冷房",
@@ -4204,9 +5617,22 @@
             "pronunciation": "냉동"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "冷",
+            "meaning": "찰",
+            "pronunciation": "냉",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "冷(찰 냉)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "냉",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4230,12 +5656,15 @@
         "usage:common",
         "education:middle",
         "radical:冫",
-        "strokes:10"
+        "strokes:10",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "얼 동",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "凍(얼 동) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "凍(얼 동)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "冷凍",
@@ -4248,9 +5677,22 @@
             "pronunciation": "동결"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "凍",
+            "meaning": "얼",
+            "pronunciation": "동",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "凍(얼 동)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "동",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4274,12 +5716,15 @@
         "usage:common",
         "education:middle",
         "radical:糸",
-        "strokes:12"
+        "strokes:12",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "맺을 결",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "結(맺을 결) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "結(맺을 결)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "凍結",
@@ -4292,9 +5737,22 @@
             "pronunciation": "결혼"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "結",
+            "meaning": "맺을",
+            "pronunciation": "결",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "結(맺을 결)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "결",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -4331,12 +5789,15 @@
         "usage:common",
         "education:middle",
         "radical:女",
-        "strokes:11"
+        "strokes:11",
+        "grade:10",
+        "category:person",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "혼인 혼",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "婚(혼인 혼) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "婚(혼인 혼)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "結婚",
@@ -4349,9 +5810,22 @@
             "pronunciation": "혼례"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "婚",
+            "meaning": "혼인",
+            "pronunciation": "혼",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "婚(혼인 혼)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "혼",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4375,12 +5849,15 @@
         "usage:common",
         "education:middle",
         "radical:示",
-        "strokes:18"
+        "strokes:18",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "예절 례",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "禮(예절 례) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "禮(예절 례)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "婚禮",
@@ -4393,9 +5870,22 @@
             "pronunciation": "예절"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "禮",
+            "meaning": "예절",
+            "pronunciation": "례",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "禮(예절 례)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "례",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4419,12 +5909,15 @@
         "usage:common",
         "education:middle",
         "radical:竹",
-        "strokes:13"
+        "strokes:13",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "마디 절",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "節(마디 절) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "節(마디 절)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "禮節",
@@ -4437,9 +5930,22 @@
             "pronunciation": "절약"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "節",
+            "meaning": "마디",
+            "pronunciation": "절",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "節(마디 절)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "절",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4463,12 +5969,15 @@
         "usage:common",
         "education:middle",
         "radical:糸",
-        "strokes:9"
+        "strokes:9",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "약속할 약",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "約(약속할 약) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "約(약속할 약)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "節約",
@@ -4481,9 +5990,22 @@
             "pronunciation": "약속"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "約",
+            "meaning": "약속할",
+            "pronunciation": "약",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "約(약속할 약)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "약",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4507,12 +6029,15 @@
         "usage:common",
         "education:middle",
         "radical:木",
-        "strokes:7"
+        "strokes:7",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "묶을 속",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "束(묶을 속) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "束(묶을 속)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "約束",
@@ -4525,9 +6050,22 @@
             "pronunciation": "속박"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "束",
+            "meaning": "묶을",
+            "pronunciation": "속",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "束(묶을 속)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "속",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4551,12 +6089,15 @@
         "usage:common",
         "education:middle",
         "radical:糸",
-        "strokes:16"
+        "strokes:16",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "묶을 박",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "縛(묶을 박) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "縛(묶을 박)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "束縛",
@@ -4569,9 +6110,22 @@
             "pronunciation": "박형"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "縛",
+            "meaning": "묶을",
+            "pronunciation": "박",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "縛(묶을 박)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "박",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4595,12 +6149,15 @@
         "usage:common",
         "education:middle",
         "radical:刂",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "형벌 형",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "刑(형벌 형) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "刑(형벌 형)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "縛刑",
@@ -4613,9 +6170,22 @@
             "pronunciation": "형벌"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "刑",
+            "meaning": "형벌",
+            "pronunciation": "형",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "刑(형벌 형)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "형",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4639,12 +6209,15 @@
         "usage:common",
         "education:middle",
         "radical:罒",
-        "strokes:15"
+        "strokes:15",
+        "grade:10",
+        "category:action",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "벌할 벌",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "罰(벌할 벌) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "罰(벌할 벌)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "刑罰",
@@ -4657,9 +6230,22 @@
             "pronunciation": "벌금"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "罰",
+            "meaning": "벌할",
+            "pronunciation": "벌",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "罰(벌할 벌)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "벌",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4683,12 +6269,15 @@
         "usage:common",
         "education:middle",
         "radical:金",
-        "strokes:8"
+        "strokes:8",
+        "grade:10",
+        "category:metal",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "쇠 금",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "金(쇠 금) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "金(쇠 금)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "罰金",
@@ -4701,9 +6290,22 @@
             "pronunciation": "금액"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "金",
+            "meaning": "쇠",
+            "pronunciation": "금",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "金(쇠 금)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "금",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -4736,12 +6338,15 @@
         "usage:common",
         "education:middle",
         "radical:頁",
-        "strokes:18"
+        "strokes:18",
+        "grade:10",
+        "category:water",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "액수 액",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "額(액수 액) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "額(액수 액)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "金額",
@@ -4754,9 +6359,22 @@
             "pronunciation": "액수"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "額",
+            "meaning": "액수",
+            "pronunciation": "액",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "額(액수 액)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "액",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4780,12 +6398,15 @@
         "usage:common",
         "education:middle",
         "radical:攴",
-        "strokes:15"
+        "strokes:15",
+        "grade:10",
+        "category:water",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "셀 수",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "數(셀 수) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "數(셀 수)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "額數",
@@ -4798,9 +6419,22 @@
             "pronunciation": "숫자"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "數",
+            "meaning": "셀",
+            "pronunciation": "수",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "數(셀 수)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "수",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4824,12 +6458,15 @@
         "usage:common",
         "education:middle",
         "radical:子",
-        "strokes:6"
+        "strokes:6",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "글자 자",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "字(글자 자) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "字(글자 자)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "數字",
@@ -4842,9 +6479,22 @@
             "pronunciation": "한자"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "字",
+            "meaning": "글자",
+            "pronunciation": "자",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "字(글자 자)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "자",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
@@ -4868,12 +6518,15 @@
         "usage:common",
         "education:middle",
         "radical:氵",
-        "strokes:14"
+        "strokes:14",
+        "grade:10",
+        "category:general",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "한나라 한",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "漢(한나라 한) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "漢(한나라 한)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "漢字",
@@ -4886,9 +6539,22 @@
             "pronunciation": "한어"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "漢",
+            "meaning": "한나라",
+            "pronunciation": "한",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "漢(한나라 한)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "한",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": [
@@ -4925,12 +6591,15 @@
         "usage:common",
         "education:middle",
         "radical:言",
-        "strokes:14"
+        "strokes:14",
+        "grade:10",
+        "category:speech",
+        "level:intermediate"
       ],
       "extended_data": {
         "detailed_meaning": "말씀 어",
-        "etymology": "",
-        "mnemonics": "",
+        "etymology": "語(말씀 어) 한자의 어원은 고대 한자의 형태에서 유래되었습니다.",
+        "mnemonics": "語(말씀 어)의 모양과 의미를 연결지어 기억하면 효과적입니다.",
         "common_words": [
           {
             "word": "漢語",
@@ -4943,9 +6612,22 @@
             "pronunciation": "한국어"
           }
         ],
-        "example_sentences": [],
-        "cultural_notes": "",
-        "pronunciation_guide": "",
+        "example_sentences": [
+          {
+            "sentence": "語",
+            "meaning": "말씀",
+            "pronunciation": "어",
+            "difficulty": "intermediate"
+          }
+        ],
+        "cultural_notes": "語(말씀 어)는 동아시아 문화권에서 중요한 의미를 가집니다.",
+        "pronunciation_guide": {
+          "korean": "어",
+          "japanese_on": "",
+          "japanese_kun": "",
+          "mandarin": "",
+          "cantonese": ""
+        },
         "stroke_order": {
           "description": "",
           "directions": []
