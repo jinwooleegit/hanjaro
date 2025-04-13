@@ -1,26 +1,6 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
-import Script from 'next/script';
-
-// HanziWriter 옵션 타입 정의
-interface HanziWriterOptions {
-  width: number;
-  height: number;
-  padding: number;
-  strokeColor: string;
-  outlineColor: string;
-  highlightColor: string;
-  drawingWidth: number;
-  showOutline: boolean;
-  showHintAfterMisses: number;
-  delayBetweenStrokes: number;
-  strokeAnimationSpeed: number;
-  renderer: string;
-  charDataLoader?: () => Promise<any>;
-  onLoadCharDataSuccess?: () => void;
-  onLoadCharDataError?: (error: any) => void;
-}
+import React, { useRef, useEffect, useState } from 'react';
 
 interface SimpleHanziWriterProps {
   character: string;
@@ -33,478 +13,539 @@ interface SimpleHanziWriterProps {
   showHint?: boolean;
   quizMode?: boolean;
   onQuizComplete?: (success: boolean) => void;
-  strokeData?: any;
   hideLeftCharacter?: boolean;
 }
 
-// window 타입 확장 - 전역 객체에 추가되는 속성들을 정의
+// 글로벌 인스턴스 저장용 타입 정의
 declare global {
   interface Window {
-    HanziWriter: any;
-    HanziWriterInstance: any | null;
-    HanziWriterLoaders?: Record<string, (callback: any) => void>;
-    HanziCache?: Record<string, any>;
-    HanziWriterTimers?: Record<string, number>;
+    HanziWriterInstance: any;
   }
 }
 
-// 간소화된 한자 필순 표시 컴포넌트
+// 한자의 기본 획순 데이터를 가져오는 함수
+function getBasicStrokeData(character: string, width: number, height: number) {
+  // 단순한 한자 기본 획순 데이터
+  // 한글, 영문 등에는 단순 대각선 두 개로 구성
+  if (character.charCodeAt(0) < 0x4E00 || character.charCodeAt(0) > 0x9FFF) {
+    return [
+      [{ x: width * 0.2, y: height * 0.2 }, { x: width * 0.8, y: height * 0.8 }],
+      [{ x: width * 0.8, y: height * 0.2 }, { x: width * 0.2, y: height * 0.8 }]
+    ];
+  }
+
+  // 기본적인 한자 패턴 생성 (실제와 다르지만 데모용)
+  // 실제 구현에서는 서버나 데이터베이스에서 획 데이터를 가져와야 함
+  const charCode = character.charCodeAt(0);
+  const strokeCount = Math.max(2, Math.min(12, (charCode % 10) + 2));
+  
+  const strokes = [];
+  
+  // 수평선 (가로획)
+  strokes.push([
+    { x: width * 0.2, y: height * 0.3 }, 
+    { x: width * 0.8, y: height * 0.3 }
+  ]);
+  
+  // 수직선 (세로획)
+  strokes.push([
+    { x: width * 0.5, y: height * 0.2 }, 
+    { x: width * 0.5, y: height * 0.8 }
+  ]);
+  
+  // 추가 획 생성
+  if (strokeCount > 2) {
+    // 왼쪽 수직선
+    strokes.push([
+      { x: width * 0.3, y: height * 0.4 }, 
+      { x: width * 0.3, y: height * 0.8 }
+    ]);
+  }
+  
+  if (strokeCount > 3) {
+    // 오른쪽 수직선
+    strokes.push([
+      { x: width * 0.7, y: height * 0.4 }, 
+      { x: width * 0.7, y: height * 0.8 }
+    ]);
+  }
+  
+  if (strokeCount > 4) {
+    // 아래 수평선
+    strokes.push([
+      { x: width * 0.2, y: height * 0.6 }, 
+      { x: width * 0.8, y: height * 0.6 }
+    ]);
+  }
+  
+  if (strokeCount > 5) {
+    // 대각선
+    strokes.push([
+      { x: width * 0.2, y: height * 0.2 }, 
+      { x: width * 0.8, y: height * 0.8 }
+    ]);
+  }
+  
+  // 나머지 획 추가
+  for (let i = 6; i < strokeCount; i++) {
+    const yPos = 0.2 + (i * 0.1);
+    strokes.push([
+      { x: width * 0.3, y: height * yPos },
+      { x: width * 0.7, y: height * yPos }
+    ]);
+  }
+  
+  return strokes;
+}
+
 export default function SimpleHanziWriter({
   character,
-  width = 180,
-  height = 180,
+  width = 300,
+  height = 300,
   strokeColor = '#333',
   outlineColor = '#ddd',
   highlightColor = '#07F',
   showOutline = true,
-  showHint = true,
+  showHint = false,
   quizMode = false,
-  onQuizComplete = () => {},
-  strokeData = null,
+  onQuizComplete,
   hideLeftCharacter = false
 }: SimpleHanziWriterProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(false);
-  const [scriptLoaded, setScriptLoaded] = useState(false);
-  const writerInstanceRef = useRef<any>(null);
-  const hiddenLeftCharMutationObserver = useRef<MutationObserver | null>(null);
-
-  // HanziWriter 스크립트 로드 처리
-  const handleScriptLoad = () => {
-    console.log('HanziWriter 스크립트 로드됨');
-    setScriptLoaded(true);
-    initializeWriter();
-  };
-
-  // 왼쪽 한자 숨기기 함수
-  const hideCharacterDisplay = () => {
-    if (!containerRef.current || !hideLeftCharacter) return;
-    
-    try {
-      // 1. 모든 SVG 요소 선택
-      const svgs = containerRef.current.querySelectorAll('svg');
-      
-      // 2. 첫 번째 SVG가 표시용 한자 (HanziWriter는 보통 2개의 SVG 생성: 표시용 + 쓰기용)
-      if (svgs.length > 0) {
-        const displaySvg = svgs[0];
-        
-        // 3. 다양한 방법으로 숨김 처리 (하나라도 동작하도록)
-        displaySvg.style.display = 'none';
-        displaySvg.style.visibility = 'hidden';
-        displaySvg.style.opacity = '0';
-        displaySvg.style.position = 'absolute';
-        displaySvg.style.left = '-9999px';
-        
-        // 4. CSS 클래스 추가
-        displaySvg.classList.add('hidden-character');
-        
-        // 5. 속성 설정
-        displaySvg.setAttribute('aria-hidden', 'true');
-        
-        console.log('왼쪽 한자 표시 숨김 처리 완료');
-      }
-      
-      // 6. 부모 컨테이너에도 클래스 추가
-      if (containerRef.current) {
-        containerRef.current.classList.add('hide-first-svg');
-      }
-    } catch (e) {
-      console.warn('왼쪽 한자 숨기기 실패:', e);
-    }
-  };
-
-  // DOM 변경 감지를 위한 MutationObserver 설정
-  const setupMutationObserver = () => {
-    if (!containerRef.current || !hideLeftCharacter) return;
-    
-    try {
-      // 이전 옵저버 정리
-      if (hiddenLeftCharMutationObserver.current) {
-        hiddenLeftCharMutationObserver.current.disconnect();
-      }
-      
-      // 새 옵저버 생성
-      const observer = new MutationObserver((mutations) => {
-        for (const mutation of mutations) {
-          if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-            // 새 노드가 추가될 때마다 왼쪽 한자 숨김 시도
-            hideCharacterDisplay();
-          }
-        }
-      });
-      
-      // 옵저버 설정 및 시작
-      observer.observe(containerRef.current, { 
-        childList: true,
-        subtree: true 
-      });
-      
-      // 참조 저장
-      hiddenLeftCharMutationObserver.current = observer;
-      
-      console.log('왼쪽 한자 숨김 옵저버 설정 완료');
-    } catch (e) {
-      console.warn('MutationObserver 설정 실패:', e);
-    }
-  };
-
-  // 한자 초기화 함수 개선
-  const initializeWriter = () => {
-    if (!containerRef.current || typeof window === 'undefined' || !window.HanziWriter) {
-      console.error('HanziWriter 초기화 불가: DOM 또는 라이브러리 없음');
-      return;
-    }
-    
-    try {
-      console.log(`SimpleHanziWriter 초기화 시작: ${character}`);
-      
-      // 먼저 전역 인스턴스 확인 및 정리
-      if (window.HanziWriterInstance) {
-        console.log('이전 전역 HanziWriter 인스턴스 정리');
-        try {
-          // 애니메이션 취소
-          if (window.HanziWriterInstance.isAnimating && window.HanziWriterInstance.cancelAnimation) {
-            window.HanziWriterInstance.cancelAnimation();
-          }
-          
-          // 퀴즈 취소
-          if (window.HanziWriterInstance.quiz && 
-              window.HanziWriterInstance.quiz.isActive && 
-              window.HanziWriterInstance.quiz.cancel) {
-            window.HanziWriterInstance.quiz.cancel();
-          }
-        } catch (e) {
-          console.warn('전역 인스턴스 정리 중 오류:', e);
-        }
-        
-        // 전역 참조 제거
-        window.HanziWriterInstance = null;
-      }
-      
-      // 기존 인스턴스 정리
-      if (writerInstanceRef.current) {
-        try {
-          // 인스턴스 참조 제거
-          writerInstanceRef.current = null;
-          
-          // 컨테이너 안전하게 비우기
-          if (containerRef.current) {
-            try {
-              // 최대한 안전하게 컨테이너 비우기
-              containerRef.current.innerHTML = '';
-            } catch (e) {
-              console.error('컨테이너 비우기 오류:', e);
-            }
-          }
-        } catch (e) {
-          console.error('한자 인스턴스 정리 중 오류:', e);
-        }
-      }
-      
-      // 왼쪽 한자 숨김을 위한 MutationObserver 설정
-      if (quizMode && hideLeftCharacter) {
-        setupMutationObserver();
-      }
-      
-      // 새 작성기를 위한 안전한 접근법
-      setTimeout(() => {
-        try {
-          if (!containerRef.current) {
-            console.error('컨테이너가 존재하지 않음');
-            return;
-          }
-          
-          // HanziWriter 옵션 설정
-          const options: HanziWriterOptions = {
-            width,
-            height,
-            padding: 5,
-            strokeColor,
-            outlineColor,
-            highlightColor,
-            drawingWidth: 4,
-            showOutline: showOutline,
-            showHintAfterMisses: showHint ? 1 : 999, // 힌트 보여주기 설정
-            delayBetweenStrokes: 800,
-            strokeAnimationSpeed: 1,
-            renderer: 'svg'
-          };
-          
-          // 스트로크 데이터가 있으면 사용
-          if (strokeData) {
-            console.log('로컬 스트로크 데이터 사용:', character);
-            options.charDataLoader = () => Promise.resolve(strokeData);
-          }
-          
-          // 콜백 이벤트 추가
-          options.onLoadCharDataSuccess = () => {
-            console.log('한자 데이터 로드 성공:', character);
-            setIsLoading(false);
-            
-            // 타이머 정리를 위한 전역 객체 초기화
-            if (!window.HanziWriterTimers) {
-              window.HanziWriterTimers = {};
-            }
-            
-            // 퀴즈 모드가 아닐 경우 애니메이션 실행
-            if (!quizMode) {
-              const animationTimerId = window.setTimeout(() => {
-                try {
-                  if (writerInstanceRef.current && writerInstanceRef.current.animateCharacter) {
-                    console.log('애니메이션 실행:', character);
-                    writerInstanceRef.current.animateCharacter();
-                  }
-                } catch (animError) {
-                  console.error('애니메이션 실행 오류:', animError);
-                }
-              }, 500);
-              
-              // 타이머 추적
-              window.HanziWriterTimers[`anim_${character}`] = animationTimerId;
-            } else {
-              // 퀴즈 모드일 경우 퀴즈 시작
-              const quizTimerId = window.setTimeout(() => {
-                try {
-                  if (writerInstanceRef.current && writerInstanceRef.current.quiz) {
-                    console.log('퀴즈 모드 시작:', character);
-                    
-                    // hideLeftCharacter가 true인 경우, 먼저 왼쪽 한자를 숨김
-                    if (hideLeftCharacter) {
-                      // 즉시 숨김 시도
-                      hideCharacterDisplay();
-                      
-                      // 연속적으로 여러 시점에서 숨김 처리 시도
-                      const intervals = [10, 50, 100, 200, 500];
-                      intervals.forEach(delay => {
-                        setTimeout(hideCharacterDisplay, delay);
-                      });
-                    }
-                    
-                    writerInstanceRef.current.quiz({
-                      onMistake: (strokeData: any) => {
-                        console.log('획 실수 발생:', character);
-                      },
-                      onCorrectStroke: (strokeNum: number, totalStrokes: number) => {
-                        console.log(`정확한 획: ${strokeNum}/${totalStrokes}`, character);
-                      },
-                      onComplete: () => {
-                        console.log('퀴즈 완료:', character);
-                        
-                        // 퀴즈 완료 후에도 한자가 다시 표시되지 않도록 숨김 처리
-                        if (hideLeftCharacter) {
-                          hideCharacterDisplay();
-                          // 약간의 지연 후 추가 숨김 처리 (DOM 변경 후)
-                          setTimeout(hideCharacterDisplay, 100);
-                        }
-                        
-                        if (onQuizComplete) {
-                          onQuizComplete(true);
-                        }
-                      }
-                    });
-                  } else {
-                    console.error('퀴즈 메서드 없음:', character);
-                    setIsError(true);
-                  }
-                } catch (quizError) {
-                  console.error('퀴즈 시작 오류:', quizError);
-                  setIsError(true);
-                }
-              }, 500);
-              
-              // 타이머 추적
-              window.HanziWriterTimers[`quiz_${character}`] = quizTimerId;
-            }
-          };
-          
-          options.onLoadCharDataError = (error: any) => {
-            console.error('한자 데이터 로드 오류:', character, error);
-            setIsLoading(false);
-            setIsError(true);
-            if (quizMode && onQuizComplete) {
-              onQuizComplete(false);
-            }
-          };
-          
-          // 새 인스턴스 생성
-          console.log('HanziWriter 인스턴스 생성 시도:', character);
-          const writer = window.HanziWriter.create(
-            containerRef.current,
-            character,
-            options
-          );
-          
-          console.log('HanziWriter 인스턴스 생성 성공:', character);
-          writerInstanceRef.current = writer;
-          
-          // 인스턴스 생성 직후에도 왼쪽 한자 숨김 시도
-          if (quizMode && hideLeftCharacter) {
-            // 즉시 숨김 시도
-            hideCharacterDisplay();
-            
-            // 연속적으로 여러 시점에서 숨김 처리 시도 (DOM이 완전히 업데이트되는 시점 포착)
-            const hideAtIntervals = () => {
-              // 초기 타이밍에 한 번
-              hideCharacterDisplay();
-              
-              // 여러 타이밍에 걸쳐 시도
-              const intervals = [10, 50, 100, 200, 500, 1000];
-              intervals.forEach(delay => {
-                setTimeout(hideCharacterDisplay, delay);
-              });
-            };
-            
-            hideAtIntervals();
-          }
-        } catch (e) {
-          console.error('새 HanziWriter 인스턴스 생성 중 오류:', e);
-          setIsLoading(false);
-          setIsError(true);
-        }
-      }, 50); // 약간의 지연으로 DOM 업데이트 확보
-    } catch (e) {
-      console.error('한자 애니메이션 초기화 중 오류:', character, e);
-      setIsLoading(false);
-      setIsError(true);
-      if (quizMode && onQuizComplete) {
-        onQuizComplete(false);
-      }
-    }
-  };
-
-  // 컴포넌트 마운트 시 스크립트 로드 확인
+  const displayCanvasRef = useRef<HTMLCanvasElement | null>(null);
+  const drawingCanvasRef = useRef<HTMLCanvasElement | null>(null);
+  
+  // 상태 관리
+  const [error, setError] = useState<string | null>(null);
+  const [strokeIndex, setStrokeIndex] = useState(-1);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [isQuizActive, setIsQuizActive] = useState(false);
+  const [userStrokes, setUserStrokes] = useState<any[]>([]);
+  
+  const strokeDataRef = useRef<any[]>([]);
+  
+  // 초기화 및 인스턴스 설정
   useEffect(() => {
-    // 이미 스크립트가 로드되었는지 확인
-    if (typeof window !== 'undefined' && window.HanziWriter) {
-      console.log('HanziWriter 이미 로드됨');
-      setScriptLoaded(true);
-      
-      // 다음 렌더 사이클에 초기화 (상태 업데이트 후)
-      setTimeout(() => {
-        initializeWriter();
-      }, 50); // 약간의 지연을 추가하여 DOM이 완전히 준비되도록 함
-    }
+    // 기본 스트로크 데이터 생성
+    strokeDataRef.current = getBasicStrokeData(character, width, height);
     
-    // 컴포넌트 언마운트 시 안전한 정리 함수
+    // 인스턴스 초기화
+    initializeWriter();
+    
+    // 글로벌 인스턴스 설정
+    window.HanziWriterInstance = {
+      isAnimating: () => isAnimating,
+      cancelAnimation: cancelAnimation,
+      animateCharacter: (options: any) => {
+        animateCharacter(options);
+        return true;
+      },
+      quiz: function(options: any) {
+        // quiz 함수 구현
+        const activateQuiz = () => {
+          setIsQuizActive(true);
+          clearCanvas();
+          
+          // 드로잉 이벤트 설정 및 콜백 등록
+          const drawingHandler = setupDrawingEvents();
+          
+          // 콜백 설정
+          if (drawingHandler && options?.onComplete) {
+            drawingHandler.setCompleteCallback(options.onComplete);
+          }
+          
+          // quiz 객체 반환
+          return {
+            isActive: () => isQuizActive,
+            cancel: () => cancelQuiz(),
+            giveUp: () => {
+              cancelQuiz();
+              if (onQuizComplete) onQuizComplete(false);
+            }
+          };
+        };
+        
+        return activateQuiz();
+      },
+      setCharacter: () => {
+        clearCanvas();
+        drawCharacter();
+      },
+      setSpeed: (speed: number) => {
+        // 애니메이션 속도 처리는 animateCharacter 내에서 직접 구현
+      }
+    };
+    
     return () => {
-      console.log('SimpleHanziWriter 정리 시작');
+      // 클린업
+      // @ts-ignore - 타입 오류 무시
+      window.HanziWriterInstance = null;
+    };
+  }, [character, width, height]);
+  
+  // 캔버스 초기화 함수
+  const initializeWriter = () => {
+    if (!containerRef.current) return;
+    
+    try {
+      // 기존 내용 지우기
+      containerRef.current.innerHTML = '';
       
-      // MutationObserver 정리
-      if (hiddenLeftCharMutationObserver.current) {
-        hiddenLeftCharMutationObserver.current.disconnect();
-        hiddenLeftCharMutationObserver.current = null;
+      // 컨테이너 설정
+      containerRef.current.style.position = 'relative';
+      containerRef.current.style.width = `${width}px`;
+      containerRef.current.style.height = `${height}px`;
+      
+      // 디스플레이 캔버스 생성 (한자 표시용)
+      const displayCanvas = document.createElement('canvas');
+      displayCanvas.width = width;
+      displayCanvas.height = height;
+      displayCanvas.style.position = 'absolute';
+      displayCanvas.style.top = '0';
+      displayCanvas.style.left = '0';
+      containerRef.current.appendChild(displayCanvas);
+      displayCanvasRef.current = displayCanvas;
+      
+      // 드로잉 캔버스 생성 (사용자 입력용)
+      const drawingCanvas = document.createElement('canvas');
+      drawingCanvas.width = width;
+      drawingCanvas.height = height;
+      drawingCanvas.style.position = 'absolute';
+      drawingCanvas.style.top = '0';
+      drawingCanvas.style.left = '0';
+      drawingCanvas.style.zIndex = '10';
+      containerRef.current.appendChild(drawingCanvas);
+      drawingCanvasRef.current = drawingCanvas;
+      
+      // 초기 렌더링
+      clearCanvas();
+      drawCharacter();
+      
+      // 퀴즈 모드 설정
+      if (quizMode) {
+        setupDrawingEvents();
       }
       
-      // 인스턴스가 있을 경우에만 정리 시도
-      if (writerInstanceRef.current) {
-        try {
-          // 애니메이션 또는 퀴즈 취소
-          try {
-            const writer = writerInstanceRef.current;
-            
-            if (writer.isAnimating && writer.cancelAnimation) {
-              writer.cancelAnimation();
-            }
-            
-            if (writer.quiz && writer.quiz.isActive && writer.quiz.cancel) {
-              writer.quiz.cancel();
-            }
-          } catch (e) {
-            console.error('애니메이션/퀴즈 취소 중 오류:', e);
+      setError(null);
+    } catch (err) {
+      console.error('한자 렌더링 초기화 오류:', err);
+      setError('한자 렌더링 초기화에 실패했습니다');
+    }
+  };
+  
+  // 캔버스 지우기
+  const clearCanvas = () => {
+    if (displayCanvasRef.current) {
+      const ctx = displayCanvasRef.current.getContext('2d');
+      if (ctx) {
+        ctx.clearRect(0, 0, width, height);
+        // 테두리 그리기
+        if (showOutline) {
+          ctx.strokeStyle = outlineColor;
+          ctx.lineWidth = 1;
+          ctx.strokeRect(10, 10, width - 20, height - 20);
+        }
+      }
+    }
+    
+    if (drawingCanvasRef.current) {
+      const ctx = drawingCanvasRef.current.getContext('2d');
+      if (ctx) {
+        ctx.clearRect(0, 0, width, height);
+      }
+    }
+  };
+  
+  // 한자 기본 렌더링
+  const drawCharacter = () => {
+    if (!displayCanvasRef.current || hideLeftCharacter) return;
+    
+    const ctx = displayCanvasRef.current.getContext('2d');
+    if (!ctx) return;
+    
+    ctx.font = `${Math.floor(height * 0.8)}px serif`;
+    ctx.fillStyle = strokeColor;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(character, width / 2, height / 2);
+  };
+  
+  // 획 그리기
+  const drawStroke = (ctx: CanvasRenderingContext2D, stroke: any, color: string = strokeColor) => {
+    if (!stroke || stroke.length < 2) return;
+    
+    ctx.beginPath();
+    ctx.moveTo(stroke[0].x, stroke[0].y);
+    
+    for (let i = 1; i < stroke.length; i++) {
+      ctx.lineTo(stroke[i].x, stroke[i].y);
+    }
+    
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 4;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.stroke();
+  };
+  
+  // 애니메이션 취소
+  const cancelAnimation = () => {
+    setIsAnimating(false);
+    setStrokeIndex(-1);
+  };
+  
+  // 퀴즈 모드 취소
+  const cancelQuiz = () => {
+    setIsQuizActive(false);
+    setUserStrokes([]);
+    clearCanvas();
+    drawCharacter();
+  };
+  
+  // 애니메이션 실행
+  const animateCharacter = (options?: any) => {
+    if (!displayCanvasRef.current) return;
+    
+    // 퀴즈 모드인 경우 취소
+    if (isQuizActive) {
+      cancelQuiz();
+    }
+    
+    // 애니메이션 시작
+    setIsAnimating(true);
+    setStrokeIndex(-1);
+    clearCanvas();
+    
+    // 한자 숨기기 (애니메이션 시)
+    if (hideLeftCharacter) {
+      const ctx = displayCanvasRef.current.getContext('2d');
+      if (ctx) {
+        ctx.clearRect(0, 0, width, height);
+      }
+    }
+    
+    // 획 애니메이션 시작
+    let currentStrokeIndex = 0;
+    const strokes = strokeDataRef.current;
+    
+    const animateNextStroke = () => {
+      if (currentStrokeIndex >= strokes.length || !isAnimating) {
+        setIsAnimating(false);
+        if (options?.onComplete) {
+          setTimeout(() => options.onComplete(), 500);
+        }
+        return;
+      }
+      
+      const ctx = displayCanvasRef.current?.getContext('2d');
+      if (!ctx) return;
+      
+      setStrokeIndex(currentStrokeIndex);
+      drawStroke(ctx, strokes[currentStrokeIndex], highlightColor);
+      
+      currentStrokeIndex++;
+      setTimeout(animateNextStroke, 800); // 획 간 딜레이
+    };
+    
+    // 애니메이션 시작
+    animateNextStroke();
+  };
+  
+  // 드로잉 이벤트 설정
+  const setupDrawingEvents = () => {
+    if (!drawingCanvasRef.current) return;
+    
+    const canvas = drawingCanvasRef.current;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    
+    let isDrawing = false;
+    let currentStroke: any[] = [];
+    let currentStrokeIndex = 0;
+    let quizCompleteCallback: ((summary: any) => void) | null = null;
+    
+    // 외부에서 콜백 설정할 수 있도록
+    const setCompleteCallback = (callback: (summary: any) => void) => {
+      quizCompleteCallback = callback;
+    };
+    
+    // 스트로크 평가
+    const evaluateStroke = () => {
+      // 단순 성공 처리
+      return true;
+    };
+    
+    // 다음 퀴즈 스트로크 힌트 표시
+    const showStrokeHint = () => {
+      if (!showHint || currentStrokeIndex >= strokeDataRef.current.length) return;
+      
+      // 힌트 표시 (점선으로)
+      if (displayCanvasRef.current) {
+        const hintCtx = displayCanvasRef.current.getContext('2d');
+        if (hintCtx) {
+          const stroke = strokeDataRef.current[currentStrokeIndex];
+          hintCtx.setLineDash([5, 5]);
+          hintCtx.beginPath();
+          hintCtx.moveTo(stroke[0].x, stroke[0].y);
+          
+          for (let i = 1; i < stroke.length; i++) {
+            hintCtx.lineTo(stroke[i].x, stroke[i].y);
           }
           
-          // 참조 제거
-          writerInstanceRef.current = null;
+          hintCtx.strokeStyle = 'rgba(200, 200, 200, 0.5)';
+          hintCtx.lineWidth = 4;
+          hintCtx.stroke();
+          hintCtx.setLineDash([]);
+        }
+      }
+    };
+    
+    // 이벤트 핸들러
+    const startDrawing = (e: MouseEvent | TouchEvent) => {
+      if (!isQuizActive) {
+        setIsQuizActive(true);
+        clearCanvas();
+      }
+      
+      isDrawing = true;
+      currentStroke = [];
+      
+      const pos = getEventPosition(e, canvas);
+      currentStroke.push(pos);
+      
+      ctx.beginPath();
+      ctx.moveTo(pos.x, pos.y);
+      ctx.lineWidth = 4;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.strokeStyle = highlightColor;
+    };
+    
+    const draw = (e: MouseEvent | TouchEvent) => {
+      if (!isDrawing) return;
+      
+      const pos = getEventPosition(e, canvas);
+      currentStroke.push(pos);
+      
+      ctx.lineTo(pos.x, pos.y);
+      ctx.stroke();
+    };
+    
+    const endDrawing = () => {
+      if (!isDrawing) return;
+      
+      isDrawing = false;
+      ctx.closePath();
+      
+      // 사용자 스트로크 저장
+      if (currentStroke.length > 3) {
+        setUserStrokes([...userStrokes, currentStroke]);
+        
+        // 스트로크 평가
+        const success = evaluateStroke();
+        
+        // 다음 스트로크로 이동 또는 완료
+        if (success) {
+          currentStrokeIndex++;
           
-          // 컨테이너가 존재하는지 확인하고 내용 비우기
-          if (containerRef.current) {
-            try {
-              // 가장 안전한 방법으로 내용 비우기
-              containerRef.current.innerHTML = '';
-            } catch (e) {
-              console.error('컨테이너 정리 중 오류:', e);
-            }
+          // 모든 스트로크 완료
+          if (currentStrokeIndex >= strokeDataRef.current.length) {
+            // 성공 처리
+            setTimeout(() => {
+              if (quizCompleteCallback) {
+                // 수동으로 설정된 콜백 호출
+                quizCompleteCallback({ totalMistakes: 0, totalCorrect: currentStrokeIndex });
+              } else if (onQuizComplete) {
+                // 기본 콜백 호출
+                onQuizComplete(true);
+              }
+              setIsQuizActive(false);
+            }, 500);
+          } else {
+            // 다음 힌트 표시
+            setTimeout(() => {
+              showStrokeHint();
+            }, 300);
           }
-        } catch (e) {
-          console.error('SimpleHanziWriter 정리 중 오류:', e);
         }
       }
       
-      console.log('SimpleHanziWriter 정리 완료');
+      // 스트로크가 너무 짧으면 지우기
+      else {
+        ctx.clearRect(0, 0, width, height);
+      }
     };
-  }, [character, quizMode, showHint, showOutline, hideLeftCharacter]);
-
-  // 컴포넌트 반환 - quizMode에 맞게 컨테이너 스타일 최적화
-  return (
-    <div className="h-full w-full flex items-center justify-center">
-      <Script 
-        src="/static/hanzi-writer.min.js"
-        strategy="beforeInteractive" 
-        onLoad={handleScriptLoad}
-        onError={() => setIsError(true)}
-      />
-      
-      {/* 쓰기 연습 모드에서 왼쪽 한자 숨기기 위한 스타일 */}
-      {quizMode && hideLeftCharacter && (
-        <style jsx global>{`
-          /* 컨테이너 내 첫 번째 SVG 요소 숨기기 */
-          .hanzi-writer-container > svg:first-child,
-          .hide-first-svg > svg:first-child {
-            display: none !important;
-            visibility: hidden !important;
-            opacity: 0 !important;
-            position: absolute !important;
-            left: -9999px !important;
-            width: 0 !important;
-            height: 0 !important;
-            overflow: hidden !important;
-            pointer-events: none !important;
-          }
-
-          /* hidden-character 클래스가 적용된 요소 숨기기 */
-          .hidden-character {
-            display: none !important;
-            visibility: hidden !important;
-            opacity: 0 !important;
-          }
-          
-          /* HanziWriter의 퀴즈 모드에서 생성되는 첫 번째 그리드 (참조용 한자) 숨기기 */
-          .hanzi-writer-container > svg:first-of-type,
-          .hide-first-svg > svg:first-of-type {
-            display: none !important;
-          }
-        `}</style>
-      )}
-      
-      {isLoading && (
-        <div className="flex flex-col items-center justify-center">
-          <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-          <p className="mt-4 text-gray-500">한자 로딩 중...</p>
+    
+    // 이벤트 리스너 등록
+    canvas.addEventListener('mousedown', startDrawing);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', endDrawing);
+    canvas.addEventListener('mouseleave', endDrawing);
+    
+    // 터치 이벤트
+    canvas.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      startDrawing(e);
+    });
+    
+    canvas.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      draw(e);
+    });
+    
+    canvas.addEventListener('touchend', (e) => {
+      e.preventDefault();
+      endDrawing();
+    });
+    
+    // 초기 힌트 표시
+    if (showHint) {
+      showStrokeHint();
+    }
+    
+    // 콜백 설정 함수 반환
+    return { setCompleteCallback };
+  };
+  
+  // 이벤트 위치 계산 함수
+  const getEventPosition = (e: MouseEvent | TouchEvent, canvas: HTMLCanvasElement) => {
+    const rect = canvas.getBoundingClientRect();
+    
+    if ('touches' in e) {
+      return {
+        x: e.touches[0].clientX - rect.left,
+        y: e.touches[0].clientY - rect.top
+      };
+    } else {
+      return {
+        x: (e as MouseEvent).clientX - rect.left,
+        y: (e as MouseEvent).clientY - rect.top
+      };
+    }
+  };
+  
+  // 오류 표시
+  if (error) {
+    return (
+      <div className="flex items-center justify-center" style={{ width, height }}>
+        <div className="text-center p-4">
+          <div className="text-5xl mb-2">{character}</div>
+          <p className="text-sm text-red-500 mb-1">렌더링 실패</p>
+          <p className="text-xs text-gray-500">{error}</p>
+          <button 
+            className="mt-3 px-3 py-1 text-xs bg-blue-100 text-blue-700 rounded hover:bg-blue-200"
+            onClick={() => {
+              setError(null);
+              initializeWriter();
+            }}
+          >
+            다시 시도
+          </button>
         </div>
-      )}
-      
-      {isError && (
-        <div className="flex flex-col items-center justify-center">
-          <p className="text-red-500">한자 로드 오류</p>
-          <p className="text-sm text-gray-500 mt-2">해당 한자({character})를 불러올 수 없습니다.</p>
-        </div>
-      )}
-      
-      {/* 퀴즈 모드일 때 컨테이너 크기 최적화 */}
-      <div 
-        ref={containerRef} 
-        className={`flex items-center justify-center ${quizMode && hideLeftCharacter ? 'hanzi-writer-container' : ''}`}
-        style={{
-          width: quizMode ? '100%' : width,
-          height: quizMode ? '100%' : height,
-          minWidth: width,
-          minHeight: height,
-          maxWidth: '100%',
-          maxHeight: '100%',
-          display: isLoading || isError ? 'none' : 'flex'
-        }}
-      ></div>
-    </div>
-  );
+      </div>
+    );
+  }
+  
+  // 일반 렌더링
+  return <div ref={containerRef} style={{ width, height }} />;
 } 
